@@ -1,30 +1,54 @@
 # Get started
 
-PWA Studio is a library of tools and packages designed to help you create a Magento PWA storefront.
-In this section you will learn how to set up your storefront project using the scaffolding tool and learn about the different files and folders in your project.
+Before you can start developing with PWA Studio, make sure you meet the requirements listed on this page.
 
-## Prerequisites
+## Minimum requirements
 
--   A basic understanding of working with [React][]
--   Node >= 10.14.1
--   Yarn (recommended) or NPM
+- A basic knowledge of [React][]
+- Node >= 10.14.1
+- Yarn (recommended) or NPM
 
-### Node 12 deprecation warning
+## Check Node and Yarn versions
 
-If you are using Node 12, you may see the following deprecation warning in the log when you run `yarn watch:venia`.
+Verify your development environment has the minimum prerequisite versions of Node and Yarn installed:
 
-```sh
-(node:89176) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+- [NodeJS >=10.14.1 LTS](https://nodejs.org/en/)
+- [Yarn >=1.13.0](https://yarnpkg.com)
+
+Run the following commands in your terminal to identify which versions you have installed.
+
+### Node
+
+<CodeBlock slots="heading, code" repeat="2" languages="bash, bash" />
+
+#### Command
+
+```bash
+node -v
 ```
 
-This is caused by a project dependency used by PWA Studio and not by PWA Studio itself.
+#### Output
 
-## First steps
+```bash
+v10.15.0
+```
 
--   [Setup your project][]
--   [Explore the project structure][]
+### Yarn
 
-[setup your project]: <{%link tutorials/pwa-studio-fundamentals/project-setup/index.md %}>
-[explore the project structure]: <{%link tutorials/pwa-studio-fundamentals/project-structure/index.md %}>
+<CodeBlock slots="heading, code" repeat="2" languages="bash, bash" />
+
+#### Command
+
+```bash
+yarn -v
+```
+
+#### Output
+
+```bash
+1.22.10
+```
+
+If entering these commands does not show you a version number, install Node.js, Yarn, or both.
 
 [react]: https://reactjs.org/
