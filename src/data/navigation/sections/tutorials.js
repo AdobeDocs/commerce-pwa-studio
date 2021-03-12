@@ -9,12 +9,18 @@ module.exports = [
         path: "/tutorials/",
       },
       {
-        title: "Setup a new project",
-        path: "/tutorials/setup-project/",
-      },
-      {
-        title: "Explore the project structure",
-        path: "/tutorials/setup-project/file-structure/",
+        title: "Setup a storefront project",
+        path: "/tutorials/setup-storefront/",
+        pages: [
+          {
+            title: "Explore the files",
+            path: "/tutorials/setup-storefront/file-structure/",
+          },
+          {
+            title: "Common setup issues",
+            path: "/tutorials/setup-storefront/issues/",
+          },
+        ],
       },
     ],
   },

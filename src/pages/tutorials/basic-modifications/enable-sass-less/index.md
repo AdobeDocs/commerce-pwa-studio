@@ -1,6 +1,4 @@
----
-title: Enable SASS or LESS support
----
+# Enable SASS or LESS support
 
 This tutorial provides the steps to enable SASS or LESS support in your storefront project.
 
