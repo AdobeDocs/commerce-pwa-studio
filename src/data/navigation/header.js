@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: "Adobe Analytics",
+    title: "PWA Studio",
     path: "/",
   },
   {
@@ -8,11 +8,15 @@ module.exports = [
     path: "/guides/",
   },
   {
-    title: "API Reference",
-    path: "/api/",
+    title: "Integrations",
+    path: "/integrations/",
   },
   {
-    title: "Support",
-    path: "/support/",
+    title: "Tutorials",
+    path: "/tutorials/",
+  },
+  {
+    title: "API Reference",
+    path: "/api/",
   },
 ];
