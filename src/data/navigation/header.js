@@ -19,8 +19,4 @@ module.exports = [
     title: "API Reference",
     path: "/api/",
   },
-  {
-    title: "Tutorials",
-    path: "/tutorials/",
-  },
 ];
