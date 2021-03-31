@@ -147,7 +147,7 @@ module.exports = [
         pages: [
           {
             title: "JavaScript",
-            path: "/guides/package/upward/javascript/",
+            path: "/guides/packages/upward/javascript/",
           },
         ],
       },
