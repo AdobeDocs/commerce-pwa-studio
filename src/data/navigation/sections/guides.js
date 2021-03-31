@@ -1,6 +1,6 @@
 module.exports = [
   {
-    title: "Get Started",
+    title: "PWA Studio project",
     path: "/guides/",
     pages: [
       {
@@ -8,66 +8,149 @@ module.exports = [
         path: "/guides/",
       },
       {
-        title: "Creating an OAuth Client",
-        path: "/guides/creating_oauth_client/",
+        title: "External tools and libraries",
+        path: "/guides/project/tools-libraries",
       },
       {
-        title: "OAuth using cURL",
-        path: "/guides/oauth_using_curl/",
+        title: "Versioning strategy",
+        path: "/guides/project/versioning/",
       },
       {
-        title: "OAuth using POSTMAN",
-        path: "/guides/oauth_using_postman/",
+        title: "Contributing",
+        path: "/guides/project/contributing/",
       },
       {
-        title: "JWT Authentication",
-        path: "/guides/jwt_authentication/",
+        title: "Frequently Asked Questions",
+        path: "/guides/project/faq",
       },
     ],
   },
   {
-    title: "Reporting API",
-    path: "/guides/reporting_api/",
+    title: "General concepts",
+    path: "/guides/general-concepts/",
     pages: [
       {
         title: "Overview",
-        path: "/guides/reporting_api/",
+        path: "/guides/general-concepts/",
       },
       {
-        title: "Reporting with breakdowns",
-        path: "/guides/reporting_api/reporting_breakdowns/",
+        title: "Application shell",
+        path: "/guides/general-concepts/application-shell/",
+      },
+      {
+        title: "Content rendering",
+        path: "/guides/general-concepts/content-rendering/",
+      },
+      {
+        title: "CSS modules",
+        path: "/guides/general-concepts/css-modules/",
+      },
+      {
+        title: "GraphQL",
+        path: "/guides/general-concepts/graphql/",
+      },
+      {
+        title: "Client-side caching",
+        path: "/guides/general-concepts/client-side-caching/",
+      },
+      {
+        title: "Configuration management",
+        path: "/guides/general-concepts/configuration/",
+      },
+      {
+        title: "Routing",
+        path: "/guides/general-concepts/routing/",
+      },
+      {
+        title: "Internationalization",
+        path: "/guides/general-concepts/internationalization/",
+      },
+      {
+        title: "State management",
+        path: "/guides/general-concepts/state-management/",
+      },
+      {
+        title: "Talons",
+        path: "/guides/general-concepts/talons/",
+      },
+      {
+        title: "Extensibility",
+        path: "/guides/general-concepts/extensibility/",
+      },
+    ],
+  },
+  {
+    title: "Storefront architecture",
+    path: "/guides/storefront-architecture/",
+    pages: [
+      {
+        title: "Overview",
+        path: "/guides/storefront-architecture/",
+      },
+      {
+        title: "Runtime architecture",
+        path: "/guides/storefront-architecture/run-time",
+      },
+      {
+        title: "Build-time architecture",
+        path: "/guides/storefront-architecture/build-time",
+      },
+    ],
+  },
+  {
+    title: "Packages",
+    path: "/guides/packages/",
+    pages: [
+      {
+        title: "Overview",
+        path: "/guides/packages/",
+      },
+      {
+        title: "Buildpack",
+        path: "/guides/packages/buildpack/",
         pages: [
           {
-            title: "Reporting with single breakdowns",
-            path: "/guides/reporting_api/reporting_breakdowns/",
+            title: "Scaffolding",
+            path: "/guides/packages/buildpack/scaffolding/",
           },
           {
-            title: "Reporting with multiple breakdowns",
-            path:
-              "/guides/reporting_api/reporting_breakdowns/reporting_multiple_breakdowns/",
+            title: "Custom project templates",
+            path: "/guides/packages/buildpack/project-templates/",
           },
         ],
       },
       {
-        title: "Reporting tips and tricks",
-        path: "/guides/reporting_api/reporting_tips_tricks/",
+        title: "Peregrine",
+        path: "/guides/packages/peregrine/",
+      },
+      {
+        title: "Venia",
+        path: "/guides/packages/venia/",
+        pages: [
+          {
+            title: "Storefront template",
+            path: "/guides/packages/venia/storefront/",
+          },
+          {
+            title: "UI components",
+            path: "/guides/packages/venia/ui-components/",
+          },
+          {
+            title: "Drivers and adapters",
+            path: "/guides/packages/venia/drivers-adapters/",
+          },
+        ],
+      },
+      {
+        title: "UPWARD",
+        path: "/guides/packages/upward/",
+        pages: [
+          {
+            title: "JavaScript",
+            path: "/guides/package/upward/javascript/",
+          },
+        ],
       },
     ],
-  },
-  {
-    title: "Discovery API",
-    path: "/guides/discovery_api/",
-  },
-  {
-    title: "Segments API",
-    path: "/guides/segments_api/",
-  },
-  {
-    title: "Calculated Metrics API",
-    path: "/guides/calculated_metrics_api/",
-  },
-  {
-    title: "Migrating",
-    path: "/guides/migrating/",
   },
 ];
