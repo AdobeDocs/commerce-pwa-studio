@@ -71,7 +71,7 @@ module.exports = [
           },
           {
             title: "Buttons",
-            path: "/integrations/pagebuilder/componentsl/Button/",
+            path: "/integrations/pagebuilder/components/Button/",
           },
           {
             title: "Column",
