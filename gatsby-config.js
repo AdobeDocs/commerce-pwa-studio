@@ -20,4 +20,7 @@ module.exports = {
   },
   plugins: [`@adobe/gatsby-theme-aio`],
   pathPrefix: process.env.PATH_PREFIX || "/pwa-studio-adobe-docs/",
+  flags: {
+    DEV_SSR: false
+  }
 };
