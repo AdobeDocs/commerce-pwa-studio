@@ -6,11 +6,11 @@ module.exports = [
     pages: [
       {
         title: "Version compatibility",
-        path: "/integrations/versions/",
+        path: "/integrations/magento/version-compatibility/",
       },
       {
         title: "Theme vs Storefront",
-        path: "/integrations/theme-vs-storefront",
+        path: "/integrations/magento/theme-vs-storefront",
       },
     ],
   },
