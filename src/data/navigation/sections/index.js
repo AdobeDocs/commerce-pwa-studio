@@ -1,6 +1,6 @@
 const guides = require("./guides");
-const support = require("./support");
 const tutorials = require("./tutorials");
 const integrations = require("./integrations");
+const api = require("./api");
 
-module.exports = [...guides,...integrations, ...tutorials, ];
+module.exports = [...guides, ...integrations, ...tutorials, ...api];
