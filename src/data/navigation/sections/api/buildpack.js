@@ -38,7 +38,11 @@ module.exports = {
       pages: [
         {
           title: "Environment variables",
-          path: "/api/buildpack/environment/variables",
+          path: "/api/buildpack/environment/variables/",
+        },
+        {
+          title: "EnvVarDefinition object",
+          path: "/api/buildpack/environment/definition-object/",
         },
       ],
     },
@@ -50,10 +54,6 @@ module.exports = {
       title: "Targetables",
       path: "/api/buildpack/targetables/",
       pages: [
-        {
-          title: "Overview",
-          path: "/api/buildpack/targetables/",
-        },
         {
           title: "TargetableModule",
           path: "/api/buildpack/targetables/TargetableModule/",
@@ -87,6 +87,28 @@ module.exports = {
     {
       title: "Webpack tools",
       path: "/api/buildpack/webpack/",
+      pages: [
+        {
+          title: "Configure Webpack",
+          path: "/api/buildpack/webpack/configure/",
+        },
+        {
+          title: "Magento resolver",
+          path: "/api/buildpack/webpack/magento-resolver/",
+        },
+        {
+          title: "Magento root components plugin",
+          path: "/api/buildpack/webpack/magento-root-components-plugin/",
+        },
+        {
+          title: "PWA development server",
+          path: "/api/buildpack/webpack/dev-server/",
+        },
+        {
+          title: "Service worker plugin",
+          path: "/api/buildpack/webpack/service-worker/",
+        },
+      ],
     },
   ],
 };
