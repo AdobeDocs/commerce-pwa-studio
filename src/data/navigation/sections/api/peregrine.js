@@ -26,23 +26,23 @@ module.exports = {
       pages: [
         {
           title: "Item",
-          path: "/api/peregrine/components-and-utilities/item/",
+          path: "/api/peregrine/components-and-utilities/Item/",
         },
         {
           title: "Items",
-          path: "/api/peregrine/components-and-utilities/items/",
+          path: "/api/peregrine/components-and-utilities/Items/",
         },
         {
           title: "List",
-          path: "/api/peregrine/components-and-utilities/list/",
+          path: "/api/peregrine/components-and-utilities/List/",
         },
         {
           title: "Price",
-          path: "/api/peregrine/components-and-utilities/price/",
+          path: "/api/peregrine/components-and-utilities/Price/",
         },
         {
           title: "Router",
-          path: "/api/peregrine/components-and-utilities/router/",
+          path: "/api/peregrine/components-and-utilities/Router/",
         },
       ],
     },
