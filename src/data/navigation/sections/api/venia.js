@@ -11,40 +11,40 @@ module.exports = {
       path: "/api/venia/targets/",
     },
     {
-      title: "General",
-      path: "/api/venia/components/",
+      title: "General components",
+      path: "/api/venia/components/general/",
       pages: [
         {
           title: "Button",
-          path: "/api/venia/components/Button/",
+          path: "/api/venia/components/general/Button/",
         },
         {
           title: "ButtonGroup",
-          path: "/api/venia/components/ButtonGroup/",
+          path: "/api/venia/components/general/ButtonGroup/",
         },
         {
           title: "Logo",
-          path: "/api/venia/components/Logo/",
+          path: "/api/venia/components/general/Logo/",
         },
         {
           title: "Mask",
-          path: "/api/venia/components/Mask/",
+          path: "/api/venia/components/general/Mask/",
         },
         {
           title: "Portal",
-          path: "/api/venia/components/Portal/",
+          path: "/api/venia/components/general/Portal/",
         },
         {
           title: "ProductImageCarousel",
-          path: "/api/venia/components/ProductImageCarousel/",
+          path: "/api/venia/components/general/ProductImageCarousel/",
         },
         {
           title: "ToastContainer",
-          path: "/api/venia/components/ToastContainer/",
+          path: "/api/venia/components/general/ToastContainer/",
         },
         {
           title: "Trigger",
-          path: "/api/venia/components/Trigger/",
+          path: "/api/venia/components/general/Trigger/",
         },
       ],
     },
