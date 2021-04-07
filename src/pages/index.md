@@ -1,86 +1,99 @@
 ---
-title: Overview - Adobe Analytics
-description: This is the overview page of Adobe Analytics
+title: Home - PWA Studio
+description: Developer documentation for PWA Studio
 contributors:
-  - https://github.com/simonwex 
+  - https://github.com/jcalcaben 
 ---
 
 <Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
-![Hero image](./hero-illustration.png) 
+![Hero image](./home-bg.jpg)
 
-# Adobe Analytics 
+# PWA Studio 
 
-Adobe Product API offers limitless ways to integrate your most important customer data into key business processes. Adobe Product API offer limitless ways.
+PWA Studio offers the tools you need to develop a Progressive Web Application storefront for Magento.
 
 <Resources slots="heading, links"/>
 
 #### Resources
 
-* [Quickstart Guide](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
-* [Adobe Analytics Github Repo](https://github.com/AdobeDocs/analytics-2.0-apis)
+- [Latest release notes](https://github.com/magento/pwa-studio/releases/latest)
+- [PWA Studio GitHub repository](https://github.com/magento/pwa-studio)
+- [Community Slack channel](https://magentocommeng.slack.com/archives/C71HNKYS2)
 
 ## Overview
 
-This documentation provides instructions for Adobe Analytics 2.0 APIs. For working with Analytics 1.4 APIs, see [Analytics 1.4 API Documentation](https://github.com/AdobeDocs/analytics-1.4-apis).
+This site provides developer documentation for the tools and libraries offered by PWA Studio.
 
-The Adobe Analytics APIs are a collection of APIs that power Adobe Analytics products like Analysis Workspace. 
-The APIs allow for the creation of data rich user interfaces that you can use to manipulate and integrate data.
-You can also create reports to explore, get insights, or answer important questions about your data.
+Magento’s PWA Studio gives you everything you need to create Progressive Web Application (PWA) storefronts powered by Magento.
+It provides tools to help you set up a development environment and libraries to create your own storefront components and extensions.
 
-## Discover 
+## Discover
 
-<DiscoverBlock width="100%" slots="heading, link, text"/>
+<DiscoverBlock slots="heading, link, text"/>
 
 ### Get Started
 
-[Quickstart Guide](guides/)
+[Project setup](tutorials/)
     
-Get started with the Adobe Analytics APIs.
+Get started with PWA Studio by creating a new storefront project.
+
+<DiscoverBlock slots="link, text"/>
+
+[Extension development](tutorials/extensions/)
+
+Learn how to create storefront extensions by following a tutorial.
 
 <DiscoverBlock slots="heading, link, text"/> 
 
 ### Guides
 
-[Calculated Metrics API](guides/calculated_metrics_api/) 
+[Project overview](guides/)
      
-Returns information on the user's company that is necessary for making other Adobe Analytics API calls.
+Learn about the PWA Studio project and the technologies it uses.
 
 <DiscoverBlock slots="link, text"/>
 
-[Segments API](guides/segments_api/) 
+[General concepts](guides/general-concepts/)
 
-Provides configuration guidance and best practices for the /segments endpoint.
+Background knowledge and patterns you should know when working with PWA Studio.
 
-<DiscoverBlock slots="link, text"/>
-
-[Reporting Guide API](guides/reporting_api/)
-
-Provides configuration guidance and best practices for the /reports endpoint.
-
-<DiscoverBlock slots="link, text"/>
-
-[Migrating from 1.4 to 2.0](guides/migrating/)
-
-For help migrating from the 1.4 versions of the Analytics API to the newer and more capable /reports API.   
-
-<DiscoverBlock width="100%" slots="heading, link, text"/>
+<DiscoverBlock slots="heading, link, text"/>
 
 ### API References
 
-[Try the API](api/) 
+[Buildpack](api/buildpack/)
 
-Try the Analytics API with Swagger UI. Explore, make calls, with full endpoint descriptions.
+Build and configuration tools for your project.
 
-## Contributing 
+<DiscoverBlock slots="link, text"/>
 
-We encourage you to participate in our open documentation initiative, if you have suggestions, corrections, additions 
-or deletions for this documentation, check out the source from [this github repo](https://github.com/adobe/gatsby-theme-spectrum-example), and submit a pull 
-request with your contribution. For more information, refer to the [contributing page](support/contribute/).
+[Peregrine](api/peregrine/)
 
-## API Requests & Rate Limits
+A collection of custom React hooks and logic components.
 
-The timeout for API requests through adobe.io is currently *60 seconds*.
+<DiscoverBlock slots="link, text"/>
 
-The default rate limit for an Adobe Analytics Company is *120 requests per minute*. (The limit is enforced as *12 requests every 6 seconds*).
-When rate limiting is being enforced you will get `429` HTTP response codes with the following response body: `{"error_code":"429050","message":"Too many requests"}`    
+[Venia UI](api/venia/)
+
+A UI library of React components for your storefront.
+
+## Contributing
+
+### Project contributions
+
+Are you interested in contributing to the PWA Studio project?
+Visit the [community wiki][] for information on how to contribute the PWA Studio project.
+If you are looking for an issue to work on, visit the [backlog board][] and look at the **Good First Issue** column.
+
+For more information about contributing to this repository, see the [Contribution Guide](https://github.com/magento/pwa-studio/blob/develop/.github/CONTRIBUTING.md).
+
+### Documentation contributions
+
+We encourage you to participate in our open documentation initiative.
+If you have suggestions, corrections, additions or deletions for this documentation, check out the source from [this GitHub repo][], and submit a pull request with your contribution.
+For more information, refer to this project's [Contribution Guide](https://github.com/AdobeDocs/commerce-pwa-studio/blob/main/.github/CONTRIBUTING.md).
+
+[community wiki]: https://github.com/magento/pwa-studio/wiki
+[backlog board]: https://github.com/magento/pwa-studio/projects/1
+[this GitHub repo]: https://github.com/AdobeDocs/commerce-pwa-studio
