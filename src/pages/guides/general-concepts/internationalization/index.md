@@ -1,0 +1,5 @@
+---
+title: Internationalization
+---
+
+# Internationalization
