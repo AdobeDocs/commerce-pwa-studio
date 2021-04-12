@@ -1,0 +1,5 @@
+---
+title: TargetableESModuleObject
+---
+
+# TargetableESModuleObject

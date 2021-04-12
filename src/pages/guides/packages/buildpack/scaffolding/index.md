@@ -1,0 +1,5 @@
+---
+title: Scaffolding
+---
+
+# Scaffolding
