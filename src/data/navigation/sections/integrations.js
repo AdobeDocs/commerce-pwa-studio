@@ -1,5 +1,16 @@
 module.exports = [
   {
+    title: "Integrations",
+    path: "/integrations/",
+    header: true,
+    pages: [
+      {
+        title: "Overview",
+        path: "/integrations/",
+      },
+    ],
+  },
+  {
     title: "Magento",
     path: "/integrations/magento/",
     header: true,
