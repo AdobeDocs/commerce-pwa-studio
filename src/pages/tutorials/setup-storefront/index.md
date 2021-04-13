@@ -19,7 +19,7 @@ To see a demo of the Venia concept storefront, visit [venia.magento.com][].
 
 In your terminal, navigate to the directory where you want to install your storefront project and run the [scaffolding][] tool.
 
-[scaffolding]: guides/packages/buildpack/scaffolding/
+[scaffolding]: /guides/packages/buildpack/scaffolding/
 
 ### Scaffolding tool commands
 

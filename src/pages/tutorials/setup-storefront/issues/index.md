@@ -2,7 +2,7 @@
 title: Troubleshooting
 ---
 
-# Troubleshooting
+# Common setup issues
 
 Apply these fixes to address common issues you may encounter during project setup.
 

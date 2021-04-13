@@ -2,21 +2,33 @@
 title: Modify the Footer component
 ---
 
-One way to customize a storefront is to modify its UI components.
-This tutorial provides the steps for modifying Venia's **Footer** component by adding a link to the existing content.
+# Modify the Footer component
 
+One way to customize a storefront is to modify its UI components.
+
+## Overview
+
+This tutorial provides the steps for modifying Venia's **Footer** component by adding a link to the existing content.
 By the end of this tutorial, you will know how to override different pieces of Venia to add your customizations.
 
-{: .bs-callout .bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 This tutorial requires you to have a project set up using the steps provided in the [Project Setup][] tutorial.
 
-## Steps overview
+[project setup]: /tutorials/setup-storefront/
 
 When modifying any storefront component from the default Venia storefront, follow these basic steps:
 
-1.  Identify the component you want to update and its render chain
-1.  Make a copy of the target component and the components in its render chain in your project
-1.  Update dependencies in your project to use the new copies
+1. Identify the component you want to update and its render chain
+1. Make a copy of the target component and the components in its render chain in your project
+1. Update dependencies in your project to use the new copies
+
+<InlineAlert variant="warning" slots="text"/>
+
+The steps outlined in this tutorial explain the render chain replacement approach.
+This is a valid pattern in some situations, but you can make similar customizations with less code using [Targets and Targetables][].
+
+[targets and targetables]: /tutorials/targets/
 
 ## Identify the target component
 
@@ -27,22 +39,25 @@ The first step in modifying anything in the Venia storefront is to identify the 
 [React DevTools][] is a browser plugin for React developers.
 It gives you the ability to navigate and inspect component nodes in the React DOM tree.
 
+[react devtools]: https://reactjs.org/blog/2019/08/15/new-react-devtools.html
+
 After you install React DevTools in your browser, open your storefront and your browser's web developer tools.
 
-{: .bs-callout .bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 For this tutorial, Chrome's web developer tools are used, but these steps can be generally applied to other browsers.
 
-![Chrome dev tools][]
+![Chrome dev tools](images/web-dev-tools.png)
 
 In Chrome, the React DevTools is accessed through a dropdown on the top right of the developer tools panel.
 Read the React DevTools plugin documentation find out how to access this tool in your browser.
 
-![React DevTools in Chrome][]
+![React DevTools in Chrome](images/react-dev-tools.png)
 
 Use the React DevTools to select content in the footer element to see which component renders it.
 For this tutorial, select the **Footer** component.
 
-![Footer component selected][]
+![Footer component selected](images/footer-component-selected.png)
 
 ## Identify the render chain
 
@@ -56,12 +71,17 @@ For this tutorial, the render chain for the Footer component in the Venia storef
 You can verify this by looking at the source for the [Main][] and [App][] components.
 Main imports and renders the Footer component, and App imports and renders the Main component.
 
+[main]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Main/main.js
+[app]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/app.js
+
 ### Root components
 
 Static imported components, such as Header, Footer, and side Navigation, have render chains that begin in **App**, but content that is specific to a route have render chains that begin at a **Root Component**.
 
 Root components are dynamically loaded components associated with a Magento page type or route.
-A list of Venia's root components can be found in the [RootComponent][] directory in the PWA Studio project. 
+A list of Venia's root components can be found in the [RootComponent][] directory in the PWA Studio project.
+
+[rootcomponent]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/RootComponents
 
 ## Create component directories
 
@@ -97,6 +117,8 @@ cp node_modules/@magento/venia-ui/lib/components/App/app.js src/components/App
 If you look at the [`index.js` file for Venia's App component][], its default export is not `app.js`.
 The default export for this component is `container.js`, which is a container for the `app.js` module, so copy the `container.js` file into your project.
 
+[`index.js` file for venia's app component]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/index.js
+
 ```sh
 cp node_modules/@magento/venia-ui/lib/components/App/container.js src/components/App
 ```
@@ -124,6 +146,8 @@ cp node_modules/@magento/venia-ui/lib/components/Footer/footer.js src/components
 Open `src/components/Footer/footer.js` and make the following modifications to add a link to the footer element.
 
 Use the Link component to create a link to an internal route defined in the [Add a static route tutorial][]:
+
+[add a static route tutorial]: /tutorials/basic-modifications/add-static-route/
 
 ```diff
 
@@ -165,7 +189,7 @@ Update the relative imports in `src/components/Footer/footer.js`.
 Create a `src/components/Footer/index.js` file with the following content to set the default component export for the `Footer` directory.
 
 ```js
-export {default} from './footer'
+export { default } from "./footer";
 ```
 
 ### Update Main import statements
@@ -188,7 +212,7 @@ Skip updating the Footer import statement to use your project's modified Footer 
 Create a `src/components/Main/index.js` file with the following content to set the default component export for the `Main` directory.
 
 ```js
-export {default} from './main'
+export { default } from "./main";
 ```
 
 ### Update App import statements
@@ -229,7 +253,7 @@ Instead of directly exporting the module in `app.js` in the `index.js` file, it 
 This is the default export for the App component.
 
 ```js
-export {default} from './container'
+export { default } from "./container";
 ```
 
 ## Import new App component
@@ -246,18 +270,4 @@ Open your project's `src/index.js` file and update the import for the App compon
 
 You just customized the Footer component in your storefront project!
 
-![foo footer link][]
-
-[project setup]: <{%link tutorials/pwa-studio-fundamentals/project-setup/index.md %}>
-[add a static route tutorial]: <{%link tutorials/pwa-studio-fundamentals/add-a-static-route/index.md %}>
-
-[chrome dev tools]: ./images/web-dev-tools.png
-[react devtools in chrome]: ./images/react-dev-tools.png
-[footer component selected]: ./images/footer-component-selected.png
-
-[foo footer link]: ./images/foo-footer-link.png
-[react devtools]: https://reactjs.org/blog/2019/08/15/new-react-devtools.html
-[main]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Main/main.js
-[app]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/app.js
-[rootcomponent]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/RootComponents
-[`index.js` file for venia's app component]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/index.js
+![foo footer link](images/foo-footer-link.png)

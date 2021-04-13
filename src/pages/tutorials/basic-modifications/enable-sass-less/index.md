@@ -1,8 +1,13 @@
+---
+title: Enable SASS or LESS support
+---
+
 # Enable SASS or LESS support
 
 This tutorial provides the steps to enable SASS or LESS support in your storefront project.
-
 Use these Webpack configurations to add support for SASS and LESS alongside [CSS Modules][].
+
+[css modules]: /guides/general-concepts/css-modules/
 
 ## Add SASS support
 
@@ -66,28 +71,28 @@ $button-color: #ff495b;
 $button-color-hover: #ff9c1a;
 
 .root {
-    padding: 15px;
+  padding: 15px;
 }
 
 .button {
-    color: $button-color;
+  color: $button-color;
 
-    &:hover {
-        color: $button-color-hover;
-    }
+  &:hover {
+    color: $button-color-hover;
+  }
 }
 ```
 
 Create a component and import the SASS file:
 
 ```jsx
-import React from 'react';
-import defaultClasses from './myComponent.scss';
+import React from "react";
+import defaultClasses from "./myComponent.scss";
 
 const MyComponent = () => (
-    <div className={defaultClasses.root}>
-        <button className={defaultClasses.button}>My Component</button>
-    </div>
+  <div className={defaultClasses.root}>
+    <button className={defaultClasses.button}>My Component</button>
+  </div>
 );
 
 export default MyComponent;
@@ -155,31 +160,29 @@ Create the `myComponent.less` file:
 @button-color-hover: #ff9c1a;
 
 .root {
-    padding: 15px;
+  padding: 15px;
 }
 
 .button {
-    color: @button-color;
+  color: @button-color;
 
-    &:hover {
-        color: @button-color-hover;
-    }
+  &:hover {
+    color: @button-color-hover;
+  }
 }
 ```
 
 Create a component and import the LESS file:
 
 ```jsx
-import React from 'react';
-import defaultClasses from './myComponent.less';
+import React from "react";
+import defaultClasses from "./myComponent.less";
 
 const MyComponent = () => (
-    <div className={defaultClasses.root}>
-        <button className={defaultClasses.button}>My Component</button>
-    </div>
+  <div className={defaultClasses.root}>
+    <button className={defaultClasses.button}>My Component</button>
+  </div>
 );
 
 export default MyComponent;
 ```
-
-[css modules]: <{%link technologies/basic-concepts/css-modules/index.md %}>
