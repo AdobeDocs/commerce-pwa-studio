@@ -2,12 +2,23 @@
 title: Modify talon results
 ---
 
+# Modify talon results
+
+The [talons target][] in Peregrine exposes talons as wrappable modules.
+This lets you define a wrapper module that intercepts a talon and let you modify the results.
+
+[talons target]: /api/peregrine/extension-points/wrappable-talons/
+
+## Background
+
 In core Magento development:
 
 > A plugin, or interceptor, is a class that modifies the behavior of public class functions by intercepting a function call and running code before, after, or around that function call.
 > This allows you to substitute or extend the behavior of original, public methods for any class or interface.
 
 See: [Plugins (Interceptors)][]
+
+[plugins (interceptors)]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html
 
 PWA Studio's extensibility framework provides a similar feature that allows you to intercept a talon call and surround it with custom logic.
 This is useful if you want to add tracking logic or alter the incoming or outgoing values for a talon.
@@ -28,10 +39,10 @@ This tutorial teaches you how to create an extension that intercepts a talon and
 
 To intercept and wrap a talon, you need a PWA Studio extension.
 Use [`npm init`][] or [`yarn init`][] to create a new JavaScript package project for this tutorial.
+Since, this is a standalone project, you do not need to create this inside a storefront project.
 
-{: .bs-callout .bs-callout-info}
-**Note:** This is a standalone project.
-You do not need to create this inside a storefront project.
+[`npm init`]: https://docs.npmjs.com/cli/init
+[`yarn init`]: https://classic.yarnpkg.com/en/docs/cli/init/
 
 Edit the `packages.json` file so it looks like the following:
 
@@ -55,7 +66,7 @@ Edit the `packages.json` file so it looks like the following:
     "graphql-tag": "~2.10.1",
     "react": "~17.0.1",
     "webpack": "~4.38.0"
-  },
+  }
 }
 ```
 
@@ -149,8 +160,8 @@ const useProductCategoriesList = (props) => {
     fetchPolicy: "cache-and-network",
     nextFetchPolicy: "cache-first",
     variables: {
-      urlKey: urlKey
-    }
+      urlKey: urlKey,
+    },
   });
 
   const categories = useMemo(() => {
@@ -163,7 +174,7 @@ const useProductCategoriesList = (props) => {
   return {
     error,
     isLoading: loading,
-    categories
+    categories,
   };
 };
 
@@ -190,12 +201,12 @@ import useProductCategoriesList from "../hooks/useProductCategoriesList";
 
 const wrapUseProductFullDetails = (original) => {
   return function useProductFullDetails(props, ...restArgs) {
-    console.log("Calling new useProductFullDetails() function!")
+    console.log("Calling new useProductFullDetails() function!");
 
     const { product } = props;
 
     const categoriesListData = useProductCategoriesList({
-      urlKey: product.url_key
+      urlKey: product.url_key,
     });
 
     const { productDetails, ...defaultReturnData } = original(
@@ -207,8 +218,8 @@ const wrapUseProductFullDetails = (original) => {
       ...defaultReturnData,
       productDetails: {
         ...productDetails,
-        categoriesList: categoriesListData
-      }
+        categoriesList: categoriesListData,
+      },
     };
   };
 };
@@ -267,9 +278,4 @@ Now, when you navigate to a product page, the following message appears in the c
 
 Use additional `console.log()` calls to verify the application calls the data fetch hook.
 
-<!-- TODO: Create a follw-up tutorial for this or update the create-taglist-component topic when the targetables PR is merged or released -->
 To test the new props data the wrapped talon returns, you will need to create a copy of the ProductFullDetails component and alter it to log or render the new data.
-
-[`npm init`]: https://docs.npmjs.com/cli/init
-[`yarn init`]: https://classic.yarnpkg.com/en/docs/cli/init/
-[plugins (interceptors)]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html 
