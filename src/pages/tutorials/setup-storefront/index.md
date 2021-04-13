@@ -1,3 +1,7 @@
+---
+title: Setup a storefront project
+---
+
 # Setup a storefront project
 
 Follow this tutorial and learn to set up a new PWA Studio storefront project.
@@ -8,9 +12,14 @@ This tutorial provides the first steps for working with PWA Studio by teaching y
 You will create a PWA Studio storefront project based on the [Venia concept storefront][] and configure it based on your environment.
 To see a demo of the Venia concept storefront, visit [venia.magento.com][].
 
+[venia concept storefront]: /guides/packages/venia/
+[venia.magento.com]: http://venia.magento.com/
+
 ## Run the scaffolding tool
 
 In your terminal, navigate to the directory where you want to install your storefront project and run the [scaffolding][] tool.
+
+[scaffolding]: guides/packages/buildpack/scaffolding/
 
 ### Scaffolding tool commands
 
@@ -62,6 +71,9 @@ Fortunately, PWA Studio provides an easy method of creating a custom domain and 
 
 Use the [`create-custom-origin`][] sub-command from the [buildpack CLI][] to create a custom hostname and SSL cert:
 
+[`create-custom-origin`]: /api/buildpack/cli/create-custom-origin/
+[buildpack cli]: /api/buildpack/cli/
+
 ```bash
 yarn buildpack create-custom-origin ./
 ```
@@ -93,6 +105,8 @@ This step is optional because the scaffolding command already adds the required 
 
 If you want to change [environment variables][], such as `MAGENTO_BACKEND_URL` or `BRAINTREE_TOKEN`, update your project's `.env` file and change the property values.
 
+[environment variables]: /api/buildpack/environment/variables/
+
 ## Next steps
 
 <DiscoverBlock width="45%" slots="link, text"/>
@@ -101,22 +115,12 @@ If you want to change [environment variables][], such as `MAGENTO_BACKEND_URL` o
 
 Learn about the storefront project file structure.
 
+[explore the files]: file-structure/
+
 <DiscoverBlock width="45%" slots="link, text"/>
 
 [Common setup issues][]
 
 Troubleshoot common setup issues.
 
-[explore the files]: file-structure/
-[post setup tasks]: post-setup-tasks/
 [common setup issues]: issues/
-
-[scaffolding]: pwa-buildpack/scaffolding/
-[peregrine]: peregrine/
-[venia concept storefront]: venia-pwa-concept/
-[`create-custom-origin`]: pwa-buildpack/reference/buildpack-cli/create-custom-origin/
-[buildpack cli]: pwa-buildpack/reference/buildpack-cli/
-[environment variables]: pwa-buildpack/reference/environment-variables/core-definitions/
-[explore the project structure]: tutorials/setup-project/project-structure/
-[venia.magento.com]: http://venia.magento.com/
-[http://0.0.0.0:10000/]: http://0.0.0.0:10000/
