@@ -55,6 +55,7 @@ DEBUG=pwa-buildpack:WebpackTools:plugins:LocalizationPlugin.js yarn build
 ```
 
 [debug]: https://github.com/visionmedia/debug
+
 ## Other issues
 
 If you encounter any other issues, ask the Magento community in the [#PWA][] Slack channel.
