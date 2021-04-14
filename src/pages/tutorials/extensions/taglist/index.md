@@ -2,6 +2,8 @@
 title: Create a tag list extension
 ---
 
+# Create a tag list extension
+
 A tag list is a group of tags associated with a product.
 This tutorial provides steps for creating and installing an extension that displays a tag list on the product details page in a Venia-based storefront.
 
@@ -9,6 +11,8 @@ This tutorial provides steps for creating and installing an extension that displ
 
 Before you start this tutorial, make sure you have a storefront project set up using the steps outlined in the [Setup your project][] topic.
 This is the storefront you will use to install your extension in this tutorial.
+
+[setup your project]: /tutorials/setup-storefront/
 
 ## Set up the extension project
 
@@ -55,7 +59,7 @@ It lets another component import the tag list component using the `TagList` dire
 ```js
 /* src/TagList/index.js */
 
-export {default} from './tagList'
+export { default } from "./tagList";
 ```
 
 ### `tag.js` and `tag.css`
@@ -66,12 +70,12 @@ The `tag.js` and `tag.css` files define a Tag component that renders a single ta
 /* src/TagList/tag.js */
 
 import React from "react";
-import Button from '@magento/venia-ui/lib/components/Button'
-import { Link } from '@magento/venia-ui/lib/drivers';
+import Button from "@magento/venia-ui/lib/components/Button";
+import { Link } from "@magento/venia-ui/lib/drivers";
 
-import classes from './tag.css'
+import classes from "./tag.css";
 
-const categoryUrlSuffix = '.html'
+const categoryUrlSuffix = ".html";
 
 // This is a component responsible for rendering a single tag
 const Tag = (props) => {
@@ -82,9 +86,9 @@ const Tag = (props) => {
   const url = `/${url_path}${categoryUrlSuffix}`;
 
   const buttonClasses = {
-        root_lowPriority: classes.root,
-        content: classes.content
-    }
+    root_lowPriority: classes.root,
+    content: classes.content,
+  };
 
   return (
     <Link className={classes.link} to={url}>
@@ -103,15 +107,15 @@ export default Tag;
 /* src/TagList.tag.css */
 
 .root {
-    border: solid 1px #2680eb;
-    padding: 3px 9px;
-    margin: 5px;
-    border-radius: 6px;
+  border: solid 1px #2680eb;
+  padding: 3px 9px;
+  margin: 5px;
+  border-radius: 6px;
 }
 
 .content {
-    color: #2680eb;
-    font-size: 0.875rem;
+  color: #2680eb;
+  font-size: 0.875rem;
 }
 ```
 
@@ -126,7 +130,7 @@ It accepts a `categoriesListData` object as a prop and renders the data as a tag
 import React from "react";
 import Tag from "./tag";
 
-import classes from './tagList.css';
+import classes from "./tagList.css";
 
 const TagList = (props) => {
   // Destructures the props object into variables
@@ -135,8 +139,8 @@ const TagList = (props) => {
   const { categories } = categoriesListData;
 
   // Returns nothing if there are no categories
-  if(!categories){
-      return null;
+  if (!categories) {
+    return null;
   }
 
   // Converts the array of tag strings into an array of Tag components
@@ -155,8 +159,8 @@ export default TagList;
 /* src/TagList/tagList.css */
 
 .root {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 ```
 
@@ -207,7 +211,7 @@ export { default as TagList } from "./src/TagList";
 Now, other developers can import the TagList component in their own projects using the following syntax:
 
 ```js
-import {TagList} from 'tagList'
+import { TagList } from "tagList";
 ```
 
 ## Create data fetch hook
@@ -215,6 +219,8 @@ import {TagList} from 'tagList'
 The TagList component requires data the [ProductDetailsFragment][] does not provide, so
 you need to create a data fetch hook.
 The data fetch hook is a custom React hook that sends a GraphQL query requesting the product categories for a product.
+
+[productdetailsfragment]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/RootComponents/Product/productDetailFragment.gql.js
 
 Run the following command to create this file:
 
@@ -253,8 +259,8 @@ const useProductCategoriesList = (props) => {
     fetchPolicy: "cache-and-network",
     nextFetchPolicy: "cache-first",
     variables: {
-      urlKey: urlKey
-    }
+      urlKey: urlKey,
+    },
   });
 
   const categories = useMemo(() => {
@@ -267,7 +273,7 @@ const useProductCategoriesList = (props) => {
   return {
     error,
     isLoading: loading,
-    categories
+    categories,
   };
 };
 
@@ -344,11 +350,11 @@ Edit this file and add the following content:
 
 ```js
 module.exports = (targets) => {
-    const { Targetables } = require('@magento/pwa-buildpack');
+  const { Targetables } = require("@magento/pwa-buildpack");
 
-    const targetables = Targetables.using(targets);
+  const targetables = Targetables.using(targets);
 
-    targetables.setSpecialFeatures('esModules','cssModules');
+  targetables.setSpecialFeatures("esModules", "cssModules");
 };
 ```
 
@@ -406,44 +412,46 @@ This adds a new entry under `devDependencies` in your storefront project's `pack
 All scaffolded projects come with an intercept file called `local-intercept.js`.
 This file lets you use [Targets and Targetables][] to make modifications to the Venia application code without copying over the source file.
 
+[targets and targetables]: /tutorials/targets/
+
 Edit this file so it looks like the following:
 
 ```js
 /* local-intercept.js */
 
 // Import the Targetables manager
-const { Targetables } = require('@magento/pwa-buildpack');
+const { Targetables } = require("@magento/pwa-buildpack");
 
 function localIntercept(targets) {
-    // Create a bound Targetable factory
-    const targetables = Targetables.using(targets);
+  // Create a bound Targetable factory
+  const targetables = Targetables.using(targets);
 
-    // Create a React component targetable linked to the productFullDetail.js file
-    const ProductDetails = targetables.reactComponent(
-        '@magento/venia-ui/lib/components/ProductFullDetail/productFullDetail.js'
-    );
+  // Create a React component targetable linked to the productFullDetail.js file
+  const ProductDetails = targetables.reactComponent(
+    "@magento/venia-ui/lib/components/ProductFullDetail/productFullDetail.js"
+  );
 
-    // Add an import statement to the productFullDetail.js file and
-    // return the SingleImportStatement object
-    const TagList = ProductDetails.addImport("{TagList} from 'tagList'");
+  // Add an import statement to the productFullDetail.js file and
+  // return the SingleImportStatement object
+  const TagList = ProductDetails.addImport("{TagList} from 'tagList'");
 
-    // Insert the TagList component after the product description and pass in the
-    // new categoriesListData object added to the useProductFullDetails() hook
-    ProductDetails.insertAfterJSX(
-        '<RichText content={productDetails.description} />',
-        `<${TagList} categoriesListData={productDetails.categoriesListData} />`
-    );
-    
-    // Create an ES Module targetable linked to the useProductFullDetail.js file
-    const useProductFullDetails = targetables.esModule(
-        '@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail.js'
-    );
+  // Insert the TagList component after the product description and pass in the
+  // new categoriesListData object added to the useProductFullDetails() hook
+  ProductDetails.insertAfterJSX(
+    "<RichText content={productDetails.description} />",
+    `<${TagList} categoriesListData={productDetails.categoriesListData} />`
+  );
 
-    // Wrap the useProductFullDetail hook with your extension's wrapper file
-    useProductFullDetails.wrapWithFile(
-        'useProductFullDetail',
-        'tagList/src/targets/wrapper'
-    );
+  // Create an ES Module targetable linked to the useProductFullDetail.js file
+  const useProductFullDetails = targetables.esModule(
+    "@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail.js"
+  );
+
+  // Wrap the useProductFullDetail hook with your extension's wrapper file
+  useProductFullDetails.wrapWithFile(
+    "useProductFullDetail",
+    "tagList/src/targets/wrapper"
+  );
 }
 
 module.exports = localIntercept;
@@ -457,7 +465,10 @@ Now, when you start your storefront application and navigate to a product page, 
 
 ## Live example
 
-You can see this extension running live in this [CodeSandbox instance][] or you can check out the source repository in the [`taglist-extension-tutorial`][] branch in the **magento-devdocs/pwa-studio-code-sandbox** GitHub project.
+You can see this extension running live in this [CodeSandbox instance][] or you can check out the source repository in the [taglist-extension-tutorial][] branch in the **magento-devdocs/pwa-studio-code-sandbox** GitHub project.
+
+[taglist-extension-tutorial]: https://github.com/magento-devdocs/pwa-studio-code-sandbox/tree/taglist-extension-tutorial
+[codesandbox instance]: https://codesandbox.io/s/github/magento-devdocs/pwa-studio-code-sandbox/tree/taglist-extension-tutorial/
 
 <iframe src="https://codesandbox.io/embed/github/magento-devdocs/pwa-studio-code-sandbox/tree/taglist-extension-tutorial/?fontsize=12&hidenavigation=1&module=%2Fextensions%2FtagList%2Fpackage.json&moduleview=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -465,10 +476,3 @@ You can see this extension running live in this [CodeSandbox instance][] or you 
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
-
-[setup your project]: <{%link tutorials/pwa-studio-fundamentals/project-setup/index.md %}>
-[targets and targetables]: <{%link pwa-buildpack/extensibility-framework/index.md %}>
-
-[productdetailsfragment]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/RootComponents/Product/productDetailFragment.gql.js
-[`taglist-extension-tutorial`]: https://github.com/magento-devdocs/pwa-studio-code-sandbox/tree/taglist-extension-tutorial
-[codesandbox instance]: https://codesandbox.io/s/github/magento-devdocs/pwa-studio-code-sandbox/tree/taglist-extension-tutorial/
