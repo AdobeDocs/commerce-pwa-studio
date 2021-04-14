@@ -45,6 +45,16 @@ See the [PWA Buildpack troubleshooting][] page for a solution to this issue.
 
 ![privacy error](./images/privacy-error.png)
 
+## Debugging
+
+You can use the [DEBUG][] option to print out more verbose messages to the command line when you run the build or watch script.
+For example, if you are having issues with the localization feature, you can run the following:
+
+```sh
+DEBUG=pwa-buildpack:WebpackTools:plugins:LocalizationPlugin.js yarn build
+```
+
+[debug]: https://github.com/visionmedia/debug
 ## Other issues
 
 If you encounter any other issues, ask the Magento community in the [#PWA][] Slack channel.
