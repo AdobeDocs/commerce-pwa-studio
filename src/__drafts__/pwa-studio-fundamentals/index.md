@@ -13,9 +13,9 @@ During the course of the tutorials, you will create a new storefront application
 
 ## Prerequisites
 
--   A basic understanding of [React][]
--   Node >= 10.14.1
--   Yarn (recommended) or NPM
+- A basic understanding of [React][]
+- Node >= 10.14.1
+- Yarn (recommended) or NPM
 
 ### Node 12 deprecation warning
 
@@ -29,17 +29,17 @@ This is caused by a project dependency used by PWA Studio and not by PWA Studio 
 
 ## Tutorials available
 
--   [Project setup][] - Setup a local development environment using the scaffolding tool
--   [Project Structure][] - Learn about the project structure of your new project
--   [Add a static route][] - Add a static route to your PWA Studio app
--   [Modify the site footer][] - Learn how to modify existing components by modifying the site footer
--   [Production launch checklist][] - Make sure your storefront is production ready with this checklist
+- [Project setup][] - Setup a local development environment using the scaffolding tool
+- [Project Structure][] - Learn about the project structure of your new project
+- [Add a static route][] - Add a static route to your PWA Studio app
+- [Modify the site footer][] - Learn how to modify existing components by modifying the site footer
+- [Production launch checklist][] - Make sure your storefront is production ready with this checklist
 
 ## Related content
 
--   [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps)
--   [Introduction to React](https://reactjs.org/tutorial/tutorial.html)
--   [Main React concepts](https://reactjs.org/docs/hello-world.html)
+- [Progressive Web Apps](https://developers.google.com/web/progressive-web-apps)
+- [Introduction to React](https://reactjs.org/tutorial/tutorial.html)
+- [Main React concepts](https://reactjs.org/docs/hello-world.html)
 
 [magento pwa studio]: {%link technologies/overview/index.md %}
 [what we are building]: {%link tutorials/pwa-studio-fundamentals/images/foo-screen-shot.png %}
