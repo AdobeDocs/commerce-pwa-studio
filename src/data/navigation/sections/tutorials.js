@@ -88,7 +88,7 @@ module.exports = [
       },
       {
         title: "Deploy to Magento Cloud",
-        path: "/tutorials/production-deployment/magento-cloud",
+        path: "/tutorials/production-deployment/magento-cloud/",
       },
     ],
   },

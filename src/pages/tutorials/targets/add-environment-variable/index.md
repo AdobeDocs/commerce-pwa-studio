@@ -2,14 +2,18 @@
 title: Add a new environment variable
 ---
 
+# Add a new environment variable
+
 Environment variables provide values that may vary across different instances of the same project.
-For example, the `MAGENTO_BACKEND_URL` environment variable tells your storefront project which Magento instance it uses during runtime.
 The value of this variable can vary between development, staging, and production environments.
 
+## Background
+
 In PWA Studio storefront projects, the `.env` file in the project's root directory lists the environment variables and their values.
+For example, the `MAGENTO_BACKEND_URL` environment variable tells your storefront project which Magento instance it uses during runtime.
 These variables are available to your Node scripts, but for security reasons, PWA Studio limits which variables your frontend code can access.
 
-This tutorial teaches you how to create a package that provides a React component that uses an environment variable.
+This tutorial teaches you how to create a package which provides a React component that uses an environment variable.
 
 ## Tasks overview
 
@@ -22,10 +26,10 @@ This tutorial teaches you how to create a package that provides a React componen
 ## Initialize the project
 
 Use [`npm init`][] or [`yarn init`][] to create a new JavaScript package project for this tutorial.
+Since this is a standalone project, you do not need to create this inside a storefront project.
 
-{: .bs-callout .bs-callout-info}
-**Note:** This is a standalone project.
-You do not need to create this inside a storefront project.
+[`npm init`]: https://docs.npmjs.com/cli/init
+[`yarn init`]: https://classic.yarnpkg.com/en/docs/cli/init/
 
 Edit the `package.json` file so it looks like the following:
 
@@ -55,7 +59,7 @@ Inside the `placeholderImage.js`, add the following content:
 ```jsx
 import React from "react";
 
-const PlaceholderImage = props => {
+const PlaceholderImage = (props) => {
   const { width = 300, height = 300 } = props;
 
   const urlTemplate = process.env.IMAGE_PLACEHOLDER_SERVICE_URL;
@@ -164,6 +168,8 @@ module.exports = (targets) => {
 When this file runs, it taps into the `envVarDefinitions` target from the available targets in `@magento/pwa-buildpack` and passes in an intercept function.
 The intercept function appends a new definition to the [core environment variable definitions][], which allows frontend code access to the `IMAGE_PLACEHOLDER_SERVICE_URL` environment variable.
 
+[core environment variable definitions]: /api/buildpack/environment/variables/
+
 ## Test on a local instance
 
 Install this package in a local storefront project to use the PlaceholderImage component.
@@ -201,21 +207,22 @@ mkdir -p src/components/PlaceholderImageDemo && touch src/component/PlaceholderI
 Inside `placeholderImageDemo.js`, add the following content:
 
 ```jsx
-import React from 'react'
-import PlaceholderImage from 'PlaceholderImage'
+import React from "react";
+import PlaceholderImage from "PlaceholderImage";
 
 const PlaceholderImageDemo = () => {
+  return <PlaceholderImage width={200} height={300} />;
+};
 
-    return <PlaceholderImage width={200} height={300} />
-}
-
-export default PlaceholderImageDemo
+export default PlaceholderImageDemo;
 ```
 
 ### Add a static route
 
-If you used the project scaffolding tool in PWA Studio 8.0.0, your project will have a `local-intercept.js` file.
+If you used the project scaffolding tool in PWA Studio 8.0.0 or above, your project will have a `local-intercept.js` file.
 If you do not have this file, use the same earlier steps to [create and register the intercept file][].
+
+[create and register the intercept file]: #create-and-register-the-intercept-file
 
 Inside your storefront's intercept file, add the following content to add a new static route for your demo page:
 
@@ -228,13 +235,13 @@ function localIntercept(targets) {
       exact: true,
       path: require.resolve(
         "./src/components/PlaceholderImageDemo/placeholderImageDemo.js"
-      )
+      ),
     });
     return routes;
   });
 }
 
-module.exports = localIntercept
+module.exports = localIntercept;
 ```
 
 ### Check out the page
@@ -247,9 +254,3 @@ Now, when you start your project, you can navigate to `/placeholder-image-demo` 
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
    ></iframe>
-
-[core environment variable definitions]: <{%link pwa-buildpack/reference/environment-variables/core-definitions/index.md %}>
-
-[create and register the intercept file]: #create-and-register-the-intercept-file
-[`npm init`]: https://docs.npmjs.com/cli/init
-[`yarn init`]: https://classic.yarnpkg.com/en/docs/cli/init/

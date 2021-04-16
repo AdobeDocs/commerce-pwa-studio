@@ -2,21 +2,32 @@
 title: Add a static route
 ---
 
+# Add a static route
+
 Magento's built in CMS system and [PageBuilder][] feature lets you create highly customized content pages for your storefront, but
 sometimes you need a page that fulfills a specific function, such as a checkout or login page.
+
+[pagebuilder]: /integrations/pagebuilder/
+
+## Overview
 
 This tutorial provides steps for creating a custom, static route for these types of functional pages.
 
 By the end of this tutorial, you will know how to:
 
--   Define a custom React component to render route content
--   Use the extensibility framework to tap into Venia UI's routes target
--   Add a new static route to the routes list which renders the custom React component
+- Define a custom React component to render route content
+- Use the extensibility framework to tap into Venia UI's routes target
+- Add a new static route to the routes list which renders the custom React component
 
 For more information on routing, see [Routing][].
 
-{: .bs-callout .bs-callout-info}
+[routing]: /guides/general-concepts/routing/
+
+<InlineAlert variant="info" slots="text"/>
+
 This tutorial requires you to have a project set up using the steps provided in the [Project Setup][] tutorial.
+
+[project setup]: /tutorials/setup-storefront/
 
 ## Create a components directory
 
@@ -53,11 +64,11 @@ import { useParams } from "react-router-dom";
 
 const hi = {
   textAlign: "center",
-  margin: "1rem"
+  margin: "1rem",
 };
 const wave = {
   ...hi,
-  fontSize: "5rem"
+  fontSize: "5rem",
 };
 
 const GreetingPage = () => {
@@ -68,7 +79,7 @@ const GreetingPage = () => {
       <h1 style={wave}>{"\uD83D\uDC4B"}</h1>
     </div>
   );
-}
+};
 
 export default GreetingPage;
 ```
@@ -83,7 +94,7 @@ This pattern of exposing the module through the `index.js` file is the same patt
 ```js
 /* src/components/GreetingPage/index.js */
 
-export {default} from './greetingPage';
+export { default } from "./greetingPage";
 ```
 
 ## Tap into the extensibility framework
@@ -106,12 +117,12 @@ touch -p src/targets/local-intercept.js
 Inside the `src/targets/local-intercept.js` file, write the following content:
 
 ```js
-module.exports = targets => {
-  targets.of("@magento/venia-ui").routes.tap(routes => {
+module.exports = (targets) => {
+  targets.of("@magento/venia-ui").routes.tap((routes) => {
     routes.push({
       name: "MyGreetingRoute",
       pattern: "/greeting/:who?",
-      path: require.resolve("../components/GreetingPage/greetingPage.js")
+      path: require.resolve("../components/GreetingPage/greetingPage.js"),
     });
     return routes;
   });
@@ -120,6 +131,8 @@ module.exports = targets => {
 
 The code in this file accesses the [routes target][] of `@magento/venia-ui` and adds a new entry to the list.
 It adds a new route definition object that specifies the pattern for a new route and which page component renders that route.
+
+[routes target]: /api/peregrine/extension-points/targets/
 
 ### Register the intercept file
 
@@ -150,12 +163,3 @@ You should see the following content on the page:
 ## Congratulations
 
 You just created a static route in your storefront project!
-
-[routing]: <{%link peregrine/routing/index.md %}>
-[project setup]: <{%link tutorials/pwa-studio-fundamentals/project-setup/index.md %}>
-[pagebuilder]: <{%link pagebuilder/index.md %}>
-[project structure]: <{%link tutorials/pwa-studio-fundamentals/index.md %}>
-[routes target]: <{%link venia-ui/reference/targets/index.md %}#routes--tapablesynchook>
-[routes]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Routes/routes.js
-[app]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/app.js
-[`index.js` file for venia's app component]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/index.js

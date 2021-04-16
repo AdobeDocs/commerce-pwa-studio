@@ -2,14 +2,14 @@
 title: Home - PWA Studio
 description: Developer documentation for PWA Studio
 contributors:
-  - https://github.com/jcalcaben 
+  - https://github.com/jcalcaben
 ---
 
 <Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
 ![Hero image](./home-bg.jpg)
 
-# PWA Studio 
+# PWA Studio
 
 PWA Studio offers the tools you need to develop a Progressive Web Application storefront for Magento.
 
@@ -35,7 +35,7 @@ It provides tools to help you set up a development environment and libraries to 
 ### Get Started
 
 [Project setup](tutorials/)
-    
+
 Get started with PWA Studio by creating a new storefront project.
 
 <DiscoverBlock slots="link, text"/>
@@ -44,12 +44,12 @@ Get started with PWA Studio by creating a new storefront project.
 
 Learn how to create storefront extensions by following a tutorial.
 
-<DiscoverBlock slots="heading, link, text"/> 
+<DiscoverBlock slots="heading, link, text"/>
 
 ### Guides
 
 [Project overview](guides/)
-     
+
 Learn about the PWA Studio project and the technologies it uses.
 
 <DiscoverBlock slots="link, text"/>
@@ -96,4 +96,4 @@ For more information, refer to this project's [Contribution Guide](https://githu
 
 [community wiki]: https://github.com/magento/pwa-studio/wiki
 [backlog board]: https://github.com/magento/pwa-studio/projects/1
-[this GitHub repo]: https://github.com/AdobeDocs/commerce-pwa-studio
+[this github repo]: https://github.com/AdobeDocs/commerce-pwa-studio

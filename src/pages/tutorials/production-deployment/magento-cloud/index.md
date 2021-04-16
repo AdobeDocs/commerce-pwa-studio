@@ -2,8 +2,14 @@
 title: Magento Cloud deployment
 ---
 
+# Magento Cloud deployment
+
 [Magento Commerce Cloud][] is a managed, automated hosting platform for the Magento Commerce software.
 You can use this platform to host your storefront code by installing packages developed specifically to connect your storefront with Magento on the same server.
+
+[magento commerce cloud]: https://devdocs.magento.com/cloud/bk-cloud.html
+
+## Overview
 
 This tutorial provides the general steps for adding your storefront onto your Magento Commerce Cloud project and setting it as the front end application.
 By the end of this tutorial, you will have a Cloud project setup that includes your storefront project's code bundles.
@@ -14,19 +20,32 @@ You can use this setup to update and deploy your storefront project in Magento C
 Before you follow this tutorial, you should be familiar with Cloud's [Starter workflow][] or [Pro workflow][] depending on your plan.
 Make sure you complete the [Cloud onboarding tasks][] to avoid account or access issues.
 
+[starter workflow]: https://devdocs.magento.com/cloud/architecture/starter-develop-deploy-workflow.html
+[pro workflow]: https://devdocs.magento.com/cloud/architecture/pro-develop-deploy-workflow.html
+[cloud onboarding tasks]: https://devdocs.magento.com/cloud/onboarding/onboarding-tasks.html
+
 Verify that your Magento instance is [compatible][] with the PWA Studio version you use in your storefront project.
+
+[compatible]: /integrations/magento/version-compatibility/
 
 This tutorial requires the following tools:
 
--   [Magento Cloud CLI][]
--   Git
--   [Composer][]
--   Yarn or NPM (depends on your storefront project configuration)
+- [Magento Cloud CLI][]
+- Git
+- [Composer][]
+- Yarn or NPM (depends on your storefront project configuration)
+
+[magento cloud cli]: https://devdocs.magento.com/cloud/reference/cli-ref-topic.html
+[composer]: https://getcomposer.org/
 
 If you need to do more advanced Cloud tasks, see the [Cloud technologies and requirements][] for the full list of tools you need to fully manage the rest of your Cloud project.
 
+[cloud technologies and requirements]: https://devdocs.magento.com/cloud/requirements/cloud-requirements.html
+
 You also need an existing storefront project to do this tutorial.
 Follow the instructions on the [Project setup][] page to set up your storefront project using the scaffolding tool.
+
+[project setup]: /tutorials/setup-storefront/
 
 ## Tasks overview
 
@@ -100,6 +119,9 @@ magento-cloud checkout staging
 Magento Cloud does not support node processes, so you cannot use UPWARD-JS to serve your storefront project.
 You must use the [magento2-upward-connector][] module with [UPWARD-PHP][] to deploy your storefront in Magento Cloud.
 
+[magento2-upward-connector]: https://github.com/magento/magento2-upward-connector
+[upward-php]: https://github.com/magento/upward-php
+
 Use the `composer` CLI command to add the magento2-upward-connector module to the Magento installation:
 
 ```sh
@@ -112,26 +134,28 @@ This command modifies the `composer.json` file and adds the package entry to the
 "magento/module-upward-connector": "^1.1.2"
 ```
 
-{: .bs-callout .bs-callout-info}
+<InlineAlert variant="info" slots="text"/>
+
 UPWARD-PHP is a dependency of the magento2-upward-connector, so
 you do not need to add it manually to your project.
 
 ## Set environment variables
 
-PWA Studio storefronts require you to set the following [environment variables][] in your project for the build and runtime processes:
+PWA Studio storefronts require you to set specific [environment variables][] in your project for the build and runtime processes.
 
-| Name                                 | Buildtime                                     | Runtime                                       | Description                                                       |
-| ------------------------------------ | --------------------------------------------- | --------------------------------------------- | ----------------------------------------------------------------- |
-| `CONFIG__DEFAULT__WEB__UPWARD__PATH` |                                               | <i class="material-icons green">check_box</i> | Absolute path to UPWARD YAML configuration                        |
-| `NODE_ENV`                           | <i class="material-icons green">check_box</i> | <i class="material-icons green">check_box</i> | Specifies the node environment type                               |
-| `MAGENTO_BACKEND_URL`                | <i class="material-icons green">check_box</i> | <i class="material-icons green">check_box</i> | URL of your Magento backend                                       |
-| `CHECKOUT_BRAINTREE_TOKEN`           | <i class="material-icons green">check_box</i> |                                               | Braintree token associated with your Magento backend              |
-| `MAGENTO_BACKEND_EDITION`            | <i class="material-icons green">check_box</i> |                                               | Must be `EE` since Cloud only supports Magento Enterprise Edition |
-| `IMAGE_OPTIMIZING_ORIGIN`            | <i class="material-icons green">check_box</i> |                                               | Origin to use for images in the UI                                |
+[environment variables]: /api/buildpack/environment/variables/
 
-### Set runtime variables
+### Runtime variables
+
+| Name                                 | Description                                |
+| ------------------------------------ | ------------------------------------------ |
+| `CONFIG__DEFAULT__WEB__UPWARD__PATH` | Absolute path to UPWARD YAML configuration |
+| `NODE_ENV`                           | Specifies the node environment type        |
+| `MAGENTO_BACKEND_URL`                | URL of your Magento backend                |
 
 To set your Cloud project's runtime variables, edit the [`.magento.app.yaml`][] file and add entries to the `variables.env` section.
+
+[`.magento.app.yaml`]: https://devdocs.magento.com/cloud/project/magento-env-yaml.html
 
 ```text
 variables:
@@ -141,7 +165,15 @@ variables:
         MAGENTO_BACKEND_URL: "https://[your-cloud-url-here]/"
 ```
 
-### Set buildtime variables
+### Buildtime variables
+
+| Name                       | Description                                                       |
+| -------------------------- | ----------------------------------------------------------------- |
+| `NODE_ENV`                 | Specifies the node environment type                               |
+| `MAGENTO_BACKEND_URL`      | URL of your Magento backend                                       |
+| `CHECKOUT_BRAINTREE_TOKEN` | Braintree token associated with your Magento backend              |
+| `MAGENTO_BACKEND_EDITION`  | Must be `EE` since Cloud only supports Magento Enterprise Edition |
+| `IMAGE_OPTIMIZING_ORIGIN`  | Origin to use for images in the UI                                |
 
 To set your environment variables for buildtime, navigate or open a new terminal to _your storefront project_ and edit the `.env` file.
 Your `.env` file should have entries that look like the following:
@@ -164,6 +196,8 @@ In the previous example, `/app/pmu35riuj7btw_stg/` is the Magento application ro
 This value is different for each environment in your Cloud project, so you must configure each of your project environments with the path specific to each instance.
 To find the correct root directory path for an environment, [SSH][] into the remote server and use the `pwd` command to find the Magento application root directory.
 
+[ssh]: https://devdocs.magento.com/cloud/env/environments-ssh.html
+
 ## Build your storefront application
 
 In _your storefront project_ directory, use `yarn` or `npm` to install project dependencies and run the project's build command.
@@ -178,7 +212,7 @@ It also copies over the static assets your application needs from your project i
 
 ## Add your storefront project code
 
-*In your Cloud project*, create a `pwa` folder and copy into it the content inside your storefront project's `dist` folder.
+_In your Cloud project_, create a `pwa` folder and copy into it the content inside your storefront project's `dist` folder.
 
 ```sh
 mkdir pwa && cp -r <path to your storefront project>/dist/* pwa
@@ -190,10 +224,10 @@ If you are updating your existing storefront code, you must delete the content i
 
 At this point in the tutorial, your Cloud project should have changes in the following files and directories:
 
--   `.magento.app.yaml`
--   `composer.json`
--   `composer.lock`
--   `pwa`
+- `.magento.app.yaml`
+- `composer.json`
+- `composer.lock`
+- `pwa`
 
 Edit your Cloud project's `.gitignore` file and add the following entries to track the `pwa` directory in git:
 
@@ -217,30 +251,8 @@ After you push changes to your Cloud project, the remote build process runs and 
 The Cloud topic on how to [Deploy your store][] provides more details on the deployment process.
 It also includes instructions for merging environment branches, such as integration to staging or staging to production.
 
+[deploy your store]: https://devdocs.magento.com/cloud/live/stage-prod-live.html
+
 If your workflow involves merging environment branches,
 you must rebuild your application bundle with the correct environment variables before you push your changes to the Magento Cloud service because
 variables, such as `CONFIG__DEFAULT__WEB__UPWARD__PATH` and `MAGENTO_BACKEND_URL`, can vary between these environments.
-
-[compatible]: <{%link technologies/magento-compatibility/index.md %}>
-[environment variables]: <{%link pwa-buildpack/reference/environment-variables/core-definitions/index.md %}>
-[project setup]: <{%link tutorials/pwa-studio-fundamentals/project-setup/index.md %}>
-
-[magento pwa studio]: http://pwastudio.io
-[`@magento/venia-concept`]: https://www.npmjs.com/package/@magento/venia-concept
-[venia storefront]: https://pwastudio.io/venia-pwa-concept/
-[create a `package.json`]: https://docs.npmjs.com/cli/init
-
-[magento2-upward-connector]: https://github.com/magento/magento2-upward-connector
-[upward-php]: https://github.com/magento/upward-php
-
-[magento commerce cloud]: https://devdocs.magento.com/cloud/bk-cloud.html
-[features and workflows]: https://devdocs.magento.com/cloud/architecture/cloud-architecture.html
-[starter workflow]: https://devdocs.magento.com/cloud/architecture/starter-develop-deploy-workflow.html
-[pro workflow]: https://devdocs.magento.com/cloud/architecture/pro-develop-deploy-workflow.html
-[cloud onboarding tasks]: https://devdocs.magento.com/cloud/onboarding/onboarding-tasks.html
-[magento cloud cli]: https://devdocs.magento.com/cloud/reference/cli-ref-topic.html
-[`.magento.app.yaml`]: https://devdocs.magento.com/cloud/project/magento-env-yaml.html
-[deploy your store]: https://devdocs.magento.com/cloud/live/stage-prod-live.html
-[ssh]: https://devdocs.magento.com/cloud/env/environments-ssh.html
-[composer]: https://getcomposer.org/
-[cloud technologies and requirements]: https://devdocs.magento.com/cloud/requirements/cloud-requirements.html

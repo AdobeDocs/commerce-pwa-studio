@@ -2,13 +2,19 @@
 title: Production launch checklist
 ---
 
+# Production launch checklist
+
 Launching a production site is the final step in the storefront development process.
 Storefronts developed using PWA Studio can be deployed in a wide range of production environments.
+
+## Overview
 
 This topic highlights a few suggested steps that can be applied to most deployment processes.
 Use the methods described in this topic to ensure your deployment is successful.
 
 For Magento Cloud specific deployment instructions, see the [Magento Cloud deployment][] tutorial.
+
+[magento cloud deployment]: /tutorials/production-deployment/magento-cloud
 
 ## Set your environment variables
 
@@ -16,13 +22,18 @@ Make sure you set your [environment variables][] according to the specific requi
 For some services, you can use a `.env` file, which is what your development environment uses.
 Other services require you to set environment variables through a UI or separate configuration file.
 
+[environment variables]: /api/buildpack/environment/variables/
+
 ### Important environment variables
 
 The following is a list of environment variables you should set in your production environment:
 
--   `NODE_ENV` - Some scripts and processes have production specific logic, so set the value of this variable to "production".
--   [`MAGENTO_BACKEND_URL`][] - Set the value of this environment variable to your **production** Magento instance.
--   [`CHECKOUT_BRAINTREE_TOKEN`][] - Set this value to the BrainTree token associated with your **production** Magento instance.
+- `NODE_ENV` - Some scripts and processes have production specific logic, so set the value of this variable to "production".
+- [`MAGENTO_BACKEND_URL`][] - Set the value of this environment variable to your **production** Magento instance.
+- [`CHECKOUT_BRAINTREE_TOKEN`][] - Set this value to the BrainTree token associated with your **production** Magento instance.
+
+[`magento_backend_url`]: /api/buildpack/environment/variables/#magento_backend_url
+[`checkout_braintree_token`]: /api/buildpack/environment/variables/#checkout_braintree_token
 
 ## Create a production build
 
@@ -55,15 +66,10 @@ Edit your project's `package.json` file and remove any packages you only use in 
 [Lighthouse][] is a web developer tool that audits your website.
 It checks the quality of your site by measuring performance, accessibility, SEO, and whether it qualifies as a progressive web application.
 
+[lighthouse]: https://developers.google.com/web/tools/lighthouse/
+
 The tool scores your site on how well it performs and creates a report with suggestions on how to improve your Lighthouse scores.
 Use the report from Lighthouse to identify opportunities for improvement in your storefront to make sure you are launching an accessible and performant progressive web application.
 
 Lighthouse is available through Chrome's DevTools, as a command line script, as a Node module, or from the web.
 See the [Lighthouse][] page for detailed instructions on how to use each form of the tool.
-
-[magento cloud deployment]: <{%link tutorials/cloud-deploy/index.md %}>
-[environment variables]: <{%link pwa-buildpack/reference/environment-variables/core-definitions/index.md %}>
-[`magento_backend_url`]: <{%link pwa-buildpack/reference/environment-variables/core-definitions/index.md %}#magento_backend_url>
-[`checkout_braintree_token`]: <{%link pwa-buildpack/reference/environment-variables/core-definitions/index.md %}#checkout_braintree_token>
-
-[lighthouse]: https://developers.google.com/web/tools/lighthouse/
