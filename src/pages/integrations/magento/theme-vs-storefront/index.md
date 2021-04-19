@@ -15,7 +15,7 @@ This topic compares the traditional Magento theme development approach with a mo
 A Magento theme is a type of [Magento component][] that defines how a store looks.
 It is deeply integrated with the Magento application and depends on the core Magento code for functionality.
 
-[Magento component]: https://devdocs.magento.com/guides/v2.1/extension-dev-guide/bk-extension-dev-guide.html
+[magento component]: https://devdocs.magento.com/guides/v2.1/extension-dev-guide/bk-extension-dev-guide.html
 
 A Magento theme is always built on top of an existing parent theme.
 Out of the box, Magento provides the **Blank** and **Luma** themes that developers extend or customize to create custom storefronts.
@@ -24,9 +24,9 @@ All Magento themes inherit from a parent theme.
 At the top of the inheritance chain is the Magento Blank theme, which provides the base files for a theme.
 Every other theme builds on, overrides, or customizes these files.
 
-For more information on Magento themes, see the Magento 2 [Frontend Developer Guide][]. 
+For more information on Magento themes, see the Magento 2 [Frontend Developer Guide][].
 
-[Frontend Developer Guide]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/bk-frontend-dev-guide.html
+[frontend developer guide]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/bk-frontend-dev-guide.html
 
 ### Magento storefront application
 
@@ -37,27 +37,27 @@ A Magento storefront application is a [progressive web app][] built using PWA St
 It is made up of an application shell that exists in the browser and a [middle tier service layer][] that sits between the shell and a [headless Magento][] backend.
 
 [middle tier service layer]: /guides/packages/upward/
-[headless Magento]: https://magento.com/blog/best-practices/future-headless
+[headless magento]: https://magento.com/blog/best-practices/future-headless
 
 Unlike a Magento theme, a storefront application does not inherit from a parent theme.
 Instead, the application is composed of [React][] modules that provide the different pieces of functionality.
 These pieces can be swapped out to change behavior or even removed entirely.
 
-[React]: https://reactjs.org/
+[react]: https://reactjs.org/
 
 For an example of a storefront application, read about the [Venia][] storefront, a reference implementation created using PWA Studio tools.
 
-[Venia]: /guides/packages/venia/
+[venia]: /guides/packages/venia/
 
 ### Components
 
 Both Magento theme and PWA storefront application use pieces that are known as **components**, but
 each approach uses a different definition of this term.
 
-In Magento theme development, _components_ mostly refers to [Magento UI Components][]. 
+In Magento theme development, _components_ mostly refers to [Magento UI Components][].
 These components are standard UI elements, such as tables, buttons, and dialogs, that Magento provides to make theme development easier.
 
-[Magento UI components]: https://devdocs.magento.com/guides/v2.3/ui_comp_guide/bk-ui_comps.html
+[magento ui components]: https://devdocs.magento.com/guides/v2.3/ui_comp_guide/bk-ui_comps.html
 
 In PWA Studio, _components_ refers to [React][] components.
 React components are modular pieces that make up a React application, such as a Magento PWA storefront.
@@ -70,11 +70,11 @@ These pieces can contain pure logic, such as [Peregrine components][], or visual
 
 A Magento theme uses a [Composer][] file to specify its dependencies and relies on Magento's file resolution mechanism to make sure the required theme files are available.
 
-[Composer]: https://getcomposer.org/doc/00-intro.md
+[composer]: https://getcomposer.org/doc/00-intro.md
 
 PWA Studio uses [Yarn][] for dependency management and validation scripts to make sure it is compatible with the backend Magento server.
 
-[Yarn]: https://yarnpkg.com/
+[yarn]: https://yarnpkg.com/
 
 ## Inheritance vs modularity
 
@@ -103,28 +103,28 @@ In addition to knowing standard JS libraries, such as jQuery and KnockoutJS, Mag
 
 The following table is a summary of general skills needed for Magento theme development:
 
-| Skill                            | Description                                                 |
-| -------------------------------- | ----------------------------------------------------------- |
-| PHP                              | The primary language of the Magento codebase                |
-| JavaScript (JS)                  | Core web language                                           |
-| [jQuery][]                       | A JS library used for things such as DOM manipulations      |
-| [KnockoutJS][]                   | JS framework used for binding data models to the UI         |
-| Cascading Style Sheets ([CSS][]) | Defines the style for a websites                            |
-| Leaner Style Sheets ([Less][])   | Language extension for CSS                                  |
-| XML                              | Format used by Magento for configuration and layout         |
-| [Magento layouts][]              | Layouts represent the structure for a page                  |
-| [Magento templates][]            | Templates define  how layout blocks are presented on a page |
-| [Magento UI library][]           | Frontend library for Magento theme developers               |
-| [Magento UI components][]        | Another frontend library for Magento theme developers       |
-| [Composer][]                     | Package and dependency manager                              |
+| Skill                            | Description                                                |
+| -------------------------------- | ---------------------------------------------------------- |
+| PHP                              | The primary language of the Magento codebase               |
+| JavaScript (JS)                  | Core web language                                          |
+| [jQuery][]                       | A JS library used for things such as DOM manipulations     |
+| [KnockoutJS][]                   | JS framework used for binding data models to the UI        |
+| Cascading Style Sheets ([CSS][]) | Defines the style for a websites                           |
+| Leaner Style Sheets ([Less][])   | Language extension for CSS                                 |
+| XML                              | Format used by Magento for configuration and layout        |
+| [Magento layouts][]              | Layouts represent the structure for a page                 |
+| [Magento templates][]            | Templates define how layout blocks are presented on a page |
+| [Magento UI library][]           | Frontend library for Magento theme developers              |
+| [Magento UI components][]        | Another frontend library for Magento theme developers      |
+| [Composer][]                     | Package and dependency manager                             |
 
-[jQuery]: https://jquery.com/
-[KnockoutJS]: https://knockoutjs.com/
-[CSS]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/css-topics/css-overview.html
-[Less]: http://lesscss.org/
-[Magento layouts]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/layouts/layout-overview.html
-[Magento templates]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/templates/template-overview.html
-[Magento UI library]: https://magento-devdocs.github.io/magento2-ui-library/
+[jquery]: https://jquery.com/
+[knockoutjs]: https://knockoutjs.com/
+[css]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/css-topics/css-overview.html
+[less]: http://lesscss.org/
+[magento layouts]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/layouts/layout-overview.html
+[magento templates]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/templates/template-overview.html
+[magento ui library]: https://magento-devdocs.github.io/magento2-ui-library/
 
 ### Magento PWA storefront developers
 
@@ -147,9 +147,9 @@ The following table is a summary of general skills needed for PWA storefront dev
 | [Peregrine][]                         | React components library provided by the PWA Studio |
 | [Yarn][]                              | JS package and dependency manager                   |
 
-[GraphQL]: /guides/general-concepts/graphql/
-[CSS modules]: /guides/general-concepts/css-modules/
-[Peregrine]: /guides/packages/peregrine/
-[Redux]: https://redux.js.org/
-[JSON]: https://www.json.org/
+[graphql]: /guides/general-concepts/graphql/
+[css modules]: /guides/general-concepts/css-modules/
+[peregrine]: /guides/packages/peregrine/
+[redux]: https://redux.js.org/
+[json]: https://www.json.org/
 [webpack]: https://webpack.js.org/

@@ -1,6 +1,7 @@
 ---
 title: Version compatibility
 ---
+
 # Version compatibility
 
 This page lists PWA Studio versions and their compatible Magento core version.
@@ -22,8 +23,8 @@ Breaking GraphQL schema changes in Magento require an update to the GraphQL quer
 
 ## Incompatibility scenarios
 
--   A developer has the latest PWA Studio, such as **2.1.0** or greater, but the `MAGENTO_BACKEND_URL` still points to a Magento 2 instance running **2.3.0**.
--   A developer is running an older version of PWA Studio, such as **2.0.0**, but the `MAGENTO_BACKEND_URL` points to a Magento 2 instance running **2.3.1**.
+- A developer has the latest PWA Studio, such as **2.1.0** or greater, but the `MAGENTO_BACKEND_URL` still points to a Magento 2 instance running **2.3.0**.
+- A developer is running an older version of PWA Studio, such as **2.0.0**, but the `MAGENTO_BACKEND_URL` points to a Magento 2 instance running **2.3.1**.
 
 ## Compatibility checks
 
@@ -34,5 +35,5 @@ This step reports on any GraphQL incompatibility it encounters.
 
 Developers have two options for solving compatibility issues:
 
--   Upgrade or downgrade the PWA Studio version to match the Magento 2 backend version
--   Upgrade or downgrade the backend Magento 2 version to match the PWA Studio version
+- Upgrade or downgrade the PWA Studio version to match the Magento 2 backend version
+- Upgrade or downgrade the backend Magento 2 version to match the PWA Studio version
