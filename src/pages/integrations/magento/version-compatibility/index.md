@@ -1,9 +1,9 @@
 ---
 title: Version compatibility
 ---
+# Version compatibility
 
 This page lists PWA Studio versions and their compatible Magento core version.
-# Version compatibility
 
 <!--
 This table is generated automatically from the source code.
