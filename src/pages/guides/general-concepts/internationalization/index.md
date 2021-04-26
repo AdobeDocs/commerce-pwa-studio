@@ -118,8 +118,6 @@ Along with static text, this syntax supports variables, dates, and even conditio
 
 To translate text with variables, pass in a mapping object to the `values` prop in the `FormattedMessage` component.
 
-{% raw %}
-
 ```jsx
 return (
   <FormattedMessage
@@ -131,8 +129,6 @@ return (
   />
 );
 ```
-
-{% endraw %}
 
 When using the `formatMessage()` function, pass in the mapping object as the second parameter.
 
