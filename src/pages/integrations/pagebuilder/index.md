@@ -105,22 +105,22 @@ The following diagram describes the same process shown in the video, followed by
 
 ![Page Builder Integration Details](images/PageBuilderIntegrationDetails.svg)
 
-1.  The **Venia app** sends a GraphQL query to get the user's requested page. This requested page comes from the `content` field of `cms_pages` table in Magento's database. The content returned is an HTML string with Page Builder meta data. We call this HTML string the master format, which is passed to the `<RichContent />` component for initial processing.
+1. The **Venia app** sends a GraphQL query to get the user's requested page. This requested page comes from the `content` field of `cms_pages` table in Magento's database. The content returned is an HTML string with Page Builder meta data. We call this HTML string the master format, which is passed to the `<RichContent />` component for initial processing.
 
-1.  The **RichContent** component determines if the HTML string contains Page Builder content, using simple pattern recognition. If the HTML does not include Page Builder content, it is returned to Venia and rendered as plain HTML. If the HTML does include Page Builder content, the HTML string (which we can now define as a master format) is passed to the `<PageBuilder />` framework component, which starts the process of matching the content types within the master format to their equivalent PWA Studio React components.
+1. The **RichContent** component determines if the HTML string contains Page Builder content, using simple pattern recognition. If the HTML does not include Page Builder content, it is returned to Venia and rendered as plain HTML. If the HTML does include Page Builder content, the HTML string (which we can now define as a master format) is passed to the `<PageBuilder />` framework component, which starts the process of matching the content types within the master format to their equivalent PWA Studio React components.
 
-1.  The **PageBuilder** framework component passes the master format to the framework's parser function called `parseStorageHTML()`.
+1. The **PageBuilder** framework component passes the master format to the framework's parser function called `parseStorageHTML()`.
 
-1.  The **parser** function parses the master format HTML recursively to decompose all the Page Builder content types into their own `HTMLElement` strings for further processing. When the parser finds a content type, it uses the framework's config function to access that content type's property aggregator. The aggregator retrieves content and styles from the `HTMLElement` and writes them to a flat object (used later to hydrate the content type component).
+1. The **parser** function parses the master format HTML recursively to decompose all the Page Builder content types into their own `HTMLElement` strings for further processing. When the parser finds a content type, it uses the framework's config function to access that content type's property aggregator. The aggregator retrieves content and styles from the `HTMLElement` and writes them to a flat object (used later to hydrate the content type component).
 
-    Each Page Builder content type has its own corresponding property aggregator. For example, the Heading content type (rendered in the master format as HTML) has a Heading aggregator (`headingConfigAggregator`), which converts the Heading's HTML properties to a flat object with those same properties. The parser does this for each content type it finds in the master format: uses the `getContentTypeConfig()` function to find and run the content type's property aggregator, which returns an object with both the content and the style properties for that content type. All CMS pages built with Page Builder have at least two content types: a Row content type and at least one other content type contained within that Row, such as a Banner.
+   Each Page Builder content type has its own corresponding property aggregator. For example, the Heading content type (rendered in the master format as HTML) has a Heading aggregator (`headingConfigAggregator`), which converts the Heading's HTML properties to a flat object with those same properties. The parser does this for each content type it finds in the master format: uses the `getContentTypeConfig()` function to find and run the content type's property aggregator, which returns an object with both the content and the style properties for that content type. All CMS pages built with Page Builder have at least two content types: a Row content type and at least one other content type contained within that Row, such as a Banner.
 
-1.  When the **parser** function finishes processing all the content types within the master format, it returns a property object tree for those content types back to the `<PageBuilder />` component.
+1. When the **parser** function finishes processing all the content types within the master format, it returns a property object tree for those content types back to the `<PageBuilder />` component.
 
-1.  The **PageBuilder** framework component passes the property object tree to the framework's `<ContentTypeFactory />` component for further processing.
+1. The **PageBuilder** framework component passes the property object tree to the framework's `<ContentTypeFactory />` component for further processing.
 
-1.  Much like in step 4 with the parser, the framework's **ContentTypeFactory** component retrieves the equivalent React component for each content type property object it finds within the object tree.
+1. Much like in step 4 with the parser, the framework's **ContentTypeFactory** component retrieves the equivalent React component for each content type property object it finds within the object tree.
 
-1.  The **ContentTypeFactory** populates those React components with the property values retrieved from each content type's property aggregator.
+1. The **ContentTypeFactory** populates those React components with the property values retrieved from each content type's property aggregator.
 
-1.  And finally, the **PageBuilder** framework component returns a composite React element with all the Page Builder content type components needed to render the original Page Builder content within a PWA Studio app.
+1. And finally, the **PageBuilder** framework component returns a composite React element with all the Page Builder content type components needed to render the original Page Builder content within a PWA Studio app.

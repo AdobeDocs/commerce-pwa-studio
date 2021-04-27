@@ -38,18 +38,6 @@ module.exports = [
         path: "/guides/general-concepts/application-shell/",
       },
       {
-        title: "Content rendering",
-        path: "/guides/general-concepts/content-rendering/",
-      },
-      {
-        title: "CSS modules",
-        path: "/guides/general-concepts/css-modules/",
-      },
-      {
-        title: "GraphQL",
-        path: "/guides/general-concepts/graphql/",
-      },
-      {
         title: "Client-side caching",
         path: "/guides/general-concepts/client-side-caching/",
       },
@@ -58,12 +46,28 @@ module.exports = [
         path: "/guides/general-concepts/configuration/",
       },
       {
-        title: "Routing",
-        path: "/guides/general-concepts/routing/",
+        title: "Content rendering",
+        path: "/guides/general-concepts/content-rendering/",
+      },
+      {
+        title: "CSS modules",
+        path: "/guides/general-concepts/css-modules/",
+      },
+      {
+        title: "Extensibility",
+        path: "/guides/general-concepts/extensibility/",
+      },
+      {
+        title: "GraphQL",
+        path: "/guides/general-concepts/graphql/",
       },
       {
         title: "Internationalization",
         path: "/guides/general-concepts/internationalization/",
+      },
+      {
+        title: "Routing",
+        path: "/guides/general-concepts/routing/",
       },
       {
         title: "State management",
@@ -72,10 +76,6 @@ module.exports = [
       {
         title: "Talons",
         path: "/guides/general-concepts/talons/",
-      },
-      {
-        title: "Extensibility",
-        path: "/guides/general-concepts/extensibility/",
       },
     ],
   },
