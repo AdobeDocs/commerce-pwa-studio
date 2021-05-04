@@ -128,16 +128,12 @@ module.exports = [
         path: "/guides/packages/venia/",
         pages: [
           {
-            title: "Storefront template",
-            path: "/guides/packages/venia/storefront/",
+            title: "Driver and adapter components",
+            path: "/guides/packages/venia/driver-adapter/",
           },
           {
-            title: "UI components",
-            path: "/guides/packages/venia/ui-components/",
-          },
-          {
-            title: "Drivers and adapters",
-            path: "/guides/packages/venia/drivers-adapters/",
+            title: "Sample data",
+            path: "/guides/packages/venia/sample-data/",
           },
         ],
       },
