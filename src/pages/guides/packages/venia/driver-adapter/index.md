@@ -14,7 +14,7 @@ Instead of importing these dependencies directly, Venia components import them f
 [driver.js file]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/src/drivers.js
 
 ```js
-import { Link, resourceUrl } from '@magento/venia-drivers';
+import { Link, resourceUrl } from "@magento/venia-drivers";
 ```
 
 The `@magento/venia-drivers` dependency is not listed in the `package.json` file or available on the NPM registry.

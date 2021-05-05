@@ -20,7 +20,7 @@ If you have access to your own Magento 2 backend and you want to install the Ven
 Copy the [deployVeniaSampleData.sh][] script into the root directory of your Magento installation.
 A copy of this script is also included when you [setup your storefront project][].
 
-[deployVeniaSampleData.sh]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/deployVeniaSampleData.sh
+[deployveniasampledata.sh]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/deployVeniaSampleData.sh
 [setup your storefront project]: /tutorials/setup-storefront/
 
 ### Step 2. Execute the deploy script
