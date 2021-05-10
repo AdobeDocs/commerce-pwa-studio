@@ -14,8 +14,8 @@ Talons are custom React hooks, so they start with `use` followed by the name of 
 For example, the [SearchBar][] component uses the [useSearchBar()][] talon to get initial values and functions it needs to handle changes in focus or search term value.
 The `useSearchBar()` talon also keeps track of the component's `expanded` state, which determines how the search bar looks.
 
-[`usesearchbar()`]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/SearchBar/useSearchBar.js
-[`searchbar`]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/SearchBar/searchBar.js
+[usesearchbar()]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/SearchBar/useSearchBar.js
+[searchbar]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/SearchBar/searchBar.js
 
 ## Talons versus hooks
 
@@ -45,11 +45,11 @@ The return value after calling a talon is an API object that UI components can d
 
 ### Example
 
-The following code snippet comes from Venia's [`Pagination`][] UI component:
+The following code snippet comes from Venia's [Pagination][] UI component:
 
-[`pagination`]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Pagination/pagination.js
+[pagination]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Pagination/pagination.js
 
-``` jsx
+```jsx
 
 ...
 
