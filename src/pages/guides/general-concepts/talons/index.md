@@ -4,56 +4,78 @@ title: Talons
 
 # Talons
 
-The Peregrine package is a collection of functions that act as the brains of your visual components.
-They provide pieces of logic for UI components, such as the ones provided by the [Venia][] library.
-Use or remix these functions and components to create a unique Magento PWA storefront.
+Peregrine Talons are the logic component counterparts for Venia UI components.
+A Talon is a PWA Studio term for a custom React hook that provides data or performs side effects for a specific UI component.
+Since they are closely coupled to a specific UI component, these hooks are not re-usable.
 
-[venia]: /guides/packages/venia/
+## Identifying Talons
 
-## Custom React hooks
+Talons are custom React hooks, so they start with `use` followed by the name of its companion UI component.
+For example, the [SearchBar][] component uses the [useSearchBar()][] talon to get initial values and functions it needs to handle changes in focus or search term value.
+The `useSearchBar()` talon also keeps track of the component's `expanded` state, which determines how the search bar looks.
 
-Many of the functions provided by Peregrine are [custom React hooks][].
-This lets them maintain an internal state without relying on an external library, such as Redux.
+[`usesearchbar()`]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/SearchBar/useSearchBar.js
+[`searchbar`]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/SearchBar/searchBar.js
 
-[custom react hooks]: https://reactjs.org/docs/hooks-custom.html
+## Talons versus hooks
 
-Peregrine hooks are designed to be flexible, and non-opinionated about UI.
-They contain code for providing data or behavior logic and do not render content themselves.
-Rendering content is left up to UI components.
+Talons are a PWA Studio concept that represent a specialized type of React hook.
 
-Separating logic and presentation code gives developers more flexibility on how to use PWA Studio components with their own custom code.
-A developer may choose to use a Venia feature that uses certain Peregrine hooks with minor visual modifications, or
-they can use those same Peregrine hooks to develop their own feature with a different UI.
+Peregrine **hooks**, such as `useDropdown()` and `useWindowSize()`, are designed to be re-usable pieces of code, but
+Peregrine **talons** are designed to fulfill the logic needs of individual Venia UI components.
+This means that each talon corresponds to a single Venia component and is not useful outside the component.
+If a talon needs to use functionality identical to another talon, it is provided by a Peregrine hook.
 
-For more information about custom hooks, see the React documentation for [Building Your Own Hooks][].
+For example, the functionality provided by the `useHeader()` talon is only relevant to the `Header` component.
 
-[building your own hooks]: https://reactjs.org/docs/hooks-custom.html
+## Using talons
 
-### Return signatures
+Talons are not re-usable hooks, but they make it easier to work with UI components by providing standard functionality.
+This lets developers focus on developing the presentation DOM and CSS pieces of a component.
 
-The return signatures of Peregrine hooks vary and is dependent on their purpose.
+Venia UI components use talons by default, so developers can use Venia UI components as is without worrying about talons.
+If developers want to change how a Venia UI component looks, they can import its associated talon into a new or modified UI component of the same type.
 
-Some return an array with _state_ and _api_ objects, which follow the same pattern as [useState()][] and [useReducer()][].
-This lets you specify the variable names of the provided objects when you [destructure][] the array.
+### Talon props and returned object
 
-[usereducer()]: https://reactjs.org/docs/hooks-reference.html#usereducer
-[usestate()]: https://reactjs.org/docs/hooks-reference.html#usestate
-[destructure]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+Talons use many of the same props as its Venia UI component counterpart.
+These props are passed into the talon as a single object and are used to generate new values or perform side effects.
 
-Other Peregrine hooks return a single object.
+The return value after calling a talon is an API object that UI components can destructure for values to display or assign to events, such as `onClick` or `onHover` functions.
 
-Use the reference docs on this site or in the [JSDoc][] blocks in the source code learn the API for each hook.
+### Example
 
-[jsdoc]: https://devdocs.io/jsdoc/
+The following code snippet comes from Venia's [`Pagination`][] UI component:
 
-## JSDoc blocks
+[`pagination`]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Pagination/pagination.js
 
-Most of the reference docs in this section are generated from [JSDoc][] blocks.
-The currently published docs reflect what is available from the most recent release, but
-the JSDoc blocks in the source are kept up to date for developers who want to work with unreleased code.
+``` jsx
 
-## Source
+...
 
-Visit the [peregrine][] package to view the source or contribute to this project.
+import { usePagination } from '@magento/peregrine/lib/talons/Pagination/usePagination';
 
-[peregrine]: https://github.com/magento/pwa-studio/tree/master/packages/peregrine
+...
+
+const Pagination = props => {
+    const { currentPage, setPage, totalPages } = props.pageControl;
+
+    const talonProps = usePagination({
+        currentPage,
+        setPage,
+        totalPages
+    });
+
+    const {
+        handleLeftSkip,
+        handleRightSkip,
+        handleNavBack,
+        handleNavForward,
+        isActiveLeft,
+        isActiveRight,
+        tiles
+    } = talonProps;
+
+    ...
+}
+```

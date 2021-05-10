@@ -29,8 +29,18 @@ For more information about custom hooks, see the React documentation for [Buildi
 
 ### Peregrine Talons
 
-A **Talon** is a PWA Studio term for a custom React hook built with a specific UI component in mind.
-Since they are closely coupled to a specific UI component, these hooks are not as re-usable.
+Most [React components][] contain two distinct sections: a section for logic and a presentational section.
+
+[react components]: https://reactjs.org/docs/components-and-props.html
+
+The logic section contains code for generating new values from props, maintaining local state, and lifecycle or side effect methods.
+This section can be considered the "brains" of the component.
+
+The content section of a React component contains code that defines the component's DOM structure.
+It often uses values from the logic part of the component to pass down into another component or display using HTML elements.
+
+PWA Studio separates these two sections into distinct components with specific concerns: a Venia UI component and a **Peregrine Talon**.
+
 For more information, read the [Talons][] topic.
 
 [talons]: /guides/general-concepts/talons/
