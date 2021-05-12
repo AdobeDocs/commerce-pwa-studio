@@ -21,7 +21,7 @@ Customizing these projects is as simple as importing small pieces of `venia-ui` 
 
 For more information about the project template, see [Project Templates][].
 
-[project template]: /guides/packages/buildpack/project-templates/
+[project templates]: /guides/packages/buildpack/project-templates/
 
 ## Scaffolding commands
 

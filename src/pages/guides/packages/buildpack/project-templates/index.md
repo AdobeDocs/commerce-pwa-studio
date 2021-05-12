@@ -23,9 +23,9 @@ These properties are functions that provide instructions for the buildpack `crea
 
 The function defined in `create.js` is passed in an object with the following properties:
 
--   `fs` - An instance of the [`fs-extra` library][], which provides utilities for most of the common copy operations.
--   `tasks` - An object which provides common handlers that template developers can use for globs.
--   `options` - An object that contains the parameters used in the `buildpack create-project` command.
+- `fs` - An instance of the [`fs-extra` library][], which provides utilities for most of the common copy operations.
+- `tasks` - An object which provides common handlers that template developers can use for globs.
+- `options` - An object that contains the parameters used in the `buildpack create-project` command.
 
 [`fs-extra` library]: https://www.npmjs.com/package/fs-extra
 
