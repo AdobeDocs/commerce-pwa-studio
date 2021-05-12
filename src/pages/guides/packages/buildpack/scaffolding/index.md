@@ -34,13 +34,17 @@ It is a simpler interface than the [create-project][] sub-command in the [pwa-bu
 Since the package name begins with `create-`, it is considered a project generator and can be run simply as `@magento/pwa`.
 This command launches an interactive questionnaire in the command line for configuring different parts of the project.
 
-With Yarn:
+### Examples
+
+<CodeBlock slots="heading, code" repeat="2" languages="sh,sh" />
+
+#### Yarn command
 
 ```sh
 yarn create @magento/pwa
 ```
 
-With NPM:
+#### NPM command
 
 ```sh
 npm init @magento/pwa

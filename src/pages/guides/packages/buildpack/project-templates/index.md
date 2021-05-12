@@ -68,8 +68,8 @@ Use this property to perform custom transformation logic on a file before copyin
 
 This is an example of a visitor property that targets the template project's `package.json` file and modifies its name before writing it out to the `targetPath`.
 
-{: .bs-callout .bs-callout-warning}
-**Note:**
+<InlineAlert variant="info" slots="text"/>
+
 The `buildpack create-project` command does not perform the actual file copy.
 Use the convenient `tasks.IGNORE` and `tasks.COPY` handlers provided by the tool to perform common ignore and copy file tasks.
 
