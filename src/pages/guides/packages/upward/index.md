@@ -73,7 +73,7 @@ This responsibility is also moved to the frontend or backend layer.
 
 UPWARD server implementations must serve data over [HTTPS][] to protect the information and privacy of PWA users.
 
-[HTTPS]: https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https
+[https]: https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https
 
 #### Support caching
 
@@ -93,13 +93,14 @@ It acts as the backend service for the application that proxies requests to conn
 
 See [RATIONALE.md][] in the `upward-spec` package for a more detailed explanation of the need for an UPWARD server.
 
-[RATIONALE.md]: https://github.com/magento/pwa-studio/blob/master/packages/upward-spec/RATIONALE.md
+[rationale.md]: https://github.com/magento/pwa-studio/blob/master/packages/upward-spec/RATIONALE.md
 
 ## UPWARD in Venia
 
 When you [set up a new project][], the scaffolding tool creates an UPWARD definition file called `upward.yml` in the new project.
 This file contains references to a `veniaResponse` object defined in the [`venia-ui` package][].
 
+[set up a new project]: /tutorials/setup-storefront/
 [`venia-ui` package]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/upward.yml
 
 To deploy your storefront application, pass this file onto an UPWARD server to make it accessible to users.
@@ -114,5 +115,5 @@ You can refer to the `upward.yml` file in the [`venia-ui` package][] to see the 
 You can also tap into the [`transformUpward` target][] in your storefront or extension project to make changes in a more programmatic language.
 See the [`upward-security-headers` extension][] for an example of this approach.
 
-[`transformUpward` target]: /api/buildpack/targets/
-[`upward-security-headers`]: https://github.com/magento/pwa-studio/blob/develop/packages/extensions/upward-security-headers/intercept.js
+[`transformupward` target]: /api/buildpack/targets/
+[`upward-security-headers` extension]: https://github.com/magento/pwa-studio/blob/develop/packages/extensions/upward-security-headers/intercept.js

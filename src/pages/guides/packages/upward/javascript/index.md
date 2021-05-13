@@ -56,12 +56,12 @@ Require `server` from `@magento/upward-js` in your Node script to import the ser
 
 Example:
 
-``` js
-const { server } = require('@magento/upward-js');
+```js
+const { server } = require("@magento/upward-js");
 
 const { app } = upward({
-  upwardPath: './my-upward-server.yml'
-})
+  upwardPath: "./my-upward-server.yml",
+});
 
 app.listen(8000);
 ```
@@ -74,15 +74,15 @@ It returns a Promise for a function which handles request/response pairs.
 
 Example:
 
-``` js
-const express = require('express');
-const { middleware } = require('@magento/upward-js');
+```js
+const express = require("express");
+const { middleware } = require("@magento/upward-js");
 
 const app = express();
 
 app.use(otherMiddlewaresMaybe);
 
-app.use(middleware('./my-upward-server.yml'));
+app.use(middleware("./my-upward-server.yml"));
 ```
 
 You can also pass an `IOAdapter` as a second argument to the middleware.
