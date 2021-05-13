@@ -11,17 +11,17 @@ This implementation is able to run as standalone server or as an Express/Connect
 
 ## Installation
 
-<InlineAlert variant="info" slots="text"/>
-
-If you followed the [project setup tutorial][], your project is already set up to use this implementation as an application server.
-
-[project setup tutorial]: /tutorials/setup-storefront/
-
 Use the following command add the `upward-js` dependency to your project:
 
 ```sh
 yarn add @magento/upward-js
 ```
+
+<InlineAlert variant="info" slots="text"/>
+
+If you followed the [project setup tutorial][], your project is already set up to use this implementation as an application server.
+
+[project setup tutorial]: /tutorials/setup-storefront/
 
 ## Usage
 
