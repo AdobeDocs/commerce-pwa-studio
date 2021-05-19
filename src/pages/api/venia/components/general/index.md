@@ -3,3 +3,16 @@ title: General components
 ---
 
 # General components
+
+The components in this group are standard UI components that are commonly found in other web applications or used in other Venia UI components.
+
+## List of general components
+
+- [Button](Button/)
+- [ButtonGroup](ButtonGroup/)
+- [Logo](Logo/)
+- [Mask](Mask/)
+- [Portal](Portal/)
+- [ProductImageCarousel](ProductImageCarousel/)
+- [ToastContainer](ToastContainer/)
+- [Trigger](Trigger/)
