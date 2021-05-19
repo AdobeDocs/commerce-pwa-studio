@@ -5,7 +5,7 @@ jsDoc: true
 
 # Venia targets
 
-This page lists the Targets declared in the Venia UI package. 
+This page lists the Targets declared in the Venia UI package.
 
 ## Accessing the targets
 
@@ -14,9 +14,9 @@ Access these in your intercept files by calling `targets.of('@magento/venia-ui')
 ```js
 /* my-custom-interceptors.js */
 
-module.exports = targets => {
-    const veniaTargets = targets.of('@magento/venia-ui')
-}
+module.exports = (targets) => {
+  const veniaTargets = targets.of("@magento/venia-ui");
+};
 ```
 
 See the [PWA Studio Target Experiments][] project repository for documented examples of extensions that use PWA Studio's extensibility framework.
