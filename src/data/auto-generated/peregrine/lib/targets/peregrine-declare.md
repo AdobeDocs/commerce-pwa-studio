@@ -59,11 +59,7 @@ You can also use this target to modify the behavior or output returned by
 a hook.
 
 **Kind**: global variable  
-**See**
-
-- [list of wrappable hooks][]
-- [Intercept function signature](#hookInterceptFunction)
-
+**See**: [Intercept function signature](#hookInterceptFunction)  
 **Example** *(Access the tapable object)*  
 ```js
 const peregrineTargets = targets.of('@magento/peregrine');
@@ -90,11 +86,7 @@ You can also use this target to modify the behavior or output returned by
 a talon.
 
 **Kind**: global variable  
-**See**
-
-- [list of wrappable talons][]
-- [Intercept function signature](#hookInterceptFunction)
-
+**See**: [Intercept function signature](#hookInterceptFunction)  
 **Example** *(Access the tapable object)*  
 ```js
 const peregrineTargets = targets.of('@magento/peregrine');
