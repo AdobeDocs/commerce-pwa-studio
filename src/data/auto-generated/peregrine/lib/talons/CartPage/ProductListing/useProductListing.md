@@ -118,9 +118,10 @@ It provides props data for a product form UI component inside a modal.
 </dd>
 </dl>
 
-<a name="useProductListing"></a>
+<a name="useProductListing" id="useProductListing"></a>
 
 ## useProductListing(props) ⇒ [`ProductListingTalonProps`](#ProductListingTalonProps)
+
 This talon contains logic for a component that renders a list of products for a cart.
 It performs effects and returns prop data to render the component on a cart page.
 
@@ -140,9 +141,10 @@ This talon performs the following effects:
 ```js
 import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
 ```
-<a name="useProduct"></a>
+<a name="useProduct" id="useProduct"></a>
 
 ## useProduct(props) ⇒ [`ProductTalonProps`](#ProductTalonProps)
+
 This talon contains logic for a product component used in a product listing component.
 It performs effects and returns prop data for that component.
 
@@ -164,9 +166,10 @@ This talon performs the following effects:
 ```js
 import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProduct';
 ```
-<a name="useQuantity"></a>
+<a name="useQuantity" id="useQuantity"></a>
 
 ## useQuantity(props) ⇒ [`QuantityTalonProps`](#QuantityTalonProps)
+
 This talon contains logic for a product quantity UI component.
 It performs effects and returns prop data for rendering a component that lets you
 modify the quantity of a cart item.
@@ -188,9 +191,10 @@ This talon performs the following effects:
 ```js
 import { useQuantity } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useQuantity';
 ```
-<a name="useEditModal"></a>
+<a name="useEditModal" id="useEditModal"></a>
 
 ## useEditModal() ⇒ [`EditModalTalonProps`](#EditModalTalonProps)
+
 This talon contains logic for a product edit modal used on a cart page.
 It returns prop data for rendering an interactive modal component.
 
@@ -199,9 +203,10 @@ It returns prop data for rendering an interactive modal component.
 ```js
 import { useEditModal } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
 ```
-<a name="useProductForm"></a>
+<a name="useProductForm" id="useProductForm"></a>
 
 ## useProductForm(props) ⇒ [`ProductFormTalonProps`](#ProductFormTalonProps)
+
 This talon contains logic for a product edit form.
 It performs effects and returns data for rendering the component inside a modal container.
 
@@ -227,9 +232,10 @@ This talon performs the following effects:
 ```js
 import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
 ```
-<a name="ProductListingQueries"></a>
+<a name="ProductListingQueries" id="ProductListingQueries"></a>
 
 ## ProductListingQueries : `Object`
+
 GraphQL queries for getting product listing data.
 This is a type used in the [useProductListing](#useProductListing) talon.
 
@@ -242,9 +248,10 @@ for the queries used in Venia
 | --- | --- | --- |
 | getProductListing | `GraphQLAST` | Query to get the product list for a cart |
 
-<a name="ProductListingTalonProps"></a>
+<a name="ProductListingTalonProps" id="ProductListingTalonProps"></a>
 
 ## ProductListingTalonProps : `Object`
+
 Object type returned by the [useProductListing](#useProductListing) talon.
 It provides props data for a component that renders a product list.
 
@@ -258,9 +265,10 @@ It provides props data for a component that renders a product list.
 | items | `Array.<Object>` | A list of products in a cart |
 | setActiveEditItem | `function` | Function for setting the current item to edit |
 
-<a name="ProductMutations"></a>
+<a name="ProductMutations" id="ProductMutations"></a>
 
 ## ProductMutations : `Object`
+
 GraphQL mutations for a product in a cart.
 This is a type used by the [useProduct](#useProduct) talon.
 
@@ -274,9 +282,10 @@ to see the mutations used in Venia
 | removeItemMutation | `GraphQLAST` | Mutation for removing an item in a cart |
 | updateItemQuantityMutation | `GraphQLAST` | Mutation for updating the item quantity in a cart |
 
-<a name="ProductTalonProps"></a>
+<a name="ProductTalonProps" id="ProductTalonProps"></a>
 
 ## ProductTalonProps : `Object`
+
 Object type returned by the [useProduct](#useProduct) talon.
 It provides prop data for rendering a product component on a cart page.
 
@@ -294,9 +303,10 @@ It provides prop data for rendering a product component on a cart page.
 | isFavorite | `boolean` | True if the cart product is a favorite product. False otherwise. |
 | product | [`ProductItem`](#ProductItem) | Cart product data |
 
-<a name="ProductItem"></a>
+<a name="ProductItem" id="ProductItem"></a>
 
 ## ProductItem : `Object`
+
 Data about a product item in the cart.
 This type is used in the [ProductTalonProps](#ProductTalonProps) type returned by the [useProduct](#useProduct) talon.
 
@@ -314,9 +324,10 @@ This type is used in the [ProductTalonProps](#ProductTalonProps) type returned b
 | urlKey | `String` | The product's url key |
 | urlSuffix | `String` | The product's url suffix |
 
-<a name="QuantityTalonProps"></a>
+<a name="QuantityTalonProps" id="QuantityTalonProps"></a>
 
 ## QuantityTalonProps : `Object`
+
 Object type returned by the [useQuantity](#useQuantity) talon.
 It provides props data for a quantity UI component.
 
@@ -332,9 +343,10 @@ It provides props data for a quantity UI component.
 | handleIncrement | `function` | Callback function for handling an increment event |
 | maskInput | `function` | Function for masking a value when decimal values are allowed |
 
-<a name="EditModalTalonProps"></a>
+<a name="EditModalTalonProps" id="EditModalTalonProps"></a>
 
 ## EditModalTalonProps : `Object`
+
 Object type returned by the [useEditModal](#useEditModal) talon.
 It provides props data for rendering an edit modal component.
 
@@ -346,9 +358,10 @@ It provides props data for rendering an edit modal component.
 | setVariantPrice | `function` | Function for setting a product's variant price. |
 | variantPrice | `Object` | The variant price for a product. See [Money object](https://devdocs.magento.com/guides/v2.4/graphql/product/product-interface.html#Money). |
 
-<a name="ProductFormTalonProps"></a>
+<a name="ProductFormTalonProps" id="ProductFormTalonProps"></a>
 
 ## ProductFormTalonProps : `Object`
+
 Object type returned by the [useProductForm](#useProductForm) talon.
 It provides props data for a product form UI component inside a modal.
 

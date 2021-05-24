@@ -26,18 +26,20 @@ It is recommended to only create/use a single time at the top level of your app
 </dd>
 </dl>
 
-<a name="useWindowSize"></a>
+<a name="useWindowSize" id="useWindowSize"></a>
 
 ## useWindowSize : `number`
+
 The current context value for the window size context.
 This value updates whenever the window is resized.
 
 Use this inside a [WindowSizeContextProvider](#WindowSizeContextProvider).
 
 **Kind**: global constant  
-<a name="WindowSizeContextProvider"></a>
+<a name="WindowSizeContextProvider" id="WindowSizeContextProvider"></a>
 
 ## WindowSizeContextProvider(props) ⇒ `Context.Provider`
+
 This component contains a hook that listens for resize events.
 Use this component with [useWindowSize](#useWindowSize) to get the value of the resized window.
 

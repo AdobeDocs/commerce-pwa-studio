@@ -13,9 +13,10 @@ data.
 </dd>
 </dl>
 
-<a name="PaginationState"></a>
+<a name="PaginationState" id="PaginationState"></a>
 
 ## PaginationState
+
 The current pagination state
 
 **Kind**: global Object  
@@ -26,9 +27,10 @@ The current pagination state
 | currentPage | `Number` | The current page number |
 | totalPages | `Number` | The total number of pages |
 
-<a name="API"></a>
+<a name="API" id="API"></a>
 
 ## API
+
 The API object used for modifying the PaginationState.
 
 **Kind**: global Object  
@@ -37,9 +39,10 @@ The API object used for modifying the PaginationState.
     * [.setCurrentPage(page)](#API.setCurrentPage)
     * [.setTotalPages(total)](#API.setTotalPages)
 
-<a name="API.setCurrentPage"></a>
+<a name="API.setCurrentPage" id="API.setCurrentPage"></a>
 
 ### API.setCurrentPage(page)
+
 Set the current page
 
 **Kind**: static method of [`API`](#API)  
@@ -48,9 +51,10 @@ Set the current page
 | --- | --- | --- |
 | page | `Number` | The number to assign to the current page |
 
-<a name="API.setTotalPages"></a>
+<a name="API.setTotalPages" id="API.setTotalPages"></a>
 
 ### API.setTotalPages(total)
+
 Set the total number of pages
 
 **Kind**: static method of [`API`](#API)  
@@ -59,9 +63,10 @@ Set the total number of pages
 | --- | --- | --- |
 | total | `Number` | The number to set the amount of pages available |
 
-<a name="usePagination"></a>
+<a name="usePagination" id="usePagination"></a>
 
 ## usePagination(config) ⇒ `Array.<Object>`
+
 A [React Hook](https://reactjs.org/docs/hooks-intro.html) that provides
 pagination logic.
 
@@ -74,10 +79,10 @@ data.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | config | `Object` |  | An object containing configuration values |
-| config.namespace | `String` | <code>&#x27;&#x27;</code> | The namespace to append to config.parameter in the query. For example: ?namespace_parameter=value |
-| config.parameter | `String` | <code>&#x27;page&#x27;</code> | The name of the query parameter to use for page |
+| config.namespace | `String` | `''` | The namespace to append to config.parameter in the query. For example: ?namespace_parameter=value |
+| config.parameter | `String` | `'page'` | The name of the query parameter to use for page |
 | config.initialPage | `Number` |  | The initial current page value |
-| config.initialTotalPages | `Number` | <code>1</code> | The total pages expected to be usable by this hook |
+| config.initialTotalPages | `Number` | `1` | The total pages expected to be usable by this hook |
 
 
 

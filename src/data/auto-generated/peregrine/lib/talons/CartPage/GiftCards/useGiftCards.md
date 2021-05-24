@@ -51,9 +51,10 @@ Props data to use when rendering a single gift card component.
 </dd>
 </dl>
 
-<a name="useGiftCards"></a>
+<a name="useGiftCards" id="useGiftCards"></a>
 
 ## useGiftCards(props) ⇒ [`GiftCardsTalonProps`](#GiftCardsTalonProps)
+
 Handles the logic for a component that renders a list of gift cards.
 It performs effects and returns the prop data necessary for rendering
 the component.
@@ -76,9 +77,10 @@ This talon performs the following effects:
 ```js
 import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
 ```
-<a name="useGiftCard"></a>
+<a name="useGiftCard" id="useGiftCard"></a>
 
 ## useGiftCard(props) ⇒ [`GiftCardTalonProps`](#GiftCardTalonProps)
+
 Provide logic for a single gift card component.
 
 **Kind**: global function  
@@ -93,9 +95,10 @@ Provide logic for a single gift card component.
 ```js
 import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
 ```
-<a name="GiftCardsMutations"></a>
+<a name="GiftCardsMutations" id="GiftCardsMutations"></a>
 
 ## GiftCardsMutations : `Object`
+
 GraphQL mutations for Gift Cards.
 
 **Kind**: global typedef  
@@ -108,9 +111,10 @@ for queries used in Venia
 | applyCardMutation | `GraphQLAST` | The mutation used to apply a gift card to the cart. |
 | removeCardMutation | `GraphQLAST` | The mutation used to remove a gift card from the cart. |
 
-<a name="GiftCardsQueries"></a>
+<a name="GiftCardsQueries" id="GiftCardsQueries"></a>
 
 ## GiftCardsQueries : `Object`
+
 GraphQL queries for Gift Cards.
 
 **Kind**: global typedef  
@@ -123,9 +127,10 @@ for queries used in Venia
 | appliedCardsQuery | `GraphQLAST` | The query used to get the gift cards currently applied to the cart. |
 | cardBalanceQuery | `GraphQLAST` | The query used to get the gift cards currently applied to the cart. |
 
-<a name="GiftCardsTalonProps"></a>
+<a name="GiftCardsTalonProps" id="GiftCardsTalonProps"></a>
 
 ## GiftCardsTalonProps : `Object`
+
 Props data to use when rendering a list of gift cards.
 
 **Kind**: global typedef  
@@ -149,9 +154,10 @@ Props data to use when rendering a list of gift cards.
 | shouldDisplayCardBalance | `boolean` | Whether to display the gift card balance to the user |
 | shouldDisplayCardError | `boolean` | Whether to display an error message under the card input field. |
 
-<a name="GiftCardTalonProps"></a>
+<a name="GiftCardTalonProps" id="GiftCardTalonProps"></a>
 
 ## GiftCardTalonProps : `Object`
+
 Props data to use when rendering a single gift card component.
 
 **Kind**: global typedef  

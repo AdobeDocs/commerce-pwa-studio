@@ -38,9 +38,10 @@ Props data to use when rendering a gift options component.
 </dd>
 </dl>
 
-<a name="useGiftOptions"></a>
+<a name="useGiftOptions" id="useGiftOptions"></a>
 
 ## useGiftOptions(props) ⇒ [`GiftOptionsTalonProps`](#GiftOptionsTalonProps)
+
 This talon contains the logic for a gift options component.
 It performs effects and returns a data object containing values for rendering the component.
 
@@ -61,9 +62,10 @@ This talon performs the following effects:
 ```js
 import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/GiftOptions/useGiftOptions';
 ```
-<a name="GiftOptionsMutations"></a>
+<a name="GiftOptionsMutations" id="GiftOptionsMutations"></a>
 
 ## GiftOptionsMutations : `Object`
+
 GraphQL mutations for Gift Options
 
 **Kind**: global typedef  
@@ -75,9 +77,10 @@ for the query Venia uses.
 | --- | --- | --- |
 | setGiftOptionsMutation | `GraphQLAST` | Mutation to use for setting the gift options for the cart |
 
-<a name="GiftOptionsQueries"></a>
+<a name="GiftOptionsQueries" id="GiftOptionsQueries"></a>
 
 ## GiftOptionsQueries : `Object`
+
 GraphQL query for Gift Options
 
 **Kind**: global typedef  
@@ -89,9 +92,10 @@ for the query Venia uses.
 | --- | --- | --- |
 | getGiftOptionsQuery | `GraphQLAST` | Query to get gift options data |
 
-<a name="GiftOptionsTalonProps"></a>
+<a name="GiftOptionsTalonProps" id="GiftOptionsTalonProps"></a>
 
 ## GiftOptionsTalonProps : `Object`
+
 Props data to use when rendering a gift options component.
 
 **Kind**: global typedef  

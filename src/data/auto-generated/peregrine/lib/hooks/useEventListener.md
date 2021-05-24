@@ -1,6 +1,7 @@
-<a name="useEventListener"></a>
+<a name="useEventListener" id="useEventListener"></a>
 
 ## useEventListener(target, type, listener, ...rest)
+
 A [React Hook](https://reactjs.org/docs/hooks-intro.html) that gives
 you the ability to add a callback function when an event is triggered on
 an object.

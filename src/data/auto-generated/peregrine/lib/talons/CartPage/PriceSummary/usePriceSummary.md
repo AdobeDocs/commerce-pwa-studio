@@ -37,9 +37,10 @@ Props used for rendering a price summary component.
 </dd>
 </dl>
 
-<a name="usePriceSummary"></a>
+<a name="usePriceSummary" id="usePriceSummary"></a>
 
 ## usePriceSummary(props) ⇒ [`PriceSummaryTalonProps`](#PriceSummaryTalonProps)
+
 This talon contains logic for a price summary component.
 It performs effects and returns prop data for rendering the component.
 
@@ -58,9 +59,10 @@ This talon performs the following effects:
 ```js
 import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
 ```
-<a name="FlattenedData"></a>
+<a name="FlattenedData" id="FlattenedData"></a>
 
 ## FlattenedData : `Object`
+
 Query data flattened into a simple object.
 
 **Kind**: global typedef  
@@ -75,9 +77,10 @@ Query data flattened into a simple object.
 | taxes | `Array.<Object>` | Taxes applied to the cart |
 | shipping | `Array.<Object>` | Shipping addresses associated with this cart |
 
-<a name="PriceSummaryQueries"></a>
+<a name="PriceSummaryQueries" id="PriceSummaryQueries"></a>
 
 ## PriceSummaryQueries : `Object`
+
 GraphQL queries for price summary component.
 
 **Kind**: global typedef  
@@ -89,9 +92,10 @@ for the queries used in Venia.
 | --- | --- | --- |
 | getPriceSummary | `GraphQLAST` | Query to get the price summary for a cart |
 
-<a name="PriceSummaryTalonProps"></a>
+<a name="PriceSummaryTalonProps" id="PriceSummaryTalonProps"></a>
 
 ## PriceSummaryTalonProps : `Object`
+
 Props used for rendering a price summary component.
 
 **Kind**: global typedef  

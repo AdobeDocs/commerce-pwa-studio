@@ -34,9 +34,10 @@ Use this API to add and remove toasts.
 </dd>
 </dl>
 
-<a name="getToastId"></a>
+<a name="getToastId" id="getToastId"></a>
 
 ## getToastId(properties)
+
 Generates an identifier for a toast by inspecting the properties that
 differentiate toasts from one another.
 
@@ -47,20 +48,22 @@ differentiate toasts from one another.
 | properties | `Object` |  | A composite identifier object with properties   that identify a specific toast using its [ToastProps](#ToastProps). |
 | properties.type | `String` |  | Maps to the `type` property of [ToastProps](#ToastProps) |
 | properties.message | `String` |  | Maps to the `message` property of [ToastProps](#ToastProps) |
-| properties.dismissable | `Boolean` | <code>true</code> | Maps to the `dismissable` property of [ToastProps](#ToastProps) |
-| properties.actionText | `String` | <code>&#x27;&#x27;</code> | Maps to the `actionText` property of [ToastProps](#ToastProps) |
-| properties.icon | `React.Element` | <code>()&#x3D;&gt;{}</code> | Maps to the `icon` property of [ToastProps](#ToastProps) |
+| properties.dismissable | `Boolean` | `true` | Maps to the `dismissable` property of [ToastProps](#ToastProps) |
+| properties.actionText | `String` | `''` | Maps to the `actionText` property of [ToastProps](#ToastProps) |
+| properties.icon | `React.Element` | `()=>{}` | Maps to the `icon` property of [ToastProps](#ToastProps) |
 
-<a name="useToasts"></a>
+<a name="useToasts" id="useToasts"></a>
 
 ## useToasts() ⇒ `Array.<Object>`
+
 A hook that provides access to the toast state and toast api.
 
 **Kind**: global function  
 **Returns**: `Array.<Object>` - An array containing objects for the toast state and its API: [[ToastState](../useToastContext#ToastState), [API](#API)]  
-<a name="ToastProps"></a>
+<a name="ToastProps" id="ToastProps"></a>
 
 ## ToastProps
+
 Object containing data for creating toasts using [addToast](#API.addToast).
 
 **Kind**: global typedef  
@@ -77,9 +80,10 @@ Object containing data for creating toasts using [addToast](#API.addToast).
 | [onAction] | `function` | Callback invoked when a user clicks the action   text.   This property is optional when creating toasts. |
 | [timeout] | `Number` | Time, in ms, before the toast is automatically   dismissed.   If `0` or `false` is passed, the toast will not timeout.   This property is optional when creating toasts. |
 
-<a name="API"></a>
+<a name="API" id="API"></a>
 
 ## API : `Object`
+
 The API for managing toasts.
 Use this API to add and remove toasts.
 
@@ -89,9 +93,10 @@ Use this API to add and remove toasts.
     * [.removeToast(id)](#API.removeToast)
     * [.addToast(toastProps)](#API.addToast) ⇒ `Number`
 
-<a name="API.removeToast"></a>
+<a name="API.removeToast" id="API.removeToast"></a>
 
 ### API.removeToast(id)
+
 Removes a toast from the toast store.
 
 **Kind**: static method of [`API`](#API)  
@@ -100,9 +105,10 @@ Removes a toast from the toast store.
 | --- | --- | --- |
 | id | `Number` | The id of the toast to remove |
 
-<a name="API.addToast"></a>
+<a name="API.addToast" id="API.addToast"></a>
 
 ### API.addToast(toastProps) ⇒ `Number`
+
 Dispatches an add action. Includes all props passed along with a hash id
 and a timeout id generated based on the incoming props.
 

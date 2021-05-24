@@ -45,9 +45,10 @@ the provided [`HookInterceptorSet` object](http://pwastudio.io/peregrine/referen
 </dd>
 </dl>
 
-<a name="hooks"></a>
+<a name="hooks" id="hooks"></a>
 
 ## hooks : `tapable.AsyncSeriesHook`
+
 Provides access to Peregrine React hooks.
 
 This target collects requests to intercept and "wrap" individual Peregrine
@@ -72,9 +73,10 @@ hooksTargets.tap( => {
   hook.useAwaitQuery.wrapWith('@my-extensions/log-wrapper');
 })
 ```
-<a name="talons"></a>
+<a name="talons" id="talons"></a>
 
 ## talons : `tapable.AsyncSeriesHook`
+
 Provides access to Peregrine talon wrappers.
 
 This target collects requests to intercept and "wrap" individual Peregrine
@@ -99,9 +101,10 @@ talonsTarget.tap(talons => {
   talons.App.useApp.wrapWith('@my-extensions/log-wrapper');
 })
 ```
-<a name="hookInterceptFunction"></a>
+<a name="hookInterceptFunction" id="hookInterceptFunction"></a>
 
 ## hookInterceptFunction : `function`
+
 Intercept function signature for the `talons` and `hooks` targets.
 
 Interceptors of `hooks` should call `wrapWith` on the individual hooks in

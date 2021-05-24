@@ -20,16 +20,18 @@ The object returned contains the pieces needed to add the dropdown logic to your
 </dd>
 </dl>
 
-<a name="useDropdown"></a>
+<a name="useDropdown" id="useDropdown"></a>
 
 ## useDropdown() ⇒ [`Dropdown`](#Dropdown)
+
 A React Hook for adding dropdown-related logic.
 
 **Kind**: global function  
 **Returns**: [`Dropdown`](#Dropdown) - An object containing functions and values to add dropdown logic  
-<a name="Dropdown"></a>
+<a name="Dropdown" id="Dropdown"></a>
 
 ## Dropdown : `Object`
+
 The object returned contains the pieces needed to add the dropdown logic to your components
 
 **Kind**: global typedef  

@@ -1,6 +1,7 @@
-<a name="useSearchParam"></a>
+<a name="useSearchParam" id="useSearchParam"></a>
 
 ## useSearchParam(props)
+
 A [React Hook](https://reactjs.org/docs/hooks-intro.html) that gets
 a search parameter from a URL and calls a provided setter function with
 the corresponding value.

@@ -31,9 +31,10 @@ Props data to use when rendering a cart page component.
 </dd>
 </dl>
 
-<a name="useCartPage"></a>
+<a name="useCartPage" id="useCartPage"></a>
 
 ## useCartPage(props) ⇒ [`CartPageTalonProps`](#CartPageTalonProps)
+
 This talon contains logic for a cart page component.
 It performs effects and returns prop data for rendering the component.
 
@@ -52,9 +53,10 @@ This talon performs the following effects:
 ```js
 import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage';
 ```
-<a name="CartPageQueries"></a>
+<a name="CartPageQueries" id="CartPageQueries"></a>
 
 ## CartPageQueries : `Object`
+
 GraphQL formatted string queries used in this talon.
 
 **Kind**: global typedef  
@@ -66,9 +68,10 @@ for queries used in Venia
 | --- | --- | --- |
 | getCartDetails | `GraphQLAST` | Query for getting the cart details. |
 
-<a name="CartPageTalonProps"></a>
+<a name="CartPageTalonProps" id="CartPageTalonProps"></a>
 
 ## CartPageTalonProps : `Object`
+
 Props data to use when rendering a cart page component.
 
 **Kind**: global typedef  

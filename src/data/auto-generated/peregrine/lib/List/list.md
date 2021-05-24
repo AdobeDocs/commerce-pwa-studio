@@ -15,9 +15,10 @@ default props for [List](#List)
 </dd>
 </dl>
 
-<a name="List"></a>
+<a name="List" id="List"></a>
 
 ## List
+
 The **List** component maps a collection of data objects into an array of elements.
 It also manages the selection and focus of those elements.
 
@@ -28,9 +29,10 @@ It also manages the selection and focus of those elements.
 | --- | --- | --- |
 | props | [`props`](#props) | React Component props |
 
-<a name="props"></a>
+<a name="props" id="props"></a>
 
 ## props
+
 props for [List](#List)
 
 **Kind**: global typedef  
@@ -48,9 +50,10 @@ props for [List](#List)
 | onSelectionChange | `func` | A callback that fires when the selection state changes |
 | selectionModel | `checkbox` \| `radio` | A string corresponding to a selection model |
 
-<a name="defaultProps"></a>
+<a name="defaultProps" id="defaultProps"></a>
 
 ## defaultProps
+
 default props for [List](#List)
 
 **Kind**: global typedef  
