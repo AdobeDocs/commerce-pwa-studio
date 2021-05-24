@@ -37,10 +37,6 @@ module.exports = {
           path: "/api/peregrine/components-and-utilities/List/",
         },
         {
-          title: "Price",
-          path: "/api/peregrine/components-and-utilities/Price/",
-        },
-        {
           title: "Router",
           path: "/api/peregrine/components-and-utilities/Router/",
         },
