@@ -7,18 +7,8 @@ module.exports = {
       path: "/api/peregrine/",
     },
     {
-      title: "Extension points",
-      path: "/api/peregrine/extension-points/",
-      pages: [
-        {
-          title: "Targets",
-          path: "/api/peregrine/extension-points/targets/",
-        },
-        {
-          title: "Wrappable Talons",
-          path: "/api/peregrine/extension-points/wrappable-talons/",
-        },
-      ],
+      title: "Targets",
+      path: "/api/peregrine/targets/",
     },
     {
       title: "Components and utilities",
@@ -35,10 +25,6 @@ module.exports = {
         {
           title: "List",
           path: "/api/peregrine/components-and-utilities/List/",
-        },
-        {
-          title: "Price",
-          path: "/api/peregrine/components-and-utilities/Price/",
         },
         {
           title: "Router",
