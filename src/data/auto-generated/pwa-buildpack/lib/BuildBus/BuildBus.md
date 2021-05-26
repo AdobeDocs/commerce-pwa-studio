@@ -801,7 +801,7 @@ otherwise hacked by dependencies.
 
 Get the string type name of a provided object. If it is one of the base
 Tapable Hooks supported, returns the name of that Hook (without 'Hook' on
-the end). Otherwise, returns '<unknown>'.
+the end). Otherwise, returns `<unknown>`.
 
 **Kind**: inner method of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)  
 **Returns**: `string` - The name of the hook without 'Hook' on the end or `<unknown>`  
@@ -1172,7 +1172,7 @@ otherwise hacked by dependencies.
 
 Get the string type name of a provided object. If it is one of the base
 Tapable Hooks supported, returns the name of that Hook (without 'Hook' on
-the end). Otherwise, returns '<unknown>'.
+the end). Otherwise, returns `<unknown>`.
 
 **Kind**: inner method of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)  
 **Returns**: `string` - The name of the hook without 'Hook' on the end or `<unknown>`  
@@ -1724,7 +1724,7 @@ otherwise hacked by dependencies.
 
 Get the string type name of a provided object. If it is one of the base
 Tapable Hooks supported, returns the name of that Hook (without 'Hook' on
-the end). Otherwise, returns '<unknown>'.
+the end). Otherwise, returns `<unknown>`.
 
 **Kind**: inner method of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)  
 **Returns**: `string` - The name of the hook without 'Hook' on the end or `<unknown>`  
