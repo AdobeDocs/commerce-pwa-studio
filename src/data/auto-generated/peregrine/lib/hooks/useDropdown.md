@@ -37,13 +37,11 @@ The object returned contains the pieces needed to add the dropdown logic to your
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| elementRef | `Ref` | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements |
-| expanded | `Boolean` | The value of the `expanded` state |
+| Name        | Type       | Description                                                                                     |
+| ----------- | ---------- | ----------------------------------------------------------------------------------------------- |
+| elementRef  | `Ref`      | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements  |
+| expanded    | `Boolean`  | The value of the `expanded` state                                                               |
 | setExpanded | `function` | [State Hook](https://reactjs.org/docs/hooks-state.html) function for setting the expanded state |
-| triggerRef | `Ref` | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements |
-
-
+| triggerRef  | `Ref`      | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements  |
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useDropdown.js).

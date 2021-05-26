@@ -48,17 +48,19 @@ This talon performs the following effects:
 
 - Log a GraphQL error if it occurs when getting the price summary
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| props | `Object` |  |
+| Param         | Type                                          | Description                                    |
+| ------------- | --------------------------------------------- | ---------------------------------------------- |
+| props         | `Object`                                      |                                                |
 | props.queries | [`PriceSummaryQueries`](#PriceSummaryQueries) | GraphQL queries for a price summary component. |
 
-**Example** *(Importing into your project)*  
+**Example** _(Importing into your project)_
+
 ```js
-import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
+import { usePriceSummary } from "@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary";
 ```
+
 <a name="FlattenedData" id="FlattenedData"></a>
 
 ## FlattenedData : `Object`
@@ -68,14 +70,14 @@ Query data flattened into a simple object.
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| subtotal | `String` | Cart subtotal (excluding tax) |
-| total | `String` | Cart grand total |
-| discounts | `Array.<Object>` | Discounts applied to the cart |
-| giftCards | `Array.<Object>` | Gift cards applied to the cart |
-| taxes | `Array.<Object>` | Taxes applied to the cart |
-| shipping | `Array.<Object>` | Shipping addresses associated with this cart |
+| Name      | Type             | Description                                  |
+| --------- | ---------------- | -------------------------------------------- |
+| subtotal  | `String`         | Cart subtotal (excluding tax)                |
+| total     | `String`         | Cart grand total                             |
+| discounts | `Array.<Object>` | Discounts applied to the cart                |
+| giftCards | `Array.<Object>` | Gift cards applied to the cart               |
+| taxes     | `Array.<Object>` | Taxes applied to the cart                    |
+| shipping  | `Array.<Object>` | Shipping addresses associated with this cart |
 
 <a name="PriceSummaryQueries" id="PriceSummaryQueries"></a>
 
@@ -88,8 +90,8 @@ GraphQL queries for price summary component.
 for the queries used in Venia.  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name            | Type         | Description                               |
+| --------------- | ------------ | ----------------------------------------- |
 | getPriceSummary | `GraphQLAST` | Query to get the price summary for a cart |
 
 <a name="PriceSummaryTalonProps" id="PriceSummaryTalonProps"></a>
@@ -101,14 +103,12 @@ Props used for rendering a price summary component.
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| handleProceedToCheckout | `function` | Callback function which navigates the browser to the checkout |
-| hasError | `boolean` | True if a GraphQL query returns an error. False otherwise. |
-| hasItems | `boolean` | True if the cart has any items. False otherwise. |
-| isLoading | `boolean` | True while the GraphQL query is still in flight. False otherwise. |
-| flatData | [`FlattenedData`](#FlattenedData) | Query data that has been flattened into a simple object |
-
-
+| Name                    | Type                              | Description                                                       |
+| ----------------------- | --------------------------------- | ----------------------------------------------------------------- |
+| handleProceedToCheckout | `function`                        | Callback function which navigates the browser to the checkout     |
+| hasError                | `boolean`                         | True if a GraphQL query returns an error. False otherwise.        |
+| hasItems                | `boolean`                         | True if the cart has any items. False otherwise.                  |
+| isLoading               | `boolean`                         | True while the GraphQL query is still in flight. False otherwise. |
+| flatData                | [`FlattenedData`](#FlattenedData) | Query data that has been flattened into a simple object           |
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js).

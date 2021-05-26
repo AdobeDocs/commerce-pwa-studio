@@ -43,4 +43,3 @@ const MyGiftOptions = props => {
 
 export default MyGiftOptions
 ```
-

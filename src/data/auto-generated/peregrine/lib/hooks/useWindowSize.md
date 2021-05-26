@@ -47,12 +47,10 @@ It is recommended to only create/use a single time at the top level of your app
 
 **Kind**: global function  
 **Summary**: A React context provider.  
-**Returns**: `Context.Provider` - A [React context provider](https://reactjs.org/docs/context.html)  
+**Returns**: `Context.Provider` - A [React context provider](https://reactjs.org/docs/context.html)
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type     | Description           |
+| ----- | -------- | --------------------- |
 | props | `Object` | React component props |
-
-
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useWindowSize.js).

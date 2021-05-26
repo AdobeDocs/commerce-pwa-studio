@@ -45,26 +45,23 @@ Call **useToastContext()** to get the current state of the toast store and a dis
 ```jsx
 // MyToastComponents.js
 
-import {useToastContext} from '@magnto/peregrine';
+import { useToastContext } from "@magnto/peregrine";
 
-export const ToastContainer = () =>{
+export const ToastContainer = () => {
   const [toastState, toastDispatch] = useToastContext();
 
-  const toastData = toastState.map(toast=>{
+  const toastData = toastState.map((toast) => {
     // Do something with the toast data
-  })
+  });
 
-  return <div>{toastData}</div>
-}
+  return <div>{toastData}</div>;
+};
 
-export const AddToastComponent = () =>{
-  return
-  (
-    <div>
-    // Some component that allows you to add toast data using the
-    // toastDispatch() function or useToast() hook
-    </div>
-  )
-}
-
+export const AddToastComponent = () => {
+  return;
+  <div>
+    // Some component that allows you to add toast data using the //
+    toastDispatch() function or useToast() hook
+  </div>;
+};
 ```

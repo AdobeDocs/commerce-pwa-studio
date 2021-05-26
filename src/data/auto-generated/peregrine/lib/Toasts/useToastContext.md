@@ -33,8 +33,8 @@ The current state of the toast store.
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name   | Type  | Description                                |
+| ------ | ----- | ------------------------------------------ |
 | toasts | `Map` | Map object associating an id to toast data |
 
 <a name="ToastContextProvider" id="ToastContextProvider"></a>
@@ -55,10 +55,10 @@ Any component using this hook _must_ be a child of a [ToastContextProvider](#Toa
 
 **Kind**: global typedef  
 **Returns**: `Array.<Object>` - An array containing the state and dispatch function: [[ToastState](#ToastState), function]  
-**Example**  
+**Example**
+
 ```js
 const [toastState, dispatch] = useToastState();
 ```
-
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Toasts/useToastContext.js).

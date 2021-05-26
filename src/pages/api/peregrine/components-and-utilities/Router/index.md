@@ -19,12 +19,12 @@ If using Peregrine to bootstrap your PWA, it is configured automatically. If not
 
 The following example shows the manual usage of the Router component:
 
-``` jsx
-import ReactDOM from 'react-dom';
-import { Router } from '@magento/peregrine';
+```jsx
+import ReactDOM from "react-dom";
+import { Router } from "@magento/peregrine";
 
 ReactDOM.render(
-    <Router apiBase="https://mystore.com" />,
-    document.querySelector('main')
+  <Router apiBase="https://mystore.com" />,
+  document.querySelector("main")
 );
 ```

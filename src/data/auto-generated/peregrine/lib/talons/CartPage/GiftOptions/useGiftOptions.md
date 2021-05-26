@@ -50,18 +50,20 @@ This talon performs the following effects:
 - Fetch the gift options associated with the cart
 - Update the [GiftOptionsTalonProps](#GiftOptionsTalonProps) values with the data returned by the query
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| props | `Object` |  |
+| Param           | Type                                            | Description                        |
+| --------------- | ----------------------------------------------- | ---------------------------------- |
+| props           | `Object`                                        |                                    |
 | props.mutations | [`GiftOptionsMutations`](#GiftOptionsMutations) | GraphQL mutations for Gift Options |
-| props.queries | [`GiftOptionsQueries`](#GiftOptionsQueries) | GraphQL queries for Gift Options |
+| props.queries   | [`GiftOptionsQueries`](#GiftOptionsQueries)     | GraphQL queries for Gift Options   |
 
-**Example** *(Importing into your project)*  
+**Example** _(Importing into your project)_
+
 ```js
-import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/GiftOptions/useGiftOptions';
+import { useGiftOptions } from "@magento/peregrine/lib/talons/CartPage/GiftOptions/useGiftOptions";
 ```
+
 <a name="GiftOptionsMutations" id="GiftOptionsMutations"></a>
 
 ## GiftOptionsMutations : `Object`
@@ -73,8 +75,8 @@ GraphQL mutations for Gift Options
 for the query Venia uses.  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name                   | Type         | Description                                               |
+| ---------------------- | ------------ | --------------------------------------------------------- |
 | setGiftOptionsMutation | `GraphQLAST` | Mutation to use for setting the gift options for the cart |
 
 <a name="GiftOptionsQueries" id="GiftOptionsQueries"></a>
@@ -88,8 +90,8 @@ GraphQL query for Gift Options
 for the query Venia uses.  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name                | Type         | Description                    |
+| ------------------- | ------------ | ------------------------------ |
 | getGiftOptionsQuery | `GraphQLAST` | Query to get gift options data |
 
 <a name="GiftOptionsTalonProps" id="GiftOptionsTalonProps"></a>
@@ -101,15 +103,13 @@ Props data to use when rendering a gift options component.
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| includeGiftReceipt | `boolean` | True if a gift receipt should be included. False otherwise. |
-| includePrintedCard | `boolean` | True if a printed card should be included. False otherwise. |
-| giftMessage | `String` | Message to include with a gift. |
-| toggleIncludeGiftReceiptFlag | `function` | Toggles the value of the `includeGiftReceipt` value. |
-| toggleIncludePrintedCardFlag | `function` | Toggles the value of the `includePrintedCard` value. |
-| updateGiftMessage | `function` | Updates the gift message value. |
-
-
+| Name                         | Type       | Description                                                 |
+| ---------------------------- | ---------- | ----------------------------------------------------------- |
+| includeGiftReceipt           | `boolean`  | True if a gift receipt should be included. False otherwise. |
+| includePrintedCard           | `boolean`  | True if a printed card should be included. False otherwise. |
+| giftMessage                  | `String`   | Message to include with a gift.                             |
+| toggleIncludeGiftReceiptFlag | `function` | Toggles the value of the `includeGiftReceipt` value.        |
+| toggleIncludePrintedCardFlag | `function` | Toggles the value of the `includePrintedCard` value.        |
+| updateGiftMessage            | `function` | Updates the gift message value.                             |
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftOptions/useGiftOptions.js).

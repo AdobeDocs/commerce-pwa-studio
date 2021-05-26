@@ -64,37 +64,41 @@ This talon performs the following effects:
 - Fetch the currently applied gift cards for a cart
 - Manage the updating state of the cart while a gift card is being applied or removed
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| props | `Object` |  |
-| props.setIsCartUpdating | `function` | Callback function for setting the update state for the cart. |
-| props.mutations | [`GiftCardsMutations`](#GiftCardsMutations) | GraphQL mutations for Gift Cards |
-| props.queries | [`GiftCardsQueries`](#GiftCardsQueries) | GraphQL queries for Gift Cards |
+| Param                   | Type                                        | Description                                                  |
+| ----------------------- | ------------------------------------------- | ------------------------------------------------------------ |
+| props                   | `Object`                                    |                                                              |
+| props.setIsCartUpdating | `function`                                  | Callback function for setting the update state for the cart. |
+| props.mutations         | [`GiftCardsMutations`](#GiftCardsMutations) | GraphQL mutations for Gift Cards                             |
+| props.queries           | [`GiftCardsQueries`](#GiftCardsQueries)     | GraphQL queries for Gift Cards                               |
 
-**Example** *(Importing into your project)*  
+**Example** _(Importing into your project)_
+
 ```js
-import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
+import { useGiftCards } from "@magento/peregrine/lib/talons/CartPage/GiftCards";
 ```
+
 <a name="useGiftCard" id="useGiftCard"></a>
 
 ## useGiftCard(props) ⇒ [`GiftCardTalonProps`](#GiftCardTalonProps)
 
 Provide logic for a single gift card component.
 
-**Kind**: global function  
+**Kind**: global function
 
-| Param | Type | Description |
-| --- | --- | --- |
-| props | `Object` |  |
-| props.code | `String` | Gift card's code |
+| Param                | Type       | Description                                              |
+| -------------------- | ---------- | -------------------------------------------------------- |
+| props                | `Object`   |                                                          |
+| props.code           | `String`   | Gift card's code                                         |
 | props.removeGiftCard | `function` | A function that removes a gift card when provided a code |
 
-**Example** *(Importing into your project)*  
+**Example** _(Importing into your project)_
+
 ```js
-import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
+import { useGiftCard } from "@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard";
 ```
+
 <a name="GiftCardsMutations" id="GiftCardsMutations"></a>
 
 ## GiftCardsMutations : `Object`
@@ -106,9 +110,9 @@ GraphQL mutations for Gift Cards.
 for queries used in Venia  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| applyCardMutation | `GraphQLAST` | The mutation used to apply a gift card to the cart. |
+| Name               | Type         | Description                                            |
+| ------------------ | ------------ | ------------------------------------------------------ |
+| applyCardMutation  | `GraphQLAST` | The mutation used to apply a gift card to the cart.    |
 | removeCardMutation | `GraphQLAST` | The mutation used to remove a gift card from the cart. |
 
 <a name="GiftCardsQueries" id="GiftCardsQueries"></a>
@@ -122,10 +126,10 @@ GraphQL queries for Gift Cards.
 for queries used in Venia  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name              | Type         | Description                                                         |
+| ----------------- | ------------ | ------------------------------------------------------------------- |
 | appliedCardsQuery | `GraphQLAST` | The query used to get the gift cards currently applied to the cart. |
-| cardBalanceQuery | `GraphQLAST` | The query used to get the gift cards currently applied to the cart. |
+| cardBalanceQuery  | `GraphQLAST` | The query used to get the gift cards currently applied to the cart. |
 
 <a name="GiftCardsTalonProps" id="GiftCardsTalonProps"></a>
 
@@ -136,23 +140,23 @@ Props data to use when rendering a list of gift cards.
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| applyGiftCard | `function` | A callback to apply a gift card to the cart. |
-| checkBalanceData | `Object` | The giftCardAccount object of the most recent successful check balance GraphQL query. |
-| checkGiftCardBalance | `function` | A callback to check the balance of a gift card. |
-| errorLoadingGiftCards | `boolean` | Whether there was an error loading the cart's gift cards. |
-| errorApplyingCard | `boolean` | Whether there was an error applying the gift card. |
-| errorCheckingBalance | `boolean` | Whether there was an error checking the balance of the gift card. |
-| errorRemovingCard | `boolean` | Whether there was an error removing the gift card. |
-| giftCardsData | `Array` | The applied_gift_cards object of the cart query. |
-| isLoadingGiftCards | `boolean` | Whether the cart's gift card data is loading. |
-| isApplyingCard | `boolean` | Whether the apply gift card operation is in progress. |
-| isCheckingBalance | `boolean` | Whether the check gift card balance operation is in progress. |
-| isRemovingCard | `boolean` | Whether the remove gift card operation is in progress. |
-| removeGiftCard | `function` | A callback to remove a gift card from the cart. |
-| shouldDisplayCardBalance | `boolean` | Whether to display the gift card balance to the user |
-| shouldDisplayCardError | `boolean` | Whether to display an error message under the card input field. |
+| Name                     | Type       | Description                                                                           |
+| ------------------------ | ---------- | ------------------------------------------------------------------------------------- |
+| applyGiftCard            | `function` | A callback to apply a gift card to the cart.                                          |
+| checkBalanceData         | `Object`   | The giftCardAccount object of the most recent successful check balance GraphQL query. |
+| checkGiftCardBalance     | `function` | A callback to check the balance of a gift card.                                       |
+| errorLoadingGiftCards    | `boolean`  | Whether there was an error loading the cart's gift cards.                             |
+| errorApplyingCard        | `boolean`  | Whether there was an error applying the gift card.                                    |
+| errorCheckingBalance     | `boolean`  | Whether there was an error checking the balance of the gift card.                     |
+| errorRemovingCard        | `boolean`  | Whether there was an error removing the gift card.                                    |
+| giftCardsData            | `Array`    | The applied_gift_cards object of the cart query.                                      |
+| isLoadingGiftCards       | `boolean`  | Whether the cart's gift card data is loading.                                         |
+| isApplyingCard           | `boolean`  | Whether the apply gift card operation is in progress.                                 |
+| isCheckingBalance        | `boolean`  | Whether the check gift card balance operation is in progress.                         |
+| isRemovingCard           | `boolean`  | Whether the remove gift card operation is in progress.                                |
+| removeGiftCard           | `function` | A callback to remove a gift card from the cart.                                       |
+| shouldDisplayCardBalance | `boolean`  | Whether to display the gift card balance to the user                                  |
+| shouldDisplayCardError   | `boolean`  | Whether to display an error message under the card input field.                       |
 
 <a name="GiftCardTalonProps" id="GiftCardTalonProps"></a>
 
@@ -163,10 +167,8 @@ Props data to use when rendering a single gift card component.
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
+| Name                   | Type       | Description                                                                        |
+| ---------------------- | ---------- | ---------------------------------------------------------------------------------- |
 | removeGiftCardWithCode | `function` | Function for removing a gift card associated with the code passed into this talon. |
-
-
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js).

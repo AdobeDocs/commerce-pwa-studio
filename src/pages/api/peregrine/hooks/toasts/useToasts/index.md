@@ -25,7 +25,7 @@ If an `onAction()` or `onDismiss()` callback is provided, the implementer _must_
 If the `onDismiss()` callback is not provided, the toast is removed immediately.
 
 ```jsx
-const { toasterState, api }  = useToast(); 
+const { toasterState, api }  = useToast();
 const { addToast } = api;
 
 addToast({

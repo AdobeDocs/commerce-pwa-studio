@@ -61,18 +61,22 @@ a hook.
 
 **Kind**: global variable  
 **See**: [Intercept function signature](#hookInterceptFunction)  
-**Example** *(Access the tapable object)*  
+**Example** _(Access the tapable object)_
+
 ```js
-const peregrineTargets = targets.of('@magento/peregrine');
+const peregrineTargets = targets.of("@magento/peregrine");
 const hooksTarget = peregrineTargets.hooks;
 ```
-**Example** *(Wrap the &#x60;useAwaitQuery()&#x60; hook  with a logging extension)*  
+
+**Example** _(Wrap the &#x60;useAwaitQuery()&#x60; hook with a logging extension)_
+
 ```js
 
 hooksTargets.tap( => {
   hook.useAwaitQuery.wrapWith('@my-extensions/log-wrapper');
 })
 ```
+
 <a name="talons" id="talons"></a>
 
 ## talons : `tapable.AsyncSeriesHook`
@@ -89,18 +93,21 @@ a talon.
 
 **Kind**: global variable  
 **See**: [Intercept function signature](#hookInterceptFunction)  
-**Example** *(Access the tapable object)*  
+**Example** _(Access the tapable object)_
+
 ```js
-const peregrineTargets = targets.of('@magento/peregrine');
+const peregrineTargets = targets.of("@magento/peregrine");
 const talonsTarget = peregrineTargets.talons;
 ```
-**Example** *(Wrap the &#x60;useApp()&#x60; hook  with a logging extension)*  
-```js
 
-talonsTarget.tap(talons => {
-  talons.App.useApp.wrapWith('@my-extensions/log-wrapper');
-})
+**Example** _(Wrap the &#x60;useApp()&#x60; hook with a logging extension)_
+
+```js
+talonsTarget.tap((talons) => {
+  talons.App.useApp.wrapWith("@my-extensions/log-wrapper");
+});
 ```
+
 <a name="hookInterceptFunction" id="hookInterceptFunction"></a>
 
 ## hookInterceptFunction : `function`
@@ -110,12 +117,10 @@ Intercept function signature for the `talons` and `hooks` targets.
 Interceptors of `hooks` should call `wrapWith` on the individual hooks in
 the provided [`HookInterceptorSet` object](http://pwastudio.io/peregrine/reference/targets/wrappable-talons).
 
-**Kind**: global typedef  
+**Kind**: global typedef
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param            | Type                 | Description                           |
+| ---------------- | -------------------- | ------------------------------------- |
 | hookInterceptors | `HookInterceptorSet` | Registry of wrappable hook namespaces |
-
-
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/targets/peregrine-declare.js).

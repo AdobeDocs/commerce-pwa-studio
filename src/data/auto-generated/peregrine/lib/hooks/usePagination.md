@@ -22,10 +22,10 @@ The current pagination state
 **Kind**: global Object  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| currentPage | `Number` | The current page number |
-| totalPages | `Number` | The total number of pages |
+| Name        | Type     | Description               |
+| ----------- | -------- | ------------------------- |
+| currentPage | `Number` | The current page number   |
+| totalPages  | `Number` | The total number of pages |
 
 <a name="API" id="API"></a>
 
@@ -33,11 +33,11 @@ The current pagination state
 
 The API object used for modifying the PaginationState.
 
-**Kind**: global Object  
+**Kind**: global Object
 
-* [API](#API)
-    * [.setCurrentPage(page)](#API.setCurrentPage)
-    * [.setTotalPages(total)](#API.setTotalPages)
+- [API](#API)
+  - [.setCurrentPage(page)](#API.setCurrentPage)
+  - [.setTotalPages(total)](#API.setTotalPages)
 
 <a name="API.setCurrentPage" id="API.setCurrentPage"></a>
 
@@ -45,11 +45,11 @@ The API object used for modifying the PaginationState.
 
 Set the current page
 
-**Kind**: static method of [`API`](#API)  
+**Kind**: static method of [`API`](#API)
 
-| Param | Type | Description |
-| --- | --- | --- |
-| page | `Number` | The number to assign to the current page |
+| Param | Type     | Description                              |
+| ----- | -------- | ---------------------------------------- |
+| page  | `Number` | The number to assign to the current page |
 
 <a name="API.setTotalPages" id="API.setTotalPages"></a>
 
@@ -57,10 +57,10 @@ Set the current page
 
 Set the total number of pages
 
-**Kind**: static method of [`API`](#API)  
+**Kind**: static method of [`API`](#API)
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param | Type     | Description                                     |
+| ----- | -------- | ----------------------------------------------- |
 | total | `Number` | The number to set the amount of pages available |
 
 <a name="usePagination" id="usePagination"></a>
@@ -74,16 +74,14 @@ Use this hook to implement components that need to navigate through paged
 data.
 
 **Kind**: global function  
-**Returns**: `Array.<Object>` - An array with two entries containing the following content: [ [PaginationState](#PaginationState), [API](#API) ]  
+**Returns**: `Array.<Object>` - An array with two entries containing the following content: [ [PaginationState](#PaginationState), [API](#API) ]
 
-| Param | Type | Default | Description |
-| --- | --- | --- | --- |
-| config | `Object` |  | An object containing configuration values |
-| config.namespace | `String` | `''` | The namespace to append to config.parameter in the query. For example: ?namespace_parameter=value |
-| config.parameter | `String` | `'page'` | The name of the query parameter to use for page |
-| config.initialPage | `Number` |  | The initial current page value |
-| config.initialTotalPages | `Number` | `1` | The total pages expected to be usable by this hook |
-
-
+| Param                    | Type     | Default  | Description                                                                                       |
+| ------------------------ | -------- | -------- | ------------------------------------------------------------------------------------------------- |
+| config                   | `Object` |          | An object containing configuration values                                                         |
+| config.namespace         | `String` | `''`     | The namespace to append to config.parameter in the query. For example: ?namespace_parameter=value |
+| config.parameter         | `String` | `'page'` | The name of the query parameter to use for page                                                   |
+| config.initialPage       | `Number` |          | The initial current page value                                                                    |
+| config.initialTotalPages | `Number` | `1`      | The total pages expected to be usable by this hook                                                |
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/usePagination.js).

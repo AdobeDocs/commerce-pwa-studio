@@ -12,9 +12,9 @@ Access these targets in your intercept files by calling `targets.of('@magento/pe
 
 ```js
 /* my-custom-interceptors.js */
-module.exports = targets => {
-    const peregrineTargets = targets.of('@magento/peregrine')
-}
+module.exports = (targets) => {
+  const peregrineTargets = targets.of("@magento/peregrine");
+};
 ```
 
 See the [PWA Studio Target Experiments][] project repository for documented examples of extensions that use PWA Studio's extensibility framework.
