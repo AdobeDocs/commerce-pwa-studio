@@ -49,7 +49,7 @@ Targetable and enables automatic interception of targets.
 ### targetableSet.module(modulePath, [publisher]) ⇒ `TargetableModule`
 
 **Kind**: instance method of [`TargetableSet`](#TargetableSet)  
-**Returns**: `TargetableModule` - Returns an instance of [TargetableModule][]  
+**Returns**: `TargetableModule` - Returns an instance of TargetableModule  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -61,7 +61,7 @@ Targetable and enables automatic interception of targets.
 ### targetableSet.esModule(modulePath, [publisher]) ⇒ `TargetableESModule`
 
 **Kind**: instance method of [`TargetableSet`](#TargetableSet)  
-**Returns**: `TargetableESModule` - Returns an instance of [TargetableESModule][]  
+**Returns**: `TargetableESModule` - Returns an instance of TargetableESModule  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -73,7 +73,7 @@ Targetable and enables automatic interception of targets.
 ### targetableSet.esModuleArray(modulePath, [publisher]) ⇒ `TargetableESModuleArray`
 
 **Kind**: instance method of [`TargetableSet`](#TargetableSet)  
-**Returns**: `TargetableESModuleArray` - Returns an instance of [TargetableESModuleArray][]  
+**Returns**: `TargetableESModuleArray` - Returns an instance of TargetableESModuleArray  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -85,7 +85,7 @@ Targetable and enables automatic interception of targets.
 ### targetableSet.esModuleObject(modulePath, [publisher]) ⇒ `TargetableESModuleObject`
 
 **Kind**: instance method of [`TargetableSet`](#TargetableSet)  
-**Returns**: `TargetableESModuleObject` - Returns an instance of [TargetableESModuleObject][]  
+**Returns**: `TargetableESModuleObject` - Returns an instance of TargetableESModuleObject  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -97,7 +97,7 @@ Targetable and enables automatic interception of targets.
 ### targetableSet.reactComponent(modulePath, [publisher]) ⇒ `TargetableReactComponent`
 
 **Kind**: instance method of [`TargetableSet`](#TargetableSet)  
-**Returns**: `TargetableReactComponent` - Returns an instance of [TargetableReactComponent][]  
+**Returns**: `TargetableReactComponent` - Returns an instance of TargetableReactComponent  
 
 | Param | Type | Description |
 | --- | --- | --- |

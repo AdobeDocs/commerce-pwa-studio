@@ -7,7 +7,7 @@ and then re-exports those modules as an object with properties matching the
 imported bindings.
 Useful for building named lists and associative arrays when making extension points.
 
-Uses [export-esm-collection-loader][] to build source code.
+Uses [export-esm-collection-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/export-esm-collection-loader.js) to build source code.
 
 **Kind**: global class  
 

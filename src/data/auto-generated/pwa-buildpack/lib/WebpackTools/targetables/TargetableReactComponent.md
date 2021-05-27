@@ -154,7 +154,7 @@ Replace a JSX element with different code.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| jsx | `string` | A JSX element matching the one in the source code to modify. Use a JSX opening element or a self-closing element, like '<Route path="/">'. |
+| jsx | `string` | A JSX element matching the one in the source code to modify. Use a JSX opening element or a self-closing element, like `<Route path="/">`. |
 | replacement | `string` | Replacement code as a string. |
 | [options] | `JSXModifierOptions` |  |
 

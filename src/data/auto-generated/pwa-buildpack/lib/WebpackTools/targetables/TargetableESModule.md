@@ -26,7 +26,7 @@ earlier import bindings.
 If a collision is detected, it renames the binding before inserting it.
 
 **Kind**: instance method of [`TargetableESModule`](#TargetableESModule)  
-**Returns**: `SingleImportStatement` - An instance of the [`SingleImportStatement`] class.  
+**Returns**: `SingleImportStatement` - An instance of the `SingleImportStatement` class.  
 
 | Param | Type | Description |
 | --- | --- | --- |

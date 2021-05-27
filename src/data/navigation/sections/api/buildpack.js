@@ -85,6 +85,10 @@ module.exports = {
       ],
     },
     {
+      title: "Transform requests",
+      path: "/api/buildpack/transform-requests/",
+    },
+    {
       title: "Webpack tools",
       path: "/api/buildpack/webpack/",
       pages: [

@@ -45,7 +45,7 @@ the transform request is automatically set to this module's filename.
 
 | Param | Type | Description |
 | --- | --- | --- |
-| type | `TransformType` | [Transform type][] |
+| type | `TransformType` | Transform type |
 | transformModule | `string` | The Node module that runs the transform, such as a Webpack loader for type `source` or a Babel plugin for type `babel`. |
 | options | `Object` | Configuration object to send to the transformModule. |
 
@@ -56,7 +56,7 @@ the transform request is automatically set to this module's filename.
 Empty this module's queue of transforms, returning them as an array.
 
 **Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Returns**: `Array.<TransformRequest>` - An array of [Transform requests][].  
+**Returns**: `Array.<TransformRequest>` - An array of Transform requests.  
 <a name="TargetableModule+insertAfterSource" id="TargetableModule+insertAfterSource"></a>
 
 ### targetableModule.insertAfterSource(after, insert, [options]) ⇒ `this`
@@ -108,7 +108,7 @@ Add text to the beginning of a file.
 
 ### targetableModule.spliceSource(instruction) ⇒ `this`
 
-Do any splice operation supported by [`splice-source-loader`][].
+Do any splice operation supported by [splice-source-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/splice-source-loader.js).
 
 **Kind**: instance method of [`TargetableModule`](#TargetableModule)  
 **Chainable**  
