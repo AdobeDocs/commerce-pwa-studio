@@ -83,14 +83,13 @@ validation process and the build process will be stopeed.
 
 ## BuiltinTargets
 
-
-* [BuiltinTargets](#module_BuiltinTargets)
-    * [.envVarDefinitions](#module_BuiltinTargets.envVarDefinitions) : `tapable.SyncHook`
-    * [.transformModules](#module_BuiltinTargets.transformModules) : `tapable.AsyncSeriesHook`
-    * [.webpackCompiler](#module_BuiltinTargets.webpackCompiler) : `tapable.SyncHook`
-    * [.specialFeatures](#module_BuiltinTargets.specialFeatures) : `tapable.SyncHook`
-    * [.transformUpward](#module_BuiltinTargets.transformUpward) : `tapable.AsyncSeriesHook`
-    * [.validateEnv](#module_BuiltinTargets.validateEnv) : `tapable.AsyncParallelHook`
+- [BuiltinTargets](#module_BuiltinTargets)
+  - [.envVarDefinitions](#module_BuiltinTargets.envVarDefinitions) : `tapable.SyncHook`
+  - [.transformModules](#module_BuiltinTargets.transformModules) : `tapable.AsyncSeriesHook`
+  - [.webpackCompiler](#module_BuiltinTargets.webpackCompiler) : `tapable.SyncHook`
+  - [.specialFeatures](#module_BuiltinTargets.specialFeatures) : `tapable.SyncHook`
+  - [.transformUpward](#module_BuiltinTargets.transformUpward) : `tapable.AsyncSeriesHook`
+  - [.validateEnv](#module_BuiltinTargets.validateEnv) : `tapable.AsyncParallelHook`
 
 <a name="module_BuiltinTargets.envVarDefinitions" id="module_BuiltinTargets.envVarDefinitions"></a>
 
@@ -110,26 +109,27 @@ configuration with the project-wide environment variable system.
 - [Variable definition schema](http://pwastudio.io/pwa-buildpack/reference/environment-variables/definitions-api/)
 - [Core variable definitions](http://pwastudio.io/pwa-buildpack/reference/environment-variables/core-definitions/)
 
-
-| Param | Type | Description |
-| --- | --- | --- |
+| Param             | Type     | Description                                                                                                                             |
+| ----------------- | -------- | --------------------------------------------------------------------------------------------------------------------------------------- |
 | envVarDefinitions | `object` | The [variable definitions object](http://pwastudio.io/pwa-buildpack/reference/environment-variables/definitions-api/). Modify in place. |
 
-**Example** *(Add config fields for your extension)*  
+**Example** _(Add config fields for your extension)_
+
 ```js
-targets.of('@magento/pwa-buildpack').envVarDefinitions.tap(defs => {
+targets.of("@magento/pwa-buildpack").envVarDefinitions.tap((defs) => {
   defs.sections.push({
-    name: 'My Extension Settings',
+    name: "My Extension Settings",
     variables: [
       {
-        name: 'MY_EXTENSION_API_KEY',
-        type: 'str',
-        desc: 'API key for remote service access.'
-      }
-    ]
-  })
+        name: "MY_EXTENSION_API_KEY",
+        type: "str",
+        desc: "API key for remote service access.",
+      },
+    ],
+  });
 });
 ```
+
 <a name="module_BuiltinTargets.transformModules" id="module_BuiltinTargets.transformModules"></a>
 
 ### BuiltinTargets.transformModules : `tapable.AsyncSeriesHook`
@@ -150,15 +150,19 @@ areas rather than files on disk.
 
 **Kind**: static property of [`BuiltinTargets`](#module_BuiltinTargets)  
 **See**: [transformModules intercept function](#transformModulesIntercept)  
-**Example** *(Strip unnecessary Lodash code from a specific JS module.)*  
+**Example** _(Strip unnecessary Lodash code from a specific JS module.)_
+
 ```js
-targets.of('@magento/pwa-buildpack').transformModules.tap(addTransform => addTransform({
-  type: 'babel',
-  fileToTransform: './lib/uses-pipeline-syntax.js',
-  transformModule: 'babel-plugin-lodash',
-  options: { id: ["async", "lodash-bound" ]}
-}));
+targets.of("@magento/pwa-buildpack").transformModules.tap((addTransform) =>
+  addTransform({
+    type: "babel",
+    fileToTransform: "./lib/uses-pipeline-syntax.js",
+    transformModule: "babel-plugin-lodash",
+    options: { id: ["async", "lodash-bound"] },
+  })
+);
 ```
+
 <a name="module_BuiltinTargets.webpackCompiler" id="module_BuiltinTargets.webpackCompiler"></a>
 
 ### BuiltinTargets.webpackCompiler : `tapable.SyncHook`
@@ -170,15 +174,18 @@ Use an [intercept function](#webpackCompilerIntercept) on this target
 to access the [webpack compiler](https://webpack.js.org/api/compiler-hooks/).
 
 **Kind**: static property of [`BuiltinTargets`](#module_BuiltinTargets)  
-**Example** *(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)*  
+**Example** _(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)_
+
 ```js
-targets.of('@magento/pwa-buildpack').webpackCompiler.tap(compiler => {
+targets.of("@magento/pwa-buildpack").webpackCompiler.tap((compiler) => {
   compiler.hooks.watchRun.tapPromise(async () => {
-     compiler.getInfrastructureLogger('my-extension')
-       .info('I do something special in the dev server!');
+    compiler
+      .getInfrastructureLogger("my-extension")
+      .info("I do something special in the dev server!");
   });
 });
 ```
+
 <a name="module_BuiltinTargets.specialFeatures" id="module_BuiltinTargets.specialFeatures"></a>
 
 ### BuiltinTargets.specialFeatures : `tapable.SyncHook`
@@ -196,12 +203,14 @@ to add special build features for the modules used in your project.
 
 **Kind**: static property of [`BuiltinTargets`](#module_BuiltinTargets)  
 **See**: [Special flags in `configureWebpack()`](http://pwastudio.io/pwa-buildpack/reference/configure-webpack/#special-flags)  
-**Example** *(Declare that your extension contains CSS modules.)*  
+**Example** _(Declare that your extension contains CSS modules.)_
+
 ```js
-targets.of('@magento/pwa-buildpack').specialFeatures.tap(featuresByModule => {
-  featuresByModule['my-module'] = { cssModules: true };
-})
+targets.of("@magento/pwa-buildpack").specialFeatures.tap((featuresByModule) => {
+  featuresByModule["my-module"] = { cssModules: true };
+});
 ```
+
 <a name="module_BuiltinTargets.transformUpward" id="module_BuiltinTargets.transformUpward"></a>
 
 ### BuiltinTargets.transformUpward : `tapable.AsyncSeriesHook`
@@ -213,32 +222,34 @@ files in every package which sets the `upward: true` flag in the
 UpwardIncludePlugin calls this target with the parsed and merged
 definition.
 
-**Kind**: static property of [`BuiltinTargets`](#module_BuiltinTargets)  
+**Kind**: static property of [`BuiltinTargets`](#module_BuiltinTargets)
 
-| Param | Type |
-| --- | --- |
-| interceptor | [`transformUpwardIntercept`](#transformUpwardIntercept) | 
+| Param       | Type                                                    |
+| ----------- | ------------------------------------------------------- |
+| interceptor | [`transformUpwardIntercept`](#transformUpwardIntercept) |
 
-**Example** *(Send empty responses in maintenance mode.)*  
+**Example** _(Send empty responses in maintenance mode.)_
+
 ```js
-targets.of('@magento/pwa-buildpack').transformUpward.tap(def => {
+targets.of("@magento/pwa-buildpack").transformUpward.tap((def) => {
   const guardMaintenanceMode = (prop, inline) => {
     def[prop] = {
       when: [
         {
-          matches: 'env.MAINTENANCE_MODE',
-          pattern: '.',
-          use: { inline }
-        }
+          matches: "env.MAINTENANCE_MODE",
+          pattern: ".",
+          use: { inline },
+        },
       ],
-      default: def[prop]
-    }
-  }
+      default: def[prop],
+    };
+  };
 
-  guardMaintenanceMode('status', 503);
-  guardMaintenanceMode('body', '')
-})
+  guardMaintenanceMode("status", 503);
+  guardMaintenanceMode("body", "");
+});
 ```
+
 <a name="module_BuiltinTargets.validateEnv" id="module_BuiltinTargets.validateEnv"></a>
 
 ### BuiltinTargets.validateEnv : `tapable.AsyncParallelHook`
@@ -253,16 +264,18 @@ function can submit multiple errors by calling the onFail function
 multiple times. All the errors will be queued into an array and
 displayed on the console at the end of the process.
 
-**Kind**: static property of [`BuiltinTargets`](#module_BuiltinTargets)  
+**Kind**: static property of [`BuiltinTargets`](#module_BuiltinTargets)
 
-| Param | Type |
-| --- | --- |
-| validator | [`envValidationInterceptor`](#envValidationInterceptor) | 
+| Param     | Type                                                    |
+| --------- | ------------------------------------------------------- |
+| validator | [`envValidationInterceptor`](#envValidationInterceptor) |
 
-**Example**  
+**Example**
+
 ```js
-targets.of('@magento/pwa-buildpack').validateEnv.tapPromise(validateBackendUrl);
+targets.of("@magento/pwa-buildpack").validateEnv.tapPromise(validateBackendUrl);
 ```
+
 <a name="transformModulesIntercept" id="transformModulesIntercept"></a>
 
 ## transformModulesIntercept : `function`
@@ -273,10 +286,10 @@ Interceptors of `transformModules` should call the [`addTransform()`](#addTransf
 callback to add module specific transformers.
 Any returned value will be ignored.
 
-**Kind**: global typedef  
+**Kind**: global typedef
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param        | Type                            | Description                  |
+| ------------ | ------------------------------- | ---------------------------- |
 | addTransform | [`addTransform`](#addTransform) | Callback to add a transform. |
 
 <a name="addTransform" id="addTransform"></a>
@@ -286,10 +299,10 @@ Any returned value will be ignored.
 Callback to add a transform.
 
 **Kind**: global typedef  
-**See**: [TransformRequest](https://pwastudio.io/pwa-buildpack/reference/transform-requests/#addTransform)  
+**See**: [TransformRequest](https://pwastudio.io/pwa-buildpack/reference/transform-requests/#addTransform)
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param            | Type                                      | Description                                                                                                                                          |
+| ---------------- | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](https://pwastudio.io/pwa-buildpack/reference/transform-requests/#addTransform) to apply a transform to a file provided by this dependency. |
 
 <a name="webpackCompilerIntercept" id="webpackCompilerIntercept"></a>
@@ -301,10 +314,10 @@ Intercept function signature for the webpackCompiler target.
 Interceptors of `webpackCompiler` should tap hooks on the provided
 `compiler` object. Any returned value will be ignored.
 
-**Kind**: global typedef  
+**Kind**: global typedef
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param    | Type               | Description                                                                 |
+| -------- | ------------------ | --------------------------------------------------------------------------- |
 | compiler | `webpack.Compiler` | The [webpack compiler](https://webpack.js.org/api/compiler-hooks/) instance |
 
 <a name="specialFeaturesIntercept" id="specialFeaturesIntercept"></a>
@@ -316,10 +329,10 @@ Intercept function signature for the specialFeatures target.
 Interceptors of the `specialFeatures` target can use the mapping object provided
 to map special build flags to their project modules.
 
-**Kind**: global typedef  
+**Kind**: global typedef
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param            | Type                                 | Description                                                    |
+| ---------------- | ------------------------------------ | -------------------------------------------------------------- |
 | featuresByModule | `Object.<string, SpecialBuildFlags>` | An object mapping of module names to their special build flags |
 
 <a name="transformUpwardIntercept" id="transformUpwardIntercept"></a>
@@ -337,10 +350,10 @@ to get what you need to modify the UPWARD definition (for example, a network
 request) then you can provide an `async` function as interceptor (or simply
 return a Promise from any function).
 
-**Kind**: global typedef  
+**Kind**: global typedef
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param      | Type     | Description                      |
+| ---------- | -------- | -------------------------------- |
 | definition | `object` | Parsed UPWARD definition object. |
 
 <a name="envValidationInterceptor" id="envValidationInterceptor"></a>
@@ -363,14 +376,12 @@ It can call the onFail multiple times if it wants to report multiple errors.
 All the errors will be queued and printed into the console at the end of the
 validation process and the build process will be stopeed.
 
-**Kind**: global typedef  
+**Kind**: global typedef
 
-| Param | Type | Description |
-| --- | --- | --- |
-| config.env | `Object` | Project ENV |
-| config.onFail | `function` | On fail callback |
-| config.debug | `function` | Debug function to be used for additional reporting in debug mode |
-
-
+| Param         | Type       | Description                                                      |
+| ------------- | ---------- | ---------------------------------------------------------------- |
+| config.env    | `Object`   | Project ENV                                                      |
+| config.onFail | `function` | On fail callback                                                 |
+| config.debug  | `function` | Debug function to be used for additional reporting in debug mode |
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/declare-base.js).

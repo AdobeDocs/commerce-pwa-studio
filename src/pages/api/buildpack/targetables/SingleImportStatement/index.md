@@ -22,7 +22,9 @@ Code examples for using the `SingleImportStatement` class.
 Pass in an import statement to the constructor to create a new `SingleImportStatement` object.
 
 ```js
-const queryHookImport = new SingleImportStatement("import { useQuery } from '@apollo/react-hooks'");
+const queryHookImport = new SingleImportStatement(
+  "import { useQuery } from '@apollo/react-hooks'"
+);
 ```
 
 This creates an object with the following properties:
@@ -40,9 +42,11 @@ This creates an object with the following properties:
 Use the `changeBinding()` function to rename the variable bound to the imported object.
 
 ```js
-const queryHookImport = new SingleImportStatement("import { useQuery } from '@apollo/react-hooks'");
+const queryHookImport = new SingleImportStatement(
+  "import { useQuery } from '@apollo/react-hooks'"
+);
 
-const queryHookImport2 = useQueryImport.changeBinding('useQuery2');
+const queryHookImport2 = useQueryImport.changeBinding("useQuery2");
 ```
 
 This creates an object with the following properties:
@@ -69,5 +73,5 @@ let Button = new SingleImportStatement("Button from './button'");
 Button = Button.changeBinding(generateUniqueIdentifier());
 
 // this renders the new identifier for your Button import in the final code
-const jsx = `<${Button}>hello world</${Button}>`
+const jsx = `<${Button}>hello world</${Button}>`;
 ```

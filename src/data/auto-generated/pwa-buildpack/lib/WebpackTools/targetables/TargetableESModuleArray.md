@@ -8,13 +8,13 @@ Useful for building extensible navigation lists, routes, strategies, etc.
 
 This class uses [export-esm-collection-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/export-esm-collection-loader.js) to build the source code.
 
-**Kind**: global class  
+**Kind**: global class
 
-* [TargetableESModuleArray](#TargetableESModuleArray)
-    * [.addImport(importString)](#TargetableESModuleArray+addImport) ⇒ `undefined`
-    * [.add(...items)](#TargetableESModuleArray+add) ⇒ `undefined`
-    * [.push(...importString)](#TargetableESModuleArray+push) ⇒ `undefined`
-    * [.unshift(...importString)](#TargetableESModuleArray+unshift) ⇒ `undefined`
+- [TargetableESModuleArray](#TargetableESModuleArray)
+  - [.addImport(importString)](#TargetableESModuleArray+addImport) ⇒ `undefined`
+  - [.add(...items)](#TargetableESModuleArray+add) ⇒ `undefined`
+  - [.push(...importString)](#TargetableESModuleArray+push) ⇒ `undefined`
+  - [.unshift(...importString)](#TargetableESModuleArray+unshift) ⇒ `undefined`
 
 <a name="TargetableESModuleArray+addImport" id="TargetableESModuleArray+addImport"></a>
 
@@ -24,10 +24,10 @@ Adds a module to the end of the array.
 
 This also acts as an alias for the `push()` function.
 
-**Kind**: instance method of [`TargetableESModuleArray`](#TargetableESModuleArray)  
+**Kind**: instance method of [`TargetableESModuleArray`](#TargetableESModuleArray)
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param        | Type     | Description                              |
+| ------------ | -------- | ---------------------------------------- |
 | importString | `string` | A static import declaration for a module |
 
 <a name="TargetableESModuleArray+add" id="TargetableESModuleArray+add"></a>
@@ -38,10 +38,10 @@ Add a module or modules to the end of the array.
 
 This also acts as an alias for the `push()` function.
 
-**Kind**: instance method of [`TargetableESModuleArray`](#TargetableESModuleArray)  
+**Kind**: instance method of [`TargetableESModuleArray`](#TargetableESModuleArray)
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param    | Type  | Description                  |
+| -------- | ----- | ---------------------------- |
 | ...items | `any` | Static import declaration(s) |
 
 <a name="TargetableESModuleArray+push" id="TargetableESModuleArray+push"></a>
@@ -50,10 +50,10 @@ This also acts as an alias for the `push()` function.
 
 Add a module or modules to the end of the array.
 
-**Kind**: instance method of [`TargetableESModuleArray`](#TargetableESModuleArray)  
+**Kind**: instance method of [`TargetableESModuleArray`](#TargetableESModuleArray)
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param           | Type     | Description                  |
+| --------------- | -------- | ---------------------------- |
 | ...importString | `string` | Static import declaration(s) |
 
 <a name="TargetableESModuleArray+unshift" id="TargetableESModuleArray+unshift"></a>
@@ -62,12 +62,10 @@ Add a module or modules to the end of the array.
 
 Add a module or modules to the _beginning_ of the array.
 
-**Kind**: instance method of [`TargetableESModuleArray`](#TargetableESModuleArray)  
+**Kind**: instance method of [`TargetableESModuleArray`](#TargetableESModuleArray)
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param           | Type     | Description                  |
+| --------------- | -------- | ---------------------------- |
 | ...importString | `string` | Static import declaration(s) |
-
-
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModuleArray.js).

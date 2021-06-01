@@ -63,7 +63,6 @@ You can specify these options in any order after `buildpack create-project <dire
 | `--install`     | Whether to install dependencies after project creation. Defaults to `true`.                                                |
 | `--npm-client`  | NPM client used to manage this repository. Both `npm` (the default) and `yarn` are supported.                              |
 
-
 <InlineAlert variant="warning" slots="text"/>
 
 Do not use this command as part of a production deployment process.

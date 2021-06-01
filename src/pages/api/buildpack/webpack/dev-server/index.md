@@ -7,7 +7,7 @@ title: PWA development server
 A utility for configuring a development OS and a `webpack-dev-server` for PWA development.
 A typical webpack local development environment uses the [`devServer`][] settings in `webpack.config.js` to create a temporary, local HTTP server to show edits in real time.
 
-[`devServer`]: https://webpack.js.org/configuration/dev-server/
+[`devserver`]: https://webpack.js.org/configuration/dev-server/
 
 ## Basic Features
 
@@ -52,9 +52,9 @@ This hostname must be created for the current project by running `buildpack crea
 
 ### GraphQL Playground IDE
 
-The dev server provides a [GraphQL Playground IDE][GraphQL Playground feature] to debug the GraphQL queries in the project.
+The dev server provides a [GraphQL Playground IDE][graphql playground feature] to debug the GraphQL queries in the project.
 
-[GraphQL Playground feature]: #graphql-playground-feature
+[graphql playground feature]: #graphql-playground-feature
 
 ### SSL certificate configuration
 
@@ -74,15 +74,8 @@ attributes, replacing it with the development server domain name.
 
 [GraphQL Playground][] is an enhanced version of the in-browser GraphQL debugging tool GraphiQL.
 
-[GraphQL Playground]: https://github.com/prisma/graphql-playground
+[graphql playground]: https://github.com/prisma/graphql-playground
 
 Enable this feature by setting the `PWADevServerOptions.graphqlPlayground` configuration option to `true`.
 
 Browse to the `/graphiql` path on your PWADevServer to use this feature.
-
-[create SSL certificate]: #creating-an-ssl-certificate
-[secure and unique hostname for the dev server]: #creating-a-secure-and-unique-hostname
-[Promise]: https://webpack.js.org/configuration/configuration-types/#exporting-a-promise
-[`SecureHostOptions`]: #securehostoptions
-[`subdomain: string`]: #subdomain
-[`exactDomain: string`]: #exactdomain

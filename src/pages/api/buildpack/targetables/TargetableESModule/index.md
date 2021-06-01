@@ -26,7 +26,7 @@ Use this object to refer to the component in your code.
 
 ```jsx
 const logger = esModule.addImport('import logger from "./logger"');
-esModule.insertAfterSource("./logger';\n", `${logger.binding}('startup')`)
+esModule.insertAfterSource("./logger';\n", `${logger.binding}('startup')`);
 ```
 
 The `SingleImportStatement` class overrides its `toString()` method to return the value of its `.binding` property,
@@ -34,7 +34,7 @@ so you can use the object itself in your templates
 
 ```jsx
 const logger = esModule.addImport('import logger from "./logger"');
-esModule.insertAfterSource("./logger';\n", `${logger}('startup')`)
+esModule.insertAfterSource("./logger';\n", `${logger}('startup')`);
 ```
 
 #### Import statement limits
@@ -44,13 +44,13 @@ The `addImport()` function can only handle import statements with a single bindi
 For example, the following code is allowed because it only binds `VeniaButton` in the statement:
 
 ```js
-import { Button as VeniaButton } from '@magento/venia/lib/components/Button'
+import { Button as VeniaButton } from "@magento/venia/lib/components/Button";
 ```
 
 The following would not be allowed, since it adds two bindings (`VeniaButton` and `Carousel`):
 
 ```js
-import { Button as VeniaButton, Carousel } from '@magento/venia'
+import { Button as VeniaButton, Carousel } from "@magento/venia";
 ```
 
 #### Import conflicts
@@ -66,13 +66,13 @@ Use the `wrapWithFile()` function to wrap an exported module with another module
 ```js
 // Create a TargetableESModule linked to the useProductFullDetail.js file
 const useProductFullDetails = targetables.esModule(
-    '@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail.js'
+  "@magento/peregrine/lib/talons/ProductFullDetail/useProductFullDetail.js"
 );
 
 // Wrap the `useProductFullDetail` named export from the file with
 // the default export of `src/targets/wrapper.js` in the `myExtension` package.
 useProductFullDetails.wrapWithFile(
-    'useProductFullDetail',
-    'myExtension/src/targets/wrapper'
+  "useProductFullDetail",
+  "myExtension/src/targets/wrapper"
 );
 ```

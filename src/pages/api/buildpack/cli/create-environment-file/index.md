@@ -8,6 +8,7 @@ Whether its a new storefront project or a fresh PWA Studio repository clone, PWA
 The `create-env-file` subcommand for the [`buildpack`][] CLI command automatically creates this file using pre-defined environment variables and default values.
 
 [`buildpack`]: /api/buildpack/cli/
+
 ## Example
 
 Usage example with `npx`:
@@ -33,11 +34,11 @@ The `create-env-file` command uses the [`envVarDefinitions.json`][] file in the 
 
 Use any of the following methods to define the generated variables in the `.env` file:
 
--   Set one or more variables defined in the [`envVarDefinitions.json`][] file before running `create-env-file` to override the `default` values written to the `.env` file.
-    These values can be set using shell scripting or other OS-specific methods.
--   Call `create-env-file` with the `--use-examples` flag to use the `example` values for variables declared in the `envVarDefinitions.json` file.
-    Calling the `create-env-file` command without this flag still writes the `example` values to the `.env` file, but
-    the entry is commented out.
+- Set one or more variables defined in the [`envVarDefinitions.json`][] file before running `create-env-file` to override the `default` values written to the `.env` file.
+  These values can be set using shell scripting or other OS-specific methods.
+- Call `create-env-file` with the `--use-examples` flag to use the `example` values for variables declared in the `envVarDefinitions.json` file.
+  Calling the `create-env-file` command without this flag still writes the `example` values to the `.env` file, but
+  the entry is commented out.
 
 Variables with no environment definitions nor `example` values in the `envVarDefinitions.json` file are declared in the `.env` file with an empty value.
 
@@ -58,7 +59,7 @@ Uses the current environment variables and [`envVarDefinitions.json`][] file to 
 #### Example
 
 ```js
-const { createDotEnvFile } = require('@magento/pwa-buildpack');
+const { createDotEnvFile } = require("@magento/pwa-buildpack");
 
 const fileContents = createDotEnvFile(process.cwd());
 ```

@@ -57,12 +57,12 @@ If you use `localhost` for developing multiple PWAs, you run the risk of Service
 
 Use environment variables in the `CUSTOM_ORIGIN_` namespace to change the behavior of the `create-custom-origin` command.
 
-| Environment Variable Name | Default Value | Description |
-| --- | --- | --- |
-| `CUSTOM_ORIGIN_ENABLED` | `true` | Enable the custom origin feature |
-| `CUSTOM_ORIGIN_ADD_UNIQUE_HASH` | `true` | Add a unique hash string to the custom origin. |
-| `CUSTOM_ORIGIN_SUBDOMAIN` | | Allows you to manually specify the subdomain prefix of the custom origin instead of using the package name. |
-| `CUSTOM_ORIGIN_EXACT_DOMAIN` | | Allows you to specify the _exact_ domain of the custom origin instead of a subdomain under `.local.pwadev`. |
+| Environment Variable Name       | Default Value | Description                                                                                                 |
+| ------------------------------- | ------------- | ----------------------------------------------------------------------------------------------------------- |
+| `CUSTOM_ORIGIN_ENABLED`         | `true`        | Enable the custom origin feature                                                                            |
+| `CUSTOM_ORIGIN_ADD_UNIQUE_HASH` | `true`        | Add a unique hash string to the custom origin.                                                              |
+| `CUSTOM_ORIGIN_SUBDOMAIN`       |               | Allows you to manually specify the subdomain prefix of the custom origin instead of using the package name. |
+| `CUSTOM_ORIGIN_EXACT_DOMAIN`    |               | Allows you to specify the _exact_ domain of the custom origin instead of a subdomain under `.local.pwadev`. |
 
 Set these variables permanently in your `.env` file, or argue them at the command line for overrides:
 

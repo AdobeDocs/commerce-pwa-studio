@@ -10,16 +10,16 @@ to that source file, meant to be passed to interceptors. Inside
 interceptors, extensions and projects can configure the TargetableModule to
 transform it in many ways.
 
-**Kind**: global class  
+**Kind**: global class
 
-* [TargetableModule](#TargetableModule)
-    * [new TargetableModule(file, trackingOwner)](#new_TargetableModule_new)
-    * [.addTransform(type, transformModule, options)](#TargetableModule+addTransform) ⇒ `this`
-    * [.flush()](#TargetableModule+flush) ⇒ `Array.<TransformRequest>`
-    * [.insertAfterSource(after, insert, [options])](#TargetableModule+insertAfterSource) ⇒ `this`
-    * [.insertBeforeSource(before, insert, [options])](#TargetableModule+insertBeforeSource) ⇒ `this`
-    * [.prependSource(insert)](#TargetableModule+prependSource) ⇒ `this`
-    * [.spliceSource(instruction)](#TargetableModule+spliceSource) ⇒ `this`
+- [TargetableModule](#TargetableModule)
+  - [new TargetableModule(file, trackingOwner)](#new_TargetableModule_new)
+  - [.addTransform(type, transformModule, options)](#TargetableModule+addTransform) ⇒ `this`
+  - [.flush()](#TargetableModule+flush) ⇒ `Array.<TransformRequest>`
+  - [.insertAfterSource(after, insert, [options])](#TargetableModule+insertAfterSource) ⇒ `this`
+  - [.insertBeforeSource(before, insert, [options])](#TargetableModule+insertBeforeSource) ⇒ `this`
+  - [.prependSource(insert)](#TargetableModule+prependSource) ⇒ `this`
+  - [.spliceSource(instruction)](#TargetableModule+spliceSource) ⇒ `this`
 
 <a name="new_TargetableModule_new" id="new_TargetableModule_new"></a>
 
@@ -27,10 +27,9 @@ transform it in many ways.
 
 Create a TargetableModule representing a file.
 
-
-| Param | Type | Description |
-| --- | --- | --- |
-| file | `string` | Path to the underlying source file. |
+| Param         | Type        | Description                           |
+| ------------- | ----------- | ------------------------------------- |
+| file          | `string`    | Path to the underlying source file.   |
 | trackingOwner | `Trackable` | Parent object for debugging purposes. |
 
 <a name="TargetableModule+addTransform" id="TargetableModule+addTransform"></a>
@@ -41,13 +40,13 @@ Add a transform request to this module's queue. The `fileToTransform` of
 the transform request is automatically set to this module's filename.
 
 **Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Chainable**  
+**Chainable**
 
-| Param | Type | Description |
-| --- | --- | --- |
-| type | `TransformType` | Transform type |
-| transformModule | `string` | The Node module that runs the transform, such as a Webpack loader for type `source` or a Babel plugin for type `babel`. |
-| options | `Object` | Configuration object to send to the transformModule. |
+| Param           | Type            | Description                                                                                                             |
+| --------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| type            | `TransformType` | Transform type                                                                                                          |
+| transformModule | `string`        | The Node module that runs the transform, such as a Webpack loader for type `source` or a Babel plugin for type `babel`. |
+| options         | `Object`        | Configuration object to send to the transformModule.                                                                    |
 
 <a name="TargetableModule+flush" id="TargetableModule+flush"></a>
 
@@ -65,13 +64,13 @@ Insert text into the module contents, immediately following the location
 of the search string if it is found.
 
 **Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Chainable**  
+**Chainable**
 
-| Param | Type | Description |
-| --- | --- | --- |
-| after | `string` | Text string in the module code to place the new content after. |
-| insert | `string` | Text to insert after the search string. |
-| [options] | `Object` | Additional loader options. |
+| Param            | Type     | Description                                                      |
+| ---------------- | -------- | ---------------------------------------------------------------- |
+| after            | `string` | Text string in the module code to place the new content after.   |
+| insert           | `string` | Text to insert after the search string.                          |
+| [options]        | `Object` | Additional loader options.                                       |
 | [options.remove] | `number` | Number of characters to delete forward, after the search string. |
 
 <a name="TargetableModule+insertBeforeSource" id="TargetableModule+insertBeforeSource"></a>
@@ -82,13 +81,13 @@ Insert text into the module contents, immediately before the location
 of the search string if it is found.
 
 **Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Chainable**  
+**Chainable**
 
-| Param | Type | Description |
-| --- | --- | --- |
-| before | `string` | Text string in the module code to place the new content before. |
-| insert | `string` | Text to insert before the search string. |
-| [options] | `Object` | Additional loader options. |
+| Param            | Type     | Description                                                      |
+| ---------------- | -------- | ---------------------------------------------------------------- |
+| before           | `string` | Text string in the module code to place the new content before.  |
+| insert           | `string` | Text to insert before the search string.                         |
+| [options]        | `Object` | Additional loader options.                                       |
 | [options.remove] | `number` | Number of characters to delete forward, after the search string. |
 
 <a name="TargetableModule+prependSource" id="TargetableModule+prependSource"></a>
@@ -98,10 +97,10 @@ of the search string if it is found.
 Add text to the beginning of a file.
 
 **Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Chainable**  
+**Chainable**
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param  | Type     | Description           |
+| ------ | -------- | --------------------- |
 | insert | `string` | Text to insert up top |
 
 <a name="TargetableModule+spliceSource" id="TargetableModule+spliceSource"></a>
@@ -111,12 +110,10 @@ Add text to the beginning of a file.
 Do any splice operation supported by [splice-source-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/splice-source-loader.js).
 
 **Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Chainable**  
+**Chainable**
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param       | Type     | Description         |
+| ----------- | -------- | ------------------- |
 | instruction | `object` | Splice instruction. |
-
-
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js).

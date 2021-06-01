@@ -13,7 +13,6 @@ import Docs from '/src/data/auto-generated/pwa-buildpack/lib/WebpackTools/target
 
 <Docs />
 
-
 ## Examples
 
 Code examples for using the `TargetableSet` class.
@@ -24,7 +23,7 @@ This class is available as a named import from `@magento/pwa-buildpack`.
 
 ```js
 // The `TargetableSet` class is exported from `@magento/pwa-buildpack` as `Targetables`
-const { Targetables } = require('@magento/pwa-buildpack')
+const { Targetables } = require("@magento/pwa-buildpack");
 ```
 
 ### Create a bound instance
@@ -33,11 +32,11 @@ Use the `TargetProvider` instance passed to your intercept function to create a 
 
 ```js
 // The `TargetableSet` class is exported from `@magento/pwa-buildpack` as `Targetables`
-const { Targetables } = require('@magento/pwa-buildpack')
+const { Targetables } = require("@magento/pwa-buildpack");
 
-module.exports = targets => {
-    const targetables = Targetables.using(targets);
-}
+module.exports = (targets) => {
+  const targetables = Targetables.using(targets);
+};
 ```
 
 ### Create a Targetable object
@@ -65,11 +64,11 @@ Extensions with special files, like ES Modules, CSS Modules, GraphQL queries, an
 To do this, they can tap the builtin `specialFeatures` target.
 
 ```js
-targets.of('@magento/pwa-buildpack').specialFeatures.tap(features => {
+targets.of("@magento/pwa-buildpack").specialFeatures.tap((features) => {
   features[targets.name] = {
     esModules: true,
     graphqlQueries: true,
-    upward: true
+    upward: true,
   };
 });
 ```
@@ -77,7 +76,7 @@ targets.of('@magento/pwa-buildpack').specialFeatures.tap(features => {
 You can use a bound `TargetableSet` instance to do the same thing with less code using the `setSpecialFeatures()` function.
 
 ```js
-targetables.setSpecialFeatures('esModules', 'graphqlQueries', 'upward');
+targetables.setSpecialFeatures("esModules", "graphqlQueries", "upward");
 ```
 
 ### Define environment variables
@@ -86,28 +85,30 @@ Extensions can add custom environment configuration settings to a storefront.
 To do this, they can tap the builtin `envVarDefinitions` target.
 
 ```js
-targets.of('@magento/pwa-buildpack').envVarDefinitions.tap(defs => {
+targets.of("@magento/pwa-buildpack").envVarDefinitions.tap((defs) => {
   defs.sections.push({
-    name: 'Support Chat',
+    name: "Support Chat",
     variables: [
       {
-        name: 'SUPPORT_CHAT_API_KEY',
-        type: 'str',
-        desc: 'API key for the chat service'
-      }
-    ]
-  })
+        name: "SUPPORT_CHAT_API_KEY",
+        type: "str",
+        desc: "API key for the chat service",
+      },
+    ],
+  });
 });
 ```
 
 You can use a bound `TargetableSet` instance to do the same with less code using the `defineEnvVars()` function.
 
 ```js
-targetables.defineEnvVars('Support Chat', [{
-  name: 'SUPPORT_CHAT_API_KEY',
-  type: 'str',
-  desc: 'API key for the chat service'
-}])
+targetables.defineEnvVars("Support Chat", [
+  {
+    name: "SUPPORT_CHAT_API_KEY",
+    type: "str",
+    desc: "API key for the chat service",
+  },
+]);
 ```
 
 This method also accepts an array of flag names, a flags object with boolean values, or a mixture of these as arguments.

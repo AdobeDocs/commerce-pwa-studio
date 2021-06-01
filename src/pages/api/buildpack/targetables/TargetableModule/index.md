@@ -22,23 +22,22 @@ Code examples for using the `TargetableModule` class.
 The `TargetableModule` class contains functions that let you insert custom code into different areas in the source code.
 
 ```js
-const { Targetables } = require('@magento/pwa-buildpack')
+const { Targetables } = require("@magento/pwa-buildpack");
 
-module.exports = targets => {
-    const targetableFactory = Targetables.using(targets);
+module.exports = (targets) => {
+  const targetableFactory = Targetables.using(targets);
 
-    // Create a TargetableModule instance that points to the main.js source
-    const MainComponent = targetables.module(
-        '@magento/venia-ui/lib/components/Main/main.js'
-    );
+  // Create a TargetableModule instance that points to the main.js source
+  const MainComponent = targetables.module(
+    "@magento/venia-ui/lib/components/Main/main.js"
+  );
 
-    // Insert a console log message in the source
-    MainComponent.insertAfterSource(
-        'const Main = props => {\n',
-        '\tconsole.log("Hello World");\n'
-    );
-
-}
+  // Insert a console log message in the source
+  MainComponent.insertAfterSource(
+    "const Main = props => {\n",
+    '\tconsole.log("Hello World");\n'
+  );
+};
 ```
 
 The following example makes the following code modifications to [`main.js`][] for the final bundle:

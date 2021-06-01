@@ -23,7 +23,7 @@ Pass in import statements to the `add()` function to import that module into the
 
 ```js
 // Create a TargetableESModuleObject linked to the `button.js` file
-const buttons = targetable.esModuleArray('path/to/buttons.js');
+const buttons = targetable.esModuleArray("path/to/buttons.js");
 
 // Add import statements
 buttons.add("import Primary from './path/to/Primary'");

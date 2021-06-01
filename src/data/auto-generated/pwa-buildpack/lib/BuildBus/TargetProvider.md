@@ -2,19 +2,18 @@
 
 ## Buildpack/BuildBus
 
-
-* [Buildpack/BuildBus](#module_Buildpack/BuildBus)
-    * [~TargetProvider](#module_Buildpack/BuildBus..TargetProvider) ⇐ `Trackable`
-        * [new TargetProvider(bus, dep, getExternalTargets)](#new_module_Buildpack/BuildBus..TargetProvider_new)
-        * _instance_
-            * [.name](#module_Buildpack/BuildBus..TargetProvider+name) : `string`
-            * [.own](#module_Buildpack/BuildBus..TargetProvider+own) : `Object.<string, Target>`
-            * [.phase](#module_Buildpack/BuildBus..TargetProvider+phase) : `string`
-            * [.declare(declarations)](#module_Buildpack/BuildBus..TargetProvider+declare)
-            * [.of(depName)](#module_Buildpack/BuildBus..TargetProvider+of) ⇒ `Object.<string, Target>`
-        * _inner_
-            * [~toJSON()](#module_Buildpack/BuildBus..TargetProvider..toJSON)
-    * [~getExternalTargets](#module_Buildpack/BuildBus..getExternalTargets) ⇒ `TargetProvider`
+- [Buildpack/BuildBus](#module_Buildpack/BuildBus)
+  - [~TargetProvider](#module_Buildpack/BuildBus..TargetProvider) ⇐ `Trackable`
+    - [new TargetProvider(bus, dep, getExternalTargets)](#new_module_Buildpack/BuildBus..TargetProvider_new)
+    - _instance_
+      - [.name](#module_Buildpack/BuildBus..TargetProvider+name) : `string`
+      - [.own](#module_Buildpack/BuildBus..TargetProvider+own) : `Object.<string, Target>`
+      - [.phase](#module_Buildpack/BuildBus..TargetProvider+phase) : `string`
+      - [.declare(declarations)](#module_Buildpack/BuildBus..TargetProvider+declare)
+      - [.of(depName)](#module_Buildpack/BuildBus..TargetProvider+of) ⇒ `Object.<string, Target>`
+    - _inner_
+      - [~toJSON()](#module_Buildpack/BuildBus..TargetProvider..toJSON)
+  - [~getExternalTargets](#module_Buildpack/BuildBus..getExternalTargets) ⇒ `TargetProvider`
 
 <a name="module_Buildpack/BuildBus..TargetProvider" id="module_Buildpack/BuildBus..TargetProvider"></a>
 
@@ -29,18 +28,18 @@ declaring its own targets, intercepting its own targets, and intercepting the
 targets of other extensions.
 
 **Kind**: inner class of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)  
-**Extends**: `Trackable`  
+**Extends**: `Trackable`
 
-* [~TargetProvider](#module_Buildpack/BuildBus..TargetProvider) ⇐ `Trackable`
-    * [new TargetProvider(bus, dep, getExternalTargets)](#new_module_Buildpack/BuildBus..TargetProvider_new)
-    * _instance_
-        * [.name](#module_Buildpack/BuildBus..TargetProvider+name) : `string`
-        * [.own](#module_Buildpack/BuildBus..TargetProvider+own) : `Object.<string, Target>`
-        * [.phase](#module_Buildpack/BuildBus..TargetProvider+phase) : `string`
-        * [.declare(declarations)](#module_Buildpack/BuildBus..TargetProvider+declare)
-        * [.of(depName)](#module_Buildpack/BuildBus..TargetProvider+of) ⇒ `Object.<string, Target>`
-    * _inner_
-        * [~toJSON()](#module_Buildpack/BuildBus..TargetProvider..toJSON)
+- [~TargetProvider](#module_Buildpack/BuildBus..TargetProvider) ⇐ `Trackable`
+  - [new TargetProvider(bus, dep, getExternalTargets)](#new_module_Buildpack/BuildBus..TargetProvider_new)
+  - _instance_
+    - [.name](#module_Buildpack/BuildBus..TargetProvider+name) : `string`
+    - [.own](#module_Buildpack/BuildBus..TargetProvider+own) : `Object.<string, Target>`
+    - [.phase](#module_Buildpack/BuildBus..TargetProvider+phase) : `string`
+    - [.declare(declarations)](#module_Buildpack/BuildBus..TargetProvider+declare)
+    - [.of(depName)](#module_Buildpack/BuildBus..TargetProvider+of) ⇒ `Object.<string, Target>`
+  - _inner_
+    - [~toJSON()](#module_Buildpack/BuildBus..TargetProvider..toJSON)
 
 <a name="new_module_Buildpack/BuildBus..TargetProvider_new" id="new_module_Buildpack/BuildBus..TargetProvider_new"></a>
 
@@ -48,13 +47,12 @@ targets of other extensions.
 
 Creates an instance of TargetProvider.
 
-
-| Param | Type | Description |
-| --- | --- | --- |
-| bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
-| dep | `Object` | The package which owns this TargetProvider. |
-| dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](http://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/#buildpackbuildbusgetexternaltargets--targetprovider) |
+| Param              | Type                     | Description                                                                                                                                                                                                                                                                                             |
+| ------------------ | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| bus                | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function.                                                                                                                                                                                                                               |
+| dep                | `Object`                 | The package which owns this TargetProvider.                                                                                                                                                                                                                                                             |
+| dep.name           | `string`                 | Name of the package which owns this.                                                                                                                                                                                                                                                                    |
+| getExternalTargets | `getExternalTargets`     | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](http://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/#buildpackbuildbusgetexternaltargets--targetprovider) |
 
 <a name="module_Buildpack/BuildBus..TargetProvider+name" id="module_Buildpack/BuildBus..TargetProvider+name"></a>
 
@@ -82,10 +80,10 @@ The phase currently being executed. Either `declare` or `intercept`.
 Call this function in the declare phase to register targets that this package and
 other packages can intercept.
 
-**Kind**: instance method of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)  
+**Kind**: instance method of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param        | Type                      | Description                                                                                                   |
+| ------------ | ------------------------- | ------------------------------------------------------------------------------------------------------------- |
 | declarations | `Object.<string, Target>` | An object whose keys are the names of targets to declare, and whose properties are newly constructed Targets. |
 
 <a name="module_Buildpack/BuildBus..TargetProvider+of" id="module_Buildpack/BuildBus..TargetProvider+of"></a>
@@ -98,10 +96,10 @@ can then be intercepted by calling `.tap()` methods on them.
 **Kind**: instance method of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)  
 **Returns**: `Object.<string, Target>` - - An object whose keys are the names
 of the requested package's targets, and whose values are the target
-objects.  
+objects.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param   | Type     | Description                                     |
+| ------- | -------- | ----------------------------------------------- |
 | depName | `string` | The package whose targets you want to retrieve. |
 
 <a name="module_Buildpack/BuildBus..TargetProvider..toJSON" id="module_Buildpack/BuildBus..TargetProvider..toJSON"></a>
@@ -120,13 +118,11 @@ This callback pattern helps to loosely couple TargetProviders so
 they are more testable.
 
 **Kind**: inner typedef of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)  
-**Returns**: `TargetProvider` - TargetProvider for the requested targets.  
+**Returns**: `TargetProvider` - TargetProvider for the requested targets.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param     | Type             | Description                        |
+| --------- | ---------------- | ---------------------------------- |
 | requestor | `TargetProvider` | TargetProvider making the request. |
-| requested | `string` | External targets being requested. |
-
-
+| requested | `string`         | External targets being requested.  |
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/TargetProvider.js).

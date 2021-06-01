@@ -21,12 +21,12 @@ The `--core-dev-mode` flag tells `buildpack` to run `buildpack create-env-file -
 
 ## Usage tips
 
--   Use the `load-env` command in NPM scripts instead of directly invoking it with `npx`
--   Use a command, shell script, or spawned subprocess to override individual environment variables at start time.
--   The command does not require a `.env` file to be present.
+- Use the `load-env` command in NPM scripts instead of directly invoking it with `npx`
+- Use a command, shell script, or spawned subprocess to override individual environment variables at start time.
+- The command does not require a `.env` file to be present.
 
-    If a `.env` file is not present, the environment is still valid if another process or command sets the required variables.
-    If the file is not present and the variable `NODE_ENV` is not set to `production`, `buildpack` logs a warning.
+  If a `.env` file is not present, the environment is still valid if another process or command sets the required variables.
+  If the file is not present and the variable `NODE_ENV` is not set to `production`, `buildpack` logs a warning.
 
 ## Programmatic API
 
@@ -41,7 +41,7 @@ Loads a given directory's `.env` file and provides a [configuration object][].
 #### Example
 
 ```js
-const { loadEnvironment } = require('@magento/pwa-buildpack');
+const { loadEnvironment } = require("@magento/pwa-buildpack");
 
 const configuration = await loadEnvironment(process.cwd());
 ```
@@ -97,18 +97,18 @@ The following example is a script that starts an [UPWARD-JS][] server using conf
 [upward-js]: /guides/packages/upward/javascript/
 
 ```js
-import { loadEnvironment } from '@magento/pwa-buildpack';
+import { loadEnvironment } from "@magento/pwa-buildpack";
 
 // Give `loadEnvironment` the path to the project root.
 // If the current file is in project root, use the Node builtin `__dirname`.
-const configuration = await loadEnvironment('/Users/me/path/to/project');
+const configuration = await loadEnvironment("/Users/me/path/to/project");
 
 // `loadEnvironment` has now read the contents of
 // `/Users/me/path/to/project/.env` and merged it with any environment
 // variables that were alredy set.
 
 // Create an UPWARD server using env vars that begin with `UPWARD_JS_`
-createUpwardServer(configuration.section('upwardJs'));
+createUpwardServer(configuration.section("upwardJs"));
 
 // If these environment variables are set:
 //
@@ -124,7 +124,6 @@ createUpwardServer(configuration.section('upwardJs'));
 //
 // No other environment variables are included in this object unless they begin
 // with `UPWARD_JS_` which is the equivalent of `upwardJs` camel-cased.
-
 
 // The .all() method turns the whole environment into an object, with all
 // CONSTANT_CASE names turned into camelCase names.
@@ -145,9 +144,9 @@ const allConfig = configuration.all();
 // Instead, let's create an UPWARD server combining two environment variable
 // sections with hardcoded overrides to some values.
 createUpwardServer({
-  ...configuration.section('upwardJs'),
-  ...configuration.section('magento'),
-  bindLocal: true
+  ...configuration.section("upwardJs"),
+  ...configuration.section("magento"),
+  bindLocal: true,
 });
 
 // This uses JavaScript object spreading to combine several sections of
@@ -168,9 +167,8 @@ createUpwardServer({
 //   bindLocal: true
 // }
 
-
 // The `sections()` method can split an env object into named subsections:
-createUpwardServer(configuration.sections('upwardJs', 'magento'));
+createUpwardServer(configuration.sections("upwardJs", "magento"));
 
 // Given the same environment variables as above, this code will pass the
 // following to `createUpwardServer`:
@@ -192,6 +190,6 @@ createUpwardServer(configuration.sections('upwardJs', 'magento'));
 // Use the convenience properties `isProd` and `isDev` instead of testing
 // `process.env.NODE_ENV` directly:
 if (configuration.isDev) {
-  console.log('Development mode');
+  console.log("Development mode");
 }
 ```

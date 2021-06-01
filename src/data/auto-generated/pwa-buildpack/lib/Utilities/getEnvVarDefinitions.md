@@ -78,10 +78,10 @@ to generate an extensively commented `.env` file for a project.
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| sections | [`Array.<EnvVarDefsSection>`](#EnvVarDefsSection) | List of sections, or sub-lists of definitions grouped under a title. |
-| changes | [`Array.<EnvVarDefsChange>`](#EnvVarDefsChange) | List of changes, or objects describing a recent change to a definition. |
+| Name     | Type                                              | Description                                                             |
+| -------- | ------------------------------------------------- | ----------------------------------------------------------------------- |
+| sections | [`Array.<EnvVarDefsSection>`](#EnvVarDefsSection) | List of sections, or sub-lists of definitions grouped under a title.    |
+| changes  | [`Array.<EnvVarDefsChange>`](#EnvVarDefsChange)   | List of changes, or objects describing a recent change to a definition. |
 
 <a name="EnvVarDefsSection" id="EnvVarDefsSection"></a>
 
@@ -95,10 +95,10 @@ For instance, all variable names in the "Custom local origin" section begin with
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| name | `String` | Title of the section, describing the functional area of the included variables. |
-| variables | [`Array.<EnvVarDefinition>`](#EnvVarDefinition) | List of variable definitions. |
+| Name      | Type                                            | Description                                                                     |
+| --------- | ----------------------------------------------- | ------------------------------------------------------------------------------- |
+| name      | `String`                                        | Title of the section, describing the functional area of the included variables. |
+| variables | [`Array.<EnvVarDefinition>`](#EnvVarDefinition) | List of variable definitions.                                                   |
 
 <a name="EnvVarDefinition" id="EnvVarDefinition"></a>
 
@@ -120,14 +120,14 @@ However, only the variables defined by `EnvVarDefinition` entries will be availa
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| name | `String` | Name of the environment variable. Must be in SCREAMING_SNAKE_CASE and contain only alphanumeric characters. |
-| type | `String` | Type of the environment variable. Can be any type supported by the [envalid](https://www.npmjs.com/package/envalid#validator-types) library. |
-| desc | `String` | Human-readable description of what the environment variable does. |
-| [choices] | `Array` | An array of acceptable answers. All values in the array must be of the type specified in `type`. |
-| default | `String` | Default value if the variable is not set in the environment. |
-| example | `String` | Example value which will be displayed in inline documentation in the `.env` file. |
+| Name      | Type     | Description                                                                                                                                  |
+| --------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| name      | `String` | Name of the environment variable. Must be in SCREAMING_SNAKE_CASE and contain only alphanumeric characters.                                  |
+| type      | `String` | Type of the environment variable. Can be any type supported by the [envalid](https://www.npmjs.com/package/envalid#validator-types) library. |
+| desc      | `String` | Human-readable description of what the environment variable does.                                                                            |
+| [choices] | `Array`  | An array of acceptable answers. All values in the array must be of the type specified in `type`.                                             |
+| default   | `String` | Default value if the variable is not set in the environment.                                                                                 |
+| example   | `String` | Example value which will be displayed in inline documentation in the `.env` file.                                                            |
 
 <a name="EnvVarDefsChange" id="EnvVarDefsChange"></a>
 
@@ -141,16 +141,14 @@ They may also be used to make `loadEnvironment()` support the legacy name of a r
 **Kind**: global typedef  
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| type | `String` | `removed` or `renamed` |
-| name | `String` | Name of the EnvVarDefinition that was recently changed. If the change is a rename, this must be the _old_ variable name. |
-| reason | `String` | Reason given for the change. Will be logged as a warning. |
-| dateChanged | `String` \| `number` | Date that the change was released, in ISO-8601 format (or any format parseable by JavaScript `Date()`.) |
-| [warnForDays] | `number` | Number of days after `dateChanged` to log a warning if the removed or renamed variable is still set in the environment. Default, and maximum, is 180 days. |
-| [update] | `String` | New name of the variable. Required when the change is a rename. |
-| [supportLegacy] | `boolean` | If the change is a rename, set this to `true` to support the old name (while logging a warning). If the old name is set and the new name is not, `loadEnvironment` will set the new variable name to the value of the old one. |
-
-
+| Name            | Type                 | Description                                                                                                                                                                                                                    |
+| --------------- | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| type            | `String`             | `removed` or `renamed`                                                                                                                                                                                                         |
+| name            | `String`             | Name of the EnvVarDefinition that was recently changed. If the change is a rename, this must be the _old_ variable name.                                                                                                       |
+| reason          | `String`             | Reason given for the change. Will be logged as a warning.                                                                                                                                                                      |
+| dateChanged     | `String` \| `number` | Date that the change was released, in ISO-8601 format (or any format parseable by JavaScript `Date()`.)                                                                                                                        |
+| [warnForDays]   | `number`             | Number of days after `dateChanged` to log a warning if the removed or renamed variable is still set in the environment. Default, and maximum, is 180 days.                                                                     |
+| [update]        | `String`             | New name of the variable. Required when the change is a rename.                                                                                                                                                                |
+| [supportLegacy] | `boolean`            | If the change is a rename, set this to `true` to support the old name (while logging a warning). If the old name is set and the new name is not, `loadEnvironment` will set the new variable name to the value of the old one. |
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js).

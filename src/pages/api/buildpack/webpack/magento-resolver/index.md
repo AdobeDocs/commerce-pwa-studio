@@ -18,13 +18,13 @@ Currently, MagentoResolver does very little, but it's likely that the Magento de
 
 **Parameters:**
 
-* `options:` - Configuration object that describes where the PWA storefront folders are located. Must have a `root` property set to the context (root directory) of the project.
+- `options:` - Configuration object that describes where the PWA storefront folders are located. Must have a `root` property set to the context (root directory) of the project.
 
 **Return:**
 
 A [Promise][] configuration type for webpack.
 
-[Promise]: https://webpack.js.org/configuration/configuration-types/#exporting-a-promise
+[promise]: https://webpack.js.org/configuration/configuration-types/#exporting-a-promise
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -34,7 +34,7 @@ A [Promise][] configuration type for webpack.
 
 In `webpack.config.js`:
 
-``` js
+```js
 const buildpack = require('@magento/pwa-buildpack');
 const MagentoResolver = buildpack.Webpack.MagentoResolver;
 
@@ -55,13 +55,9 @@ module.exports = async env => {
 }
 ```
 
-
-
 The special `__dirname` variable in Node always refers to the directory containing the currently executing script file.
 This is different from the "working directory", which is the current directory of the shell when the current process was started.
 
 <InlineAlert variant="info" slots="text"/>
 
 The example provided uses the newer, cleaner `async/await` syntax instead of using Promises directly.
-
-
