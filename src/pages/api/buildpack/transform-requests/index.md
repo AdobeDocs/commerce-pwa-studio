@@ -4,7 +4,7 @@ title: Transform Requests
 
 # Transform Requests
 
-The built-in [`transformModules`][] target is a powerful way to customize the build process for a partiular file or set of files.
+The built-in [`transformModules`][] target is a powerful way to customize the build process for a particular file or set of files.
 Many common Targets are implemented using the `transformModules` target and a custom transformer module.
 Interceptors of this target receive a single function as their first argument. This is the `addTransform` function documented below.
 
