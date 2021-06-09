@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@adobe/gatsby-theme-aio": "^3.10.0",
-    "gatsby": "^3.0.0",
+    "gatsby": "^3.6.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
