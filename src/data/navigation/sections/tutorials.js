@@ -87,8 +87,8 @@ module.exports = [
         path: "/tutorials/production-deployment/checklist/",
       },
       {
-        title: "Deploy to Magento Cloud",
-        path: "/tutorials/production-deployment/magento-cloud/",
+        title: "Deploy to Adobe Commerce",
+        path: "/tutorials/production-deployment/adobe-commerce/",
       },
     ],
   },
