@@ -11,7 +11,7 @@ contributors:
 
 # PWA Studio
 
-PWA Studio offers the tools you need to develop a Progressive Web Application storefront for Magento.
+PWA Studio offers the tools you need to develop a Progressive Web Application storefront for Adobe Commerce or Magento Open Source.
 
 <Resources slots="heading, links"/>
 
@@ -25,7 +25,7 @@ PWA Studio offers the tools you need to develop a Progressive Web Application st
 
 This site provides developer documentation for the tools and libraries offered by PWA Studio.
 
-Magento’s PWA Studio gives you everything you need to create Progressive Web Application (PWA) storefronts powered by Magento.
+PWA Studio gives you everything you need to create Progressive Web Application (PWA) storefronts powered by Adobe Commerce or Magento Open Source.
 It provides tools to help you set up a development environment and libraries to create your own storefront components and extensions.
 
 ## Discover
