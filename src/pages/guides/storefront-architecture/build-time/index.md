@@ -6,21 +6,21 @@ title: Build time architecture
 
 The build architecture of PWA Studio is the system used to compile JavaScript and CSS source code into a production-ready PWA storefront application.
 
-## Magento store dependency
+## Backend application dependency
 
-PWA Studio is part of Magento's [service-oriented architecture][] vision.
+PWA Studio is part of Adobe Commerce's [service-oriented architecture][] vision.
 This vision minimizes dependencies by separating the merchant-facing store admin and the shopper-facing storefront application.
 Separating these two applications minimizes the dependencies between them.
 
 [service-oriented architecture]: https://en.wikipedia.org/wiki/Service-oriented_architecture
 
-The Venia build system respects this principle by running the build process independent from the Magento core application.
-However, the build system does use the Magento API at compilation time for additional validation and optimization of storefront code.
+The Venia build system respects this principle by running the build process independent from the Adobe Commerce or Magento Open Source core application.
+However, the build system does use the application's API at compilation time for additional validation and optimization of storefront code.
 
 ## Repository organization
 
-Unlike Magento themes, the source code for a PWA Studio storefront does not need to be located within the Magento application code.
-A PWA Studio storefront and its backing Magento server are two separate applications, so
+Unlike Adobe Commerce and Magento Open Source themes, the source code for a PWA Studio storefront does not need to be co-located with the application code.
+A PWA Studio storefront and its backend service are two separate applications, so
 their codebase is separate from each other.
 
 The Venia concept storefront uses the `yarn` package for dependency management, but
@@ -46,7 +46,7 @@ Like most modern Web compilation tools, it is built on [NodeJS][].
 [nodejs]: https://nodejs.org/en/about/
 
 The main tools used for the build pipeline are [Babel][] and [Webpack][].
-The Buildpack library provides a convenient API for configuring these tools, but the underlying API for building a Magento PWA is a direct configuration of Babel and Webpack.
+The Buildpack library provides a convenient API for configuring these tools, but the underlying API for building a PWA is a direct configuration of Babel and Webpack.
 
 [babel]: https://babeljs.io
 [webpack]: https://webpack.js.org/
@@ -103,7 +103,7 @@ This script uses the [`graphql-cli-validate-magento-pwa-queries`][] tool to anal
 
 <InlineAlert variant="info" slots="text"/>
 
-The connected Magento instance is defined by the `MAGENTO_BACKEND_URL` environment variable.
+The connected Adobe Commerce or Magento Open Source instance is defined by the `MAGENTO_BACKEND_URL` environment variable.
 
 #### Webpack execution
 

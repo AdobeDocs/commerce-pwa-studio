@@ -63,19 +63,19 @@ it requires additional implementation for the storefront developer.
 
 ## How do I deploy to production
 
-A PWA Studio storefront uses an UPWARD server as the backend for the frontend code.
-Magento provides two different UPWARD server implementations, UPWARD-JS and UPWARD-PHP.
+A storefront uses an UPWARD server as the backend for the frontend code.
+PWA Studio provides two different UPWARD server implementations, UPWARD-JS and UPWARD-PHP.
 
 UPWARD-JS is a node implementation of an UPWARD server.
 It is used during storefront development when you use the `yarn watch` command, but
 you can use it for production by calling `yarn build` to generate production assets and `yarn start` to start a server.
 
 UPWARD-PHP is a PHP implementation of an UPWARD server.
-It is a dependency of the [Magento 2 UPWARD connector module][], which lets you run an UPWARD server on the same machine as your Magento 2 instance.
-See the [Magento Cloud deployment][] tutorial to learn how to deploy your storefront on the Magento Cloud.
+It is a dependency of the [Magento 2 UPWARD connector module][], which lets you run an UPWARD server on the same machine as your Adobe Commerce or Magento Open Source instance.
+See the [Deploy to Adobe Commerce][] tutorial to learn how to deploy your storefront to an Adobe Commerce service in the Cloud.
 
 [magento 2 upward connector module]: https://github.com/magento/magento2-upward-connector
-[magento cloud deployment]: /tutorials/production-deployment/magento-cloud/
+[deploy to adobe commerce]: /tutorials/production-deployment/adobe-commerce/
 
 ## Can I use Windows with PWA Studio for development
 
@@ -91,7 +91,7 @@ community members have suggested the following workarounds:
 
 ## How can I query other stores via GraphQL
 
-To let the storefront query a specific store view in Magento you need to add the store code to these two files:
+To let the storefront query a specific store view in the Adobe Commerce or Magento Open Source backend, you need to add the store code to these two files:
 
 - [packages/peregrine/lib/Router/resolveUnknownRoute.js][]
 

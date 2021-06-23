@@ -6,7 +6,7 @@ title: External tools and libraries
 
 ![tools and technology overview](images/pwa-tools-technology-overview.png)
 
-To work with the utilities provided by the Magento PWA Studio project, you should be familiar with the tools and libraries listed in the following table:
+To work with the utilities provided by the PWA Studio project, you should be familiar with the tools and libraries listed in the following table:
 
 |                           |  Contributor  | Frontend developer | Sysadmin/Devops/Backend developer |
 | ------------------------- | :-----------: | :----------------: | :-------------------------------: |
@@ -28,11 +28,11 @@ To work with the utilities provided by the Magento PWA Studio project, you shoul
 
 ## PHP
 
-[PHP][] is the core language used in the Magento application, but
+[PHP][] is the core language used in the Adobe Commerce and Magento Open Source application, but
 it is not one used by the main PWA Studio project.
 In general, you do not need to know PHP to work with PWA Studio tools.
 
-If your storefront requires heavy customizations to the Magento backend, you will need to know PHP to make the necessary backend changes.
+If your storefront requires heavy customizations to the backend application, you will need to know PHP to make the necessary changes.
 
 ## JavaScript
 

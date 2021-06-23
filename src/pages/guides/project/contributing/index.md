@@ -19,7 +19,7 @@ Before you start, please take a moment to read through the following guidelines:
 ## Terms
 
 **Core Team**
-: The Magento core engineering/product team working on the PWA Studio project.
+: The main engineering/product team working on the PWA Studio project.
 
 **Community Maintainer**
 : A community point of contact approved by the Core Team to help with project administration.
