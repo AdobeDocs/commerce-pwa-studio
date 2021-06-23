@@ -88,7 +88,7 @@ This strategy is used for non-critical assets that do not get updated very often
 
 ## Caching in the Apollo GraphQL client
 
-The Venia implementation storefront uses the Apollo GraphQL client to make requests to the Magento GraphQL endpoint.
+The Venia implementation storefront uses the Apollo GraphQL client to make requests to the Adobe Commerce or Magento Open Source GraphQL endpoint.
 It also incorporates the default [InMemoryCache][] implementation to add caching abilities to the client.
 
 [inmemorycache]: https://www.apollographql.com/docs/react/advanced/caching
