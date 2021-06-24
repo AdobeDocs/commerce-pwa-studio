@@ -26,7 +26,7 @@ Make sure you complete the [Cloud onboarding tasks][] to avoid account or access
 
 Verify that your Adobe Commerce instance is [compatible][] with the PWA Studio version you use in your storefront project.
 
-[compatible]: /integrations/magento/version-compatibility/
+[compatible]: /integrations/adobe-commerce/version-compatibility/
 
 This tutorial requires the following tools:
 

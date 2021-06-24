@@ -12,16 +12,16 @@ module.exports = [
   },
   {
     title: "Magento",
-    path: "/integrations/magento/",
+    path: "/integrations/adobe-commerce/",
     header: true,
     pages: [
       {
         title: "Version compatibility",
-        path: "/integrations/magento/version-compatibility/",
+        path: "/integrations/adobe-commerce/version-compatibility/",
       },
       {
         title: "Theme vs Storefront",
-        path: "/integrations/magento/theme-vs-storefront",
+        path: "/integrations/adobe-commerce/theme-vs-storefront",
       },
     ],
   },
