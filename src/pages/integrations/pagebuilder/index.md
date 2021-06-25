@@ -4,7 +4,7 @@ title: Page Builder
 
 # Page Builder
 
-At the highest level, the Page Builder integration into PWA Studio simply ensures that CMS Pages built in Magento Commerce with _native_ Page Builder content types are rendered correctly within PWA Studio apps.
+At the highest level, the Page Builder integration into PWA Studio simply ensures that CMS Pages built in the backend with _native_ Page Builder content types are rendered correctly within PWA Studio apps.
 
 ## Integration overview
 
@@ -14,9 +14,9 @@ At the highest level, the Page Builder integration into PWA Studio simply ensure
 
 <InlineAlert variant="info" slots="text"/>
 
-The Page Builder integration to PWA Studio is only compatible with Magento Commerce 2.3.4+. A GraphQL change within Magento Commerce 2.3.4 was necessary in order to integrate the Page Builder Products content type into PWA Studio.
+The Page Builder integration to PWA Studio is only compatible with Adobe Commerce and Magento Open Source versions 2.3.4+. A GraphQL change within both applications was necessary to integrate the Page Builder Products content type into PWA Studio.
 
-The diagram below shows how the PWA Studio makes a request to the Magento Commerce backend to retrieve a CMS page for processing. The Page Builder integration framework processes the original Page Builder HTML and returns a group of React components that faithfully reproduces the Page Builder content for display in a PWA Studio app.
+The diagram below shows how the PWA Studio makes a request to the backend application to retrieve a CMS page for processing. The Page Builder integration framework processes the original Page Builder HTML and returns a group of React components that faithfully reproduces the Page Builder content for display in a PWA Studio app.
 
 ![Page Builder Integration Big Picture](images/PageBuilderBigPicture1.svg)
 
@@ -95,7 +95,7 @@ The `<ContentTypeFactory />` component parses a property object tree to retrieve
 
 ## How it works
 
-The framework executes on the client side to ensure compatibility with the various hosting options available for Magento Commerce. The following video and subsequent flow diagram describes how the parts of the framework combine to render Page Builder components within the Venia app.
+The framework executes on the client side to ensure compatibility with the various hosting options available for Adobe Commerce and Magento Open Source. The following video and subsequent flow diagram describes how the parts of the framework combine to render Page Builder components within the Venia app.
 
 <div style="position: relative; overflow: hidden; padding-top: 56.25%; border: 1px solid #ccc;">
    <iframe style="position: absolute; top:0; left:0; width: 100%; height:100%; border: 0;" title="Adobe Video Publishing Cloud Player" src="https://video.tv.adobe.com/v/31596t2/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
@@ -105,7 +105,7 @@ The following diagram describes the same process shown in the video, followed by
 
 ![Page Builder Integration Details](images/PageBuilderIntegrationDetails.svg)
 
-1. The **Venia app** sends a GraphQL query to get the user's requested page. This requested page comes from the `content` field of `cms_pages` table in Magento's database. The content returned is an HTML string with Page Builder meta data. We call this HTML string the master format, which is passed to the `<RichContent />` component for initial processing.
+1. The **Venia app** sends a GraphQL query to get the user's requested page. This requested page comes from the `content` field of `cms_pages` table in the application's database. The content returned is an HTML string with Page Builder meta data. We call this HTML string the master format, which is passed to the `<RichContent />` component for initial processing.
 
 1. The **RichContent** component determines if the HTML string contains Page Builder content, using simple pattern recognition. If the HTML does not include Page Builder content, it is returned to Venia and rendered as plain HTML. If the HTML does include Page Builder content, the HTML string (which we can now define as a master format) is passed to the `<PageBuilder />` framework component, which starts the process of matching the content types within the master format to their equivalent PWA Studio React components.
 

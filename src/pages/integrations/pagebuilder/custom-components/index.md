@@ -4,7 +4,7 @@ title: Creating custom components
 
 # Creating custom components
 
-Let's assume you have at least one _custom_ Page Builder content type rendering content on your Magento storefront. But now you want that content to show up in your PWA app as well. What do you do? Short answer: You create a custom PWA Page Builder component (also know as a "content type component"). The long answer is described in this series of topics.
+Let's assume you have at least one _custom_ Page Builder content type rendering content on your PWA Studio storefront. But now you want that content to show up in your PWA app as well. What do you do? Short answer: You create a custom PWA Page Builder component (also know as a "content type component"). The long answer is described in this series of topics.
 
 ## Overview
 
@@ -18,8 +18,8 @@ The topics for these steps show you how to create the code that retrieves proper
 
 Before you start creating your custom content type component in PWA Studio, make sure you have met the following prerequisites:
 
-- Your Magento instance should have a custom content type added and saved to the **home** page in the Admin. Currently, the `home` page is the only page you can render Page Builder content within PWA Studio.
-- Your Magento instance should render this content type on the home page of your storefront.
+- Your Adobe Commerce or Magento Open Source backend instance should have a custom content type added and saved to the **home** page in the Admin. Currently, the `home` page is the only page you can render Page Builder content within PWA Studio.
+- Your backend instance should render this content type on the home page of your storefront.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -29,17 +29,17 @@ We assume you already have the PWA Studio set up and running in your development
 
 To help explain the process of creating a custom Page Builder component, we frequently refer to a component called `ExampleQuote`. We built this component as the PWA counterpart to the example Quote content type found on the [GitHub pagebuilder-examples repo][].
 
-If you want to follow along with these topics more closely, [download and install the PageBuilderQuote module][] in your Magento instance and use it to fulfill the prerequisites previously mentioned.
+If you want to follow along with these topics more closely, [download and install the PageBuilderQuote module][] in your backend instance and use it to fulfill the prerequisites previously mentioned.
 
 ## Home page in Admin
 
-The first prerequisite is to add and save your custom content type to your Magento Home page in Admin. Here we see the Quote content type saved to the Home page in the Admin:
+The first prerequisite is to add and save your custom content type to your Home page in the Admin. Here we see the Quote content type saved to the Home page in the Admin:
 
 ![PageBuilderQuote in Admin](images/PageBuilderQuoteAdmin.png)
 
 ## Home page on Storefront
 
-The second prerequisite is to ensure that your custom content type renders successfully in the storefront of your Magento instance. Here we see the Quote content type rendered on the Home page of a Luma storefront:
+The second prerequisite is to ensure that your custom content type renders successfully in the storefront of your backend instance. Here we see the Quote content type rendered on the Home page of a Luma storefront:
 
 ![PageBuilderQuote on Storefront](images/PageBuilderQuoteStorefront.png)
 
