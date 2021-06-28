@@ -32,7 +32,7 @@ For example, in **Chrome**:
 
 ## No Magento data
 
-If your storefront is not getting data from Magento, make sure your development server can access the `MAGENTO_BACKEND_URL` in your `.env` file.
+If your storefront is not getting data from the Adobe Commerce or Magento Open Source backend application, make sure your development server can access the `MAGENTO_BACKEND_URL` in your `.env` file.
 
 ## Privacy error
 
@@ -58,6 +58,6 @@ DEBUG=pwa-buildpack:WebpackTools:plugins:LocalizationPlugin.js yarn build
 
 ## Other issues
 
-If you encounter any other issues, ask the Magento community in the [#PWA][] Slack channel.
+If you encounter any other issues, ask the PWA Studio community in the [#PWA][] Slack channel.
 
 [#pwa]: https://magentocommeng.slack.com/messages/C71HNKYS2

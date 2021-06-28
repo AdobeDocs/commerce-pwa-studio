@@ -10,7 +10,7 @@ The value of this variable can vary between development, staging, and production
 ## Background
 
 In PWA Studio storefront projects, the `.env` file in the project's root directory lists the environment variables and their values.
-For example, the `MAGENTO_BACKEND_URL` environment variable tells your storefront project which Magento instance it uses during runtime.
+For example, the `MAGENTO_BACKEND_URL` environment variable tells your storefront project which Adobe Commerce or Magento Open Source instance it uses during runtime.
 These variables are available to your Node scripts, but for security reasons, PWA Studio limits which variables your frontend code can access.
 
 This tutorial teaches you how to create a package which provides a React component that uses an environment variable.

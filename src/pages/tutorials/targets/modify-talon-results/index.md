@@ -11,7 +11,7 @@ This lets you define a wrapper module that intercepts a talon and let you modify
 
 ## Background
 
-In core Magento development:
+In core Adobe Commerce and Magento Open Source development:
 
 > A plugin, or interceptor, is a class that modifies the behavior of public class functions by intercepting a function call and running code before, after, or around that function call.
 > This allows you to substitute or extend the behavior of original, public methods for any class or interface.

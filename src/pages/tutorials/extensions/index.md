@@ -8,7 +8,7 @@ Extensions provide new storefront functionality, extend existing components, or 
 
 ## Overview
 
-PWA Studio follows the Magento way of merging third-party code to build web functionality on a simple platform.
+PWA Studio merges third-party code into the final application bundle to build web functionality on top of a base storefront.
 The [extensibility framework][] provided by the `pwa-buildpack` package lets you create these third-party extensions for PWA Studio storefronts, such as Venia.
 
 [extensibility framework]: /guides/general-concepts/extensibility/

@@ -78,7 +78,7 @@ Main imports and renders the Footer component, and App imports and renders the M
 
 Static imported components, such as Header, Footer, and side Navigation, have render chains that begin in **App**, but content that is specific to a route have render chains that begin at a **Root Component**.
 
-Root components are dynamically loaded components associated with a Magento page type or route.
+Root components are dynamically loaded components associated with an Adobe Commerce or Magento Open Source page type or route.
 A list of Venia's root components can be found in the [RootComponent][] directory in the PWA Studio project.
 
 [rootcomponent]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/RootComponents

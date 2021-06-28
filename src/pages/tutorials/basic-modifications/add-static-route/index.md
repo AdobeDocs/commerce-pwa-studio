@@ -4,7 +4,7 @@ title: Add a static route
 
 # Add a static route
 
-Magento's built in CMS system and [PageBuilder][] feature lets you create highly customized content pages for your storefront, but
+Adobe Commerce and Magento Open Source's built in CMS system and [PageBuilder][] feature lets you create highly customized content pages for your storefront, but
 sometimes you need a page that fulfills a specific function, such as a checkout or login page.
 
 [pagebuilder]: /integrations/pagebuilder/
