@@ -103,20 +103,20 @@ In addition to knowing standard JS libraries, such as jQuery and KnockoutJS, the
 
 The following table is a summary of general skills needed for theme development:
 
-| Skill                            | Description                                                                        |
-| -------------------------------- | ---------------------------------------------------------------------------------- |
-| PHP                              | The primary language of the Adobe Commerce and Magento Open Source                 |
-| JavaScript (JS)                  | Core web language                                                                  |
-| [jQuery][]                       | A JS library used for things such as DOM manipulations                             |
-| [KnockoutJS][]                   | JS framework used for binding data models to the UI                                |
-| Cascading Style Sheets ([CSS][]) | Defines the style for a websites                                                   |
-| Leaner Style Sheets ([Less][])   | Language extension for CSS                                                         |
-| XML                              | Format used by Adobe Commerce and Magento Open Source for configuration and layout |
-| [Theme layouts][]                | Layouts represent the structure for a page                                         |
-| [Theme templates][]              | Templates define how layout blocks are presented on a page                         |
-| [Theme UI library][]             | Frontend library for theme developers                                              |
-| [Theme UI components][]          | Another frontend library for theme developers                                      |
-| [Composer][]                     | Package and dependency manager                                                     |
+| Skill                                        | Description                                                                        |
+| -------------------------------------------- | ---------------------------------------------------------------------------------- |
+| PHP                                          | The primary language of the Adobe Commerce and Magento Open Source                 |
+| JavaScript (JS)                              | Core web language                                                                  |
+| [jQuery][]                                   | A JS library used for things such as DOM manipulations                             |
+| [KnockoutJS][]                               | JS framework used for binding data models to the UI                                |
+| Cascading Style Sheets ([CSS][])             | Defines the style for a websites                                                   |
+| Leaner Style Sheets ([Less][])               | Language extension for CSS                                                         |
+| XML                                          | Format used by Adobe Commerce and Magento Open Source for configuration and layout |
+| [Theme layouts][]                            | Layouts represent the structure for a page                                         |
+| [Theme templates][]                          | Templates define how layout blocks are presented on a page                         |
+| [Theme UI library][]                         | Frontend library for theme developers                                              |
+| [Theme UI components][adobe's ui components] | Another frontend library for theme developers                                      |
+| [Composer][]                                 | Package and dependency manager                                                     |
 
 [jquery]: https://jquery.com/
 [knockoutjs]: https://knockoutjs.com/

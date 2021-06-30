@@ -74,7 +74,7 @@ Your projects are:
 +---------------+------------------+---------------------------------------------------+
 | ID            | Title            | URL                                               |
 +---------------+------------------+---------------------------------------------------+
-| yswqmrbknvqjz | My Magento Store | https://us-4.magento.cloud/projects/yswqmrbknvqjz |
+| yswqmrbknvqjz | My Web Store     | https://us-4.magento.cloud/projects/yswqmrbknvqjz |
 +---------------+------------------+---------------------------------------------------+
 ```
 
@@ -151,7 +151,7 @@ PWA Studio storefronts require you to set specific [environment variables][] in 
 | ------------------------------------ | ------------------------------------------ |
 | `CONFIG__DEFAULT__WEB__UPWARD__PATH` | Absolute path to UPWARD YAML configuration |
 | `NODE_ENV`                           | Specifies the node environment type        |
-| `MAGENTO_BACKEND_URL`                | URL of your Adobe Commerce backend                |
+| `MAGENTO_BACKEND_URL`                | URL of your Adobe Commerce backend         |
 
 To set your Cloud project's runtime variables, edit the [`.magento.app.yaml`][] file and add entries to the `variables.env` section.
 
@@ -167,13 +167,13 @@ variables:
 
 ### Buildtime variables
 
-| Name                       | Description                                                       |
-| -------------------------- | ----------------------------------------------------------------- |
-| `NODE_ENV`                 | Specifies the node environment type                               |
-| `MAGENTO_BACKEND_URL`      | URL of your Adobe Commerce backend                                       |
-| `CHECKOUT_BRAINTREE_TOKEN` | Braintree token associated with your Adobe Commerce backend              |
-| `MAGENTO_BACKEND_EDITION`  | Must be `EE` when deploying to Adobe Commerce in the Cloud |
-| `IMAGE_OPTIMIZING_ORIGIN`  | Origin to use for images in the UI                                |
+| Name                       | Description                                                 |
+| -------------------------- | ----------------------------------------------------------- |
+| `NODE_ENV`                 | Specifies the node environment type                         |
+| `MAGENTO_BACKEND_URL`      | URL of your Adobe Commerce backend                          |
+| `CHECKOUT_BRAINTREE_TOKEN` | Braintree token associated with your Adobe Commerce backend |
+| `MAGENTO_BACKEND_EDITION`  | Must be `EE` when deploying to Adobe Commerce in the Cloud  |
+| `IMAGE_OPTIMIZING_ORIGIN`  | Origin to use for images in the UI                          |
 
 To set your environment variables for buildtime, navigate or open a new terminal to _your storefront project_ and edit the `.env` file.
 Your `.env` file should have entries that look like the following:

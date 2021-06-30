@@ -14,7 +14,7 @@ Use the methods described in this topic to ensure your deployment is successful.
 
 For instructions on how to deploy to the Cloud for Adobe Commerce, see the [Deploy to Adobe Commerce][] tutorial.
 
-[deploy to adobe commerce]: /tutorials/production-deployment/magento-cloud
+[deploy to adobe commerce]: /tutorials/production-deployment/adobe-commerce/
 
 ## Set your environment variables
 
