@@ -10,16 +10,16 @@ You can integrate Product Recommendations powered by [Adobe Sensei](https://www.
 
 ![Product Recommendations for PWA Studio](images/pwa-arch-diag-sensei.svg)
 
-Magento's [Product Recommendations powered by Adobe Sensei](https://docs.magento.com/user-guide/marketing/product-recommendations.html) is a feature backed by several SaaS services.
+Adobe's [Product Recommendations powered by Adobe Sensei](https://docs.magento.com/user-guide/marketing/product-recommendations.html) is a feature backed by several SaaS services.
 The **Store** side includes your PWA storefront, which contains the event collector and recommendations layout template, and the backend, which includes the GraphQL endpoints, SaaS Export module, and the Admin UI.
 
 After you install the Product Recommendations PWA extension on your store, it will start sending [behavioral data](https://devdocs.magento.com/recommendations/events.html) to Adobe Sensei with no additional setup.
-Adobe Sensei processes this behavioral data along with the catalog data from the Magento backend and calculates the product associations leveraged by the recommendations service.
-At this point, the merchant can create and manage recommendation units from the Magento Admin UI then fetch those product recommendation units from their PWA storefront.
+Adobe Sensei processes this behavioral data along with the catalog data from the backend and calculates the product associations leveraged by the recommendations service.
+At this point, the merchant can create and manage recommendation units from the Adobe Commerce Admin UI then fetch those product recommendation units from their PWA storefront.
 
 ## Install the Product Recommendations module
 
-Product Recommendations support on PWA requires installing the `venia-product-recommendations` package and the Product Recommendations Magento module.
+Product Recommendations support on PWA requires installing the `venia-product-recommendations` package and the Product Recommendations module for Adobe Commerce.
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -34,11 +34,11 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
    This package contains storefront functionality to collect required behavioral data and render the recommendations.
    Some recommendation types use behavioral data from your shoppers to train machine learning models that build personalized recommendations.
    Other recommendation types use catalog data only and do not use any behavioral data.
-   See the [Magento user guide](https://docs.magento.com/user-guide/marketing/product-recommendations.html#trainmlmodels) to learn how Adobe Sensei trains machine learning models that results in higher quality recommendations.
+   See the [user guide](https://docs.magento.com/user-guide/marketing/product-recommendations.html#trainmlmodels) to learn how Adobe Sensei trains machine learning models that results in higher quality recommendations.
 
-1. The backend functionality is provided by the [Magento Product Recommendations module](https://devdocs.magento.com/recommendations/install-configure.html).
+1. The backend functionality is provided by the [Product Recommendations module for Adobe Commerce](https://devdocs.magento.com/recommendations/install-configure.html).
 
-1. Additionally, you need to install the `module-data-services-graphql` module that expands Magento's existing GraphQL coverage to include fields required for storefront behavioral data collection.
+1. Additionally, you need to install the `module-data-services-graphql` module that expands the application's existing GraphQL coverage to include fields required for storefront behavioral data collection.
 
    ```bash
    composer require magento/module-data-services-graphql
@@ -46,7 +46,7 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
 
 ## Create recommendation units
 
-Creating a product recommendation unit for your PWA storefront is the same as [creating one for a Magento storefront](https://docs.magento.com/user-guide/marketing/create-new-rec.html).
+Creating a product recommendation unit for your PWA storefront is the same as [creating one for a theme](https://docs.magento.com/user-guide/marketing/create-new-rec.html).
 When you create a recommendation unit in the Admin UI panel, you will need to place components that render product recommendations on appropriate storefront pages. You will do this only once per [supported page type](https://docs.magento.com/user-guide/marketing/product-recommendations.html#supportedrecs).
 
 ## Render recommendations

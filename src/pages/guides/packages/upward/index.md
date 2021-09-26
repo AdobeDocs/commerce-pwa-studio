@@ -86,7 +86,7 @@ This supports the need for content that a PWA can [cache and reuse when offline]
 
 ## UPWARD and PWA Studio storefronts
 
-An UPWARD server sits between a PWA Studio storefront and its resources, such as Magento.
+An UPWARD server sits between a PWA Studio storefront and its resources, such as an Adobe Commerce or Magento Open Source application.
 It acts as the backend service for the application that proxies requests to connected services or serve static files.
 
 ![UPWARD server diagram](images/upward-server-diagram.png)

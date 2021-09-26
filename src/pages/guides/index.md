@@ -4,7 +4,7 @@ title: PWA Studio project overview
 
 # PWA Studio project overview
 
-Magento's PWA Studio is a set of tools that let you create Progressive Web Apps (PWA).
+PWA Studio is a set of tools and libraries that let you create Progressive Web Apps (PWA).
 This page provides a brief description of a Progressive Web App and its relationship to the PWA Studio project.
 
 ## What is a Progressive Web App
@@ -40,12 +40,12 @@ Learn more about Progressive Web Apps:
 [developers.google.com]: https://developers.google.com/web/updates/2015/12/getting-started-pwa
 [developer.mozilla.org]: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps
 
-## What is the Magento PWA Studio project
+## What is the PWA Studio project
 
 ![pwa studio overview](images/pwa-studio-developer-overview.png)
 
-The Magento PWA Studio project is a set of developer tools and libraries that let you develop, deploy, and maintain a PWA storefront on top of a Magento 2 backend.
-It uses modern [tools and libraries][] to create a build system and framework that adheres to the Magento principle of extensibility.
+The PWA Studio project is a set of developer tools and libraries that let you develop, deploy, and maintain a PWA storefront on top of an Adobe Commerce or Magento Open Source backend.
+It uses modern [tools and libraries][] to create a build system and framework that adheres to the principles of extensibility.
 
 [tools and libraries]: /guides/project/tools-libraries/
 
@@ -72,16 +72,16 @@ These packages work together to provide features for your storefront project, bu
 The `venia-concept` package provides a template for a PWA Studio storefront project.
 When you [set up a new storefront project][], you get a copy of the content in this package, which is a fully operational storefront you can customize.
 
-Magento also provides a shared Magento server to all PWA Studio developers to help you get started with development.
-The PWA Studio team updates and maintains this Magento server to ensure you are developing on the latest Magento version.
+The PWA Studio team also provides a shared Adobe Commerce instance to all PWA Studio developers to help you get started with development.
+The team updates and maintains this instance to ensure you are developing on the latest Adobe Commerce version.
 This server also contains sample data for a fashion store to show the different features available from PWA Studio libraries.
 
 ### Other notable packages
 
 Other notable packages in PWA Studio include:
 
-- **[pwastudio.io][]** - Provides documentation to help guide developers towards creating a Magento PWA storefront
-- **[UPWARD][]** - A proxy-server concept that describes a highly configurable server that sits between the PWA storefront and backend services, such as Magento
+- **[pwastudio.io][]** - Provides documentation to help guide developers towards creating a PWA storefront
+- **[UPWARD][]** - A proxy-server concept that describes a highly configurable server that sits between the PWA storefront and backend services
 - **[PageBuilder][]** - PageBuilder extension for PWA Studio
 
 [pwastudio.io]: https://pwastudio.io

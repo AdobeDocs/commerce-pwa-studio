@@ -1,19 +1,19 @@
 ---
-title: Magento Cloud deployment
+title: Deploy to Adobe Commerce
 ---
 
-# Magento Cloud deployment
+# Deploy to Adobe Commerce
 
-[Magento Commerce Cloud][] is a managed, automated hosting platform for the Magento Commerce software.
-You can use this platform to host your storefront code by installing packages developed specifically to connect your storefront with Magento on the same server.
+[Adobe Commerce][] provides a managed and automated hosting platform for its commerce software in the Cloud.
+You can use this platform to host your storefront code by installing packages developed specifically to connect your storefront with Adobe Commerce software on the same server.
 
-[magento commerce cloud]: https://devdocs.magento.com/cloud/bk-cloud.html
+[adobe commerce]: https://devdocs.magento.com/cloud/bk-cloud.html
 
 ## Overview
 
-This tutorial provides the general steps for adding your storefront onto your Magento Commerce Cloud project and setting it as the front end application.
+This tutorial provides the general steps for setting your storefront as the front end for the Adobe Commerce application in the Cloud.
 By the end of this tutorial, you will have a Cloud project setup that includes your storefront project's code bundles.
-You can use this setup to update and deploy your storefront project in Magento Commerce Cloud.
+You can use this setup to update and deploy your storefront project in the Cloud for Adobe Commerce.
 
 ## Prerequisites
 
@@ -24,18 +24,18 @@ Make sure you complete the [Cloud onboarding tasks][] to avoid account or access
 [pro workflow]: https://devdocs.magento.com/cloud/architecture/pro-develop-deploy-workflow.html
 [cloud onboarding tasks]: https://devdocs.magento.com/cloud/onboarding/onboarding-tasks.html
 
-Verify that your Magento instance is [compatible][] with the PWA Studio version you use in your storefront project.
+Verify that your Adobe Commerce instance is [compatible][] with the PWA Studio version you use in your storefront project.
 
-[compatible]: /integrations/magento/version-compatibility/
+[compatible]: /integrations/adobe-commerce/version-compatibility/
 
 This tutorial requires the following tools:
 
-- [Magento Cloud CLI][]
+- [Adobe Commerce CLI][]
 - Git
 - [Composer][]
 - Yarn or NPM (depends on your storefront project configuration)
 
-[magento cloud cli]: https://devdocs.magento.com/cloud/reference/cli-ref-topic.html
+[adobe commerce cli]: https://devdocs.magento.com/cloud/reference/cli-ref-topic.html
 [composer]: https://getcomposer.org/
 
 If you need to do more advanced Cloud tasks, see the [Cloud technologies and requirements][] for the full list of tools you need to fully manage the rest of your Cloud project.
@@ -50,7 +50,7 @@ Follow the instructions on the [Project setup][] page to set up your storefront 
 ## Tasks overview
 
 1. Clone your Cloud project
-1. Add required Magento extensions
+1. Add required Adobe Commerce extensions
 1. Set environment variables
 1. Build your storefront application
 1. Add your storefront project code
@@ -74,7 +74,7 @@ Your projects are:
 +---------------+------------------+---------------------------------------------------+
 | ID            | Title            | URL                                               |
 +---------------+------------------+---------------------------------------------------+
-| yswqmrbknvqjz | My Magento Store | https://us-4.magento.cloud/projects/yswqmrbknvqjz |
+| yswqmrbknvqjz | My Web Store     | https://us-4.magento.cloud/projects/yswqmrbknvqjz |
 +---------------+------------------+---------------------------------------------------+
 ```
 
@@ -108,21 +108,21 @@ Your environments are:
 * - Indicates the current environment
 ```
 
-Use the Magento Cloud CLI to checkout the environment where you want to add your storefront code, such as the `staging` environment.
+Use the Adobe Commerce CLI to checkout the environment where you want to add your storefront code, such as the `staging` environment.
 
 ```sh
 magento-cloud checkout staging
 ```
 
-## Add required Magento extensions
+## Add required Adobe Commerce extensions
 
-Magento Cloud does not support node processes, so you cannot use UPWARD-JS to serve your storefront project.
-You must use the [magento2-upward-connector][] module with [UPWARD-PHP][] to deploy your storefront in Magento Cloud.
+Adobe Commerce in the Cloud does not support node processes, so you cannot use UPWARD-JS to serve your storefront project.
+You must use the [magento2-upward-connector][] module with [UPWARD-PHP][] to deploy your storefront to the Cloud.
 
 [magento2-upward-connector]: https://github.com/magento/magento2-upward-connector
 [upward-php]: https://github.com/magento/upward-php
 
-Use the `composer` CLI command to add the magento2-upward-connector module to the Magento installation:
+Use the `composer` CLI command to add the magento2-upward-connector module to the Adobe Commerce installation:
 
 ```sh
 composer require magento/module-upward-connector
@@ -151,7 +151,7 @@ PWA Studio storefronts require you to set specific [environment variables][] in 
 | ------------------------------------ | ------------------------------------------ |
 | `CONFIG__DEFAULT__WEB__UPWARD__PATH` | Absolute path to UPWARD YAML configuration |
 | `NODE_ENV`                           | Specifies the node environment type        |
-| `MAGENTO_BACKEND_URL`                | URL of your Magento backend                |
+| `MAGENTO_BACKEND_URL`                | URL of your Adobe Commerce backend         |
 
 To set your Cloud project's runtime variables, edit the [`.magento.app.yaml`][] file and add entries to the `variables.env` section.
 
@@ -167,13 +167,13 @@ variables:
 
 ### Buildtime variables
 
-| Name                       | Description                                                       |
-| -------------------------- | ----------------------------------------------------------------- |
-| `NODE_ENV`                 | Specifies the node environment type                               |
-| `MAGENTO_BACKEND_URL`      | URL of your Magento backend                                       |
-| `CHECKOUT_BRAINTREE_TOKEN` | Braintree token associated with your Magento backend              |
-| `MAGENTO_BACKEND_EDITION`  | Must be `EE` since Cloud only supports Magento Enterprise Edition |
-| `IMAGE_OPTIMIZING_ORIGIN`  | Origin to use for images in the UI                                |
+| Name                       | Description                                                 |
+| -------------------------- | ----------------------------------------------------------- |
+| `NODE_ENV`                 | Specifies the node environment type                         |
+| `MAGENTO_BACKEND_URL`      | URL of your Adobe Commerce backend                          |
+| `CHECKOUT_BRAINTREE_TOKEN` | Braintree token associated with your Adobe Commerce backend |
+| `MAGENTO_BACKEND_EDITION`  | Must be `EE` when deploying to Adobe Commerce in the Cloud  |
+| `IMAGE_OPTIMIZING_ORIGIN`  | Origin to use for images in the UI                          |
 
 To set your environment variables for buildtime, navigate or open a new terminal to _your storefront project_ and edit the `.env` file.
 Your `.env` file should have entries that look like the following:
@@ -190,9 +190,9 @@ ENABLE_EXPRESS_SERVER_COMPRESSION=false
 ### Finding the correct UPWARD path value
 
 The `CONFIG_DEFAULT_WEB_UPWARD_PATH` variable specifies the _absolute_ path to the UPWARD configuration file in the deployed Cloud instance.
-If this value is incorrect or not set, the Magento 2 UPWARD connector extension cannot serve your storefront application and your frontend appears broken.
+If this value is incorrect or not set, the connector extension cannot serve your storefront application and your frontend appears broken.
 
-In the previous example, `/app/pmu35riuj7btw_stg/` is the Magento application root directory on the deployed instance.
+In the previous example, `/app/pmu35riuj7btw_stg/` is the Adobe Commerce application's root directory on the deployed instance.
 This value is different for each environment in your Cloud project, so you must configure each of your project environments with the path specific to each instance.
 To find the correct root directory path for an environment, [SSH][] into the remote server and use the `pwd` command to find the Magento application root directory.
 
@@ -244,7 +244,7 @@ git commit -m "Added storefront file bundles" &&
 git push origin
 ```
 
-After you push changes to your Cloud project, the remote build process runs and deploys a live instance of your site to the Magento Commerce Cloud service.
+After you push changes to your Cloud project, the remote build process runs and deploys a live instance of your site to the Cloud service.
 
 ### Merging environments
 
@@ -254,5 +254,5 @@ It also includes instructions for merging environment branches, such as integrat
 [deploy your store]: https://devdocs.magento.com/cloud/live/stage-prod-live.html
 
 If your workflow involves merging environment branches,
-you must rebuild your application bundle with the correct environment variables before you push your changes to the Magento Cloud service because
+you must rebuild your application bundle with the correct environment variables before you push your changes to the Cloud service because
 variables, such as `CONFIG__DEFAULT__WEB__UPWARD__PATH` and `MAGENTO_BACKEND_URL`, can vary between these environments.

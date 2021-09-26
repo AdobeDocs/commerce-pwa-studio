@@ -36,7 +36,7 @@ Example:
 ```
 
 Server-side languages, such as PHP and Java, can also render custom HTML per request to make the experience more dynamic.
-This is how Magento currently works.
+This is how Adobe Commerce and Magento Open Source currently work.
 
 ## Client-side rendering (CSR)
 

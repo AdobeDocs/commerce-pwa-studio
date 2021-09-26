@@ -7,18 +7,18 @@ title: Internationalization
 Internationalization (i18n) is a feature that lets you localize content for a culture, region, or language.
 This feature is often associated with localization (l10n), which is the process of transforming content for a specific locale.
 
-## Internationalization in core Magento versus PWA Studio
+## Internationalization in Adobe Commerce and Magento Open Source versus PWA Studio
 
-The core Magento application includes an i18n feature that provides translated text to the frontend theme.
-This feature uses dictionary files inside language packages to provide translation data for Magento when it renders a page.
-The language packages themselves are Magento extensions the application installs using Composer.
+The Adobe Commerce and Magento Open Source applications include an i18n feature that provides translated text to the frontend theme.
+This feature uses dictionary files inside language packages to provide translation data for the application when it renders a page.
+The language packages themselves are extensions the application installs using Composer.
 
-For more information, see the Magento core topic: [Translations overview][].
+For more information, see the core documentation topic: [Translations overview][].
 
 [translations overview]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html
 
-The tight coupling between core Magento's i18n feature and its frontend theme makes it difficult to use the same translation mechanisms in PWA Studio storefronts.
-Instead, PWA Studio provides its own i18n feature that follows a similar design as the one in core Magento.
+The tight coupling between each applications' i18n feature and the frontend theme makes it difficult to use the same translation mechanisms in PWA Studio storefronts.
+Instead, PWA Studio provides its own i18n feature that follows a similar design as the one in Adobe Commerce and Magento Open Source.
 
 ## How it works
 
@@ -66,14 +66,14 @@ The i18n feature uses the `id` parameter to look up the localized text from the 
 ## Translation dictionaries
 
 Translation dictionary files contain key/value pairs for localized text.
-PWA Studio's i18n feature uses a similar dictionary approach for translation files as Magento, but
+PWA Studio's i18n feature uses a similar dictionary approach for translation files as Adobe Commerce and Magento Open Source, but
 instead of a CSV format, it uses JSON.
 
 ### Filename format
 
 Dictionary files must be inside an `i18n` directory and use their target locale for their filename.
 
-Instead of the [standard ISO language tag][] the filename format follow's Magento's convention for specifying locale:
+Instead of the [standard ISO language tag][] the filename format follow's the following convention for specifying locale:
 `<language id in lowercase>_<country id in uppercase>.json`.
 For example: `en_US.json`, `en_GB.json`, `fr_FR.json`.
 
@@ -97,7 +97,7 @@ This format uses the component name and descriptor to form the ID value.
 This approach helps identify which component renders the text and provides a unique value for the ID.
 
 However, the i18n feature in PWA Studio does not limit you to the dot notation format.
-For example, in Magento, the original `en_US` locale text identifies the translated text in the application.
+For example, in Adobe Commerce and Magento Open Source, the original `en_US` locale text identifies the translated text in the application.
 
 ```json
 {
@@ -146,7 +146,7 @@ For more details, see the [message syntax][] documentation at FormatJS.
 Language packages provide translation data for one or more locales.
 They are also used to override the text in the same locale.
 
-Unlike the core Magento application, which install language packages through Composer, PWA Studio storefronts install language packages as NPM dependencies.
+Unlike the Adobe Commerce and Magento Open Source applications, which install language packages through Composer, PWA Studio storefronts install language packages as NPM dependencies.
 
 An NPM dependency is a language package if it meets the following criteria:
 
@@ -180,4 +180,4 @@ During runtime, the `LocaleProvider` component uses the `__fetchLocaleData__` fu
 If a components changes the value of the current locale during runtime, the application sends a GraphQL query to verify the new value.
 Even if you install a language package plugin for a locale, you must enable the locale on the backend to use the translations in the storefront UI.
 
-For example, if you use a store switcher and you provide an `i18n/fr_FR.json` file, you must enable the French locale in the Magento backend to make the store switcher work.
+For example, if you use a store switcher and you provide an `i18n/fr_FR.json` file, you must enable the French locale in the backend application to make the store switcher work.

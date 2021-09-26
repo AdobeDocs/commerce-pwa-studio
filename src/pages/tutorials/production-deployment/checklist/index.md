@@ -12,9 +12,9 @@ Storefronts developed using PWA Studio can be deployed in a wide range of produc
 This topic highlights a few suggested steps that can be applied to most deployment processes.
 Use the methods described in this topic to ensure your deployment is successful.
 
-For Magento Cloud specific deployment instructions, see the [Magento Cloud deployment][] tutorial.
+For instructions on how to deploy to the Cloud for Adobe Commerce, see the [Deploy to Adobe Commerce][] tutorial.
 
-[magento cloud deployment]: /tutorials/production-deployment/magento-cloud
+[deploy to adobe commerce]: /tutorials/production-deployment/adobe-commerce/
 
 ## Set your environment variables
 
@@ -29,8 +29,8 @@ Other services require you to set environment variables through a UI or separate
 The following is a list of environment variables you should set in your production environment:
 
 - `NODE_ENV` - Some scripts and processes have production specific logic, so set the value of this variable to "production".
-- [`MAGENTO_BACKEND_URL`][] - Set the value of this environment variable to your **production** Magento instance.
-- [`CHECKOUT_BRAINTREE_TOKEN`][] - Set this value to the BrainTree token associated with your **production** Magento instance.
+- [`MAGENTO_BACKEND_URL`][] - Set the value of this environment variable to your **production** Adobe Commerce or Magento Open Source backend instance.
+- [`CHECKOUT_BRAINTREE_TOKEN`][] - Set this value to the BrainTree token associated with your **production** backend instance.
 
 [`magento_backend_url`]: /api/buildpack/environment/variables/#magento_backend_url
 [`checkout_braintree_token`]: /api/buildpack/environment/variables/#checkout_braintree_token

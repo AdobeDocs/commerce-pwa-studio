@@ -114,7 +114,7 @@ Hooks help developers to decompose large components into smaller functions that 
 
 Since PWA Studio favors using function components over classes, it uses many of React's [built-in hooks][] in its Venia and Peregrine libraries.
 The Peregrine library also provides [custom React hooks][] for storefront developers.
-These hooks contain common Magento storefront logic such as state management.
+These hooks contain common storefront logic such as state management.
 
 [built-in hooks]: https://reactjs.org/docs/hooks-reference.html
 [custom react hooks]: https://reactjs.org/docs/hooks-custom.html

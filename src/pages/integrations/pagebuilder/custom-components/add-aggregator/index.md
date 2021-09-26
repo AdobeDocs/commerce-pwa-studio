@@ -10,7 +10,7 @@ The purpose of the configuration aggregator (`configAggregator`) is to retrieve 
 
 ## Content type HTML
 
-The key to building out your aggregator is knowing the structure, content, and properties available in your content type's master format. You can do this the hard way by looking in the database of your Magento instance (specifically, the `content` field in the `cms_page` and `cms_block` tables). But there is a better way.
+The key to building out your aggregator is knowing the structure, content, and properties available in your content type's master format. You can do this the hard way by looking in the database of your Adobe Commerce or Magento Open Source backend instance (specifically, the `content` field in the `cms_page` and `cms_block` tables). But there is a better way.
 
 **Protip**: Place a `console.log(node)` at the top of your `configAggregator` function so you can see exactly what your content type's HTML (the `HTMLElement` passed by the framework) looks like. In the `ExampleQuote` starter code, you would add it as shown here:
 

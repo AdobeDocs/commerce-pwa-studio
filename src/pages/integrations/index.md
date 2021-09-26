@@ -4,7 +4,7 @@ title: Integrations overview
 
 # Integrations
 
-This section lists the different Magento features available to PWA Studio storefronts.
+This section lists the different Adobe Commerce features available to PWA Studio storefronts.
 
 <DiscoverBlock width="45%" slots="heading, link, text"/>
 

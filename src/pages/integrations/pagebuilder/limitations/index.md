@@ -6,7 +6,7 @@ title: Known limitations
 
 The following items are known limitations to implementing PWA Studio components for Page Builder content types:
 
-- **CMS Pages only** - Page Builder integration within PWA Studio only supports Magento CMS Pages created with Page Builder. It does not support CMS Blocks, Product content, or Category content created with Page Builder.
+- **CMS Pages only** - Page Builder integration within PWA Studio only supports Adobe Commerce and Magento Open Source CMS Pages created with Page Builder. It does not support CMS Blocks, Product content, or Category content created with Page Builder.
 - **Widgets in TinyMCE** - Widgets are not supported within content types that provide text input from the TinyMCE editor, such as Text, Banner, Slider, and HTML Code.
 - **Dynamic Blocks** - Not supported in PWA Studio. PWA Studio currently has no concept of a Dynamic Block. Dynamic Blocks required session information to correctly display their content. Currently this session is not shared between PWA Studio and the backend and there are no GraphQL endpoints for Dynamic Block.
 - **Products text alignment** - Text alignment for Products does not work within the PWA Studio gallery because the gallery is rendered with the CSS grid layout. The Alignment property (as set within the Products content type form) will always default to `Left`.
