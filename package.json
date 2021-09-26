@@ -15,7 +15,8 @@
     "@adobe/gatsby-theme-aio": "^3.20.1",
     "gatsby": "^3.6.0",
     "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react-dom": "^17.0.0",
+    "tty-browserify": "0.0.1"
   },
   "scripts": {
     "start": "gatsby build && gatsby serve",
