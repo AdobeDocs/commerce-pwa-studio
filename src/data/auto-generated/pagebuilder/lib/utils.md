@@ -1,171 +1,162 @@
 ## Functions
 
 <dl>
-<dt><a href="#getBackgroundImages">getBackgroundImages(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dt><a href="#getBackgroundImages">getBackgroundImages(node)</a> ⇒ <code>Object</code></dt>
 <dd><p>Retrieve background images from a master format node</p>
 </dd>
-<dt><a href="#getVerticalAlignment">getVerticalAlignment(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dt><a href="#getVerticalAlignment">getVerticalAlignment(node)</a> ⇒ <code>Object</code></dt>
 <dd><p>Retrieve vertical alignment from a master format node</p>
 </dd>
-<dt><a href="#verticalAlignmentToFlex">verticalAlignmentToFlex(alignment)</a> ⇒ <inlineCode>\*</inlineCode></dt>
+<dt><a href="#verticalAlignmentToFlex">verticalAlignmentToFlex(alignment)</a> ⇒ <code>*</code></dt>
 <dd><p>Convert vertical alignment values to flex values</p>
 </dd>
-<dt><a href="#flexToVerticalAlignment">flexToVerticalAlignment(flex)</a> ⇒ <inlineCode>\*</inlineCode></dt>
+<dt><a href="#flexToVerticalAlignment">flexToVerticalAlignment(flex)</a> ⇒ <code>*</code></dt>
 <dd><p>Convert flex to vertical alignment values</p>
 </dd>
-<dt><a href="#getAdvanced">getAdvanced(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dt><a href="#getAdvanced">getAdvanced(node)</a> ⇒ <code>Object</code></dt>
 <dd><p>Retrieve advanced props from content type node</p>
 </dd>
-<dt><a href="#getPadding">getPadding(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dt><a href="#getPadding">getPadding(node)</a> ⇒ <code>Object</code></dt>
 <dd><p>Retrieve the padding from a content type node</p>
 </dd>
-<dt><a href="#getMargin">getMargin(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dt><a href="#getMargin">getMargin(node)</a> ⇒ <code>Object</code></dt>
 <dd><p>Retrieve the margin from a content type node</p>
 </dd>
-<dt><a href="#getBorder">getBorder(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dt><a href="#getBorder">getBorder(node)</a> ⇒ <code>Object</code></dt>
 <dd><p>Retrieve the border from a content type node</p>
 </dd>
-<dt><a href="#getTextAlign">getTextAlign(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dt><a href="#getTextAlign">getTextAlign(node)</a> ⇒ <code>Object</code></dt>
 <dd><p>Retrieve the text align from a content type node</p>
 </dd>
-<dt><a href="#getCssClasses">getCssClasses(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dt><a href="#getCssClasses">getCssClasses(node)</a> ⇒ <code>Object</code></dt>
 <dd><p>Retrieve the CSS classes from a content type node</p>
 </dd>
-<dt><a href="#getIsHidden">getIsHidden(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dt><a href="#getIsHidden">getIsHidden(node)</a> ⇒ <code>Object</code></dt>
 <dd><p>Retrieve if CSS display property is set to none from a content type node</p>
 </dd>
 </dl>
 
 <a name="getBackgroundImages"></a>
 
-## getBackgroundImages(node) ⇒ `Object`
-
+## getBackgroundImages(node) ⇒ <code>Object</code>
 Retrieve background images from a master format node
 
-**Kind**: global function
+**Kind**: global function  
 
 | Param |
-| ----- |
-| node  |
+| --- |
+| node | 
 
 <a name="getVerticalAlignment"></a>
 
-## getVerticalAlignment(node) ⇒ `Object`
-
+## getVerticalAlignment(node) ⇒ <code>Object</code>
 Retrieve vertical alignment from a master format node
 
-**Kind**: global function
+**Kind**: global function  
 
 | Param |
-| ----- |
-| node  |
+| --- |
+| node | 
 
 <a name="verticalAlignmentToFlex"></a>
 
-## verticalAlignmentToFlex(alignment) ⇒ `*`
-
+## verticalAlignmentToFlex(alignment) ⇒ <code>\*</code>
 Convert vertical alignment values to flex values
 
-**Kind**: global function
+**Kind**: global function  
 
-| Param     |
-| --------- |
-| alignment |
+| Param |
+| --- |
+| alignment | 
 
 <a name="flexToVerticalAlignment"></a>
 
-## flexToVerticalAlignment(flex) ⇒ `*`
-
+## flexToVerticalAlignment(flex) ⇒ <code>\*</code>
 Convert flex to vertical alignment values
 
-**Kind**: global function
+**Kind**: global function  
 
 | Param |
-| ----- |
-| flex  |
+| --- |
+| flex | 
 
 <a name="getAdvanced"></a>
 
-## getAdvanced(node) ⇒ `Object`
-
+## getAdvanced(node) ⇒ <code>Object</code>
 Retrieve advanced props from content type node
 
-**Kind**: global function
+**Kind**: global function  
 
 | Param |
-| ----- |
-| node  |
+| --- |
+| node | 
 
 <a name="getPadding"></a>
 
-## getPadding(node) ⇒ `Object`
-
+## getPadding(node) ⇒ <code>Object</code>
 Retrieve the padding from a content type node
 
-**Kind**: global function
+**Kind**: global function  
 
 | Param |
-| ----- |
-| node  |
+| --- |
+| node | 
 
 <a name="getMargin"></a>
 
-## getMargin(node) ⇒ `Object`
-
+## getMargin(node) ⇒ <code>Object</code>
 Retrieve the margin from a content type node
 
-**Kind**: global function
+**Kind**: global function  
 
 | Param |
-| ----- |
-| node  |
+| --- |
+| node | 
 
 <a name="getBorder"></a>
 
-## getBorder(node) ⇒ `Object`
-
+## getBorder(node) ⇒ <code>Object</code>
 Retrieve the border from a content type node
 
-**Kind**: global function
+**Kind**: global function  
 
 | Param |
-| ----- |
-| node  |
+| --- |
+| node | 
 
 <a name="getTextAlign"></a>
 
-## getTextAlign(node) ⇒ `Object`
-
+## getTextAlign(node) ⇒ <code>Object</code>
 Retrieve the text align from a content type node
 
-**Kind**: global function
+**Kind**: global function  
 
 | Param |
-| ----- |
-| node  |
+| --- |
+| node | 
 
 <a name="getCssClasses"></a>
 
-## getCssClasses(node) ⇒ `Object`
-
+## getCssClasses(node) ⇒ <code>Object</code>
 Retrieve the CSS classes from a content type node
 
-**Kind**: global function
+**Kind**: global function  
 
 | Param |
-| ----- |
-| node  |
+| --- |
+| node | 
 
 <a name="getIsHidden"></a>
 
-## getIsHidden(node) ⇒ `Object`
-
+## getIsHidden(node) ⇒ <code>Object</code>
 Retrieve if CSS display property is set to none from a content type node
 
-**Kind**: global function
+**Kind**: global function  
 
 | Param |
-| ----- |
-| node  |
+| --- |
+| node | 
+
+
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/utils.js).

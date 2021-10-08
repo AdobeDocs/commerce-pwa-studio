@@ -1,7 +1,6 @@
-<a name="TargetableModule" id="TargetableModule"></a>
+<a name="TargetableModule"></a>
 
 ## TargetableModule
-
 A module that third party code can modify.
 
 When Webpack loads a module into its bundles, it processes the source code
@@ -10,110 +9,106 @@ to that source file, meant to be passed to interceptors. Inside
 interceptors, extensions and projects can configure the TargetableModule to
 transform it in many ways.
 
-**Kind**: global class
+**Kind**: global class  
 
-- [TargetableModule](#TargetableModule)
-  - [new TargetableModule(file, trackingOwner)](#new_TargetableModule_new)
-  - [.addTransform(type, transformModule, options)](#TargetableModule+addTransform) ⇒ `this`
-  - [.flush()](#TargetableModule+flush) ⇒ `Array.<TransformRequest>`
-  - [.insertAfterSource(after, insert, [options])](#TargetableModule+insertAfterSource) ⇒ `this`
-  - [.insertBeforeSource(before, insert, [options])](#TargetableModule+insertBeforeSource) ⇒ `this`
-  - [.prependSource(insert)](#TargetableModule+prependSource) ⇒ `this`
-  - [.spliceSource(instruction)](#TargetableModule+spliceSource) ⇒ `this`
+* [TargetableModule](#TargetableModule)
+    * [new TargetableModule(file, trackingOwner)](#new_TargetableModule_new)
+    * [.addTransform(type, transformModule, options)](#TargetableModule+addTransform) ⇒ <code>this</code>
+    * [.flush()](#TargetableModule+flush) ⇒ <code>Array.&lt;TransformRequest&gt;</code>
+    * [.insertAfterSource(after, insert, [options])](#TargetableModule+insertAfterSource) ⇒ <code>this</code>
+    * [.insertBeforeSource(before, insert, [options])](#TargetableModule+insertBeforeSource) ⇒ <code>this</code>
+    * [.prependSource(insert)](#TargetableModule+prependSource) ⇒ <code>this</code>
+    * [.spliceSource(instruction)](#TargetableModule+spliceSource) ⇒ <code>this</code>
 
-<a name="new_TargetableModule_new" id="new_TargetableModule_new"></a>
+<a name="new_TargetableModule_new"></a>
 
 ### new TargetableModule(file, trackingOwner)
-
 Create a TargetableModule representing a file.
 
-| Param         | Type        | Description                           |
-| ------------- | ----------- | ------------------------------------- |
-| file          | `string`    | Path to the underlying source file.   |
-| trackingOwner | `Trackable` | Parent object for debugging purposes. |
 
-<a name="TargetableModule+addTransform" id="TargetableModule+addTransform"></a>
+| Param | Type | Description |
+| --- | --- | --- |
+| file | <code>string</code> | Path to the underlying source file. |
+| trackingOwner | <code>Trackable</code> | Parent object for debugging purposes. |
 
-### targetableModule.addTransform(type, transformModule, options) ⇒ `this`
+<a name="TargetableModule+addTransform"></a>
 
+### targetableModule.addTransform(type, transformModule, options) ⇒ <code>this</code>
 Add a transform request to this module's queue. The `fileToTransform` of
 the transform request is automatically set to this module's filename.
 
-**Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Chainable**
+**Kind**: instance method of [<code>TargetableModule</code>](#TargetableModule)  
+**Chainable**  
 
-| Param           | Type            | Description                                                                                                             |
-| --------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| type            | `TransformType` | Transform type                                                                                                          |
-| transformModule | `string`        | The Node module that runs the transform, such as a Webpack loader for type `source` or a Babel plugin for type `babel`. |
-| options         | `Object`        | Configuration object to send to the transformModule.                                                                    |
+| Param | Type | Description |
+| --- | --- | --- |
+| type | <code>TransformType</code> | [Transform type][] |
+| transformModule | <code>string</code> | The Node module that runs the transform, such as a Webpack loader for type `source` or a Babel plugin for type `babel`. |
+| options | <code>Object</code> | Configuration object to send to the transformModule. |
 
-<a name="TargetableModule+flush" id="TargetableModule+flush"></a>
+<a name="TargetableModule+flush"></a>
 
-### targetableModule.flush() ⇒ `Array.<TransformRequest>`
-
+### targetableModule.flush() ⇒ <code>Array.&lt;TransformRequest&gt;</code>
 Empty this module's queue of transforms, returning them as an array.
 
-**Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Returns**: `Array.<TransformRequest>` - An array of Transform requests.  
-<a name="TargetableModule+insertAfterSource" id="TargetableModule+insertAfterSource"></a>
+**Kind**: instance method of [<code>TargetableModule</code>](#TargetableModule)  
+**Returns**: <code>Array.&lt;TransformRequest&gt;</code> - An array of [Transform requests][].  
+<a name="TargetableModule+insertAfterSource"></a>
 
-### targetableModule.insertAfterSource(after, insert, [options]) ⇒ `this`
-
+### targetableModule.insertAfterSource(after, insert, [options]) ⇒ <code>this</code>
 Insert text into the module contents, immediately following the location
 of the search string if it is found.
 
-**Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Chainable**
+**Kind**: instance method of [<code>TargetableModule</code>](#TargetableModule)  
+**Chainable**  
 
-| Param            | Type     | Description                                                      |
-| ---------------- | -------- | ---------------------------------------------------------------- |
-| after            | `string` | Text string in the module code to place the new content after.   |
-| insert           | `string` | Text to insert after the search string.                          |
-| [options]        | `Object` | Additional loader options.                                       |
-| [options.remove] | `number` | Number of characters to delete forward, after the search string. |
+| Param | Type | Description |
+| --- | --- | --- |
+| after | <code>string</code> | Text string in the module code to place the new content after. |
+| insert | <code>string</code> | Text to insert after the search string. |
+| [options] | <code>Object</code> | Additional loader options. |
+| [options.remove] | <code>number</code> | Number of characters to delete forward, after the search string. |
 
-<a name="TargetableModule+insertBeforeSource" id="TargetableModule+insertBeforeSource"></a>
+<a name="TargetableModule+insertBeforeSource"></a>
 
-### targetableModule.insertBeforeSource(before, insert, [options]) ⇒ `this`
-
+### targetableModule.insertBeforeSource(before, insert, [options]) ⇒ <code>this</code>
 Insert text into the module contents, immediately before the location
 of the search string if it is found.
 
-**Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Chainable**
+**Kind**: instance method of [<code>TargetableModule</code>](#TargetableModule)  
+**Chainable**  
 
-| Param            | Type     | Description                                                      |
-| ---------------- | -------- | ---------------------------------------------------------------- |
-| before           | `string` | Text string in the module code to place the new content before.  |
-| insert           | `string` | Text to insert before the search string.                         |
-| [options]        | `Object` | Additional loader options.                                       |
-| [options.remove] | `number` | Number of characters to delete forward, after the search string. |
+| Param | Type | Description |
+| --- | --- | --- |
+| before | <code>string</code> | Text string in the module code to place the new content before. |
+| insert | <code>string</code> | Text to insert before the search string. |
+| [options] | <code>Object</code> | Additional loader options. |
+| [options.remove] | <code>number</code> | Number of characters to delete forward, after the search string. |
 
-<a name="TargetableModule+prependSource" id="TargetableModule+prependSource"></a>
+<a name="TargetableModule+prependSource"></a>
 
-### targetableModule.prependSource(insert) ⇒ `this`
-
+### targetableModule.prependSource(insert) ⇒ <code>this</code>
 Add text to the beginning of a file.
 
-**Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Chainable**
+**Kind**: instance method of [<code>TargetableModule</code>](#TargetableModule)  
+**Chainable**  
 
-| Param  | Type     | Description           |
-| ------ | -------- | --------------------- |
-| insert | `string` | Text to insert up top |
+| Param | Type | Description |
+| --- | --- | --- |
+| insert | <code>string</code> | Text to insert up top |
 
-<a name="TargetableModule+spliceSource" id="TargetableModule+spliceSource"></a>
+<a name="TargetableModule+spliceSource"></a>
 
-### targetableModule.spliceSource(instruction) ⇒ `this`
+### targetableModule.spliceSource(instruction) ⇒ <code>this</code>
+Do any splice operation supported by [`splice-source-loader`][].
 
-Do any splice operation supported by [splice-source-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/splice-source-loader.js).
+**Kind**: instance method of [<code>TargetableModule</code>](#TargetableModule)  
+**Chainable**  
 
-**Kind**: instance method of [`TargetableModule`](#TargetableModule)  
-**Chainable**
+| Param | Type | Description |
+| --- | --- | --- |
+| instruction | <code>object</code> | Splice instruction. |
 
-| Param       | Type     | Description         |
-| ----------- | -------- | ------------------- |
-| instruction | `object` | Splice instruction. |
+
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js).

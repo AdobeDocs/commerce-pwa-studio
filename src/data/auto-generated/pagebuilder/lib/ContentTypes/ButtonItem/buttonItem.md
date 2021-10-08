@@ -8,48 +8,48 @@
 
 <a name="ButtonItem"></a>
 
-## ButtonItem ⇒ `React.Element`
-
+## ButtonItem ⇒ <code>React.Element</code>
 Page Builder ButtonItem component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
 **Kind**: global functional component  
-**Returns**: `React.Element` - A React component that displays a button.
+**Returns**: <code>React.Element</code> - A React component that displays a button.  
 
-| Param | Type              | Description           |
-| ----- | ----------------- | --------------------- |
-| props | [`props`](#props) | React component props |
+| Param | Type | Description |
+| --- | --- | --- |
+| props | [<code>props</code>](#props) | React component props |
 
 <a name="props"></a>
 
 ## props
-
 Props for [ButtonItem](#ButtonItem)
 
 **Kind**: global typedef  
 **Properties**
 
-| Name          | Type     | Description                                           |
-| ------------- | -------- | ----------------------------------------------------- |
-| buttonType    | `String` | Sets button type option                               |
-| link          | `String` | Url to the page opened when button clicked            |
-| linkType      | `String` | Type of the linked page                               |
-| openInNewTab  | `String` | Toggles the option to open linked page in the new tab |
-| text          | `String` | Button text                                           |
-| textAlign     | `String` | Button text align                                     |
-| border        | `String` | CSS border property                                   |
-| borderColor   | `String` | CSS border color property                             |
-| borderWidth   | `String` | CSS border width property                             |
-| borderRadius  | `String` | CSS border radius property                            |
-| marginTop     | `String` | CSS margin top property                               |
-| marginRight   | `String` | CSS margin right property                             |
-| marginBottom  | `String` | CSS margin bottom property                            |
-| marginLeft    | `String` | CSS margin left property                              |
-| paddingTop    | `String` | CSS padding top property                              |
-| paddingRight  | `String` | CSS padding right property                            |
-| paddingBottom | `String` | CSS padding bottom property                           |
-| paddingLeft   | `String` | CSS padding left property                             |
-| cssClasses    | `Array`  | List of CSS classes to be applied to the component    |
+| Name | Type | Description |
+| --- | --- | --- |
+| buttonType | <code>String</code> | Sets button type option |
+| link | <code>String</code> | Url to the page opened when button clicked |
+| linkType | <code>String</code> | Type of the linked page |
+| openInNewTab | <code>String</code> | Toggles the option to open linked page in the new tab |
+| text | <code>String</code> | Button text |
+| textAlign | <code>String</code> | Button text align |
+| border | <code>String</code> | CSS border property |
+| borderColor | <code>String</code> | CSS border color property |
+| borderWidth | <code>String</code> | CSS border width property |
+| borderRadius | <code>String</code> | CSS border radius property |
+| marginTop | <code>String</code> | CSS margin top property |
+| marginRight | <code>String</code> | CSS margin right property |
+| marginBottom | <code>String</code> | CSS margin bottom property |
+| marginLeft | <code>String</code> | CSS margin left property |
+| paddingTop | <code>String</code> | CSS padding top property |
+| paddingRight | <code>String</code> | CSS padding right property |
+| paddingBottom | <code>String</code> | CSS padding bottom property |
+| paddingLeft | <code>String</code> | CSS padding left property |
+| cssClasses | <code>Array</code> | List of CSS classes to be applied to the component |
+
+
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/ButtonItem/buttonItem.js).

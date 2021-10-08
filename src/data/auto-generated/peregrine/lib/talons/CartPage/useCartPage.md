@@ -1,40 +1,30 @@
 ## Functions
 
 <dl>
-<dt><a href="#useCartPage">useCartPage(props)</a> ⇒ <inlineCode><a href="#CartPageTalonProps">CartPageTalonProps</a></inlineCode></dt>
-<dd>
-
-This talon contains logic for a cart page component.
-It performs effects and returns prop data for rendering the component.
-
-This talon performs the following effects:
-
-- Manages the updating state of the cart while cart details data is being fetched
-
+<dt><a href="#useCartPage">useCartPage(props)</a> ⇒ <code><a href="#CartPageTalonProps">CartPageTalonProps</a></code></dt>
+<dd><p>This talon contains logic for a cart page component.
+It performs effects and returns prop data for rendering the component.</p>
+<p>This talon performs the following effects:</p>
+<ul>
+<li>Manages the updating state of the cart while cart details data is being fetched</li>
+</ul>
 </dd>
 </dl>
 
 ## Typedefs
 
 <dl>
-<dt><a href="#CartPageQueries">CartPageQueries</a> : <inlineCode>Object</inlineCode></dt>
-<dd>
-
-GraphQL formatted string queries used in this talon.
-
+<dt><a href="#CartPageQueries">CartPageQueries</a> : <code>Object</code></dt>
+<dd><p>GraphQL formatted string queries used in this talon.</p>
 </dd>
-<dt><a href="#CartPageTalonProps">CartPageTalonProps</a> : <inlineCode>Object</inlineCode></dt>
-<dd>
-
-Props data to use when rendering a cart page component.
-
+<dt><a href="#CartPageTalonProps">CartPageTalonProps</a> : <code>Object</code></dt>
+<dd><p>Props data to use when rendering a cart page component.</p>
 </dd>
 </dl>
 
-<a name="useCartPage" id="useCartPage"></a>
+<a name="useCartPage"></a>
 
-## useCartPage(props) ⇒ [`CartPageTalonProps`](#CartPageTalonProps)
-
+## useCartPage(props) ⇒ [<code>CartPageTalonProps</code>](#CartPageTalonProps)
 This talon contains logic for a cart page component.
 It performs effects and returns prop data for rendering the component.
 
@@ -42,23 +32,20 @@ This talon performs the following effects:
 
 - Manages the updating state of the cart while cart details data is being fetched
 
-**Kind**: global function
+**Kind**: global function  
 
-| Param         | Type                                  | Description     |
-| ------------- | ------------------------------------- | --------------- |
-| props         | `Object`                              |                 |
-| props.queries | [`CartPageQueries`](#CartPageQueries) | GraphQL queries |
+| Param | Type | Description |
+| --- | --- | --- |
+| props | <code>Object</code> |  |
+| props.queries | [<code>CartPageQueries</code>](#CartPageQueries) | GraphQL queries |
 
-**Example** _(Importing into your project)_
-
+**Example** *(Importing into your project)*  
 ```js
-import { useCartPage } from "@magento/peregrine/lib/talons/CartPage/useCartPage";
+import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage';
 ```
+<a name="CartPageQueries"></a>
 
-<a name="CartPageQueries" id="CartPageQueries"></a>
-
-## CartPageQueries : `Object`
-
+## CartPageQueries : <code>Object</code>
 GraphQL formatted string queries used in this talon.
 
 **Kind**: global typedef  
@@ -66,25 +53,26 @@ GraphQL formatted string queries used in this talon.
 for queries used in Venia  
 **Properties**
 
-| Name           | Type         | Description                         |
-| -------------- | ------------ | ----------------------------------- |
-| getCartDetails | `GraphQLAST` | Query for getting the cart details. |
+| Name | Type | Description |
+| --- | --- | --- |
+| getCartDetailsQuery | <code>GraphQLAST</code> | Query for getting the cart details. |
 
-<a name="CartPageTalonProps" id="CartPageTalonProps"></a>
+<a name="CartPageTalonProps"></a>
 
-## CartPageTalonProps : `Object`
-
+## CartPageTalonProps : <code>Object</code>
 Props data to use when rendering a cart page component.
 
 **Kind**: global typedef  
 **Properties**
 
-| Name                       | Type             | Description                                                        |
-| -------------------------- | ---------------- | ------------------------------------------------------------------ |
-| cartItems                  | `Array.<Object>` | An array of item objects in the cart.                              |
-| hasItems                   | `boolean`        | True if the cart has items. False otherwise.                       |
-| isCartUpdating             | `boolean`        | True if the cart is updating. False otherwise.                     |
-| setIsCartUpdating          | `function`       | Callback function for setting the updating state of the cart page. |
-| shouldShowLoadingIndicator | `boolean`        | True if the loading indicator should be rendered. False otherwise. |
+| Name | Type | Description |
+| --- | --- | --- |
+| cartItems | <code>Array.&lt;Object&gt;</code> | An array of item objects in the cart. |
+| hasItems | <code>boolean</code> | True if the cart has items. False otherwise. |
+| isCartUpdating | <code>boolean</code> | True if the cart is updating. False otherwise. |
+| setIsCartUpdating | <code>function</code> | Callback function for setting the updating state of the cart page. |
+| shouldShowLoadingIndicator | <code>boolean</code> | True if the loading indicator should be rendered. False otherwise. |
+
+
 
 For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/useCartPage.js).
