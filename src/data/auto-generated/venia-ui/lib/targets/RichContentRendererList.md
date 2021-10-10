@@ -1,6 +1,4 @@
-<a name="RichContentRendererList"></a>
 
-## RichContentRendererList
 Implementation of our 'richContentRenderers' target. This will gather
 RichContentRenderer declarations { importPath, componentName } from all
 interceptors, and then tap `builtins.transformModules` to inject a module
@@ -10,20 +8,11 @@ to be imported and then exported.
 An instance of this class is made available when you use VeniaUI's
 `richContentRenderers` target.
 
-**Kind**: global class  
-<a name="RichContentRendererList+add"></a>
+*global* *class*
 
-### richContentRendererList.add(strategy)
 Add a rendering strategy to the RichContent component.
 
-**Kind**: instance method of [<code>RichContentRendererList</code>](#RichContentRendererList)  
-
-| Param | Type | Description |
-| --- | --- | --- |
-| strategy | <code>Object</code> | Describes the rich content renderer to include |
-| strategy.importPath | <code>string</code> | Import path to the RichContentRenderer module. Should be package-absolute. |
-| strategy.componentName | <code>string</code> | Name that will be given to the imported renderer in generated code. This is used for debugging purposes. |
+*instance* *method* of [`RichContentRendererList`](#RichContentRendererList)
 
 
-
-For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/targets/RichContentRendererList.js).
+[pwa-studio/packages/venia-ui/lib/targets/RichContentRendererList.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/targets/RichContentRendererList.js)

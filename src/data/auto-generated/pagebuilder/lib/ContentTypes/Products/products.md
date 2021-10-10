@@ -1,91 +1,79 @@
-## Functions
+##Functions
 
 <dl>
-<dt><a href="#restoreSortOrder">restoreSortOrder(urlKeys, products)</a> ⇒ <code>Array</code></dt>
-<dd><p>Sort products based on the original order</p>
+<dt><a href="#restoreSortOrder">restoreSortOrder(urlKeys, products)</a> ⇒ <inlineCode>Array</inlineCode></dt>
+<dd>
+
+Sort products based on the original order
+
 </dd>
 </dl>
 
-## Typedefs
+##Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
-<dd><p>Props for <a href="#Products">Products</a></p>
+<dd>
+
+Props for [Products](#Products)
+
 </dd>
 </dl>
 
-<a name="Products"></a>
 
-## Products ⇒ <code>React.Element</code>
 Page Builder Products component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Kind**: global functional component  
-**Returns**: <code>React.Element</code> - A React component that displays a Products based on a number of products  
+*global* *functional component*
+`React.Element` — A React component that displays a Products based on a number of products
 
-| Param | Type | Description |
-| --- | --- | --- |
-| props | [<code>props</code>](#props) | React component props |
-
-<a name="restoreSortOrder"></a>
-
-## restoreSortOrder(urlKeys, products) ⇒ <code>Array</code>
 Sort products based on the original order
 
-**Kind**: global function  
+*global* *function*
 
-| Param | Type |
-| --- | --- |
-| urlKeys | <code>Array</code> | 
-| products | <code>Array</code> | 
-
-<a name="props"></a>
-
-## props
 Props for [Products](#Products)
 
-**Kind**: global typedef  
-**Properties**
+*global* *typedef*
 
-| Name | Type | Description |
+| Prop name | Type | Description |
 | --- | --- | --- |
-| classes | <code>Object</code> | An object containing the class names for the Products |
-| classes.root | <code>String</code> | CSS class for products |
-| classes.carousel | <code>String</code> | CSS class for products carousel appearance |
-| classes.centerMode | <code>String</code> | CSS class for products carousel appearance with center mode |
-| classes.centerModeSmall | <code>String</code> | CSS class for products carousel appearance with center mode on small screen |
-| classes.galleryItems | <code>String</code> | CSS class to modify child gallery items |
-| classes.error | <code>String</code> | CSS class for displaying fetch errors |
-| appearance | <code>String</code> | Sets products appearance |
-| autoplay | <code>Boolean</code> | Whether the carousel should autoplay |
-| autoplaySpeed | <code>Number</code> | The speed at which the autoplay should move the slide on |
-| infinite | <code>Boolean</code> | Whether to infinitely scroll the carousel |
-| arrows | <code>Boolean</code> | Whether to show arrows on the slide for navigation |
-| dots | <code>Boolean</code> | Whether to show navigation dots at the bottom of the carousel |
-| draggable | <code>Boolean</code> | Enable scrollable via dragging on desktop |
-| carouselMode | <code>String</code> | Carousel mode |
-| centerPadding | <code>String</code> | Horizontal padding in centerMode |
-| pathNames | <code>Array</code> | List of Url path names to load into product list |
-| textAlign | <code>String</code> | Alignment of content within the products list |
-| border | <code>String</code> | CSS border property |
-| borderColor | <code>String</code> | CSS border color property |
-| borderWidth | <code>String</code> | CSS border width property |
-| borderRadius | <code>String</code> | CSS border radius property |
-| marginTop | <code>String</code> | CSS margin top property |
-| marginRight | <code>String</code> | CSS margin right property |
-| marginBottom | <code>String</code> | CSS margin bottom property |
-| marginLeft | <code>String</code> | CSS margin left property |
-| paddingTop | <code>String</code> | CSS padding top property |
-| paddingRight | <code>String</code> | CSS padding right property |
-| paddingBottom | <code>String</code> | CSS padding bottom property |
-| paddingLeft | <code>String</code> | CSS padding left property |
-| cssClasses | <code>Array</code> | List of CSS classes to be applied to the component |
-| slidesToShow | <code>Number</code> | # of slides to show at a time |
-| slidesToShowMedium | <code>Number</code> | # of slides to show at a time on medium sized screens |
-| slidesToShowSmall | <code>Number</code> | # of slides to show at a time on small screen |
-| slidesToShowSmallCenterMode | <code>Number</code> | # of slides to show at a time on small screen in centerMode |
+| classes | `Object` | An object containing the class names for the Products |
+| classes.root | `String` | CSS class for products |
+| classes.carousel | `String` | CSS class for products carousel appearance |
+| classes.centerMode | `String` | CSS class for products carousel appearance with center mode |
+| classes.centerModeSmall | `String` | CSS class for products carousel appearance with center mode on small screen |
+| classes.galleryItems | `String` | CSS class to modify child gallery items |
+| classes.error | `String` | CSS class for displaying fetch errors |
+| appearance | `String` | Sets products appearance |
+| autoplay | `Boolean` | Whether the carousel should autoplay |
+| autoplaySpeed | `Number` | The speed at which the autoplay should move the slide on |
+| infinite | `Boolean` | Whether to infinitely scroll the carousel |
+| arrows | `Boolean` | Whether to show arrows on the slide for navigation |
+| dots | `Boolean` | Whether to show navigation dots at the bottom of the carousel |
+| draggable | `Boolean` | Enable scrollable via dragging on desktop |
+| carouselMode | `String` | Carousel mode |
+| centerPadding | `String` | Horizontal padding in centerMode |
+| pathNames | `Array` | List of Url path names to load into product list |
+| textAlign | `String` | Alignment of content within the products list |
+| border | `String` | CSS border property |
+| borderColor | `String` | CSS border color property |
+| borderWidth | `String` | CSS border width property |
+| borderRadius | `String` | CSS border radius property |
+| marginTop | `String` | CSS margin top property |
+| marginRight | `String` | CSS margin right property |
+| marginBottom | `String` | CSS margin bottom property |
+| marginLeft | `String` | CSS margin left property |
+| paddingTop | `String` | CSS padding top property |
+| paddingRight | `String` | CSS padding right property |
+| paddingBottom | `String` | CSS padding bottom property |
+| paddingLeft | `String` | CSS padding left property |
+| cssClasses | `Array` | List of CSS classes to be applied to the component |
+| slidesToShow | `Number` | # of slides to show at a time |
+| slidesToShowMedium | `Number` | # of slides to show at a time on medium sized screens |
+| slidesToShowSmall | `Number` | # of slides to show at a time on small screen |
+| slidesToShowSmallCenterMode | `Number` | # of slides to show at a time on small screen in centerMode |
 
 
 
-For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Products/products.js).
+[pwa-studio/packages/pagebuilder/lib/ContentTypes/Products/products.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Products/products.js)

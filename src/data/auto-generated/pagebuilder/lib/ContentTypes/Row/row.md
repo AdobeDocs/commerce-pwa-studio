@@ -1,72 +1,65 @@
-## Typedefs
+##Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
-<dd><p>Props for <a href="#Row">Row</a></p>
+<dd>
+
+Props for [Row](#Row)
+
 </dd>
 </dl>
 
-<a name="Row"></a>
 
-## Row ⇒ <code>React.Element</code>
 Page Builder Row component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Kind**: global functional component  
-**Returns**: <code>React.Element</code> - A React component that displays a Row which contains content.  
+*global* *functional component*
+`React.Element` — A React component that displays a Row which contains content.
 
-| Param | Type | Description |
-| --- | --- | --- |
-| props | [<code>props</code>](#props) | React component props |
-
-<a name="props"></a>
-
-## props
 Props for [Row](#Row)
 
-**Kind**: global typedef  
-**Properties**
+*global* *typedef*
 
-| Name | Type | Description |
+| Prop name | Type | Description |
 | --- | --- | --- |
-| classes | <code>Object</code> | An object containing the class names for the Row |
-| classes.contained | <code>String</code> | CSS class for the contained appearance element |
-| classes.inner | <code>String</code> | CSS class for the inner appearance element |
-| classes.root | <code>String</code> | CSS class for the row root element |
-| classes.videoOverlay | <code>String</code> | CSS class for the videoOverlay element |
-| minHeight | <code>String</code> | CSS minimum height property |
-| backgroundColor | <code>String</code> | CSS background-color property |
-| desktopImage | <code>String</code> | Background image URL to be displayed on desktop devices |
-| mobileImage | <code>String</code> | Background image URL to be displayed on mobile devices |
-| backgroundSize | <code>String</code> | CSS background-size property |
-| backgroundPosition | <code>String</code> | CSS background-position property |
-| backgroundAttachment | <code>String</code> | CSS background-attachment property |
-| backgroundRepeat | <code>String</code> | CSS background-repeat property |
-| enableParallax | <code>Boolean</code> | Enable parallax on this row |
-| parallaxSpeed | <code>Number</code> | The speed which Parallax should scroll, from -1.0 to 2.0 |
-| textAlign | <code>String</code> | Alignment of content within the row |
-| border | <code>String</code> | CSS border property |
-| borderColor | <code>String</code> | CSS border color property |
-| borderWidth | <code>String</code> | CSS border width property |
-| borderRadius | <code>String</code> | CSS border radius property |
-| marginTop | <code>String</code> | CSS margin top property |
-| marginRight | <code>String</code> | CSS margin right property |
-| marginBottom | <code>String</code> | CSS margin bottom property |
-| marginLeft | <code>String</code> | CSS margin left property |
-| paddingTop | <code>String</code> | CSS padding top property |
-| paddingRight | <code>String</code> | CSS padding right property |
-| paddingBottom | <code>String</code> | CSS padding bottom property |
-| paddingLeft | <code>String</code> | CSS padding left property |
-| cssClasses | <code>Array</code> | List of CSS classes to be applied to the component |
-| backgroundType | <code>String</code> | Background type |
-| videoSrc | <code>String</code> | URL to the video |
-| videoFallbackSrc | <code>String</code> | URL to the image which will be displayed before video |
-| videoLoop | <code>Boolean</code> | Play video in loop |
-| videoPlayOnlyVisible | <code>Boolean</code> | Play video when it is visible |
-| videoLazyLoading | <code>Boolean</code> | Load video when it is visible |
-| videoOverlayColor | <code>String</code> | Color for video overlay |
+| classes | `Object` | An object containing the class names for the Row |
+| classes.contained | `String` | CSS class for the contained appearance element |
+| classes.inner | `String` | CSS class for the inner appearance element |
+| classes.root | `String` | CSS class for the row root element |
+| classes.videoOverlay | `String` | CSS class for the videoOverlay element |
+| minHeight | `String` | CSS minimum height property |
+| backgroundColor | `String` | CSS background-color property |
+| desktopImage | `String` | Background image URL to be displayed on desktop devices |
+| mobileImage | `String` | Background image URL to be displayed on mobile devices |
+| backgroundSize | `String` | CSS background-size property |
+| backgroundPosition | `String` | CSS background-position property |
+| backgroundAttachment | `String` | CSS background-attachment property |
+| backgroundRepeat | `String` | CSS background-repeat property |
+| enableParallax | `Boolean` | Enable parallax on this row |
+| parallaxSpeed | `Number` | The speed which Parallax should scroll, from -1.0 to 2.0 |
+| textAlign | `String` | Alignment of content within the row |
+| border | `String` | CSS border property |
+| borderColor | `String` | CSS border color property |
+| borderWidth | `String` | CSS border width property |
+| borderRadius | `String` | CSS border radius property |
+| marginTop | `String` | CSS margin top property |
+| marginRight | `String` | CSS margin right property |
+| marginBottom | `String` | CSS margin bottom property |
+| marginLeft | `String` | CSS margin left property |
+| paddingTop | `String` | CSS padding top property |
+| paddingRight | `String` | CSS padding right property |
+| paddingBottom | `String` | CSS padding bottom property |
+| paddingLeft | `String` | CSS padding left property |
+| cssClasses | `Array` | List of CSS classes to be applied to the component |
+| backgroundType | `String` | Background type |
+| videoSrc | `String` | URL to the video |
+| videoFallbackSrc | `String` | URL to the image which will be displayed before video |
+| videoLoop | `Boolean` | Play video in loop |
+| videoPlayOnlyVisible | `Boolean` | Play video when it is visible |
+| videoLazyLoading | `Boolean` | Load video when it is visible |
+| videoOverlayColor | `String` | Color for video overlay |
 
 
 
-For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Row/row.js).
+[pwa-studio/packages/pagebuilder/lib/ContentTypes/Row/row.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Row/row.js)
