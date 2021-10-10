@@ -23,6 +23,10 @@ module.exports = {
           path: "/api/venia/components/general/ButtonGroup/",
         },
         {
+          title: "Link",
+          path: "/api/venia/components/general/Link/",
+        },
+        {
           title: "Logo",
           path: "/api/venia/components/general/Logo/",
         },
@@ -37,6 +41,10 @@ module.exports = {
         {
           title: "ProductImageCarousel",
           path: "/api/venia/components/general/ProductImageCarousel/",
+        },
+        {
+          title: "Shimmer",
+          path: "/api/venia/components/general/Shimmer/",
         },
         {
           title: "ToastContainer",
