@@ -1,5 +1,8 @@
-#OS
-.DS_Store
+# os files
+.DS_STORE
+
+#IDE files
+.idea/
 
 # gatsby files
 .cache
