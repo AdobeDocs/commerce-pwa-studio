@@ -3,12 +3,6 @@ The Shimmer component provides an easy way to indicate to users that data is loa
 without blocking the entire page with a full-screen loader (or worse, an empty space.) This improves the perceived speed of the site,
 while maintaining or reducing the CLS (Content Layout Shift) on page load
 
-Live code example:
-
-```.jsx
-<button>Beep</button>
-```
-
 ## General Use
 ### Props
 * **classes** - `Object` Styles to apply to the `root` of the Shimmer. Available classes are `root` and `root_[TYPE]`.

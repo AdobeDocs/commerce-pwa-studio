@@ -10,9 +10,11 @@ The components in this group are standard UI components that are commonly found 
 
 - [Button](Button/)
 - [ButtonGroup](ButtonGroup/)
+- [Link](Link/)
 - [Logo](Logo/)
 - [Mask](Mask/)
 - [Portal](Portal/)
 - [ProductImageCarousel](ProductImageCarousel/)
+- [Shimmer](Shimmer/)
 - [ToastContainer](ToastContainer/)
 - [Trigger](Trigger/)
