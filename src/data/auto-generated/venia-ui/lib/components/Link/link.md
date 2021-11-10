@@ -1,16 +1,15 @@
 
-Use for links to pages within your app.
-
-**Returns: **
-`RouterLink`
-   — the `Link` component from `react-router-dom`. We add a `ref` to prefetch pages when the link enters the viewport.
-
-**Parameters**
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | `props` | React component props |
+| prefetchType | `bool` | `true` activates prefetching the target page when the link becomes visible in the viewport. |
+| to | `string` | From [react-router-dom Link](https://knowbody.github.io/react-router-docs/api/Link.html). The absolute path to the target page of the link. Uses the `to` prop from the `react-router-dom Link`. |
 
+**Example** *(Basic usage)*  
+```js
+<Link prefetchType={true} to="/about/">About Us</Link>
+```
 
 **Properties**
 
