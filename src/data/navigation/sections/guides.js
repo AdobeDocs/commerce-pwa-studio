@@ -23,6 +23,10 @@ module.exports = [
         title: "Frequently Asked Questions",
         path: "/guides/project/faq",
       },
+      {
+        title: "Magento compatibility",
+        path: "/guides/project/magento-compatibility",
+      },
     ],
   },
   {
