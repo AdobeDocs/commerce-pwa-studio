@@ -1,6 +1,3 @@
-<a name="useEventListener" id="useEventListener"></a>
-
-## useEventListener(target, type, listener, ...rest)
 
 A [React Hook](https://reactjs.org/docs/hooks-intro.html) that gives
 you the ability to add a callback function when an event is triggered on
@@ -11,13 +8,15 @@ and removes the listener on unmount.
 
 See [addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
-**Kind**: global function
+**Parameters**
 
-| Param    | Type          | Description                                                                                                          |
-| -------- | ------------- | -------------------------------------------------------------------------------------------------------------------- |
-| target   | `EventTarget` | The [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget) to attach the listener to            |
-| type     | `String`      | The type of [Event](https://developer.mozilla.org/en-US/docs/Web/Events) to listen for, e.g. 'resize', 'error', etc. |
-| listener | `function`    | A callback function that is invoked when the event is triggered                                                      |
-| ...rest  | `any`         | Any other arguments to pass to the addEventListener() function                                                       |
+| Name | Type | Description |
+| --- | --- | --- |
+| target | `EventTarget` | The [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget) to attach the listener to |
+| type | `String` | The type of [Event](https://developer.mozilla.org/en-US/docs/Web/Events) to listen for, e.g. 'resize', 'error', etc. |
+| listener | `function` | A callback function that is invoked when the event is triggered |
+| ...rest | `any` | Any other arguments to pass to the addEventListener() function |
 
-For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useEventListener.js).
+
+
+**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useEventListener.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useEventListener.js)
