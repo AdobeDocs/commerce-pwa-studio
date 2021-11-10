@@ -1,7 +1,5 @@
 ---
 title: Venia sample data
----
-title: Install Venia sample data
 adobeio: /guides/packages/venia/sample-data/
 ---
 
