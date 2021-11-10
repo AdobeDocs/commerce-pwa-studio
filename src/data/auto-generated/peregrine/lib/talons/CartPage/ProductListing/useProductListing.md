@@ -245,6 +245,7 @@ It provides props data for a component that renders a product list.
 | --- | --- | --- |
 | activeEditItem | `Object` | The product item currently being edited |
 | isLoading | `boolean` | True if the query to get the product listing is still in progress. False otherwise. |
+| error | `Error` \| `null` | An array of graphql errors |
 | items | `Array.<Object>` | A list of products in a cart |
 | setActiveEditItem | `function` | Function for setting the current item to edit |
 
