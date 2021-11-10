@@ -1,4 +1,5 @@
-##Functions
+
+Functions
 
 <dl>
 <dt><a href="#restoreSortOrder">restoreSortOrder(urlKeys, products)</a> ⇒ <inlineCode>Array</inlineCode></dt>
@@ -9,7 +10,8 @@ Sort products based on the original order
 </dd>
 </dl>
 
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -25,18 +27,33 @@ Page Builder Products component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that displays a Products based on a number of products
+**Returns: **
+`React.Element`
+   — A React component that displays a Products based on a number of products
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Sort products based on the original order
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name | Type |
+| --- | --- |
+| urlKeys | `Array` | 
+| products | `Array` | 
+
 
 Props for [Products](#Products)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the Products |
 | classes.root | `String` | CSS class for products |
@@ -76,4 +93,4 @@ Props for [Products](#Products)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/Products/products.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Products/products.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Products/products.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Products/products.js)

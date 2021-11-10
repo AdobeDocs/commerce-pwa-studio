@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -14,14 +15,22 @@ Page Builder Block component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that displays a Block.
+**Returns: **
+`React.Element`
+   — A React component that displays a Block.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Props for [Block](#Block)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | richContent | `String` | Rich content of the block |
 | textAlign | `String` | Alignment of the block within the parent container |
@@ -41,4 +50,4 @@ Props for [Block](#Block)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/Block/block.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Block/block.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Block/block.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Block/block.js)

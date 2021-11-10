@@ -1,4 +1,5 @@
-##Functions
+
+Functions
 
 <dl>
 <dt><a href="#useGiftOptions">useGiftOptions(props)</a> ⇒ <inlineCode><a href="#GiftOptionsTalonProps">GiftOptionsTalonProps</a></inlineCode></dt>
@@ -15,7 +16,8 @@ This talon performs the following effects:
 </dd>
 </dl>
 
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#GiftOptionsMutations">GiftOptionsMutations</a> : <inlineCode>Object</inlineCode></dt>
@@ -47,7 +49,15 @@ This talon performs the following effects:
 - Fetch the gift options associated with the cart
 - Update the [GiftOptionsTalonProps](#GiftOptionsTalonProps) values with the data returned by the query
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | `Object` |  |
+| props.mutations | [`GiftOptionsMutations`](#GiftOptionsMutations) | GraphQL mutations for Gift Options |
+| props.queries | [`GiftOptionsQueries`](#GiftOptionsQueries) | GraphQL queries for Gift Options |
+
 **Example** *(Importing into your project)*  
 ```js
 import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/GiftOptions/useGiftOptions';
@@ -55,31 +65,31 @@ import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/GiftOptio
 
 GraphQL mutations for Gift Options
 
-*global* *typedef*
 **See**: [giftOptions.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/GiftOptions/giftOptions.gql.js)
 for the query Venia uses.  
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | setGiftOptionsMutation | `GraphQLAST` | Mutation to use for setting the gift options for the cart |
 
 
 GraphQL query for Gift Options
 
-*global* *typedef*
 **See**: [giftOptions.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/GiftOptions/giftOptions.gql.js)
 for the query Venia uses.  
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | getGiftOptionsQuery | `GraphQLAST` | Query to get gift options data |
 
 
 Props data to use when rendering a gift options component.
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | cardMessageProps | `object` | Props for the `cardMessage` textarea element. |
 | giftReceiptProps | `object` | Props for the `includeGiftReceipt` checkbox element. |
@@ -89,4 +99,4 @@ Props data to use when rendering a gift options component.
 
 
 
-[pwa-studio/packages/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions.js)

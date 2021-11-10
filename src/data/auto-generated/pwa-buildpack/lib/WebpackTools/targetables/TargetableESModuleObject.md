@@ -6,7 +6,6 @@ Useful for building named lists and associative arrays when making extension poi
 
 Uses [export-esm-collection-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/export-esm-collection-loader.js) to build source code.
 
-*global* *class*
 
 * [TargetableESModuleObject](#TargetableESModuleObject)
     * [.addImport(importString)](#TargetableESModuleObject+addImport) ⇒ `this`
@@ -16,13 +15,25 @@ Uses [export-esm-collection-loader](https://github.com/magento/pwa-studio/blob/d
 Adds a module to the object using the `addImport()` method from TargetableESModule.
 Since, all imports must be exported, this method performs additional validation.
 
-*instance* *method* of [`TargetableESModuleObject`](#TargetableESModuleObject)
 **Chainable**  
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| importString | `string` | A static import declaration |
+
 
 Adds a module or modules to the object using the `addImport()` function.
 
-*instance* *method* of [`TargetableESModuleObject`](#TargetableESModuleObject)
 **Chainable**  
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| ...args | `string` | Static import declaration(s) |
 
 
-[pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModuleObject.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModuleObject.js)
+
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModuleObject.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModuleObject.js)

@@ -1,4 +1,5 @@
-##Functions
+
+Functions
 
 <dl>
 <dt><a href="#useGiftCards">useGiftCards(props)</a> ⇒ <inlineCode><a href="#GiftCardsTalonProps">GiftCardsTalonProps</a></inlineCode></dt>
@@ -22,7 +23,8 @@ Provide logic for a single gift card component.
 </dd>
 </dl>
 
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#GiftCardsMutations">GiftCardsMutations</a> : <inlineCode>Object</inlineCode></dt>
@@ -61,7 +63,16 @@ This talon performs the following effects:
 - Fetch the currently applied gift cards for a cart
 - Manage the updating state of the cart while a gift card is being applied or removed
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | `Object` |  |
+| props.setIsCartUpdating | `function` | Callback function for setting the update state for the cart. |
+| props.mutations | [`GiftCardsMutations`](#GiftCardsMutations) | GraphQL mutations for Gift Cards |
+| props.queries | [`GiftCardsQueries`](#GiftCardsQueries) | GraphQL queries for Gift Cards |
+
 **Example** *(Importing into your project)*  
 ```js
 import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
@@ -69,7 +80,15 @@ import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
 
 Provide logic for a single gift card component.
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | `Object` |  |
+| props.code | `String` | Gift card's code |
+| props.removeGiftCard | `function` | A function that removes a gift card when provided a code |
+
 **Example** *(Importing into your project)*  
 ```js
 import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
@@ -77,11 +96,11 @@ import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/us
 
 GraphQL mutations for Gift Cards.
 
-*global* *typedef*
 **See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/GiftCards/giftCardQueries.js)
 for queries used in Venia  
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | applyGiftCardMutation | `GraphQLAST` | The mutation used to apply a gift card to the cart. |
 | removeGiftCardMutation | `GraphQLAST` | The mutation used to remove a gift card from the cart. |
@@ -89,11 +108,11 @@ for queries used in Venia
 
 GraphQL queries for Gift Cards.
 
-*global* *typedef*
 **See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/GiftCards/giftCardQueries.js)
 for queries used in Venia  
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | getAppliedGiftCardsQuery | `GraphQLAST` | The query used to get the gift cards currently applied to the cart. |
 | getGiftCardBalanceQuery | `GraphQLAST` | The query used to get the gift cards currently applied to the cart. |
@@ -101,9 +120,9 @@ for queries used in Venia
 
 Props data to use when rendering a list of gift cards.
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | applyGiftCard | `function` | A callback to apply a gift card to the cart. |
 | checkBalanceData | `Object` | The giftCardAccount object of the most recent successful check balance GraphQL query. |
@@ -124,12 +143,12 @@ Props data to use when rendering a list of gift cards.
 
 Props data to use when rendering a single gift card component.
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | removeGiftCardWithCode | `function` | Function for removing a gift card associated with the code passed into this talon. |
 
 
 
-[pwa-studio/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js)

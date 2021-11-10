@@ -1,4 +1,5 @@
-##Functions
+
+Functions
 
 <dl>
 <dt><a href="#getToastId">getToastId(properties)</a></dt>
@@ -16,7 +17,8 @@ A hook that provides access to the toast state and toast api.
 </dd>
 </dl>
 
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#ToastProps">ToastProps</a></dt>
@@ -38,18 +40,30 @@ Use this API to add and remove toasts.
 Generates an identifier for a toast by inspecting the properties that
 differentiate toasts from one another.
 
-*global* *function*
+**Parameters**
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| properties | `Object` | <inlineCode></inlineCode> | A composite identifier object with properties   that identify a specific toast using its [ToastProps](#ToastProps). |
+| properties.type | `String` | <inlineCode></inlineCode> | Maps to the `type` property of [ToastProps](#ToastProps) |
+| properties.message | `String` | <inlineCode></inlineCode> | Maps to the `message` property of [ToastProps](#ToastProps) |
+| properties.dismissable | `Boolean` | <inlineCode>true</inlineCode> | Maps to the `dismissable` property of [ToastProps](#ToastProps) |
+| properties.actionText | `String` | <inlineCode>&#x27;&#x27;</inlineCode> | Maps to the `actionText` property of [ToastProps](#ToastProps) |
+| properties.icon | `React.Element` | <inlineCode>()&#x3D;&gt;{}</inlineCode> | Maps to the `icon` property of [ToastProps](#ToastProps) |
+
 
 A hook that provides access to the toast state and toast api.
 
-*global* *function*
-`Array.<Object>` — An array containing objects for the toast state and its API: [[ToastState](../useToastContext#ToastState), [API](#API)]
+**Returns: **
+`Array.<Object>`
+   — An array containing objects for the toast state and its API: [[ToastState](../useToastContext#ToastState), [API](#API)]
+
 
 Object containing data for creating toasts using [addToast](#API.addToast).
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | type | `String` | One of the following toast types: 'info', 'warning',   or 'error' |
 | message | `String` | The message to display on the toast |
@@ -64,7 +78,6 @@ Object containing data for creating toasts using [addToast](#API.addToast).
 The API for managing toasts.
 Use this API to add and remove toasts.
 
-*global* *typedef*
 
 * [API](#API) : `Object`
     * [.removeToast(id)](#API.removeToast)
@@ -73,13 +86,26 @@ Use this API to add and remove toasts.
 
 Removes a toast from the toast store.
 
-*static* *method* of [`API`](#API)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| id | `Number` | The id of the toast to remove |
+
 
 Dispatches an add action. Includes all props passed along with a hash id
 and a timeout id generated based on the incoming props.
 
-*static* *method* of [`API`](#API)
-`Number` — id The key referencing the toast in the store
+**Returns: **
+`Number`
+   — id The key referencing the toast in the store
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| toastProps | [`ToastProps`](#ToastProps) | The object containing props for adding a toast. |
 
 
-[pwa-studio/packages/peregrine/lib/Toasts/useToasts.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Toasts/useToasts.js)
+
+**Source Code**: [pwa-studio/packages/peregrine/lib/Toasts/useToasts.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Toasts/useToasts.js)

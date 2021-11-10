@@ -1,4 +1,5 @@
-##Modules
+
+Modules
 
 <dl>
 <dt><a href="#module_@magento/pwa-buildpack">@magento/pwa-buildpack</a></dt>
@@ -16,7 +17,8 @@
 <dd></dd>
 </dl>
 
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#transformModulesIntercept">transformModulesIntercept</a> : <inlineCode>function</inlineCode></dt>
@@ -91,6 +93,7 @@ validation process and the build process will be stopeed.
 </dl>
 
 
+
 * [@magento/pwa-buildpack](#module_@magento/pwa-buildpack)
     * [~BuildBus](#module_@magento/pwa-buildpack..BuildBus)
         * _instance_
@@ -112,7 +115,6 @@ validation process and the build process will be stopeed.
 Manages dependency participation in project builds and tasks.
 It executes their declare and intercept files so they can interact with each other.
 
-*inner* *class* of [`@magento/pwa-buildpack`](#module_@magento/pwa-buildpack)
 
 * [~BuildBus](#module_@magento/pwa-buildpack..BuildBus)
     * _instance_
@@ -131,21 +133,36 @@ the BuildBus. Declare and intercept functions should not, and cannot,
 use this method. Instead, they retrieve external targets through their
 `targets.of()` methods.
 
-*instance* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
-`Object.<string, Target>` — TargetProvider for the dependency.
+**Returns: **
+`Object.<string, Target>`
+   — TargetProvider for the dependency.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| depName | `string` | Dependency whose targets to retrieve. |
+
 
 Run the two defined phases, `declare` and `intercept`, in order.
 This binds all targets which the BuildBus can find by analyzing
 dependencies in the project package file.
 
-*instance* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
 **Chainable**  
-`BuildBus` — Returns this instance (chainable).
+**Returns: **
+`BuildBus`
+   — Returns this instance (chainable).
+
 
 Run the specified phase. The BuildBus finds all dependencies which say
 in their `package.json` that they need to run code in this phase.
 
-*instance* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| phase | `string` | 'declare' or 'intercept' |
+
 **Example**  
 ```js
 <caption>Find all dependencies whith have `pwa-studio: { targets: { declare: './path/to/js' }} defined, and run those functions.
@@ -154,11 +171,15 @@ bus.runPhase('declare')
 
 Remove the cached BuildBus for the given context.
 
-*static* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| context | `string` | Root directory whose BuildBus to delete. |
+
 
 Remove all cached BuildBus objects.
 
-*static* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
 
 Get or create the BuildBus for the given context.
 This factory is the supported way to construct BuildBus instances.
@@ -168,7 +189,13 @@ Only one BuildBus is active for a project root directory (context) at any given 
 This way, Buildpack code can retrieve the BuildBus for a context even if the bus
 instance hasn't been sent as a parameter.
 
-*static* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| context | `string` | Root directory of the BuildBus to get or create. |
+
 **Example** *(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)*  
 ```js
 const bus = BuildBus.for('./project-dir);
@@ -180,7 +207,6 @@ Generic node in a tree of objects which can log their activity. Implemented
 for BuildBus, since it will eventually need sophisticated debugging and
 introspection for developers, but it has no BuildBus-specific functionality.
 
-*inner* *class* of [`@magento/pwa-buildpack`](#module_@magento/pwa-buildpack)
 
 * [~Trackable](#module_@magento/pwa-buildpack..Trackable)
     * _instance_
@@ -196,18 +222,23 @@ owner. If the owner is a function, then this Trackable becomes a root
 node, which will log all of its [track](#Trackable+track) calls *and* its
 descendents' calls to the `owner` function.
 
-*instance* *method* of [`Trackable`](#module_@magento/pwa-buildpack..Trackable)
 **See**: Trackable.spec.js  
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| identifier | `string` | String identifier of this Trackable |
+| owner | `Trackable` \| `function` | Parent or root log callback |
+
 
 Enable all active Trackable instances. **Do not run in production**.
 Carries a possibly significant performance cost.
 
-*static* *method* of [`Trackable`](#module_@magento/pwa-buildpack..Trackable)
 
 Disable all active Trackable instances. The parent logging callback will
 not be called.
 
-*static* *method* of [`Trackable`](#module_@magento/pwa-buildpack..Trackable)
+
 
 * [BuiltinTargets](#module_BuiltinTargets)
     * [.envVarDefinitions](#module_BuiltinTargets.envVarDefinitions) : `tapable.SyncHook`
@@ -226,11 +257,16 @@ Intercept this target in your project to add new environment
 variables, typed and documented. This integrates your extension
 configuration with the project-wide environment variable system.
 
-*static* *property* of [`BuiltinTargets`](#module_BuiltinTargets)
 **See**
 
 - [Variable definition schema](http://pwastudio.io/pwa-buildpack/reference/environment-variables/definitions-api/)
 - [Core variable definitions](http://pwastudio.io/pwa-buildpack/reference/environment-variables/core-definitions/)
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| envVarDefinitions | `object` | The [variable definitions object](http://pwastudio.io/pwa-buildpack/reference/environment-variables/definitions-api/). Modify in place. |
 
 **Example** *(Add config fields for your extension)*  
 ```js
@@ -262,7 +298,6 @@ NOTE: This is a very low-level extension point. It should be used as a
 building block for higher-level extensions that expose functional
 areas rather than files on disk.
 
-*static* *property* of [`BuiltinTargets`](#module_BuiltinTargets)
 **See**: [transformModules intercept function](#transformModulesIntercept)  
 **Example** *(Strip unnecessary Lodash code from a specific JS module.)*  
 ```js
@@ -280,7 +315,6 @@ This almost always happens once per build, even in dev mode.
 Use an [intercept function](#webpackCompilerIntercept) on this target
 to access the [webpack compiler](https://webpack.js.org/api/compiler-hooks/).
 
-*static* *property* of [`BuiltinTargets`](#module_BuiltinTargets)
 **Example** *(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)*  
 ```js
 targets.of('@magento/pwa-buildpack').webpackCompiler.tap(compiler => {
@@ -302,7 +336,6 @@ Likewise, if your extension uses CSS Modules, you must add the `cssModules` flag
 Use a [specialFeatures intercept function](#specialFeaturesIntercept)
 to add special build features for the modules used in your project.
 
-*static* *property* of [`BuiltinTargets`](#module_BuiltinTargets)
 **See**: [Special flags in `configureWebpack()`](http://pwastudio.io/pwa-buildpack/reference/configure-webpack/#special-flags)  
 **Example** *(Declare that your extension contains CSS modules.)*  
 ```js
@@ -318,7 +351,12 @@ files in every package which sets the `upward: true` flag in the
 UpwardIncludePlugin calls this target with the parsed and merged
 definition.
 
-*static* *property* of [`BuiltinTargets`](#module_BuiltinTargets)
+**Parameters**
+
+| Name | Type |
+| --- | --- |
+| interceptor | [`transformUpwardIntercept`](#transformUpwardIntercept) | 
+
 **Example** *(Send empty responses in maintenance mode.)*  
 ```js
 targets.of('@magento/pwa-buildpack').transformUpward.tap(def => {
@@ -350,7 +388,12 @@ function can submit multiple errors by calling the onFail function
 multiple times. All the errors will be queued into an array and
 displayed on the console at the end of the process.
 
-*static* *property* of [`BuiltinTargets`](#module_BuiltinTargets)
+**Parameters**
+
+| Name | Type |
+| --- | --- |
+| validator | [`envValidationInterceptor`](#envValidationInterceptor) | 
+
 **Example**  
 ```js
 targets.of('@magento/pwa-buildpack').validateEnv.tapPromise(validateBackendUrl);
@@ -394,7 +437,6 @@ extension Foo requests targets of extension Bar, the BuildBus provides an
 Target instead of the literal Tapable instance. This enables
 better logging, error checking, and validation.
 
-*inner* *class* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
 **Extends**: `Trackable`  
 **See**: [Tapable docs](https://github.com/webpack/tapable)  
 
@@ -416,8 +458,16 @@ provided arguments. Returns the final value if it's a Waterfall target,
 or the value returned by the first interceptor that returns a value if
 it's a Bail target.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
-`\*` — Returns whatever the underlying Tapable Hook returns.
+**Returns: **
+`\*`
+   — Returns whatever the underlying Tapable Hook returns.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| [...args] | `\*` | All arguments are passed to the interceptor functions that have tapped this Target. |
+
 
 Run `.callAsync(...args)` on the underlying Tapable Hook. Calls
 interceptors asynchronously with the provided arguments. Depending on
@@ -426,14 +476,28 @@ order. Last argument must be a callback. It will be invoked when all
 interceptors have run, or when the first returning interceptor has run
 if it's a Bail target.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
-`undefined` — `callAsync` returns nothing, instead passing any output of the interceptors as the first argument of the callback.
+**Returns: **
+`undefined`
+   — `callAsync` returns nothing, instead passing any output of the interceptors as the first argument of the callback.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| ...args | `\*` | All arguments **except the last argument** are passed to the interceptor functions that have tapped this Target. The last argument must be a callback function, which will receive the final output of the interceptors. |
+
 
 Run `.intercept(options)` on the underlying Tapable Hook.
 Can register meta-interceptors for other activity on this target.
 Use only for logging and debugging.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| options | `object` | Options for [Tapable#intercept](https://github.com/webpack/tapable#interception). |
+
 
 Run `.promise(...args)` on the underlying Tapable hook. Calls
 interceptors asynchronously with the provided arguments. Depending on
@@ -441,27 +505,58 @@ the Target type, calls interceptors in parallel or in series. Returns a
 promise. It will be fulfilled when all interceptors have run, or when
 the first returning interceptor has run if it's a Bail target.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
-`Promise` — A Promise for any output of the target's interceptors.
+**Returns: **
+`Promise`
+   — A Promise for any output of the target's interceptors.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| [...args] | `\*` | All arguments are passed to the interceptor functions that have tapped this Target. |
+
 
 Adds a synchronous interceptor to the target.
  If you just supply a function, it will use your extension's package name as the name of the tap.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| [name] | `string` \| `object` | string or object containing the name of the interceptor (optional) |
+| interceptor | `function` | interceptor function |
+
 
 Adds a callback-style asynchronous interceptor to the Target. The interceptor will receive a callback function as its last argument. Only supported on Async targets.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| name | `string` \| `object` | string or object containing the name of the interceptor |
+| interceptor | `function` | interceptor function |
+
 
 Adds a Promise-returning async interceptor to the Target. The interceptor may return a Promise, which the Target will resolve. Only supported on Async targets.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| name | `string` \| `object` | string or object containing the name of the interceptor |
+| interceptor | `function` | interceptor function |
+
 
 Provides the JSON object representation of this target
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
 **Overrides**: [`toJSON`](#Trackable+toJSON)  
-`object` — JSON object
+**Returns: **
+`object`
+   — JSON object
+
 
 Push an event to the parent Trackable, or, if no parent, to the root
 output callback provided to [Trackable#attach](Trackable#attach). All `.track`
@@ -471,8 +566,13 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
 **Overrides**: [`track`](#Trackable+track)  
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| args | `\*` | Any params the root logging function will understand @ |
+
 
 Handles interactions between a BuildBus and an "extension" package
 participating in the BuildBus declare/intercept lifecycle.
@@ -482,7 +582,6 @@ Each extension receives its own TargetProvider, which provides methods for
 declaring its own targets, intercepting its own targets, and intercepting the
 targets of other extensions.
 
-*inner* *class* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
 **Extends**: `Trackable`  
 
 * [~TargetProvider](#module_Buildpack/BuildBus..TargetProvider) ⇐ `Trackable`
@@ -501,34 +600,56 @@ targets of other extensions.
 
 Creates an instance of TargetProvider.
 
-*instance* *property* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
+| dep | `Object` | The package which owns this TargetProvider. |
+| dep.name | `string` | Name of the package which owns this. |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](http://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/#buildpackbuildbusgetexternaltargets--targetprovider) |
+
+
 
 The targets this package has declared in the `declare` phase.
 
-*instance* *property* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 
 The phase currently being executed. Either `declare` or `intercept`.
 
-*instance* *property* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 
 Call this function in the declare phase to register targets that this package and
 other packages can intercept.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| declarations | `Object.<string, Target>` | An object whose keys are the names of targets to declare, and whose properties are newly constructed Targets. |
+
 
 Call this function in the intercept phase to get the targets of other packages, which
 can then be intercepted by calling `.tap()` methods on them.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
-`Object.<string, Target>` — - An object whose keys are the names
+**Returns: **
+`Object.<string, Target>`
+   — - An object whose keys are the names
 of the requested package's targets, and whose values are the target
 objects.
 
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| depName | `string` | The package whose targets you want to retrieve. |
+
+
 Serialize this Trackable and any parent Trackables.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 **Overrides**: [`toJSON`](#Trackable+toJSON)  
-`Object` — JSON-clean object that recurses up the parent tree.
+**Returns: **
+`Object`
+   — JSON-clean object that recurses up the parent tree.
+
 
 Push an event to the parent Trackable, or, if no parent, to the root
 output callback provided to [Trackable#attach](Trackable#attach). All `.track`
@@ -538,28 +659,48 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 **Overrides**: [`track`](#Trackable+track)  
-*inner* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| args | `\*` | Any params the root logging function will understand @ |
+
+
 
 Dictionary of Tapable Hook classes to expose under these new names.
 
-*inner* *constant* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
 **See**: [Tapable](https://github.com/webpack/tapable)  
 
 Use duck typing to validate that the passed object seems like a Tapable hook.
 More robust than doing `instanceof` checks; allows hooks to be proxied and
 otherwise hacked by dependencies.
 
-*inner* *method* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
-`boolean` — True if the object looks like a Tapable hook. False otherwise.
+**Returns: **
+`boolean`
+   — True if the object looks like a Tapable hook. False otherwise.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| hookLike | `object` | Does it look and act like a Tapable hook? |
+
 
 Get the string type name of a provided object. If it is one of the base
 Tapable Hooks supported, returns the name of that Hook (without 'Hook' on
 the end). Otherwise, returns `<unknown>`.
 
-*inner* *method* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
-`string` — The name of the hook without 'Hook' on the end or `<unknown>`
+**Returns: **
+`string`
+   — The name of the hook without 'Hook' on the end or `<unknown>`
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| hook | `object` | Potental Tapable hook object |
+
 
 Respond to a request from a [TargetProvider](https://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/)
 to retrieve a different(external) TargetProvider.
@@ -567,8 +708,18 @@ to retrieve a different(external) TargetProvider.
 This callback pattern helps to loosely couple TargetProviders so
 they are more testable.
 
-*inner* *typedef* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
-`TargetProvider` — TargetProvider for the requested targets.
+**Returns: **
+`TargetProvider`
+   — TargetProvider for the requested targets.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| requestor | `TargetProvider` | TargetProvider making the request. |
+| requested | `string` | External targets being requested. |
+
+
 
 * [Buildpack/BuildBus](#module_Buildpack/BuildBus)
     * [~Target](#module_Buildpack/BuildBus..Target) ⇐ `Trackable`
@@ -605,7 +756,6 @@ extension Foo requests targets of extension Bar, the BuildBus provides an
 Target instead of the literal Tapable instance. This enables
 better logging, error checking, and validation.
 
-*inner* *class* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
 **Extends**: `Trackable`  
 **See**: [Tapable docs](https://github.com/webpack/tapable)  
 
@@ -627,8 +777,16 @@ provided arguments. Returns the final value if it's a Waterfall target,
 or the value returned by the first interceptor that returns a value if
 it's a Bail target.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
-`\*` — Returns whatever the underlying Tapable Hook returns.
+**Returns: **
+`\*`
+   — Returns whatever the underlying Tapable Hook returns.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| [...args] | `\*` | All arguments are passed to the interceptor functions that have tapped this Target. |
+
 
 Run `.callAsync(...args)` on the underlying Tapable Hook. Calls
 interceptors asynchronously with the provided arguments. Depending on
@@ -637,14 +795,28 @@ order. Last argument must be a callback. It will be invoked when all
 interceptors have run, or when the first returning interceptor has run
 if it's a Bail target.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
-`undefined` — `callAsync` returns nothing, instead passing any output of the interceptors as the first argument of the callback.
+**Returns: **
+`undefined`
+   — `callAsync` returns nothing, instead passing any output of the interceptors as the first argument of the callback.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| ...args | `\*` | All arguments **except the last argument** are passed to the interceptor functions that have tapped this Target. The last argument must be a callback function, which will receive the final output of the interceptors. |
+
 
 Run `.intercept(options)` on the underlying Tapable Hook.
 Can register meta-interceptors for other activity on this target.
 Use only for logging and debugging.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| options | `object` | Options for [Tapable#intercept](https://github.com/webpack/tapable#interception). |
+
 
 Run `.promise(...args)` on the underlying Tapable hook. Calls
 interceptors asynchronously with the provided arguments. Depending on
@@ -652,27 +824,58 @@ the Target type, calls interceptors in parallel or in series. Returns a
 promise. It will be fulfilled when all interceptors have run, or when
 the first returning interceptor has run if it's a Bail target.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
-`Promise` — A Promise for any output of the target's interceptors.
+**Returns: **
+`Promise`
+   — A Promise for any output of the target's interceptors.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| [...args] | `\*` | All arguments are passed to the interceptor functions that have tapped this Target. |
+
 
 Adds a synchronous interceptor to the target.
  If you just supply a function, it will use your extension's package name as the name of the tap.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| [name] | `string` \| `object` | string or object containing the name of the interceptor (optional) |
+| interceptor | `function` | interceptor function |
+
 
 Adds a callback-style asynchronous interceptor to the Target. The interceptor will receive a callback function as its last argument. Only supported on Async targets.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| name | `string` \| `object` | string or object containing the name of the interceptor |
+| interceptor | `function` | interceptor function |
+
 
 Adds a Promise-returning async interceptor to the Target. The interceptor may return a Promise, which the Target will resolve. Only supported on Async targets.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| name | `string` \| `object` | string or object containing the name of the interceptor |
+| interceptor | `function` | interceptor function |
+
 
 Provides the JSON object representation of this target
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
 **Overrides**: [`toJSON`](#Trackable+toJSON)  
-`object` — JSON object
+**Returns: **
+`object`
+   — JSON object
+
 
 Push an event to the parent Trackable, or, if no parent, to the root
 output callback provided to [Trackable#attach](Trackable#attach). All `.track`
@@ -682,8 +885,13 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
 **Overrides**: [`track`](#Trackable+track)  
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| args | `\*` | Any params the root logging function will understand @ |
+
 
 Handles interactions between a BuildBus and an "extension" package
 participating in the BuildBus declare/intercept lifecycle.
@@ -693,7 +901,6 @@ Each extension receives its own TargetProvider, which provides methods for
 declaring its own targets, intercepting its own targets, and intercepting the
 targets of other extensions.
 
-*inner* *class* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
 **Extends**: `Trackable`  
 
 * [~TargetProvider](#module_Buildpack/BuildBus..TargetProvider) ⇐ `Trackable`
@@ -712,34 +919,56 @@ targets of other extensions.
 
 Creates an instance of TargetProvider.
 
-*instance* *property* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
+| dep | `Object` | The package which owns this TargetProvider. |
+| dep.name | `string` | Name of the package which owns this. |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](http://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/#buildpackbuildbusgetexternaltargets--targetprovider) |
+
+
 
 The targets this package has declared in the `declare` phase.
 
-*instance* *property* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 
 The phase currently being executed. Either `declare` or `intercept`.
 
-*instance* *property* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 
 Call this function in the declare phase to register targets that this package and
 other packages can intercept.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| declarations | `Object.<string, Target>` | An object whose keys are the names of targets to declare, and whose properties are newly constructed Targets. |
+
 
 Call this function in the intercept phase to get the targets of other packages, which
 can then be intercepted by calling `.tap()` methods on them.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
-`Object.<string, Target>` — - An object whose keys are the names
+**Returns: **
+`Object.<string, Target>`
+   — - An object whose keys are the names
 of the requested package's targets, and whose values are the target
 objects.
 
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| depName | `string` | The package whose targets you want to retrieve. |
+
+
 Serialize this Trackable and any parent Trackables.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 **Overrides**: [`toJSON`](#Trackable+toJSON)  
-`Object` — JSON-clean object that recurses up the parent tree.
+**Returns: **
+`Object`
+   — JSON-clean object that recurses up the parent tree.
+
 
 Push an event to the parent Trackable, or, if no parent, to the root
 output callback provided to [Trackable#attach](Trackable#attach). All `.track`
@@ -749,28 +978,48 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 **Overrides**: [`track`](#Trackable+track)  
-*inner* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| args | `\*` | Any params the root logging function will understand @ |
+
+
 
 Dictionary of Tapable Hook classes to expose under these new names.
 
-*inner* *constant* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
 **See**: [Tapable](https://github.com/webpack/tapable)  
 
 Use duck typing to validate that the passed object seems like a Tapable hook.
 More robust than doing `instanceof` checks; allows hooks to be proxied and
 otherwise hacked by dependencies.
 
-*inner* *method* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
-`boolean` — True if the object looks like a Tapable hook. False otherwise.
+**Returns: **
+`boolean`
+   — True if the object looks like a Tapable hook. False otherwise.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| hookLike | `object` | Does it look and act like a Tapable hook? |
+
 
 Get the string type name of a provided object. If it is one of the base
 Tapable Hooks supported, returns the name of that Hook (without 'Hook' on
 the end). Otherwise, returns `<unknown>`.
 
-*inner* *method* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
-`string` — The name of the hook without 'Hook' on the end or `<unknown>`
+**Returns: **
+`string`
+   — The name of the hook without 'Hook' on the end or `<unknown>`
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| hook | `object` | Potental Tapable hook object |
+
 
 Respond to a request from a [TargetProvider](https://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/)
 to retrieve a different(external) TargetProvider.
@@ -778,8 +1027,18 @@ to retrieve a different(external) TargetProvider.
 This callback pattern helps to loosely couple TargetProviders so
 they are more testable.
 
-*inner* *typedef* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
-`TargetProvider` — TargetProvider for the requested targets.
+**Returns: **
+`TargetProvider`
+   — TargetProvider for the requested targets.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| requestor | `TargetProvider` | TargetProvider making the request. |
+| requested | `string` | External targets being requested. |
+
+
 
 * [@magento/pwa-buildpack](#module_@magento/pwa-buildpack)
     * [~BuildBus](#module_@magento/pwa-buildpack..BuildBus)
@@ -802,7 +1061,6 @@ they are more testable.
 Manages dependency participation in project builds and tasks.
 It executes their declare and intercept files so they can interact with each other.
 
-*inner* *class* of [`@magento/pwa-buildpack`](#module_@magento/pwa-buildpack)
 
 * [~BuildBus](#module_@magento/pwa-buildpack..BuildBus)
     * _instance_
@@ -821,21 +1079,36 @@ the BuildBus. Declare and intercept functions should not, and cannot,
 use this method. Instead, they retrieve external targets through their
 `targets.of()` methods.
 
-*instance* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
-`Object.<string, Target>` — TargetProvider for the dependency.
+**Returns: **
+`Object.<string, Target>`
+   — TargetProvider for the dependency.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| depName | `string` | Dependency whose targets to retrieve. |
+
 
 Run the two defined phases, `declare` and `intercept`, in order.
 This binds all targets which the BuildBus can find by analyzing
 dependencies in the project package file.
 
-*instance* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
 **Chainable**  
-`BuildBus` — Returns this instance (chainable).
+**Returns: **
+`BuildBus`
+   — Returns this instance (chainable).
+
 
 Run the specified phase. The BuildBus finds all dependencies which say
 in their `package.json` that they need to run code in this phase.
 
-*instance* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| phase | `string` | 'declare' or 'intercept' |
+
 **Example**  
 ```js
 <caption>Find all dependencies whith have `pwa-studio: { targets: { declare: './path/to/js' }} defined, and run those functions.
@@ -844,11 +1117,15 @@ bus.runPhase('declare')
 
 Remove the cached BuildBus for the given context.
 
-*static* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| context | `string` | Root directory whose BuildBus to delete. |
+
 
 Remove all cached BuildBus objects.
 
-*static* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
 
 Get or create the BuildBus for the given context.
 This factory is the supported way to construct BuildBus instances.
@@ -858,7 +1135,13 @@ Only one BuildBus is active for a project root directory (context) at any given 
 This way, Buildpack code can retrieve the BuildBus for a context even if the bus
 instance hasn't been sent as a parameter.
 
-*static* *method* of [`BuildBus`](#module_@magento/pwa-buildpack..BuildBus)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| context | `string` | Root directory of the BuildBus to get or create. |
+
 **Example** *(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)*  
 ```js
 const bus = BuildBus.for('./project-dir);
@@ -870,7 +1153,6 @@ Generic node in a tree of objects which can log their activity. Implemented
 for BuildBus, since it will eventually need sophisticated debugging and
 introspection for developers, but it has no BuildBus-specific functionality.
 
-*inner* *class* of [`@magento/pwa-buildpack`](#module_@magento/pwa-buildpack)
 
 * [~Trackable](#module_@magento/pwa-buildpack..Trackable)
     * _instance_
@@ -886,18 +1168,23 @@ owner. If the owner is a function, then this Trackable becomes a root
 node, which will log all of its [track](#Trackable+track) calls *and* its
 descendents' calls to the `owner` function.
 
-*instance* *method* of [`Trackable`](#module_@magento/pwa-buildpack..Trackable)
 **See**: Trackable.spec.js  
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| identifier | `string` | String identifier of this Trackable |
+| owner | `Trackable` \| `function` | Parent or root log callback |
+
 
 Enable all active Trackable instances. **Do not run in production**.
 Carries a possibly significant performance cost.
 
-*static* *method* of [`Trackable`](#module_@magento/pwa-buildpack..Trackable)
 
 Disable all active Trackable instances. The parent logging callback will
 not be called.
 
-*static* *method* of [`Trackable`](#module_@magento/pwa-buildpack..Trackable)
+
 
 * [Buildpack/BuildBus](#module_Buildpack/BuildBus)
     * [~Target](#module_Buildpack/BuildBus..Target) ⇐ `Trackable`
@@ -934,7 +1221,6 @@ extension Foo requests targets of extension Bar, the BuildBus provides an
 Target instead of the literal Tapable instance. This enables
 better logging, error checking, and validation.
 
-*inner* *class* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
 **Extends**: `Trackable`  
 **See**: [Tapable docs](https://github.com/webpack/tapable)  
 
@@ -956,8 +1242,16 @@ provided arguments. Returns the final value if it's a Waterfall target,
 or the value returned by the first interceptor that returns a value if
 it's a Bail target.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
-`\*` — Returns whatever the underlying Tapable Hook returns.
+**Returns: **
+`\*`
+   — Returns whatever the underlying Tapable Hook returns.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| [...args] | `\*` | All arguments are passed to the interceptor functions that have tapped this Target. |
+
 
 Run `.callAsync(...args)` on the underlying Tapable Hook. Calls
 interceptors asynchronously with the provided arguments. Depending on
@@ -966,14 +1260,28 @@ order. Last argument must be a callback. It will be invoked when all
 interceptors have run, or when the first returning interceptor has run
 if it's a Bail target.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
-`undefined` — `callAsync` returns nothing, instead passing any output of the interceptors as the first argument of the callback.
+**Returns: **
+`undefined`
+   — `callAsync` returns nothing, instead passing any output of the interceptors as the first argument of the callback.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| ...args | `\*` | All arguments **except the last argument** are passed to the interceptor functions that have tapped this Target. The last argument must be a callback function, which will receive the final output of the interceptors. |
+
 
 Run `.intercept(options)` on the underlying Tapable Hook.
 Can register meta-interceptors for other activity on this target.
 Use only for logging and debugging.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| options | `object` | Options for [Tapable#intercept](https://github.com/webpack/tapable#interception). |
+
 
 Run `.promise(...args)` on the underlying Tapable hook. Calls
 interceptors asynchronously with the provided arguments. Depending on
@@ -981,27 +1289,58 @@ the Target type, calls interceptors in parallel or in series. Returns a
 promise. It will be fulfilled when all interceptors have run, or when
 the first returning interceptor has run if it's a Bail target.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
-`Promise` — A Promise for any output of the target's interceptors.
+**Returns: **
+`Promise`
+   — A Promise for any output of the target's interceptors.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| [...args] | `\*` | All arguments are passed to the interceptor functions that have tapped this Target. |
+
 
 Adds a synchronous interceptor to the target.
  If you just supply a function, it will use your extension's package name as the name of the tap.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| [name] | `string` \| `object` | string or object containing the name of the interceptor (optional) |
+| interceptor | `function` | interceptor function |
+
 
 Adds a callback-style asynchronous interceptor to the Target. The interceptor will receive a callback function as its last argument. Only supported on Async targets.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| name | `string` \| `object` | string or object containing the name of the interceptor |
+| interceptor | `function` | interceptor function |
+
 
 Adds a Promise-returning async interceptor to the Target. The interceptor may return a Promise, which the Target will resolve. Only supported on Async targets.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| name | `string` \| `object` | string or object containing the name of the interceptor |
+| interceptor | `function` | interceptor function |
+
 
 Provides the JSON object representation of this target
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
 **Overrides**: [`toJSON`](#Trackable+toJSON)  
-`object` — JSON object
+**Returns: **
+`object`
+   — JSON object
+
 
 Push an event to the parent Trackable, or, if no parent, to the root
 output callback provided to [Trackable#attach](Trackable#attach). All `.track`
@@ -1011,8 +1350,13 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-*instance* *method* of [`Target`](#module_Buildpack/BuildBus..Target)
 **Overrides**: [`track`](#Trackable+track)  
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| args | `\*` | Any params the root logging function will understand @ |
+
 
 Handles interactions between a BuildBus and an "extension" package
 participating in the BuildBus declare/intercept lifecycle.
@@ -1022,7 +1366,6 @@ Each extension receives its own TargetProvider, which provides methods for
 declaring its own targets, intercepting its own targets, and intercepting the
 targets of other extensions.
 
-*inner* *class* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
 **Extends**: `Trackable`  
 
 * [~TargetProvider](#module_Buildpack/BuildBus..TargetProvider) ⇐ `Trackable`
@@ -1041,34 +1384,56 @@ targets of other extensions.
 
 Creates an instance of TargetProvider.
 
-*instance* *property* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
+| dep | `Object` | The package which owns this TargetProvider. |
+| dep.name | `string` | Name of the package which owns this. |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](http://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/#buildpackbuildbusgetexternaltargets--targetprovider) |
+
+
 
 The targets this package has declared in the `declare` phase.
 
-*instance* *property* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 
 The phase currently being executed. Either `declare` or `intercept`.
 
-*instance* *property* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 
 Call this function in the declare phase to register targets that this package and
 other packages can intercept.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| declarations | `Object.<string, Target>` | An object whose keys are the names of targets to declare, and whose properties are newly constructed Targets. |
+
 
 Call this function in the intercept phase to get the targets of other packages, which
 can then be intercepted by calling `.tap()` methods on them.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
-`Object.<string, Target>` — - An object whose keys are the names
+**Returns: **
+`Object.<string, Target>`
+   — - An object whose keys are the names
 of the requested package's targets, and whose values are the target
 objects.
 
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| depName | `string` | The package whose targets you want to retrieve. |
+
+
 Serialize this Trackable and any parent Trackables.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 **Overrides**: [`toJSON`](#Trackable+toJSON)  
-`Object` — JSON-clean object that recurses up the parent tree.
+**Returns: **
+`Object`
+   — JSON-clean object that recurses up the parent tree.
+
 
 Push an event to the parent Trackable, or, if no parent, to the root
 output callback provided to [Trackable#attach](Trackable#attach). All `.track`
@@ -1078,28 +1443,48 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-*instance* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
 **Overrides**: [`track`](#Trackable+track)  
-*inner* *method* of [`TargetProvider`](#module_Buildpack/BuildBus..TargetProvider)
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| args | `\*` | Any params the root logging function will understand @ |
+
+
 
 Dictionary of Tapable Hook classes to expose under these new names.
 
-*inner* *constant* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
 **See**: [Tapable](https://github.com/webpack/tapable)  
 
 Use duck typing to validate that the passed object seems like a Tapable hook.
 More robust than doing `instanceof` checks; allows hooks to be proxied and
 otherwise hacked by dependencies.
 
-*inner* *method* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
-`boolean` — True if the object looks like a Tapable hook. False otherwise.
+**Returns: **
+`boolean`
+   — True if the object looks like a Tapable hook. False otherwise.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| hookLike | `object` | Does it look and act like a Tapable hook? |
+
 
 Get the string type name of a provided object. If it is one of the base
 Tapable Hooks supported, returns the name of that Hook (without 'Hook' on
 the end). Otherwise, returns `<unknown>`.
 
-*inner* *method* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
-`string` — The name of the hook without 'Hook' on the end or `<unknown>`
+**Returns: **
+`string`
+   — The name of the hook without 'Hook' on the end or `<unknown>`
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| hook | `object` | Potental Tapable hook object |
+
 
 Respond to a request from a [TargetProvider](https://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/)
 to retrieve a different(external) TargetProvider.
@@ -1107,8 +1492,17 @@ to retrieve a different(external) TargetProvider.
 This callback pattern helps to loosely couple TargetProviders so
 they are more testable.
 
-*inner* *typedef* of [`Buildpack/BuildBus`](#module_Buildpack/BuildBus)
-`TargetProvider` — TargetProvider for the requested targets.
+**Returns: **
+`TargetProvider`
+   — TargetProvider for the requested targets.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| requestor | `TargetProvider` | TargetProvider making the request. |
+| requested | `string` | External targets being requested. |
+
 
 Intercept function signature for the transformModules target.
 
@@ -1116,26 +1510,46 @@ Interceptors of `transformModules` should call the [`addTransform()`](#addTransf
 callback to add module specific transformers.
 Any returned value will be ignored.
 
-*global* *typedef*
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| addTransform | [`addTransform`](#addTransform) | Callback to add a transform. |
+
 
 Callback to add a transform.
 
-*global* *typedef*
 **See**: [TransformRequest](https://pwastudio.io/pwa-buildpack/reference/transform-requests/#addTransform)  
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](https://pwastudio.io/pwa-buildpack/reference/transform-requests/#addTransform) to apply a transform to a file provided by this dependency. |
+
 
 Intercept function signature for the webpackCompiler target.
 
 Interceptors of `webpackCompiler` should tap hooks on the provided
 `compiler` object. Any returned value will be ignored.
 
-*global* *typedef*
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| compiler | `webpack.Compiler` | The [webpack compiler](https://webpack.js.org/api/compiler-hooks/) instance |
+
 
 Intercept function signature for the specialFeatures target.
 
 Interceptors of the `specialFeatures` target can use the mapping object provided
 to map special build flags to their project modules.
 
-*global* *typedef*
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| featuresByModule | `Object.<string, SpecialBuildFlags>` | An object mapping of module names to their special build flags |
+
 
 Intercept function signature for the transformUpward target.
 
@@ -1148,7 +1562,13 @@ to get what you need to modify the UPWARD definition (for example, a network
 request) then you can provide an `async` function as interceptor (or simply
 return a Promise from any function).
 
-*global* *typedef*
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| definition | `object` | Parsed UPWARD definition object. |
+
 
 Intercept function signature for the validateEnv target.
 
@@ -1166,7 +1586,15 @@ It can call the onFail multiple times if it wants to report multiple errors.
 All the errors will be queued and printed into the console at the end of the
 validation process and the build process will be stopeed.
 
-*global* *typedef*
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| config.env | `Object` | Project ENV |
+| config.onFail | `function` | On fail callback |
+| config.debug | `function` | Debug function to be used for additional reporting in debug mode |
 
 
-[pwa-studio/packages/pwa-buildpack/lib/BuildBus/BuildBus.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/BuildBus.js)
+
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/BuildBus.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/BuildBus.js)

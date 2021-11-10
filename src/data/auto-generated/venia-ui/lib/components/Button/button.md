@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -12,14 +13,22 @@ Props for [Button](#Button)
 
 A component for buttons.
 
-*global* *functional component*
-`React.Element` — A React component that displays a single button.
+**Returns: **
+`React.Element`
+   — A React component that displays a single button.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Props for [Button](#Button)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the Button component. |
 | classes.content | `string` | classes for the button content |
@@ -34,4 +43,4 @@ Props for [Button](#Button)
 
 
 
-[pwa-studio/packages/venia-ui/lib/components/Button/button.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Button/button.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Button/button.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Button/button.js)

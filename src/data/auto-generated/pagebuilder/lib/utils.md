@@ -1,4 +1,5 @@
-##Functions
+
+Functions
 
 <dl>
 <dt><a href="#getBackgroundImages">getBackgroundImages(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
@@ -72,47 +73,113 @@ Retrieve if CSS display property is set to none from a content type node
 
 Retrieve background images from a master format node
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name |
+| --- |
+| node | 
+
 
 Retrieve vertical alignment from a master format node
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name |
+| --- |
+| node | 
+
 
 Convert vertical alignment values to flex values
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name |
+| --- |
+| alignment | 
+
 
 Convert flex to vertical alignment values
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name |
+| --- |
+| flex | 
+
 
 Retrieve advanced props from content type node
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name |
+| --- |
+| node | 
+
 
 Retrieve the padding from a content type node
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name |
+| --- |
+| node | 
+
 
 Retrieve the margin from a content type node
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name |
+| --- |
+| node | 
+
 
 Retrieve the border from a content type node
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name |
+| --- |
+| node | 
+
 
 Retrieve the text align from a content type node
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name |
+| --- |
+| node | 
+
 
 Retrieve the CSS classes from a content type node
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name |
+| --- |
+| node | 
+
 
 Retrieve if CSS display property is set to none from a content type node
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name |
+| --- |
+| node | 
 
 
-[pwa-studio/packages/pagebuilder/lib/utils.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/utils.js)
+
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/utils.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/utils.js)

@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -14,14 +15,22 @@ Page Builder Banner component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that displays a Banner.
+**Returns: **
+`React.Element`
+   — A React component that displays a Banner.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Props for [Banner](#Banner)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the banner |
 | classes.root | `String` | CSS class for the banner root element |
@@ -83,4 +92,4 @@ Props for [Banner](#Banner)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/Banner/banner.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Banner/banner.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Banner/banner.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Banner/banner.js)

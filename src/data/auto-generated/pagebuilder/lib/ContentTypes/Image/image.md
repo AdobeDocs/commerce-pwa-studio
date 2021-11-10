@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -14,14 +15,22 @@ Page Builder Image component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that displays an Image.
+**Returns: **
+`React.Element`
+   — A React component that displays an Image.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Props for [Image](#Image)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the Image |
 | classes.img | `String` | CSS classes for the img element |
@@ -50,4 +59,4 @@ Props for [Image](#Image)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/Image/image.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Image/image.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Image/image.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Image/image.js)

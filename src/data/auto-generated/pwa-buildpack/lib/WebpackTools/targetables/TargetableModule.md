@@ -7,7 +7,6 @@ to that source file, meant to be passed to interceptors. Inside
 interceptors, extensions and projects can configure the TargetableModule to
 transform it in many ways.
 
-*global* *class*
 
 * [TargetableModule](#TargetableModule)
     * [new TargetableModule(file, trackingOwner)](#new_TargetableModule_new)
@@ -21,39 +20,86 @@ transform it in many ways.
 
 Create a TargetableModule representing a file.
 
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| file | `string` | Path to the underlying source file. |
+| trackingOwner | `Trackable` | Parent object for debugging purposes. |
+
 
 Add a transform request to this module's queue. The `fileToTransform` of
 the transform request is automatically set to this module's filename.
 
-*instance* *method* of [`TargetableModule`](#TargetableModule)
 **Chainable**  
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| type | `TransformType` | Transform type |
+| transformModule | `string` | The Node module that runs the transform, such as a Webpack loader for type `source` or a Babel plugin for type `babel`. |
+| options | `Object` | Configuration object to send to the transformModule. |
+
 
 Empty this module's queue of transforms, returning them as an array.
 
-*instance* *method* of [`TargetableModule`](#TargetableModule)
-`Array.<TransformRequest>` — An array of Transform requests.
+**Returns: **
+`Array.<TransformRequest>`
+   — An array of Transform requests.
+
 
 Insert text into the module contents, immediately following the location
 of the search string if it is found.
 
-*instance* *method* of [`TargetableModule`](#TargetableModule)
 **Chainable**  
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| after | `string` | Text string in the module code to place the new content after. |
+| insert | `string` | Text to insert after the search string. |
+| [options] | `Object` | Additional loader options. |
+| [options.remove] | `number` | Number of characters to delete forward, after the search string. |
+
 
 Insert text into the module contents, immediately before the location
 of the search string if it is found.
 
-*instance* *method* of [`TargetableModule`](#TargetableModule)
 **Chainable**  
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| before | `string` | Text string in the module code to place the new content before. |
+| insert | `string` | Text to insert before the search string. |
+| [options] | `Object` | Additional loader options. |
+| [options.remove] | `number` | Number of characters to delete forward, after the search string. |
+
 
 Add text to the beginning of a file.
 
-*instance* *method* of [`TargetableModule`](#TargetableModule)
 **Chainable**  
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| insert | `string` | Text to insert up top |
+
 
 Do any splice operation supported by [splice-source-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/splice-source-loader.js).
 
-*instance* *method* of [`TargetableModule`](#TargetableModule)
 **Chainable**  
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| instruction | `object` | Splice instruction. |
 
 
-[pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js)
+
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js)

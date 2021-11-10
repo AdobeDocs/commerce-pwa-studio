@@ -1,4 +1,5 @@
-##Functions
+
+Functions
 
 <dl>
 <dt><a href="#useDropdown">useDropdown()</a> ⇒ <inlineCode><a href="#Dropdown">Dropdown</a></inlineCode></dt>
@@ -9,7 +10,8 @@ A React Hook for adding dropdown-related logic.
 </dd>
 </dl>
 
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#Dropdown">Dropdown</a> : <inlineCode>Object</inlineCode></dt>
@@ -23,14 +25,16 @@ The object returned contains the pieces needed to add the dropdown logic to your
 
 A React Hook for adding dropdown-related logic.
 
-*global* *function*
-[`Dropdown`](#Dropdown) — An object containing functions and values to add dropdown logic
+**Returns: **
+[`Dropdown`](#Dropdown)
+   — An object containing functions and values to add dropdown logic
+
 
 The object returned contains the pieces needed to add the dropdown logic to your components
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | elementRef | `Ref` | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements |
 | expanded | `Boolean` | The value of the `expanded` state |
@@ -39,4 +43,4 @@ The object returned contains the pieces needed to add the dropdown logic to your
 
 
 
-[pwa-studio/packages/peregrine/lib/hooks/useDropdown.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useDropdown.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useDropdown.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useDropdown.js)

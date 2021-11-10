@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -14,14 +15,22 @@ Page Builder Column component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that displays a Column.
+**Returns: **
+`React.Element`
+   — A React component that displays a Column.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Props for [Column](#Column)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | appearance | `String` | Converts to CSS align-self sub-property of the flexbox item |
 | backgroundAttachment | `String` | CSS background-attachment property |
@@ -54,4 +63,4 @@ Props for [Column](#Column)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/Column/column.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Column/column.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Column/column.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Column/column.js)

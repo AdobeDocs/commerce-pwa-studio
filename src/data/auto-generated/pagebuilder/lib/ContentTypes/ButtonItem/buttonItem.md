@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -14,14 +15,22 @@ Page Builder ButtonItem component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that displays a button.
+**Returns: **
+`React.Element`
+   — A React component that displays a button.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Props for [ButtonItem](#ButtonItem)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | buttonType | `String` | Sets button type option |
 | link | `String` | Url to the page opened when button clicked |
@@ -45,4 +54,4 @@ Props for [ButtonItem](#ButtonItem)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/ButtonItem/buttonItem.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/ButtonItem/buttonItem.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/ButtonItem/buttonItem.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/ButtonItem/buttonItem.js)

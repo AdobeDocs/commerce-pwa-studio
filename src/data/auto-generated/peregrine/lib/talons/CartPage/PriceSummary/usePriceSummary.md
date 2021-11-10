@@ -1,4 +1,5 @@
-##Functions
+
+Functions
 
 <dl>
 <dt><a href="#usePriceSummary">usePriceSummary(props)</a> ⇒ <inlineCode><a href="#PriceSummaryTalonProps">PriceSummaryTalonProps</a></inlineCode></dt>
@@ -14,7 +15,8 @@ This talon performs the following effects:
 </dd>
 </dl>
 
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#FlattenedData">FlattenedData</a> : <inlineCode>Object</inlineCode></dt>
@@ -45,7 +47,14 @@ This talon performs the following effects:
 
 - Log a GraphQL error if it occurs when getting the price summary
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | `Object` |  |
+| props.queries | [`PriceSummaryQueries`](#PriceSummaryQueries) | GraphQL queries for a price summary component. |
+
 **Example** *(Importing into your project)*  
 ```js
 import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
@@ -53,9 +62,9 @@ import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSum
 
 Query data flattened into a simple object.
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | subtotal | `String` | Cart subtotal (excluding tax) |
 | total | `String` | Cart grand total |
@@ -67,20 +76,20 @@ Query data flattened into a simple object.
 
 GraphQL queries for price summary component.
 
-*global* *typedef*
 **See**: [priceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.js)
 for the queries used in Venia.  
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | getPriceSummary | `GraphQLAST` | Query to get the price summary for a cart |
 
 
 Props used for rendering a price summary component.
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | handleProceedToCheckout | `function` | Callback function which navigates the browser to the checkout |
 | hasError | `boolean` | True if a GraphQL query returns an error. False otherwise. |
@@ -90,4 +99,4 @@ Props used for rendering a price summary component.
 
 
 
-[pwa-studio/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js)

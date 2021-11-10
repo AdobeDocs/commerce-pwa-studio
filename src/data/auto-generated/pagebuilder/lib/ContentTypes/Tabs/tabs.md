@@ -1,4 +1,5 @@
-##Functions
+
+Functions
 
 <dl>
 <dt><a href="#upperCaseString">upperCaseString(string)</a> ⇒ <inlineCode>string</inlineCode></dt>
@@ -9,7 +10,8 @@ Upper case the first letter of a string
 </dd>
 </dl>
 
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -25,18 +27,32 @@ Page Builder Tabs component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that displays a set of Tabs.
+**Returns: **
+`React.Element`
+   — A React component that displays a set of Tabs.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Upper case the first letter of a string
 
-*global* *function*
+**Returns: **
+**Parameters**
+
+| Name | Type |
+| --- | --- |
+| string | `string` | 
+
 
 Props for [Tabs](#Tabs)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the Tabs |
 | classes.header | `String` | Class names for the tab header |
@@ -75,4 +91,4 @@ Props for [Tabs](#Tabs)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js)

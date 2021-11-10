@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -14,14 +15,22 @@ Page Builder TabItem component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that displays a TabItem.
+**Returns: **
+`React.Element`
+   — A React component that displays a TabItem.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Props for [TabItem](#TabItem)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the TabItem |
 | classes.root | `String` | CSS class for the tab item root element |
@@ -52,4 +61,4 @@ Props for [TabItem](#TabItem)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/TabItem/tabItem.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/TabItem/tabItem.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/TabItem/tabItem.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/TabItem/tabItem.js)

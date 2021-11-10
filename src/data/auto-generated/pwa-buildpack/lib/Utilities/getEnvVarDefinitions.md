@@ -1,11 +1,13 @@
-##Modules
+
+Modules
 
 <dl>
 <dt><a href="#module_Buildpack/Utilities">Buildpack/Utilities</a></dt>
 <dd></dd>
 </dl>
 
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#EnvVarDefinitions">EnvVarDefinitions</a> : <inlineCode>Object</inlineCode></dt>
@@ -59,6 +61,7 @@ They may also be used to make `loadEnvironment()` support the legacy name of a r
 </dl>
 
 
+
 Defines the global settings of the project as a list of typed environment variables.
 Includes a set of changes made to the environment variables in recent versions, to aid with migration and upgrades.
 
@@ -68,9 +71,9 @@ to validate the currently defined values in the environment.
 `EnvVarDefinitions` are also used by [`createDotEnvFile()`](http://pwastudio.io/pwa-buildpack/reference/buildpack-cli/create-env-file/#createdotenvfiledirectory-options)
 to generate an extensively commented `.env` file for a project.
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | sections | [`Array.<EnvVarDefsSection>`](#EnvVarDefsSection) | List of sections, or sub-lists of definitions grouped under a title. |
 | changes | [`Array.<EnvVarDefsChange>`](#EnvVarDefsChange) | List of changes, or objects describing a recent change to a definition. |
@@ -81,9 +84,9 @@ A list of related definitions concerning a particular functional area.
 All defined variable names under a particular functional area should have the same prefix, to help namespace and organize configuration.
 For instance, all variable names in the "Custom local origin" section begin with `CUSTOM_ORIGIN_`.
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | name | `String` | Title of the section, describing the functional area of the included variables. |
 | variables | [`Array.<EnvVarDefinition>`](#EnvVarDefinition) | List of variable definitions. |
@@ -102,9 +105,9 @@ object returned by [`loadEnvironment()`](http://pwastudio.io/pwa-buildpack/refer
 Any environment variable during the build is accessible via `process.env` in NodeJS.
 However, only the variables defined by `EnvVarDefinition` entries will be available in the frontend, via the [Webpack EnvironmentPlugin](https://webpack.js.org/plugins/environment-plugin/).
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | name | `String` | Name of the environment variable. Must be in SCREAMING_SNAKE_CASE and contain only alphanumeric characters. |
 | type | `String` | Type of the environment variable. Can be any type supported by the [envalid](https://www.npmjs.com/package/envalid#validator-types) library. |
@@ -119,9 +122,9 @@ Can indicate that the environment variable was _removed_ or _renamed_.
 Change objects can log informative warnings to developers to help with migration.
 They may also be used to make `loadEnvironment()` support the legacy name of a renamed variable.
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | type | `String` | `removed` or `renamed` |
 | name | `String` | Name of the EnvVarDefinition that was recently changed. If the change is a rename, this must be the _old_ variable name. |
@@ -133,4 +136,4 @@ They may also be used to make `loadEnvironment()` support the legacy name of a r
 
 
 
-[pwa-studio/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js)

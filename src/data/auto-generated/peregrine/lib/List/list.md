@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -19,14 +20,19 @@ default props for [List](#List)
 The **List** component maps a collection of data objects into an array of elements.
 It also manages the selection and focus of those elements.
 
-*global* *functional component*
 **Returns{react.element}**: A React component that displays list data.  
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React Component props |
+
 
 props for [List](#List)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | css classes prop for List |
 | classes.root | `string` | css classes for List root container |
@@ -41,7 +47,6 @@ props for [List](#List)
 
 default props for [List](#List)
 
-*global* *typedef*
 
 
-[pwa-studio/packages/peregrine/lib/List/list.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/List/list.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/List/list.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/List/list.js)

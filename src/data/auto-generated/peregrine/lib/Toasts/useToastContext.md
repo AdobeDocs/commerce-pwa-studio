@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#ToastState">ToastState</a> : <inlineCode>Object</inlineCode></dt>
@@ -27,9 +28,9 @@ Any component using this hook _must_ be a child of a [ToastContextProvider](#Toa
 
 The current state of the toast store.
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | toasts | `Map` | Map object associating an id to toast data |
 
@@ -38,17 +39,18 @@ A [context](https://reactjs.org/docs/context.html) provider that
 provides the toast state object and a dispatch function to toast
 functionality consumers.
 
-*global* *typedef*
 
 A hook that provides access to the toast state and dispatch.
 Any component using this hook _must_ be a child of a [ToastContextProvider](#ToastContextProvider).
 
-*global* *typedef*
-`Array.<Object>` — An array containing the state and dispatch function: [[ToastState](#ToastState), function]
+**Returns: **
+`Array.<Object>`
+   — An array containing the state and dispatch function: [[ToastState](#ToastState), function]
+
 **Example**  
 ```js
 const [toastState, dispatch] = useToastState();
 ```
 
 
-[pwa-studio/packages/peregrine/lib/Toasts/useToastContext.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Toasts/useToastContext.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/Toasts/useToastContext.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Toasts/useToastContext.js)

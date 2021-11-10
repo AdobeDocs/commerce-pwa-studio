@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -14,14 +15,22 @@ Page Builder HTML component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that renders HTML with optional styling properties.
+**Returns: **
+`React.Element`
+   — A React component that renders HTML with optional styling properties.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Props for [Html](#Html)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the Html |
 | classes.root | `String` | CSS classes for the root container element |
@@ -43,4 +52,4 @@ Props for [Html](#Html)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/Html/html.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Html/html.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Html/html.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Html/html.js)

@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -14,14 +15,22 @@ Page Builder Slider component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that displays a Slider which contains slides.
+**Returns: **
+`React.Element`
+   — A React component that displays a Slider which contains slides.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Props for [Slider](#Slider)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the Slider |
 | classes.root | `String` | CSS class for the slider root element |
@@ -53,4 +62,4 @@ Props for [Slider](#Slider)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/Slider/slider.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Slider/slider.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Slider/slider.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Slider/slider.js)

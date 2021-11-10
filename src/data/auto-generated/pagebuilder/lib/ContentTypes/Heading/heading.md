@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -14,14 +15,22 @@ Page Builder Heading component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that renders Heading with optional styling properties.
+**Returns: **
+`React.Element`
+   — A React component that renders Heading with optional styling properties.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Props for [Heading](#Heading)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | headingType | `String` | Level of HTML heading |
 | text | `String` | Heading text |
@@ -42,4 +51,4 @@ Props for [Heading](#Heading)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/Heading/heading.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Heading/heading.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Heading/heading.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Heading/heading.js)

@@ -1,9 +1,7 @@
 
-Props for [Shimmer](Shimmer)
+**Properties**
 
-*global* *typedef*
-
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | is an object containing the class names for the Shimmer component. |
 | classes.root | `string` | is the class for the container |
@@ -20,6 +18,4 @@ Props for [Shimmer](Shimmer)
 | type | `string` | is the type of the Shimmer |
 | children | `node` | are the children of the Shimmer |
 
-
-
-[pwa-studio/packages/venia-ui/lib/components/Shimmer/shimmer.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Shimmer/shimmer.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Shimmer/shimmer.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Shimmer/shimmer.js)

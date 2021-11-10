@@ -4,7 +4,6 @@ An ECMAScript module that can be changed by a third party.
 This class presents a convenient API for consumers to add common transforms to ES
 Modules in a semantic way.
 
-*global* *class*
 
 * [TargetableESModule](#TargetableESModule)
     * [.addImport(statement)](#TargetableESModule+addImport) ⇒ `SingleImportStatement`
@@ -19,18 +18,39 @@ This method automatically deduplicates attempts to add imports that would overri
 earlier import bindings.
 If a collision is detected, it renames the binding before inserting it.
 
-*instance* *method* of [`TargetableESModule`](#TargetableESModule)
-`SingleImportStatement` — An instance of the `SingleImportStatement` class.
+**Returns: **
+`SingleImportStatement`
+   — An instance of the `SingleImportStatement` class.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| statement | `string` \| `SingleImportStatement` | A string representing the import statement, or a SingleImportStatement representing it. |
+
 
 Generates a unique identifier for a given binding. Not guaranteed safe,
 but good enough in a pinch.
 
-*instance* *method* of [`TargetableESModule`](#TargetableESModule)
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| binding | `string` | The binding to change. |
+
 
 Pass exports of this module through a wrapper module.
 
-*instance* *method* of [`TargetableESModule`](#TargetableESModule)
 **Chainable**  
+**Returns: **
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| [exportName] | `string` | Name of export to wrap. If not provided, will wrap the default export. |
+| wrapperModule | `string` | Package-absolute import path to the wrapper module. |
 
 
-[pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js)
+
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js)

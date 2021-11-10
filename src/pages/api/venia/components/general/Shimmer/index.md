@@ -1,27 +1,27 @@
+import Shimmer from '/src/data/auto-generated/venia-ui/lib/components/Shimmer/shimmer.md';
+
 # Shimmer
-The Shimmer component provides an easy way to indicate to users that data is loading in a certain area of the website
-without blocking the entire page with a full-screen loader (or worse, an empty space.) This improves the perceived speed of the site,
-while maintaining or reducing the CLS (Content Layout Shift) on page load
 
-## General Use
-### Props
-* **classes** - `Object` Styles to apply to the `root` of the Shimmer. Available classes are `root` and `root_[TYPE]`.
-* **borderRadius** - `string|number` Border radius of component
-* **height** - `string|number` Height to apply to component. **Number is used as `rem`**. String value is used directly.
-* **width** - `string|number` Width to apply to component. **Number is used as `rem`**. String value is used directly.
-* **style** - `Object` CSS styles to apply to component
-* **type** - `'rectangle'|'button'|'checkbox'|'radio'|'textArea'|'textInput'` Base style-category to apply to component
-* **children** - `node` Children to output within the Shimmer. Useful for Image placeholders
+The Shimmer component is a loading indicator that takes the shape of the component being loaded.
+Instead of blocking the entire page like a traditional full-screen loader, Shimmer loaders are component specific.
+As soon as a component loads on the page, you can start using it, instead of waiting for all the components to load.
 
-Other props are passed to the root element
+Using Shimmer components improves both the perceived and actual speed of the site. User perception is improved because
+users and interact with parts of the page before the entire page is loaded. But actual performance is also improved.
+The Shimmer component eliminates most of the CLS (Content Layout Shift) on a page, which reduces CPU usage
+and render times when loading the entire page.
 
-### Accessibility
+<Shimmer />
+
+## Accessibility
+
 To maintain accessibility for screen readers, we can pass `aria-live="polite" aria-busy="true"` to the Shimmer component (or an
 element that wraps the Shimmer(s) in a more complex instance).
 
-It's important to then add `aria-live="polite" aria-busy="false"` to the _normal_ component that replaces the shimmer
+It's important to then add `aria-live="polite" aria-busy="false"` to the _normal_ component that replaces the shimmer.
 
 ### Example
+
 ```jsx
 // ....
 import Shimmer from '../path/to/base/Shimmer';
@@ -35,14 +35,17 @@ export default () => {
 ```
 
 ## Shimmer for Components
-When loading data, previously we would return null (or a full-screen loader) instead of the actual component. We can now return a
+
+When loading data, previously we would return `null` (or a full-screen loader) instead of the actual component. We can now return a
 _**shimmer**_ version of the component, which will take up the same space without relying on data.
 
-Direct use of the Shimmer component within _normal_ components should be avoided when possible. If the shimmer is replacing a component
+Direct use of the `Shimmer` component within _normal_ components should be avoided when possible. If the shimmer is replacing a component
 that is imported, a `.shimmer.js` file should be created for that imported component in its folder and exported in its `index.js`.
 
 ### Example
-There are 4 critical files
+
+There are 4 critical files for creating a Shimmer component:
+
 * **Main.js** - the main component that has the loading status and would usually return null for the component while loading
 * **SubComponent/index.js** - Previously would only export the main component. Must now export named variable for shimmer component
 * **SubComponent/subComponent** - Same SubComponent as usual
@@ -50,6 +53,7 @@ There are 4 critical files
   the component it's attached to. It can contain complex arrangement of base Shimmer elements, or include other subcomponents Shimmers.
 
 **Main.js**
+
 ```jsx
 import React from 'react';
 import SubComponent, { SubComponentShimmer } from '../path/to/SubComponent';
@@ -74,14 +78,18 @@ export default () => {
 // ....
 ```
 ---
+
 **../path/to/SubComponent/index.js**
+
 ```jsx
 export { default } from './subComponent.js';
 // Export named shimmer component
 export { default as SubComponentShimmer } from './subComponent.shimmer.js';
 ```
 ---
+
 **../path/to/SubComponent/subComponent.js**
+
 ```jsx
 import React from 'react';
 import { shape, string } from 'prop-types';
@@ -109,7 +117,9 @@ SubComponent.propTypes = {
 export default SubComponent;
 ```
 ---
+
 **../path/to/SubComponent/subComponent.shimmer.js**
+
 ```jsx
 import React from 'react';
 import { mergeClasses } from '../../path/to/classify';
@@ -137,25 +147,28 @@ SubComponentShimmer.propTypes = {
 export default SubComponentShimmer;
 ```
 
-### Adjusting existing Shimmers
-Since shimmers reflect the layout of their parent component, any changes to the main component should also be applied to
-the shimmer component. In this example, we'll add a custom attribute shimmer to the detail section of the product page.
+## Adjusting existing Shimmers
+
+When you make layout changes to a Shimmer's parent component, you should also adjust the Shimmer component to match.
+In this example, we'll add a custom attribute shimmer to the detail section of the product page.
 
 **local-intercept.js**
+
 ```jsx
 const { Targetables } = require('@magento/pwa-buildpack');
 const targetables = Targetables.using(targets);
 const productShimmerComponent = targetables.reactComponent(
     '@magento/venia-ui/lib/RootComponents/Product/product.shimmer'
 );
+
 /**
- * To follow best-practices we would create a shimmer file for our new attribute, and import it into the
- * productShimmerComponent. For simplicity's sake, we'll inline the jsx here.
+ * As a best practice, you should create a separate Shimmer file for the new attribute and import it into the
+ * productShimmerComponent. But for simplicity, we'll inline the jsx as shown here.
  */
 productShimmerComponent.appendJSX(
     'section className={classes.details}'
     `<div className={classes.detailsTitle}>
-          <Shimmer width="100%" height={1} />
+        <Shimmer width="100%" height={1} />
      </div>
      <Shimmer width="100%" height={1} />`
 );

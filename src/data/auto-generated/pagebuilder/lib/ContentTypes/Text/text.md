@@ -1,4 +1,5 @@
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -14,14 +15,22 @@ Page Builder Text component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-*global* *functional component*
-`React.Element` — A React component that displays a Text content type which contains content.
+**Returns: **
+`React.Element`
+   — A React component that displays a Text content type which contains content.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| props | [`props`](#props) | React component props |
+
 
 Props for [Text](#Text)
 
-*global* *typedef*
+**Properties**
 
-| Prop name | Type | Description |
+| Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the Text |
 | classes.root | `String` | CSS class for the root text element |
@@ -43,4 +52,4 @@ Props for [Text](#Text)
 
 
 
-[pwa-studio/packages/pagebuilder/lib/ContentTypes/Text/text.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Text/text.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Text/text.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Text/text.js)

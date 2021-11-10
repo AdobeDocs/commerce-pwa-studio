@@ -1,4 +1,5 @@
-##Members
+
+Members
 
 <dl>
 <dt><a href="#hooks">hooks</a> : <inlineCode>tapable.AsyncSeriesHook</inlineCode></dt>
@@ -31,7 +32,8 @@ a talon.
 </dd>
 </dl>
 
-##Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#hookInterceptFunction">hookInterceptFunction</a> : <inlineCode>function</inlineCode></dt>
@@ -56,7 +58,6 @@ Peregrine hook.
 You can also use this target to modify the behavior or output returned by
 a hook.
 
-*global* *variable*
 **See**: [Intercept function signature](#hookInterceptFunction)  
 **Example** *(Access the tapable object)*  
 ```js
@@ -81,7 +82,6 @@ Peregrine talon.
 You can also use this target to modify the behavior or output returned by
 a talon.
 
-*global* *variable*
 **See**: [Intercept function signature](#hookInterceptFunction)  
 **Example** *(Access the tapable object)*  
 ```js
@@ -101,7 +101,12 @@ Intercept function signature for the `talons` and `hooks` targets.
 Interceptors of `hooks` should call `wrapWith` on the individual hooks in
 the provided [`HookInterceptorSet` object](http://pwastudio.io/peregrine/reference/targets/wrappable-talons).
 
-*global* *typedef*
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| hookInterceptors | `HookInterceptorSet` | Registry of wrappable hook namespaces |
 
 
-[pwa-studio/packages/peregrine/lib/targets/peregrine-declare.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/targets/peregrine-declare.js)
+
+**Source Code**: [pwa-studio/packages/peregrine/lib/targets/peregrine-declare.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/targets/peregrine-declare.js)
