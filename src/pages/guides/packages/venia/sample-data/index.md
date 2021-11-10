@@ -31,10 +31,10 @@ composer config --no-interaction --ansi repositories.venia-sample-data composer 
 
 ## Step 2. Require in the sample data
 
-Run the following command in the Magento root directory to update the composer.json to require in magento/venia-sample-data metapackage:
+Run the following command in the Magento root directory to update the `composer.json` to require in `magento/venia-sample-data` metapackage:
 
 ```sh
-composer require --no-interaction --ansi magento/venia-sample-data:0.0.1
+composer require --no-interaction --ansi magento/venia-sample-data:*
 ```
 
 ## Step 3. Install the sample data modules
