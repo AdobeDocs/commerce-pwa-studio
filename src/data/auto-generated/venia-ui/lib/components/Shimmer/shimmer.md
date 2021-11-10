@@ -18,6 +18,4 @@
 | type | `string` | is the type of the Shimmer |
 | children | `node` | are the children of the Shimmer |
 
-
-
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/Shimmer/shimmer.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Shimmer/shimmer.js)
