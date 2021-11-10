@@ -1,4 +1,5 @@
-## Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#props">props</a></dt>
@@ -9,43 +10,42 @@ Props for [ProductImageCarousel](#ProductImageCarousel)
 </dd>
 </dl>
 
-<a name="ProductImageCarousel"></a>
-
-## ProductImageCarousel ⇒ `React.Element`
 
 Carousel component for product images
 Carousel - Component that holds number of images
 where typically one image visible, and other
 images can be navigated through previous and next buttons
 
-**Kind**: global functional component  
-**Returns**: `React.Element` - React carousel component that displays a product image
+**Returns: **
+`React.Element`
+   — React carousel component that displays a product image
 
-| Param | Type              |
-| ----- | ----------------- |
-| props | [`props`](#props) |
+**Parameters**
 
-<a name="props"></a>
+| Name | Type |
+| --- | --- |
+| props | [`props`](#props) | 
 
-## props
 
 Props for [ProductImageCarousel](#ProductImageCarousel)
 
-**Kind**: global typedef  
 **Properties**
 
-| Name                   | Type             | Description                                                                 |
-| ---------------------- | ---------------- | --------------------------------------------------------------------------- |
-| classes                | `Object`         | An object containing the class names for the ProductImageCarousel component |
-| classes.currentImage   | `string`         | classes for visible image                                                   |
-| classes.imageContainer | `string`         | classes for image container                                                 |
-| classes.nextButton     | `string`         | classes for next button                                                     |
-| classes.previousButton | `string`         | classes for previous button                                                 |
-| classes.root           | `string`         | classes for root container                                                  |
-| images                 | `Array.<Object>` | Product images input for Carousel                                           |
-| images.label           | `string`         | label for image                                                             |
-| image.position         | `string`         | Position of image in Carousel                                               |
-| image.disabled         | `bool`           | Is image disabled                                                           |
-| image.file             | `string`         | filePath of image                                                           |
+| Name | Type | Description |
+| --- | --- | --- |
+| classes | `Object` | An object containing the class names for the ProductImageCarousel component |
+| classes.currentImage | `string` | classes for visible image |
+| classes.imageContainer | `string` | classes for image container |
+| classes.nextButton | `string` | classes for next button |
+| classes.previousButton | `string` | classes for previous button |
+| classes.root | `string` | classes for root container |
+| images | `Array.<Object>` | Product images input for Carousel |
+| images[].disabled | `bool` | Is image disabled |
+| images[].file | `string` | filePath of image |
+| images[].uid | `string` | the id of the image |
+| images[].label | `string` | label for image |
+| images[].position | `string` | Position of image in Carousel |
 
-For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js).
+
+
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js)

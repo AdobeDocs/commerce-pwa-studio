@@ -3,6 +3,7 @@ title: Home - PWA Studio
 description: Developer documentation for PWA Studio
 contributors:
   - https://github.com/jcalcaben
+  - https://github.com/bdenham
 ---
 
 <Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>

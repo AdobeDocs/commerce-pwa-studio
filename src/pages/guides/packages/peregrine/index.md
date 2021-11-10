@@ -15,7 +15,7 @@ Use or remix these functions and components to create a unique PWA Studio storef
 Most of the components in the Peregrine package are [custom React hooks][].
 Peregrine hooks are designed to be flexible, and non-opinionated about UI.
 They contain code for providing data or behavior logic and do not render content themselves.
-Rendering content is left up to UI components.
+Rendering content is left to the UI components.
 
 [custom react hooks]: https://reactjs.org/docs/hooks-custom.html
 

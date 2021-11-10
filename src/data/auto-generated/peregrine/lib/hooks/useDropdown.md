@@ -1,4 +1,5 @@
-## Functions
+
+Functions
 
 <dl>
 <dt><a href="#useDropdown">useDropdown()</a> ⇒ <inlineCode><a href="#Dropdown">Dropdown</a></inlineCode></dt>
@@ -9,7 +10,8 @@ A React Hook for adding dropdown-related logic.
 </dd>
 </dl>
 
-## Typedefs
+
+Typedefs
 
 <dl>
 <dt><a href="#Dropdown">Dropdown</a> : <inlineCode>Object</inlineCode></dt>
@@ -20,28 +22,25 @@ The object returned contains the pieces needed to add the dropdown logic to your
 </dd>
 </dl>
 
-<a name="useDropdown" id="useDropdown"></a>
-
-## useDropdown() ⇒ [`Dropdown`](#Dropdown)
 
 A React Hook for adding dropdown-related logic.
 
-**Kind**: global function  
-**Returns**: [`Dropdown`](#Dropdown) - An object containing functions and values to add dropdown logic  
-<a name="Dropdown" id="Dropdown"></a>
+**Returns: **
+[`Dropdown`](#Dropdown)
+   — An object containing functions and values to add dropdown logic
 
-## Dropdown : `Object`
 
 The object returned contains the pieces needed to add the dropdown logic to your components
 
-**Kind**: global typedef  
 **Properties**
 
-| Name        | Type       | Description                                                                                     |
-| ----------- | ---------- | ----------------------------------------------------------------------------------------------- |
-| elementRef  | `Ref`      | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements  |
-| expanded    | `Boolean`  | The value of the `expanded` state                                                               |
+| Name | Type | Description |
+| --- | --- | --- |
+| elementRef | `Ref` | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements |
+| expanded | `Boolean` | The value of the `expanded` state |
 | setExpanded | `function` | [State Hook](https://reactjs.org/docs/hooks-state.html) function for setting the expanded state |
-| triggerRef  | `Ref`      | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements  |
+| triggerRef | `Ref` | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements |
 
-For implementation details [**View Source**](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useDropdown.js).
+
+
+**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useDropdown.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useDropdown.js)

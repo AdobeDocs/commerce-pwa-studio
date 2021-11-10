@@ -14,9 +14,9 @@ Connect to an instance of Magento 2.3 by specifying its public domain name.
 
 **Type:** `str`
 
-**Default:** `CE`
+**Default:** `EE`
 
-**Example:** `CE`
+**Example:** `EE`
 
 Specify the edition of the magento store (Enterprise Edition or Community Edition). Can be one of CE or EE.
 
@@ -43,6 +43,16 @@ Includes the store code in the store URLs if value is true.
 **Default:** `auto`
 
 Specify the origin to use for images in the UI. Set to \`backend\` when Fastly or another CDN is optimizing images, and the frontend will load images directly from the Magento instance at MAGENTO_BACKEND_URL. To force usage of the onboard image optimizer, set to \`onboard\`. Set to \`auto\` to autodetect whether the backend is using FastlyIO and optimize onboard only if it needs to.
+
+## Default Country
+
+### `DEFAULT_COUNTRY_CODE`
+
+**Type:** `str`
+
+**Default:** `US`
+
+Specify the default country to be selected in forms containing country field such as address books and shipping information forms.
 
 ## Custom local origin
 
