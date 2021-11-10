@@ -13,16 +13,10 @@
   },
   "dependencies": {
     "@adobe/gatsby-theme-aio": "^3.23.0",
-    "@emotion/react": "^11.4.1",
-    "@spectrum-css/divider": "^1.0.4",
-    "@spectrum-css/link": "3.1.1",
-    "@spectrum-css/typography": "^3.0.1",
-    "classnames": "^2.3.1",
     "gatsby": "^3.6.0",
-    "prop-types": "^15.7.2",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "tty-browserify": "^0.0.1"
+    "tty-browserify": "^n0.0.1"
   },
   "scripts": {
     "start": "gatsby build && gatsby serve",
