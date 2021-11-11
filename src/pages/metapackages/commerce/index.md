@@ -1,7 +1,6 @@
-# PWA Metapackage for Adobe Commerce Extensions
+# Install Commerce metapackage
 
-Welcome to PWA metapackage for Adobe Commerce extensions.
-As a metapackage for Adobe Commerce, this repo enables PWA extension developers to add any additional Adobe Commerce features they need to support their PWA modules.
+This metapackage is only required for PWA projects that target Adobe Commerce as the backend.
 
 ## Development setup
 

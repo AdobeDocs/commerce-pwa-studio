@@ -9,15 +9,15 @@ module.exports = [
         path: "/metapackages/",
       },
       {
-        title: "Open Source metapackage",
+        title: "Install Open Source metapackage",
         path: "/metapackages/open-source/",
       },
       {
-        title: "Commerce metapackage",
+        title: "Install Commerce metapackage",
         path: "/metapackages/commerce/",
       },
       {
-        title: "Venia Sample Data metapackage",
+        title: "Install Venia Sample Data metapackage",
         path: "/metapackages/venia-sample-data/",
       },
     ],

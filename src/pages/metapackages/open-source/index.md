@@ -1,7 +1,6 @@
-# PWA Metapackage for Magento Open Source Extensions
+# Install Open Source metapackage
 
-Welcome to PWA metapackage for Magento Open Source extensions.
-As a metapackage for Magento Open Source, this repo enables PWA extension developers to add any additional Magento Open Source features they need to support their PWA modules.
+You must install this metapackage in all projects using PWA Studio 12.1.0 and higher.
 
 ## Current Modules
 

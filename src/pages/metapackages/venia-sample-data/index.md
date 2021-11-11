@@ -1,8 +1,9 @@
-# Overview
+---
+title: Venia Sample Data metapackage
+---
+# Venia Sample Data metapackage
 
-The current repository contains modules that belong to Venia Sample Data functionality only. To provide the ability to develop the project locally we introduced a development workflow that can help external developers work with the project.
-
-#Development setup
+This metapackage contains Venia Sample Data modules you can install to help you develop your projects locally using sample data.
 
 ## Installation as a git-based composer package
 
@@ -77,7 +78,7 @@ git update-index --no-skip-worktree composer.lock
 ## Cloud deployment extension installation
 
 1. Add https://repo.magento.com as a composer repository by adding the following to your cloud instances composer.json file
-```json 
+```json
 "repositories": {
     "repo": {
         "type": "composer",
@@ -86,7 +87,7 @@ git update-index --no-skip-worktree composer.lock
 },
 ```
 2. Require in magento/venia-sample-data meta package by adding the following to your cloud instances composer.json file
-```json 
+```json
 "require": {
         "magento/venia-sample-data": "0.0.1"
     },
