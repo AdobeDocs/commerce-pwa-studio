@@ -15,8 +15,7 @@ To setup and develop your PWA extension modules locally, use the following instr
 1. Clone and/or navigate to your [`magento2` git repository](https://github.com/magento/magento2) with Commerce and check out the latest develop branch, such as `2.4-develop`. You may also check out and use any `2.4` release tags.
 
     ```bash
-    git clone git@github.com:magento/magento2.git
-    cd magento2
+    git clone git@github.com:magento/magento2.git && cd magento2
     ```
 
 1. Create an `ext` directory within the root of your `magento2` project:
@@ -73,20 +72,19 @@ To improve the developer experience even further, you can add these configuratio
 1. Skip your project's root directory `composer.\*` files to avoid committing them by mistake:
 
     ```bash
-    git update-index --skip-worktree composer.json
-    git update-index --skip-worktree composer.lock
+    git update-index --skip-worktree composer.json && git update-index --skip-worktree composer.lock
     ```
 
+    <InlineAlert variant="info" slots="text"/>
     NOTE: You can reverse this operation anytime as needed:
 
     ```bash
-    git update-index --no-skip-worktree composer.json
-    git update-index --no-skip-worktree composer.lock
+    git update-index --no-skip-worktree composer.json && git update-index --no-skip-worktree composer.lock
     ```
 
 ## Cloud deployment extension installation
 
-1. Add https://repo.magento.com as a composer repository by adding the following to your cloud instances `composer.json` file.
+1. Add https://repo.magento.com as a composer repository by adding the following to the `composer.json` file of your cloud instances.
 
     ```json
     "repositories": {
@@ -97,7 +95,7 @@ To improve the developer experience even further, you can add these configuratio
     },
     ```
 
-1. Require in `magento/magento2-pwa-commerce` extension by adding the following to your cloud instances `composer.json` file.
+1. Require in `magento/magento2-pwa-commerce` extension by adding the following to the `composer.json` file of your cloud instances.
 
     ```json
     "require": {

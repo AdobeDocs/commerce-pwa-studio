@@ -6,47 +6,50 @@ title: Venia Sample Data metapackage
 
 This metapackage contains Venia Sample Data modules you can install to help you develop your projects locally using sample data.
 
+## Prerequisites
+
+You must install the Open Source metapackage before installing this sample data metapackage.
+
 ## Installation as a git-based composer package
 
 1. Clone the magento2 git repository and check out the latest develop branch, such as 2.4-develop. You may also check out and use any 2.4 release tags.
 
-```
-git clone git@github.com:magento/magento2.git .
-```
+  ```
+  git clone git@github.com:magento/magento2.git .
+  ```
 
-2. Create an ext directory in the root of the magento2 project directory:
+1. Change directories to the vendor `magento2/ext` directory.
 
-```
-cd magento2
-mkdir ext
-```
+  ```
+  cd magento2 && mkdir ext
+  ```
 
-3. Clone the venia-sample-data-modules repository into the appropriate directory inside `ext`:
+1. Clone the venia-sample-data-modules repository into the appropriate directory inside `ext`:
 
-```
-git clone git@github.com:magento-commerce/venia-sample-data-modules.git ext/magento/venia-sample-data-modules
-```
+  ```
+  git clone git@github.com:magento-commerce/venia-sample-data-modules.git ext/magento/venia-sample-data-modules
+  ```
 
-4. Update Composer settings for the project to allow a better development workflow:
+1. Update Composer settings for the project to allow a better development workflow:
 
 - minimum-stability for packages is updated to dev value. This allows installation of development modules:
 
-```
+  ```
   composer config minimum-stability dev
-```
+  ```
 
 - To be able to work with stable packages enable the prefer-stable property: prefer-stable: true. It should be included right above the minimum-stability setting.
 - Next we configure Composer so that it knows where to find new modules. The following command will configure any extension code inside the ext directory to be treated as a package and symlinked to the vendor directory:
 
-```
+  ```
   composer config repositories.ext path "./ext/*/*/*"
-```
+  ```
 
-5. Finally, install the venia-sample-data-modules metapackage:
+1. Finally, install the venia-sample-data-modules metapackage:
 
-```
-composer require magento/venia-sample-data
-```
+  ```
+  composer require magento/venia-sample-data
+  ```
 
 At this point, all of the venia-sample-data metapackage modules are symlinked inside the vendor directory, which allows both running a Magento installation with additional modules as well as doing development using the standard git workflow.
 
@@ -62,23 +65,22 @@ In order to improve the developer experience when working with this repository s
 echo ext >> ./.git/info/exclude
 ```
 
-2. Skip root directory composer.\* files to avoid committing them by mistake:
+1. Skip root directory composer.\* files to avoid committing them by mistake:
 
 ```
-git update-index --skip-worktree composer.json
-git update-index --skip-worktree composer.lock
+git update-index --skip-worktree composer.json && git update-index --skip-worktree composer.lock
 ```
 
 This operation is reversible, if needed:
 
 ```
-git update-index --no-skip-worktree composer.json
-git update-index --no-skip-worktree composer.lock
+git update-index --no-skip-worktree composer.json && git update-index --no-skip-worktree composer.lock
 ```
 
 ## Cloud deployment extension installation
 
 1. Add https://repo.magento.com as a composer repository by adding the following to your cloud instances composer.json file
+
 ```json
 "repositories": {
     "repo": {
@@ -87,13 +89,15 @@ git update-index --no-skip-worktree composer.lock
     }
 },
 ```
-2. Require in magento/venia-sample-data meta package by adding the following to your cloud instances composer.json file
+
+1. Require in magento/venia-sample-data meta package by adding the following to your cloud instances composer.json file
+
 ```json
 "require": {
         "magento/venia-sample-data": "0.0.1"
     },
 ```
 
-3. Run `composer update` to update your composer.lock file
+1. Run `composer update` to update your composer.lock file
 
-4. Push the changes and deploy your instance.
+1. Push the changes and deploy your instance.
