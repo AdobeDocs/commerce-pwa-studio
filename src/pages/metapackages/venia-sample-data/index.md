@@ -8,7 +8,7 @@ This metapackage contains Venia Sample Data modules you can install to help you 
 
 ## Installation as a git-based composer package
 
-1. Clone the magento2 git repository and check out the latest develop branch, e.g. 2.4-develop. You may also check out and use any 2.4 release tags.
+1. Clone the magento2 git repository and check out the latest develop branch, such as 2.4-develop. You may also check out and use any 2.4 release tags.
 
 ```
 git clone git@github.com:magento/magento2.git .
@@ -21,7 +21,7 @@ cd magento2
 mkdir ext
 ```
 
-3. Clone the venia-sample-data-modules repository into the appropriate directory inside ext:
+3. Clone the venia-sample-data-modules repository into the appropriate directory inside `ext`:
 
 ```
 git clone git@github.com:magento-commerce/venia-sample-data-modules.git ext/magento/venia-sample-data-modules
@@ -50,7 +50,7 @@ composer require magento/venia-sample-data
 
 At this point, all of the venia-sample-data metapackage modules are symlinked inside the vendor directory, which allows both running a Magento installation with additional modules as well as doing development using the standard git workflow.
 
-You may need to ensure that there are no Magento Venia Sample Data\* modules are listed as disabled when you run bin/magento module:status. If they are, [follow the docs on how to enable modules](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/build/enable-module.html).
+You may need to ensure that there are no Magento Venia Sample Data\* modules are listed as disabled when you run bin/magento module:status. If they are, [follow the docs on how to enable modules](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/enable-module.html).
 
 ### Setting up Git workflow
 
