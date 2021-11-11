@@ -1,18 +1,18 @@
 ---
-title: Install Commerce metapackage
+title: Install the Commerce metapackage
 ---
 
-# Install Commerce metapackage
+# Install the Commerce metapackage
 
 This metapackage is only required for PWA projects that target Adobe Commerce as the backend.
 
 ## Development setup
 
-To setup and develop your PWA extension modules locally, use the following instructions:
+To setup and develop your PWA extension modules locally, use the following instructions.
 
 ### Installation as a git-based composer package
 
-1. Clone and/or navigate to your [`magento2` git repository](https://github.com/magento/magento2) with Commerce and check out the latest develop branch, e.g. `2.4-develop`. You may also check out and use any `2.4` release tags.
+1. Clone and/or navigate to your [`magento2` git repository](https://github.com/magento/magento2) with Commerce and check out the latest develop branch, such as `2.4-develop`. You may also check out and use any `2.4` release tags.
 
     ```bash
     git clone git@github.com:magento/magento2.git
@@ -58,7 +58,7 @@ At this point, you should see symlinks for all the `pwa-commerce` modules inside
 -  Run a Magento installation with additional modules.
 -  Develop locally using the standard git workflow.
 
-You may need to ensure that there are no `Magento_PWA*` modules listed as `enabled` when you run `bin/magento module:status`. If there are, [follow the docs on how to enable modules](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/build/enable-module.html).
+You may need to ensure that there are no `Magento_PWA*` modules listed as `enabled` when you run `bin/magento module:status`. If there are, [follow the docs on how to enable modules](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/enable-module.html).
 
 ### Setting up the Git workflow
 
