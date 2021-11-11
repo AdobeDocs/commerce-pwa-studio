@@ -1,3 +1,7 @@
+---
+title: Install Open Source metapackage
+---
+
 # Install Open Source metapackage
 
 You must install this metapackage in all projects using PWA Studio 12.1.0 and higher.

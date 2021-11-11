@@ -1,3 +1,7 @@
+---
+title: Install Commerce metapackage
+---
+
 # Install Commerce metapackage
 
 This metapackage is only required for PWA projects that target Adobe Commerce as the backend.
