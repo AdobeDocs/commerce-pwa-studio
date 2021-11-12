@@ -11,22 +11,22 @@ This metapackage contains Venia Sample Data modules you can install to help you 
 1. Clone the magento2 git repository and check out the latest develop branch, such as 2.4-develop. You may also check out and use any 2.4 release tags.
 
   ```
-  git clone git@github.com:magento/magento2.git .
+  git clone git@github.com:magento/magento2.git
   ```
 
-1. Change directories to the vendor `magento2/ext` directory.
+1. FIX: Change directories to the vendor `magento2/ext` directory.
 
   ```
-  cd magento2 && mkdir ext
+  FIX: cd magento2 && mkdir ext
   ```
 
-1. Clone the venia-sample-data-modules repository into the appropriate directory inside `ext`:
+1. Clone the venia-sample-data-modules repository into your vendor directory within `ext`:
 
   ```
-  git clone git@github.com:magento-commerce/venia-sample-data-modules.git ext/magento/venia-sample-data-modules
+  MAGENTO-COMMERCE NOT ACCESSIBLE: git clone git@github.com:magento-commerce/venia-sample-data-modules.git ext/magento/venia-sample-data-modules
   ```
 
-1. Update Composer settings for the project to allow a better development workflow:
+1. REMOVE OR MOVE ELSEWHERE: Update Composer settings for the project to allow a better development workflow:
 
 - minimum-stability for packages is updated to dev value. This allows installation of development modules:
 
@@ -50,6 +50,8 @@ This metapackage contains Venia Sample Data modules you can install to help you 
 At this point, all of the venia-sample-data metapackage modules are symlinked inside the vendor directory, which allows both running a Magento installation with additional modules as well as doing development using the standard git workflow.
 
 You may need to ensure that there are no Magento Venia Sample Data\* modules are listed as disabled when you run bin/magento module:status. If they are, [follow the docs on how to enable modules](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/enable-module.html).
+
+MOVE THE REST OF THIS ELSEWHERE:
 
 ### Setting up Git workflow
 
