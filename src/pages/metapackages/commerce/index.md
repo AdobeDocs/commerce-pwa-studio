@@ -76,6 +76,7 @@ To improve the developer experience even further, you can add these configuratio
     ```
 
     <InlineAlert variant="info" slots="text"/>
+
     NOTE: You can reverse this operation anytime as needed:
 
     ```bash
