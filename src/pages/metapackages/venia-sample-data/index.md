@@ -6,10 +6,6 @@ title: Venia Sample Data metapackage
 
 This metapackage contains Venia Sample Data modules you can install to help you develop your projects locally using sample data.
 
-## Prerequisites
-
-You must install the Open Source metapackage before installing this sample data metapackage.
-
 ## Installation as a git-based composer package
 
 1. Clone the magento2 git repository and check out the latest develop branch, such as 2.4-develop. You may also check out and use any 2.4 release tags.
