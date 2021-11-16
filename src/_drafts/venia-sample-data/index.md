@@ -26,7 +26,7 @@ This metapackage contains Venia Sample Data modules you can install to help you 
   MAGENTO-COMMERCE NOT ACCESSIBLE: git clone git@github.com:magento-commerce/venia-sample-data-modules.git ext/magento/venia-sample-data-modules
   ```
 
-1. REMOVE OR MOVE ELSEWHERE: Update Composer settings for the project to allow a better development workflow:
+1. Update Composer settings for the project to allow a better development workflow:
 
 - minimum-stability for packages is updated to dev value. This allows installation of development modules:
 
@@ -34,14 +34,14 @@ This metapackage contains Venia Sample Data modules you can install to help you 
   composer config minimum-stability dev
   ```
 
-- To be able to work with stable packages enable the prefer-stable property: prefer-stable: true. It should be included right above the minimum-stability setting.
+- If you don't see a composer.json entry of `prefer-stable: true`, directly above the minimum-stability setting you just added, include it.
 - Next we configure Composer so that it knows where to find new modules. The following command will configure any extension code inside the ext directory to be treated as a package and symlinked to the vendor directory:
 
   ```
   composer config repositories.ext path "./ext/*/*/*"
   ```
 
-1. Finally, install the venia-sample-data-modules metapackage:
+1. Finally, add the venia-sample-data-modules metapackage:
 
   ```
   composer require magento/venia-sample-data
