@@ -6,6 +6,10 @@ title: Install the Open Source metapackage
 
 You must install this metapackage in all projects using PWA Studio 12.1.0 and higher.
 
+## Prerequisite
+
+-  Magento Open Source or Adobe Commerce installation.
+
 ## Installation as a git-based composer package
 
 To set up and develop your PWA extension modules locally, use the following instructions.

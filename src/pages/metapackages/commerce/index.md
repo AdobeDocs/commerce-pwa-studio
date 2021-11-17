@@ -6,7 +6,7 @@ title: Install the Commerce metapackage
 
 This metapackage is only required for PWA projects that target Adobe Commerce as the backend.
 
-## Prerequisites
+## Prerequisite
 
 -  [PWA Magento Open Source metapackage](/metapackages/open-source/index.md) in all projects using PWA Studio 12.1.0 and higher.
 
