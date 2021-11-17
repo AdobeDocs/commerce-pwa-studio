@@ -4,11 +4,11 @@ title: Metapackages
 
 # Metapackages
 
-In PWA Studio 12.1.0, we introduced metapackages to provide a way for you to add new features and sample data to Open Source or Commerce backends to support the needs of your PWA modules. For example, in PWA Studio release 12.1.0, we used the [Open Source metapackage][] to extend the GraphQL schema to include a new mutation and new fields to provide more details when a cart item error occurs. You can use these metapackages to do the same for your projects.
+In PWA Studio 12.1.0, we introduced metapackages to provide a way for you to add new features to Open Source or Commerce backends to support the needs of your PWA modules. For example, in PWA Studio release 12.1.0, we used the [Open Source metapackage][] to extend the GraphQL schema to include a new mutation and new fields to provide more details when a cart item error occurs. You can use these metapackages to do the same for your projects.
 
 ## Overview
 
-The following metapackages add new features and sample data to Open Source and Commerce backends:
+The following metapackages add new features to Open Source and Commerce backends:
 
 - Open Source metapackage
 - Commerce metapackage
