@@ -94,7 +94,7 @@ To improve the developer experience even further, you can add these configuratio
     },
     ```
 
-1. Ensure your `auth.json` file has valid credential for `repo.magento.com`.
+1. Ensure your `auth.json` file has valid credentials for `repo.magento.com`.
 
 1. Run `composer update` to update your `composer.lock` file.
 
