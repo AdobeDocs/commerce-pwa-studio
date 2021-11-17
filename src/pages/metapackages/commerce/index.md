@@ -6,28 +6,18 @@ title: Install the Commerce metapackage
 
 This metapackage is only required for PWA projects that target Adobe Commerce as the backend.
 
-## Development setup
+## Prerequisites
 
-To setup and develop your PWA extension modules locally, use the following instructions.
+Install the [Open Source metapackage](/metapackages/open-source/index.md) in all projects using PWA Studio 12.1.0 and higher.
 
 ### Installation as a git-based composer package
 
-1. Clone and/or navigate to your [`magento2` git repository](https://github.com/magento/magento2) with Commerce and check out the latest develop branch, such as `2.4-develop`. You may also check out and use any `2.4` release tags.
+To setup and develop your PWA extension modules locally, use the following instructions.
+
+1. Clone the `magento2-pwa-commerce` repository into your Magento Commerce vendor directory name:
 
     ```bash
-    git clone git@github.com:magento/magento2.git && cd magento2
-    ```
-
-1. Create an `ext` directory within the root of your `magento2` project:
-
-    ```bash
-    mkdir ext
-    ```
-
-1. Clone the `magento2-pwa-commerce` repository into your vendor directory name:
-
-    ```bash
-    git clone git@github.com:magento-commerce/magento2-pwa-commerce.git ext/magento/magento2-pwa-commerce
+    git clone git@github.com:magento/magento2-pwa-commerce.git ext/<vendor-directory-name>/magento2-pwa-commerce
     ```
 
 1. Update the `magento2/composer.json` settings to create a better development workflow for your extension modules:
