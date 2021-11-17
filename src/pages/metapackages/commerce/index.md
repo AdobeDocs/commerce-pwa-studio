@@ -75,7 +75,7 @@ To improve the developer experience even further, you can add these configuratio
 
 ## Cloud deployment extension installation
 
-1. Add https://repo.magento.com as a composer repository by adding the following to the `composer.json` file of your cloud instances.
+1. Add `https://repo.magento.com` as a composer repository by adding the following to the `composer.json` file of your cloud instances.
 
     ```json
     "repositories": {
