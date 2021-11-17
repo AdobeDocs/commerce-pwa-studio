@@ -8,18 +8,11 @@ This metapackage is only required for PWA projects that target Adobe Commerce as
 
 ## Prerequisites
 
--  Magento Open Source.
 -  [PWA Magento Open Source metapackage](/metapackages/open-source/index.md) in all projects using PWA Studio 12.1.0 and higher.
 
 ## Installation as a git-based composer package
 
 To setup and develop your PWA extension modules locally, use the following instructions.
-
-1. Clone and/or navigate to your local [`magento2` git repository](https://github.com/magento/magento2) and check out the latest develop branch, such as `2.4-develop`. You may also check out and use any `2.4` release tags.
-
-    ```bash
-    git clone git@github.com:magento/magento2.git && cd magento2
-    ```
 
 1. Clone the `magento2-pwa-commerce` repository into your Magento Commerce vendor directory name:
 
