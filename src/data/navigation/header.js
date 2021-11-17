@@ -19,4 +19,8 @@ module.exports = [
     title: "API Reference",
     path: "/api/",
   },
+  {
+    title: "Metapackages",
+    path: "/metapackages/",
+  },
 ];
