@@ -65,9 +65,7 @@ To improve the developer experience even further, you can add these configuratio
     git update-index --skip-worktree composer.json && git update-index --skip-worktree composer.lock
     ```
 
-    <InlineAlert variant="info" slots="text"/>
-
-    NOTE: You can reverse this operation anytime as needed:
+    **NOTE:** You can reverse this operation anytime as needed:
 
     ```bash
     git update-index --no-skip-worktree composer.json && git update-index --no-skip-worktree composer.lock
