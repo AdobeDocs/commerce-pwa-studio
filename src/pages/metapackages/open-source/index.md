@@ -10,18 +10,6 @@ You must install this metapackage in all projects using PWA Studio 12.1.0 and hi
 
 To set up and develop your PWA extension modules locally, use the following instructions.
 
-1. Clone and/or navigate to your [`magento2` git repository](https://github.com/magento/magento2) and check out the latest develop branch, such as `2.4-develop`. You may also check out and use any `2.4` release tags.
-
-    ```bash
-    git clone git@github.com:magento/magento2.git && cd magento2
-    ```
-
-1. Create an `ext` directory within the root of your `magento2` project:
-
-    ```bash
-    mkdir ext
-    ```
-
 1. Clone the `magento2-pwa` repository into your vendor directory name:
 
     ```bash
