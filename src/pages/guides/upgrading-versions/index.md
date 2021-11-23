@@ -2,6 +2,8 @@
 title: Upgrading versions
 ---
 
+# Upgrading versions
+
 Upgrading to the latest PWA Studio version gives your project access to the new features, bugfixes, and improvements associated with that release.
 This topic provides general guidance and best practices for upgrading your storefront project to use the newest PWA Studio release.
 
