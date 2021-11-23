@@ -149,4 +149,8 @@ module.exports = [
       },
     ],
   },
+  {
+    title: "Upgrading versions",
+    path: "/guides/upgrading-versions/",
+  },
 ];
