@@ -46,10 +46,6 @@ module.exports = [
         path: "/guides/general-concepts/configuration/",
       },
       {
-        title: "Container extensibility",
-        path: "/guides/general-concepts/container-extensibility/",
-      },
-      {
         title: "Content rendering",
         path: "/guides/general-concepts/content-rendering/",
       },
