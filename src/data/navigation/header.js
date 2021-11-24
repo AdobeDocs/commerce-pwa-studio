@@ -23,4 +23,8 @@ module.exports = [
     title: "Metapackages",
     path: "/metapackages/",
   },
+  {
+    title: "Troubleshooting",
+    path: "/troubleshooting/",
+  },
 ];
