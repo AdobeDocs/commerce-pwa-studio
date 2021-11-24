@@ -60,6 +60,10 @@ module.exports = [
         title: "Add a new environment variable",
         path: "/tutorials/targets/add-environment-variable/",
       },
+      {
+        title: "Change static assets directory",
+        path: "/tutorials/targets/change-static-assets-directory/",
+      },
     ],
   },
   {
