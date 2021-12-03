@@ -16,6 +16,10 @@ module.exports = [
     header: true,
     pages: [
       {
+        title: "Commerce coverage",
+        path: "/integrations/adobe-commerce/features/",
+      },
+      {
         title: "Version compatibility",
         path: "/integrations/adobe-commerce/version-compatibility/",
       },
