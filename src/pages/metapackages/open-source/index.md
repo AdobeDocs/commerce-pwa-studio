@@ -17,7 +17,7 @@ To set up and develop your PWA extension modules locally, use the following inst
 1. Clone the `magento2-pwa` repository into your vendor directory name:
 
     ```bash
-    git clone git@github.com:magento-commerce/magento2-pwa.git ext/magento/magento2-pwa
+    git clone git@github.com:magento/magento2-pwa.git ext/magento/magento2-pwa
     ```
 
 1. Update the `magento2/composer.json` settings to create a better development workflow for your extension modules:
