@@ -124,10 +124,10 @@ When you use the `<Image/>` component from `venia-ui`, change the following valu
 
 _**Note:** For testing, resize the viewport manually instead of using the native device emulator in Chrome, which gives incorrect values._
 
-
 ## How to bypass `css-loader` for external css files
 
-In your React compotent you can bypass the style-loader via
+In your React compotent, bypass the style-loader with:
+
 ```js
 // ... Addtional imports
 
@@ -137,7 +137,3 @@ const myExternalDropIn = props => {
 //... your ui logic
 }
 ```
-
-
-
-
