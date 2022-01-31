@@ -16,6 +16,10 @@ module.exports = [
         title: "Install Commerce metapackage",
         path: "/metapackages/commerce/",
       },
+      {
+        title: "Install Venia sample data metapackage",
+        path: "/metapackages/venia-sample-data/",
+      },
     ],
   },
 ];
