@@ -23,7 +23,7 @@ This metapackage contains Venia Sample Data modules you can install to help you 
 1. Clone the venia-sample-data-modules repository into your vendor directory within `ext`:
 
     ```terminal
-    git clone git@github.com:magento-commerce/venia-sample-data-modules.git ext/magento/venia-sample-data-modules
+    git clone git@github.com:magento/venia-sample-data-modules.git ext/magento/venia-sample-data-modules
     ```
 
 1. Update Composer settings for the project to allow a better development workflow:
@@ -32,7 +32,7 @@ This metapackage contains Venia Sample Data modules you can install to help you 
     composer config minimum-stability dev
     ```
 
-    -  If you don't see a composer.json entry of `prefer-stable: true`, directly above the `minimum-stability` setting, include it.
+    -  If you do not see a composer.json entry of `prefer-stable: true`, directly above the `minimum-stability` setting, include it.
     -  Now configure Composer to find new modules. The following command configures the extension code inside the `ext` directory creates symlinks to the vendor directory:
 
         ```terminal
@@ -45,6 +45,6 @@ This metapackage contains Venia Sample Data modules you can install to help you 
     composer require magento/venia-sample-data
     ```
 
-At this point, the venia-sample-data metapackage modules are symlinked within your vendor directory, which allows you to run Magento with additional modules and do development using git.
+At this point, the venia-sample-data metapackage modules are symlinked within your vendor directory, which allows you to run the with additional modules and do development using git.
 
 When you run bin/magento module: status, make sure there are no Magento Venia Sample Data modules listed as disabled. If they are, [follow the instructions on how to enable them](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/enable-module.html).
