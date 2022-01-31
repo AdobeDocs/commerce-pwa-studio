@@ -71,13 +71,13 @@ For this tutorial, the render chain for the Footer component in the Venia storef
 You can verify this by looking at the source for the [Adapter][], [Main][] and [App][] components.
 Main imports and renders the Footer component, and App imports and renders the Main component.
 
-[main]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Main/main.js
-[app]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/app.js
-[adapter]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Adapter/adapter.js
+[Main]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Main/main.js
+[App]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/app.js
+[Adapter]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Adapter/adapter.js
 
 ### Root components
 
-Static imported components, such as Header, Footer, and side Navigation, have render chains that begin in **Adapter** and then in **App**, but content that is specific to a route have render chains that begin at a **Root Component**.
+Static imported components, such as Header, Footer, and side Navigation, have render chains that begin in **Adapter** and then **App**, but content that is specific to a route have render chains that begin at a **Root Component**.
 
 Root components are dynamically loaded components associated with an Adobe Commerce or Magento Open Source page type or route.
 A list of Venia's root components can be found in the [RootComponent][] directory in the PWA Studio project.
@@ -125,10 +125,10 @@ It imports and renders the Main component, which renders the Footer component.
 cp node_modules/@magento/venia-ui/lib/components/App/app.js src/components/App
 ```
 
-If you look at the [`index.js` file for Venia's App component][], its default export is not `app.js`.
+If you look at the [`index.js`][] file for Venia's App component, its default export is not `app.js`.
 The default export for this component is `container.js`, which is a container for the `app.js` module, so copy the `container.js` file into your project.
 
-[`index.js` file for venia's app component]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/index.js
+[`index.js`]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/index.js
 
 ```sh
 cp node_modules/@magento/venia-ui/lib/components/App/container.js src/components/App
@@ -161,7 +161,6 @@ Use the Link component to create a link to an internal route defined in the [Add
 [add a static route tutorial]: /tutorials/basic-modifications/add-static-route/
 
 ```diff
-
     <footer className={classes.root}>
       <div className={classes.links}>
 +       <div className={classes.link}>
@@ -274,6 +273,7 @@ export { default } from "./container";
 + import { AppContextProvider } from '@magento/venia-ui/lib/components/App';
 + import App from '../App';
 ```
+
 ### Export Adapter component
 
 Create a `src/components/Adapter/index.js` file with the following content to set the default component export for the `Adapter` directory.
@@ -290,7 +290,6 @@ Open your project's `src/index.js` file and update the import for the Adapter co
 - import Adapter from '@magento/venia-ui/lib/components/Adapter';
 + import Adapter from './components/Adapter';
 ```
-
 
 ## Congratulations
 
