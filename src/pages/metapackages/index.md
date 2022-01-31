@@ -4,26 +4,32 @@ title: Metapackages
 
 # Metapackages
 
-In PWA Studio 12.1.0, we introduced metapackages to provide a way for you to add new features and sample data to Open Source or Commerce backends to support the needs of your PWA modules. For example, in PWA Studio release 12.1.0, we used the [Open Source metapackage][] to extend the GraphQL schema to include a new mutation and new fields to provide more details when a cart item error occurs. You can use these metapackages to do the same for your projects.
+With the introduction of metapackages in PWA Studio 12.1.0 and 12.2.0, you can use them to add new features and sample data to your Open Source or Commerce backends. FFor example, in release 12.1.0, we used the [Open Source metapackage][] to extend the GraphQL schema to include a new mutation and a new field to provide more details for cart item errors. You can use these packages to add similar backend functionality to your projects.
 
-## Overview
+Available metapackages:
 
-The following metapackages add new features and sample data to Open Source and Commerce backends:
-
-- Open Source metapackage
-- Commerce metapackage
+-  Open Source metapackage
+-  Commerce metapackage
+-  Venia Sample Data metapackage
 
 ## Open Source metapackage (Required for all projects)
 
-If you are using PWA Studio release 12.1.0 or higher, you must install the Open Source metapackage into your PWA projects. The Open Source metapackage is required even if you are targeting Adobe Commerce as your backend.
+PWA Studio release 12.1.0 or higher requires the Open Source metapackage to be installed into PWA projects — even if your backend is Adobe Commerce.
 
 See [Install Open Source metapackage][] for instructions.
 
 ## Adobe Commerce metapackage (Required for Commerce projects)
 
-In addition to the Open Source metapackage, if you are targeting Adobe Commerce as your backend, you must also install the Adobe Commerce metapackage.
+In addition to the Open Source metapackage, you must also install the Adobe Commerce metapackage if you are using Adobe Commerce as your backend.
 
 See [Install Commerce metapackage][] for instructions.
 
+## Venia Sample Data metapackage (Optional)
+
+You can use this metapackage to install Venia sample data into your projects.
+
+See [Install Venia Sample Data metapackage][] for instructions.
+
 [Install Open Source metapackage]: open-source/index.md
 [Install Commerce metapackage]: commerce/index.md
+[Install Venia Sample Data metapackage]: venia-sample-data/index.md
