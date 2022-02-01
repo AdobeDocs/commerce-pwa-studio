@@ -9,7 +9,6 @@ With the introduction of metapackages in PWA Studio 12.1.0 and 12.2.0, you can u
 Available metapackages:
 
 -  Open Source metapackage
--  Commerce metapackage
 -  Venia Sample Data metapackage
 
 ## Open Source metapackage (Required for all projects)
@@ -18,12 +17,6 @@ PWA Studio release 12.1.0 or higher requires the Open Source metapackage to be i
 
 See [Install Open Source metapackage][] for instructions.
 
-## Adobe Commerce metapackage (Required for Commerce projects)
-
-In addition to the Open Source metapackage, you must also install the Adobe Commerce metapackage if you are using Adobe Commerce as your backend.
-
-See [Install Commerce metapackage][] for instructions.
-
 ## Venia Sample Data metapackage (Optional)
 
 You can use this metapackage to install Venia sample data into your projects.
@@ -31,5 +24,4 @@ You can use this metapackage to install Venia sample data into your projects.
 See [Install Venia Sample Data metapackage][] for instructions.
 
 [Install Open Source metapackage]: open-source/index.md
-[Install Commerce metapackage]: commerce/index.md
 [Install Venia Sample Data metapackage]: venia-sample-data/index.md

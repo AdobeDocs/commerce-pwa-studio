@@ -6,10 +6,6 @@ title: Install the Open Source metapackage
 
 You must install this metapackage in all projects using PWA Studio 12.1.0 and higher.
 
-## Prerequisite
-
--  Magento Open Source or Adobe Commerce installation.
-
 ## Installation as a git-based composer package
 
 To set up and develop your PWA extension modules locally, use the following instructions.
@@ -17,7 +13,7 @@ To set up and develop your PWA extension modules locally, use the following inst
 1. Clone the `magento2-pwa` repository into your vendor directory name:
 
     ```bash
-    git clone git@github.com:magento-commerce/magento2-pwa.git ext/magento/magento2-pwa
+    git clone git@github.com:magento/magento2-pwa.git ext/magento/magento2-pwa
     ```
 
 1. Update the `magento2/composer.json` settings to create a better development workflow for your extension modules:
