@@ -25,3 +25,4 @@ See [Install Venia Sample Data metapackage][] for instructions.
 
 [Install Open Source metapackage]: open-source/index.md
 [Install Venia Sample Data metapackage]: venia-sample-data/index.md
+[Open Source metapackage]: https://github.com/magento/magento2-pwa/
