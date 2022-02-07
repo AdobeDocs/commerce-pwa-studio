@@ -48,13 +48,6 @@ The Tutorials section of this site contains a number of tutorials which cover cu
 [how to add a static route]: /tutorials/basic-modifications/add-static-route/
 [how to modify the site footer]: /tutorials/basic-modifications/modify-footer/
 
-## Are there any live stores built using PWA Studio
-
-Yes, there are a few!
-The community-created [PWA Studio Stats][] site lists some of these storefronts that are built using PWA Studio technologies.
-
-[pwa studio stats]: https://pwastudio-stats.com/
-
 ## Which payment methods does PWA Studio support
 
 PWA Studio supports Braintree payments out of the box in its Venia storefront implementation.
