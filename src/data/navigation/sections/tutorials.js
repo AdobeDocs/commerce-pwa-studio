@@ -30,6 +30,10 @@ module.exports = [
     header: true,
     pages: [
       {
+        title: "Overview",
+        path: "/tutorials/basic-modifications/",
+      },
+      {
         title: "Enable SASS or LESS support",
         path: "/tutorials/basic-modifications/enable-sass-less/",
       },

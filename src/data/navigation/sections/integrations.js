@@ -16,6 +16,10 @@ module.exports = [
     header: true,
     pages: [
       {
+        title: "Overview",
+        path: "/integrations/adobe-commerce/",
+      },
+      {
         title: "Commerce coverage",
         path: "/integrations/adobe-commerce/features/",
       },
