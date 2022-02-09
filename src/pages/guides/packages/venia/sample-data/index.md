@@ -7,7 +7,6 @@ adobeio: /guides/packages/venia/sample-data/
 
 The Venia storefront looks best when running against a Magento 2 backend with the Venia sample data installed.
 
-{: .bs-callout .bs-callout-info}
 The `builpack create-env-file` command defaults to the URL for a Magento 2 cloud instance that has the Venia sample data installed, so
 setting up a Magento 2 instance and installing sample data into it is now an optional step.
 
@@ -15,10 +14,9 @@ Follow the instructions on this page to install the Venia sample data into your 
 
 ## Prerequisites
 
-* PHP 7.1.3+
+* PHP 7.4+
 * System access to a Magento 2 instance
 
-{: .bs-callout .bs-callout-warning}
 If you have the previous `magento2-sample-data` module installed, you need to [remove the sample data modules][] and re-install Magento with a clean database.
 
 ## Step 1. Set the composer repository in the config
