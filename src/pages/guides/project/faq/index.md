@@ -116,3 +116,17 @@ When you use the `<Image/>` component from `venia-ui`, change the following valu
 <InlineAlert variant="info" slots="text"/>
 
 _**Note:** For testing, resize the viewport manually instead of using the native device emulator in Chrome, which gives incorrect values._
+
+## How to bypass `css-loader` for external css files
+
+In your React compotent, bypass the style-loader with:
+
+```js
+// ... Addtional imports
+
+import '!style-loader!css-loader!@my-external-module/import.css';
+
+const myExternalDropIn = props => {
+//... your ui logic
+}
+```
