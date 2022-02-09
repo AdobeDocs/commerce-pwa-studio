@@ -7,7 +7,7 @@ adobeio: /guides/packages/venia/sample-data/
 
 The Venia storefront looks best when running against a Magento 2 backend with the Venia sample data installed.
 
-The `builpack create-env-file` command defaults to the URL for a Magento 2 cloud instance that has the Venia sample data installed, so
+The `buildpack create-env-file` command defaults to the URL for a Magento 2 cloud instance that has the Venia sample data installed, so
 setting up a Magento 2 instance and installing sample data into it is now an optional step.
 
 Follow the instructions on this page to install the Venia sample data into your Magento 2 development instance.
