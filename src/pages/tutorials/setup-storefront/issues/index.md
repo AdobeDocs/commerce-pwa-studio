@@ -37,12 +37,9 @@ If your storefront is not getting data from the Adobe Commerce or Magento Open S
 ## Privacy error
 
 If you get a _Privacy Error_ message in your browser, your project has an invalid or expired certificate.
-See the [PWA Buildpack troubleshooting][] page for a solution to this issue.
+See the [PWA Buildpack][] page for a solution to this issue.
 
-<!-- TODO: Fix this link -->
-
-[pwa buildpack troubleshooting]: pwa-buildpack/troubleshooting/#untrusted-ssl-cert
-
+[PWA Buildpack]: api/buildpack/
 ![privacy error](./images/privacy-error.png)
 
 ## Debugging
