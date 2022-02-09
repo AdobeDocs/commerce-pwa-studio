@@ -7,7 +7,7 @@ title: Modify talon results
 The [talons target][] in Peregrine exposes talons as wrappable modules.
 This lets you define a wrapper module that intercepts a talon and let you modify the results.
 
-[talons target]: /api/peregrine/extension-points/wrappable-talons/
+[talons target]: /api/peregrine/targets/
 
 ## Background
 

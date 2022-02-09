@@ -11,7 +11,7 @@ module.exports = [
     ],
   },
   {
-    title: "Magento",
+    title: "Adobe Commerce",
     path: "/integrations/adobe-commerce/",
     header: true,
     pages: [
