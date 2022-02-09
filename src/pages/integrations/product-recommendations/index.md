@@ -70,6 +70,7 @@ import {
   VeniaProductRecommendations,
   PageTypes,
 } from "@magento/venia-product-recommendations";
+
 return <VeniaProductRecommendations pageType={PageTypes.CMS} />;
 ```
 
@@ -80,12 +81,10 @@ If you are not using the `venia-product-recommendations` package, you can call t
 #### Example
 
 ```js
-import {
-  Pagetypes,
-  useRecsData,
-  VeniaProductRecommendations,
-} from "@magento/venia-product-recommendations";
-const { data, error, isLoading } = useRecsData({ pagetype: Pagetypes.CMS });
+import { PageTypes } from "@magento/venia-product-recommendations";
+import useRecsData from "@magento/venia-product-recommendations/lib/hooks/useRecsData";
+
+const { data, error, isLoading } = useRecsData({ pageType: Pagetypes.CMS });
 ```
 
 [venia-product-recommendations]: /guides/#custom-react-hooks-and-component
