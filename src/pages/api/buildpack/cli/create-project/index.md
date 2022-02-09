@@ -44,7 +44,6 @@ If the directory is not empty, files that the tool generates overwrite the exist
 
 The directory can be the current directory `.`, which is the default if no first argument is passed.
 
-{: .bs-callout .bs-callout-warning}
 Do not install buildpack globally on your development system to use this command.
 This can cause incompatible versions between a product version and the global version.
 
