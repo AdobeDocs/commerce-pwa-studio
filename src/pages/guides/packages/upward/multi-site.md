@@ -63,8 +63,8 @@ MAGENTO_BACKEND_URL=https://german.mysite.mg yarn build
 mv dist dist-german
  
 # copy these bundles to your Magento root and set configuration variables
-CONFIG__WEBSITES__FRENCH__WEB__UPWARD__PATH=./dist-french/upward.yml
-CONFIG__WEBSITES__GERMAN__WEB__UPWARD__PATH=./dist-german/upward.yml
+bin/magento pwa:upward:set --path ./dist-french/upward.yml --scopeType website --scopeCode fr
+bin/magento pwa:upward:set --path ./dist-german/upward.yml --scopeType website --scopeCode de
 ```
 
 A single UPWARD server is capable of processing requests for each website bundle.
