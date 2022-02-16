@@ -8,9 +8,13 @@ This topic describes how to configure your UPWARD server to run multiple PWA sit
 
 ## The UPWARD connector module
 
-PWA Studio 12.2.0 ships with the `magento2-upward-connector` extension. This module allows the running of multiple PWA instances off a Magento/Adobe Commerce instance. It also provides CLI commands to enable and configure these instances.
+When you use the PWA scaffolding tool to create a PWA Studio project, one of the many modules installed is the UPWARD PHP connector module—`magento2-upward-connector`. This module provides a CLI to help you configure different PWA sites to run from a single Commerce or Open Source server.
 
-This module works by adding a directive to `env.php` which sets a path to the `upward.yaml` file.
+## Configuring the UPWARD server
+
+The first step is to configure the UPWARD server to access the different PWA sites you want to deploy. And the CLI provided by the UPWARD module is how you do it. 
+
+But before we get to the specifics, here's the overview of what you are actually doing. When you execute the CLI commands, you're actually adding `pwa_paths` to the `env.php` file. The commands specify the paths to the `upward.yml` configuration for each PWA site you want to deploy. The following  example shows what an `env.php` configuration file may look like AFTER using the CLI to add two different PWA sites to the `default` and `website` configurations:
 
 ```php
 // ...
@@ -20,27 +24,30 @@ This module works by adding a directive to `env.php` which sets a path to the `u
 # New configuration point
 'pwa_path' => [
     'default' => [
-        'default' => '/var/www/html/pwa/dist/upward.yml'
+        'default' => '/var/www/html/my-pwa-site/dist/upward.yml'
     ],
     'website' => [
-        '<website_code>' => '/var/www/html/anotherpwa/dist/upward.yml'
+        '<website_code>' => '/var/www/html/my-awesome-pwa-site/dist/upward.yml'
     ],
     'store' => [
-        '<store_code>' => '' # Use a blank string (or false) to serve the default Magento storefront
+        '<store_code>' => '' # Setting an empty string (or `false` value) will serve the specified default site (my-pwa-site)
     ]
 ]
 ```
 
-### CLI usage
+## Using UPWARD CLI commands
 
-Use the CLI commands to set the parameters for your PWA store.
-This example sets the path to the UPWARD yaml file and provides the `scopeType` and `scopeCode` values.
+The UPWARD module commands provide a convenient way to configure the server to deploy different PWA sites. The following examples show common usage patterns.
+
+**Set UPWARD paths with `scopeType` and `scopeCode`:**
 
 ```shell
 bin/magento pwa:upward:set --path /var/www/html/pwa/dist/upward.yml --scopeType store --scopeCode <store_code>
 ```
 
-You can use `bin/magento store:list` or `bin/magento store:website:list` to retrieve the store/website values.
+To find the paths of your PWA sites (by scope) as shown above for the store scope, use one of the following commands:
+-  `bin/magento store:list` (for store scope)
+-  `bin/magento store:website:list` (for store and website scopes)
 
 Paths to `upward.yml` can be relative: `pwa/dist/upward.yml` or absolute: `/var/www/html/pwa/dist/upward.yml`.
 
@@ -50,11 +57,13 @@ To serve the default store front (non-PWA), use an empty string:
 bin/magento pwa:upward:set
 ```
 
-The configuration works the same way as a normal store configuration: It falls back from store view > website > global (default), trying to serve the most specific available scope first.
+The UPWARD path configurations work the same as other store configurations: The config settings fall up in scope from `store` > `website` > `global` (default), trying to serve the most specific, available site scope first.
 
 ## Creating multiple bundles
 
-It is possible to generate unique bundles per website within a single scaffold.
+You can also generate unique bundles per website within a single scaffolded project.
+
+For example, if you want to deploy both French and German versions of your site, you could use the following commands to configure your UPWARD server:
 
 ```shell
 MAGENTO_BACKEND_URL=https://french.mysite.mg yarn build
@@ -67,5 +76,5 @@ bin/magento pwa:upward:set --path ./dist-french/upward.yml --scopeType website -
 bin/magento pwa:upward:set --path ./dist-german/upward.yml --scopeType website --scopeCode de
 ```
 
-A single UPWARD server is capable of processing requests for each website bundle.
+With this configuration, a single UPWARD server can process requests for many different website bundles.
 
