@@ -4,7 +4,7 @@ title: Multiple Sites with UPWARD
 
 # Multiple websites with UPWARD
 
-Setting up a PWA site with a Magento Open Source/Adobe Commerce backend is a straightforward process. This topic discusses how to serve multiple PWA sites through a single backend.
+This topic describes how to configure your UPWARD server to run multiple PWA sites from a single Magento Open Source or Adobe Commerce backend.
 
 ## The UPWARD connector module
 
