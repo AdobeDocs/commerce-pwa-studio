@@ -6,6 +6,10 @@ title: Best Practices for PWA Studio
 
 Here are some best practices to keep in mind when working with PWA Studio.
 
+## UPWARD
+
+## GraphQL
+
 ## Dynamic Content
 
 Using dynamic content can be challenging due to shifting layouts. It is helpful to end users if the page layout is established as quickly as possible. Dynamic content can lead to page flow issues.
