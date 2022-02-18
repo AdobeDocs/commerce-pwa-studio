@@ -145,6 +145,10 @@ module.exports = [
             title: "JavaScript",
             path: "/guides/packages/upward/javascript/",
           },
+          {
+            title: "Multiple Sites with UPWARD",
+            path: "/guides/packages/upward/multi-site/",
+          },
         ],
       },
     ],
