@@ -18,3 +18,4 @@ Using dynamic content can be challenging due to shifting layouts. It is helpful 
 - Load layout CSS styles before the content arrives. However, excessive styles that are not initially needed can slow down processing. See 
 - Think through what kind of dynamic content you want to expose and how you are going to expose it. The more code that can be delivered statically, the better.
 - If possible, place dynamic content on an area of the page that is not initially visible. This will give the layout a chance to stabilize before the customer gets to that content.
+- With dynamic PageBuilder content, adding a `column` element to the block code allows PWA to get
