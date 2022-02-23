@@ -14,7 +14,7 @@ When you [set up a new project][], the result is a project structure based on th
 
 [set up a new project]: /tutorials/setup-storefront/
 
-Most of its UI and logic come from its `@magento/venuia-ui` and `@magento/peregrine` dependencies, so
+Most of its UI and logic come from its `@magento/venia-ui` and `@magento/peregrine` dependencies, so
 it has very little code in its own project folder.
 
 Customizing these projects is as simple as importing small pieces of `venia-ui` and combining them with custom code.
