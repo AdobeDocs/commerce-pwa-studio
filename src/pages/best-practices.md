@@ -18,7 +18,7 @@ Using dynamic content can be challenging due to shifting layouts. It is helpful 
 
 ## CSS
 
-- Use CSS modules to separate and package your custom styles. This allows you to:
+- Use [CSS modules](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/css-modules/) to separate and package your custom styles. This allows you to:
   
   - Create and manage component-specific styles
   - Avoid global naming collisions
@@ -26,11 +26,16 @@ Using dynamic content can be challenging due to shifting layouts. It is helpful 
 
 ## Custom modules
 
-The PWA Studio extensibility framework shouyld be used to customize the default Venia storefront.
+The PWA Studio [extensibility framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) should be used to customize the default Venia storefront.
 
 - Separate code into modules with limited capabilities. Smaller, more numerous modules are easier to manage than one large module.
 - Each module should have a clear, consistent set of interfaces
+- Use `targets` to intercept and modify code from an extension.
+- Use `Targetables` to get virtual access to a module's source code.
 
+## GraphQL
+
+- Always name your queries. This not only makes it easier for others to figure out, but it makes the query available to Apollo caching.
 ## Performance
 
 Look into the [Apollo caching framework](https://www.apollographql.com/docs/react/caching/cache-configuration/) for improved performance.
