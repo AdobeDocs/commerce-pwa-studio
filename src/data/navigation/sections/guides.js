@@ -6,22 +6,25 @@ module.exports = [
       {
         title: "Overview",
         path: "/guides/",
-      },
-      {
-        title: "External tools and libraries",
-        path: "/guides/project/tools-libraries",
-      },
-      {
-        title: "Versioning strategy",
-        path: "/guides/project/versioning/",
+      },      {
+        title: "Best Practices",
+        path: "/guides/best-practices/",
       },
       {
         title: "Contributing",
         path: "/guides/project/contributing/",
       },
       {
+        title: "External tools and libraries",
+        path: "/guides/project/tools-libraries",
+      },
+      {
         title: "Frequently Asked Questions",
         path: "/guides/project/faq",
+      },
+      {
+        title: "Versioning strategy",
+        path: "/guides/project/versioning/",
       },
     ],
   },
