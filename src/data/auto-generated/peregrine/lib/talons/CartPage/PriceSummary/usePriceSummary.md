@@ -68,8 +68,9 @@ Query data flattened into a simple object.
 | --- | --- | --- |
 | subtotal | `String` | Cart subtotal (excluding tax) |
 | total | `String` | Cart grand total |
-| discounts | `Array.<Object>` | Discounts applied to the cart |
+| discounts | `Array.<Object>` | Applied discounts to the cart |
 | giftCards | `Array.<Object>` | Gift cards applied to the cart |
+| giftOptions | `Array.<Object>` | Gift Options applied to the cart |
 | taxes | `Array.<Object>` | Taxes applied to the cart |
 | shipping | `Array.<Object>` | Shipping addresses associated with this cart |
 

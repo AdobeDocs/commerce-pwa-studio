@@ -68,6 +68,18 @@ Retrieve the CSS classes from a content type node
 Retrieve if CSS display property is set to none from a content type node
 
 </dd>
+<dt><a href="#cssToJSXStyle">cssToJSXStyle(style)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
+
+Converts a CSS string style into a JSX object inline style
+
+</dd>
+<dt><a href="#getMediaQueries">getMediaQueries(node, mediaQueries)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
+
+Retrieve media queries from a master format node
+
+</dd>
 </dl>
 
 
@@ -179,6 +191,27 @@ Retrieve if CSS display property is set to none from a content type node
 | Name |
 | --- |
 | node | 
+
+
+Converts a CSS string style into a JSX object inline style
+
+**Returns: **
+**Parameters**
+
+| Name | Type |
+| --- | --- |
+| style | `String` | 
+
+
+Retrieve media queries from a master format node
+
+**Returns: **
+**Parameters**
+
+| Name | Type |
+| --- | --- |
+| node |  | 
+| mediaQueries | `Array` | 
 
 
 

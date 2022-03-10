@@ -20,22 +20,16 @@ This talon performs the following effects:
 Typedefs
 
 <dl>
-<dt><a href="#GiftOptionsMutations">GiftOptionsMutations</a> : <inlineCode>Object</inlineCode></dt>
-<dd>
-
-GraphQL mutations for Gift Options
-
-</dd>
-<dt><a href="#GiftOptionsQueries">GiftOptionsQueries</a> : <inlineCode>Object</inlineCode></dt>
-<dd>
-
-GraphQL query for Gift Options
-
-</dd>
 <dt><a href="#GiftOptionsTalonProps">GiftOptionsTalonProps</a> : <inlineCode>Object</inlineCode></dt>
 <dd>
 
 Props data to use when rendering a gift options component.
+
+</dd>
+<dt><a href="#GiftOptionsOperations">GiftOptionsOperations</a> : <inlineCode>Object</inlineCode></dt>
+<dd>
+
+This is a type used by the [useGiftOptions](#useGiftOptions) talon.
 
 </dd>
 </dl>
@@ -52,38 +46,15 @@ This talon performs the following effects:
 **Returns: **
 **Parameters**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| props | `Object` |  |
-| props.mutations | [`GiftOptionsMutations`](#GiftOptionsMutations) | GraphQL mutations for Gift Options |
-| props.queries | [`GiftOptionsQueries`](#GiftOptionsQueries) | GraphQL queries for Gift Options |
+| Name | Type |
+| --- | --- |
+| props | `Object` | 
+| props.operations | [`GiftOptionsOperations`](#GiftOptionsOperations) | 
 
 **Example** *(Importing into your project)*  
 ```js
 import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/GiftOptions/useGiftOptions';
 ```
-
-GraphQL mutations for Gift Options
-
-**See**: [giftOptions.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/GiftOptions/giftOptions.gql.js)
-for the query Venia uses.  
-**Properties**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| setGiftOptionsMutation | `GraphQLAST` | Mutation to use for setting the gift options for the cart |
-
-
-GraphQL query for Gift Options
-
-**See**: [giftOptions.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/GiftOptions/giftOptions.gql.js)
-for the query Venia uses.  
-**Properties**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| getGiftOptionsQuery | `GraphQLAST` | Query to get gift options data |
-
 
 Props data to use when rendering a gift options component.
 
@@ -91,11 +62,33 @@ Props data to use when rendering a gift options component.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| cardMessageProps | `object` | Props for the `cardMessage` textarea element. |
-| giftReceiptProps | `object` | Props for the `includeGiftReceipt` checkbox element. |
-| optionsFormProps | `object` | Props for the form element. |
-| printedCardProps | `object` | Props for the `includePrintedCard` checkbox element. |
-| shouldPromptForMessage | `function` | Determines whether to show the `cardMessage` textarea element. |
+| loading | `Boolean` | Query loading indicator. |
+| errors | `Object` | Errors for GraphQl query and mutation. |
+| savingOptions | `Array` | Array containing fields that are busy. |
+| giftReceiptProps | `Object` | Props for the `includeGiftReceipt` checkbox element. |
+| printedCardProps | `Object` | Props for the `includePrintedCard` checkbox element. |
+| printedCardPrice | `Object` | Printed Card Price object. |
+| giftMessageCheckboxProps | `Object` | Props for the `includeGiftMessage` checkbox element. |
+| giftMessageResult | `Object` | Object containing Gift Message data. |
+| hasGiftMessage | `Boolean` | Checks if Gift Message data has all fields filled. |
+| showGiftMessageResult | `Boolean` | Show or hide Gift Message result. |
+| cardToProps | `Object` | Props for the `cardTo` text input element. |
+| cardFromProps | `Object` | Props for the `cardFrom` text input element. |
+| cardMessageProps | `Object` | Props for the `cardMessage` textarea element. |
+| editGiftMessageButtonProps | `Object` | Props for the Edit Gift Message button. |
+| cancelGiftMessageButtonProps | `Object` | Props for the Cancel Gift Message button. |
+| saveGiftMessageButtonProps | `Object` | Props for the Update Gift Message button. |
+| optionsFormProps | `Object` | Props for the form element. |
+
+
+This is a type used by the [useGiftOptions](#useGiftOptions) talon.
+
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| setGiftOptionsOnCartMutation | `GraphQLAST` | sets the gift options on cart. |
+| getGiftOptionsQuery | `GraphQLAST` | fetch the gift options. |
 
 
 

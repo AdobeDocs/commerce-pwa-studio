@@ -1,0 +1,15 @@
+---
+title: Dynamic Block
+jsDoc: true
+---
+
+# Dynamic Block
+
+<!--
+The reference doc content is generated automatically from the source code.
+To update this section, update the doc blocks in the source code
+-->
+
+import Content from '/src/data/auto-generated/pagebuilder/lib/ContentTypes/DynamicBlock/dynamicBlock.ee.md'
+
+<Content />

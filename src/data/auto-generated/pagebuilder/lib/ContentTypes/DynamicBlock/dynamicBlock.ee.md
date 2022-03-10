@@ -5,19 +5,19 @@ Typedefs
 <dt><a href="#props">props</a></dt>
 <dd>
 
-Props for [Image](#Image)
+Props for [DynamicBlock](#DynamicBlock)
 
 </dd>
 </dl>
 
 
-Page Builder Image component.
+Page Builder Dynamic Block component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
 **Returns: **
 `React.Element`
-   — A React component that displays an Image.
+   — A React component that displays a Dynamic Block.
 
 **Parameters**
 
@@ -26,23 +26,18 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 | props | [`props`](#props) | React component props |
 
 
-Props for [Image](#Image)
+Props for [DynamicBlock](#DynamicBlock)
 
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| classes | `Object` | An object containing the class names for the Image |
-| classes.img | `String` | CSS classes for the img element |
-| desktopImage | `Object` | desktop image URL src and dimensions |
-| mobileImage | `Object` | mobile image URL src and dimensions |
-| altText | `String` | Alternate text |
-| title | `String` | Title of the image |
-| link | `String` | URL to redirect to |
-| linkType | `String` | Type of link |
-| openInNewTab | `bool` | Flag to indicate if link should be opened in a new tab |
-| caption | `String` | Caption for the image |
-| textAlign | `String` | Alignment of the divider within the parent container |
+| classes | `Object` | An object containing the class names for the component |
+| classes.root | `String` | CSS class for the component root element |
+| displayInline | `Boolean` | Select display inline or display block |
+| displayMode | `String` | Display mode of the dynamic block |
+| uids | `String` | ID of the dynamic block |
+| textAlign | `String` | Alignment of the component within the parent container |
 | border | `String` | CSS border property |
 | borderColor | `String` | CSS border color property |
 | borderWidth | `String` | CSS border width property |
@@ -59,4 +54,4 @@ Props for [Image](#Image)
 
 
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Image/image.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Image/image.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/DynamicBlock/dynamicBlock.ee.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/DynamicBlock/dynamicBlock.ee.js)

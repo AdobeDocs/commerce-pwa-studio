@@ -101,6 +101,10 @@ module.exports = [
             path: "/integrations/pagebuilder/components/Divider/",
           },
           {
+            title: "Dynamic Block",
+            path: "/integrations/pagebuilder/components/DynamicBlock/",
+          },
+          {
             title: "Heading",
             path: "/integrations/pagebuilder/components/Heading/",
           },
