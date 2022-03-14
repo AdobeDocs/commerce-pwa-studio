@@ -51,6 +51,7 @@ Props for [Column](#Column)
 | marginRight | `String` | CSS margin right property |
 | marginTop | `String` | CSS margin top property |
 | maxWidth | `String` | Maximum width of the video |
+| mediaQueries | `Array` | List of media query rules to be applied to the component |
 | minHeight | `String` | CSS min-height property |
 | mobileImage | `String` | Background image url to be used for mobile screen width |
 | paddingBottom | `String` | CSS padding bottom property |

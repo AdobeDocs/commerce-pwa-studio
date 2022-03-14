@@ -13,6 +13,7 @@ The Page Builder integration for PWA Studio provides React components that rende
 - [Buttons and ButtonItem](Buttons/)
 - [Column and ColumnGroup](Column/)
 - [Divider](Divider/)
+- [Dynamic Block](DynamicBlock/)
 - [Heading](Heading/)
 - [HTML Code](HTML-Code/)
 - [Image](Image/)

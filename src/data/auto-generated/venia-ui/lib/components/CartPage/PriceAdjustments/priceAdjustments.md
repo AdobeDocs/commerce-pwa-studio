@@ -78,7 +78,8 @@ This component displays the form for adding gift options.
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.classes | `Object` | CSS className overrides. See [giftOptions.module.css](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/GiftOptions/giftOptions.module.css) for a list of classes you can override. |
+| [props.classes] | `Object` | CSS className overrides. |
+| [props.giftOptionsConfigData] | `Object` | store config data. See [giftOptions.module.css](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/GiftOptions/giftOptions.module.css) for a list of classes you can override. |
 
 **Example** *(Importing into your project)*  
 ```js

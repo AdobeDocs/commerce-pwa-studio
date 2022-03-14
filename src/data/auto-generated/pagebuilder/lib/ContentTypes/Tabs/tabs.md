@@ -83,6 +83,7 @@ Props for [Tabs](#Tabs)
 | marginRight | `String` | CSS margin right property |
 | marginBottom | `String` | CSS margin bottom property |
 | marginLeft | `String` | CSS margin left property |
+| mediaQueries | `Array` | List of media query rules to be applied to the component |
 | paddingTop | `String` | CSS padding top property |
 | paddingRight | `String` | CSS padding right property |
 | paddingBottom | `String` | CSS padding bottom property |

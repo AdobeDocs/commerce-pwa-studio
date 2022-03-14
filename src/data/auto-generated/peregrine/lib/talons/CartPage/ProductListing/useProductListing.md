@@ -336,6 +336,7 @@ It provides props data for a product form UI component inside a modal.
 | isSaving | `boolean` | True if the form is saving data. False otherwise. |
 | isDialogOpen | `boolean` | True if the form is visible. False otherwise. |
 | handleClose | `function` | A callback function for handling form closing |
+| configurableThumbnailSource | `String` | A string indicating which thumbnail should be used for configurable products |
 
 
 
