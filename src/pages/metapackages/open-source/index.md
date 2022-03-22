@@ -4,6 +4,8 @@ title: Install the Open Source metapackage
 
 # Install the Open Source metapackage
 
+While PWA uses the standard GraphQL workflow, this metapackge adds capabilities specific to PWA Studio features.
+
 You must install this metapackage in all projects using PWA Studio 12.1.0 and higher.
 
 ## Installation as a git-based composer package
