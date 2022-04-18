@@ -17,6 +17,8 @@ Verify your development environment has the minimum prerequisite versions of Nod
 
 Run the following commands in your terminal to identify which versions you have installed.
 
+PWA Studio supports NodeJS Long Term Support (LTS) versions, currently v16 and v18, which are always [even-numbered](https://nodejs.org/en/about/releases/).
+
 ### Node
 
 <CodeBlock slots="heading, code" repeat="2" languages="bash, bash" />
