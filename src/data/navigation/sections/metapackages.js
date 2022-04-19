@@ -9,7 +9,7 @@ module.exports = [
         path: "/metapackages/",
       },
       {
-        title: "Install Open Source metapackage",
+        title: "Install GraphQL metapackage",
         path: "/metapackages/open-source/",
       },
       {

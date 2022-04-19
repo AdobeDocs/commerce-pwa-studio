@@ -1,10 +1,10 @@
 ---
-title: Install the Open Source metapackage
+title: Install the GraphQL metapackage
 ---
 
-# Install the Open Source metapackage
+# Install the GraphQL metapackage
 
-While PWA uses the standard GraphQL workflow, this metapackge adds capabilities specific to PWA Studio features.
+While PWA uses the standard GraphQL workflow, the metapackge adds capabilities for some PWA Studio features.
 
 You must install this metapackage in all projects using PWA Studio 12.1.0 and higher.
 
