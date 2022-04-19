@@ -6,7 +6,7 @@ module.exports = [
       {
         title: "Overview",
         path: "/guides/",
-      },      {
+      }, {
         title: "Best Practices",
         path: "/guides/best-practices/",
       },
@@ -115,6 +115,12 @@ module.exports = [
           {
             title: "Scaffolding",
             path: "/guides/packages/buildpack/scaffolding/",
+            pages: [
+              {
+                title: "Overview",
+                path: "/guides/packages/buildpack/scaffolding/",
+              }
+            ]
           },
           {
             title: "Custom project templates",

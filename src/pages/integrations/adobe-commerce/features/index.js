@@ -161,8 +161,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Gift Cards <span class="support Commerce"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="Full support">
+                  <span class="support Full"></span>
                 </span>
               </td>
             </tr>
@@ -214,8 +214,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Dynamic Blocks <span class="support Commerce"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="Full support">
+                  <span class="support Full"></span>
                 </span>
               </td>
             </tr>
@@ -285,8 +285,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Customer Segmentation <span class="support Commerce"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="Full support">
+                  <span class="support Full"></span>
                 </span>
               </td>
             </tr>
@@ -312,8 +312,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Contact Us <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="Full support">
+                  <span class="support Full"></span>
                 </span>
               </td>
             </tr>
@@ -463,8 +463,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Gift Options <span class="support Commerce"></span></td>
               <td>
-                <span class="tooltip left" data-text="Partial support">
-                  <span class="support Partial"></span>
+                <span class="tooltip left" data-text="Full support">
+                  <span class="support Full"></span>
                 </span>
               </td>
             </tr>
