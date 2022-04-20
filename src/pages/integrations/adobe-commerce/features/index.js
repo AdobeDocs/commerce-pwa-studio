@@ -276,8 +276,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Newsletter subscription <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Partial support">
-                  <span class="support Partial"></span>
+                <span class="tooltip left" data-text="Full support">
+                  <span class="support Full"></span>
                 </span>
               </td>
             </tr>
@@ -374,8 +374,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Additional Attributes <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="Full support">
+                  <span class="support Full"></span>
                 </span>
               </td>
             </tr>
@@ -702,8 +702,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Live Search <span class="support Commerce"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="Partial support">
+                  <span class="support Partial"></span>
                 </span>
               </td>
             </tr>
@@ -711,8 +711,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Custom Product Attributes <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="Full support">
+                  <span class="support Full"></span>
                 </span>
               </td>
             </tr>
