@@ -26,4 +26,4 @@ You can use this metapackage to install Venia sample data into your projects.
 See [Install Venia Sample Data metapackage][] for instructions.
 
 [Install Venia Sample Data metapackage]: venia-sample-data/index.md
-[Open Source metapackage]: https://devdocs.magento.com/extensions/graphql
+[Open Source metapackage]: open-source/index.md
