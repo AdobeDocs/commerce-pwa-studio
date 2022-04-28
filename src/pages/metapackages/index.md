@@ -6,7 +6,7 @@ title: Metapackages
 
 PWA Studio uses metapackages to extend Magento Open Source backends with new features and sample data. For example, new GraphQL mutations and interfaces enable enhanced frontend capabilities.
 
-As of version 12.1.0, the GraphQL metapackage is required for PWA Studio.
+As of version 12.1.0, the Open Source metapackage is required for PWA Studio.
 
 Available metapackages:
 
