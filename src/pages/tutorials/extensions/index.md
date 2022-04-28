@@ -18,6 +18,10 @@ Language packs are a specific extension type which provide translation data for 
 
 [internationalization feature]: /guides/general-concepts/internationalization/
 
+<InlineAlert variant="help" slots="text"/>
+Setting up a project workspace that contains both a storefront project and an extension project may result in `buildpack` issues due to dependency conflicts.
+To solve this, add `@magento/pwa-buildpack` as a dev dependency in the monorepo's `package.json` file.
+
 ## Project manifest file
 
 PWA Studio extensions are [Node packages][], which means it requires a `package.json` file.
