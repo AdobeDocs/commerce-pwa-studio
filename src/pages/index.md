@@ -8,7 +8,7 @@ contributors:
 
 <Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
-![Hero image](../../static/home-bg.jpg)
+![Hero image](./home-bg.jpg)
 
 # PWA Studio
 

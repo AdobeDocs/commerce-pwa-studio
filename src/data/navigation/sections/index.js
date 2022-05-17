@@ -1,18 +1,19 @@
 const getstarted = require("./getstarted");
+const theme = require("./theme");
+const customize = require("./customize");
+const extend = require("./extend");
+const integrate = require("./integrate");
+const deploy = require("./deploy");
 const components = require("./components");
-const tutorials = require("./tutorials");
-const integrations = require("./integrate");
-const metapackages = require("./metapackages");
-const apis = require("./apis");
-const support = require("../support");
+const apis = require("./apis/index");
 
 module.exports = [
   ...getstarted,
-  ...concepts,
+  ...theme,
+  ...customize,
+  ...extend,
+  ...integrate,
+  ...deploy,
   ...components,
-  ...tutorials,
-  ...integrations,
-  ...metapackages,
   ...apis,
-  ...support,
 ];

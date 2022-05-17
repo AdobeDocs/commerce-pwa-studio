@@ -8,7 +8,7 @@ This metapackage is required for PWA projects that target Adobe Commerce as the 
 
 ## Prerequisite
 
--  [GraphQL metapackage](/metapackages/open-source/index.md) in all projects using PWA Studio 12.1.0 and higher.
+-  [Install Magento Open Source metapackage](../install-open-source-metapackage/index.md) in all projects using PWA Studio 12.1.0 and higher.
 
 ## Installation as a git-based composer package
 
