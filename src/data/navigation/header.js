@@ -4,27 +4,40 @@ module.exports = [
     path: "/",
   },
   {
-    title: "Guides",
-    path: "/guides/",
+    title: "Get started",
+    path: "/getstarted/",
   },
   {
-    title: "Integrations",
-    path: "/integrations/",
+    title: "Customize",
+    path: "/customize/",
   },
   {
-    title: "Tutorials",
-    path: "/tutorials/",
+    title: 'Extend',
+    menu: [{
+      title: 'Introduction',
+      path: '/extend/introduction/'
+    },{
+     title: 'Extend PWA backends',
+     path: 'extend/pwa-backends/'
+   },{
+    title: 'Extend PWA storefronts',
+    path: 'extend/pwa-storefronts/'
+  },]
   },
   {
-    title: "API Reference",
-    path: "/api/",
+    title: "Integrate",
+    path: "/integrate/",
   },
   {
-    title: "Metapackages",
-    path: "/metapackages/",
+    title: "Deploy",
+    path: "/deploy/",
   },
   {
-    title: "Troubleshooting",
-    path: "/troubleshooting/",
+    title: "Components",
+    path: "/components/",
+  },
+  {
+    title: "APIs",
+    path: "/apis/",
   },
 ];

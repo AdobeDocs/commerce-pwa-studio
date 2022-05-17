@@ -1,7 +1,18 @@
-const guides = require("./guides");
+const getstarted = require("./getstarted");
+const components = require("./components");
 const tutorials = require("./tutorials");
-const integrations = require("./integrations");
-const api = require("./api");
+const integrations = require("./integrate");
 const metapackages = require("./metapackages");
+const apis = require("./apis");
+const support = require("../support");
 
-module.exports = [...guides, ...integrations, ...tutorials, ...api, ...metapackages];
+module.exports = [
+  ...getstarted,
+  ...concepts,
+  ...components,
+  ...tutorials,
+  ...integrations,
+  ...metapackages,
+  ...apis,
+  ...support,
+];

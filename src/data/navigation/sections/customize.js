@@ -1,7 +1,7 @@
 module.exports = [
   {
-    title: "Tutorials",
-    path: "/",
+    title: "Customize",
+    path: "/customize/",
     header: true,
     pages: [
       {
