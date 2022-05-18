@@ -5,19 +5,9 @@ module.exports = [
     header: true,
     pages: [
       {
-        title: "Overview",
-        path: "/",
-      },
-    ],
-  },
-  {
-    title: "Adobe Commerce",
-    path: "/",
-    header: true,
-    pages: [
-      {
-        title: "Overview",
-        path: "/",
+        title: "Adobe Commerce",
+        path: "/integrate/adobe-commerce/",
+        header: true,
       },
       {
         title: "Commerce coverage",
@@ -31,127 +21,127 @@ module.exports = [
         title: "Theme vs Storefront",
         path: "/",
       },
-    ],
-  },
-  {
-    title: "Page Builder",
-    path: "/",
-    header: true,
-    pages: [
       {
-        title: "Overview",
-        path: "/",
-      },
-      {
-        title: "Known limitations",
-        path: "/",
-      },
-      {
-        title: "Creating custom components",
-        path: "/",
+        title: "Page Builder",
+        path: "/integrate/pagebuilder/",
+        header: true,
         pages: [
           {
-            title: "Set up component",
+            title: "Overview",
             path: "/",
           },
           {
-            title: "Add aggregator",
+            title: "Known limitations",
             path: "/",
           },
           {
-            title: "Add stylesheet",
+            title: "Creating custom components",
+            path: "/",
+            pages: [
+              {
+                title: "Set up component",
+                path: "/",
+              },
+              {
+                title: "Add aggregator",
+                path: "/",
+              },
+              {
+                title: "Add stylesheet",
+                path: "/",
+              },
+              {
+                title: "Add component",
+                path: "/",
+              },
+              {
+                title: "Debugging",
+                path: "/",
+              },
+            ],
+          },
+          {
+            title: "Utility functions",
             path: "/",
           },
           {
-            title: "Add component",
+            title: "Components",
             path: "/",
-          },
-          {
-            title: "Debugging",
-            path: "/",
+            pages: [
+              {
+                title: "Banner",
+                path: "/",
+              },
+              {
+                title: "Block",
+                path: "/",
+              },
+              {
+                title: "Buttons",
+                path: "/",
+              },
+              {
+                title: "Column",
+                path: "/",
+              },
+              {
+                title: "Divider",
+                path: "/",
+              },
+              {
+                title: "Dynamic Block",
+                path: "/",
+              },
+              {
+                title: "Heading",
+                path: "/",
+              },
+              {
+                title: "HTML Code",
+                path: "/",
+              },
+              {
+                title: "Image",
+                path: "/",
+              },
+              {
+                title: "Map",
+                path: "/",
+              },
+              {
+                title: "Products",
+                path: "/",
+              },
+              {
+                title: "Row",
+                path: "/",
+              },
+              {
+                title: "Slider",
+                path: "/",
+              },
+              {
+                title: "Tabs",
+                path: "/",
+              },
+              {
+                title: "Text",
+                path: "/",
+              },
+              {
+                title: "Video",
+                path: "/",
+              },
+            ],
           },
         ],
       },
       {
-        title: "Utility functions",
+        title: "Product Recommendations",
         path: "/",
-      },
-      {
-        title: "Components",
-        path: "/",
-        pages: [
-          {
-            title: "Banner",
-            path: "/",
-          },
-          {
-            title: "Block",
-            path: "/",
-          },
-          {
-            title: "Buttons",
-            path: "/",
-          },
-          {
-            title: "Column",
-            path: "/",
-          },
-          {
-            title: "Divider",
-            path: "/",
-          },
-          {
-            title: "Dynamic Block",
-            path: "/",
-          },
-          {
-            title: "Heading",
-            path: "/",
-          },
-          {
-            title: "HTML Code",
-            path: "/",
-          },
-          {
-            title: "Image",
-            path: "/",
-          },
-          {
-            title: "Map",
-            path: "/",
-          },
-          {
-            title: "Products",
-            path: "/",
-          },
-          {
-            title: "Row",
-            path: "/",
-          },
-          {
-            title: "Slider",
-            path: "/",
-          },
-          {
-            title: "Tabs",
-            path: "/",
-          },
-          {
-            title: "Text",
-            path: "/",
-          },
-          {
-            title: "Video",
-            path: "/",
-          },
-        ],
+        header: true,
+        pages: [{ title: "Overview", path: "/" }],
       },
     ],
-  },
-  {
-    title: "Product Recommendations",
-    path: "/",
-    header: true,
-    pages: [{ title: "Overview", path: "/" }],
   },
 ];

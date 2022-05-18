@@ -1,10 +1,10 @@
 ---
-title: Modify the Footer component
+title: Customize the Footer component
 ---
 
-# Modify the Footer component
+# Customize the Footer component
 
-One way to customize a storefront is to modify its UI components.
+One way to customize a storefront is to customize its UI components.
 
 ## Overview
 
@@ -71,9 +71,9 @@ For this tutorial, the render chain for the Footer component in the Venia storef
 You can verify this by looking at the source for the [Adapter][], [Main][] and [App][] components.
 Main imports and renders the Footer component, and App imports and renders the Main component.
 
-[Main]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Main/main.js
-[App]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/app.js
-[Adapter]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Adapter/adapter.js
+[main]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Main/main.js
+[app]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/app.js
+[adapter]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Adapter/adapter.js
 
 ### Root components
 
@@ -109,7 +109,7 @@ Make a copy of the components in the render chain from the `node_modules` direct
 
 ### Copy Adapter component
 
-`src/index.js` uses Adapter and this capsulating App component. 
+`src/index.js` uses Adapter and this capsulating App component.
 Copy this component from `node_modules` into your project.
 
 ```sh

@@ -1,8 +1,8 @@
 ---
-title: General concepts
+title: PWA Studio concepts
 ---
 
-# General concepts
+# PWA Studio concepts
 
 The tools provided by the PWA Studio project allows you to create websites that are fast, mobile-friendly, and reliable.
 This topic lists the basic concepts you need to know to work with PWA Studio tools.

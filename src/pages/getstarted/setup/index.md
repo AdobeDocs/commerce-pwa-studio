@@ -1,4 +1,4 @@
-# Get started
+# Set up PWA Studio
 
 Before you can start developing with PWA Studio, make sure you meet the requirements listed on this page.
 
@@ -56,7 +56,6 @@ yarn -v
 If entering these commands does not show you a version number, install Node.js, Yarn, or both.
 
 [react]: https://reactjs.org/
-
 
 # Setup a storefront project
 
