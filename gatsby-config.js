@@ -16,10 +16,11 @@ module.exports = {
   siteMetadata: {
     pages: pages,
     subPages: subPages,
+    home: { hidden: true },
   },
   plugins: [`@adobe/gatsby-theme-aio`],
   pathPrefix: process.env.PATH_PREFIX || "/commerce/pwa-studio/",
   flags: {
     DEV_SSR: false
-  }
+  },
 };

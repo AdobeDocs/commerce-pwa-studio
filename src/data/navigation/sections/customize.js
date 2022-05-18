@@ -10,6 +10,7 @@ module.exports = [
       },
       {
         title: "Setup a storefront project",
+        header: true,
         path: "/",
         pages: [
           {
@@ -27,7 +28,7 @@ module.exports = [
   {
     title: "Basic modifications",
     path: "/",
-    header: true,
+    header: false,
     pages: [
       {
         title: "Overview",
@@ -50,7 +51,7 @@ module.exports = [
   {
     title: "Targets and Targetables",
     path: "/",
-    header: true,
+    header: false,
     pages: [
       {
         title: "Overview",

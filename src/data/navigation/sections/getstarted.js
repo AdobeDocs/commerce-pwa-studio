@@ -1,19 +1,20 @@
 module.exports = [
   {
-    title: "PWA Studio",
+    title: "Get Started",
     path: "/getstarted/",
+    header: true,
     pages: [
       {
         title: "Overview",
-        path: "/",
+        path: "/gestarted/",
       },
       {
         title: "Overview 2",
-        path: "/",
+        path: "/getstarted/",
       },
       {
         title: "Setup a storefront project",
-        path: "/",
+        path: "/getstarted/",
         pages: [
           {
             title: "Explore the files",
