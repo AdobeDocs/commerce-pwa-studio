@@ -34,6 +34,29 @@ module.exports = [
     ],
   },
   {
+    title: "Analytics",
+    path: "/integrations/analytics/",
+    header: true,
+    pages: [
+      {
+        title: "Overview",
+        path: "/integrations/analytics/",
+      },
+      {
+        title: "Custom Events",
+        path: "/integrations/analytics/custom-events/",
+      },
+      {
+        title: "Event Reference",
+        path: "/integrations/analytics/event-reference/",
+      },
+      {
+        title: "Installation and Configuration",
+        path: "/integrations/analytics/installation-and-configuration",
+      },
+    ],
+  },
+  {
     title: "Page Builder",
     path: "/integrations/pagebuilder/",
     header: true,
