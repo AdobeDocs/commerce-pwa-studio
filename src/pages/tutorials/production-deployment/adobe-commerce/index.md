@@ -122,7 +122,7 @@ You must use the [magento2-upward-connector][] module with [UPWARD-PHP][] to dep
 [magento2-upward-connector]: https://github.com/magento/magento2-upward-connector
 [upward-php]: https://github.com/magento/upward-php
 
-Use the `composer` CLI command to add the magento2-upward-connector module to the Adobe Commerce installation:
+First, use the `composer` CLI command to add the `magento2-upward-connector` module to the Adobe Commerce installation:
 
 ```sh
 composer require magento/module-upward-connector
@@ -138,6 +138,13 @@ This command modifies the `composer.json` file and adds the package entry to the
 
 UPWARD-PHP is a dependency of the magento2-upward-connector, so
 you do not need to add it manually to your project.
+
+Second, add the required PWA modules.
+
+```sh
+composer require magento/pwa
+composer require magento/pwa-commerce
+```
 
 ## Set environment variables
 
