@@ -80,7 +80,6 @@ This server also contains sample data for a fashion store to show the different 
 
 Other notable packages in PWA Studio include:
 
-- **[pwastudio.io][]** - Provides documentation to help guide developers towards creating a PWA storefront
 - **[UPWARD][]** - A proxy-server concept that describes a highly configurable server that sits between the PWA storefront and backend services
 - **[PageBuilder][]** - PageBuilder extension for PWA Studio
 
@@ -88,6 +87,5 @@ Other notable packages in PWA Studio include:
 
 [PWA Studio UI Kit](https://developer.adobe.com/commerce-xd-kits/): Expedite your Adobe Commerce storefront design with a UI Kit built in Adobe XD.
 
-[pwastudio.io]: https://pwastudio.io
 [upward]: /guides/packages/upward/
 [pagebuilder]: /integrations/pagebuilder/
