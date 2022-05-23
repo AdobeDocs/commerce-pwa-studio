@@ -13,12 +13,12 @@ The Beacon extension uses the standard Composer-based installation method.
 Open your `yarn` file and add the following line:
 
 ```json
-yarn add @whatevercallitXXXXXXX
+yarn add @whateverwecallitXXXXXXX
 ```
 
 ## Adobe Commerce backend configuration
 
 The Beacon endpoint needs to be setup with the Adobe Commerce admin.
 
-Go to **XXXXXXXX** 
+Go to **XXXXXXXX Magento admin docs that Eric is writing** 
 
