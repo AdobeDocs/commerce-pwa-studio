@@ -1,189 +1,115 @@
 module.exports = [
   {
-    title: "Get Started",
+    title: "Overview",
     path: "/getstarted/",
+  },
+  {
+    title: "Install",
+    path: "/getstarted/install/",
+  },
+  {
+    title: "Explore",
+    path: "/getstarted/explore/",
+  },
+  {
+    title: "Fundamentals",
+    path: "/getstarted/fundamentals/",
     header: true,
     pages: [
       {
         title: "Overview",
-        path: "/gestarted/",
+        path: "/getstarted/fundamentals/",
       },
       {
-        title: "Overview 2",
-        path: "/getstarted/",
+        title: "Add a static route",
+        path: "/getstarted/fundamentals/add-static-route/",
       },
       {
-        title: "Setup a storefront project",
-        path: "/getstarted/",
-        pages: [
-          {
-            title: "Explore the files",
-            path: "/",
-          },
-          {
-            title: "Common setup issues",
-            path: "/",
-          },
-        ],
+        title: "Enable SASS or LESS support",
+        path: "/getstarted/fundamentals/enable-sass-or-less-support/",
       },
       {
-        title: "Best Practices",
-        path: "/",
-      },
-      {
-        title: "Contributing",
-        path: "/",
-      },
-      {
-        title: "External tools and libraries",
-        path: "/",
-      },
-      {
-        title: "Frequently Asked Questions",
-        path: "/",
-      },
-      {
-        title: "Versioning strategy",
-        path: "/",
+        title: "Modify footer component",
+        path: "/getstarted/fundamentals/modify-footer-component/",
       },
     ],
   },
   {
     title: "Concepts",
-    path: "/",
+    path: "/getstarted/concepts/",
+    header: true,
     pages: [
       {
         title: "Overview",
-        path: "/",
+        path: "/getstarted/concepts/",
       },
       {
         title: "Application shell",
-        path: "/",
+        path: "/getstarted/concepts/application-shell/",
+      },
+      {
+        title: "Architecture",
+        path: "/getstarted/concepts/architecture/",
       },
       {
         title: "Client-side caching",
-        path: "/",
+        path: "/getstarted/concepts/client-side-caching/",
       },
       {
-        title: "Configuration management",
-        path: "/",
+        title: "Configuration",
+        path: "/getstarted/concepts/configuration/",
       },
       {
         title: "Content rendering",
-        path: "/",
+        path: "/getstarted/concepts/content-rendering/",
       },
       {
         title: "CSS modules",
-        path: "/",
-      },
-      {
-        title: "Extensibility",
-        path: "/",
+        path: "/getstarted/concepts/css-modules/",
       },
       {
         title: "GraphQL",
-        path: "/",
+        path: "/getstarted/concepts/graphql/",
       },
       {
         title: "Internationalization",
-        path: "/",
+        path: "/getstarted/concepts/internationalization/",
       },
       {
         title: "Routing",
-        path: "/",
+        path: "/getstarted/concepts/routing/",
       },
       {
         title: "State management",
-        path: "/",
+        path: "/getstarted/concepts/state-management/",
       },
       {
         title: "Talons",
-        path: "/",
+        path: " /getstarted/concepts/talons/",
       },
     ],
   },
   {
-    title: "Storefront architecture",
-    path: "/",
+    title: "Best Practices",
+    path: "/getstarted/best-practices/",
+    header: true,
     pages: [
       {
         title: "Overview",
-        path: "/",
+        path: "/getstarted/best-practices/",
       },
       {
-        title: "Runtime architecture",
-        path: "/",
+        title: "Topic 1",
+        path: "/getstarted/best-practices/topic-1/",
       },
       {
-        title: "Build-time architecture",
-        path: "/",
+        title: "Topic 2",
+        path: "/getstarted/best-practices/topic-2/",
       },
+      {
+        title: "Topic 3",
+        path: "/getstarted/best-practices/topic-3/",
+      }
     ],
-  },
-  {
-    title: "Packages",
-    path: "/",
-    pages: [
-      {
-        title: "Overview",
-        path: "/",
-      },
-      {
-        title: "Buildpack",
-        path: "/",
-        pages: [
-          {
-            title: "Scaffolding",
-            path: "/",
-            pages: [
-              {
-                title: "Overview",
-                path: "/",
-              },
-            ],
-          },
-          {
-            title: "Custom project templates",
-            path: "/",
-          },
-        ],
-      },
-      {
-        title: "Peregrine",
-        path: "/",
-      },
-      {
-        title: "Venia",
-        path: "/",
-        pages: [
-          {
-            title: "Driver and adapter components",
-            path: "/",
-          },
-          {
-            title: "Sample data",
-            path: "/",
-          },
-        ],
-      },
-      {
-        title: "UPWARD",
-        path: "/",
-        pages: [
-          {
-            title: "JavaScript",
-            path: "/",
-          },
-          {
-            title: "Multiple Sites with UPWARD",
-            path: "/",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    title: "Upgrading versions",
-    path: "/",
-  },
+  }
 ];

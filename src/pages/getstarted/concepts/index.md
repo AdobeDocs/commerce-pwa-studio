@@ -1,5 +1,5 @@
 ---
-title: PWA Studio concepts
+title: PWA Studio Concepts
 ---
 
 # PWA Studio concepts

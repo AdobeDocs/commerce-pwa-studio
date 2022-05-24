@@ -1,8 +1,8 @@
 ---
-title: Storefront architecture
+title: Architecture
 ---
 
-# Storefront architecture
+# Architecture
 
 Unlike an Adobe Commerce or Magento Open Source theme, which is dependent on the core application, a PWA Studio storefront exists on a different application layer from the core application.
 The storefront still communicates with the backend application, but it is not tightly coupled with it.

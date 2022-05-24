@@ -1,5 +1,5 @@
 ---
-title: Extend PWA storefront
+title: PWA storefront extensions
 ---
 
 # Extend PWA storefront

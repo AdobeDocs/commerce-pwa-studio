@@ -1,17 +1,14 @@
 module.exports = [
   {
-    title: "Deploy",
+    title: "Overview",
     path: "/deploy/",
-    header: true,
-    pages: [
-      {
-        title: "Deployment checklist",
-        path: "/",
-      },
-      {
-        title: "Deploy to Adobe Commerce",
-        path: "/",
-      },
-    ],
+  },
+  {
+    title: "Deployment checklist",
+    path: "/deploy/checklist/",
+  },
+  {
+    title: "Deploy to Adobe Commerce",
+    path: "/deploy/adobe-commerce/",
   },
 ];

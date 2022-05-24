@@ -1,294 +1,264 @@
 ---
-title: Extend PWA Studio
+title: Extension development overview
 ---
 
-# Extend PWA Studio
+# Extension development overview
 
-PWA Studio's extensibility framework provides the tools you need to customize and extend your storefront without copying over code from the core PWA Studio project.
+Extensions provide new storefront functionality, extend existing components, or replace different storefront parts.
 
-## How it works
+## Overview
 
-The extensibility framework uses a modular approach for modifying application behavior.
-It applies configurations and customizations defined inside extensions you install in the project.
+PWA Studio merges third-party code into the final application bundle to build web functionality on top of a base storefront.
+The [extensibility framework][] provided by the `pwa-buildpack` package lets you create these third-party extensions for PWA Studio storefronts, such as Venia.
 
-The framework gives you the ability to:
+[extensibility framework]: /getstarted/general-concepts/extensibility/
 
-- Extend the base Venia storefront with minimal core code duplication
-- Create and install extensions for PWA Studio storefronts
-- Create their own extendible modules and storefronts
+Extensions can change the behavior of existing components, add new features, or even provide translations.
+Language packs are a specific extension type which provide translation data for the [internationalization feature][].
 
-_Extensions_ for PWA Studio storefronts are normal NPM packages you install as a project dependency.
-These packages contain instructions that affect the build process and static code output for the generated application bundles.
-By modifying the output code during build time, there is no runtime performance cost associated with changing the storefront behavior.
+[internationalization feature]: /getstarted/general-concepts/internationalization/
 
-The following diagram illustrates the general build process for a basic storefront with no extensions and a storefront that installs an extension.
+<InlineAlert variant="help" slots="text"/>
+Setting up a project workspace that contains both a storefront project and an extension project may result in `buildpack` issues due to dependency conflicts.
+To solve this, add `@magento/pwa-buildpack` as a dev dependency in the monorepo's `package.json` file.
 
-![extensibility-overview](images/extensibility-overview.svg)
+## Project manifest file
 
-This is different from a _plugin architecture_ where the application detects and dispatches plugins as the frontend loads in the browser.
-The more plugins you install with this architecture, the slower the application gets as it becomes bloated with overhead processes.
+PWA Studio extensions are [Node packages][], which means it requires a `package.json` file.
+The `package.json` file is the project manifest.
+It contains metadata about the project, such as the name, entry point, and dependencies.
 
-### Interceptor pattern
+[node packages]: https://docs.npmjs.com/about-packages-and-modules
 
-The extensibility framework implements an [interceptor pattern][] to allow changes to the build process.
-The interceptor pattern lets a module **C** intercept the flow of logic between module **A** and module **B** and add its own logic.
+You can manually create this file, but we recommend using the CLI command [`yarn init`][] or [`npm init`][] in your project directory.
+Running either command launches an interactive questionnaire to help you fill in your project metadata.
 
-[interceptor pattern]: https://en.wikipedia.org/wiki/Interceptor_pattern
+[`yarn init`]: https://yarnpkg.com/lang/en/docs/cli/init/
+[`npm init`]: https://docs.npmjs.com/cli-commands/init/
 
-![interceptor-pattern-image](images/interceptor-pattern.svg)
+### Example manifest file
 
-In PWA Studio, the points where a module may intercept the normal flow of logic and add their own are [Targets][].
-The framework uses the [BuildBus][] to gather instructions from each extension's [Intercept File][intercept files].
-These files determine which Targets the extension intercepts and extends during the build process.
+The following is an example `package.json` file for an extension called `my-extension`.
+It contains both an intercept and declare file under the `src/targets` directory.
 
-[targets]: #targets
-[buildbus]: https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/BuildBus.js
-[intercept files]: #intercept-files
-
-## Targets
-
-_Targets_ are objects that represent areas in code you can access and intercept.
-These extension points are variants of a simple, common JavaScript pattern called the [Tapable hook][tapable] and share some functionality with NodeJS's [`EventEmitter` class][].
-
-[tapable]: https://github.com/webpack/tapable
-[`eventemitter` class]: https://nodejs.org/api/events.html#events_class_eventemitter
-
-Targets let you choose a code process's extension point _by name_ and let you run interceptor code when that process executes.
-Unlike `EventEmmitter` objects, Targets have defined behavior for how and in what order they run their interceptors.
-How those interceptors change the logic is also a defined behavior for Targets.
-
-Targets are part of a package's public API along with the modules it exports.
-They provide another layer of customization on top of using plain code composition techniques with modules.
-
-### TargetProviders
-
-A _TargetProvider_ is an object that manages the connections between modules and their Targets.
-This object is available to your module's [intercept file][intercept files] and is the API you use to access Targets or declare them.
-
-Each extension receives its own TargetProvider in its intercept and declare files.
-Use this object to declare a module's own targets, intercept its own targets, or intercept the targets of other extensions.
-
-### Example
-
-An example of a Target is the [`richContentRenderers` target][] declared by the Venia UI package.
-This Target lets you change the behavior of the `RichContent` component across your project by adding a rendering strategy.
-Tapping into this Target gives access to a `richContentRenders` list object in your intercept function.
-Calling the `add()` function on this object lets you add a custom rendering strategy for your storefront.
-
-[`richcontentrenderers` target]: /api/venia/targets/#richContentRenderers
-
-The [Page Builder extension][] provides an example of how to intercept this Target.
-It taps the Target and provides an intercept function that adds a custom renderer for any detected Page Builder content.
-
-[page builder extension]: https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/intercept.js
-
-```js
-targets
-  .of("@magento/venia-ui")
-  .richContentRenderers.tap((richContentRenderers) => {
-    richContentRenderers.add({
-      componentName: "PageBuilder",
-      importPath: "@magento/pagebuilder",
-    });
-  });
+```json
+{
+  "name": "my-extension",
+  "version": "1.0.0",
+  "description": "An example extension package",
+  "main": "src/myList.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^17.0.1"
+  },
+  "pwa-studio": {
+    "targets": {
+      "intercept": "src/targets/my-intercept",
+      "declare": "src/targets/my-declare"
+    }
+  }
+}
 ```
 
-## Targetables
+## Intercept and declare files
 
-_Targetables_ are objects that represent source files in your project or library.
-Unlike Target objects, which provide API endpoints a module uses in a specific way, Targetable objects give access to the actual source code of the module.
+Extensions use intercept and declare files to interact with the extensibility framework.
+You can create these files anywhere in your project.
+The `pwa-studio.targets.intercept` and `pwa-studio.targets.declare` values in the `package.json` file point to the locations for these files.
 
-Targetable objects provide functions that let you alter the source code in different ways.
-They are an abstraction on top of `TransformModuleRequest` objects, which use built in Babel plugins and Webpack loaders to change the source code.
-These changes get applied during the build process and do not affect the source file on disk.
+For more information about these files, see the [extensibility framework][] topic.
 
-### Targetables in Storefront projects
+## Create an extension's API
 
-If you are working on a storefront project, you can use Targetables in your local intercept file to make code changes in _any file_ in your project dependencies.
+Storefront developers can use Targetables to change the behavior of your extensions, but
+Targets are the formal API for modules and extensions.
+They are also the only way other third-party extensions can intercept and use your extension's API.
+
+### Declare a Target
+
+Extensions declare their own Targets for interception through the declare file.
+Declare files export a function that receives a [TargetProvider][] object.
+The TargetProvider object has a `declare()` function that accepts a dictionary object of named Targets.
+The TargetProvider also provides a utility collection called `types`, which holds all the legal constructors for Targets.
+
+[targetprovider]: /getstarted/general-concepts/extensibility/#targetproviders
+
+#### Example for declaring a target
+
+The following is an example of code in a declare file that exposes a `myListContent` target:
 
 ```js
-const { Targetables } = require("@magento/pwa-buildpack");
+// src/targets/my-declare.js
 
 module.exports = (targets) => {
-  const targetables = Targetables.using(targets);
-
-  const MainComponent = targetables.reactComponent(
-    "@magento/venia-ui/lib/components/Main/main.js"
-  );
-
-  MainComponent.insertAfterJSX("<Header />", "<span>Hello World!</span>");
+  targets.declare({
+    myListContent: new targets.types.SyncWaterfall(["myListContent"]),
+  });
 };
 ```
 
-This code creates a `MainComponent` targetables object from the `main.js` source file in one of the project's dependency.
-It modifies the final code in the bundle using the `insertAfterJSX()` function.
-When the application builds and runs in the browser, it shows the `Hello World!` message in a `span` element inserted after the `Header` component.
+The type for this Target is `SyncWaterfall`.
+These Target types run their interceptors synchronously and in subscription order.
+After that, they pass the return value as an argument to the next interceptor.
 
-### Targetables in extensions
+For more information on different Target types, see the documentation for [Hook types][] in the Tapable library.
 
-If you are working on a PWA Studio extension, you can use Targetables in your intercept file to add specific Targets that are available to other extensions.
+[hook types]: https://github.com/webpack/tapable#hook-types
+
+<InlineAlert variant="info" slots="text"/>
+
+The Tapable hook types end with `Hook`, but the Target types do not.
+
+### Define the API
+
+The purpose of an extension's API is to provide functions that perform specific and predictable code transformations to files within the extension.
+Use the tools provided by the extensibility framework to define the extension's API in the project's intercept file.
+
+#### Example for defining the API
+
+The following example defines the `myListContent` target API from the previous example:
 
 ```js
+//src/targets/my-intercept.js
+
+// Get the Targetables manager
 const { Targetables } = require("@magento/pwa-buildpack");
 
 module.exports = (targets) => {
+  // Create a Targetables factory bound to the TargetProvider (targets)
   const targetables = Targetables.using(targets);
 
-  targetables.reactComponent("@my/library/Button.js", {
-    async publish(myTargets) {
-      const classnames = await myTargets.buttonClassnames.promise([]);
-      classnames.forEach((name) => this.addJSXClassName("<button>", name));
+  // Tell the build process to use an esModules loader for this extension
+  targetables.setSpecialFeatures("esModules");
+
+  // Create a TargetableModule instance representing the myList.js file
+  // And provide it a TargetablePublisher to define the API
+  targetables.module("my-extension/src/myList.js", {
+    // Provide a publish() function that accepts the extension's TargetProvider
+    // and an instance of this TargetableModule
+    publish(myTargets, self) {
+      // Define the Target's API
+      const myListContentAPI = {
+        // Define an `addContent()` function for the API
+        addContent(content) {
+          // Use the `insertBeforeSource()` function to make source code changes
+          self.insertBeforeSource(
+            "]; // List content data",
+            `\n\t\t"${content}",`
+          );
+        },
+      };
+      // Connect the API to the `myListContent` target
+      myTargets.myListContent.call(myListContentAPI);
     },
   });
 };
 ```
 
-This code is a full implementation of an extension point that accesses the source for the extension's `Button.js` module as a Targetable React component.
-It declares `buttonClassnames` as an array Target that other extensions can intercept.
-During the build process, it uses the `addJSXClassName()` method to add class names from that array to a `<button>` element in the code.
+For more information on the Targetables API used in this example, see the following reference pages:
 
-#### Extensions security
+- [Targetables manager][]
+- [TargetableModule][]
+- [TargetablePublisher][]
 
-For security reasons, PWA Studio restrict the scope of Targetable modifications in extensions.
-These restrictions limit Targetable modifications to source files within the extension package.
-This prevents third party extensions from making source code changes to a storefront project without the developer's knowledge.
+[targetables manager]: /api/buildpack/targetables/TargetableSet/
+[targetablemodule]: /api/buildpack/targetables/TargetableModule/
+[targetablepublisher]: /api/buildpack/targetables/TargetableSet/#TargetablePublisher
 
-## Declare files
+The API the `myListContent` target publishes contains an `addContent()` function that makes modifications to the `src/myList.js` file.
+The content for `src/myList.js` is as follows:
 
-A _declare file_ lists the Targets available for interception in an extension or package.
-During build time, the framework looks for this file using the value set for `pwa-studio.targets.declare` in your project's `package.json` file.
-The framework registers the Targets in all the declare files it finds in the project and dependencies before it runs any [intercept files][].
-This guarantees Target availability to any dependent interceptor.
+```jsx
+import React from "react";
 
-Declare files must export a function that accepts a TargetProvider object as a parameter.
-It provides a `declare()` function to register your project's Targets by providing it a dictionary object,
-which maps a unique name to its Target.
+const MyList = () => {
+  const listContentData = []; // List content data
 
-When you register your Target, the dictionary key is the named property a developer uses to access that Target.
-In the Page Builder example, the dictionary key for the rich content renderers Target that Venia UI declares is `richContentRenderers`.
-
-The value associated with the key is a variant of a Tapable hook created using one of the class constructors available under the TargetProvider object's `types` property.
-Each class constructor accepts an optional array of strings that represent the list of arguments passed to the [intercept function][].
-
-[intercept function]: #intercept-functions
-
-The TargetProvider object exposes the same classes as the [Tapable][] package except their names do not end with 'Hook'.
-This is intentional to avoid confusion with the concept of React Hooks.
-For example, the `SyncWaterfallHook` class from Tapable is `SyncWaterfall` under the TargetProvider object's `types` property.
-
-See the [Hook types][] section of the Tapable documentation to learn about the available hook types.
-
-[hook types]: https://github.com/webpack/tapable#hook-types
-
-### Example declare file content
-
-```js
-module.exports = targets => {
-  targets.declare({
-    perfReport: new targets.types.AsyncParallel(['report'])
-    socialIcons: new targets.types.SyncWaterfall(['iconlist'])
+  const renderedContent = listContentData.map((content) => {
+    return <li key={content}>{content}</li>;
   });
-}
-```
 
-The example provided declares two Targets that this project or other modules can intercept, a `perfReport` Target and a `socialIcons` Target.
-Intercept files can access these Targets using `targets.of(<package name>).perfReport` and `targets.of(<package name>).socialIcons` respectively.
-
-The `perfReport` key maps to a Target type that runs its interceptors asynchronously and in parallel.
-This is appropriate for logging and monitoring interceptors that do not affect functionality.
-
-The `socialIcons` key maps to a Target type that runs its interceptors synchronously and in subscription order, which passes its return values as arguments to the next interceptor.
-This is appropriate for customizations that must happen in a predictable order.
-
-Both targets passes in a single parameter to their intercept functions, a `report` argument and an `iconlist` argument.
-
-## Intercept files
-
-The _intercept file_ describes the targets you want to intercept and define or extend.
-During build time, the framework looks for this file using the value for `pwa-studio.targets.intercept` in your project's `package.json` file.
-These files execute after all the declare files register their Targets.
-
-Your intercept files must export a function that accepts a TargetProvider object as a parameter.
-This object gives you access to all available Targets in your project that let you make customizations, gather data, change the build itself, or develop and call your own declared targets.
-The TargetProvider object provides an `of()` function and an `own` property to access Targets in other packages or Targets within its own module respectively.
-
-For more information on how intercept files work, see the tutorial on how to [Intercept a Target][].
-
-[intercept a target]: /tutorials/targets/
-
-### Example intercept file content
-
-```js
-module.exports = targets => {
-
-  const builtins = targets.of("@magento/pwa-buildpack");
-  builtins.specialFeatures.tap((featuresByModule) => {
-    featuresByModule["my-extension"] = {
-      esModules: true,
-    };
-  });
+  return <ul>{renderedContent}</ul>;
 };
+
+export default MyList;
+```
+
+## Access an extension's API
+
+Using the _MyList_ component in your storefront with no modifications renders an empty list.
+To add content, the storefront project or a third party extension must intercept and tap into the `myListContent` target to access the API.
+
+The following shows how a storefront or third part extension can access and use that API in their intercept file:
+
+```js
+// intercept.js
+
+const { Targetables } = require("@magento/pwa-buildpack");
+
+function localIntercept(targets) {
+  const targetables = Targetables.using(targets);
+
+  targets.of("my-extension").myListContent.tap((api) => {
+    api.addContent("Hello");
+    api.addContent("World");
+  });
+}
+
+module.exports = localIntercept;
+```
+
+Now, when the MyList component renders, it contains the two list entries added through the API.
+
+## Project dependencies
+
+If your extension needs third-party libraries, you can [add them as dependencies][].
+PWA Studio extensions are Node packages, so most of their dependencies should be [peer dependencies][].
+Storefront developers should make sure their project has the dependencies an extension requires.
+This safeguards against duplicate copies of the same library in the final application bundle.
+
+[add them as dependencies]: https://classic.yarnpkg.com/en/docs/cli/add/
+[peer dependencies]: https://classic.yarnpkg.com/en/docs/dependency-types#toc-peerdependencies
+
+## Install and test locally
+
+To install and test your extension on a local storefront project, add the extension as a local dependency or list it as a build dependency.
+
+### Adding as a local dependency
+
+The `package.json` file lets you specify a local path instead of a version for a dependency.
+This tells the package manager to install that package from that local path instead of searching online.
+A local dependency in your storefront project's `package.json` file looks like the following:
+
+```json
+{
+  "dependencies": {
+    "my-extension": "file:../relative/path/to/my-extension"
+  }
 }
 ```
 
-The example provided defines an intercept file that intercepts the `specialFeatures` target in the `@magento/pwa-buildpack` package.
-It adds a webpack configuration for the `my-extension` package that lets the build process know that the package uses ES modules.
+Use the `yarn` or `npm` command to add this entry to the `package.json` file:
 
-### Intercept functions
+```sh
+yarn add file:../relative/path/to/my-extension
+```
 
-When you call the `tap()` function on a Target, you supply it with an _intercept function_.
-An intercept function is a callback function that provides the interception logic for a specific Target.
-Calling the `tap()` function registers your intercept function with that Target.
-When the framework builds your project, it generates code that calls your intercept function when the project runs the Target code.
+```sh
+npm install -S ../relative/path/to/my-extension
+```
 
-The function signature for an intercept function depends on the tapped Target.
-In the Page Builder example, the intercept function signature when you tap the `richContentRenderers` target is a function that receives a list object, which lets you add custom rendering strategies.
-Other Targets may require you to return a modified value, use an object with a specific API, or provide a configuration.
+### Adding as a build dependency
 
-Read the reference API on this site or in doc blocks in the source code to learn about the intercept function signatures for each Target.
+Buildpack provides an alternate way of installing a local extensions by linking it to Yarn's or NPM's global package set and listing it in the `BUILDBUS_DEPS_ADDITIONAL` environment variable.
 
-## Writing intercept and declare files
+Use the [`yarn link`][] or [`npm link`][] command in your extension project to symlink it to the global package set.
 
-When writing intercept and declare files, keep in mind the following requirements:
+[`yarn link`]: https://classic.yarnpkg.com/en/docs/cli/link/
+[`npm link`]: https://docs.npmjs.com/cli/v6/commands/npm-link
 
-- Both files must export a function that accepts a TargetProvider object as a parameter.
-- Both files are CommonJS modules that run in Node.
-- You can create these files anywhere in your project, but you must specify their paths in your `package.json` file.
+In your storefront project, run `yarn link <package-name>` or `npm link <package-name>` to link the two packages together.
+This lets Node and Webpack resolve your extension from the storefront project without adding it as an entry in the dependency array.
 
-As shown in the previous examples, a common practice when authoring these files involve assigning the TargetProvider object to a `targets` variable.
-
-## Targets in PWA Studio packages
-
-When you create a new storefront project using the scaffolding tool, you have access to all the same PWA Studio Targets as the Venia storefront.
-The following is a list of PWA Studio packages that contain Targets.
-
-[Buildpack](/api/buildpack/targets/)
-: Targets in the Buildpack are low level and generic.
-They are often used as building blocks for more complicated feature Targets.
-You can also find Targets that let you add environment variables or change UPWARD behavior in this package.
-
-[Peregrine](/api/peregrine/extension-points/targets/)
-: Targets in the Peregrine package focus mainly on the set of talons it provides.
-The `talons` Target lets you [wrap a Talon][] with your own module.
-
-[wrap a talon]: /tutorials/targets/modify-talon-results/
-
-[Venia UI](/api/venia/targets/)
-: Targets in the Venia UI provide access to the list of items used in the UI components.
-These Targets let you add new routes, rendering strategies, and payment methods.
-
-## Extension examples
-
-The PWA Studio scaffolding tool also installs extensions on all new storefront projects.
-These extensions use the framework to add useful features on top of the base application.
-They are also examples of what a PWA Studio storefront extension looks like.
-
-[@magento/upward-security-headers](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/upward-security-headers)
-: This extension adds security headers to UPWARD by tapping into the `transformUpward` Target in Buildpack.
-
-[@magento/venia-sample-language-packs](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/venia-sample-language-packs)
-: This extension provides sample translations for PWA Studio's internationalization feature.
-
-- [Introduction to extension development](introduction/)
-- [Extend PWA backend](pwa-backend/)
-- [Extend PWA frontend](pwa-frontend/)
+Edit your storefront project's `.env` file and add your extension's name to the comma-separated value for `BUILDBUS_DEPS_ADDITIONAL`.
+This tells the build process that it should check these packages for intercept and declare files.

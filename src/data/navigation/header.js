@@ -8,12 +8,12 @@ module.exports = [
     path: "/getstarted/",
   },
   {
-    title: "Customize",
-    path: "/customize/",
+    title: "Theme",
+    path: "/theme/",
   },
   {
-    title: 'Extend',
-    path: '/extend/',
+    title: "Extend",
+    path: "/extend/",
   },
   {
     title: "Integrate",
