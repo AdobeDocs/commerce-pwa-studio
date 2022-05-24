@@ -1,6 +1,6 @@
 # PWA Studio Docs
 
-This site hosts the documentation for Adobe's PWA Studio. If you would like to contribute to the documentation, use the following steps to set up your local development environment.
+This repo contains the documentation for Adobe's PWA Studio. To build the site locally, use the information provided here.
 
 ## Install Node 16 and Yarn 2
 
