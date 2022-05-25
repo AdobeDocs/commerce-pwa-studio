@@ -58,7 +58,7 @@ Edit the entry in the `browser` section of the `package.json` file if you want t
 
 For more information about Venia's drivers and adapters pattern, see: [Modular components][]
 
-[modular components]: /guides/packages/venia/drivers-adapters/
+[modular components]: /guides/packages/venia/driver-adapter/
 
 ### `index.js`
 
