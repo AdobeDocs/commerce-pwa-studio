@@ -2,6 +2,8 @@
 title: Installing and configuring the Beacon extension
 ---
 
+# Installing and configuring the events framework
+
 PWA Studio has an eventing framework that allows store owners to track user interaction with their site and return analytics information.
 The Beacon extension enables the connection between PWA Studio and the Adobe Commerce backend. Magento Open Source does not support the Beacon framework.
 This document describes how to install the Beacon extension and how to configure PWA Studio and Adobe Commerce to work together.

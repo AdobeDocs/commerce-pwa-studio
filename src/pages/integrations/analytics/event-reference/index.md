@@ -2,6 +2,8 @@
 title: Analytics Events Reference
 ---
 
+# Analytics events reference
+
 The document describes the default events that PWA Studio tracks for Adobe Analytics.
 Additional events can be added by following the steps in [Custom Events](../custom-events/index.md).
 

@@ -2,14 +2,14 @@
 title: Custom events for Beacon analytics
 ---
 
-PWA Studio 12.5 contains and eventing framework with a series of default events that cover common scenarios.
-You can add new events so that you may track specific user interactions, or have a 3rd party module subscribe to existing events.
+# Creating custom events
 
-## Creating custom events
+PWA Studio 12.5 contains and eventing framework with a series of default events that cover common scenarios.
+You can add new events so that you may track specific user interactions.
 
 PWA Studio provides a [sample extension](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/venia-sample-eventing) that shows how to add a custom event.
 
-### main.js
+## main.js
 
 `main.js` is where the work is done.
 
@@ -36,7 +36,7 @@ export default original => props => {
 };
 ```
 
-### intercept.js
+## intercept.js
 
 Edit your copy of `intercept.js` to pull in your custom extension by name:
 
@@ -53,8 +53,3 @@ When complete, add it to your instance:
 ```bash
 yarn add <your package name>
 ```
-
-## Subscribe to events
-
-You can have 3rd party modules subscribe to events.
-To do so, XXXXXXX
