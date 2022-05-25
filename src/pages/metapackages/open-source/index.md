@@ -82,11 +82,11 @@ To improve the developer experience even further, you can add these configuratio
     },
     ```
 
-1. Require in `magento/magento2-pwa` extension by adding the following to the `composer.json` file of your cloud instances.
+1. Require the `magento/pwa` extension by adding the following to the `composer.json` file of your cloud instances.
 
     ```json
     "require": {
-        "magento/magento2-pwa": "0.2.1"
+        "magento/pwa": "0.2.1"
     },
     ```
 
