@@ -86,8 +86,8 @@ This strategy is used for non-critical assets that do not get updated very often
 | ------------- | --------------------------------------- |
 | images        | Image files served from the application |
 
-When using service workers, it is recommended that images always use a width parameter. This will ensure that the expected image is retrieved from the cache.
-If an image does not have a width parameter, a cached image with the same name, but an incorrect size, could be sent.
+When using service workers, you should add a width parameter to your images so that the correct image is returned from the cache.
+If an image does not have a width parameter, a cached image with the same name but an incorrect size could be returned.
 
 ## Caching in the Apollo GraphQL client
 

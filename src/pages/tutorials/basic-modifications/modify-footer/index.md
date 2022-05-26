@@ -284,7 +284,7 @@ export { default } from "./adapter";
 
 ### Import new Adapter component
 
-First, copy the Adapter component into `src/components` directory:
+First, copy the Adapter component into the `src/components` directory:
 
 ```sh
 cp node_modules/@magento/venia-ui/lib/components/Adapter/adapter.js src/components/Adapter
