@@ -284,11 +284,24 @@ export { default } from "./adapter";
 
 ### Import new Adapter component
 
-Open your project's `src/index.js` file and update the import for the Adapter component to use your custom Adapter component.
+First, copy the Adapter component into the `src/components` directory:
+
+```sh
+cp node_modules/@magento/venia-ui/lib/components/Adapter/adapter.js src/components/Adapter
+```
+
+Next, modify the import statement in `adapter.js`:
 
 ```diff
-- import Adapter from '@magento/venia-ui/lib/components/Adapter';
-+ import Adapter from './components/Adapter';
+- import App, { AppContextProvider } from '@magento/venia-ui/lib/components/App';
++ import { AppContextProvider } from '@magento/venia-ui/lib/components/App';
++ import App from '../App';
+```
+
+Finally, export the default module:
+
+```diff
++ export { default } from './adapter';
 ```
 
 ## Congratulations
