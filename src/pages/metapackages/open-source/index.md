@@ -4,6 +4,8 @@ title: Install the Open Source metapackage
 
 # Install the Open Source metapackage
 
+While PWA uses the standard GraphQL workflow, the metapackage adds capabilities for some PWA Studio features.
+
 You must install this metapackage in all projects using PWA Studio 12.1.0 and higher.
 
 ## Installation as a git-based composer package
@@ -80,11 +82,11 @@ To improve the developer experience even further, you can add these configuratio
     },
     ```
 
-1. Require in `magento/magento2-pwa` extension by adding the following to the `composer.json` file of your cloud instances.
+1. Require the `magento/pwa` extension by adding the following to the `composer.json` file of your cloud instances.
 
     ```json
     "require": {
-        "magento/magento2-pwa": "0.0.1"
+        "magento/pwa": "0.2.1"
     },
     ```
 

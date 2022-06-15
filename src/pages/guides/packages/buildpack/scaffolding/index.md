@@ -4,7 +4,7 @@ title: Scaffolding
 
 # Scaffolding
 
-Project scaffolding is a technique for auto-generating files to support a specific project structure.
+Project scaffolding is a technique for auto-generating required files to support a specific project structure.
 PWA Studio provides a scaffolding tool to simplify project creation and help developers get started.
 
 ## Default project template
@@ -49,3 +49,19 @@ yarn create @magento/pwa
 ```sh
 npm init @magento/pwa
 ```
+
+## Scaffolding with other versions of PWA Studio
+
+To create scaffolding for a project using an older version of PWA Studio, the required version is noted in the `create-` command.
+
+### YARN command
+
+`yarn global add @magento/create-pwa@1.3.1`
+
+and then:
+
+`create-pwa`
+
+### NPM command
+
+`npm init @magento/pwa@1.3.1`

@@ -95,7 +95,7 @@ import exampleQuoteConfigAggregator from "./ContentTypes/ExampleQuote/configAggr
 Add an entry that references your `configAggregator` and `component`, using the name of your content type as the `key`. For our `ExampleQuote`, the name of the Quote content type is `example_quote`, so the entry for our Quote component (`ExampleQuote`) in the config file looks like this:
 
 ```js
-example_quote: {
+Quote_Custom: {
     configAggregator: exampleQuoteConfigAggregator,
     component: React.lazy(() => import('./ContentTypes/ExampleQuote'))
 },
@@ -126,6 +126,6 @@ If you see this rendering without errors in the Venia app, you are ready to star
 If you have errors, make sure you have:
 
 1. Copied the correct starter code for each of the four files.
-2. Added the correct name of your content type to the `config.js` file (`example_quote` if you are using the Quote content type).
+2. Added the correct name of your content type to the `config.js` file (`Quote_Custom` if you are using the Quote content type).
 
 [react lazy loading]: https://reactjs.org/docs/code-splitting.html#reactlazy

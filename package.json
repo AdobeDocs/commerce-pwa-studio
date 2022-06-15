@@ -12,7 +12,7 @@
     "url": "https://github.com/bdenham"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "^3.23.11",
+    "@adobe/gatsby-theme-aio": "^3.24.2",
     "gatsby": "^3.6.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
@@ -33,7 +33,7 @@
     "prettier:test": "prettier --check src"
   },
   "devDependencies": {
-    "prettier": "2.5.1",
+    "prettier": "2.6.2",
     "remark-cli": "^10.0.1",
     "remark-lint-list-item-indent": "^3.1.1",
     "remark-preset-lint-recommended": "^6.1.2"

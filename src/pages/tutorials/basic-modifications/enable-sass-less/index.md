@@ -7,6 +7,10 @@ title: Enable SASS or LESS support
 This tutorial provides the steps to enable SASS or LESS support in your storefront project.
 Use these Webpack configurations to add support for SASS and LESS alongside [CSS Modules][].
 
+<InlineAlert variant="help" slots="text"/>
+
+PWA Studio uses Webpack 4. Ensure that any packages you use are compatible with Webpack 4.
+
 [css modules]: /guides/general-concepts/css-modules/
 
 ## Add SASS support
@@ -16,7 +20,7 @@ Use these Webpack configurations to add support for SASS and LESS alongside [CSS
 Use a package manager, such as `yarn` or `npm`, to install the SASS loader as a dev dependency.
 
 ```sh
-yarn add --dev sass-loader node-sass
+yarn add --dev sass-loader@10.1.1 node-sass
 ```
 
 ### Step 2. Modify the Webpack configuration
