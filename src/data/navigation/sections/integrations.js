@@ -52,7 +52,11 @@ module.exports = [
       },
       {
         title: "Installation and Configuration",
-        path: "/integrations/analytics/installation-and-configuration",
+        path: "/integrations/analytics/installation-and-configuration/",
+      },
+      {
+        title: "Subscribing to events",
+        path: "/integrations/analytics/subscribe/",
       },
     ],
   },
