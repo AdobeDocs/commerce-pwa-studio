@@ -16,6 +16,18 @@ Add Page Builder content to your storefront.
 
 <DiscoverBlock width="45%" slots="link, text"/>
 
+[Adobe Analytics](analytics/)
+
+Add Adobe Analytics to your PWA instance.
+
+<DiscoverBlock width="45%" slots="link, text"/>
+
+[Adobe Commerce](adobe-commerce/)
+
+Make the most of your Adobe Commerce instance.
+
+<DiscoverBlock width="45%" slots="link, text"/>
+
 [Product Recommendations](product-recommendations/)
 
 Add a recommendation engine powered by Adobe Sensei.
