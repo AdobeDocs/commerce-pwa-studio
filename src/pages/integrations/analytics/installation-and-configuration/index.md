@@ -1,26 +1,39 @@
 ---
-title: Installing and configuring the Beacon extension
+title: Installing and configuring the Experience Platform analytics extension
 ---
 
 # Installing and configuring the events framework
 
 PWA Studio has an eventing framework that allows store owners to track user interaction with their site and return analytics information.
-The Beacon extension enables the connection between PWA Studio and the Adobe Commerce backend. Magento Open Source does not support the Beacon framework.
-This document describes how to install the Beacon extension and how to configure PWA Studio and Adobe Commerce to work together.
+The Experience Platform analytics extension enables the connection between PWA Studio and the Adobe Commerce backend. Magento Open Source does not support the Experience Platform analytics framework.
+This document describes how to install the Experience Platform analytics extension and how to configure PWA Studio and Adobe Commerce to work together.
 
 ## Installation
 
-The Beacon extension uses the standard Composer-based installation method.
+The Experience Platform analytics extension uses the standard Composer-based installation method.
 
 Open your `yarn` file and add the following line:
 
 ```json
-yarn add @whateverwecallitXXXXXXX
+yarn add @magento/experience-platform-connector
 ```
 
 ## Adobe Commerce backend configuration
 
-The Beacon endpoint needs to be setup with the Adobe Commerce admin.
+The Experience Platform analytics endpoint needs to be setup with the Adobe Commerce admin.
 
-Go to **XXXXXXXX Magento admin docs that Eric is writing** 
+Follow these steps to configure the Adobe Commerce backend for eventing. **NOTE**: These extensions are still under development and steps may change with the official release. Read more about the [Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/connect-data.html).
 
+1. On the Adobe Commerce instance, install the following extensions:
+
+- @magento/module-experience-connector-graphql
+- @magento/module-data-services-graphql
+- @magento/module-experience-connector-admin
+
+1. Create SaaS keys at [https://account.magento.com/](https://account.magento.com/)
+
+1. In the Commerce admin, enter you service connector keys under: System > Services > Commerce Services Connector
+
+1. Enter your schema’s data stream ID under: System > Services > Adobe Services. The data stream ID is created when you create a schema in AEP.
+
+To confirm that eventing is working, complete a user action such as a product search or logging in as a user. These events should show up in the AEP analytics portal after the data has been processed.

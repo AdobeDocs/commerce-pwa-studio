@@ -1,5 +1,5 @@
 ---
-title: Custom events for Beacon analytics
+title: Custom events for Experience Platform analytics
 ---
 
 # Creating custom events
@@ -9,20 +9,22 @@ By creating and importing a custom extension, it is possible to add new events s
 
 PWA Studio provides a [sample extension](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/experience-platform-connector/) that shows how to add a custom event.
 
-In the sample extension, the `SEARCH_REPSONSE` event is being tracked. This event is fired when a search result is returned from the Adobe Experience Manager (AEM), with either results or a `EMPTY_RESULT` response.
+In the sample extension, the `SEARCH_RESPONSE` event is being tracked. This event is fired when a search result is returned from Adobe Commerce, with either results or a `EMPTY_RESULT` response.
 
 These files can be used as a starting point for a custom event extension.
 
 ## searchResponseReceived.js
 
-This file sets the payload and the search results context. The custom event name is also defined in this file.
+This file is an event handler that returns two functions:
+
+- `canHandle()` - a function that receives an event from PWA Studio's eventing framework and returns `true` if the `handle()` function should handle the incoming event.
+- `handle()` - the function that handles the event.
 
 ```javascript
 const canHandle = event => event.type === 'SEARCH_RESPONSE';
 
-...
-
-const { payload } = event;
+const handle = (sdk, event) => {
+    const { payload } = event;
 
     const {
         categories,
@@ -53,14 +55,37 @@ const { payload } = event;
     sdk.context.setSearchResults(searchResultsContext);
     sdk.publish.searchResponseReceived(searchUnitId, searchResultsContext);
 };
+
+export default {
+    canHandle,
+    handle
+};
 ```
 
 ## wrapUseAutocomplete.js
 
+This file is a [talon wrapper](https://developer.adobe.com/commerce/pwa-studio/tutorials/targets/modify-talon-results/) that wraps around the `useAutocomplete()` talon to add additional event dispatching logic.
 In `wrapUseAutocomplete.js` the search result is received and the payload defined and dispatched. This take place in the `useEffect` function:
 
 ```javascript
-useEffect(() => {
+import { useEffect } from 'react';
+import { useEventingContext } from '@magento/peregrine/lib/context/eventing';
+
+// Wrapper for the useAutocomplete() talon
+const wrapUseAutocomplete = useAutocomplete => {
+    return props => {
+        const talonProps = useAutocomplete(props);
+        const [, { dispatch }] = useEventingContext();
+
+        const {
+            categories,
+            displayResult,
+            messageType,
+            value,
+            ...restProps
+        } = talonProps;
+
+        useEffect(() => {
             if (
                 messageType === 'RESULT_SUMMARY' ||
                 messageType === 'EMPTY_RESULT'
@@ -79,11 +104,26 @@ useEffect(() => {
                     }
                 });
             }
+        });
+
+        return {
+            displayResult,
+            messageType,
+            value,
+            ...restProps
+        };
+    };
+};
+
+export default wrapUseAutocomplete;
 ```
+
+Read more about [PWA Studio extensibility](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/).
 
 ## intercept.js
 
-Edit copy of `intercept.js` to pull in the custom extension by name. In this case, the `SearchBar` wrapper:
+The intercept file interacts with PWA Studio's extensibility framework to modify code during build time.
+In this particular code, the `useApp()`, `useAccountMenu()`, and `useAutocomplete()` talons are wrapped with modules that provide additional logic.
 
 ```javascript
     talons.tap(({ App, Header, SearchBar }) => {
@@ -96,15 +136,4 @@ Edit copy of `intercept.js` to pull in the custom extension by name. In this cas
         );
 ```
 
-## Import a custom extension
-
-The sample extension is provided in PWA Studio to demonstrate how to create a custom event.
-Use these files as a framework to create your own extension.
-
-When your code is tested and ready, create a `pacakge.json` file for the custom module so `yarn` can pull it in.
-
-When complete, add it to your instance:
-
-```bash
-yarn add <custom package name>
-```
+When your code is complete, you can [test on a local instance](https://developer.adobe.com/commerce/pwa-studio/tutorials/targets/modify-talon-results/#test-on-a-local-instance).

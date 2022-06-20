@@ -88,6 +88,8 @@ payload: {
 
 ## CATEGORY_PAGE_VIEW
 
+The `CATEGORY_PAGE_VIEW` is fired when a category page is loaded.
+
 ```javascript
 payload: {
           id: categoryData.categories.items[0].uid,
@@ -98,6 +100,8 @@ payload: {
 ```
 
 ## CMS_PAGE_VIEW
+
+The `CMS_PAGE_VIEW` event is fired when a CMS page is loaded.
 
 ```javascript
 payload: {
@@ -119,6 +123,8 @@ payload: {
 
 ## ORDER_CONFIRMATION_PAGE_VIEW
 
+The `ORDER_CONFIRMATION_PAGE_VIEW` is fired when the order confirmation page is loaded.
+
 ```javascript
 payload: {
           order_number: placeOrderData.placeOrder.order.order_number,
@@ -131,7 +137,8 @@ payload: {
 
 ## PRODUCT_CLICK
 
-The `PRODUCT_CLICK` event is fired XXXXX
+The `PRODUCT_CLICK` event is fired when a user clicks on a Product Card in a Carousel/Slider or Gallery component
+
 The following attributes are sent:
 
 ```javascript
@@ -159,6 +166,8 @@ payload: {
 ```
 
 ## PRODUCT_PAGE_VIEW
+
+The `PRODUCT_PAGE_VIEW` event is fired when a product page is loaded.
 
 ```javascript
 payload: {
