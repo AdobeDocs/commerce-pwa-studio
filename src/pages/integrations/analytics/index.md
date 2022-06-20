@@ -2,6 +2,8 @@
 title: Experience Platform analytics in PWA Studio
 ---
 
+# Experience Platform analytics in PWA Studio
+
 PWA Studio supports analytics through a built-in framework that sends events to your Adobe Commerce backend.
 The following topics describe how to install, configure, and customize analytics to your specific needs.
 

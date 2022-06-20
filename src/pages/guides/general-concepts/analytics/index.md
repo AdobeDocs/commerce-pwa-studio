@@ -2,7 +2,7 @@
 title: Analytics Events
 ---
 
-## PWA analytics
+# Analytics events
 
 PWA Studio emits a series of events for use in Adobe Analytics.
 
