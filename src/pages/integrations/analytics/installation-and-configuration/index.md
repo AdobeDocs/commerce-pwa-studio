@@ -14,13 +14,13 @@ The Experience Platform analytics extension uses the standard Composer-based ins
 
 Open your `yarn` file and add the following line:
 
-```json
+```terminal
 yarn add @magento/experience-platform-connector
 ```
 
 ## Adobe Commerce backend configuration
 
-The Experience Platform analytics endpoint needs to be setup with the Adobe Commerce admin.
+The Experience Platform analytics endpoint needs to be set up in the Adobe Commerce Admin UI.
 
 Follow these steps to configure the Adobe Commerce backend for eventing. **NOTE**: These extensions are still under development and steps may change with the official release. Read more about the [Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/connect-data.html).
 

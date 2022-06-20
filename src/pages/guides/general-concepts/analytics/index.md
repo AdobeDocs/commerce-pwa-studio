@@ -4,17 +4,17 @@ title: Analytics Events
 
 ## PWA analytics
 
-PWA Studio emits a series of events for for use in analytics.
+PWA Studio emits a series of events for use in Adobe Analytics.
 
 ## Adobe Launch
 
 | Event | Description | Property Name | Example |
 |--|--|--|--|
-| Page View |	A specific page has been navigated to by the end user |	virtualPageView	 ||
-| Product Detail Page View | The product detail page has been navigated to by the end user | productDetail ||
-| Product Impression | A specific product has been shown to the end user | productImpression |
-| Product Click | A specific product has been clicked on by the end user | productClick ||
-| Add to Cart | A product has been added to the cart by the end user | add-to-cart | |
+| Page View | Triggered when the site displays any page to the user.  | virtualPageView ||
+| Product Detail Page View | Triggered when the site displays a product-detail page. | productDetail ||
+| Product Impression | Triggered when the site displays a product on the page. | productImpression |
+| Product Click | Triggered when a user clicks a product link on the page. | productClick ||
+| Add to Cart | Triggered when a user adds an item to the cart. | add-to-cart | |
 
 ## Google Tag Manager (GTM)
 

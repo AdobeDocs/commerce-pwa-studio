@@ -4,14 +4,14 @@ title: Custom events for Experience Platform analytics
 
 # Creating custom events
 
-PWA Studio 12.5 contains an eventing framework with a series of default events that cover common scenarios.
-By creating and importing a custom extension, it is possible to add new events so that you may track specific user interactions beyond what is included in the default package.
+PWA Studio 12.5 adds an eventing framework to capture a set of default, everyday shopper interactions on your storefronts.
+You can also extend the framework by adding additional events to track user interactions beyond those in the default package.
 
 PWA Studio provides a [sample extension](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/experience-platform-connector/) that shows how to add a custom event.
 
-In the sample extension, the `SEARCH_RESPONSE` event is being tracked. This event is fired when a search result is returned from Adobe Commerce, with either results or a `EMPTY_RESULT` response.
+In this sample extension, we added a `SEARCH_RESPONSE` event. This event fires when a search result or an `EMPTY_RESULT` response is returned from Adobe Commerce.
 
-These files can be used as a starting point for a custom event extension.
+These files can be used as a starting point to create your own custom events.
 
 ## searchResponseReceived.js
 

@@ -4,7 +4,7 @@ title: Subscribing to events
 
 # Subscribing to events
 
-3rd party modules can subscribe to events, allowing you to use other analytics collections schemes.
+Third-party modules can subscribe to events, allowing you to use other analytics collection schemes.
 
 The [venia-sample-eventing](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/venia-sample-eventing) module shows how to subscribe to events.
 
