@@ -7,21 +7,21 @@ title: Analytics Events Reference
 The document describes the default events that PWA Studio tracks for Adobe Analytics.
 Additional events can be added by following the steps in [Custom Events](../custom-events/index.md).
 
-- [CART_ADD_ITEM](#cartadditem)
-- [CART_PAGE_VIEW](#cartpageview)
-- [CART_REMOVE_ITEM](#cartremoveitem)
-- [CART_UPDATE_ITEM](#cartupdateitem)
-- [CATEGORY_PAGE_VIEW](#categorypageview)
-- [CMS_PAGE_VIEW](#cmspageview)
-- [MINI_CART_VIEW](#minicartview)
-- [ORDER_CONFIRMATION_PAGE_VIEW](#orderconfirmationpageview)
-- [PRODUCT_CLICK](#productclick)
-- [PRODUCT_IMPRESSION](#productimpression)
-- [PRODUCT_PAGE_VIEW](#productpageview)
-- [SEARCH_REQUEST](#searchrequest)
-- [USER_CREATE_ACCOUNT](#usercreateaccount)
-- [USER_SIGN_IN](#usersignin)
-- [USER_SIGN_OUT](#usersignout)
+- [CART_ADD_ITEM](#CART_ADD_ITEM)
+- [CART_PAGE_VIEW](#CART_PAGE_VIEW)
+- [CART_REMOVE_ITEM](#CART_REMOVE_ITEM)
+- [CART_UPDATE_ITEM](#CART_UPDATE_ITEM)
+- [CATEGORY_PAGE_VIEW](#CATEGORY_PAGE_VIEW)
+- [CMS_PAGE_VIEW](#CMS_PAGE_VIEW)
+- [MINI_CART_VIEW](#MINI_CART_VIEW)
+- [ORDER_CONFIRMATION_PAGE_VIEW](#ORDER_CONFIRMATION_PAGE_VIEW)
+- [PRODUCT_CLICK](#PRODUCT_CLICK)
+- [PRODUCT_IMPRESSION](#PRODUCT_IMPRESSION)
+- [PRODUCT_PAGE_VIEW](#PRODUCT_PAGE_VIEW)
+- [SEARCH_REQUEST](#SEARCH_REQUEST)
+- [USER_CREATE_ACCOUNT](#USER_CREATE_ACCOUNT)
+- [USER_SIGN_IN](#USER_SIGN_IN)
+- [USER_SIGN_OUT](#USER_SIGN_OUT)
 
 ## CART_ADD_ITEM
 
