@@ -57,6 +57,10 @@ module.exports = [
         path: "/guides/general-concepts/css-modules/",
       },
       {
+        title: "Eventing",
+        path: "/guides/general-concepts/eventing/",
+      },
+      {
         title: "Extensibility",
         path: "/guides/general-concepts/extensibility/",
       },

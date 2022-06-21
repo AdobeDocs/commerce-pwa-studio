@@ -1,6 +1,7 @@
 const buildpack = require("./buildpack");
 const peregrine = require("./peregrine");
 const venia = require("./venia");
+const events = require("./events");
 module.exports = [
   {
     title: "Overview",
@@ -9,4 +10,5 @@ module.exports = [
   buildpack,
   peregrine,
   venia,
+  events,
 ];

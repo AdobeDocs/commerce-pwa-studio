@@ -1,16 +1,23 @@
 ---
-title: Installing and configuring the Experience Platform analytics extension
+title: Events and the Adobe Experience Platform
 ---
 
-# Installing and configuring the events framework
+# Events and the Adobe Experience Platform
 
-PWA Studio has an eventing framework that allows store owners to track user interaction with their site and return analytics information.
-The Experience Platform analytics extension enables the connection between PWA Studio and the Adobe Commerce backend. Magento Open Source does not support the Experience Platform analytics framework.
-This document describes how to install the Experience Platform analytics extension and how to configure PWA Studio and Adobe Commerce to work together.
+PWA Studio 12.5.0 has an eventing framework that allows store owners to track user interaction with their site and return analytics information.
+With the Experience Platform extension, Adobe Commerce users with an Adobe Experience Platform (AEP) subscription can get event data from PWA sites and process it on the AEP.
 
-## Installation
+There are two pieces required to get event data to the AEP:
 
-The Experience Platform analytics extension uses the standard Composer-based installation method.
+- The Experience Platform extension enables the connection between PWA Studio and the Adobe Commerce backend.
+- The Experience Platform Connector is an extension for Adobe Commerce that connects to the AEP platform.
+
+This document describes how to install the Experience Platform extension and how to configure Adobe Commerce to receive event data.
+Magento Open Source does not support the AEP.
+
+## Install the Experience Platform extension for PWA Studio
+
+The Experience Platform extension uses the standard Composer-based installation method.
 
 Open your `yarn` file and add the following line:
 

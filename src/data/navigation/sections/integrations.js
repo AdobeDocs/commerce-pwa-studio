@@ -24,6 +24,10 @@ module.exports = [
         path: "/integrations/adobe-commerce/features/",
       },
       {
+        title: "Events and Adobe Experience Platform",
+        path: "/integrations/adobe-commerce/aep/",
+      },
+      {
         title: "Version compatibility",
         path: "/integrations/adobe-commerce/version-compatibility/",
       },
@@ -45,14 +49,6 @@ module.exports = [
       {
         title: "Custom Events",
         path: "/integrations/analytics/custom-events/",
-      },
-      {
-        title: "Event Reference",
-        path: "/integrations/analytics/event-reference/",
-      },
-      {
-        title: "Installation and Configuration",
-        path: "/integrations/analytics/installation-and-configuration/",
       },
       {
         title: "Subscribing to events",

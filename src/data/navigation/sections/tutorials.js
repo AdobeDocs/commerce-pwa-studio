@@ -48,6 +48,21 @@ module.exports = [
     ],
   },
   {
+    title: "Events",
+    path: "/tutorials/events/",
+    header: true,
+    pages: [
+      {
+        title: "Custom Events",
+        path: "/tutorials/events/custom-events/",
+      },
+      {
+        title: "Subscribing to Events",
+        path: "/tutorials/events/subscribe-events/",
+      },
+    ],
+  },
+  {
     title: "Targets and Targetables",
     path: "/tutorials/targets/",
     header: true,
