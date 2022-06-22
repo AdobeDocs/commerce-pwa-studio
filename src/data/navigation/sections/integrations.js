@@ -20,12 +20,12 @@ module.exports = [
         path: "/integrations/adobe-commerce/",
       },
       {
-        title: "Commerce coverage",
-        path: "/integrations/adobe-commerce/features/",
+        title: "Adobe Experience Platform",
+        path: "/integrations/adobe-commerce/aep/",
       },
       {
-        title: "Events and Adobe Experience Platform",
-        path: "/integrations/adobe-commerce/aep/",
+        title: "Commerce coverage",
+        path: "/integrations/adobe-commerce/features/",
       },
       {
         title: "Version compatibility",

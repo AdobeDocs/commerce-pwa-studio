@@ -1,8 +1,8 @@
 ---
-title: Events and the Adobe Experience Platform
+title: Adobe Experience Platform
 ---
 
-# Events and the Adobe Experience Platform
+# Adobe Experience Platform
 
 PWA Studio 12.5.0 has an eventing framework that allows store owners to track user interaction with their site and return analytics information.
 With the Experience Platform extension, Adobe Commerce users with an Adobe Experience Platform (AEP) subscription can get event data from PWA sites and process it on the AEP.
@@ -33,9 +33,9 @@ Follow these steps to configure the Adobe Commerce backend for eventing. **NOTE*
 
 1. On the Adobe Commerce instance, install the following extensions:
 
-- @magento/module-experience-connector-graphql
-- @magento/module-data-services-graphql
-- @magento/module-experience-connector-admin
+   - @magento/module-experience-connector-graphql
+   - @magento/module-data-services-graphql
+   - @magento/module-experience-connector-admin
 
 1. Create SaaS keys at [https://account.magento.com/](https://account.magento.com/)
 
