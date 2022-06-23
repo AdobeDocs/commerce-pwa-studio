@@ -12,6 +12,10 @@ There are two pieces required to get event data to the AEP:
 - The Experience Platform extension enables the connection between PWA Studio and the Adobe Commerce backend.
 - The Experience Platform Connector is an extension for Adobe Commerce that connects to the AEP platform.
 
+This diagram shows the basic flow of an event through the system and notes which component handles the event at each stage. 
+
+![Basic event flow](images/analytics-flow.png)
+
 This document describes how to install the Experience Platform extension and how to configure Adobe Commerce to receive event data.
 Magento Open Source does not support the AEP.
 
