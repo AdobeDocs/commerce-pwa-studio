@@ -19,7 +19,8 @@ The Adobe Commerce backend can be [configured](/integrations/adobe-commerce/aep/
 
 ## Eventing basics
 
-The eventing framework uses observables: a mechanism to pass messages between parts of an application.
+At the core of the eventing framework is an observable.
+When extensions subscribe to the observable the framework notifies it whenever the application publishes an event and sends the event data to the extension for handling.
 
 The framework allows extensions to subscribe to it and notifies those extensions when the application dispatches an event.
 It also keeps track of all the events that have occurred since app initialization allowing extensions that subscribe later can still process events that have already occurred. The [EventingContextProvider](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/context/eventing.js#L13-L54) component is the data provider for the eventing context.
