@@ -4,26 +4,26 @@ title: Adobe Experience Platform
 
 # Adobe Experience Platform
 
-PWA Studio 12.5.0 has an eventing framework that allows store owners to track user interaction with their site and return analytics information.
-With the Experience Platform extension, Adobe Commerce users with an Adobe Experience Platform (AEP) subscription can get event data from PWA sites and process it on the AEP.
+Included in the PWA Studio 12.5.0 release is an eventing framework that lets store owners install extensions that track user interaction within their site and collect analytics information.
+With the Experience Platform Connector extension, Adobe Commerce users with an Adobe Experience Platform (AEP) subscription can get event data from PWA Studio storefronts and process it on the AEP.
 
-There are two pieces required to get event data to the AEP:
+This integration requires the following pieces to function properly:
 
-- The Experience Platform extension enables the connection between PWA Studio and the Adobe Commerce backend.
-- The Experience Platform Connector is an extension for Adobe Commerce that connects to the AEP platform.
+- The Experience Platform Connector extension for PWA Studio storefronts, which connects and send data to the AEP platform.
+- The Experience Platform extensions installed in the Adobe Commerce backend which provides configuration information to the storefront extension.
 
 This diagram shows the basic flow of an event through the system and notes which component handles the event at each stage. 
 
 ![Basic event flow](images/analytics-flow.png)
 
-This document describes how to install the Experience Platform extension and how to configure Adobe Commerce to receive event data.
+The following sections provide installation and configuration instructions for the Experience Platform integration.
 Magento Open Source does not support the AEP.
 
 ## Install the Experience Platform extension for PWA Studio
 
-The Experience Platform extension uses the standard Composer-based installation method.
+Use your storefront project's package manager(`node` or `yarn`), to install the Experience Platform Connector extension into your storefront project.
 
-Open your `yarn` file and add the following line:
+For example, if your project uses `yarn` run the following command: 
 
 ```terminal
 yarn add @magento/experience-platform-connector
