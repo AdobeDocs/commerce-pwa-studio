@@ -4,6 +4,8 @@ title: Adobe Experience Platform
 
 # Adobe Experience Platform
 
+**NOTE**: The Experience Platform Connector for Adobe Commerce is scheduled for released in the second half of 2022. PWA Studio is publishing this code in anticipation of the Experience Platform Connector release.
+
 Included in the PWA Studio 12.5.0 release is an eventing framework that lets store owners install extensions that track user interaction within their site and collect analytics information.
 With the Experience Platform Connector extension, Adobe Commerce users with an Adobe Experience Platform (AEP) subscription can get event data from PWA Studio storefronts and process it on the AEP.
 
@@ -31,20 +33,11 @@ yarn add @magento/experience-platform-connector
 
 ## Adobe Commerce backend configuration
 
-The Experience Platform analytics endpoint needs to be set up in the Adobe Commerce Admin UI.
+There are few steps to take to establish a data stream and then install and configure the Experience Platform Connector.
 
-Follow these steps to configure the Adobe Commerce backend for eventing. **NOTE**: These extensions are still under development and steps may change with the official release. Read more about the [Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/connect-data.html).
+Check the prerequisites for establishing a data stream in the [Experience Platform Connector overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html?lang=en#prereqs).
 
-1. On the Adobe Commerce instance, install the following extensions:
+To install the EPC within Adobe Commerce, see [Install and Configure the Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/install.html?lang=en).
 
-   - @magento/module-experience-connector-graphql
-   - @magento/module-data-services-graphql
-   - @magento/module-experience-connector-admin
+To connect Adobe Commerce with your data stream, see [Connect Commerce data to Adobe Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/connect-data.html?lang=en).
 
-1. Create SaaS keys at [https://account.magento.com/](https://account.magento.com/)
-
-1. In the Commerce admin, enter you service connector keys under: System > Services > Commerce Services Connector
-
-1. Enter your schema’s data stream ID under: System > Services > Adobe Services. The data stream ID is created when you create a schema in AEP.
-
-To confirm that eventing is working, complete a user action such as a product search or logging in as a user. These events should show up in the AEP analytics portal after the data has been processed.
