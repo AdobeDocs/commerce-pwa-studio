@@ -20,6 +20,10 @@ module.exports = [
         path: "/integrations/adobe-commerce/",
       },
       {
+        title: "Adobe Experience Platform",
+        path: "/integrations/adobe-commerce/aep/",
+      },
+      {
         title: "Commerce coverage",
         path: "/integrations/adobe-commerce/features/",
       },
@@ -30,6 +34,25 @@ module.exports = [
       {
         title: "Theme vs Storefront",
         path: "/integrations/adobe-commerce/theme-vs-storefront",
+      },
+    ],
+  },
+  {
+    title: "Analytics",
+    path: "/integrations/analytics/",
+    header: true,
+    pages: [
+      {
+        title: "Overview",
+        path: "/integrations/analytics/",
+      },
+      {
+        title: "Custom Events",
+        path: "/integrations/analytics/custom-events/",
+      },
+      {
+        title: "Subscribing to events",
+        path: "/integrations/analytics/subscribe/",
       },
     ],
   },
