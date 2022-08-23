@@ -45,7 +45,7 @@ At this point, you should see symlinks for all the `pwa` modules inside the `ven
 -  Run a Magento installation with additional modules.
 -  Develop locally using the standard git workflow.
 
-You may need to ensure that there are no `Magento_PWA*` modules listed as `enabled` when you run `bin/magento module:status`. If there are, [follow the docs on how to enable modules](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/enable-module.html).
+You may need to ensure that there are no `Magento_PWA*` modules listed as `enabled` when you run `bin/magento module:status`. If there are, [follow the docs on how to enable modules](https://developer.adobe.com/commerce/php/development/build/component-management/).
 
 ## Setting up the Git workflow
 

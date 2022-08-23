@@ -47,4 +47,4 @@ This metapackage contains Venia Sample Data modules you can install to help you 
 
 At this point, the venia-sample-data metapackage modules are symlinked within your vendor directory, which allows you to run the with additional modules and do development using git.
 
-When you run bin/magento module: status, make sure there are no Magento Venia Sample Data modules listed as disabled. If they are, [follow the instructions on how to enable them](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/enable-module.html).
+When you run bin/magento module: status, make sure there are no Magento Venia Sample Data modules listed as disabled. If they are, [follow the instructions on how to enable them](https://developer.adobe.com/commerce/php/development/build/component-management/).

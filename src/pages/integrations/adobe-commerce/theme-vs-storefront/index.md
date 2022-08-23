@@ -15,7 +15,7 @@ This topic compares the traditional theme development approach of Adobe Commerce
 An Adobe Commerce or Magento Open Source theme is a type of [component][] that defines how a store looks.
 It is deeply integrated with the application and depends on the core code for functionality.
 
-[component]: https://devdocs.magento.com/guides/v2.1/extension-dev-guide/bk-extension-dev-guide.html
+[component]: https://developer.adobe.com/commerce/php/development/
 
 A theme is always built on top of an existing parent theme.
 Out of the box, the Adobe Commerce and Magento Open Source applications provide the **Blank** and **Luma** themes that developers extend or customize to create custom storefronts.
@@ -26,7 +26,7 @@ Every other theme builds on, overrides, or customizes these files.
 
 For more information on themes, see the [Frontend Developer Guide][] for the core application.
 
-[frontend developer guide]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/bk-frontend-dev-guide.html
+[frontend developer guide]: https://developer.adobe.com/commerce/frontend-core/guide/
 
 ### PWA Studio storefront application
 
@@ -57,7 +57,7 @@ each approach uses a different definition of this term.
 In theme development, _components_ mostly refers to [Adobe's UI Components][].
 These components are standard UI elements, such as tables, buttons, and dialogs, that Adobe provides to make theme development easier.
 
-[adobe's ui components]: https://devdocs.magento.com/guides/v2.3/ui_comp_guide/bk-ui_comps.html
+[adobe's ui components]: https://developer.adobe.com/commerce/frontend-core/ui-components/
 
 In PWA Studio, _components_ refers to [React][] components.
 React components are modular pieces that make up a React application, such as a PWA storefront.
@@ -120,10 +120,10 @@ The following table is a summary of general skills needed for theme development:
 
 [jquery]: https://jquery.com/
 [knockoutjs]: https://knockoutjs.com/
-[css]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/css-topics/css-overview.html
+[css]: https://developer.adobe.com/commerce/frontend-core/guide/css/
 [less]: http://lesscss.org/
-[theme layouts]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/layouts/layout-overview.html
-[theme templates]: https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/templates/template-overview.html
+[theme layouts]: https://developer.adobe.com/commerce/frontend-core/guide/layouts/
+[theme templates]: https://developer.adobe.com/commerce/frontend-core/guide/templates/
 [theme ui library]: https://magento-devdocs.github.io/magento2-ui-library/
 
 ### PWA storefront developers

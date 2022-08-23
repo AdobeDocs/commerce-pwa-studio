@@ -18,7 +18,7 @@ In core Adobe Commerce and Magento Open Source development:
 
 See: [Plugins (Interceptors)][]
 
-[plugins (interceptors)]: https://devdocs.magento.com/guides/v2.4/extension-dev-guide/plugins.html
+[plugins (interceptors)]: https://developer.adobe.com/commerce/php/development/components/plugins/
 
 PWA Studio's extensibility framework provides a similar feature that allows you to intercept a talon call and surround it with custom logic.
 This is useful if you want to add tracking logic or alter the incoming or outgoing values for a talon.

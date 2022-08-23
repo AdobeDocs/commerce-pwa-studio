@@ -15,7 +15,7 @@ The language packages themselves are extensions the application installs using C
 
 For more information, see the core documentation topic: [Translations overview][].
 
-[translations overview]: https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html
+[translations overview]: https://developer.adobe.com/commerce/frontend-core/guide/translations/
 
 The tight coupling between each applications' i18n feature and the frontend theme makes it difficult to use the same translation mechanisms in PWA Studio storefronts.
 Instead, PWA Studio provides its own i18n feature that follows a similar design as the one in Adobe Commerce and Magento Open Source.

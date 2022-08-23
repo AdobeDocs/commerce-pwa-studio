@@ -20,7 +20,7 @@ Those external API services communicate with the backend application's internal 
 until full coverage is complete, developers can use the [**REST API**][] to fill in existing coverage gaps.
 
 [graphql api]: https://devdocs.magento.com/guides/v2.3/graphql/
-[**rest api**]: https://devdocs.magento.com/guides/v2.3/rest/bk-rest.html
+[**rest api**]: https://developer.adobe.com/commerce/webapi/rest/
 
 To make secure, admin-authorized calls, configure the storefront's [UPWARD][] server to make the request using REST or RPC.
 

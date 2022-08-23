@@ -29,7 +29,7 @@ This is known as **service isolation**.
 Adobe Commerce and Magento Open Source services, such as those for customers, product catalog, and checkout, provide an API through [service contracts][].
 PWA Studio storefronts interact with these services through [GraphQL][] and REST services.
 
-[service contracts]: https://devdocs.magento.com/guides/v2.3/extension-dev-guide/service-contracts/service-contracts.html
+[service contracts]: https://developer.adobe.com/commerce/php/development/components/service-contracts/
 [graphql]: https://github.com/magento/graphql-ce
 
 For more information about service isolation, see: [Service Isolation Vision][].

@@ -36,7 +36,7 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
    Other recommendation types use catalog data only and do not use any behavioral data.
    See the [user guide](https://docs.magento.com/user-guide/marketing/product-recommendations.html#trainmlmodels) to learn how Adobe Sensei trains machine learning models that results in higher quality recommendations.
 
-1. The backend functionality is provided by the [Product Recommendations module for Adobe Commerce](https://devdocs.magento.com/recommendations/install-configure.html).
+1. The backend functionality is provided by the [Product Recommendations module for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure.html).
 
 1. Additionally, you need to install the `module-data-services-graphql` module that expands the application's existing GraphQL coverage to include fields required for storefront behavioral data collection.
 
