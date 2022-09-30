@@ -65,7 +65,7 @@ The `base.css` layer contains the most basic styles for resetting or normalizing
 
 ### Update index.js
 
-To use the `index.css` file, you need to `import` it into the `src/index.js` file. 
+To use the `index.css` file, you need to `import` it into the `src/index.js` file.
 
 The `create-pwa` CLI adds this import as follows:
 
