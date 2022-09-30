@@ -7,12 +7,9 @@
     "type": "git",
     "url": "https://github.com/AdobeDocs/commerce-pwa-studio"
   },
-  "author": {
-    "name": "Bruce Denham",
-    "url": "https://github.com/bdenham"
-  },
+  "author": "PWA Studio Team",
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "^4.6.2",
+    "@devdocs/gatsby-theme-acd": "0.0.2",
     "gatsby": "4.22.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
