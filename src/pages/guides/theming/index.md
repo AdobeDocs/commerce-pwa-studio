@@ -33,17 +33,17 @@ After installation, your `package.json` file should contain the following entrie
 
 ## Step 2: Add configuration files
 
-As mentioned above, if you created your app with a recent version of the `create-pwa` CLI, these files are added and configured for you. If you did not, you must add and configure them manually as described in this step. These are the configuration files you need to add:
+As mentioned above, if you created your app with a recent version of the `create-pwa` CLI, these files are added and configured for you. Otherwise, you must add and configure the following files manually:
 
 - **src/index.css** — For Tailwind's global base CSS
 - **tailwind.config.js** — For Tailwind's configuration, overrides, and extensions
 - **postcss.config.js** — For adding the `tailwindcss` package as a postCSS plugin
 
-The purpose and contents of these files are described next.
+The following sections describe these files in detail.
 
 ### Add index.css
 
-The `index.css` file uses the `@tailwind` directive to include all of Tailwind's base, component, and utility style [layers](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer). To get started, add the following three lines to the `index.css` file.
+The `index.css` file uses the `@tailwind` directive to include all of Tailwind's base, component, and utility style [layers](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer). To get started, add the following lines to the `index.css` file.
 
 The `create-pwa` CLI adds and configures this file as follows:
 
@@ -55,7 +55,7 @@ The `create-pwa` CLI adds and configures this file as follows:
 @tailwind utilities;
 ```
 
-These directives load the three Tailwind [layer files](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer) from the `tailwindcss` package installed in `node_modules`, as shown here:
+These directives load the corresponding Tailwind [layer files](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer) from the `tailwindcss` package installed in `node_modules`, as shown here:
 
 - `tailwindcss/dist/base.css` (normalizing styles, 500+ lines of CSS)
 - `tailwindcss/dist/components.css` (component classes, 200+ lines of CSS)
@@ -144,7 +144,7 @@ const config = {
 module.exports = config;
 
 /**
- * Matches declarations that contain tailwind classnames.
+ * Matches declarations that contain Tailwind classnames.
  * Only CSS Module classnames that use `composes` are included in the build.
  *
  * @example
@@ -159,19 +159,19 @@ Descriptions of each configuration option are provided here:
 
 - **mode** - The `mode` property is set to `jit` by default to provide faster build times. To disable the JIT mode, set the `mode` property to `false`. See the [JIT mode](https://v2.tailwindcss.com/docs/just-in-time-mode) from the Tailwind documentation.
 - **presets** - Adds additional theme configurations on top of Tailwind's base styles. The  `venia` theme is added by default. You have the option to keep the `venia` theme and override or extend it with your own theme, or replace it completely. See [Presets](https://v2.tailwindcss.com/docs/presets) from the Tailwind documentation.
-- **purge** - The `purge` property is used to configure the [PurgeCSS](https://purgecss.com/) tool to remove unused CSS from the `index.css` file. This optimizes the production builds by reducing the size of the CSS bundle. See [Writing purgeable HTML](https://v2.tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html) and [Removing unused CSS](https://v2.tailwindcss.com/docs/optimizing-for-production#removing-unused-css) from the Tailwind documentation.
-- **plugins** - The `plugins` property configures Tailwind CSS plugins. See [Plugins](https://v2.tailwindcss.com/docs/plugins) from the Tailwind documentation.
-- **separator** - The `separator` property configures the character used to separate the variant prefixes from the utility names. Tailwind uses the colon `:` by default, but PWA Studio uses the underscore (`_`) because CSS Modules doesn't support the colon in class names. See [Separator](https://v2.tailwindcss.com/docs/configuration#separator) from the Tailwind documentation.
-- **theme** - The `theme` property is for your custom values used to override or extend the Tailwind CSS framework. See [Theme Configuration](https://v2.tailwindcss.com/docs/theme) from the Tailwind documentation.
-- **matcher** - The `matcher` variable is used to match CSS Modules classnames that use the `composes` function. This is used by PurgeCSS to remove unused CSS from the `index.css` file. See [Writing purgeable HTML](https://v2.tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html) from the Tailwind documentation.
+- **purge** - Configures the [PurgeCSS](https://purgecss.com/) tool to remove unused CSS from the `index.css` file. This optimizes the production builds by reducing the size of the CSS bundle. See [Writing purgeable HTML](https://v2.tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html) and [Removing unused CSS](https://v2.tailwindcss.com/docs/optimizing-for-production#removing-unused-css) from the Tailwind documentation.
+- **plugins** - Configures Tailwind CSS plugins. See [Plugins](https://v2.tailwindcss.com/docs/plugins) from the Tailwind documentation.
+- **separator** - Defines the character that separates the variant prefixes from the utility names. Tailwind uses the colon `:` by default, but PWA Studio uses the underscore (`_`) because CSS Modules doesn't support the colon in class names. See [Separator](https://v2.tailwindcss.com/docs/configuration#separator) from the Tailwind documentation.
+- **theme** - Defines your custom values that override or extend the Tailwind CSS framework. See [Theme Configuration](https://v2.tailwindcss.com/docs/theme) from the Tailwind documentation.
+- **matcher** - Matches CSS Modules classnames that use the `composes` function. PurgeCSS uses this value to remove unused CSS from the `index.css` file. See [Writing purgeable HTML](https://v2.tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html) from the Tailwind documentation.
 
 <InlineAlert slots="text" />
 
-When looking at code samples in the Tailwind docs, keep in mind that the base project configures Tailwind to use `_` as the [seperator](https://v2.tailwindcss.com/docs/configuration#separator) instead of the default colon (`:`).
+When looking at code samples in the Tailwind docs, keep in mind that the base project configures Tailwind to use `_` as the [separator](https://v2.tailwindcss.com/docs/configuration#separator) instead of the default colon (`:`).
 
 ### Add postcss.config.js
 
-The `postcss.config.js` file is a standard configuration file used by the `postcss-loader` package. So you need to add it to your project's root and configure it to add `tailwindcss` and the `autoprefixer` as a PostCSS plugins for your app. Your `postcss.config.js` file should look like this:
+Create the `postcss.config.js` file  to your project's root and configure it to add `tailwindcss` and the `autoprefixer` as PostCSS plugins for your app. Your `postcss.config.js` file should look like this:
 
 The `create-pwa` CLI adds and configures this file as follows:
 
@@ -355,7 +355,7 @@ module.exports = {
 
 The following extension examples show some additional useful customizations you can make to Tailwind and Venia base themes.
 
-### Adding new utility classes
+### Add new utility classes
 
 As described above with extensions, Tailwind gives you the ability to define new utility classes with your own values. You can use these values in your own custom CSS files for your custom components or style overrides for Venia components.
 
@@ -377,7 +377,7 @@ module.exports = {
 
 This creates a new height utility `height-customHeight` which you can use in your project.
 
-### Replacing existing breakpoint values
+### Replace existing breakpoint values
 
 You can replace existing breakpoint values by specifying entries for `theme.extend.screens`.
 
