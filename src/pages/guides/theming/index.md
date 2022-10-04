@@ -22,7 +22,7 @@ PWA Studio apps configured for Tailwind theming should have the following packag
   "autoprefixer": "~10.3.7",
   "postcss": "~8.3.11",
   "postcss-loader": "~4.3.0",
-  "tailwindcss": "~2.2.19",
+  "tailwindcss": "~2.2.19"
 ```
 
 ## Theme files
