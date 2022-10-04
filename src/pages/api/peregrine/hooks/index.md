@@ -10,7 +10,7 @@ Peregrine provides custom React hooks that contain general, reusable logic.
 
 - [useDropdown()](useDropdown/)
 - [useEventListener()](useEventListener/)
-- [usePagination()](usePaginations/)
+- [usePagination()](usePagination/)
 - [useSearchParam()](useSearchParam/)
 - [useToasts()](toasts/useToasts/)
 - [useToastContext()](toasts/useToastContext/)
