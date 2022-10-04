@@ -62,6 +62,7 @@ export default () => {
 };
 // ....
 ```
+
 ---
 
 **../path/to/SubComponent/index.js**
@@ -71,6 +72,7 @@ export { default } from './subComponent.js';
 // Export named shimmer component
 export { default as SubComponentShimmer } from './subComponent.shimmer.js';
 ```
+
 ---
 
 **../path/to/SubComponent/subComponent.js**
@@ -101,6 +103,7 @@ SubComponent.propTypes = {
 }
 export default SubComponent;
 ```
+
 ---
 
 **../path/to/SubComponent/subComponent.shimmer.js**

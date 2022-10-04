@@ -13,7 +13,7 @@ It is also possible to [subscribe](/tutorials/events/custom-events/) to events s
 
 This event data can be collected and sent to analytics systems for processing.
 
-For Adobe Commerce users with an [Adobe Experience Platform](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) subscription, an [extension](/integrations/adobe-commerce/aep/) is available for PWA studio that connects to an Adobe Commerce backend. 
+For Adobe Commerce users with an [Adobe Experience Platform](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) subscription, an [extension](/integrations/adobe-commerce/aep/) is available for PWA studio that connects to an Adobe Commerce backend.
 
 The Adobe Commerce backend can be [configured](/integrations/adobe-commerce/aep/) to send event data to the Adobe Experience Platform.
 

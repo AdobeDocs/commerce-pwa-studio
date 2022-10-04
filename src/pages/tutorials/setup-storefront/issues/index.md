@@ -45,7 +45,7 @@ To solve this, add `@magento/pwa-buildpack` as a dev dependency in the monorepo'
 If you get a _Privacy Error_ message in your browser, your project has an invalid or expired certificate.
 See the [PWA Buildpack][] page for a solution to this issue.
 
-[PWA Buildpack]: api/buildpack/
+[PWA Buildpack]: ../../../api/buildpack/index.md
 ![privacy error](./images/privacy-error.png)
 
 ## Debugging
