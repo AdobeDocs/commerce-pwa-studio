@@ -1795,23 +1795,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@devdocs/gatsby-theme-acd@npm:0.0.2":
-  version: 0.0.2
-  resolution: "@devdocs/gatsby-theme-acd@npm:0.0.2"
-  dependencies:
-    "@adobe/gatsby-theme-aio": 4.6.2
-    gatsby: 4.22.0
-    gatsby-source-filesystem: 4.23.0
-    react: 17.0.2
-    react-dom: 17.0.2
-  peerDependencies:
-    gatsby: 4.22.0
-    react: 17.0.2
-    react-dom: 17.0.2
-  checksum: 9f5e2c484e4684024d52f9c8c01d55e96bbc2da0a8ada169e323ab3efb13c374676c3963afed517d3520973b70b8a94213f3330cc10b6fbfacdf632482751859
-  languageName: node
-  linkType: hard
-
 "@emotion/babel-plugin-jsx-pragmatic@npm:^0.2.0":
   version: 0.2.0
   resolution: "@emotion/babel-plugin-jsx-pragmatic@npm:0.2.0"
@@ -6690,7 +6673,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "commerce-pwa-studio@workspace:."
   dependencies:
-    "@devdocs/gatsby-theme-acd": 0.0.2
+    "@adobe/gatsby-theme-aio": 4.6.2
     gatsby: 4.22.0
     prettier: 2.7.1
     react: ^17.0.2
@@ -9557,7 +9540,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gatsby-core-utils@npm:^3.20.0, gatsby-core-utils@npm:^3.21.0, gatsby-core-utils@npm:^3.22.0, gatsby-core-utils@npm:^3.23.0, gatsby-core-utils@npm:^3.24.0":
+"gatsby-core-utils@npm:^3.20.0, gatsby-core-utils@npm:^3.21.0, gatsby-core-utils@npm:^3.22.0, gatsby-core-utils@npm:^3.24.0":
   version: 3.24.0
   resolution: "gatsby-core-utils@npm:3.24.0"
   dependencies:
@@ -9976,26 +9959,6 @@ __metadata:
     "@types/sharp": ^0.30.5
     sharp: ^0.30.7
   checksum: a236a490c6959e8d877f63e20fb8525bda417dee956bb94c06d420f668f7422165e4e5cae53e0519212d925d58f48e1746300ad9d1347e48932bd5359288206f
-  languageName: node
-  linkType: hard
-
-"gatsby-source-filesystem@npm:4.23.0":
-  version: 4.23.0
-  resolution: "gatsby-source-filesystem@npm:4.23.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    chokidar: ^3.5.3
-    file-type: ^16.5.4
-    fs-extra: ^10.1.0
-    gatsby-core-utils: ^3.23.0
-    md5-file: ^5.0.0
-    mime: ^2.5.2
-    pretty-bytes: ^5.4.1
-    valid-url: ^1.0.9
-    xstate: 4.32.1
-  peerDependencies:
-    gatsby: ^4.0.0-next
-  checksum: 5b938fca34cde217da446b575db76499794be30f2e8e651afb92e820ea43275b5432f6aa41c531d671fcedfa66897d639835a307634256dc1c415bdcca10bbc9
   languageName: node
   linkType: hard
 
@@ -16511,7 +16474,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:17.0.2, react-dom@npm:^17.0.1, react-dom@npm:^17.0.2":
+"react-dom@npm:^17.0.1, react-dom@npm:^17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -16610,7 +16573,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:17.0.2, react@npm:^17.0.1, react@npm:^17.0.2":
+"react@npm:^17.0.1, react@npm:^17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:

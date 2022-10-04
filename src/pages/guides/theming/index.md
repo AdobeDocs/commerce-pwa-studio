@@ -1,51 +1,111 @@
 ---
-title: Theming for PWA Studio apps
+title: Tailwind Theming
 ---
 
-# Theming PWA Studio apps
+# Tailwind Theming for PWA Studio apps
 
-When creating a new PWA Studio app with [@magento/create-pwa](https://www.npmjs.com/package/@magento/create-pwa), theming is configured out of the box to use Tailwind CSS. The CLI installs all the supporting Tailwind CSS packages and configuration files described below. For a PWA Studio app that was not scaffolded with the CLI, this topic describes how to configure your app for theming with Tailwind CSS.
+[Tailwind CSS](https://tailwindcss.com/) is a popular CSS framework for rapidly building custom user interfaces, focused on flexibility and designed for quick, custom branding. This topic describes how you can install, configure, and use Tailwind with Venia to theme your own PWA Studio app.
 
-## Step 1: Install packages
+## Tailwind and Venia themes
 
-Install the following packages using `npm install` or `yarn add` as follows:
+Both the Tailwind and Venia themes are considered base themes — themes designed with only minimal brand-styling. We use base themes so you can quickly customize your apps with different colors, typography, images, and other brand attributes. The included Venia base theme provides a layer on top of Tailwind's base theme. The Venia theme uses all the best practices required for overriding and extending base themes.
 
-```bash
-yarn add -D tailwindcss@~2.2.19 postcss@~8.3.11 postcss-loader@~4.3.0 autoprefixer@latest
-```
+We designed the Venia theme to be both a starting point and an example for creating your own custom themes. To learn more about Tailwind themes, see the [Tailwind theme documentation](https://tailwindcss.com/docs/theme).
 
-- **tailwindcss** — v2.2.x patch release of the Tailwind CSS framework ([npm package](https://www.npmjs.com/package/tailwindcss/v/2.2.19))
-- **postcss** — v8.3.x patch release for installing Tailwind as a PostCSS plugin ([npm package](https://www.npmjs.com/package/postcss/v/8.3.11))
-- **postcss-loader** — v4.3.x patch release for loading PostCSS as a Webpack loader ([npm package](https://www.npmjs.com/package/postcss-loader/v/4.3.0))
-- **autoprefixer** — Latest release for adding vendor prefixes to CSS rules ([npm package](https://www.npmjs.com/package/autoprefixer))
+## Theme packages
 
-After installation, your `package.json` file should contain the following entries:
+PWA Studio apps configured for Tailwind theming should have the following packages installed:
 
 ```json
-// package.json
-
 "devDependencies": {
+  "@magento/pwa-theme-venia": "^1.3.0",
   "autoprefixer": "~10.3.7",
   "postcss": "~8.3.11",
   "postcss-loader": "~4.3.0",
   "tailwindcss": "~2.2.19",
 ```
 
-## Step 2: Add configuration files
+## Theme files
 
-As mentioned above, if you created your app with a recent version of the `create-pwa` CLI, these files are added and configured for you. Otherwise, you must add and configure the following files manually:
+PWA Studio apps configured for Tailwind theming should define the following files:
 
-- **src/index.css** — For Tailwind's global base CSS
-- **tailwind.config.js** — For Tailwind's configuration, overrides, and extensions
-- **postcss.config.js** — For adding the `tailwindcss` package as a postCSS plugin
+```tree
+tailwind-themed-app
+├─ postcss.config.js
+├─ src
+│  ├─ index.css
+├─ tailwind.config.js
+```
 
-The following sections describe these files in detail.
+## Install Tailwind theming
 
-### Add index.css
+There are two options for installing the Tailwind and Venia base themes into your PWA Studio apps:
 
-The `index.css` file uses the `@tailwind` directive to include all of Tailwind's base, component, and utility style [layers](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer). To get started, add the following lines to the `index.css` file.
+1. **Use the create-pwa CLI** — For new PWA Studio apps, [using the create-pwa CLI](../../tutorials/setup-storefront/index.md#run-the-scaffolding-tool) is the fastest way to install and configure Tailwind theming. The CLI adds all the theme packages and files you need so you can start customizing the new app with your own theme extensions and overrides.
+1. **Install and configure manually** — For upgrading existing PWA Studio apps, you need to manually install and configure the Tailwind and Venia theme packages and files.
 
-The `create-pwa` CLI adds and configures this file as follows:
+## Install theme packages
+
+Install the following packages using `yarn add` or `npm install` as follows:
+
+<CodeBlock slots="heading, code" repeat="2" languages="bash,bash" />
+
+#### yarn
+
+```bash
+yarn add -D tailwindcss@~2.2.19 postcss@~8.3.11 postcss-loader@~4.3.0 autoprefixer@latest
+```
+
+#### npm
+
+```bash
+npm install -D tailwindcss@~2.2.19 postcss@~8.3.11 postcss-loader@~4.3.0 autoprefixer@latest
+```
+
+- **@magento/pwa-theme-venia** — The Venia base theme ([theme source file](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-theme-venia/tailwind.preset.js))
+- **tailwindcss** — v2.2.x patch release of the Tailwind CSS framework ([npm package](https://www.npmjs.com/package/tailwindcss/v/2.2.19))
+- **postcss** — v8.3.x patch release for installing Tailwind as a PostCSS plugin ([npm package](https://www.npmjs.com/package/postcss/v/8.3.11))
+- **postcss-loader** — v4.3.x patch release for loading PostCSS as a Webpack loader ([npm package](https://www.npmjs.com/package/postcss-loader/v/4.3.0))
+- **autoprefixer** — Latest release for adding vendor prefixes to CSS rules ([npm package](https://www.npmjs.com/package/autoprefixer))
+
+After installation, your `package.json` file should contain the following entries (patch versions may vary):
+
+```json
+"devDependencies": {
+  "@magento/pwa-theme-venia": "^1.3.0",
+  "autoprefixer": "~10.3.7",
+  "postcss": "~8.3.11",
+  "postcss-loader": "~4.3.0",
+  "tailwindcss": "~2.2.19",
+```
+
+## Add theme files
+
+Add the following empty files to your project:
+
+- **src/index.css** — In the `src` directory, add a file called `index.css` for Tailwind's global base styles.
+- **tailwind.config.js** — In your project root directory, add a file called `tailwind.config.js` for Tailwind's configuration, overrides, and extensions.
+- **postcss.config.js** — In your project root directory, add a file called `postcss.config.js` for including the `tailwindcss` package as a postCSS plugin.
+
+When you're done, your project directory should look like this:
+
+```text
+project-root/
+├── postcss.config.js
+├── src/
+│   ├── index.css
+├── tailwind.config.js
+```
+
+## Configure theme files
+
+For each of the empty theme files you added, copy and paste the following code snippets to get started:
+
+### index.css
+
+The `index.css` file uses the `@tailwind` directive to include all of Tailwind's base, component, and utility style [layers](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer).
+
+Add the following lines to the `index.css` file:
 
 ```sass
 // index.css
@@ -63,11 +123,11 @@ These directives load the corresponding Tailwind [layer files](https://tailwindc
 
 The `base.css` layer contains the most basic styles for resetting or normalizing styles across browsers. The `components.css` layer is for component-level classes, like `.button` or `.form`. By default, Tailwind provides a single `.container` class within multiple `@media` queries. This file provides a good starter template for adding your own component-level classes. Finally, the `utilities.css` layer contains all the Tailwind utility classes used directly within elements.
 
-### Update index.js
+### index.js
 
-To use the `index.css` file, you need to `import` it into the `src/index.js` file.
+To use the `index.css` file, you need to `import` it into the `src/index.js` file. This file is the entry point for the Webpack build process, so it's the best place to add the `index.css` file.
 
-The `create-pwa` CLI adds this import as follows:
+Add the following line to the `src/index.js` file:
 
 ```js
 // src/index.js
@@ -77,11 +137,11 @@ import './index.css';
 
 Importing the `index.css` ensures that your app uses the base set of Tailwind styles and utility classes. After that, you can add your own custom themes and styles to extend or override those base styles using the `tailwind.config.js` described next.
 
-### Add tailwind.config.js
+### tailwind.config.js
 
 The `tailwind.config.js` file is where you configure Tailwind and, most importantly, override and extend its base styles. Instead of adding this file manually to the root of your project, you can run the following command to generate a minimal default configuration file:
 
-```terminal
+```bash
 npx tailwindcss init
 ```
 
@@ -100,8 +160,6 @@ module.exports = {
 ```
 
 However, to configure your PWA Studio app for theming, you will need to add a lot more. Start by copying the following code block into your `tailwind.config.js` file.
-
-The `create-pwa` CLI adds and configures this file as follows:
 
 ```js
 // tailwind.config.js (PWA Studio)
@@ -169,11 +227,9 @@ Descriptions of each configuration option are provided here:
 
 When looking at code samples in the Tailwind docs, keep in mind that the base project configures Tailwind to use `_` as the [separator](https://v2.tailwindcss.com/docs/configuration#separator) instead of the default colon (`:`).
 
-### Add postcss.config.js
+### postcss.config.js
 
-Create the `postcss.config.js` file  to your project's root and configure it to add `tailwindcss` and the `autoprefixer` as PostCSS plugins for your app. Your `postcss.config.js` file should look like this:
-
-The `create-pwa` CLI adds and configures this file as follows:
+Create the `postcss.config.js` file in your project's root and configure it to add `tailwindcss` and the `autoprefixer` as PostCSS plugins for your app. Your `postcss.config.js` file should look like this:
 
 ```js
 // postcss.config.js
@@ -186,9 +242,11 @@ module.exports = {
 };
 ```
 
-## Step 3: Test your configuration
+## Test theme configuration
 
-To test your configuration with the `[venia]` theme set as a `preset` in your config file, add the following `theme` style override and rebuild your app.
+For a quick test of your Venia configuration, add the following `theme` override directly to `tailwind.config.js`, then remove it after you verify it works. If the text color in your Venia-themed app turns red, your configuration is working correctly.
+
+```js:
 
 ```js
 // tailwind.config.js
@@ -202,9 +260,9 @@ theme: {
 }
 ```
 
-If the text color in your Venia-themed app turns red, your configuration is working correctly. To test your own theme, refer to [Customizing your theme](https://tailwindcss.com/docs/adding-custom-styles#customizing-your-theme) from the Tailwind documentation.
+To test your own theme, refer to [Customizing your theme](https://tailwindcss.com/docs/adding-custom-styles#customizing-your-theme) from the Tailwind documentation.
 
-## Step 4: Customize the base styles
+## Customize base styles
 
 You have two options for customizing the Tailwind and Venia base styles:
 
@@ -213,7 +271,7 @@ You have two options for customizing the Tailwind and Venia base styles:
 
 ### Option 1: Update tailwind.config.js theme directly
 
-If you followed Step 3 above, you have already done this as a test. Another example: change the default font family by adding new styles to the `tailwind.config.js` `theme` property:
+As you did to test the theme configuration, you can override or extend the Tailwind and Venia themes directly within the `theme` property of the `tailwind.config.js.` file as shown here:
 
 ```js
 // tailwind.config.js
@@ -223,11 +281,18 @@ theme: {
     fontFamily: {
       sans: ['"Open Sans"', 'sans-serif']
     }
+    backgroundColor: {
+      subtitle: '#F5F5F5',
+    }
+    borderRadius: {
+      radius4: '50%',
+    }
+    ...
   }
 }
 ```
 
-You should avoid this option for all but the smallest changes. For example, if you plan to use the Venia base theme with only a few custom colors and fonts, this option may be fine for your needs. However, if you are going to make several style changes or plan to rotate through different themes (seasonal or otherwise), use option 2.
+However, you should avoid this option for all but the smallest real-world changes. For example, if you plan to use the Venia base theme with only a few custom colors and fonts, this option may be fine for your needs. However, if you are going to make several style changes or plan to rotate through different themes (seasonal or otherwise), use option 2.
 
 ### Option 2: Create your own theme presets
 
@@ -269,7 +334,7 @@ We recommended this option for all but the smallest changes. The steps for creat
 
 ### Override or extend Tailwind base styles
 
-To override or extend the Tailwind base styles for version `2.2.19`, and any other version, use this site as a [reference to the Tailwind base styles](https://unpkg.com/browse/tailwindcss@2.2.19/stubs/defaultConfig.stub.js).
+To override or extend the Tailwind base styles for a specific Tailwind version, use this site as a [reference to the Tailwind base styles](https://unpkg.com/browse/tailwindcss@2.2.19/stubs/defaultConfig.stub.js).
 
 For example, to **override** Tailwind's default `colors` and `fontFamily` while **extending** its base `flexGrow` and `zIndex`, you could add the following properties to your theme preset:
 
@@ -351,7 +416,7 @@ module.exports = {
 }
 ```
 
-## Useful extension examples
+## Useful examples
 
 The following extension examples show some additional useful customizations you can make to Tailwind and Venia base themes.
 
