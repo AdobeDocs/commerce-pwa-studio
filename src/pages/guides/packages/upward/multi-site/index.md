@@ -12,7 +12,7 @@ When you use the PWA scaffolding tool to create a PWA Studio project, one of the
 
 ## Configuring the UPWARD server
 
-The first step is to configure the UPWARD server to access the different PWA sites you want to deploy. And the CLI provided by the UPWARD module is how you do it. 
+The first step is to configure the UPWARD server to access the different PWA sites you want to deploy. And the CLI provided by the UPWARD module is how you do it.
 
 But before we get to the specifics, here's the overview of what you are actually doing. When you execute the CLI commands, you're actually adding `pwa_paths` to the `env.php` file. The commands specify the paths to the `upward.yml` configuration for each PWA site you want to deploy. The following  example shows what an `env.php` configuration file may look like AFTER using the CLI to add two different PWA sites to the `default` and `website` configurations:
 
@@ -46,6 +46,7 @@ bin/magento pwa:upward:set --path /var/www/html/pwa/dist/upward.yml --scopeType 
 ```
 
 To find the paths of your PWA sites (by scope) as shown above for the store scope, use one of the following commands:
+
 -  `bin/magento store:list` (for store scope)
 -  `bin/magento store:website:list` (for store and website scopes)
 
@@ -77,4 +78,3 @@ bin/magento pwa:upward:set --path ./dist-german/upward.yml --scopeType website -
 ```
 
 With this configuration, a single UPWARD server can process requests for many different website bundles.
-

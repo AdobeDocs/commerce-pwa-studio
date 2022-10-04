@@ -97,7 +97,7 @@ The [Venia example storefront][] uses the [Apollo client][] to fetch data from a
 Google's [Workbox][] library provides modules that make it easy to work with [service workers][].
 It is useful for boosting performance by controlling cache behavior and enables offline mode, which is a requirement for any Progressive Web Application.
 
-## PWA Studio UI Kit for Adobe XD 
+## PWA Studio UI Kit for Adobe XD
 
 Adobe XD makes handoff between designers and engineers more efficient through easy-to-use collaboration tools. The [PWA Studio UI Kit](https://www.adobe.io/commerce-xd-kits/) contains a collection of templates and components compatible with Adobe Commerce.  
 
