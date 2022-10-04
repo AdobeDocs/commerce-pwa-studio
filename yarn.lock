@@ -33,7 +33,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@adobe/gatsby-theme-aio@npm:^4.6.2":
+"@adobe/gatsby-theme-aio@npm:4.6.2":
   version: 4.6.2
   resolution: "@adobe/gatsby-theme-aio@npm:4.6.2"
   dependencies:
@@ -6647,7 +6647,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "commerce-pwa-studio@workspace:."
   dependencies:
-    "@adobe/gatsby-theme-aio": ^4.6.2
+    "@adobe/gatsby-theme-aio": 4.6.2
     gatsby: 4.22.0
     prettier: 2.6.2
     react: ^17.0.2
@@ -6655,6 +6655,7 @@ __metadata:
     remark-cli: ^10.0.1
     remark-lint-list-item-indent: ^3.1.1
     remark-preset-lint-recommended: ^6.1.2
+    remark-validate-links: ^11.0.2
     tty-browserify: ^0.0.1
   languageName: unknown
   linkType: soft
@@ -10342,7 +10343,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"github-slugger@npm:^1.1.1, github-slugger@npm:^1.2.1, github-slugger@npm:^1.3.0":
+"github-slugger@npm:^1.0.0, github-slugger@npm:^1.1.1, github-slugger@npm:^1.2.1, github-slugger@npm:^1.3.0":
   version: 1.4.0
   resolution: "github-slugger@npm:1.4.0"
   checksum: 4f52e7a21f5c6a4c5328f01fe4fe13ae8881fea78bfe31f9e72c4038f97e3e70d52fb85aa7633a52c501dc2486874474d9abd22aa61cbe9b113099a495551c6b
@@ -10948,6 +10949,15 @@ __metadata:
   dependencies:
     lru-cache: ^6.0.0
   checksum: 5af7a69581acb84206a7b8e009f4680c36396814e92c8a83973dfb3b87e44e44d1f7b8eaf3e4a953686482770ecb78406a4ce4666bfdfe447762434127871d8d
+  languageName: node
+  linkType: hard
+
+"hosted-git-info@npm:^4.0.0":
+  version: 4.1.0
+  resolution: "hosted-git-info@npm:4.1.0"
+  dependencies:
+    lru-cache: ^6.0.0
+  checksum: c3f87b3c2f7eb8c2748c8f49c0c2517c9a95f35d26f4bf54b2a8cba05d2e668f3753548b6ea366b18ec8dadb4e12066e19fa382a01496b0ffa0497eb23cbe461
   languageName: node
   linkType: hard
 
@@ -12411,6 +12421,15 @@ __metadata:
   version: 1.3.0
   resolution: "left-pad@npm:1.3.0"
   checksum: 13fa96e17b70a54836490de22d4bab706e2ed508338bbabecfac72ecce445a74139c5b009a8112252cab8fc4ab7ac4ebd870e5b35bd236b443b12be96f8745ac
+  languageName: node
+  linkType: hard
+
+"levenshtein-edit-distance@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "levenshtein-edit-distance@npm:1.0.0"
+  bin:
+    levenshtein-edit-distance: cli.js
+  checksum: d628c4011a6724e4d6aea1af1c5d9ec8b3ba7f95eec0deb2e40ee77269e12b0433a7027f66e5375a17b803d36f86601c2692dfa4b2e6030aabc14969a2941de6
   languageName: node
   linkType: hard
 
@@ -16169,6 +16188,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"propose@npm:0.0.5":
+  version: 0.0.5
+  resolution: "propose@npm:0.0.5"
+  dependencies:
+    levenshtein-edit-distance: ^1.0.0
+  checksum: ad472212772dd0ef60cafa859f140176243bd318c989f76577d0bb3a18cb425c1db2aab30986e325946fdc130cb11fe3d34274220d29b3535de61427b0dd922b
+  languageName: node
+  linkType: hard
+
 "protocols@npm:^2.0.0, protocols@npm:^2.0.1":
   version: 2.0.1
   resolution: "protocols@npm:2.0.1"
@@ -17276,6 +17304,25 @@ __metadata:
   dependencies:
     mdast-util-to-markdown: ^0.6.0
   checksum: 93f46076f4d96ab1946d13e7dd43e83088480ac6b1dfe05a65e2c2f0e33d1f52a50175199b464a81803fc0f5b3bf182037665f89720b30515eba37bec4d63d56
+  languageName: node
+  linkType: hard
+
+"remark-validate-links@npm:^11.0.2":
+  version: 11.0.2
+  resolution: "remark-validate-links@npm:11.0.2"
+  dependencies:
+    "@types/mdast": ^3.0.0
+    github-slugger: ^1.0.0
+    hosted-git-info: ^4.0.0
+    mdast-util-to-string: ^3.0.0
+    propose: 0.0.5
+    to-vfile: ^7.0.0
+    trough: ^2.0.0
+    unified: ^10.0.0
+    unified-engine: ^9.0.0
+    unist-util-visit: ^4.0.0
+    vfile: ^5.0.0
+  checksum: 67da3064b0a83349de14518885c86cae7d9b1311667b2db0a625314f74d4cabd782df9d91c291807f661879dc8fd55156be55cddb1da288551fb33af48193a40
   languageName: node
   linkType: hard
 
