@@ -12,33 +12,7 @@ Both the Tailwind and Venia themes are considered base themes — themes designe
 
 We designed the Venia theme to be both a starting point and an example for creating your own custom themes. To learn more about Tailwind themes, see the [Tailwind theme documentation](https://tailwindcss.com/docs/theme).
 
-## Theme packages
-
-PWA Studio apps configured for Tailwind theming should have the following packages installed:
-
-```json
-"devDependencies": {
-  "@magento/pwa-theme-venia": "^1.3.0",
-  "autoprefixer": "~10.3.7",
-  "postcss": "~8.3.11",
-  "postcss-loader": "~4.3.0",
-  "tailwindcss": "~2.2.19"
-}
-```
-
-## Theme files
-
-PWA Studio apps configured for Tailwind theming should define the following files:
-
-```tree
-tailwind-themed-app
-├─ postcss.config.js
-├─ src
-│  ├─ index.css
-├─ tailwind.config.js
-```
-
-## Install Tailwind theming
+## Install Tailwind and Venia
 
 There are two options for installing the Tailwind and Venia base themes into your PWA Studio apps:
 
@@ -77,16 +51,17 @@ After installation, your `package.json` file should contain the following entrie
   "autoprefixer": "~10.3.7",
   "postcss": "~8.3.11",
   "postcss-loader": "~4.3.0",
-  "tailwindcss": "~2.2.19",
+  "tailwindcss": "~2.2.19"
+  }
 ```
 
-## Add theme files
+## Create theme files
 
-Add the following empty files to your project:
+Create the following empty files in your project:
 
-- **src/index.css** — In the `src` directory, add a file called `index.css` for Tailwind's global base styles.
-- **tailwind.config.js** — In your project root directory, add a file called `tailwind.config.js` for Tailwind's configuration, overrides, and extensions.
-- **postcss.config.js** — In your project root directory, add a file called `postcss.config.js` for including the `tailwindcss` package as a postCSS plugin.
+- **src/index.css** — In the `src` directory, create a blank file called `index.css` for Tailwind's global base styles.
+- **tailwind.config.js** — In your project root directory, create a blank file called `tailwind.config.js` for Tailwind's configuration, overrides, and extensions.
+- **postcss.config.js** — In your project root directory, create a blank file called `postcss.config.js` for including the `tailwindcss` package as a postCSS plugin.
 
 When you're done, your project directory should look like this:
 
@@ -97,10 +72,6 @@ project-root/
 │   ├── index.css
 ├── tailwind.config.js
 ```
-
-## Configure theme files
-
-For each of the empty theme files you added, copy and paste the following code snippets to get started:
 
 ### index.css
 
@@ -270,7 +241,7 @@ You have two options for customizing the Tailwind and Venia base styles:
 1. Update the `tailwind.config.js` file directly.
 1. Import your own theme file as a `preset` (recommended).
 
-### Option 1: Update tailwind.config.js theme directly
+### Update tailwind.config.js directly
 
 As you did to test the theme configuration, you can override or extend the Tailwind and Venia themes directly within the `theme` property of the `tailwind.config.js.` file as shown here:
 
@@ -295,7 +266,7 @@ theme: {
 
 However, you should avoid this option for all but the smallest real-world changes. For example, if you plan to use the Venia base theme with only a few custom colors and fonts, this option may be fine for your needs. However, if you are going to make several style changes or plan to rotate through different themes (seasonal or otherwise), use option 2.
 
-### Option 2: Create your own theme presets
+### Create new theme file
 
 We recommended this option for all but the smallest changes. The steps for creating your own [theme presets](https://tailwindcss.com/docs/presets) and adding them to the `tailwind.config.js` file to customize the existing base themes are as follows:
 
@@ -333,7 +304,7 @@ We recommended this option for all but the smallest changes. The steps for creat
 
 1. Rebuild your app.
 
-### Override or extend Tailwind base styles
+### Customize Tailwind base styles
 
 To override or extend the Tailwind base styles for a specific Tailwind version, use this site as a [reference to the Tailwind base styles](https://unpkg.com/browse/tailwindcss@2.2.19/stubs/defaultConfig.stub.js).
 
@@ -374,7 +345,7 @@ module.exports = {
   },
 ```
 
-### Override or extend Venia base styles
+### Customize Venia base styles
 
 To override or extend the Venia base styles included in `@magento/pwa-theme-venia`, use [Venia's tailwind.preset.js file](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-theme-venia/tailwind.preset.js#L21-L195) as a reference to its base styles.
 
@@ -443,7 +414,7 @@ module.exports = {
 
 This creates a new height utility `height-customHeight` which you can use in your project.
 
-### Replace existing breakpoint values
+### Replace existing breakpoints
 
 You can replace existing breakpoint values by specifying entries for `theme.extend.screens`.
 
