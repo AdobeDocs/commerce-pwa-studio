@@ -264,7 +264,7 @@ theme: {
 }
 ```
 
-However, you should avoid this option for all but the smallest real-world changes. For example, if you plan to use the Venia base theme with only a few custom colors and fonts, this option may be fine for your needs. However, if you are going to make several style changes or plan to rotate through different themes (seasonal or otherwise), use option 2.
+However, you should avoid this option for all but the smallest real-world changes. For example, if you plan to use the Venia base theme with only a few custom colors and fonts, this option may be fine for your needs. However, if you are going to make several style changes or plan to rotate through different themes (seasonal or otherwise), create a new theme file instead.
 
 ### Create new theme file
 
@@ -300,7 +300,7 @@ We recommended this option for all but the smallest changes. The steps for creat
   }
   ```
 
-  This example adds the `myThemePreset` after the `venia` preset, meaning that myThemePreset will be merged and override or extend the base styles from Venia and Tailwind. For more information, see [how configurations are merged](https://tailwindcss.com/docs/presets#merging-logic-in-depth) from the Tailwind documentation.
+  This example adds `myThemePreset` after the `venia` preset, meaning that `myThemePreset` will be merged and override or extend the base styles from Venia and Tailwind. For more information, see [how configurations are merged](https://tailwindcss.com/docs/presets#merging-logic-in-depth) from the Tailwind documentation.
 
 1. Rebuild your app.
 
@@ -412,7 +412,7 @@ module.exports = {
 }
 ```
 
-This creates a new height utility `height-customHeight` which you can use in your project.
+This creates a new height utility `height-customHeight`, which you can use in your project.
 
 ### Replace existing breakpoints
 
