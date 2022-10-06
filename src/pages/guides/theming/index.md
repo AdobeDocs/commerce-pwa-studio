@@ -14,7 +14,7 @@ We designed the Venia theme to be both a starting point and an example for creat
 
 ## Install Tailwind and Venia
 
-There are two options for installing the Tailwind and Venia base themes into your PWA Studio apps:
+There are **two options** for installing the Tailwind and Venia base themes into your PWA Studio apps:
 
 1. **Use the create-pwa CLI** — For new PWA Studio apps, [using the create-pwa CLI](../../tutorials/setup-storefront/index.md#run-the-scaffolding-tool) is the fastest way to install and configure Tailwind theming. The CLI adds all the theme packages and files you need so you can start customizing the new app with your own theme extensions and overrides.
 1. **Install and configure manually** — For upgrading existing PWA Studio apps, you need to manually install and configure the Tailwind and Venia theme packages and files.
@@ -28,13 +28,13 @@ Install the following packages using `yarn add` or `npm install` as follows:
 #### yarn
 
 ```bash
-yarn add -D tailwindcss@~2.2.19 postcss@~8.3.11 postcss-loader@~4.3.0 autoprefixer@latest
+yarn add -D @magento/pwa-theme-venia@^1.3.0 tailwindcss@~2.2.19 postcss@~8.3.11 postcss-loader@~4.3.0 autoprefixer@latest
 ```
 
 #### npm
 
 ```bash
-npm install -D tailwindcss@~2.2.19 postcss@~8.3.11 postcss-loader@~4.3.0 autoprefixer@latest
+npm install -D @magento/pwa-theme-venia@^1.3.0 tailwindcss@~2.2.19 postcss@~8.3.11 postcss-loader@~4.3.0 autoprefixer@latest
 ```
 
 - **@magento/pwa-theme-venia** — The Venia base theme ([theme source file](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-theme-venia/tailwind.preset.js))
@@ -76,7 +76,6 @@ project-root/
 ### index.css
 
 The `index.css` file uses the `@tailwind` directive to include all of Tailwind's base, component, and utility style [layers](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer).
-
 Add the following lines to the `index.css` file:
 
 ```sass
@@ -89,16 +88,15 @@ Add the following lines to the `index.css` file:
 
 These directives load the corresponding Tailwind [layer files](https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer) from the `tailwindcss` package installed in `node_modules`, as shown here:
 
-- `tailwindcss/dist/base.css` (normalizing styles, 500+ lines of CSS)
-- `tailwindcss/dist/components.css` (component classes, 200+ lines of CSS)
-- `tailwindcss/dist/utilities.css` (utility classes, 175K+ lines of CSS)
+- **tailwindcss/dist/base.css** (normalizing styles, 500+ lines of CSS)
+- **tailwindcss/dist/components.css** (component classes, 200+ lines of CSS)
+- **tailwindcss/dist/utilities.css** (utility classes, 175K+ lines of CSS)
 
 The `base.css` layer contains the most basic styles for resetting or normalizing styles across browsers. The `components.css` layer is for component-level classes, like `.button` or `.form`. By default, Tailwind provides a single `.container` class within multiple `@media` queries. This file provides a good starter template for adding your own component-level classes. Finally, the `utilities.css` layer contains all the Tailwind utility classes used directly within elements.
 
 ### index.js
 
 To use the `index.css` file, you need to `import` it into the `src/index.js` file. This file is the entry point for the Webpack build process, so it's the best place to add the `index.css` file.
-
 Add the following line to the `src/index.js` file:
 
 ```js
@@ -192,12 +190,12 @@ Descriptions of each configuration option are provided here:
 - **purge** - Configures the [PurgeCSS](https://purgecss.com/) tool to remove unused CSS from the `index.css` file. This optimizes the production builds by reducing the size of the CSS bundle. See [Writing purgeable HTML](https://v2.tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html) and [Removing unused CSS](https://v2.tailwindcss.com/docs/optimizing-for-production#removing-unused-css) from the Tailwind documentation.
 - **plugins** - Configures Tailwind CSS plugins. See [Plugins](https://v2.tailwindcss.com/docs/plugins) from the Tailwind documentation.
 - **separator** - Defines the character that separates the variant prefixes from the utility names. Tailwind uses the colon `:` by default, but PWA Studio uses the underscore (`_`) because CSS Modules doesn't support the colon in class names. See [Separator](https://v2.tailwindcss.com/docs/configuration#separator) from the Tailwind documentation.
+  
+  **REMEMBER**: When looking at code samples in the Tailwind docs, keep in mind that the base project configures Tailwind to use `_` as the [separator](https://v2.tailwindcss.com/docs/configuration#separator) instead of the default colon (`:`).
 - **theme** - Defines your custom values that override or extend the Tailwind CSS framework. See [Theme Configuration](https://v2.tailwindcss.com/docs/theme) from the Tailwind documentation.
 - **matcher** - Matches CSS Modules classnames that use the `composes` function. PurgeCSS uses this value to remove unused CSS from the `index.css` file. See [Writing purgeable HTML](https://v2.tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html) from the Tailwind documentation.
 
-<InlineAlert slots="text" />
 
-When looking at code samples in the Tailwind docs, keep in mind that the base project configures Tailwind to use `_` as the [separator](https://v2.tailwindcss.com/docs/configuration#separator) instead of the default colon (`:`).
 
 ### postcss.config.js
 
@@ -254,12 +252,11 @@ theme: {
       sans: ['"Open Sans"', 'sans-serif']
     }
     backgroundColor: {
-      subtitle: '#F5F5F5',
+      subtitle: '#F5F5F5'
     }
     borderRadius: {
-      radius4: '50%',
+      radius4: '50%'
     }
-    ...
   }
 }
 ```
