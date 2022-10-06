@@ -237,7 +237,7 @@ To test your own theme, refer to [Customizing your theme](https://tailwindcss.co
 You have two options for customizing the Tailwind and Venia base styles:
 
 1. Update the `tailwind.config.js` file directly.
-1. Import your own theme file as a `preset` (recommended).
+1. Create new theme as a `preset` (recommended).
 
 ### Update tailwind.config.js directly
 
@@ -263,7 +263,7 @@ theme: {
 
 However, you should avoid this option for all but the smallest real-world changes. For example, if you plan to use the Venia base theme with only a few custom colors and fonts, this option may be fine for your needs. However, if you are going to make several style changes or plan to rotate through different themes (seasonal or otherwise), create a new theme file instead.
 
-### Create new theme file
+### Create new theme
 
 We recommended this option for all but the smallest changes. The steps for creating your own [theme presets](https://tailwindcss.com/docs/presets) and adding them to the `tailwind.config.js` file to customize the existing base themes are as follows:
 
