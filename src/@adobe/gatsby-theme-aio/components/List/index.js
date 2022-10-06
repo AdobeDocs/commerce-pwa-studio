@@ -40,9 +40,8 @@ const listBase = css`
 
 const numbers = css`
   li {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    margin-right: 0;
+    margin: 1rem 0 1rem 0.25rem;
+
     &::before {
       content: counter(list-item);
       width: 1.4rem;

@@ -22,7 +22,7 @@ export const InlineCode = ({ children, className, ...props }) => (
     className={classNames(className, 'spectrum-Code')}
     css={css`
       font-family: Courier, monospace;
-      font-size: 0.96rem;
+      font-size: 95%;
       background-color: var(--spectrum-global-color-gray-100);
       padding: 0;
       margin: 0;
