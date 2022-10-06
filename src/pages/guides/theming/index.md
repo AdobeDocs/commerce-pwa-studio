@@ -16,8 +16,9 @@ We designed the Venia theme to be both a starting point and an example for creat
 
 There are **two options** for installing the Tailwind and Venia base themes into your PWA Studio apps:
 
-1. **Use the create-pwa CLI** — For new PWA Studio apps, [using the create-pwa CLI](../../tutorials/setup-storefront/index.md#run-the-scaffolding-tool) is the fastest way to install and configure Tailwind theming. The CLI adds all the theme packages and files you need so you can start customizing the new app with your own theme extensions and overrides.
-1. **Install and configure manually** — For upgrading existing PWA Studio apps, you need to manually install and configure the Tailwind and Venia theme packages and files.
+**OPTION 1. Use the create-pwa CLI** — For new PWA Studio apps, [using the create-pwa CLI](../../tutorials/setup-storefront/index.md#run-the-scaffolding-tool) is the fastest way to install and configure Tailwind theming. The CLI adds all the theme packages and files you need so you can start customizing the new app with your own theme extensions and overrides.
+
+**OPTION 2. Install and configure manually** — For upgrading existing PWA Studio apps, you need to manually install and configure the Tailwind and Venia theme packages and files.
 
 ## Install theme packages
 
@@ -102,7 +103,7 @@ Add the following line to the `src/index.js` file:
 ```js
 // src/index.js
 
-import './index.css';
+import "./index.css";
 ```
 
 Importing the `index.css` ensures that your app uses the base set of Tailwind styles and utility classes. After that, you can add your own custom themes and styles to extend or override those base styles using the `tailwind.config.js` described next.
@@ -126,7 +127,7 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};
 ```
 
 However, to configure your PWA Studio app for theming, you will need to add a lot more. Start by copying the following code block into your `tailwind.config.js` file.
@@ -134,40 +135,39 @@ However, to configure your PWA Studio app for theming, you will need to add a lo
 ```js
 // tailwind.config.js (PWA Studio)
 
-const venia = require('@magento/pwa-theme-venia');
+const venia = require("@magento/pwa-theme-venia");
 
 const config = {
-    mode: 'jit',
-    // Include your custom theme here.
-    presets: [venia],
-    // Configure how Tailwind statically analyzes your code here.
-    // Note that the Tailwind's `jit` mode doesn't actually use PurgeCSS.
-    purge: {
-        // Include paths to every file that may refer to Tailwind classnames.
-        // Classnames not found in these files will be excluded at build time.
-        content: [
-            './node_modules/@magento/venia-ui/lib/**/*.module.css',
-            '../venia-ui/lib/**/*.module.css',
-            './src/**/*.module.css',
-            './template.html'
-        ],
-        // This extracts Tailwind classnames from source files.
-        // NOTE: Our default matcher only matches targets of the CSS Modules'
-        // `composes` function, not classnames included directly in HTML or JS!
-        extractors: [
-            {
-                extensions: ['css'],
-                extractor: content => content.match(matcher) || []
-            }
-        ]
-    },
-    // Set the character Tailwind uses when prefixing classnames with variants.
-    // CSS Modules doesn't support Tailwind's default separator `:`, so we use `_`.
-    separator: '_',
-    theme: {
-      extend: {
-      }
-    }
+  mode: "jit",
+  // Include your custom theme here.
+  presets: [venia],
+  // Configure how Tailwind statically analyzes your code here.
+  // Note that the Tailwind's `jit` mode doesn't actually use PurgeCSS.
+  purge: {
+    // Include paths to every file that may refer to Tailwind classnames.
+    // Classnames not found in these files will be excluded at build time.
+    content: [
+      "./node_modules/@magento/venia-ui/lib/**/*.module.css",
+      "../venia-ui/lib/**/*.module.css",
+      "./src/**/*.module.css",
+      "./template.html",
+    ],
+    // This extracts Tailwind classnames from source files.
+    // NOTE: Our default matcher only matches targets of the CSS Modules'
+    // `composes` function, not classnames included directly in HTML or JS!
+    extractors: [
+      {
+        extensions: ["css"],
+        extractor: (content) => content.match(matcher) || [],
+      },
+    ],
+  },
+  // Set the character Tailwind uses when prefixing classnames with variants.
+  // CSS Modules doesn't support Tailwind's default separator `:`, so we use `_`.
+  separator: "_",
+  theme: {
+    extend: {},
+  },
 };
 module.exports = config;
 
@@ -186,16 +186,15 @@ const matcher = /(?<=composes:.*)(\b\S+\b)(?=.*from global;)/g;
 Descriptions of each configuration option are provided here:
 
 - **mode** - The `mode` property is set to `jit` by default to provide faster build times. To disable the JIT mode, set the `mode` property to `false`. See the [JIT mode](https://v2.tailwindcss.com/docs/just-in-time-mode) from the Tailwind documentation.
-- **presets** - Adds additional theme configurations on top of Tailwind's base styles. The  `venia` theme is added by default. You have the option to keep the `venia` theme and override or extend it with your own theme, or replace it completely. See [Presets](https://v2.tailwindcss.com/docs/presets) from the Tailwind documentation.
+- **presets** - Adds additional theme configurations on top of Tailwind's base styles. The `venia` theme is added by default. You have the option to keep the `venia` theme and override or extend it with your own theme, or replace it completely. See [Presets](https://v2.tailwindcss.com/docs/presets) from the Tailwind documentation.
 - **purge** - Configures the [PurgeCSS](https://purgecss.com/) tool to remove unused CSS from the `index.css` file. This optimizes the production builds by reducing the size of the CSS bundle. See [Writing purgeable HTML](https://v2.tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html) and [Removing unused CSS](https://v2.tailwindcss.com/docs/optimizing-for-production#removing-unused-css) from the Tailwind documentation.
 - **plugins** - Configures Tailwind CSS plugins. See [Plugins](https://v2.tailwindcss.com/docs/plugins) from the Tailwind documentation.
 - **separator** - Defines the character that separates the variant prefixes from the utility names. Tailwind uses the colon `:` by default, but PWA Studio uses the underscore (`_`) because CSS Modules doesn't support the colon in class names. See [Separator](https://v2.tailwindcss.com/docs/configuration#separator) from the Tailwind documentation.
-  
+
   **REMEMBER**: When looking at code samples in the Tailwind docs, keep in mind that the base project configures Tailwind to use `_` as the [separator](https://v2.tailwindcss.com/docs/configuration#separator) instead of the default colon (`:`).
+
 - **theme** - Defines your custom values that override or extend the Tailwind CSS framework. See [Theme Configuration](https://v2.tailwindcss.com/docs/theme) from the Tailwind documentation.
 - **matcher** - Matches CSS Modules classnames that use the `composes` function. PurgeCSS uses this value to remove unused CSS from the `index.css` file. See [Writing purgeable HTML](https://v2.tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html) from the Tailwind documentation.
-
-
 
 ### postcss.config.js
 
@@ -206,8 +205,8 @@ Create the `postcss.config.js` file in your project's root and configure it to a
 
 module.exports = {
   plugins: [
-    require('autoprefixer'),
-    require('tailwindcss')('./tailwind.config.js'),
+    require("autoprefixer"),
+    require("tailwindcss")("./tailwind.config.js"),
   ],
 };
 ```
@@ -215,8 +214,6 @@ module.exports = {
 ## Test theme configuration
 
 For a quick test of your Venia configuration, add the following `theme` override directly to `tailwind.config.js`, then remove it after you verify it works. If the text color in your Venia-themed app turns red, your configuration is working correctly.
-
-```js:
 
 ```js
 // tailwind.config.js
@@ -228,20 +225,20 @@ theme: {
     }
   }
 }
-```
+````
 
 To test your own theme, refer to [Customizing your theme](https://tailwindcss.com/docs/adding-custom-styles#customizing-your-theme) from the Tailwind documentation.
 
 ## Customize base styles
 
-You have two options for customizing the Tailwind and Venia base styles:
+You have **two options** for customizing the Tailwind and Venia base styles:
 
-1. Update the `tailwind.config.js` file directly.
-1. Create new theme as a `preset` (recommended).
+**OPTION 1. Update `tailwind.config.js` directly.**
+**OPTION 2. Create new theme (recommended).**
 
 ### Update tailwind.config.js directly
 
-As you did to test the theme configuration, you can override or extend the Tailwind and Venia themes directly within the `theme` property of the `tailwind.config.js.` file as shown here:
+As you did when testing the theme configuration, you can override or extend the Tailwind and Venia themes directly within the `theme` property of the `tailwind.config.js.` file as shown here:
 
 ```js
 // tailwind.config.js
@@ -249,13 +246,13 @@ As you did to test the theme configuration, you can override or extend the Tailw
 theme: {
   extend: {
     fontFamily: {
-      sans: ['"Open Sans"', 'sans-serif']
+      sans: ['"Open Sans"', "sans-serif"];
     }
     backgroundColor: {
-      subtitle: '#F5F5F5'
+      subtitle: "#F5F5F5";
     }
     borderRadius: {
-      radius4: '50%'
+      radius4: "50%";
     }
   }
 }
@@ -263,7 +260,7 @@ theme: {
 
 However, you should avoid this option for all but the smallest real-world changes. For example, if you plan to use the Venia base theme with only a few custom colors and fonts, this option may be fine for your needs. However, if you are going to make several style changes or plan to rotate through different themes (seasonal or otherwise), create a new theme file instead.
 
-### Create new theme
+### Create new theme (recommended)
 
 We recommended this option for all but the smallest changes. The steps for creating your own [theme presets](https://tailwindcss.com/docs/presets) and adding them to the `tailwind.config.js` file to customize the existing base themes are as follows:
 
@@ -272,32 +269,32 @@ We recommended this option for all but the smallest changes. The steps for creat
 
   ```js
   // my-theme-preset.js
-
+  
   module.exports = {
     theme: {
       extend: {
         fontFamily: {
-          sans: ['Courier', 'sans-serif']
-        }
-      }
-    }
-  }
+          sans: ["Courier", "sans-serif"],
+        },
+      },
+    },
+  };
   ```
 
 1. Import your theme preset to the `tailwind.config.js` and add it to the `presets` array:
 
   ```js
   // tailwind.config.js
-
-  const venia = require('@magento/pwa-theme-venia');
-  const myThemePreset = require('./my-theme-preset');
-
+  
+  const venia = require("@magento/pwa-theme-venia");
+  const myThemePreset = require("./my-theme-preset");
+  
   module.exports = {
-    presets: [venia, myThemePreset]
-  }
+    presets: [venia, myThemePreset],
+  };
   ```
 
-  This example adds `myThemePreset` after the `venia` preset, meaning that `myThemePreset` will be merged and override or extend the base styles from Venia and Tailwind. For more information, see [how configurations are merged](https://tailwindcss.com/docs/presets#merging-logic-in-depth) from the Tailwind documentation.
+The previous example adds `myThemePreset` after the `venia` preset, meaning that `myThemePreset` will be merged and override or extend the base styles from Venia and Tailwind. For more information, see [how configurations are merged](https://tailwindcss.com/docs/presets#merging-logic-in-depth) from the Tailwind documentation.
 
 1. Rebuild your app.
 
@@ -338,8 +335,9 @@ module.exports = {
         90: '90',
         100: '100',
       },
-    }
+    },
   },
+};
 ```
 
 ### Customize Venia base styles
@@ -362,11 +360,13 @@ module.exports = {
       // Extend Venia's backgroundColor and borderRadius styles
       backgroundColor: {
         subtitle: '#F5F5F5',
-      }
+      },
       borderRadius: {
         radius4: '50%',
-    }
-  },
+      },
+    },
+  }
+};
 ```
 
 Another example: To change the width of Venia's sidebar filter on the search and category pages, you can override the `theme.extend.spacing.filterSidebarWidth`, as shown here:
@@ -378,11 +378,11 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        filterSidebarWidth: '400px'
-      }
-    }
-  }
-}
+        filterSidebarWidth: "400px",
+      },
+    },
+  },
+};
 ```
 
 ## Useful examples
@@ -402,11 +402,11 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        customHeight: '16rem',
-      }
-    }
-  }
-}
+        customHeight: "16rem",
+      },
+    },
+  },
+};
 ```
 
 This creates a new height utility `height-customHeight`, which you can use in your project.
@@ -422,10 +422,10 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'lg': '992px',
-        'max': '2560',
+        lg: "992px",
+        max: "2560",
       },
-    }
-  }
-}
+    },
+  },
+};
 ```
