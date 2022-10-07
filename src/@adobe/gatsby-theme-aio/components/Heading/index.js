@@ -55,7 +55,7 @@ const createHeading = (level, { id, children, className, css: styles, ...props }
     }
   `;
   const heading1Overrides = `
-    margin-bottom: var(--spectrum-global-dimension-size-100); 
+    margin-bottom: var(--spectrum-global-dimension-size-100);
     & + p {
       font-size: var(--spectrum-global-dimension-size-275);
       font-weight: 400;
@@ -70,11 +70,11 @@ const createHeading = (level, { id, children, className, css: styles, ...props }
     margin-bottom: var(--spectrum-global-dimension-size-75);
   `;
   const heading3Overrides = `
-    font-size: var(--spectrum-global-dimension-size-225);
+    font-size: var(--spectrum-global-dimension-size-250);
     color: var(--spectrum-global-color-gray-800);
     margin-top: var(--spectrum-global-dimension-size-350);
     margin-bottom: var(--spectrum-global-dimension-size-50);
-    
+
     & + ul,
     & + ol {
       margin-top: var(--spectrum-global-dimension-size-250);

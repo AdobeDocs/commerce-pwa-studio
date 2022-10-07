@@ -22,13 +22,12 @@ const listBase = css`
   padding-left: 0;
   color: #444;
   font-weight: 400;
-  font-size: 1.1rem;
   li {
     list-style: none;
     margin-right: 1rem;
     line-height: 1.5;
     &::before {
-      background: #0066cc;
+      background: #3273de;
       border-radius: 50%;
       display: inline-block;
       color: #fff;
@@ -41,7 +40,7 @@ const listBase = css`
 const numbers = css`
   li {
     margin: 1rem 0 1rem 0.25rem;
-
+    font-size: 1.1rem;
     &::before {
       content: counter(list-item);
       width: 1.4rem;
@@ -57,11 +56,12 @@ const numbers = css`
 const bullets = css`
   li {
     margin: 1rem 0 1rem -0.75rem;
+    font-size: 1.1rem;
     &::before {
       background: #333;
       content: ' ';
-      height: 0.5rem;
-      width: 0.5rem;
+      height: 0.45rem;
+      width: 0.45rem;
       margin-left: -1rem;
       margin-right: 0.5rem;
       margin-top:0.6rem;

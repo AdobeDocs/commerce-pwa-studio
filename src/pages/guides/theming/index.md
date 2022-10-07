@@ -16,9 +16,9 @@ We designed the Venia theme to be both a starting point and an example for creat
 
 There are **two options** for installing the Tailwind and Venia base themes into your PWA Studio apps:
 
-**OPTION 1. Use the create-pwa CLI** — For new PWA Studio apps, [using the create-pwa CLI](../../tutorials/setup-storefront/index.md#run-the-scaffolding-tool) is the fastest way to install and configure Tailwind theming. The CLI adds all the theme packages and files you need so you can start customizing the new app with your own theme extensions and overrides.
+**OPTION 1: Use the create-pwa CLI** — For new PWA Studio apps, [using the create-pwa CLI](../../tutorials/setup-storefront/index.md#run-the-scaffolding-tool) is the fastest way to install and configure Tailwind theming. The CLI adds all the theme packages and files you need so you can start customizing the new app with your own theme extensions and overrides.
 
-**OPTION 2. Install and configure manually** — For upgrading existing PWA Studio apps, you need to manually install and configure the Tailwind and Venia theme packages and files.
+**OPTION 2: Install and configure manually** — For upgrading existing PWA Studio apps, you need to manually install and configure the Tailwind and Venia theme packages and files.
 
 ## Install theme packages
 
@@ -221,11 +221,11 @@ For a quick test of your Venia configuration, add the following `theme` override
 theme: {
   extend: {
     textColor: {
-      colorDefault: '#BB0000'
+      colorDefault: "#BB0000";
     }
   }
 }
-````
+```
 
 To test your own theme, refer to [Customizing your theme](https://tailwindcss.com/docs/adding-custom-styles#customizing-your-theme) from the Tailwind documentation.
 
@@ -233,8 +233,9 @@ To test your own theme, refer to [Customizing your theme](https://tailwindcss.co
 
 You have **two options** for customizing the Tailwind and Venia base styles:
 
-**OPTION 1. Update `tailwind.config.js` directly.**
-**OPTION 2. Create new theme (recommended).**
+**OPTION 1: Update `tailwind.config.js` directly.**
+
+**OPTION 2: Create a new theme (recommended).**
 
 ### Update tailwind.config.js directly
 
@@ -260,16 +261,16 @@ theme: {
 
 However, you should avoid this option for all but the smallest real-world changes. For example, if you plan to use the Venia base theme with only a few custom colors and fonts, this option may be fine for your needs. However, if you are going to make several style changes or plan to rotate through different themes (seasonal or otherwise), create a new theme file instead.
 
-### Create new theme (recommended)
+### Create a new theme
 
-We recommended this option for all but the smallest changes. The steps for creating your own [theme presets](https://tailwindcss.com/docs/presets) and adding them to the `tailwind.config.js` file to customize the existing base themes are as follows:
+We recommended this option for all but the smallest changes. The steps for creating your own [theme preset](https://tailwindcss.com/docs/presets) and adding it to the `tailwind.config.js` file are as follows:
 
 1. Create a new `my-theme-preset.js` file anywhere in your project and name it whatever you want.
 1. Export a new `theme` object with your Tailwind and/or Venia base theme extensions and overrides:
 
   ```js
   // my-theme-preset.js
-  
+
   module.exports = {
     theme: {
       extend: {
@@ -285,16 +286,16 @@ We recommended this option for all but the smallest changes. The steps for creat
 
   ```js
   // tailwind.config.js
-  
+
   const venia = require("@magento/pwa-theme-venia");
   const myThemePreset = require("./my-theme-preset");
-  
+
   module.exports = {
     presets: [venia, myThemePreset],
   };
   ```
 
-The previous example adds `myThemePreset` after the `venia` preset, meaning that `myThemePreset` will be merged and override or extend the base styles from Venia and Tailwind. For more information, see [how configurations are merged](https://tailwindcss.com/docs/presets#merging-logic-in-depth) from the Tailwind documentation.
+  The previous example adds `myThemePreset` after the `venia` preset, meaning that `myThemePreset` will be merged and override or extend the base styles from Venia and Tailwind. For more information, see [how configurations are merged](https://tailwindcss.com/docs/presets#merging-logic-in-depth) from the Tailwind documentation.
 
 1. Rebuild your app.
 
@@ -312,28 +313,28 @@ module.exports = {
     // Override Tailwind's default font family and colors
     colors: {
       gray: {
-        darkest: '#1f2d3d',
-        dark: '#3c4858',
-        DEFAULT: '#c0ccda',
-        light: '#e0e6ed',
-        lightest: '#f9fafc',
-      }
+        darkest: "#1f2d3d",
+        dark: "#3c4858",
+        DEFAULT: "#c0ccda",
+        light: "#e0e6ed",
+        lightest: "#f9fafc",
+      },
     },
     fontFamily: {
-      sans: ['"Open Sans"', 'sans-serif']
+      sans: ['"Open Sans"', "sans-serif"],
     },
     // Extend Tailwind's flexGrow and zIndex styles
     extend: {
       flexGrow: {
-        2: '2',
-        3: '3',
+        2: "2",
+        3: "3",
       },
       zIndex: {
-        60: '60',
-        70: '70',
-        80: '80',
-        90: '90',
-        100: '100',
+        60: "60",
+        70: "70",
+        80: "80",
+        90: "90",
+        100: "100",
       },
     },
   },
@@ -354,18 +355,18 @@ module.exports = {
     extend: {
       // Override Venia's default font family
       fontFamily: {
-        sans: ['Open Source', 'sans-serif'],
-        serif: ['Gothic', 'serif']
+        sans: ["Open Source", "sans-serif"],
+        serif: ["Gothic", "serif"],
       },
       // Extend Venia's backgroundColor and borderRadius styles
       backgroundColor: {
-        subtitle: '#F5F5F5',
+        subtitle: "#F5F5F5",
       },
       borderRadius: {
-        radius4: '50%',
+        radius4: "50%",
       },
     },
-  }
+  },
 };
 ```
 
