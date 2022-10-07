@@ -11,7 +11,7 @@ keywords: [Theming, Tailwind CSS, CSS variables, PWA Studio]
 
 ## Tailwind and Venia themes
 
-Both the Tailwind and Venia themes are considered base themes — themes designed with only minimal brand-styling. We use base themes so you can quickly customize your apps with different colors, typography, images, and other brand attributes. The included Venia base theme provides a layer on top of Tailwind's base theme. The Venia theme uses all the best practices required for overriding and extending other base themes.
+Both the Tailwind and Venia themes are considered base themes — themes designed with only minimal brand-styling. We use base themes so you can quickly customize your apps with different colors, typography, images, and other brand attributes. The included [Venia base theme](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-theme-venia) provides a layer on top of Tailwind's base theme. The Venia theme uses all the best practices required for overriding and extending other base themes.
 
 We designed the Venia theme to be both a starting point and an example for creating your own custom themes. To learn more about Tailwind themes, see the [Tailwind theme documentation](https://tailwindcss.com/docs/theme).
 
