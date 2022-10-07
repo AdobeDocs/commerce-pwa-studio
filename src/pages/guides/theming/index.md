@@ -61,7 +61,7 @@ After installation, your `package.json` file should contain the following entrie
 
 ## Create theme files
 
-Create the following empty files in your project:
+Create the following empty files in your project. After that, we'll explain each file's purposes and add the required starting code.
 
 - **src/index.css** — In the `src` directory, create a blank file called `index.css` for Tailwind's global base styles.
 - **tailwind.config.js** — In your project root directory, create a blank file called `tailwind.config.js` for Tailwind's configuration, overrides, and extensions.
