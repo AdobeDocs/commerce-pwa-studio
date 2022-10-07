@@ -8,7 +8,7 @@ title: Tailwind Theming
 
 ## Tailwind and Venia themes
 
-Both the Tailwind and Venia themes are considered base themes — themes designed with only minimal brand-styling. We use base themes so you can quickly customize your apps with different colors, typography, images, and other brand attributes. The included Venia base theme provides a layer on top of Tailwind's base theme. The Venia theme uses all the best practices required for overriding and extending base themes.
+Both the Tailwind and Venia themes are considered base themes — themes designed with only minimal brand-styling. We use base themes so you can quickly customize your apps with different colors, typography, images, and other brand attributes. The included Venia base theme provides a layer on top of Tailwind's base theme. The Venia theme uses all the best practices required for overriding and extending other base themes.
 
 We designed the Venia theme to be both a starting point and an example for creating your own custom themes. To learn more about Tailwind themes, see the [Tailwind theme documentation](https://tailwindcss.com/docs/theme).
 
@@ -16,9 +16,9 @@ We designed the Venia theme to be both a starting point and an example for creat
 
 There are **two options** for installing the Tailwind and Venia base themes into your PWA Studio apps:
 
-**OPTION 1: Use the create-pwa CLI** — For new PWA Studio apps, [using the create-pwa CLI](../../tutorials/setup-storefront/index.md#run-the-scaffolding-tool) is the fastest way to install and configure Tailwind theming. The CLI adds all the theme packages and files you need so you can start customizing the new app with your own theme extensions and overrides.
+**OPTION 1: Use the create-pwa CLI** — For new PWA Studio apps, [using the create-pwa CLI](../../tutorials/setup-storefront/index.md#run-the-scaffolding-tool) is the fastest way to install and configure Tailwind theming. The CLI adds all the theme packages and files you need to start customizing the new app with your own theme extensions and overrides.
 
-**OPTION 2: Install and configure manually** — For upgrading existing PWA Studio apps, you need to manually install and configure the Tailwind and Venia theme packages and files.
+**OPTION 2: Install and configure manually** — For upgrading existing PWA Studio apps, you need to manually install and configure the Tailwind and Venia theme packages and files. The instructions in [Install theme packages](#install-theme-packages) and [Create theme files](#create-theme-files) show you how.
 
 ## Install theme packages
 
@@ -64,7 +64,7 @@ Create the following empty files in your project:
 - **tailwind.config.js** — In your project root directory, create a blank file called `tailwind.config.js` for Tailwind's configuration, overrides, and extensions.
 - **postcss.config.js** — In your project root directory, create a blank file called `postcss.config.js` for including the `tailwindcss` package as a postCSS plugin.
 
-When you're done, your project directory should look like this:
+When you're done, your project directory should include these files:
 
 ```text
 project-root/
@@ -130,7 +130,7 @@ module.exports = {
 };
 ```
 
-However, to configure your PWA Studio app for theming, you will need to add a lot more. Start by copying the following code block into your `tailwind.config.js` file.
+However, to configure your PWA Studio app for theming, you need to add a lot more. Start by copying the following code block into your `tailwind.config.js` file.
 
 ```js
 // tailwind.config.js (PWA Studio)
@@ -213,7 +213,7 @@ module.exports = {
 
 ## Test theme configuration
 
-For a quick test of your Venia configuration, add the following `theme` override directly to `tailwind.config.js`, then remove it after you verify it works. If the text color in your Venia-themed app turns red, your configuration is working correctly.
+For a quick test of your Venia configuration, add the following `theme` override directly to `tailwind.config.js` (then remove it after you verify it works). If the text color in your Venia-themed app turns red, your configuration is working correctly.
 
 ```js
 // tailwind.config.js
@@ -239,7 +239,7 @@ You have **two options** for customizing the Tailwind and Venia base styles:
 
 ### Update tailwind.config.js directly
 
-As you did when testing the theme configuration, you can override or extend the Tailwind and Venia themes directly within the `theme` property of the `tailwind.config.js.` file as shown here:
+As you did when testing your theme configuration, you can override or extend the Tailwind and Venia themes directly within the `theme` property of the `tailwind.config.js.` file as shown here:
 
 ```js
 // tailwind.config.js
@@ -295,7 +295,7 @@ We recommended this option for all but the smallest changes. The steps for creat
   };
   ```
 
-  The previous example adds `myThemePreset` after the `venia` preset, meaning that `myThemePreset` will be merged and override or extend the base styles from Venia and Tailwind. For more information, see [how configurations are merged](https://tailwindcss.com/docs/presets#merging-logic-in-depth) from the Tailwind documentation.
+  The previous example adds `myThemePreset` after the `venia` preset, meaning that `myThemePreset` will be merged to override or extend the base styles from Venia and Tailwind. For more information, see [how configurations are merged](https://tailwindcss.com/docs/presets#merging-logic-in-depth) from the Tailwind documentation.
 
 1. Rebuild your app.
 
