@@ -8,6 +8,7 @@ keywords: Theming, Tailwind CSS, CSS variables, PWA Studio
 # Tailwind Theming for PWA Studio apps
 
 [Tailwind CSS](https://tailwindcss.com/) is a popular CSS framework for rapidly building custom user interfaces, focused on flexibility and designed for quick, custom branding. This topic describes how you can install, configure, and use Tailwind with Venia to theme your own PWA Studio app.
+
 ## Tailwind and Venia themes
 
 Both the Tailwind and Venia themes are considered base themes — themes designed with only minimal brand-styling. We use base themes so you can quickly customize your apps with different colors, typography, images, and other brand attributes. The included Venia base theme provides a layer on top of Tailwind's base theme. The Venia theme uses all the best practices required for overriding and extending other base themes.
