@@ -251,22 +251,19 @@ not be called.
 
 Called to collect the definitions and documentation for project-wide
 configuration values. Core environment variables are defined in the
-[`envVarDefinitions.json` file](http://pwastudio.io/pwa-buildpack/reference/environment-variables/core-definitions/).
+[`envVarDefinitions.json` file](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/envVarDefinitions.json).
 
 Intercept this target in your project to add new environment
 variables, typed and documented. This integrates your extension
 configuration with the project-wide environment variable system.
 
-**See**
-
-- [Variable definition schema](http://pwastudio.io/pwa-buildpack/reference/environment-variables/definitions-api/)
-- [Core variable definitions](http://pwastudio.io/pwa-buildpack/reference/environment-variables/core-definitions/)
-
+**See[core**: variable definitions][https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/variables/](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/variables/)  
+**See**: [Variable definition schema](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/)  
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| envVarDefinitions | `object` | The [variable definitions object](http://pwastudio.io/pwa-buildpack/reference/environment-variables/definitions-api/). Modify in place. |
+| envVarDefinitions | `object` | The [variable definitions object](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/). Modify in place. |
 
 **Example** *(Add config fields for your extension)*  
 ```js
@@ -336,7 +333,7 @@ Likewise, if your extension uses CSS Modules, you must add the `cssModules` flag
 Use a [specialFeatures intercept function](#specialFeaturesIntercept)
 to add special build features for the modules used in your project.
 
-**See**: [Special flags in `configureWebpack()`](http://pwastudio.io/pwa-buildpack/reference/configure-webpack/#special-flags)  
+**See**: [Special flags in `configureWebpack()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/webpack/configure/#special-flags)  
 **Example** *(Declare that your extension contains CSS modules.)*  
 ```js
 targets.of('@magento/pwa-buildpack').specialFeatures.tap(featuresByModule => {
@@ -607,7 +604,7 @@ Creates an instance of TargetProvider.
 | bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
 | dep | `Object` | The package which owns this TargetProvider. |
 | dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](http://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/#buildpackbuildbusgetexternaltargets--targetprovider) |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders) |
 
 
 
@@ -702,7 +699,7 @@ the end). Otherwise, returns `<unknown>`.
 | hook | `object` | Potental Tapable hook object |
 
 
-Respond to a request from a [TargetProvider](https://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/)
+Respond to a request from a [TargetProvider](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders)
 to retrieve a different(external) TargetProvider.
 
 This callback pattern helps to loosely couple TargetProviders so
@@ -926,7 +923,7 @@ Creates an instance of TargetProvider.
 | bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
 | dep | `Object` | The package which owns this TargetProvider. |
 | dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](http://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/#buildpackbuildbusgetexternaltargets--targetprovider) |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders) |
 
 
 
@@ -1021,7 +1018,7 @@ the end). Otherwise, returns `<unknown>`.
 | hook | `object` | Potental Tapable hook object |
 
 
-Respond to a request from a [TargetProvider](https://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/)
+Respond to a request from a [TargetProvider](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders)
 to retrieve a different(external) TargetProvider.
 
 This callback pattern helps to loosely couple TargetProviders so
@@ -1391,7 +1388,7 @@ Creates an instance of TargetProvider.
 | bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
 | dep | `Object` | The package which owns this TargetProvider. |
 | dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](http://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/#buildpackbuildbusgetexternaltargets--targetprovider) |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders) |
 
 
 
@@ -1486,7 +1483,7 @@ the end). Otherwise, returns `<unknown>`.
 | hook | `object` | Potental Tapable hook object |
 
 
-Respond to a request from a [TargetProvider](https://pwastudio.io/pwa-buildpack/reference/buildbus/targetprovider/)
+Respond to a request from a [TargetProvider](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders)
 to retrieve a different(external) TargetProvider.
 
 This callback pattern helps to loosely couple TargetProviders so
@@ -1519,12 +1516,12 @@ Any returned value will be ignored.
 
 Callback to add a transform.
 
-**See**: [TransformRequest](https://pwastudio.io/pwa-buildpack/reference/transform-requests/#addTransform)  
+**See**: [TransformRequest](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/transform-requests/)  
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](https://pwastudio.io/pwa-buildpack/reference/transform-requests/#addTransform) to apply a transform to a file provided by this dependency. |
+| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/transform-requests/) to apply a transform to a file provided by this dependency. |
 
 
 Intercept function signature for the webpackCompiler target.

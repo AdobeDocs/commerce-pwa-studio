@@ -25,18 +25,6 @@ This talon performs the following effects:
 - Manage the updating state of the cart while a product is being updated or removed
 
 </dd>
-<dt><a href="#useQuantity">useQuantity(props)</a> ⇒ <inlineCode><a href="#QuantityTalonProps">QuantityTalonProps</a></inlineCode></dt>
-<dd>
-
-This talon contains logic for a product quantity UI component.
-It performs effects and returns prop data for rendering a component that lets you
-modify the quantity of a cart item.
-
-This talon performs the following effects:
-
-- Updates the state of the quantity field when the initial value changes
-
-</dd>
 <dt><a href="#useEditModal">useEditModal()</a> ⇒ <inlineCode><a href="#EditModalTalonProps">EditModalTalonProps</a></inlineCode></dt>
 <dd>
 
@@ -44,7 +32,7 @@ This talon contains logic for a product edit modal used on a cart page.
 It returns prop data for rendering an interactive modal component.
 
 </dd>
-<dt><a href="#useProductForm">useProductForm(props)</a> ⇒ <inlineCode><a href="#ProductFormTalonProps">ProductFormTalonProps</a></inlineCode></dt>
+<dt><a href="#deriveOptionSelectionsFromProduct">deriveOptionSelectionsFromProduct(props)</a> ⇒ <inlineCode><a href="#ProductFormTalonProps">ProductFormTalonProps</a></inlineCode></dt>
 <dd>
 
 This talon contains logic for a product edit form.
@@ -100,7 +88,7 @@ This type is used in the [ProductTalonProps](#ProductTalonProps) type returned b
 <dt><a href="#QuantityTalonProps">QuantityTalonProps</a> : <inlineCode>Object</inlineCode></dt>
 <dd>
 
-Object type returned by the [useQuantity](#useQuantity) talon.
+Object type returned by the [useQuantityStepper](useQuantityStepper) talon.
 It provides props data for a quantity UI component.
 
 </dd>
@@ -114,7 +102,7 @@ It provides props data for rendering an edit modal component.
 <dt><a href="#ProductFormTalonProps">ProductFormTalonProps</a> : <inlineCode>Object</inlineCode></dt>
 <dd>
 
-Object type returned by the [useProductForm](#useProductForm) talon.
+Object type returned by the [useProductForm](useProductForm) talon.
 It provides props data for a product form UI component inside a modal.
 
 </dd>
@@ -165,29 +153,6 @@ This talon performs the following effects:
 import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProduct';
 ```
 
-This talon contains logic for a product quantity UI component.
-It performs effects and returns prop data for rendering a component that lets you
-modify the quantity of a cart item.
-
-This talon performs the following effects:
-
-- Updates the state of the quantity field when the initial value changes
-
-**Returns: **
-**Parameters**
-
-| Name | Type | Description |
-| --- | --- | --- |
-| props | `Object` |  |
-| props.initialValue | `number` | the initial quantity value |
-| props.min | `number` | the minimum allowed quantity value |
-| props.onChange | `function` | change handler to invoke when quantity value changes |
-
-**Example** *(Importing into your project)*  
-```js
-import { useQuantity } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useQuantity';
-```
-
 This talon contains logic for a product edit modal used on a cart page.
 It returns prop data for rendering an interactive modal component.
 
@@ -212,11 +177,11 @@ This talon performs the following effects:
 | --- | --- | --- |
 | props | `Object` |  |
 | props.cartItem | `Object` | The cart item to configure on the form |
-| props.getConfigurableOptionsQuery | `GraphQLAST` | GraphQL query to get the configurable options for a product. |
+| props.getConfigurableOptionsQuery | `GraphQLDocument` | GraphQL query to get the configurable options for a product. |
 | props.setIsCartUpdating | `function` | Function for setting the updating state for the shopping cart. |
 | props.setVariantPrice | `function` | Function for setting the variant price on a product. |
-| props.updateConfigurableOptionsMutation | `GraphQLAST` | GraphQL mutation for updating the configurable options for a product. |
-| props.updateQuantityMutation | `GraphQLAST` | GraphQL mutation for updating the quantity of a product in a cart. |
+| props.updateConfigurableOptionsMutation | `GraphQLDocument` | GraphQL mutation for updating the configurable options for a product. |
+| props.updateQuantityMutation | `GraphQLDocument` | GraphQL mutation for updating the quantity of a product in a cart. |
 | props.setActiveEditItem | `function` | Function for setting the actively editing item. |
 
 **Example** *(Importing into your project)*  
@@ -295,7 +260,7 @@ This type is used in the [ProductTalonProps](#ProductTalonProps) type returned b
 | urlSuffix | `String` | The product's url suffix |
 
 
-Object type returned by the [useQuantity](#useQuantity) talon.
+Object type returned by the [useQuantityStepper](useQuantityStepper) talon.
 It provides props data for a quantity UI component.
 
 **Properties**
@@ -321,7 +286,7 @@ It provides props data for rendering an edit modal component.
 | variantPrice | `Object` | The variant price for a product. See [Money object](https://devdocs.magento.com/guides/v2.4/graphql/product/product-interface.html#Money). |
 
 
-Object type returned by the [useProductForm](#useProductForm) talon.
+Object type returned by the [useProductForm](useProductForm) talon.
 It provides props data for a product form UI component inside a modal.
 
 **Properties**
