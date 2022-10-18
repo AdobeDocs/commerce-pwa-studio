@@ -100,8 +100,11 @@ Intercept this target in your project to add new environment
 variables, typed and documented. This integrates your extension
 configuration with the project-wide environment variable system.
 
-**See[core**: variable definitions][https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/variables/](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/variables/)  
-**See**: [Variable definition schema](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/)  
+**See**
+
+- [Variable definition schema](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/)
+- [Core variable definitions](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/variables/)
+
 **Parameters**
 
 | Name | Type | Description |
