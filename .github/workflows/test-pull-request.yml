@@ -62,7 +62,7 @@ jobs:
           #
           # Documentation on rules:
           # https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
-          VALIDATE_MARKDOWN: false
+          # VALIDATE_MARKDOWN: true
           VALIDATE_YAML: true
 
       - name: Setup Node v16 for Yarn v3
