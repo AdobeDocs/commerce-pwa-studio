@@ -14,11 +14,11 @@ Connect to an instance of Magento 2.3 by specifying its public domain name.
 
 **Type:** `str`
 
-**Default:** `EE`
+**Default:** `AC`
 
-**Example:** `EE`
+**Example:** `AC`
 
-Specify the edition of the magento store (Enterprise Edition or Community Edition). Can be one of CE or EE.
+Specify the edition of the magento store (Adobe Commerce or Magento Open Source). Can be one of MOS or AC.
 
 ## Magento Store View
 
