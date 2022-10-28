@@ -8,7 +8,7 @@
   },
   "author": "PWA Studio Team",
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "4.6.2",
+    "@adobe/gatsby-theme-aio": "4.6.6",
     "gatsby": "4.22.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -36,5 +36,6 @@
     "plugins": [
       "remark-validate-links"
     ]
-  }
+  },
+  "packageManager": "yarn@3.2.4"
 }
