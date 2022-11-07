@@ -20,7 +20,35 @@ module.exports = {
   },
   pathPrefix: process.env.PATH_PREFIX || "/commerce/pwa-studio/",
   flags: {
-    DEV_SSR: false
+    DEV_SSR: true,
   },
-  plugins: [`@adobe/gatsby-theme-aio`],
+  plugins: [
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        // Footnotes mode (default: true)
+        footnotes: true,
+        // GitHub Flavored Markdown mode (default: true)
+        gfm: true,
+        // Plugins configs
+        plugins: [
+          {
+            resolve: 'gatsby-remark-mermaid',
+            options: {
+              language: 'mermaid',
+              theme: 'default',
+              viewport: {
+                width: 900,
+                height: 300
+              },
+              mermaidOptions: {
+                themeCSS: ".node rect { fill: #f5f5f5; }"
+              }
+            }
+          }
+        ],
+      },
+    },
+    `@adobe/gatsby-theme-aio`,
+  ],
 };

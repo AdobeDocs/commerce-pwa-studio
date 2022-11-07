@@ -22,22 +22,22 @@ import '@adobe/prism-adobe';
 import { ActionButton } from '../ActionButton';
 import PropTypes from 'prop-types';
 
-const openTooltip = (setIsTooltipOpen) => {
-  setIsTooltipOpen(true);
+const setCopyLabel = () => {
+  setCopiedLabel("Copied");
   setTimeout(() => {
-    setIsTooltipOpen(false);
+    setCopiedLabel("Copy");
   }, 3000);
 };
 
-const copy = (textarea, document, setIsTooltipOpen) => {
+const copy = (textarea, document) => {
   textarea.current.select();
   document.execCommand('copy');
-  openTooltip(setIsTooltipOpen);
+  setCopyLabel();
 };
 
 const Code = ({ children, className = '', theme }) => {
   const tooltipId = nextId();
-  const [isTooltipOpen, setIsTooltipOpen] = useState(false);
+  const [copyLabel, setCopyLabel] = useState("Copy");
   const language = className.replace(/language-/, '');
 
   return (
@@ -75,29 +75,14 @@ const Code = ({ children, className = '', theme }) => {
               />
               <ActionButton
                 aria-describedby={tooltipId}
-                css={css`color: #777; padding: 0.5rem; border-radius: 0.25rem;`}
+                isQuiet={true}
+                elementType="a"
+                css={css`color: #ccc; :hover { color: #fff; }`}
                 onClick={() => {
-                  copy(textarea, document, setIsTooltipOpen);
+                  copy(textarea, document);
                 }}>
-                Copy
+                {copyLabel}
               </ActionButton>
-              <span
-                role="tooltip"
-                id={tooltipId}
-                css={css`
-                  display: block;
-                  position: absolute;
-                  top: var(--spectrum-global-dimension-size-50);
-                  right: var(--spectrum-global-dimension-size-675);
-                  left: initial;
-                  font-family: var(--spectrum-alias-body-text-font-family, var(--spectrum-global-font-family-base));
-                `}
-                className={classNames('spectrum-Tooltip spectrum-Tooltip--left', {
-                  'is-open': isTooltipOpen
-                })}>
-                <span className="spectrum-Tooltip-label">Copied to your clipboard</span>
-                <span className="spectrum-Tooltip-tip" />
-              </span>
             </div>
             <pre className={classNames(className, 'spectrum-Code spectrum-Code--sizeM')} css={css`font-size: 0.92rem !important;`}>
               {lines.map((line, i) => {

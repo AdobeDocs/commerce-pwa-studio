@@ -13,6 +13,13 @@ keywords: [Theming, Tailwind CSS, CSS variables, PWA Studio]
 
 Both the Tailwind and Venia themes are considered base themes — themes designed with only minimal brand-styling. We use base themes so you can quickly customize your apps with different colors, typography, images, and other brand attributes. The included Venia base theme provides a layer on top of Tailwind's base theme. The Venia theme uses all the best practices required for overriding and extending other base themes.
 
+```mermaid
+graph LR
+install[Install Plugin]
+install --> configure[Configure Plugin]
+configure --> draw[Draw Fancy Diagrams]
+```
+
 We designed the Venia theme to be both a starting point and an example for creating your own custom themes. To learn more about Tailwind themes, see the [Tailwind theme documentation](https://tailwindcss.com/docs/theme).
 
 ## Install Tailwind and Venia
@@ -271,34 +278,34 @@ We recommended this option for all but the smallest changes. The steps for creat
 1. Create a new `my-theme-preset.js` file anywhere in your project and name it whatever you want.
 1. Export a new `theme` object with your Tailwind and/or Venia base theme extensions and overrides:
 
-  ```js
-  // my-theme-preset.js
+```js
+// my-theme-preset.js
 
-  module.exports = {
-    theme: {
-      extend: {
-        fontFamily: {
-          sans: ["Courier", "sans-serif"],
-        },
+module.exports = {
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ["Courier", "sans-serif"],
       },
     },
-  };
-  ```
+  },
+};
+```
 
 1. Import your theme preset to the `tailwind.config.js` and add it to the `presets` array:
 
-  ```js
-  // tailwind.config.js
+```js
+// tailwind.config.js
 
-  const venia = require("@magento/pwa-theme-venia");
-  const myThemePreset = require("./my-theme-preset");
+const venia = require("@magento/pwa-theme-venia");
+const myThemePreset = require("./my-theme-preset");
 
-  module.exports = {
-    presets: [venia, myThemePreset],
-  };
-  ```
+module.exports = {
+  presets: [venia, myThemePreset],
+};
+```
 
-  The previous example adds `myThemePreset` after the `venia` preset, meaning that `myThemePreset` will be merged to override or extend the base styles from Venia and Tailwind. For more information, see [how configurations are merged](https://tailwindcss.com/docs/presets#merging-logic-in-depth) from the Tailwind documentation.
+The previous example adds `myThemePreset` after the `venia` preset, meaning that `myThemePreset` will be merged to override or extend the base styles from Venia and Tailwind. For more information, see [how configurations are merged](https://tailwindcss.com/docs/presets#merging-logic-in-depth) from the Tailwind documentation.
 
 1. Rebuild your app.
 

@@ -59,8 +59,8 @@ const createHeading = (level, { id, children, className, css: styles, ...props }
     & + p {
       font-size: var(--spectrum-global-dimension-size-275);
       font-weight: 400;
-      color: var(--spectrum-global-color-gray-500);
-      margin-bottom: var(--spectrum-global-dimension-size-500);
+      color: var(--spectrum-global-color-gray-600);
+      margin-bottom: var(--spectrum-global-dimension-size-600);
       line-height: 2.3rem;
     }
   `;

@@ -24,9 +24,9 @@ export const InlineCode = ({ children, className, ...props }) => (
       font-family: Courier, monospace;
       font-size: 95%;
       background-color: var(--spectrum-global-color-gray-100);
-      padding: 0;
+      padding: 2px;
       margin: 0;
-      display: inline-block;
+      display: inline;
       min-width: auto;
       border: 0.8px solid var(--spectrum-global-color-gray-300);
       border-radius: 3px;
