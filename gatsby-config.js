@@ -10,17 +10,17 @@
  * governing permissions and limitations under the License.
  */
 
-const { versions, pages, subPages } = require("./src/data/navigation");
+const { pages, subPages } = require("./src/data/navigation");
 
 module.exports = {
   siteMetadata: {
-    versions: versions,
+    "home": {
+      "title": "Commerce",
+      "path": "/commerce/docs"
+    },
     pages: pages,
     subPages: subPages,
   },
-  pathPrefix: process.env.PATH_PREFIX || "/commerce/pwa-studio/",
-  flags: {
-    DEV_SSR: false
-  },
   plugins: [`@adobe/gatsby-theme-aio`],
+  pathPrefix: process.env.PATH_PREFIX || '/commerce/pwa-studio/'
 };
