@@ -124,7 +124,7 @@ The following table is a summary of general skills needed for theme development:
 [less]: http://lesscss.org/
 [theme layouts]: https://developer.adobe.com/commerce/frontend-core/guide/layouts/
 [theme templates]: https://developer.adobe.com/commerce/frontend-core/guide/templates/
-[theme ui library]: https://magento-devdocs.github.io/magento2-ui-library/
+[theme ui library]: https://commerce-docs.github.io/magento2-ui-library/
 
 ### PWA storefront developers
 

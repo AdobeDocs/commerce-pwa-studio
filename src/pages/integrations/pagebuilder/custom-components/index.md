@@ -46,5 +46,5 @@ The second prerequisite is to ensure that your custom content type renders succe
 After you have met these prerequisites, you are ready to begin creating your custom Page Builder component in the PWA Studio.
 
 [use these instructions]: /tutorials/setup-storefront/
-[download and install the pagebuilderquote module]: https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderQuote
-[github pagebuilder-examples repo]: https://github.com/magento-devdocs/pagebuilder-examples/tree/master/Example/PageBuilderQuote
+[download and install the pagebuilderquote module]: https://github.com/commerce-docs/pagebuilder-examples/tree/master/Example/PageBuilderQuote
+[github pagebuilder-examples repo]: https://github.com/commerce-docs/pagebuilder-examples/tree/master/Example/PageBuilderQuote
