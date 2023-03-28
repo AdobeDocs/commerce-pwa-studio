@@ -78,6 +78,12 @@ Use the [`create-custom-origin`][] sub-command from the [buildpack CLI][] to cre
 yarn buildpack create-custom-origin ./
 ```
 
+NOTE: If you encounter any errors while creating a custom hostname and SSL with node version 18.15.10, please run the following command:
+
+```bash
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
 <InlineAlert variant="info" slots="text"/>
 
 This feature requires administrative access, so it may prompt you for an administrative password at the command line.
