@@ -14,7 +14,7 @@ This integration requires the following pieces to function properly:
 - The Experience Platform Connector extension for PWA Studio storefronts, which connects and send data to the AEP platform.
 - The Experience Platform extensions installed in the Adobe Commerce backend which provides configuration information to the storefront extension.
 
-This diagram shows the basic flow of an event through the system and notes which component handles the event at each stage. 
+This diagram shows the basic flow of an event through the system and notes which component handles the event at each stage.
 
 ![Basic event flow](images/analytics-flow.png)
 
@@ -25,7 +25,7 @@ Magento Open Source does not support the AEP.
 
 Use your storefront project's package manager(`node` or `yarn`), to install the Experience Platform Connector extension into your storefront project.
 
-For example, if your project uses `yarn` run the following command: 
+For example, if your project uses `yarn` run the following command:
 
 ```terminal
 yarn add @magento/experience-platform-connector
@@ -40,4 +40,3 @@ Check the prerequisites for establishing a data stream in the [Experience Platfo
 To install the EPC within Adobe Commerce, see [Install and Configure the Experience Platform Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/install.html?lang=en).
 
 To connect Adobe Commerce with your data stream, see [Connect Commerce data to Adobe Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/connect-data.html?lang=en).
-

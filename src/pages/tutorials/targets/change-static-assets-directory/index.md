@@ -178,7 +178,7 @@ According to this object, the current rule for resolving requests for these file
 Since this rule is inside the primary `upward.yml` file in the `venia-ui` dependency, you cannot make direct edits to this file.
 However, you can use the [`transformUpward` Buildpack target][] to make changes indirectly during the build process.
 
-[`transformUpward` Buildpack target]: <{% link pwa-buildpack/reference/targets/index.md %}>
+[`transformUpward` Buildpack target]: ../../../api/buildpack/targets/index.md
 
 Open your project's `local-intercept.js` file and replace the content with the following:
 

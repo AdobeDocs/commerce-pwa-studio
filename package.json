@@ -1,5 +1,4 @@
 {
-  "private": true,
   "name": "commerce-pwa-studio",
   "version": "1.0.0",
   "license": "Apache-2.0",
@@ -7,15 +6,12 @@
     "type": "git",
     "url": "https://github.com/AdobeDocs/commerce-pwa-studio"
   },
-  "author": {
-    "name": "Bruce Denham",
-    "url": "https://github.com/bdenham"
-  },
+  "author": "PWA Studio Team",
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "^3.24.2",
-    "gatsby": "^3.6.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
+    "@adobe/gatsby-theme-aio": "4.9.0",
+    "gatsby": "4.22.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "tty-browserify": "^0.0.1"
   },
   "scripts": {
@@ -27,15 +23,20 @@
     "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "npm run lint:md src/pages",
-    "lint:md": "remark --quiet",
     "prettier": "prettier --write",
-    "prettier:test": "prettier --check src"
+    "prettier:test": "prettier --check src",
+    "test:links": "remark src/pages --quiet --frail",
+    "lint": "docker run --rm -e RUN_LOCAL=true --env-file .github/super-linter.env -v \"$PWD\":/tmp/lint github/super-linter:slim-v4.10.1"
   },
   "devDependencies": {
     "prettier": "2.6.2",
     "remark-cli": "^10.0.1",
-    "remark-lint-list-item-indent": "^3.1.1",
-    "remark-preset-lint-recommended": "^6.1.2"
-  }
+    "remark-validate-links": "^11.0.2"
+  },
+  "remarkConfig": {
+    "plugins": [
+      "remark-validate-links"
+    ]
+  },
+  "packageManager": "yarn@3.2.4"
 }

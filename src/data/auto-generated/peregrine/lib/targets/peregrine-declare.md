@@ -42,7 +42,7 @@ Typedefs
 Intercept function signature for the `talons` and `hooks` targets.
 
 Interceptors of `hooks` should call `wrapWith` on the individual hooks in
-the provided [`HookInterceptorSet` object](http://pwastudio.io/peregrine/reference/targets/wrappable-talons).
+the provided [`HookInterceptorSet` object](https://developer.adobe.com/commerce/pwa-studio/tutorials/targets/modify-talon-results/).
 
 </dd>
 </dl>
@@ -99,7 +99,7 @@ talonsTarget.tap(talons => {
 Intercept function signature for the `talons` and `hooks` targets.
 
 Interceptors of `hooks` should call `wrapWith` on the individual hooks in
-the provided [`HookInterceptorSet` object](http://pwastudio.io/peregrine/reference/targets/wrappable-talons).
+the provided [`HookInterceptorSet` object](https://developer.adobe.com/commerce/pwa-studio/tutorials/targets/modify-talon-results/).
 
 **Parameters**
 

@@ -7,6 +7,9 @@ module.exports = [
         title: "Overview",
         path: "/guides/",
       }, {
+        title: "Theming",
+        path: "/guides/theming/",
+      }, {
         title: "Best Practices",
         path: "/guides/best-practices/",
       },

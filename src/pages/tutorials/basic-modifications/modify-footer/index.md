@@ -109,7 +109,7 @@ Make a copy of the components in the render chain from the `node_modules` direct
 
 ### Copy Adapter component
 
-`src/index.js` uses Adapter and this capsulating App component. 
+`src/index.js` uses Adapter and this capsulating App component.
 Copy this component from `node_modules` into your project.
 
 ```sh

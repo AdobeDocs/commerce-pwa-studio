@@ -56,7 +56,7 @@ With GraphQL, there is no need for versioning, since new types and fields can be
 Removing fields is done through deprecation instead of deleting them from the schema.
 If an old query tries to read a deprecated field, GraphQL displays a customized warning.
 
-```
+```graphql
 type ExampleType {
   firstName: String
   lastName: String
@@ -117,7 +117,7 @@ A query for this schema that requests the name and all the post titles for a spe
 
 The data response for the query would look like the following:
 
-```
+```json
 {
   "data": {
     "user": {
@@ -167,7 +167,7 @@ A simple query requesting this data would look like the following:
 
 The response to this query would look like the following:
 
-```
+```json
 {
   "data": {
     "user": {
@@ -195,7 +195,7 @@ The previous query can be rewritten to return specific fields:
 
 The response only provides the data requested:
 
-```
+```json
 {
   "data": {
     "user": {
@@ -211,7 +211,7 @@ The response only provides the data requested:
 Now, what if you had multiple users and needed to grab a specific one using its `id`?
 Well, with GraphQL you can pass arguments into the query:
 
-```
+```graphql
 {
  user(id: 12345) {
    id
@@ -223,7 +223,7 @@ Well, with GraphQL you can pass arguments into the query:
 
 The response would look like the following:
 
-```
+```json
 {
   "data": {
     "user": {
@@ -265,7 +265,7 @@ type Hobby {
 
 The following query requests the hobbies associated with a specific user:
 
-```
+```graphql
 {
  user(id: 12345) {
    name
@@ -281,7 +281,7 @@ The following query requests the hobbies associated with a specific user:
 
 The response would look like the following:
 
-```
+```json
 {
   "data": {
     "user": {

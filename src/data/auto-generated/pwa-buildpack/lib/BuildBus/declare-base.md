@@ -94,7 +94,7 @@ validation process and the build process will be stopeed.
 
 Called to collect the definitions and documentation for project-wide
 configuration values. Core environment variables are defined in the
-[`envVarDefinitions.json` file](http://pwastudio.io/pwa-buildpack/reference/environment-variables/core-definitions/).
+[`envVarDefinitions.json` file](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/envVarDefinitions.json).
 
 Intercept this target in your project to add new environment
 variables, typed and documented. This integrates your extension
@@ -102,14 +102,14 @@ configuration with the project-wide environment variable system.
 
 **See**
 
-- [Variable definition schema](http://pwastudio.io/pwa-buildpack/reference/environment-variables/definitions-api/)
-- [Core variable definitions](http://pwastudio.io/pwa-buildpack/reference/environment-variables/core-definitions/)
+- [Variable definition schema](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/)
+- [Core variable definitions](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/variables/)
 
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| envVarDefinitions | `object` | The [variable definitions object](http://pwastudio.io/pwa-buildpack/reference/environment-variables/definitions-api/). Modify in place. |
+| envVarDefinitions | `object` | The [variable definitions object](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/). Modify in place. |
 
 **Example** *(Add config fields for your extension)*  
 ```js
@@ -179,7 +179,7 @@ Likewise, if your extension uses CSS Modules, you must add the `cssModules` flag
 Use a [specialFeatures intercept function](#specialFeaturesIntercept)
 to add special build features for the modules used in your project.
 
-**See**: [Special flags in `configureWebpack()`](http://pwastudio.io/pwa-buildpack/reference/configure-webpack/#special-flags)  
+**See**: [Special flags in `configureWebpack()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/webpack/configure/#special-flags)  
 **Example** *(Declare that your extension contains CSS modules.)*  
 ```js
 targets.of('@magento/pwa-buildpack').specialFeatures.tap(featuresByModule => {
@@ -257,12 +257,12 @@ Any returned value will be ignored.
 
 Callback to add a transform.
 
-**See**: [TransformRequest](https://pwastudio.io/pwa-buildpack/reference/transform-requests/#addTransform)  
+**See**: [TransformRequest](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/transform-requests/)  
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](https://pwastudio.io/pwa-buildpack/reference/transform-requests/#addTransform) to apply a transform to a file provided by this dependency. |
+| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/transform-requests/) to apply a transform to a file provided by this dependency. |
 
 
 Intercept function signature for the webpackCompiler target.

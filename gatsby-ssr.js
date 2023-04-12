@@ -1,5 +1,5 @@
 /*
- * Copyright 2020 Adobe. All rights reserved.
+ * Copyright 2021 Adobe. All rights reserved.
  * This file is licensed to you under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License. You may obtain a copy
  * of the License at http://www.apache.org/licenses/LICENSE-2.0
@@ -10,17 +10,11 @@
  * governing permissions and limitations under the License.
  */
 
-const { pages, subPages } = require("./src/data/navigation");
+import React from 'react';
+import {withPrefix} from 'gatsby';
 
-module.exports = {
-  siteMetadata: {
-    "home": {
-      "title": "Commerce",
-      "path": "/commerce/docs"
-    },
-    pages: pages,
-    subPages: subPages,
-  },
-  plugins: [`@adobe/gatsby-theme-aio`],
-  pathPrefix: process.env.PATH_PREFIX || '/commerce/pwa-studio/'
+export const onRenderBody = ({setHeadComponents}) => {
+  setHeadComponents([
+    <script src={withPrefix('/redirections.js')}></script>
+  ]);
 };

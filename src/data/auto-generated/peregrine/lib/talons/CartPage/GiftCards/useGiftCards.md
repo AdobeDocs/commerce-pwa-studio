@@ -96,7 +96,7 @@ import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/us
 
 GraphQL mutations for Gift Cards.
 
-**See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/GiftCards/giftCardQueries.js)
+**See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/giftCardQueries.gql.ee.js)
 for queries used in Venia  
 **Properties**
 
@@ -108,7 +108,7 @@ for queries used in Venia
 
 GraphQL queries for Gift Cards.
 
-**See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/GiftCards/giftCardQueries.js)
+**See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/giftCardQueries.gql.ee.js)
 for queries used in Venia  
 **Properties**
 
