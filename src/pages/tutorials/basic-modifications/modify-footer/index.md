@@ -304,6 +304,13 @@ Finally, export the default module:
 + export { default } from './adapter';
 ```
 
+And change import of the adapter in your `src/index.js`
+
+```diff
+- import Adapter from '@magento/venia-ui/lib/components/Adapter';
++ import Adapter from './components/Adapter';
+```
+
 ## Congratulations
 
 You just customized the Footer component in your storefront project!
