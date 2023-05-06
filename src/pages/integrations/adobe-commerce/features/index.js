@@ -8,13 +8,12 @@ export default function Component() {
       <div class="main">
         <h1 class="spectrum-Heading spectrum-Heading--sizeXL spectrum-Heading--light hackP">Commerce coverage</h1>
 
-        <p class="hackP">PWA Studio’s storefront app — Venia — provides the following out-of-the-box coverage for Adobe Commerce and Magento Open Source features. The icons show the current and planned coverage of each Commerce feature. Features that are not implemented — and not yet on our roadmap — show that custom implementation is required.</p>
+        <p class="hackP">PWA Studio's storefront app — Venia — provides the following out-of-the-box coverage for Adobe Commerce and Open Source features. The icons show the coverage of each Commerce feature.</p>
 
         <div class="legend-keys">
           <div class="legend Full"> — Full support</div>
           <div class="legend Partial"> — Partial support</div>
-          <div class="legend Planned"> — Planned support</div>
-          <div class="legend Custom"> — Customization required</div>
+          <div class="legend API"> — API support only</div>
           <div class="legend Commerce"> — Commerce-only</div>
         </div>
 
@@ -46,8 +45,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>B2B <span class="support Commerce"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -125,8 +124,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Product with Custom options <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -134,8 +133,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Grouped <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -143,8 +142,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Bundled <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -152,8 +151,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Downloadable <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -223,8 +222,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>CMS Widgets <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Custom support">
-                  <span class="support Custom"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -292,10 +291,19 @@ export default function Component() {
             </tr>
 
             <tr class="category-feature">
-              <td>Staging &amp; Preview <span class="support Commerce"></span></td>
+              <td>Staging<span class="support Commerce"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="Full support">
+                  <span class="support Full"></span>
+                </span>
+              </td>
+            </tr>
+
+            <tr class="category-feature">
+              <td>Preview<span class="support Commerce"></span></td>
+              <td>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -303,8 +311,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Related Products <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -321,8 +329,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Reward Points <span class="support Commerce"></span></td>
               <td>
-                <span class="tooltip left" data-text="Custom support">
-                  <span class="support Custom"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -383,8 +391,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Reviews <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Custom support">
-                  <span class="support Custom"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -392,8 +400,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Add To Compare <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Custom support">
-                  <span class="support Custom"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -525,8 +533,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Items Per Page <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Custom support">
-                  <span class="support Custom"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -720,8 +728,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Backorders <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -729,8 +737,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Advanced Inventory <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -782,8 +790,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Stores on separate domains <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -871,8 +879,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Re-order <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -880,8 +888,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Returns <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Planned support">
-                  <span class="support Planned"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -889,8 +897,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Store Credit <span class="support Commerce"></span></td>
               <td>
-                <span class="tooltip left" data-text="Custom support">
-                  <span class="support Custom"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -898,8 +906,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Gift Registry <span class="support Commerce"></span></td>
               <td>
-                <span class="tooltip left" data-text="Custom support">
-                  <span class="support Custom"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -907,8 +915,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Product Reviews <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Custom support">
-                  <span class="support Custom"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -916,8 +924,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Invitations <span class="support Commerce"></span></td>
               <td>
-                <span class="tooltip left" data-text="Custom support">
-                  <span class="support Custom"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
@@ -925,8 +933,8 @@ export default function Component() {
             <tr class="category-feature">
               <td>Dashboard <span class="support OpenSource"></span></td>
               <td>
-                <span class="tooltip left" data-text="Custom support">
-                  <span class="support Custom"></span>
+                <span class="tooltip left" data-text="API support only">
+                  <span class="support API"></span>
                 </span>
               </td>
             </tr>
