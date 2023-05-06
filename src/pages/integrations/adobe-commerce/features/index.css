@@ -3,7 +3,7 @@ div.main {
   justify-content: left;
   display: flex;
   flex-direction: column;
-  margin: 0 10px 0 10px;
+  margin: 0 10px 60px 10px;
   width: auto;
   min-width: 320px;
   max-width: 800px;
@@ -101,7 +101,7 @@ tbody tr.category-feature:last-child td {
 /*** Cells ***/
 
 .category-feature td {
-  padding: 7px 0px 0px 10px;
+  padding: 7px 7px 0px 10px;
 }
 
 .category-feature td:nth-child(2) {
@@ -132,36 +132,27 @@ tbody tr.category-feature:last-child td {
   display: inline-block;
   content: " ";
   background-image: url("./images/full.svg");
-  background-size: 18px 18px;
-  height: 18px;
-  width: 18px;
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
 }
 
 .support.Partial::before {
   display: inline-block;
   content: " ";
   background-image: url("./images/partial.svg");
-  background-size: 18px 18px;
-  height: 18px;
-  width: 18px;
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
 }
 
-.support.Planned::before {
+.support.API::before {
   display: inline-block;
   content: " ";
-  background-image: url("./images/planned.svg");
-  background-size: 18px 18px;
-  height: 18px;
-  width: 18px;
-}
-
-.support.Custom::before {
-  display: inline-block;
-  content: " ";
-  background-image: url("./images/custom.svg");
-  background-size: 18px 18px;
-  height: 18px;
-  width: 18px;
+  background-image: url("./images/api.svg");
+  background-size: 16px 16px;
+  height: 16px;
+  width: 16px;
 }
 
 .legend-keys {
@@ -169,7 +160,7 @@ tbody tr.category-feature:last-child td {
   flex-direction: column;
   justify-content: flex-start;
   align-items: left;
-  margin: 0 10px 20px 0;
+  margin: 0 10px 20px 10px;
   font-size: 16px;
 }
 
@@ -212,21 +203,10 @@ tbody tr.category-feature:last-child td {
   margin-bottom: -2px;
 }
 
-.legend.Planned::before {
+.legend.API::before {
   display: inline-block;
   content: " ";
-  background-image: url("./images/planned.svg");
-  background-size: 14px 14px;
-  height: 14px;
-  width: 14px;
-  margin-left: 5px;
-  margin-bottom: -2px;
-}
-
-.legend.Custom::before {
-  display: inline-block;
-  content: " ";
-  background-image: url("./images/custom.svg");
+  background-image: url("./images/api.svg");
   background-size: 14px 14px;
   height: 14px;
   width: 14px;
