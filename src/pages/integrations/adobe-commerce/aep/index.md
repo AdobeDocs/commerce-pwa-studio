@@ -4,8 +4,6 @@ title: Adobe Experience Platform
 
 # Adobe Experience Platform
 
-**NOTE**: The Experience Platform Connector for Adobe Commerce is scheduled for released in the second half of 2022. PWA Studio is publishing this code in anticipation of the Experience Platform Connector release.
-
 Included in the PWA Studio 12.5.0 release is an eventing framework that lets store owners install extensions that track user interaction within their site and collect analytics information.
 With the Experience Platform Connector extension, Adobe Commerce users with an Adobe Experience Platform (AEP) subscription can get event data from PWA Studio storefronts and process it on the AEP.
 
