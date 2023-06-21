@@ -267,7 +267,6 @@ It provides props data for a quantity UI component.
 | handleIncrement | `function` | Callback function for handling an increment event |
 | maskInput | `function` | Function for masking a value when decimal values are allowed |
 
-
 Object type returned by the [useEditModal](#useEditModal) talon.
 It provides props data for rendering an edit modal component.
 
