@@ -261,7 +261,9 @@ It provides props data to use when rendering a coupon code component.
 | errorMessage | `String` | If GraphQL error occurs, this value is set. |
 | fetchError | `Object` | The error data object returned by a GraphQL query. |
 | handleApplyCoupon | `function` | Function to call for handling the application of a coupon code to a cart. |
+| handleApplyCouponOnEnter | `function` | Function to call for handling the application of a coupon code to a cart on enter key Press. |
 | handleRemoveCoupon | `function` | Function to call for handling the removal of a coupon code from a cart |
+| handleRemoveCouponOnEnter | `function` | Function to call for handling the removal of a coupon code from a cart on enter key press. |
 | removingCoupon | `boolean` | True if a coupon code is currently being removed. False otherwise. |
 
 
@@ -310,6 +312,7 @@ It provides props data to use when rendering a shipping form component.
 | --- | --- | --- |
 | formErrors | `Array.<Error>` | A list of form errors |
 | handleOnSubmit | `function` | Callback function to handle form submissions |
+| handleOnSubmitKeyPress | `function` | Callback function to handle form submissions on enter key |
 | handleZipChange | `function` | Callback function to handle a zip code change |
 | isSetShippingLoading | `boolean` | True if the cart shipping information is being set. False otherwise. |
 
@@ -339,6 +342,7 @@ It provides prop data to use when rendering shipping methods.
 | selectedShippingMethod | `String` | A serialized string of <inlineCode>${carrier-code}\|${method-code}</inlineCode>, eg. <inlineCode>usps\|priority</inlineCode>. |
 | shippingMethods | `Array.<Object>` | A list of available shipping methods based on the primary shipping address |
 | showForm | `function` | A function that sets the `isShowingForm` value to true. |
+| showFormOnEnter | `function` | A function that sets the `isShowingForm` value to true. |
 
 
 GraphQL mutations for a shipping radio selector component.
