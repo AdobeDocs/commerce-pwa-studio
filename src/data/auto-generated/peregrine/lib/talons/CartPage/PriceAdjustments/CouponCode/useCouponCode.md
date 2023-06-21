@@ -50,7 +50,6 @@ This talon performs the following effects:
 </dd>
 </dl>
 
-
 Typedefs
 
 <dl>
@@ -132,7 +131,6 @@ It provides data to use when rendering a radio selector for shipping methods.
 
 </dd>
 </dl>
-
 
 This talon contains the logic for a coupon code form component.
 It performs effects and returns props data for rendering the component.
