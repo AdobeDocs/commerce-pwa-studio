@@ -4,9 +4,9 @@
 
 **Type:** `url`
 
-**Example:** `https://master-7rqtwti-mfwmkrjfqvbjk.us-4.magentosite.cloud/`
+**Example:** `https://master-7rqtwti-c5v7sxvquxwl4.eu-4.magentosite.cloud/`
 
-Connect to an instance of Magento 2.3 by specifying its public domain name.
+Connect to an instance of Magento by specifying its public domain name.
 
 ## Magento Store Edition
 
