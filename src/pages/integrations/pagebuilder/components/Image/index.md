@@ -1,5 +1,6 @@
 ---
 title: Image
+description: View detailed API reference documentation about the image content type of the Page Builder component for PWA Studio storefront projects.
 ---
 
 # Image

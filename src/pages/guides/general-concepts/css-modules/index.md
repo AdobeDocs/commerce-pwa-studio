@@ -1,5 +1,6 @@
 ---
 title: CSS modules
+description: View code samples for creating and composing CSS modules for your PWA Studio storefront project.
 ---
 
 # CSS modules

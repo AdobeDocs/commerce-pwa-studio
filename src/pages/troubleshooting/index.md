@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting
+description: Learn how to troubleshoot common PWA Studio development issues.
 ---
 
 ## Troubleshooting

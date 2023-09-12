@@ -1,5 +1,6 @@
 ---
 title: Change static assets directory
+description: Learn how to override default PWA Studio static assets.
 ---
 
 # Change static assets directory

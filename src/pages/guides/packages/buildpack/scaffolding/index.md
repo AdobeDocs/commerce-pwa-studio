@@ -1,5 +1,6 @@
 ---
 title: Scaffolding
+description: Learn how the PWA Studio framework uses scaffolding to autogenerate required files for a project.
 ---
 
 # Scaffolding

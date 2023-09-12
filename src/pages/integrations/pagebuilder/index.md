@@ -1,5 +1,6 @@
 ---
 title: Page Builder
+description: Learn how to integrate Page Builder with PWA Stuio storefront projects.
 ---
 
 # Page Builder
@@ -41,7 +42,7 @@ To develop and integrate your own custom content type components into your PWA S
 
 ## Framework components
 
-As part of the Page Builder integration to PWA Studio, we implemented a framework that converts Page Builder’s master format (HTML) into a structured format that works in React and PWA Studio. The following video describes the components of this framework, followed by detailed descriptions of each.
+As part of the Page Builder integration to PWA Studio, we implemented a framework that converts Page Builder's master format (HTML) into a structured format that works in React and PWA Studio. The following video describes the components of this framework, followed by detailed descriptions of each.
 
 <div style="position: relative; overflow: hidden; padding-top: 56.25%; border: 1px solid #ccc;">
    <iframe style="position: absolute; top:0; left:0; width: 100%; height:100%; border: 0;" title="Adobe Video Publishing Cloud Player" src="https://video.tv.adobe.com/v/31597t1/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>

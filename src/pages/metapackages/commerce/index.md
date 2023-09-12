@@ -1,5 +1,6 @@
 ---
 title: Install the Commerce metapackage
+description: Learn how to install the Commerce Composer metapackage for PWA Studio storefront projects that use Adobe Commerce as the backend system.
 ---
 
 # Install the Commerce metapackage

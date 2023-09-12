@@ -1,5 +1,6 @@
 ---
 title: Item
+description: View detailed API reference documentation for the item utility in the Peregrine package of the PWA Studio framework.
 ---
 
 # Item

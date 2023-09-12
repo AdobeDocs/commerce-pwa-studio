@@ -1,5 +1,6 @@
 ---
 title: ProductImageCarousel
+description: View detailed API reference documentation about the ProductImageCarousel component in the Venia UI package of the PWA Studio framework.
 ---
 
 # ProductImageCarousel

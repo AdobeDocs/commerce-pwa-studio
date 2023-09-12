@@ -1,5 +1,6 @@
 ---
 title: Configure Webpack
+description: View detailed reference documentation about configuring webpack tools in the PWA Studio framework.
 ---
 
 # Configure Webpack

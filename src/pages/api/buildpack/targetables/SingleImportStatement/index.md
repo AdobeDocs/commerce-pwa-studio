@@ -1,5 +1,6 @@
 ---
 title: SingleImportStatement
+description: View detailed API reference documentation for the SingleImportStatement class in the Buildpack package of the PWA Studio framework.
 ---
 
 # SingleImportStatement

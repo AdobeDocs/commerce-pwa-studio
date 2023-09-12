@@ -1,6 +1,6 @@
 ---
-title: Home - PWA Studio
-description: Developer documentation for PWA Studio
+title: PWA Studio | Adobe Commerce
+description: Developer documentation home page for PWA Studio.
 contributors:
   - https://github.com/jcalcaben
   - https://github.com/bdenham

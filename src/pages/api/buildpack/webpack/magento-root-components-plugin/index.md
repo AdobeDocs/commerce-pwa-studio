@@ -1,5 +1,6 @@
 ---
 title: Magento root components plugin
+description: View detailed reference documentation about the Magento root components webpack plugin in the PWA Studio framework.
 ---
 
 # Magento root components plugin

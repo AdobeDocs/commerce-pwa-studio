@@ -1,5 +1,6 @@
 ---
 title: Debugging
+description: Learn how to debug custom Page Builder components in PWA Studio storefront projects.
 ---
 
 # Debugging

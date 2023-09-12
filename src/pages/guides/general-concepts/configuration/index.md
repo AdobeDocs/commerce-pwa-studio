@@ -1,5 +1,6 @@
 ---
 title: Configuration management
+description: Learn the basics about configuration management (including best practices) in the PWA Studio framework.
 ---
 
 # Configuration management

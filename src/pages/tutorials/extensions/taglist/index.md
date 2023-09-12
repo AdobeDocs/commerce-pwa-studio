@@ -1,5 +1,6 @@
 ---
 title: Create a tag list extension
+description: Learn how to diaply a list of tags on the product details page.
 ---
 
 # Create a tag list extension

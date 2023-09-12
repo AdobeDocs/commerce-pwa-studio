@@ -1,5 +1,6 @@
 ---
 title: GiftCards
+description: View detailed API reference documentation for the GiftCards talon in the Peregrine package of the PWA Studio framework.
 ---
 
 # GiftCards

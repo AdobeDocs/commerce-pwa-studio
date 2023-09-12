@@ -1,5 +1,6 @@
 ---
 title: Integrations overview
+description: See an overview of developer resources for integrating Adobe Commerce features with PWA Studio storefront projects.
 ---
 
 # Integrations

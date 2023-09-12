@@ -1,5 +1,6 @@
 ---
 title: Adobe Experience Platform
+description: Learn how the Adobe Experience Platform integrates with PWA Studio storefront projects.
 ---
 
 # Adobe Experience Platform

@@ -1,5 +1,6 @@
 ---
 title: Buildpack reference
+description: View detailed API reference documentation for the Buildpack package in the PWA Studio framework.
 ---
 
 # Buildpack reference

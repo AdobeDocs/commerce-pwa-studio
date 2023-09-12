@@ -1,5 +1,6 @@
 ---
 title: Build time architecture
+description: Learn about the PWA Studio build time architecture.
 ---
 
 # Build time architecture

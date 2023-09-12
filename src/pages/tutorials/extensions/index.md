@@ -1,5 +1,6 @@
 ---
 title: Extension development
+description: Learn how to change the behavior of existing PWA Studio components.
 ---
 
 # Extension development

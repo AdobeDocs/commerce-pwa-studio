@@ -1,5 +1,6 @@
 ---
 title: Content rendering
+description: Learn about client- and server-side content rendering in the PWA Studio framework.
 ---
 
 # Content rendering

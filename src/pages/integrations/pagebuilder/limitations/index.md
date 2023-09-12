@@ -1,5 +1,6 @@
 ---
 title: Known limitations
+description: Review limitations of the PWA Studio framework.
 ---
 
 # Known limitations

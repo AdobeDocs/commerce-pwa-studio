@@ -1,5 +1,6 @@
 ---
 title: Buildpack package
+description: Review resources for managing the build and deploy process for your PWA Studio storefront project.
 ---
 
 # Buildpack package

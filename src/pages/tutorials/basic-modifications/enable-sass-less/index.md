@@ -1,5 +1,6 @@
 ---
 title: Enable SASS or LESS support
+description: View sample code for enabling SAAS and LESS support in your PWA Studio storefront project. 
 ---
 
 # Enable SASS or LESS support

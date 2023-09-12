@@ -1,5 +1,6 @@
 ---
 title: ProductListing
+description: View detailed API reference documentation for the ProductListing talon in the Peregrine package of the PWA Studio framework.
 ---
 
 # ProductListing

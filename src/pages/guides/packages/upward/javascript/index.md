@@ -1,5 +1,6 @@
 ---
 title: UPWARD JavaScript implementation
+description: Learn how to run the PWA Studio UPWARD middleware as JavaScript.
 ---
 
 # UPWARD JavaScript implementation

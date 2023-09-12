@@ -1,5 +1,6 @@
 ---
 title: Products
+description: View detailed API reference documentation about the products content type of the Page Builder component for PWA Studio storefront projects.
 ---
 
 # Products

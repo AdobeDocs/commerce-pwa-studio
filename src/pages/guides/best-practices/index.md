@@ -1,5 +1,6 @@
 ---
 title: Best Practices for PWA Studio
+description: Review best practices for using the PWA Studio frameowkr to develop a storefront project.
 ---
 
 # Best Practices for PWA Studio

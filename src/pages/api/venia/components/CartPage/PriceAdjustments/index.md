@@ -1,5 +1,6 @@
 ---
 title: PriceAdjustments
+description: View detailed API reference documentation about the PriceAdjustments component in the Venia UI package of the PWA Studio framework.
 ---
 
 # PriceAdjustments

@@ -1,5 +1,6 @@
 ---
 title: PriceSummary
+description: View detailed API reference documentation for the PriceSummary talon in the Peregrine package of the PWA Studio framework.
 ---
 
 # PriceSummary

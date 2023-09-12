@@ -1,5 +1,6 @@
 ---
 title: ToastContainer
+description: View detailed API reference documentation about the ToastContainer component in the Venia UI package of the PWA Studio framework.
 ---
 
 # ToastContainer

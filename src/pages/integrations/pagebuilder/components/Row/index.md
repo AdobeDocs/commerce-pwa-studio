@@ -1,5 +1,6 @@
 ---
 title: Row
+description: View detailed API reference documentation about the row content type of the Page Builder component for PWA Studio storefront projects.
 ---
 
 # Row

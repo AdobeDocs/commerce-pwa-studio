@@ -1,5 +1,6 @@
 ---
 title: Storefront architecture
+description: Learn about headless and mircoservices architecture for PWA Studio storefront projects.
 ---
 
 # Storefront architecture

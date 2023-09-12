@@ -1,5 +1,6 @@
 ---
 title: Routing
+description: Learn about client- and server-side URL routing in the PWA Studio framework.
 ---
 
 # Routing

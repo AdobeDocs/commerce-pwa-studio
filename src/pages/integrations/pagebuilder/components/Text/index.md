@@ -1,5 +1,6 @@
 ---
 title: Text
+description: View detailed API reference documentation about the text content type of the Page Builder component for PWA Studio storefront projects.
 ---
 
 # Text

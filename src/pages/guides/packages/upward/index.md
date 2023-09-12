@@ -1,5 +1,6 @@
 ---
 title: UPWARD
+description: Learn about the middleware that PWA Studio relies on to support storefront projects.
 ---
 
 # UPWARD

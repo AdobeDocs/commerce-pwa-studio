@@ -1,5 +1,6 @@
 ---
 title: Custom events for Experience Platform analytics
+description: Learn how to create custom events and push them to Adobe Experience Platform with PWA Studio.
 ---
 
 # Creating custom events

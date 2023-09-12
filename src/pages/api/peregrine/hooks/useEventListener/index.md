@@ -1,5 +1,6 @@
 ---
 title: useEventListener()
+description: View detailed API reference documentation for the useEventListener() custom React hook in the Peregrine package of the PWA Studio framework.
 ---
 
 # useEventListener()

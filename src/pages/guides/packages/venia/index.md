@@ -1,5 +1,6 @@
 ---
 title: Venia packages
+description: Learn about the packages that comprise the PWA Studio reference storefront (Venia).
 ---
 
 # Venia packages

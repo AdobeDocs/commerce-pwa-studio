@@ -1,5 +1,6 @@
 ---
 title: Link
+description: View detailed API reference documentation about the link component in the Venia UI package of the PWA Studio framework.
 ---
 
 import Link from '/src/data/auto-generated/venia-ui/lib/components/Link/link.md';

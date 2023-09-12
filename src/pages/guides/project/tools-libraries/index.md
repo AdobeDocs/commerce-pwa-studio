@@ -1,5 +1,6 @@
 ---
 title: External tools and libraries
+description: Learn about the major technologies that PWA Studio uses.
 ---
 
 # External tools and libraries

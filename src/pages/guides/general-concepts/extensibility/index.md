@@ -1,5 +1,6 @@
 ---
 title: Extensibility
+description: Learn about the tools available for extending the PWA Studio framework for your storefront project.
 ---
 
 # Extensibility

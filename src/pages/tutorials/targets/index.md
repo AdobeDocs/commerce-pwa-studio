@@ -1,5 +1,6 @@
 ---
 title: Targets and Targetables
+description: Learn how to extend PWA Studio with intercept files.
 ---
 
 # Targets and Targetables

@@ -1,5 +1,6 @@
 ---
 title: Targetables reference
+description: Review developer resources for Targetables API in the Buildpack package of the PWA Studio framework.
 ---
 
 # Targetables reference

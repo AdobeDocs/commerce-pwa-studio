@@ -1,5 +1,6 @@
 ---
 title: Service worker
+description: View detailed reference documentation about the service worker webpack plugin in the PWA Studio framework.
 ---
 
 # Service worker

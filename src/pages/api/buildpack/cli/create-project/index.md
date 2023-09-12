@@ -1,5 +1,6 @@
 ---
 title: Create project
+description: View detailed reference documentation for creating a project with the Buildpack CLI in the PWA Studio framework.
 ---
 
 # Create project

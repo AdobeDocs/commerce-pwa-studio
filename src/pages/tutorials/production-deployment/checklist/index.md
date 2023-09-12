@@ -1,5 +1,6 @@
 ---
 title: Production launch checklist
+description: Use this checklist to deploy your PWA Studio storefront to a production environment.
 ---
 
 # Production launch checklist

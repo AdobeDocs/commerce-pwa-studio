@@ -1,5 +1,6 @@
 ---
 title: Install the Open Source metapackage
+description: Learn how to install the Open Source Composer metapackage to get enhanced GraphQL coverage for PWA Studio storefront projects.
 ---
 
 # Install the Open Source metapackage

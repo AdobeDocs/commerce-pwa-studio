@@ -1,5 +1,6 @@
 ---
 title: Slider
+description: View detailed API reference documentation about the slider content type of the Page Builder component for PWA Studio storefront projects.
 ---
 
 # Slider

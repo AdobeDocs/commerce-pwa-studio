@@ -1,5 +1,6 @@
 ---
 title: Client-side caching
+description: Learn about client-side caching and how it affects services workers in the PWA Studio framework.
 ---
 
 # Client-side caching

@@ -1,5 +1,6 @@
 ---
 title: PWA Studio project overview
+description: Learn about Progressive Web Applications and the PWA Studio framework for Adobe Commerce and Magento Open Source projects.
 ---
 
 # PWA Studio project overview

@@ -1,5 +1,6 @@
 ---
 title: Upgrading versions
+description: Learn how to upgrade to the latest version of PWA Studio.
 ---
 
 # Upgrading versions

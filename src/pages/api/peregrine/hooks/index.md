@@ -1,5 +1,6 @@
 ---
 title: Custom React hooks
+description: View detailed API reference documentation for custom React hooks in the Peregrine package of the PWA Studio framework.
 ---
 
 # Custom React hooks

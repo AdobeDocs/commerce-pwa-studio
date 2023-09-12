@@ -1,5 +1,6 @@
 ---
 title: PriceAdjusments
+description: View detailed API reference documentation for the PriceAdjustments talon in the Peregrine package of the PWA Studio framework.
 ---
 
 # PriceAdjusments

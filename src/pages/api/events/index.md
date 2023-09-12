@@ -1,5 +1,6 @@
 ---
 title: Analytics Events Reference
+description: View detailed API reference documentation about analytics events in the PWA Studio framework.
 ---
 
 # Analytics events reference
