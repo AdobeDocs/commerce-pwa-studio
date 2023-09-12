@@ -1,6 +1,10 @@
 ---
 title: Adobe Commerce
 description: See an overview of developer resources for integrating Adobe Commerce features with PWA Studio storefront projects.
+keywords:
+  - Integration
+  - Services
+  - Storefront
 ---
 
 # Adobe Commerce

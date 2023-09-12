@@ -1,6 +1,8 @@
 ---
 title: General concepts
 description: Learn about general development concepts and features of the PWA Studio framework.
+keywords:
+  - Storefront
 ---
 
 # General concepts

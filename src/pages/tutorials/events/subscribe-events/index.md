@@ -1,6 +1,10 @@
 ---
 title: Subscribing to events
 description: View sample code for subscribing to events in your PWA Studio modules.
+keywords:
+  - Events
+  - Storefront
+  - Tools
 ---
 
 # Subscribing to events

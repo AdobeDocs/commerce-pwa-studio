@@ -1,6 +1,10 @@
 ---
 title: Page Builder
 description: Learn how to integrate Page Builder with PWA Stuio storefront projects.
+keywords:
+  - Integration
+  - Page Builder
+  - Storefront
 ---
 
 # Page Builder

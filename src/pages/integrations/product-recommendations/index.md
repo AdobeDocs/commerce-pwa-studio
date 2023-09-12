@@ -1,6 +1,11 @@
 ---
 title: Product Recommendations
 description: Leanr how to integrate the Product Recommendations service in your PWA Studio storefront project.
+keywords:
+  - Integration
+  - Recommendations
+  - Services
+  - Storefront
 ---
 
 # Product Recommendations

@@ -1,6 +1,9 @@
 ---
 title: Setup a storefront project
 description: Learn how to set up a new Commerce storefront project using PWA Studio.
+keywords:
+  - Configuration
+  - Storefront
 ---
 
 # Setup a storefront project

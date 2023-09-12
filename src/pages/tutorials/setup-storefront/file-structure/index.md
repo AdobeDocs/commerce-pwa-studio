@@ -1,6 +1,9 @@
 ---
 title: Explore the files
 description: Learn about the file structure of PWA Studio storefront projects.
+keywords:
+  - Configuration
+  - Storefront
 ---
 
 # Explore the files

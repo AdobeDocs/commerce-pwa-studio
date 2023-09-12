@@ -19,6 +19,7 @@ properties:
         - Cloud
         - Configuration
         - Cron
+        - Deploy
         - Events
         - Extensibility
         - Extensions
@@ -31,8 +32,11 @@ properties:
         - Page Builder
         - Payments
         - Performance
+        - Recommendations
         - REST
+        - Routes
         - Security
+        - Services
         - Storefront
         - Themes
         - Tools

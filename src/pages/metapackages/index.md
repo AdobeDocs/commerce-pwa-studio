@@ -1,6 +1,10 @@
 ---
 title: Metapackages
 description: Learn about Composer metapackages that extend the capabilities of PWA Studio storefront projects.
+keywords:
+  - Install
+  - Storefront
+  - Tools
 ---
 
 # Metapackages
