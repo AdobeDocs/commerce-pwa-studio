@@ -1,5 +1,6 @@
 ---
 title: Button
+description: View detailed API reference documentation about the button component in the Venia UI package of the PWA Studio framework.
 ---
 
 # Button

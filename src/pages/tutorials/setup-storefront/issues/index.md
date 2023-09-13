@@ -1,5 +1,9 @@
 ---
 title: Troubleshooting
+description: Learn how to troubleshoot common PWA Studio development issues.
+keywords:
+  - Configuration
+  - Storefront
 ---
 
 # Common setup issues

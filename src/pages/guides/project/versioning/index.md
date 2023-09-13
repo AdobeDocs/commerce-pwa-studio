@@ -1,5 +1,6 @@
 ---
 title: Versioning strategy
+description: Learn how PWA Studio component versioning works.
 ---
 
 # Versioning strategy

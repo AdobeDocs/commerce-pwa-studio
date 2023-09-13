@@ -1,5 +1,6 @@
 ---
 title: useWindowSize()
+description: View detailed API reference documentation for the useWindowSize() custom React hook in the Peregrine package of the PWA Studio framework.
 ---
 
 # useWindowSize()

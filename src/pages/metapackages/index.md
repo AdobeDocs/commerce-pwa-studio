@@ -1,10 +1,15 @@
 ---
 title: Metapackages
+description: Learn about Composer metapackages that extend the capabilities of PWA Studio storefront projects.
+keywords:
+  - Install
+  - Storefront
+  - Tools
 ---
 
 # Metapackages
 
-PWA Studio uses metapackages to extend Magento Open Source backends with new features and sample data. For example, new GraphQL mutations and interfaces enable enhanced frontend capabilities.
+PWA Studio uses metapackages to extend Adobe Commerce and Magento Open Source backends with new features and sample data. For example, new GraphQL mutations and interfaces enable enhanced frontend capabilities.
 
 As of version 12.1.0, the Open Source metapackage is required for PWA Studio.
 

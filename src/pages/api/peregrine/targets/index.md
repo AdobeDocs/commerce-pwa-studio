@@ -1,5 +1,6 @@
 ---
 title: Peregrine targets
+description: View detailed API reference documentation for custom React hooks and talons used in PWA Studio UI components.
 ---
 
 # Peregrine targets

@@ -1,5 +1,6 @@
 ---
 title: State management
+description: Learn how the PWA Studio framework handles state changes for data after user interactions.
 ---
 
 # State management

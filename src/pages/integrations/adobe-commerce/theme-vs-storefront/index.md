@@ -1,5 +1,6 @@
 ---
 title: Theme vs Storefront
+description: Learn about the differences between the theme and storefront concepts within the context of PWA Studio projects.
 ---
 
 # Theme vs Storefront

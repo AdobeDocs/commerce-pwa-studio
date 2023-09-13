@@ -1,5 +1,10 @@
 ---
 title: Extension development
+description: Learn how to change the behavior of existing PWA Studio components.
+keywords:
+  - Extensions
+  - Storefront
+  - Tools
 ---
 
 # Extension development

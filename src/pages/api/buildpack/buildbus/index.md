@@ -1,5 +1,6 @@
 ---
 title: Build Bus
+description: View detailed API reference documentation for the BuildBus library in the Buildpack package of the PWA Studio framework.
 ---
 
 # Build Bus

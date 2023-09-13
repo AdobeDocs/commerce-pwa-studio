@@ -1,5 +1,6 @@
 ---
 title: List
+description: View detailed API reference documentation for the list utility in the Peregrine package of the PWA Studio framework.
 ---
 
 # List

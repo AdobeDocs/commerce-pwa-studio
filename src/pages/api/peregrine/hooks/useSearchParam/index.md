@@ -1,5 +1,6 @@
 ---
 title: useSearchParam()
+description: View detailed API reference documentation for the useSearchParam() custom React hook in the Peregrine package of the PWA Studio framework.
 ---
 
 # useSearchParam()

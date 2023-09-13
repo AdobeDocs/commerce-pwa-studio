@@ -1,5 +1,6 @@
 ---
 title: Buildpack Command Line Interface
+description: View detailed reference documentation for the Buildpack package CLI of the PWA Studio framework.
 ---
 
 # Buildpack Command Line Interface

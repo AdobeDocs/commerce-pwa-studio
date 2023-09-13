@@ -1,5 +1,9 @@
 ---
 title: Deploy to Adobe Commerce
+description: Learn how to deploy your PWA Studio storefront project on Adobe Commerce on cloud infrastructure.
+keywords:
+  - Deploy
+  - Storefront
 ---
 
 # Deploy to Adobe Commerce

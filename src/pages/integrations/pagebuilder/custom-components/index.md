@@ -1,5 +1,6 @@
 ---
 title: Creating custom components
+description: Learn how to create a custom Page Builder component for a PWA Studio storefront project.
 ---
 
 # Creating custom components

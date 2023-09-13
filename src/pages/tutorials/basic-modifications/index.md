@@ -1,5 +1,6 @@
 ---
 title: Basic Modifications
+description: Review a collection of tutorials for basic modification use cases in PWA Studio projects.
 ---
 
 # Basic Modifications

@@ -1,5 +1,6 @@
 ---
 title: EnvVarDefinition object
+description: View detailed reference documentation for the environment variable definition object in the Buildpack package of the PWA Studio framework.
 ---
 
 # EnvVarDefinition object

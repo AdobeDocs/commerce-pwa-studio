@@ -1,5 +1,6 @@
 ---
 title: Load environment file
+description: View detailed reference documentation for loading environment files with the Buildpack CLI in the PWA Studio framework.
 ---
 
 # Load environment file

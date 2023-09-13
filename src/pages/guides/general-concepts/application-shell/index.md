@@ -1,5 +1,6 @@
 ---
 title: Application shell
+description: Learn how the PWA Studio framework uses application shell architecture to increase page speed.
 ---
 
 # Application shell

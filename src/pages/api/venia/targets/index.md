@@ -1,5 +1,6 @@
 ---
 title: Venia targets
+description: Learn how to extend the PWA Studio framework using the Venia UI package.
 jsDoc: true
 ---
 

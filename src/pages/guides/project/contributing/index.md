@@ -1,5 +1,6 @@
 ---
 title: Contributing
+description: Learn how to contribute code to the PWA Studio project.
 ---
 
 # Contributing

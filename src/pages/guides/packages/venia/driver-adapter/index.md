@@ -1,5 +1,6 @@
 ---
 title: Driver and adapter components
+description: Learn how components from the Venia reference storefront give PWA Studio's React components access to external dependencies. 
 ---
 
 # Driver and adapter components

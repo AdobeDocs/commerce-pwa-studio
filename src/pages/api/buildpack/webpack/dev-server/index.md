@@ -1,5 +1,6 @@
 ---
 title: PWA development server
+description: View detailed reference documentation about the development server webpack plugin in the PWA Studio framework.
 ---
 
 # PWA development server

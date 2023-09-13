@@ -1,5 +1,6 @@
 ---
 title: Shopping Cart Talons
+description: View detailed API reference documentation for the shopping cart talons in the Peregrine package of the PWA Studio framework.
 ---
 
 # Shopping Cart Talons

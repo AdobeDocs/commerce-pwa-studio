@@ -1,5 +1,6 @@
 ---
 title: Shopping Cart page components
+description: Review developer resources about shopping cart page React components included in the PWA Studio framework.
 ---
 
 # Shopping Cart page components

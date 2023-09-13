@@ -1,5 +1,6 @@
 ---
 title: TargetableModule
+description: View detailed API reference documentation for the TargetableModule class in the Buildpack package of the PWA Studio framework.
 ---
 
 # TargetableModule

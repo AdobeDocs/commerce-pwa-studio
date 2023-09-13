@@ -1,5 +1,6 @@
 ---
 title: Add a new environment variable
+description: Learn how to create a React component that uses an environment variable.
 ---
 
 # Add a new environment variable

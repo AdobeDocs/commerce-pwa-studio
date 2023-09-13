@@ -1,5 +1,6 @@
 ---
 title: TargetableESModuleObject
+description: View detailed API reference documentation for the TargetableESModuleObject class in the Buildpack package of the PWA Studio framework.
 ---
 
 # TargetableESModuleObject

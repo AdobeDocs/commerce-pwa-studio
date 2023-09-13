@@ -1,5 +1,6 @@
 ---
 title: Multiple Sites with UPWARD
+description: Learn how to run multiple PWA Studio storefronts from a single Adobe Commerce or Magento Open Source backend. 
 ---
 
 # Multiple websites with UPWARD

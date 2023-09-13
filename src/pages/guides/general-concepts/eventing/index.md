@@ -1,5 +1,10 @@
 ---
 title: Eventing in PWA Studio
+description: Learn the basics about eventing in the PWA Studio framework.
+keywords:
+  - Events
+  - Storefront
+  - Tools
 ---
 
 # Eventing in PWA Studio

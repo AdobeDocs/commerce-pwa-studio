@@ -1,5 +1,6 @@
 ---
 title: Magento resolver
+description: View detailed reference documentation about the Magento resolver webpack plugin in the PWA Studio framework.
 ---
 
 # Magento resolver

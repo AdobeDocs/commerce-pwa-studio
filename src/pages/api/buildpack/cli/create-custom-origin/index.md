@@ -1,5 +1,6 @@
 ---
 title: Create custom origin
+description: View detailed reference documentation for creating custom origins with the Buildpack CLI in the PWA Studio framework.
 ---
 
 # Create custom origin

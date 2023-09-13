@@ -1,5 +1,6 @@
 ---
 title: General components
+description: Review developer resources about general React components included in the PWA Studio framework.
 ---
 
 # General components

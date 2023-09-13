@@ -1,5 +1,9 @@
 ---
 title: Peregrine package
+description: Learn how to create unique PWA Studio storefront experiences with a collection of functions.
+keywords:
+  - Storefront
+  - Tools
 ---
 
 # Peregrine package
