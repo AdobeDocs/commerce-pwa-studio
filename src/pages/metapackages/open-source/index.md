@@ -17,7 +17,7 @@ You must install this metapackage in all projects using PWA Studio 12.1.0 and hi
 
 To set up and develop your PWA extension modules locally, use the following instructions.
 
-1. Clone the `magento2-pwa` repository into your vendor directory name:
+1. Clone the `magento2-pwa` repository into your `vendor` directory name:
 
     ```bash
     git clone git@github.com:magento/magento2-pwa.git ext/magento/magento2-pwa
@@ -36,7 +36,7 @@ To set up and develop your PWA extension modules locally, use the following inst
     -  Configure `composer` to find new extension modules. The following command configures `composer` to treat any extension code inside the `ext` directory as a package and creates a symlink to the `vendor` directory:
 
         ```bash
-        composer config repositories.ext path "./ext/*/*/*"
+        composer config repositories.ext path "./vendor/ext/*/*/*"
         ```
 
 1. Install the `pwa` metapackage:
