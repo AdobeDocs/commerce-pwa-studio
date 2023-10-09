@@ -1,5 +1,6 @@
 ---
 title: Webpack tools
+description: Review developer resources for webpack tools in the Buildpack package of the PWA Studio framework.
 ---
 
 # Webpack tools

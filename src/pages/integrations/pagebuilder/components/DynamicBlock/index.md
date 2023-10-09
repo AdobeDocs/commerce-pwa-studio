@@ -1,5 +1,6 @@
 ---
 title: Dynamic Block
+description: View detailed API reference documentation about the dynamic block content type of the Page Builder component for PWA Studio storefront projects.
 jsDoc: true
 ---
 

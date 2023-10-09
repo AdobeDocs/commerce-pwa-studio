@@ -1,5 +1,6 @@
 ---
 title: Mask
+description: View detailed API reference documentation about the mask component in the Venia UI package of the PWA Studio framework.
 ---
 
 # Mask

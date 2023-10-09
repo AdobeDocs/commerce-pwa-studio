@@ -1,5 +1,6 @@
 ---
 title: Internationalization
+description: Learn about localization in the PWA Studio framework.
 ---
 
 # Internationalization

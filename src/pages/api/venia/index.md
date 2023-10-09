@@ -1,5 +1,9 @@
 ---
 title: Venia UI reference
+description: Review reference documentation for the PWA Studio Venia UI package.
+keywords:
+  - Storefront
+  - Tools
 ---
 
 # Venia UI reference

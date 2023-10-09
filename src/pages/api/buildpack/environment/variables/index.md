@@ -1,5 +1,6 @@
 ---
 title: Environment variables
+description: Learn how to access environment variables with the Buildpack package of the PWA Studio framework.
 ---
 
 # Environment variables

@@ -1,5 +1,6 @@
 ---
 title: TargetableESModuleArray
+description: View detailed API reference documentation for the TargetableESModuleArray class in the Buildpack package of the PWA Studio framework.
 ---
 
 # TargetableESModuleArray

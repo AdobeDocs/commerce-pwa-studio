@@ -2,7 +2,9 @@
 title: Tailwind Theming
 description: Learn how to use Tailwind CSS to theme your PWA Studio app.
 featured: true
-keywords: [Theming, Tailwind CSS, CSS variables, PWA Studio]
+keywords:
+  - Storefront
+  - Themes
 ---
 
 # Tailwind Theming for PWA Studio apps

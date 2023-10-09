@@ -1,5 +1,6 @@
 ---
 title: TargetableSet
+description: View detailed API reference documentation for the TargetableSet class in the Buildpack package of the PWA Studio framework.
 ---
 
 # TargetableSet

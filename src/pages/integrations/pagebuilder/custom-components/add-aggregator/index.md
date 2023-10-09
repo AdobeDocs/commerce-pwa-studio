@@ -1,5 +1,6 @@
 ---
 title: Add aggregator
+description: View code samples for retrieving properties custom Page Builder component content types in PWA Studio storefront projects.
 ---
 
 # Add aggregator

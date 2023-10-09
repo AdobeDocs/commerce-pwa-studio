@@ -1,5 +1,6 @@
 ---
 title: Environment configuration
+description: Review developer resources for configuring environments with the Buildpack package of the PWA Studio framework.
 ---
 
 # Environment configuration

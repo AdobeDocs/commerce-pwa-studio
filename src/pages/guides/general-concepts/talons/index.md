@@ -1,5 +1,6 @@
 ---
 title: Talons
+description: Learn about custom React hooks in PWA Studio.
 ---
 
 # Talons

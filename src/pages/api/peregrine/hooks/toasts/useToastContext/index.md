@@ -1,5 +1,6 @@
 ---
 title: useToastContext()
+description: View detailed API reference documentation for the useToastContext() custom React hook in the Peregrine package of the PWA Studio framework.
 ---
 
 # useToastContext()

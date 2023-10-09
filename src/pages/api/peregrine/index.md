@@ -1,5 +1,9 @@
 ---
 title: Peregrine reference
+description: View detailed API reference documentation for the Peregrine package in the PWA Studio framework.
+keywords:
+  - Storefront
+  - Tools
 ---
 
 # Peregrine reference

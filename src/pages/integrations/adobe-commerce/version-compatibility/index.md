@@ -1,5 +1,6 @@
 ---
 title: Version compatibility
+description: Learn about PWA Studio compatibility with Adobe Commerce and Magento Open Source releases.
 ---
 
 # Version compatibility

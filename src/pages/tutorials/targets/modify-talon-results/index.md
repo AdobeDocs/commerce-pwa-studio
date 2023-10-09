@@ -1,5 +1,6 @@
 ---
 title: Modify talon results
+description: Learn how to intercept a custom React hook and modify the results.
 ---
 
 # Modify talon results

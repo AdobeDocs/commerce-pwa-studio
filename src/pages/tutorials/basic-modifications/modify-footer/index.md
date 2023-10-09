@@ -1,5 +1,6 @@
 ---
 title: Modify the Footer component
+description: View sample code for modifying the PWA Studio footer component.
 ---
 
 # Modify the Footer component

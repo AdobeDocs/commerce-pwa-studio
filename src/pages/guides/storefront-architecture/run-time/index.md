@@ -1,5 +1,6 @@
 ---
 title: Run time architecture
+description: Learn about the PWA Studio runtime architecture.
 ---
 
 # Run time architecture

@@ -1,5 +1,6 @@
 ---
 title: Frequently Asked Questions
+description: Review a list of common questions developers ask about the PWA Studio framework.
 ---
 
 # Frequently Asked Questions

@@ -1,5 +1,9 @@
 ---
 title: GraphQL
+description: Learn about the benefits of using GraphQL APIs instead of REST for your PWA Studio projects.
+keywords:
+  - GraphQL
+  - Storefront
 ---
 
 # GraphQL

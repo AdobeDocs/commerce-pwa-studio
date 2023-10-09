@@ -1,5 +1,6 @@
 ---
 title: Add a static route
+description: View sample code for adding a static route to your PWA Studio storefront project.
 ---
 
 # Add a static route

@@ -1,4 +1,6 @@
 ---
 title: PWA Studio API reference
-description: This is the overview page for the PWA Studio API reference section
+description: View detailed API reference documentation for the PWA Studio framework.
+keywords:
+  - Storefront
 ---

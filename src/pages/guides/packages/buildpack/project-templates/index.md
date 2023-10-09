@@ -1,5 +1,6 @@
 ---
 title: Custom project templates
+description: Learn how to create custom templates for your PWA Studio storefront project.
 ---
 
 # Custom project templates

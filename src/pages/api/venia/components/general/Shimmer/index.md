@@ -1,5 +1,6 @@
 ---
 title: Shimmer
+description: View detailed API reference documentation about the shimmer component in the Venia UI package of the PWA Studio framework.
 ---
 
 # Shimmer

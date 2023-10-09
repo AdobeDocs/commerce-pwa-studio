@@ -1,5 +1,6 @@
 ---
 title: Targets
+description: View detailed API reference documentation for the targets library in the Buildpack package of the PWA Studio framework.
 ---
 
 # Targets

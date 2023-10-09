@@ -1,5 +1,6 @@
 ---
 title: useToasts()
+description: View detailed API reference documentation for the useToasts() custom React hook in the Peregrine package of the PWA Studio framework.
 ---
 
 # useToasts()

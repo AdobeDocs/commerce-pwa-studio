@@ -1,5 +1,10 @@
 ---
 title: Venia Sample Data metapackage
+description: Learn how to install the Venia sample data metapackage for PWA Studio storefront projects. 
+keywords:
+  - Install
+  - Storefront
+  - Tools
 ---
 
 # Venia Sample Data metapackage

@@ -1,5 +1,6 @@
 ---
 title: Create environment file
+description: View detailed reference documentation for creating an environment file with the Buildpack CLI in the PWA Studio framework.
 ---
 
 # Create environment file
