@@ -115,7 +115,7 @@ This talon performs the following effects:
 - Fetch product listing data associated with the cart
 - Log any GraphQL errors to the console
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
@@ -158,6 +158,7 @@ It returns prop data for rendering an interactive modal component.
 
 **Returns:**
 **Example** *(Importing into your project)*  
+
 ```js
 import { useEditModal } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
 ```
