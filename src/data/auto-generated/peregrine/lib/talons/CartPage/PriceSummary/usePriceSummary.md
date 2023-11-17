@@ -1,3 +1,4 @@
+
 Functions
 
 <dl>
@@ -44,6 +45,7 @@ This talon performs the following effects:
 
 - Log a GraphQL error if it occurs when getting the price summary
 
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |

@@ -115,6 +115,7 @@ This talon performs the following effects:
 - Fetch product listing data associated with the cart
 - Log any GraphQL errors to the console
 
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
@@ -122,7 +123,7 @@ This talon performs the following effects:
 | props | `Object` |  |
 | props.queries | [`ProductListingQueries`](#ProductListingQueries) | GraphQL queries for getting product listing data. |
 
-**Example** *(Importing into your project)*
+**Example** *(Importing into your project)*  
 
 ```js
 import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
@@ -135,6 +136,7 @@ This talon performs the following effects:
 
 - Manage the updating state of the cart while a product is being updated or removed
 
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
@@ -145,7 +147,7 @@ This talon performs the following effects:
 | props.setActiveEditItem | `function` | Function for setting the actively editing item |
 | props.setIsCartUpdating | `function` | Function for setting the updating state of the cart |
 
-**Example** *(Importing into your project)*
+**Example** *(Importing into your project)*  
 
 ```js
 import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProduct';
@@ -154,7 +156,8 @@ import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListin
 This talon contains logic for a product edit modal used on a cart page.
 It returns prop data for rendering an interactive modal component.
 
-**Example** *(Importing into your project)*
+**Returns:**
+**Example** *(Importing into your project)*  
 
 ```js
 import { useEditModal } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
@@ -168,6 +171,7 @@ This talon performs the following effects:
 - Manage the updating state of the cart while form data is being saved
 - Set the variant price on a product depending on the product's options
 
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
@@ -181,7 +185,7 @@ This talon performs the following effects:
 | props.updateQuantityMutation | `GraphQLDocument` | GraphQL mutation for updating the quantity of a product in a cart. |
 | props.setActiveEditItem | `function` | Function for setting the actively editing item. |
 
-**Example** *(Importing into your project)*
+**Example** *(Importing into your project)*  
 
 ```js
 import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
