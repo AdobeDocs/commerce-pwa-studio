@@ -19,7 +19,7 @@ Yarn v2 is currently not supported as its hoisting method is fundamentally diffe
 
 Run the following commands in your terminal to identify which versions you have installed.
 
-PWA Studio supports NodeJS Long Term Support (LTS) versions, currently v16 and v18, which are always [even-numbered](https://nodejs.org/en/about/releases/).
+PWA Studio supports NodeJS Long Term Support (LTS) versions, currently v16 and v18, which are always [even-numbered](https://nodejs.org/en/about/previous-releases).
 
 ### Node
 

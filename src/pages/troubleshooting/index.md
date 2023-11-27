@@ -7,7 +7,7 @@ description: Learn how to troubleshoot common PWA Studio development issues.
 
 For troubleshooting PWA Studio issues, we recommend searching our knowledge base using this link:
 
-[Adobe Commerce Help Center Search for PWA Studio issues](https://support.magento.com/hc/en-us/search?query=pwa%20studio)
+[Adobe Commerce Help Center Search for PWA Studio issues](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html)
 
 If you run into issues not listed in the Help Center, let us know in our [Slack channel].
 
