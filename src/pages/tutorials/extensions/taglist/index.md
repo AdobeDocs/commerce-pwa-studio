@@ -468,4 +468,4 @@ Now, when you start your storefront application and navigate to a product page, 
 
 You can check out the source repository in the [taglist-extension-tutorial][] branch in the **commerce-docs/pwa-studio-code-sandbox** GitHub project.
 
-[taglist-extension-tutorial]: https://github.com/commerce-docs/pwa-studio-code-sandbox/tree/taglist-extension-tutorial
+[taglist-extension-tutorial]: https://github.com/commerce-docs/pwa-studio-codesandbox/tree/taglist-extension-tutorial
