@@ -463,9 +463,3 @@ module.exports = localIntercept;
 You created a tag list extension and installed it in your development server!
 
 Now, when you start your storefront application and navigate to a product page, you will see a list of tags associated with that product.
-
-## Example repo
-
-You can check out the source repository in the [taglist-extension-tutorial][] branch in the **commerce-docs/pwa-studio-code-sandbox** GitHub project.
-
-[taglist-extension-tutorial]: https://github.com/commerce-docs/pwa-studio-codesandbox/tree/taglist-extension-tutorial
