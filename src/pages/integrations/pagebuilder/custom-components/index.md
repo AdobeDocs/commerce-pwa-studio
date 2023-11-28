@@ -28,9 +28,9 @@ We assume you already have the PWA Studio set up and running in your development
 
 ## Using the Quote content type
 
-To help explain the process of creating a custom Page Builder component, we frequently refer to a component called `ExampleQuote`. We built this component as the PWA counterpart to the example Quote content type found on the [GitHub pagebuilder-examples repo][].
+To help explain the process of creating a custom Page Builder component, we frequently refer to a component called Custom Quote. We built this component as the PWA counterpart to the example Quote content type found on the [GitHub pagebuilder-examples repo][].
 
-If you want to follow along with these topics more closely, [download and install the PageBuilderQuote module][] in your backend instance and use it to fulfill the prerequisites previously mentioned.
+If you want to follow along with these topics more closely, [download and install the PageBuilder Custom Quote module][] in your backend instance and use it to fulfill the prerequisites previously mentioned.
 
 ## Home page in Admin
 
@@ -47,5 +47,5 @@ The second prerequisite is to ensure that your custom content type renders succe
 After you have met these prerequisites, you are ready to begin creating your custom Page Builder component in the PWA Studio.
 
 [use these instructions]: /tutorials/setup-storefront/
-[download and install the pagebuilderquote module]: https://github.com/commerce-docs/pagebuilder-examples/tree/master/Example/PageBuilderQuote
-[github pagebuilder-examples repo]: https://github.com/commerce-docs/pagebuilder-examples/tree/master/Example/PageBuilderQuote
+[download and install the pagebuilder custom quote module]: https://github.com/commerce-docs/pagebuilder-examples/tree/master/Quote/Custom
+[github pagebuilder-examples repo]: https://github.com/commerce-docs/pagebuilder-examples

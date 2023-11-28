@@ -32,9 +32,9 @@ The diagram below shows how the PWA Studio makes a request to the backend applic
 
 If you only used Page Builder's 15 native content types (Dynamic Blocks are not supported), your Page Builder pages are automatically rendered within a PWA Studio app. No development work is necessary.
 
-However, if you use one or more of your own custom Page Builder content types within your CMS pages (for example, a [Quote-Testimonial content type][]), you will need to create your own equivalent Page Builder React component and integrate it within the framework. Otherwise, your custom content type will not appear on the storefront within a PWA Studio app. That area of your page will simply be blank.
+However, if you use one or more of your own custom Page Builder content types within your CMS pages (for example, a [Custom Quote content type][]), you will need to create your own equivalent Page Builder React component and integrate it within the framework. Otherwise, your custom content type will not appear on the storefront within a PWA Studio app. That area of your page will simply be blank.
 
-[quote-testimonial content type]: https://devdocs.magento.com/page-builder/docs/create-custom-content-type/overview.html
+[custom quote content type]: https://github.com/commerce-docs/pagebuilder-examples/tree/master/Quote/Custom
 
 <InlineAlert variant="info" slots="text"/>
 

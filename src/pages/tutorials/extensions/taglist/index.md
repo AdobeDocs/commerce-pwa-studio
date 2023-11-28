@@ -463,17 +463,3 @@ module.exports = localIntercept;
 You created a tag list extension and installed it in your development server!
 
 Now, when you start your storefront application and navigate to a product page, you will see a list of tags associated with that product.
-
-## Live example
-
-You can see this extension running live in this [CodeSandbox instance][] or you can check out the source repository in the [taglist-extension-tutorial][] branch in the **commerce-docs/pwa-studio-code-sandbox** GitHub project.
-
-[taglist-extension-tutorial]: https://github.com/commerce-docs/pwa-studio-code-sandbox/tree/taglist-extension-tutorial
-[codesandbox instance]: https://codesandbox.io/s/github/commerce-docs/pwa-studio-code-sandbox/tree/taglist-extension-tutorial/
-
-<iframe src="https://codesandbox.io/embed/github/commerce-docs/pwa-studio-code-sandbox/tree/taglist-extension-tutorial/?fontsize=12&hidenavigation=1&module=%2Fextensions%2FtagList%2Fpackage.json&moduleview=1&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="dev-sandbox"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
