@@ -28,7 +28,7 @@ This metapackage contains Venia Sample Data modules you can install to help you 
 1. Clone the venia-sample-data-modules repository into your vendor directory within `ext`:
 
     ```terminal
-    git clone git@github.com:magento/venia-sample-data-modules.git ext/magento/venia-sample-data-modules
+    git clone git@github.com:magento/module-configurable-sample-data-venia.git ext/magento/module-configurable-sample-data-venia
     ```
 
 1. Update Composer settings for the project to allow a better development workflow:
@@ -44,10 +44,10 @@ This metapackage contains Venia Sample Data modules you can install to help you 
         composer config repositories.ext path "./ext/*/*/*"
         ```
 
-1. Add the venia-sample-data-modules metapackage:
+1. Add the `module-configurable-sample-data-venia` metapackage:
 
     ```terminal
-    composer require magento/venia-sample-data
+    composer require module-configurable-sample-data-venia
     ```
 
 At this point, the venia-sample-data metapackage modules are symlinked within your vendor directory, which allows you to run the with additional modules and do development using git.
