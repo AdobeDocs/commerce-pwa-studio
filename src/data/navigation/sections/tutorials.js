@@ -49,7 +49,7 @@ module.exports = [
   },
   {
     title: "Events",
-    path: "/tutorials/events/",
+    path: "/tutorials/events/custom-events/",
     header: true,
     pages: [
       {
@@ -102,7 +102,7 @@ module.exports = [
   },
   {
     title: "Production deployments",
-    path: "/tutorials/production-deployment/",
+    path: "/tutorials/production-deployment/checklist/",
     header: true,
     pages: [
       {
