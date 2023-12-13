@@ -15,18 +15,18 @@
     "tty-browserify": "^0.0.1"
   },
   "scripts": {
-    "start": "gatsby build && gatsby serve",
-    "start:prefix": "gatsby build --prefix-paths && gatsby serve --prefix-paths",
-    "dev": "gatsby develop",
-    "dev:https": "gatsby develop --https --host localhost.corp.adobe.com --port 9000",
-    "build": "gatsby build",
+    "start": "NODE_OPTIONS='--max-old-space-size=8192' gatsby build && gatsby serve",
+    "start:prefix": "NODE_OPTIONS='--max-old-space-size=8192' gatsby build --prefix-paths && gatsby serve --prefix-paths",
+    "dev": "NODE_OPTIONS='--max-old-space-size=8192' gatsby develop",
+    "dev:https": "NODE_OPTIONS='--max-old-space-size=8192' gatsby develop --https --host localhost.corp.adobe.com --port 9000",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' gatsby build",
     "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
-    "serve": "gatsby serve",
+    "serve": "NODE_OPTIONS='--max-old-space-size=8192' gatsby serve",
     "clean": "gatsby clean",
     "prettier": "prettier --write",
     "prettier:test": "prettier --check src",
     "test": "remark src/pages --quiet --frail",
-    "lint": "docker run --rm -e RUN_LOCAL=true --env-file .github/super-linter.env -v \"$PWD\":/tmp/lint github/super-linter:slim-v4.10.1"
+    "lint": "docker run --rm -e RUN_LOCAL=true --env-file .github/super-linter.env -v \"$PWD\":/tmp/lint github/super-linter:slim-v5"
   },
   "devDependencies": {
     "prettier": "2.8.7",
