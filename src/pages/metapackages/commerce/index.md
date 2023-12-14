@@ -52,17 +52,23 @@ At this point, you should see symlinks for all the `pwa-commerce` modules inside
 -  Run a Magento installation with additional modules.
 -  Develop locally using the standard git workflow.
 
-You may need to ensure that there are no `Magento_*Pwa` modules listed as `disabled` when you run `bin/magento module:status`. If there are, [follow the docs on how to enable modules](https://developer.adobe.com/commerce/php/development/build/component-management/).
+Please enure all of the required modules are enabled when you run `bin/magento module:status`. For assistance on how to do that, [follow the docs on how to enable modules](https://developer.adobe.com/commerce/php/development/build/component-management/).
 
 Note: You should expect to see the following modules
 
-    Magento_ContactGraphQlPwa
-    Magento_NewsletterGraphQlPwa
-    Magento_PageBuilderPwa
-    Magento_ReCaptchaGraphQlPwa
-    Magento_ReCaptchaPwa
-    Magento_UrlRewriteGraphQlPwa
-    *REVIEWER* I only have access to run the open source one, do we want to update this too? 
+```terminal
+Magento_BannerGraphQlAux
+Magento_EavGraphQlAux
+Magento_CatalogGraphQlAux
+Magento_SalesGraphQlAux
+Magento_WeeeGraphQlAux
+Magento_ContactGraphQlPwa
+Magento_NewsletterGraphQlPwa
+Magento_PageBuilderPwa
+Magento_ReCaptchaGraphQlPwa
+Magento_ReCaptchaPwa
+Magento_UrlRewriteGraphQlPwa
+```
 
 At this point, you should see that all the PWA modules are now enabled.
 
