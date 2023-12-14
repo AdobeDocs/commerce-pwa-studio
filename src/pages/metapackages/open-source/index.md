@@ -50,15 +50,18 @@ At this point, you should see symlinks for all the `pwa` modules inside the `ven
 -  Run a Magento installation with additional modules.
 -  Develop locally using the standard git workflow.
 
-You may need to ensure that there are no `Magento_*Pwa` modules listed as `enabled` when you run `bin/magento module:status`. If there are, [follow the docs on how to enable modules](https://developer.adobe.com/commerce/php/development/build/component-management/).
+You may need to ensure that there are no `Magento_*Pwa` modules listed as `disabled` when you run `bin/magento module:status`. If there are, [follow the docs on how to enable modules](https://developer.adobe.com/commerce/php/development/build/component-management/).
 
-2. Enable the PWA modules
-    ```bash
-    bin/magento module:enable --clear-static-content Magento_ContactGraphQlPwa
-    bin/magento module:enable --clear-static-content Magento_NewsletterGraphQlPwa
-    *REVIEWER* insert other modules here or generalise    
-    ```
-At this point, you should see that all the PWA modules are now enabled
+Note: You should expect to see the following modules
+
+    Magento_ContactGraphQlPwa
+    Magento_NewsletterGraphQlPwa
+    Magento_PageBuilderPwa
+    Magento_ReCaptchaGraphQlPwa
+    Magento_ReCaptchaPwa
+    Magento_UrlRewriteGraphQlPwa
+
+At this point, you should see that all the PWA modules are now enabled.
 
 ## Setting up the Git workflow
 
