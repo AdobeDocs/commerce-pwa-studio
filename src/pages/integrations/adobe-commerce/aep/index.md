@@ -31,7 +31,7 @@ Use your storefront project's package manager(`node` or `yarn`), to install the 
 For example, if your project uses `yarn` run the following command:
 
 ```terminal
-yarn add @magento/data-connection
+yarn add @magento/experience-platform-connector
 ```
 
 ## Adobe Commerce backend configuration
