@@ -45,7 +45,7 @@ There are few steps to take to establish a data stream and then install and conf
     ```terminal
     composer require magento/data-services-graphql
     ```
-   
+
 1. Check the prerequisites in the [Data Connection overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html#prereqs).
 
 1. To install the Data Connection extension within Adobe Commerce, see [Install and Configure the Data Connection extension](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/install.html).
