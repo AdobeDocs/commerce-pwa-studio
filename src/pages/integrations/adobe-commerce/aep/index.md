@@ -38,8 +38,16 @@ yarn add @magento/experience-platform-connector
 
 There are few steps to take to establish a data stream and then install and configure the Data Connection extension.
 
-Check the prerequisites for establishing a data stream in the [Data Connection overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html#prereqs).
+- Make sure you have added the ability to [add required Adobe Commerce extensions](https://developer.adobe.com/commerce/pwa-studio/tutorials/production-deployment/adobe-commerce/#add-required-adobe-commerce-extensions) to your PWA environment.
 
-To install the EPC within Adobe Commerce, see [Install and Configure the Data Connection extension](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/install.html).
+- Install the `data-services-graphql` module by running the following command:
 
-To connect Adobe Commerce with your data stream, see [Connect Commerce data to Adobe Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/connect-data.html).
+```terminal
+composer require magento/data-services-graphql
+```
+
+- Check the prerequisites in the [Data Connection overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html#prereqs).
+
+- To install the Data Connection extension within Adobe Commerce, see [Install and Configure the Data Connection extension](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/install.html).
+
+- To connect Adobe Commerce with your data stream, see [Connect Commerce data to Adobe Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/connect-data.html).
