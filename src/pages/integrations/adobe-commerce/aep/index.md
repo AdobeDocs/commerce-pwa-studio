@@ -43,7 +43,7 @@ There are few steps to take to establish a data stream and then install and conf
 - Install the `data-services-graphql` module by running the following command:
 
 ```terminal
-composer require magento/data-services-graphql
+composer require magento/module-data-services-graphql
 ```
 
 - Check the prerequisites in the [Data Connection overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html#prereqs).
