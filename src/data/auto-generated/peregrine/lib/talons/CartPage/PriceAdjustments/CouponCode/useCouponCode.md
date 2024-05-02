@@ -315,7 +315,6 @@ It provides props data to use when rendering a shipping form component.
 | handleZipChange | `function` | Callback function to handle a zip code change |
 | isSetShippingLoading | `boolean` | True if the cart shipping information is being set. False otherwise. |
 
-
 GraphQL queries for shipping methods.
 This is a type used in the [useShippingMethods](#useShippingMethods) talon.
 
