@@ -1,4 +1,3 @@
-
 Functions
 
 <dl>
@@ -123,9 +122,10 @@ This talon performs the following effects:
 | props | `Object` |  |
 | props.queries | [`ProductListingQueries`](#ProductListingQueries) | GraphQL queries for getting product listing data. |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
+
 import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
 ```
 
@@ -147,9 +147,10 @@ This talon performs the following effects:
 | props.setActiveEditItem | `function` | Function for setting the actively editing item |
 | props.setIsCartUpdating | `function` | Function for setting the updating state of the cart |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
+
 import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProduct';
 ```
 
@@ -160,6 +161,7 @@ It returns prop data for rendering an interactive modal component.
 **Example** *(Importing into your project)*  
 
 ```js
+
 import { useEditModal } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
 ```
 
@@ -188,6 +190,7 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*  
 
 ```js
+
 import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
 ```
 

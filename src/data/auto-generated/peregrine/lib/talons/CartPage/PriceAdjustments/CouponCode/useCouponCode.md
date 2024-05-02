@@ -1,4 +1,3 @@
-
 Functions
 
 <dl>
@@ -153,6 +152,7 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*  
 
 ```js
+
 import { useCouponCode } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode';
 ```
 
@@ -177,6 +177,7 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*  
 
 ```js
+
 import { useShippingForm } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingForm';
 ```
 
@@ -198,6 +199,7 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*  
 
 ```js
+
 import { useShippingMethods } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingMethods';
 ```
 
@@ -223,6 +225,7 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*  
 
 ```js
+
 import { useShippingRadios } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingRadios';
 ```
 

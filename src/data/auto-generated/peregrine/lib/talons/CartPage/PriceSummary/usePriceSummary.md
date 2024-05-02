@@ -1,4 +1,3 @@
-
 Functions
 
 <dl>
@@ -56,6 +55,7 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*  
 
 ```js
+
 import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
 ```
 

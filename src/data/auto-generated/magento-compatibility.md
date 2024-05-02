@@ -1,5 +1,6 @@
 | PWA Studio version | Magento core version|
 | :---: | :---: |
+| 14.0.0 | 2.4.7-beta3 |
 | 13.3.0 | 2.4.7-beta2 |
 | 13.2.0 | 2.4.7-beta1 |
 | 13.1.0 | 2.4.6 |
