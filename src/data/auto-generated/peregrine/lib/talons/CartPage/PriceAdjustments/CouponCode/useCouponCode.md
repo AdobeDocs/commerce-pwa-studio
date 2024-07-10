@@ -139,7 +139,7 @@ This talon performs the following effects:
 - Fetch all coupons associated with the cart
 - Manage the updating state of the cart while a coupon is being applied or removed
 
-**Returns:**
+**Returns: ***
 **Parameters**
 
 | Name | Type | Description |
@@ -149,7 +149,7 @@ This talon performs the following effects:
 | props.mutations | [`CouponCodeMutations`](#CouponCodeMutations) | GraphQL mutations for a cart's coupon code. |
 | props.queries | [`CouponCodeQueries`](#CouponCodeQueries) | GraphQL queries for a cart's coupon code. |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
 
@@ -163,7 +163,7 @@ This talon performs the following effects:
 
 - Manage the updating state of the cart while the mutation for setting the shipping address is in flight
 
-**Returns:**
+**Returns: ***
 **Parameters**
 
 | Name | Type | Description |
@@ -174,7 +174,7 @@ This talon performs the following effects:
 | props.mutations | [`ShippingFormMutations`](#ShippingFormMutations) | GraphQL mutations for the shipping form. |
 | props.queries | [`ShippingFormQueries`](#ShippingFormQueries) | GraphQL queries for the shipping form. |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
 
@@ -188,7 +188,7 @@ This talon performs the following effects:
 
 - Set the shipping form visibility value based on the shipping methods associated with the cart
 
-**Returns:**
+**Returns: ***
 **Parameters**
 
 | Name | Type | Description |
@@ -196,7 +196,7 @@ This talon performs the following effects:
 | props | `Object` |  |
 | props.queries | [`ShippingMethodsQueries`](#ShippingMethodsQueries) | GraphQL queries for shipping methods |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
 
@@ -211,7 +211,7 @@ This talon performs the following effects:
 - Sets the value of the shipping method to a default value if there is no current method selected
 - Manage the updating state of the cart while a shipping method is being applied
 
-**Returns:**
+**Returns: ***
 **Parameters**
 
 | Name | Type | Description |
@@ -222,7 +222,7 @@ This talon performs the following effects:
 | props.shippingMethods | `Array.<Object>` | An array of available shipping methods |
 | props.mutations | [`ShippingRadiosMutations`](#ShippingRadiosMutations) | GraphQL mutations for a shipping radio selector component. |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
 
