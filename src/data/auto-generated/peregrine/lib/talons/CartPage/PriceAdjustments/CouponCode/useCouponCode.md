@@ -174,7 +174,7 @@ This talon performs the following effects:
 | props.mutations | [`ShippingFormMutations`](#ShippingFormMutations) | GraphQL mutations for the shipping form. |
 | props.queries | [`ShippingFormQueries`](#ShippingFormQueries) | GraphQL queries for the shipping form. |
 
-**Example** *(Importing into your project)* 
+**Example** *(Importing into your project)*
 
 ```js
 
@@ -188,7 +188,7 @@ This talon performs the following effects:
 
 - Set the shipping form visibility value based on the shipping methods associated with the cart
 
-**Returns: **
+**Returns: ***
 **Parameters**
 
 | Name | Type | Description |
@@ -196,8 +196,10 @@ This talon performs the following effects:
 | props | `Object` |  |
 | props.queries | [`ShippingMethodsQueries`](#ShippingMethodsQueries) | GraphQL queries for shipping methods |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
+
 ```js
+
 import { useShippingMethods } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingMethods';
 ```
 
@@ -220,7 +222,7 @@ This talon performs the following effects:
 | props.shippingMethods | `Array.<Object>` | An array of available shipping methods |
 | props.mutations | [`ShippingRadiosMutations`](#ShippingRadiosMutations) | GraphQL mutations for a shipping radio selector component. |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
 
