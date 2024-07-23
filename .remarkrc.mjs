@@ -25,10 +25,10 @@ const remarkConfig = {
 			remarkLintNoDeadUrls,
 			{
 				skipUrlPatterns: [
-					// 'https://www.php.net',
-					// 'https://business.adobe.com',
-					// 'https://magento.com',
-					// 'https://www.adobe.com'
+					'https://www.php.net',
+					'https://business.adobe.com',
+					'https://magento.com',
+					'https://www.adobe.com'
 				]
 			}
 		]
