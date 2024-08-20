@@ -37,7 +37,7 @@ This command launches an interactive questionnaire in the command line for confi
 
 ### Examples
 
-<CodeBlock slots="heading, code" repeat="2" languages="sh,sh" />
+<CodeBlock slots="heading, code" repeat="2" languages="sh, sh" />
 
 #### Yarn command
 
