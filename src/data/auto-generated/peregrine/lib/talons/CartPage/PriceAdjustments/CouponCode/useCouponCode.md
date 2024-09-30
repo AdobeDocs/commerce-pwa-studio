@@ -141,6 +141,7 @@ This talon performs the following effects:
 - Manage the updating state of the cart while a coupon is being applied or removed
 
 **Returns:**
+
 **Parameters**
 
 | Name | Type | Description |
@@ -164,6 +165,7 @@ This talon performs the following effects:
 - Manage the updating state of the cart while the mutation for setting the shipping address is in flight
 
 **Returns:**
+
 **Parameters**
 
 | Name | Type | Description |
@@ -188,6 +190,7 @@ This talon performs the following effects:
 - Set the shipping form visibility value based on the shipping methods associated with the cart
 
 **Returns:**
+
 **Parameters**
 
 | Name | Type | Description |
@@ -195,9 +198,10 @@ This talon performs the following effects:
 | props | `Object` |  |
 | props.queries | [`ShippingMethodsQueries`](#ShippingMethodsQueries) | GraphQL queries for shipping methods |
 
-**Example** *(Importing into your project)*
+**Example** *(Importing into your project)*  
 
 ```js
+
 import { useShippingMethods } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingMethods';
 ```
 
@@ -210,6 +214,7 @@ This talon performs the following effects:
 - Manage the updating state of the cart while a shipping method is being applied
 
 **Returns:**
+
 **Parameters**
 
 | Name | Type | Description |
