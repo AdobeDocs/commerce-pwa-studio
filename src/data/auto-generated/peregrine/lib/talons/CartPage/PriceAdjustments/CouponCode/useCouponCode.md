@@ -142,7 +142,10 @@ This talon performs the following effects:
 - Fetch all coupons associated with the cart
 - Manage the updating state of the cart while a coupon is being applied or removed
 
+
 **Returns: **
+=======
+
 **Parameters**
 
 | Name | Type | Description |
@@ -153,6 +156,7 @@ This talon performs the following effects:
 | props.queries | [`CouponCodeQueries`](#CouponCodeQueries) | GraphQL queries for a cart's coupon code. |
 
 **Example** *(Importing into your project)*  
+
 ```js
 import { useCouponCode } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode';
 ```
@@ -165,6 +169,7 @@ This talon performs the following effects:
 - Manage the updating state of the cart while the mutation for setting the shipping address is in flight
 
 **Returns: **
+
 **Parameters**
 
 | Name | Type | Description |
@@ -176,6 +181,7 @@ This talon performs the following effects:
 | props.queries | [`ShippingFormQueries`](#ShippingFormQueries) | GraphQL queries for the shipping form. |
 
 **Example** *(Importing into your project)*  
+
 ```js
 import { useShippingForm } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingForm';
 ```
@@ -188,6 +194,7 @@ This talon performs the following effects:
 - Set the shipping form visibility value based on the shipping methods associated with the cart
 
 **Returns: **
+
 **Parameters**
 
 | Name | Type | Description |
@@ -209,6 +216,7 @@ This talon performs the following effects:
 - Manage the updating state of the cart while a shipping method is being applied
 
 **Returns: **
+
 **Parameters**
 
 | Name | Type | Description |
@@ -220,6 +228,7 @@ This talon performs the following effects:
 | props.mutations | [`ShippingRadiosMutations`](#ShippingRadiosMutations) | GraphQL mutations for a shipping radio selector component. |
 
 **Example** *(Importing into your project)*  
+
 ```js
 import { useShippingRadios } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingRadios';
 ```
@@ -294,8 +303,8 @@ for the query used in Venia
 GraphQL queries for the shipping form.
 This is a type used by the [useShippingForm](#useShippingForm) talon.
 
-**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
-for the query used in Venia  
+**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js) for the query used in Venia  
+
 **Properties**
 
 | Name | Type | Description |
@@ -320,8 +329,8 @@ It provides props data to use when rendering a shipping form component.
 GraphQL queries for shipping methods.
 This is a type used in the [useShippingMethods](#useShippingMethods) talon.
 
-**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
-for the queries used in Venia  
+**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js) for the queries used in Venia  
+
 **Properties**
 
 | Name | Type | Description |

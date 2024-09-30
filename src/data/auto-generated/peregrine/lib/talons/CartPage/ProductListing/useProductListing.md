@@ -118,6 +118,7 @@ This talon performs the following effects:
 - Log any GraphQL errors to the console
 
 **Returns: **
+
 **Parameters**
 
 | Name | Type | Description |
@@ -138,6 +139,7 @@ This talon performs the following effects:
 - Manage the updating state of the cart while a product is being updated or removed
 
 **Returns: **
+
 **Parameters**
 
 | Name | Type | Description |
@@ -157,6 +159,7 @@ This talon contains logic for a product edit modal used on a cart page.
 It returns prop data for rendering an interactive modal component.
 
 **Returns: **
+
 **Example** *(Importing into your project)*  
 ```js
 import { useEditModal } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
@@ -171,6 +174,7 @@ This talon performs the following effects:
 - Set the variant price on a product depending on the product's options
 
 **Returns: **
+
 **Parameters**
 
 | Name | Type | Description |
