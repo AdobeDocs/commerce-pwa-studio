@@ -150,7 +150,7 @@ This talon performs the following effects:
 | props.setActiveEditItem | `function` | Function for setting the actively editing item |
 | props.setIsCartUpdating | `function` | Function for setting the updating state of the cart |
 
-**Example** *(Importing into your project)* 
+**Example** *(Importing into your project)*
 
 ```js
 
@@ -192,7 +192,7 @@ This talon performs the following effects:
 | props.updateQuantityMutation | `GraphQLDocument` | GraphQL mutation for updating the quantity of a product in a cart. |
 | props.setActiveEditItem | `function` | Function for setting the actively editing item. |
 
-**Example** *(Importing into your project)* 
+**Example** *(Importing into your project)*
 
 ```js
 
