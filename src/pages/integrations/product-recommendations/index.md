@@ -94,4 +94,4 @@ const { data, error, isLoading } = useRecsData({ pageType: Pagetypes.CMS });
 ```
 
 [venia-product-recommendations]: /guides/#custom-react-hooks-and-component
-[extensibility framework]: /general-concepts/extensibility/#intercept-files
+[extensibility framework]: /guides/general-concepts/extensibility/#intercept-files
