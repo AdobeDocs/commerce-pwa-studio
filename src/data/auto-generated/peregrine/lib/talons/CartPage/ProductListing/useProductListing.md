@@ -287,7 +287,7 @@ It provides props data for rendering an edit modal component.
 | Name | Type | Description |
 | --- | --- | --- |
 | setVariantPrice | `function` | Function for setting a product's variant price. |
-| variantPrice | `Object` | The variant price for a product. See [Money object](https://devdocs.magento.com/guides/v2.4/graphql/product/product-interface.html#Money). |
+| variantPrice | `Object` | The variant price for a product. See [Money object](https://developer.adobe.com/commerce/webapi/graphql/product/product-interface.html#Money). |
 
 Object type returned by the [useProductForm](useProductForm) talon.
 It provides props data for a product form UI component inside a modal.
