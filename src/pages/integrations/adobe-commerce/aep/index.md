@@ -31,7 +31,9 @@ Use your storefront project's package manager(`node` or `yarn`), to install the 
 For example, if your project uses `yarn` run the following command:
 
 ```terminal
-yarn venia add -D @magento/experience-platform-connector
+yarn add -D @magento/experience-platform-connector (for scafholded PWA frontend code)
+or 
+yarn venia add -D @magento/experience-platform-connector (for Cloned PWA Code)
 ```
 
 ## Adobe Commerce backend configuration
