@@ -65,7 +65,6 @@ This target allows you to add custom payment summary rendering for the summary p
 </dd>
 </dl>
 
-
 Typedefs
 
 <dl>
@@ -160,7 +159,6 @@ A root component shimmer object that can be used during page transitions on your
 </dd>
 </dl>
 
-
 Interfaces
 
 <dl>
@@ -174,7 +172,6 @@ with these names, rather than an object with these functions as properties.
 </dd>
 </dl>
 
-
 Rich content renderers for the RichContent component must implement this
 interface. Should be written as an ES Module—a module that exports functions
 with these names, rather than an object with these functions as properties.
@@ -187,6 +184,7 @@ with these names, rather than an object with these functions as properties.
 | canRender | `function` | Function that receives the content to be rendered as a string, and should return `true` if the `Component` can understand and render that content. |
 
 **Example** *(A renderer that can render any content containing the string &quot;honk&quot;)*  
+
 ```jsx
 import React from 'react';
 import PlainHtmlRenderer from '@magento/venia-ui/components/richContent/plainHtmlRenderer';
@@ -221,6 +219,7 @@ as product descriptions and CMS blocks.
 - [RichContentRenderer](#RichContentRenderer)
 
 **Example** *(Add a renderer)*  
+
 ```js
 targets.of('@magento/venia-ui').richContentRenderers.tap(
   renderers => renderers.add({
@@ -245,6 +244,7 @@ admin, such as CMS or catalog URLs.
 - [Route definition object](#RouteDefinition)
 
 **Example** *(Add a custom route for a blog module)*  
+
 ```js
 const veniaTargets = targets.of('@magento/venia-ui')
 const routes = veniaTargets.routes
@@ -270,6 +270,7 @@ This target lets you add new checkout page payment to your storefronts.
 - [CheckoutPayment definition object](#CheckoutPaymentDefinition)
 
 **Example** *(Add a payment)*  
+
 ```js
 targets.of('@magento/venia-ui').checkoutPagePaymentTypes.tap(
   checkoutPagePaymentTypes => checkoutPagePaymentTypes.add({
@@ -290,6 +291,7 @@ This target lets you add new saved payment method to your storefronts.
 - [SavedPayment definition object](#SavedPaymentDefinition)
 
 **Example** *(Add a payment)*  
+
 ```js
 targets.of('@magento/venia-ui').savedPaymentTypes.tap(
   savedPaymentTypes => savedPaymentTypes.add({
@@ -310,6 +312,7 @@ This target lets you add new editable payment method to your storefronts.
 - [EditablePayment definition object](#EditablePaymentDefinition)
 
 **Example** *(Add a payment)*  
+
 ```js
 targets.of('@magento/venia-ui').editablePaymentTypes.tap(
   editablePaymentTypes => editablePaymentTypes.add({
@@ -330,6 +333,7 @@ This target allows you to add custom payment summary rendering for the summary p
 - [EditablePayment definition object](#SavedPaymentDefinition)
 
 **Example** *(Add a payment)*  
+
 ```js
 targets.of('@magento/venia-ui').editablePaymentTypes.tap(
   editablePaymentTypes => editablePaymentTypes.add({
@@ -349,7 +353,6 @@ Interceptors of `richContentRenderers` should call `.add` on the provided [rende
 | --- | --- | --- |
 | renderers | `RichContentRendererList` | The list of renderers registered so far in the build. |
 
-
 Intercept function signature for the `routes` target.
 
 Interceptors of `routes` receive an array of [RouteDefinition](#RouteDefinition)
@@ -365,7 +368,7 @@ Interceptors **must** return an array of RouteDefinitions, either by
 mutating and then returning the array they received, or by returning a new
 array of RouteDefinitions.
 
-**Returns: **
+**Returns:**
 [`Array.<RouteDefinition>`](#RouteDefinition)
    — Your function must return the modified array,
 or a new array you have constructed
@@ -377,6 +380,7 @@ or a new array you have constructed
 | routes | [`Array.<RouteDefinition>`](#RouteDefinition) | Array of registered routes |
 
 **Example**  
+
 ```js
 const intercept = routesArray => {
      return [
@@ -400,6 +404,7 @@ A route definition object that describes a route in your storefront.
 | [redirectTo] | `string` | Url will be the redirection url when user are   not signed in and are trying to access an authed route.   This property is optional. Default is "/". |
 
 **Example** *(A custom route with a URL parameter)*  
+
 ```js
 const myCustomRoute = {
      name: 'MyRoute',
@@ -418,7 +423,6 @@ Interceptors of `checkoutPagePaymentTypes` should call `.add` on the provided [p
 | --- | --- | --- |
 | renderers | `CheckoutPaymentTypesDefinition` | The list of payments registered so far in the build. |
 
-
 A payment definition object that describes a checkout page payment in your storefront.
 
 **Properties**
@@ -429,6 +433,7 @@ A payment definition object that describes a checkout page payment in your store
 | importPath | `string` | Resolvable path to the component the   Route component will render |
 
 **Example** *(A custom payment method)*  
+
 ```js
 const myCustomPayment = {
      paymentCode: 'cc',
@@ -446,7 +451,6 @@ Interceptors of `savedPaymentTypes` should call `.add` on the provided [payment 
 | --- | --- | --- |
 | renderers | `SavedPaymentTypesDefinition` | The list of saved payments registered so far in the build. |
 
-
 A payment definition object that describes a saved payment in your storefront.
 
 **Properties**
@@ -457,6 +461,7 @@ A payment definition object that describes a saved payment in your storefront.
 | importPath | `string` | Resolvable path to the component the   Route component will render |
 
 **Example** *(A custom payment method)*  
+
 ```js
 const myCustomPayment = {
      paymentCode: 'cc',
@@ -474,7 +479,6 @@ Interceptors of `editablePaymentTypes` should call `.add` on the provided [payme
 | --- | --- | --- |
 | renderers | `EditablePaymentTypesDefinition` | so far in the build. |
 
-
 A payment definition object that describes a saved payment in your storefront.
 
 **Properties**
@@ -485,6 +489,7 @@ A payment definition object that describes a saved payment in your storefront.
 | importPath | `string` | Resolvable path to the component the   Route component will render |
 
 **Example** *(A custom payment method)*  
+
 ```js
 const myCustomPayment = {
      paymentCode: 'cc',
@@ -502,7 +507,6 @@ Interceptors of `rootShimmerTypes` should call `.add` on the provided [shimmer l
 | --- | --- | --- |
 | shimmers | [`RootShimmerTypesDefinition`](#RootShimmerTypesDefinition) | so far in the build. |
 
-
 A root component shimmer object that can be used during page transitions on your storefront
 
 **Properties**
@@ -513,12 +517,12 @@ A root component shimmer object that can be used during page transitions on your
 | importPath | `string` | Resolvable path to the component the   Shimmer component will render |
 
 **Example** *(A CMS Page Shimmer)*  
+
 ```js
 const cmsShimmer = {
      shimmerType: 'CMS_PAGE_SHIMMER',
      importPath: '@partner/module/path_to_your_component'
 }
 ```
-
 
 **Source Code**: [pwa-studio/packages/venia-ui/lib/targets/venia-ui-declare.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/targets/venia-ui-declare.js)

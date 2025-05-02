@@ -11,7 +11,6 @@
 | type | `'rectangle'` \| `'button'` \| `'checkbox'` \| `'radio'` \| `'textArea'` \| `'textInput'` | The base element shape to apply to the Shimmer. |
 | children | `node` | Children to output within the Shimmer. Useful for setting image placeholders. |
 
-
 **Properties**
 
 | Name | Type | Description |
@@ -30,7 +29,5 @@
 | style | `Object` | is an object of inline styles |
 | type | `string` | is the type of the Shimmer |
 | children | `node` | are the children of the Shimmer |
-
-
 
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/Shimmer/shimmer.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Shimmer/shimmer.js)

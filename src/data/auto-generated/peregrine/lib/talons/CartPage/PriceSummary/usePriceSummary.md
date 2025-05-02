@@ -15,7 +15,6 @@ This talon performs the following effects:
 </dd>
 </dl>
 
-
 Typedefs
 
 <dl>
@@ -38,7 +37,6 @@ Props used for rendering a price summary component.
 
 </dd>
 </dl>
-
 
 This talon contains logic for a price summary component.
 It performs effects and returns prop data for rendering the component.
@@ -75,7 +73,6 @@ Query data flattened into a simple object.
 | taxes | `Array.<Object>` | Taxes applied to the cart |
 | shipping | `Array.<Object>` | Shipping addresses associated with this cart |
 
-
 GraphQL queries for price summary component.
 
 **See**: [priceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.js)
@@ -85,7 +82,6 @@ for the queries used in Venia.
 | Name | Type | Description |
 | --- | --- | --- |
 | getPriceSummary | `GraphQLAST` | Query to get the price summary for a cart |
-
 
 Props used for rendering a price summary component.
 
@@ -98,7 +94,5 @@ Props used for rendering a price summary component.
 | hasItems | `boolean` | True if the cart has any items. False otherwise. |
 | isLoading | `boolean` | True while the GraphQL query is still in flight. False otherwise. |
 | flatData | [`FlattenedData`](#FlattenedData) | Query data that has been flattened into a simple object |
-
-
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js)
