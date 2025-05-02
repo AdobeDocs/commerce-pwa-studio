@@ -20,7 +20,7 @@ Those external API services communicate with the backend application's internal 
 [GraphQL API][] coverage increases with every Adobe Commerce and Magento Open Source release, but
 until full coverage is complete, developers can use the [**REST API**][] to fill in existing coverage gaps.
 
-[graphql api]: https://devdocs.magento.com/guides/v2.3/graphql/
+[graphql api]: https://developer.adobe.com/commerce/webapi/graphql/
 [**rest api**]: https://developer.adobe.com/commerce/webapi/rest/
 
 To make secure, admin-authorized calls, configure the storefront's [UPWARD][] server to make the request using REST or RPC.
