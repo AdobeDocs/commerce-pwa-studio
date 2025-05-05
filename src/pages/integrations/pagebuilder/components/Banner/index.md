@@ -2,6 +2,7 @@
 title: Banner
 description: View detailed API reference documentation about the banner content type of the Page Builder component for PWA Studio storefront projects.
 jsDoc: true
+edition: paas
 ---
 
 # Banner

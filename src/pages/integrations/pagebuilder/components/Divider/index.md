@@ -1,6 +1,7 @@
 ---
 title: Divider
 description: View detailed API reference documentation about the divider content type of the Page Builder component for PWA Studio storefront projects.
+edition: paas
 ---
 
 # Divider

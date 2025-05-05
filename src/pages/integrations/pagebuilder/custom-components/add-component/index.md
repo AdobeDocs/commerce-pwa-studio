@@ -1,6 +1,7 @@
 ---
 title: Add component
 description: View code samples for adding a custom Page Builder component to PWA Studio storefront projects.
+edition: paas
 ---
 
 # Add component
