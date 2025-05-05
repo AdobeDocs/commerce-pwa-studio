@@ -15,7 +15,7 @@ This section lists the different Adobe Commerce features available to PWA Studio
 
 ## Out-of-the-box integrations
 
-[Page Builder](pagebuilder/)
+[Page Builder](pagebuilder/) <Edition name="paas" />
 
 Add Page Builder content to your storefront.
 

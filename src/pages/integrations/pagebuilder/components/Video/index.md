@@ -1,6 +1,7 @@
 ---
 title: Video
 description: View detailed API reference documentation about the video content type of the Page Builder component for PWA Studio storefront projects.
+edition: paas
 ---
 
 # Video
