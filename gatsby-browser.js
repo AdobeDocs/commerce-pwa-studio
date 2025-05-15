@@ -40,7 +40,7 @@ export const onClientEntry = () => {
 
 export const onRouteUpdate = ({ location, prevLocation }) => {
   if (isBrowser) {
-    function watchAndFireAnalytics() {
+    if (typeof window._satellite !== 'undefined' && typeof window._satellite.track === 'function') {
       // eslint-disable-next-line no-undef
       if (typeof window._satellite !== 'undefined') {
         // eslint-disable-next-line no-undef
