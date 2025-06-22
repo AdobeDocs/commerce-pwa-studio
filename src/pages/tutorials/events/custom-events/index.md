@@ -70,7 +70,7 @@ export default {
 ## wrapUseAutocomplete.js
 
 This file is a [talon wrapper](https://developer.adobe.com/commerce/pwa-studio/tutorials/targets/modify-talon-results/) that wraps around the `useAutocomplete()` talon to add additional event dispatching logic.
-In `wrapUseAutocomplete.js` the search result is received and the payload defined and dispatched. This take place in the `useEffect` function:
+In `wrapUseAutocomplete.js` the search result is received and the payload is defined and dispatched. This takes place in the `useEffect` function:
 
 ```javascript
 import { useEffect } from 'react';
