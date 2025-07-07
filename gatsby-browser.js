@@ -24,6 +24,7 @@ const components = {
 export const wrapRootElement = ({ element }) => {
   return <MDXProvider components={components}>{element}</MDXProvider>;
 };
+
 const isBrowser = typeof window !== "undefined";
 
 export const onClientEntry = () => {
@@ -40,9 +41,12 @@ export const onClientEntry = () => {
 
 export const onRouteUpdate = ({ location, prevLocation }) => {
   if (isBrowser) {
-    if (typeof window._satellite !== 'undefined' && typeof window._satellite.track === 'function') {
+    function watchAndFireAnalytics() {
       // eslint-disable-next-line no-undef
-      if (typeof window._satellite !== 'undefined') {
+      if (
+        typeof window._satellite !== 'undefined' &&
+        typeof window._satellite.track === 'function'
+      ) {
         // eslint-disable-next-line no-undef
         _satellite.track('state',
           {
