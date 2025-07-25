@@ -6,6 +6,7 @@ Modules
 <dd></dd>
 </dl>
 
+
 Typedefs
 
 <dl>
@@ -59,6 +60,8 @@ They may also be used to make `loadEnvironment()` support the legacy name of a r
 </dd>
 </dl>
 
+
+
 Defines the global settings of the project as a list of typed environment variables.
 Includes a set of changes made to the environment variables in recent versions, to aid with migration and upgrades.
 
@@ -75,6 +78,7 @@ to generate an extensively commented `.env` file for a project.
 | sections | [`Array.<EnvVarDefsSection>`](#EnvVarDefsSection) | List of sections, or sub-lists of definitions grouped under a title. |
 | changes | [`Array.<EnvVarDefsChange>`](#EnvVarDefsChange) | List of changes, or objects describing a recent change to a definition. |
 
+
 A list of related definitions concerning a particular functional area.
 
 All defined variable names under a particular functional area should have the same prefix, to help namespace and organize configuration.
@@ -86,6 +90,7 @@ For instance, all variable names in the "Custom local origin" section begin with
 | --- | --- | --- |
 | name | `String` | Title of the section, describing the functional area of the included variables. |
 | variables | [`Array.<EnvVarDefinition>`](#EnvVarDefinition) | List of variable definitions. |
+
 
 A definition of an environment variable that will be used somewhere else in the project, in the backend and/or the frontend.
 
@@ -111,6 +116,7 @@ However, only the variables defined by `EnvVarDefinition` entries will be availa
 | default | `String` | Default value if the variable is not set in the environment. |
 | example | `String` | Example value which will be displayed in inline documentation in the `.env` file. |
 
+
 Describes a recent change to a particular environment variable.
 Can indicate that the environment variable was _removed_ or _renamed_.
 Change objects can log informative warnings to developers to help with migration.
@@ -127,5 +133,7 @@ They may also be used to make `loadEnvironment()` support the legacy name of a r
 | [warnForDays] | `number` | Number of days after `dateChanged` to log a warning if the removed or renamed variable is still set in the environment. Default, and maximum, is 180 days. |
 | [update] | `String` | New name of the variable. Required when the change is a rename. |
 | [supportLegacy] | `boolean` | If the change is a rename, set this to `true` to support the old name (while logging a warning). If the old name is set and the new name is not, `loadEnvironment` will set the new variable name to the value of the old one. |
+
+
 
 **Source Code**: [pwa-studio/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js)
