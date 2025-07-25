@@ -32,6 +32,7 @@ a talon.
 </dd>
 </dl>
 
+
 Typedefs
 
 <dl>
@@ -46,6 +47,7 @@ the provided [`HookInterceptorSet` object](https://developer.adobe.com/commerce/
 </dd>
 </dl>
 
+
 Provides access to Peregrine React hooks.
 
 This target collects requests to intercept and "wrap" individual Peregrine
@@ -58,14 +60,11 @@ a hook.
 
 **See**: [Intercept function signature](#hookInterceptFunction)  
 **Example** *(Access the tapable object)*  
-
 ```js
 const peregrineTargets = targets.of('@magento/peregrine');
 const hooksTarget = peregrineTargets.hooks;
 ```
-
 **Example** *(Wrap the &#x60;useAwaitQuery()&#x60; hook  with a logging extension)*  
-
 ```js
 
 hooksTargets.tap( => {
@@ -85,14 +84,11 @@ a talon.
 
 **See**: [Intercept function signature](#hookInterceptFunction)  
 **Example** *(Access the tapable object)*  
-
 ```js
 const peregrineTargets = targets.of('@magento/peregrine');
 const talonsTarget = peregrineTargets.talons;
 ```
-
 **Example** *(Wrap the &#x60;useApp()&#x60; hook  with a logging extension)*  
-
 ```js
 
 talonsTarget.tap(talons => {
@@ -110,5 +106,7 @@ the provided [`HookInterceptorSet` object](https://developer.adobe.com/commerce/
 | Name | Type | Description |
 | --- | --- | --- |
 | hookInterceptors | `HookInterceptorSet` | Registry of wrappable hook namespaces |
+
+
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/targets/peregrine-declare.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/targets/peregrine-declare.js)

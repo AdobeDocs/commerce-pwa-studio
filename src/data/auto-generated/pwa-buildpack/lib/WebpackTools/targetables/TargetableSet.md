@@ -12,6 +12,7 @@ Targetable and enables automatic interception of targets.
 </dd>
 </dl>
 
+
 Typedefs
 
 <dl>
@@ -23,9 +24,11 @@ Callback function which runs before committing this module's list of requested t
 </dd>
 </dl>
 
+
 A factory and manager for Targetable instances.
 This class wraps around a TargetProvider, which identifies it as "your"
 Targetable and enables automatic interception of targets.
+
 
 * [TargetableSet](#TargetableSet)
     * _instance_
@@ -39,7 +42,8 @@ Targetable and enables automatic interception of targets.
     * _static_
         * [.using(targets)](#TargetableSet.using) ⇒ [`TargetableSet`](#TargetableSet)
 
-**Returns:**
+
+**Returns: **
 `TargetableModule`
    — Returns an instance of TargetableModule.
 
@@ -50,7 +54,8 @@ Targetable and enables automatic interception of targets.
 | modulePath | `string` | Path to the module file this Targetable represents. |
 | [publisher] | [`TargetablePublisher`](#TargetablePublisher) | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
-**Returns:**
+
+**Returns: **
 `TargetableESModule`
    — Returns an instance of TargetableESModule.
 
@@ -61,7 +66,8 @@ Targetable and enables automatic interception of targets.
 | modulePath | `string` | Path to the module file this Targetable represents. |
 | [publisher] | [`TargetablePublisher`](#TargetablePublisher) | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
-**Returns:**
+
+**Returns: **
 `TargetableESModuleArray`
    — Returns an instance of TargetableESModuleArray.
 
@@ -72,7 +78,8 @@ Targetable and enables automatic interception of targets.
 | modulePath | `string` | Path to the module file this Targetable represents. |
 | [publisher] | [`TargetablePublisher`](#TargetablePublisher) | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
-**Returns:**
+
+**Returns: **
 `TargetableESModuleObject`
    — Returns an instance of TargetableESModuleObject.
 
@@ -83,7 +90,8 @@ Targetable and enables automatic interception of targets.
 | modulePath | `string` | Path to the module file this Targetable represents. |
 | [publisher] | [`TargetablePublisher`](#TargetablePublisher) | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
-**Returns:**
+
+**Returns: **
 `TargetableReactComponent`
    — Returns an instance of TargetableReactComponent
 
@@ -94,6 +102,7 @@ Targetable and enables automatic interception of targets.
 | modulePath | `string` | Path to the module file this Targetable represents. |
 | [publisher] | [`TargetablePublisher`](#TargetablePublisher) | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
+
 Taps the builtin `specialFeatures` target and sets the supplied feature flags.
 
 **Parameters**
@@ -101,6 +110,7 @@ Taps the builtin `specialFeatures` target and sets the supplied feature flags.
 | Name | Type | Description |
 | --- | --- | --- |
 | ...Feature | `string` \| `Array.<string>` \| `object.<string, boolean>` | flags to set, as either string arguments, an array of string arguments, or an object of flags. |
+
 
 Tap the builtin `envVarDefinitions` target to define new environment variables.
 
@@ -111,14 +121,16 @@ Tap the builtin `envVarDefinitions` target to define new environment variables.
 | sectionName | `string` | Human-readable name of section. If a section with this name exists already, variables will be added to it instead o a new section being created. |
 | variables | `Array.<EnvVarDefinition>` | List of variables to add. |
 
+
 Creates a new TargetableSet bound to a TargetProvider
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | targets | `TargetProvider` | TargetProvider for the curent dependency. This is the object passed by BuildBus to an intercept function. |
+
 
 Callback function which runs before committing this module's list of requested transforms to the build. Invoked as an intercept to `builtins.transformModules`, this is the typical time to invoke your own target with your custom API.
 
@@ -128,5 +140,7 @@ Callback function which runs before committing this module's list of requested t
 | Name | Type | Description |
 | --- | --- | --- |
 | self | `TargetableModule` | The TargetableModule instance (for use if `this` is not available) |
+
+
 
 **Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet.js)
