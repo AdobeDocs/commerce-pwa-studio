@@ -25,7 +25,7 @@ Page Builder Tabs component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that displays a set of Tabs.
 
@@ -42,7 +42,7 @@ Upper case the first letter of a string
 
 | Name | Type |
 | --- | --- |
-| string | `string` | 
+| string | `string` |
 
 Props for [Tabs](#Tabs)
 
