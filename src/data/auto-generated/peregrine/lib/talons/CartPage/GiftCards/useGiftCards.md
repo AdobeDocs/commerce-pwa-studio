@@ -89,7 +89,7 @@ Provide logic for a single gift card component.
 | props.code | `String` | Gift card's code |
 | props.removeGiftCard | `function` | A function that removes a gift card when provided a code |
 
-**Example** *(Importing into your project)* 
+**Example** *(Importing into your project)*
 
 ```js
 

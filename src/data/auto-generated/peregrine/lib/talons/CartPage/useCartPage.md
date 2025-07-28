@@ -15,7 +15,6 @@ This talon performs the following effects:
 </dd>
 </dl>
 
-
 Typedefs
 
 <dl>
@@ -33,7 +32,6 @@ Props data to use when rendering a cart page component.
 </dd>
 </dl>
 
-
 This talon contains logic for a cart page component.
 It performs effects and returns prop data for rendering the component.
 
@@ -41,7 +39,7 @@ This talon performs the following effects:
 
 - Manages the updating state of the cart while cart details data is being fetched
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
@@ -49,8 +47,10 @@ This talon performs the following effects:
 | props | `Object` |  |
 | props.queries | [`CartPageQueries`](#CartPageQueries) | GraphQL queries |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
+
 ```js
+
 import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage';
 ```
 
@@ -64,7 +64,6 @@ for queries used in Venia
 | --- | --- | --- |
 | getCartDetailsQuery | `GraphQLAST` | Query for getting the cart details. |
 
-
 Props data to use when rendering a cart page component.
 
 **Properties**
@@ -76,7 +75,5 @@ Props data to use when rendering a cart page component.
 | isCartUpdating | `boolean` | True if the cart is updating. False otherwise. |
 | setIsCartUpdating | `function` | Callback function for setting the updating state of the cart page. |
 | shouldShowLoadingIndicator | `boolean` | True if the loading indicator should be rendered. False otherwise. |
-
-
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/useCartPage.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/useCartPage.js)

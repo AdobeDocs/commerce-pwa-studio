@@ -111,7 +111,6 @@ Taps the builtin `specialFeatures` target and sets the supplied feature flags.
 | --- | --- | --- |
 | ...Feature | `string` \| `Array.<string>` \| `object.<string, boolean>` | flags to set, as either string arguments, an array of string arguments, or an object of flags. |
 
-
 Tap the builtin `envVarDefinitions` target to define new environment variables.
 
 **Parameters**
@@ -121,16 +120,14 @@ Tap the builtin `envVarDefinitions` target to define new environment variables.
 | sectionName | `string` | Human-readable name of section. If a section with this name exists already, variables will be added to it instead o a new section being created. |
 | variables | `Array.<EnvVarDefinition>` | List of variables to add. |
 
-
 Creates a new TargetableSet bound to a TargetProvider
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | targets | `TargetProvider` | TargetProvider for the curent dependency. This is the object passed by BuildBus to an intercept function. |
-
 
 Callback function which runs before committing this module's list of requested transforms to the build. Invoked as an intercept to `builtins.transformModules`, this is the typical time to invoke your own target with your custom API.
 
@@ -140,7 +137,5 @@ Callback function which runs before committing this module's list of requested t
 | Name | Type | Description |
 | --- | --- | --- |
 | self | `TargetableModule` | The TargetableModule instance (for use if `this` is not available) |
-
-
 
 **Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet.js)
