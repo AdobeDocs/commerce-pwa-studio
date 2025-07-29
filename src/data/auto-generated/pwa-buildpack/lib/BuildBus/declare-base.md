@@ -98,8 +98,8 @@ configuration with the project-wide environment variable system.
 
 **See**
 
-- [Variable definition schema](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/)
-- [Core variable definitions](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/variables/)
+* [Variable definition schema](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/)
+* [Core variable definitions](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/variables/)
 
 **Parameters**
 
@@ -127,7 +127,7 @@ targets.of('@magento/pwa-buildpack').envVarDefinitions.tap(defs => {
 
 Called when configuring the loading and processing rules for Webpack.
 
-Interceptors receive a function `addTransform()`. They may call this function to request that Webpack process _a particular file_ with a particular transform module.
+Interceptors receive a function `addTransform()`. They may call this function to request that Webpack process *a particular file* with a particular transform module.
 
 Since the storefront developer is in charge of important dependencies,
 the interceptor files in the storefront project itself should be able to
@@ -241,7 +241,7 @@ displayed on the console at the end of the process.
 
 | Name | Type |
 | --- | --- |
-| validator | [`envValidationInterceptor`](#envValidationInterceptor) | 
+| validator | [`envValidationInterceptor`](#envValidationInterceptor) |
 
 **Example**
 

@@ -344,7 +344,7 @@ definition.
 
 | Name | Type |
 | --- | --- |
-| interceptor | [`transformUpwardIntercept`](#transformUpwardIntercept)| 
+| interceptor | [`transformUpwardIntercept`](#transformUpwardIntercept)|
 
 **Example** _(Send empty responses in maintenance mode.)_
 
