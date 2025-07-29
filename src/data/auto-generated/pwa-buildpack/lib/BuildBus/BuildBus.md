@@ -383,7 +383,8 @@ displayed on the console at the end of the process.
 
 | Name | Type |
 | --- | --- |
-| validator | [`envValidationInterceptor`](#envValidationInterceptor)| 
+| validator | [`envValidationInterceptor`](#envValidationInterceptor)
+|
 
 **Example**
 

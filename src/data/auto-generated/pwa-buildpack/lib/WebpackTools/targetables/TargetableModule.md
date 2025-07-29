@@ -75,7 +75,7 @@ of the search string if it is found.
 Add text to the beginning of a file.
 
 **Chainable**  
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
