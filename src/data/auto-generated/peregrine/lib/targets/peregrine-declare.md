@@ -91,7 +91,9 @@ a talon.
 
 const peregrineTargets = targets.of('@magento/peregrine');
 const talonsTarget = peregrineTargets.talons;
+
 ```
+
 **Example** *(Wrap the &#x60;useApp()&#x60; hook  with a logging extension)*
 
 ```js
