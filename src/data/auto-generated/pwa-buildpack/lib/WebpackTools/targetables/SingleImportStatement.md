@@ -13,10 +13,10 @@ static import statement. The import statement can accomplish two things:
 That's _almost_ all we need to do the import management we need, including
 deduping and scope conflict resolution.
 
-* [SingleImportStatement](#SingleImportStatement)
-    * [new SingleImportStatement(statement)](#new_SingleImportStatement_new)
-    * [.changeBinding(newBinding)](#SingleImportStatement+changeBinding) ⇒ [`SingleImportStatement`](#SingleImportStatement)
-    * [.toString()](#SingleImportStatement+toString) ⇒
+- [SingleImportStatement](#SingleImportStatement)
+    - [new SingleImportStatement(statement)](#new_SingleImportStatement_new)
+    - [.changeBinding(newBinding)](#SingleImportStatement+changeBinding) ⇒ [`SingleImportStatement`](#SingleImportStatement)
+    - [.toString()](#SingleImportStatement+toString) ⇒
 
 **Parameters**
 
