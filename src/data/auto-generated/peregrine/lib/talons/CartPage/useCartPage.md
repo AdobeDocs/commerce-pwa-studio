@@ -47,9 +47,10 @@ This talon performs the following effects:
 | props | `Object` |  |
 | props.queries | [`CartPageQueries`](#CartPageQueries) | GraphQL queries |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
+
 import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage';
 ```
 

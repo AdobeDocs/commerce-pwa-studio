@@ -71,9 +71,10 @@ This talon performs the following effects:
 | props.mutations | [`GiftCardsMutations`](#GiftCardsMutations) | GraphQL mutations for Gift Cards |
 | props.queries | [`GiftCardsQueries`](#GiftCardsQueries) | GraphQL queries for Gift Cards |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
+
 import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
 ```
 
@@ -88,9 +89,10 @@ Provide logic for a single gift card component.
 | props.code | `String` | Gift card's code |
 | props.removeGiftCard | `function` | A function that removes a gift card when provided a code |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
+
 import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
 ```
 

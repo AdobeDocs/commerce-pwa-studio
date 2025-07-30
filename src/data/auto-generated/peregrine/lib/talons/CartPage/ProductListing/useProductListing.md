@@ -126,6 +126,7 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
+
 import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
 ```
 
@@ -150,6 +151,7 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
+
 import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProduct';
 ```
 
@@ -188,6 +190,7 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
+
 import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
 ```
 
