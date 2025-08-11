@@ -140,9 +140,10 @@ Set JSX props on a JSX element.
 | props | `object` | A simple object representing the props. Keys should be prop names, and values should be raw strings representing the value in JSX text. |
 | [options] | `JSXModifierOptions` |  |
 
-**Example**  
+**Example**
 
 ```js
+
 file.setJSXProps('Tab colorScheme="dark"', {
   colorScheme: '"light"',
   className: '{classes.tabs}'
