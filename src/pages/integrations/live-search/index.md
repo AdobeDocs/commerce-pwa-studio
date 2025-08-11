@@ -16,20 +16,19 @@ You can integrate Live Search powered by AI into your PWA Studio Storefront.
 
 ![Live Search for PWA Studio](images/live-search-pwa-arch-diag.png)
 
-Adobe's [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview) is a feature that replaces the standard search capabilities in Adobe Commerce. When the Live Search feature is enabled and configured, the default search text field is replaced with the Live Search text field. Live Search also includes the Product Listing Page (PLP) widget, which provides robust filtering capabilities when browsing search results.
+Adobe's [Live Search](https://experienceleague.adobe.com/en/docs/commerce/live-search/overview) replaces Adobe Commerce's standard search capabilities. Once enabled and configured, it transforms your default search field into the enhanced Live Search interface. Beyond basic search, Live Search includes a Product Listing Page (PLP) widget that delivers powerful filtering options for search results.
 
-The **Store** side includes your PWA storefront, which contains the event collector and Live Search layout template, and the backend, which includes the GraphQL endpoints, SaaS Export module, and the Admin UI.
+Your **Store** architecture has two main components. The PWA storefront houses the event collector and Live Search layout template. Meanwhile, the backend provides GraphQL endpoints, the SaaS Export module, and Admin UI functionality.
 
 ## Install the Live Search module
 
 <InlineAlert variant="info" slots="text"/>
 
-Ensure that all prerequisites for Live Search installation on Adobe Commerce are completed as described in the official
-[installation documentation](https://experienceleague.adobe.com/en/docs/commerce/live-search/install).
+Before proceeding, complete all Live Search prerequisites for Adobe Commerce. Follow the steps outlined in the official [installation documentation](https://experienceleague.adobe.com/en/docs/commerce/live-search/install).
 
 ## Install the Live Search Backend module
 
-After completing the steps from above, add an additional backend dependency that exposes the GraphQL queries for Live Search, which are then utilized by the PWA frontend package.
+Next, install an additional backend dependency. This exposes the GraphQL queries for Live Search that your PWA frontend package needs.
 
 Run the following command to install the backend dependency:
 
@@ -111,7 +110,7 @@ To render the Live Search units on your PWA storefront, use the methods describe
 
 ### Render Live Search popover component
 
-To enable the Live Search Popover component, the existing PWA search bar must be replaced by the **LiveSearchPopoverLoader** from the PWA module, to achieve this on a vanilla PWA instance the `local-intercept.js` should look like the following:
+To enable the Live Search Popover component, replace your existing PWA search bar with the **LiveSearchPopoverLoader** from the PWA module. For a vanilla PWA instance, configure your `local-intercept.js` file as shown below:
 
 ```jsx
 const { Targetables } = require('@magento/pwa-buildpack');
@@ -145,8 +144,8 @@ module.exports = localIntercept;
 
 ### Render Live Search results page (LiveSearchSRLPLoader) component
 
-To integrate the Live Search Results Page, also known as `LiveSearchSRLPLoader` component with PWA, place the **LiveSearchSRLPLoader** component in the desired Page component and remove the non-required components from the page.
-In a vanilla PWA instance the `local-intercept.js` should look like the following:
+To integrate the Live Search Results Page (`LiveSearchSRLPLoader` component), add the **LiveSearchSRLPLoader** to your desired page component. Then remove any unnecessary components from that page.
+For a vanilla PWA instance, configure your `local-intercept.js` file as shown below:
 
 ```jsx
 const { Targetables } = require('@magento/pwa-buildpack');
@@ -184,8 +183,8 @@ module.exports = localIntercept;
 
 ### Render Live Search category page (LiveSearchPLPLoader) component
 
-To integrate the Live Search Category Page, also known as `LiveSearchPLPLoader` component with PWA, place the **LiveSearchPLPLoader** component in the desired Page component and remove the non-required components from the page.
-In a vanilla PWA instance the `local-intercept.js` should look like the following:
+To integrate the Live Search Category Page (`LiveSearchPLPLoader` component), add the **LiveSearchPLPLoader** to your desired page component. Then remove any unnecessary components from that page.
+For a vanilla PWA instance, configure your `local-intercept.js` file as shown below:
 
 ```jsx
 const { Targetables } = require('@magento/pwa-buildpack');
