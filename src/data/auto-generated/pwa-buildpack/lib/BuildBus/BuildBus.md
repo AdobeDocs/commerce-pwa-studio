@@ -121,11 +121,7 @@ It executes their declare and intercept files so they can interact with each oth
         * [.clearAll()](#module_@magento/pwa-buildpack..BuildBus.clearAll)
         * [.for(context)](#module_@magento/pwa-buildpack..BuildBus.for) ⇒ `BuildBus`
 
-Get [TargetProvider](TargetProvider) for the given named dependency. Use this to
-retrieve and run targets in top-level code, when you have a reference to
-the BuildBus. Declare and intercept functions should not, and cannot,
-use this method. Instead, they retrieve external targets through their
-`targets.of()` methods.
+Get [TargetProvider](TargetProvider) for the given named dependency. Use this to retrieve and run targets in top-level code, when you have a reference to the BuildBus. Declare and intercept functions should not, and cannot, use this method. Instead, they retrieve external targets through their `targets.of()` methods.
 
 **Returns:**
 `Object.<string, Target>`
@@ -155,9 +151,10 @@ in their `package.json` that they need to run code in this phase.
 | --- | --- | --- |
 | phase | `string` | 'declare' or 'intercept' |
 
-**Example**  
+**Example**
 
 ```js
+
 <caption>Find all dependencies whith have `pwa-studio: { targets: { declare: './path/to/js' }} defined, and run those functions.
 bus.runPhase('declare')
 ```
@@ -177,8 +174,7 @@ This factory is the supported way to construct BuildBus instances.
 It caches the instances and connects them to the logging infrastructure.
 
 Only one BuildBus is active for a project root directory (context) at any given time.
-This way, Buildpack code can retrieve the BuildBus for a context even if the bus
-instance hasn't been sent as a parameter.
+This way, Buildpack code can retrieve the BuildBus for a context even if the bus instance hasn't been sent as a parameter.
 
 **Returns:**
 **Parameters**
@@ -187,9 +183,10 @@ instance hasn't been sent as a parameter.
 | --- | --- | --- |
 | context | `string` | Root directory of the BuildBus to get or create. |
 
-**Example** _(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)_  
+**Example** _(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)_
 
 ```js
+
 const bus = BuildBus.for('./project-dir);
 bus.init();
 bus.getTargetsOf('my-extension').myTarget.call();
@@ -209,8 +206,7 @@ introspection for developers, but it has no BuildBus-specific functionality.
 Attach this Trackable to a tree. Give it a name and an owner. If the
 owner is a Trackable, then this Trackable becomes a child node of the
 owner. If the owner is a function, then this Trackable becomes a root
-node, which will log all of its [track](#Trackable+track) calls _and_ its
-descendents' calls to the `owner` function.
+node, which will log all of its [track](#Trackable+track) calls _and_ its descendents' calls to the `owner` function.
 
 **See**: Trackable.spec.js  
 **Parameters**
@@ -253,9 +249,10 @@ configuration with the project-wide environment variable system.
 | --- | --- | --- |
 | envVarDefinitions | `object` | The [variable definitions object](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/). Modify in place. |
 
-**Example** _(Add config fields for your extension)_  
+**Example** _(Add config fields for your extension)_
 
 ```js
+
 targets.of('@magento/pwa-buildpack').envVarDefinitions.tap(defs => {
   defs.sections.push({
     name: 'My Extension Settings',
@@ -285,9 +282,10 @@ building block for higher-level extensions that expose functional
 areas rather than files on disk.
 
 **See**: [transformModules intercept function](#transformModulesIntercept)  
-**Example** _(Strip unnecessary Lodash code from a specific JS module.)_  
+**Example** _(Strip unnecessary Lodash code from a specific JS module.)_
 
 ```js
+
 targets.of('@magento/pwa-buildpack').transformModules.tap(addTransform => addTransform({
   type: 'babel',
   fileToTransform: './lib/uses-pipeline-syntax.js',
@@ -302,9 +300,10 @@ This almost always happens once per build, even in dev mode.
 Use an [intercept function](#webpackCompilerIntercept) on this target
 to access the [webpack compiler](https://webpack.js.org/api/compiler-hooks/).
 
-**Example** _(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)_  
+**Example** _(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)_
 
 ```js
+
 targets.of('@magento/pwa-buildpack').webpackCompiler.tap(compiler => {
   compiler.hooks.watchRun.tapPromise(async () => {
      compiler.getInfrastructureLogger('my-extension')
@@ -325,9 +324,10 @@ Use a [specialFeatures intercept function](#specialFeaturesIntercept)
 to add special build features for the modules used in your project.
 
 **See**: [Special flags in `configureWebpack()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/webpack/configure/#special-flags)  
-**Example** _(Declare that your extension contains CSS modules.)_  
+**Example** _(Declare that your extension contains CSS modules.)_
 
 ```js
+
 targets.of('@magento/pwa-buildpack').specialFeatures.tap(featuresByModule => {
   featuresByModule['my-module'] = { cssModules: true };
 })
@@ -344,11 +344,12 @@ definition.
 
 | Name | Type |
 | --- | --- |
-| interceptor | [`transformUpwardIntercept`](#transformUpwardIntercept) |
+| interceptor | [`transformUpwardIntercept`](#transformUpwardIntercept)|
 
-**Example** _(Send empty responses in maintenance mode.)_  
+**Example** _(Send empty responses in maintenance mode.)_
 
 ```js
+
 targets.of('@magento/pwa-buildpack').transformUpward.tap(def => {
   const guardMaintenanceMode = (prop, inline) => {
     def[prop] = {
@@ -382,11 +383,13 @@ displayed on the console at the end of the process.
 
 | Name | Type |
 | --- | --- |
-| validator | [`envValidationInterceptor`](#envValidationInterceptor) |
+| validator | [`envValidationInterceptor`](#envValidationInterceptor)
+|
 
-**Example**  
+**Example**
 
 ```js
+
 targets.of('@magento/pwa-buildpack').validateEnv.tapPromise(validateBackendUrl);
 ```
 
@@ -911,7 +914,7 @@ objects.
 
 Serialize this Trackable and any parent Trackables.
 
-**Overrides**: [`toJSON`](#Trackable+toJSON)  
+**Overrides**: [`toJSON`](#Trackable+toJSON)
 **Returns:**
 `Object`
    — JSON-clean object that recurses up the parent tree.
@@ -1044,9 +1047,10 @@ in their `package.json` that they need to run code in this phase.
 | --- | --- | --- |
 | phase | `string` | 'declare' or 'intercept' |
 
-**Example**  
+**Example**
 
 ```js
+
 <caption>Find all dependencies whith have `pwa-studio: { targets: { declare: './path/to/js' }} defined, and run those functions.
 bus.runPhase('declare')
 ```
@@ -1076,9 +1080,10 @@ instance hasn't been sent as a parameter.
 | --- | --- | --- |
 | context | `string` | Root directory of the BuildBus to get or create. |
 
-**Example** _(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)_  
+**Example** **(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)**
 
 ```js
+
 const bus = BuildBus.for('./project-dir);
 bus.init();
 bus.getTargetsOf('my-extension').myTarget.call();
@@ -1098,8 +1103,7 @@ introspection for developers, but it has no BuildBus-specific functionality.
 Attach this Trackable to a tree. Give it a name and an owner. If the
 owner is a Trackable, then this Trackable becomes a child node of the
 owner. If the owner is a function, then this Trackable becomes a root
-node, which will log all of its [track](#Trackable+track) calls _and_ its
-descendents' calls to the `owner` function.
+node, which will log all of its [track](#Trackable+track) calls _and_ its descendents' calls to the `owner` function.
 
 **See**: Trackable.spec.js  
 **Parameters**
