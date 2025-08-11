@@ -30,7 +30,7 @@ Before proceeding, complete all Live Search prerequisites for Adobe Commerce. Fo
 
 Next, install an additional backend dependency. This exposes the GraphQL queries for Live Search that your PWA frontend package needs.
 
-Run the following command to install the backend dependency:
+Run the following commands to install the backend dependency:
 
 ```bash
 composer require magento/module-live-search-graph-ql-pwa
