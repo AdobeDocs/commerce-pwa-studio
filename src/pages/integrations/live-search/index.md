@@ -63,7 +63,7 @@ The `venia-pwa-live-search` package requires [PWA Studio 14.3.1](https://github.
         ```
 
         **OR**
-        
+
         ```sh
         npm install @magento/venia-pwa-live-search
         ```
@@ -75,7 +75,7 @@ The `venia-pwa-live-search` package requires [PWA Studio 14.3.1](https://github.
         ```
 
         **OR**
-        
+
         ```sh
         npm install @magento/venia-pwa-live-search
         ```
@@ -102,6 +102,7 @@ To control the Live Search placement on your PWA storefront, use the local-inter
 The location for `local-intercept.js` file may differ depending upon the method of initialization/setup of the project.
 
 The location of the file for a cloned project is as follows:
+
 - <pwa-root>/packages/venia-concept/local-intercept.js
 
 For a scaffolded project the file can be found directly at the root of the project.
