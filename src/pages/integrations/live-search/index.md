@@ -30,7 +30,7 @@ Before proceeding, complete all Live Search prerequisites for Adobe Commerce. Fo
 
 Next, install an additional backend dependency. This exposes the GraphQL queries for Live Search that your PWA frontend package needs.
 
-Run the following command to install the backend dependency:
+Run the following commands to install the backend dependency:
 
 ```bash
 composer require magento/module-live-search-graph-ql-pwa
@@ -46,7 +46,7 @@ bin/magento cache:flush
 
 ## Install the Live Search Frontend PWA package
 
-Live Search support on PWA requires installing the `venia-pwa-live-search` package and the Live Search module for Adobe Commerce.
+To enable Live Search on your PWA, you'll need two components. Install the `venia-pwa-live-search` package and the Live Search module for Adobe Commerce.
 
 <InlineAlert variant="info" slots="text">
 
@@ -79,9 +79,7 @@ The `venia-pwa-live-search` package requires [PWA Studio 14.3.1](https://github.
         npm install @magento/venia-pwa-live-search
         ```
 
-    This package contains the storefront functionality to integrate Live Search with PWA.
-
-    This package can be used to integrate the following features of Live Search with PWA:
+     This package provides all the storefront functionality for Live Search integration. It enables three key features:
     - Live Search powered Search Bar
     - Live Search powered Category pages
     - Live Search powered Search Results Landing page
@@ -96,7 +94,7 @@ The `venia-pwa-live-search` package requires [PWA Studio 14.3.1](https://github.
 
 ## Render Live Search results
 
-To control the Live Search placement on your PWA storefront, use the local-intercept file. See the [extensibility framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#intercept-files) documentation to learn more.
+You can control where Live Search appears on your PWA storefront using the local-intercept file. Learn more in the [extensibility framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#intercept-files) documentation.
 
 The location for `local-intercept.js` file may differ depending upon the method of initialization/setup of the project.
 
@@ -104,9 +102,9 @@ The location of the file for a cloned project is as follows:
 
 - <pwa-root>/packages/venia-concept/local-intercept.js
 
-For a scaffolded project the file can be found directly at the root of the project.
+In scaffolded projects, you'll find the file at the project root.
 
-To render the Live Search units on your PWA storefront, use the methods described below.
+Use the following methods to render Live Search components on your PWA storefront.
 
 ### Render Live Search popover component
 
