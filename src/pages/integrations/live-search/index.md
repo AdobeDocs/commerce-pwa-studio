@@ -48,11 +48,9 @@ bin/magento cache:flush
 
 To enable Live Search on your PWA, you'll need two components. Install the `venia-pwa-live-search` package and the Live Search module for Adobe Commerce.
 
-<InlineAlert variant="info" slots="text">
+<InlineAlert variant="info" slots="text"/>
 
 The `venia-pwa-live-search` package requires [PWA Studio 14.3.1](https://github.com/magento/pwa-studio/releases/tag/v14.3.1) or later.
-
-</InlineAlert>
 
 1. You can install the PWA `venia-pwa-live-search` package from the NPM registry:
     - For projects cloned from GitHub run the following commands from the project root:
