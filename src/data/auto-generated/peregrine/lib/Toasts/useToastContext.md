@@ -44,9 +44,10 @@ Any component using this hook _must_ be a child of a [ToastContextProvider](#Toa
 `Array.<Object>`
    — An array containing the state and dispatch function: [[ToastState](#ToastState), function]
 
-**Example**  
+**Example**
 
 ```js
+
 const [toastState, dispatch] = useToastState();
 ```
 

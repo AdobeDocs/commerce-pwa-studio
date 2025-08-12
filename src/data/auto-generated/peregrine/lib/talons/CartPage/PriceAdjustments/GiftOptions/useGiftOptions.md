@@ -47,11 +47,12 @@ This talon performs the following effects:
 | Name | Type |
 | --- | --- |
 | props | `Object` |
-| props.operations | [`GiftOptionsOperations`](#GiftOptionsOperations) |
+| props.operations | [`GiftOptionsOperations`](#GiftOptionsOperations)  |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
+
 import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/GiftOptions/useGiftOptions';
 ```
 
