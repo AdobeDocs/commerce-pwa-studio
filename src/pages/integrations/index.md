@@ -30,3 +30,7 @@ Make the most of your Adobe Commerce instance.
 [Product Recommendations](product-recommendations/)
 
 Add a recommendation engine powered by Adobe Sensei.
+
+[Live search](live-search/)
+
+Add Live Search powered by AI into your PWA Studio Storefront.
