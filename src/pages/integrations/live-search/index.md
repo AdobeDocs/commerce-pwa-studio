@@ -100,7 +100,7 @@ The location for `local-intercept.js` file may differ depending upon the method 
 
 The location of the file for a cloned project is as follows:
 
-- <pwa-root>\`{/packages/venia-concept/local-intercept.js}\`
+- `<pwa-root>/packages/venia-concept/local-intercept.js`
 
 In scaffolded projects, you'll find the file at the project root.
 
