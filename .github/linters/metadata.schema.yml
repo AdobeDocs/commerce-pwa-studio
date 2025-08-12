@@ -33,6 +33,7 @@ properties:
         - Payments
         - Performance
         - Recommendations
+        - Live Search
         - REST
         - Routes
         - Security
