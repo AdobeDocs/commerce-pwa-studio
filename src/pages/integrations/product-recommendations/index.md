@@ -32,15 +32,34 @@ Product Recommendations support on PWA requires installing the `venia-product-re
 The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https://github.com/magento/pwa-studio/releases/tag/v10.0.0) or later.
 
 1. You can install the PWA `venia-product-recommendations` package from the NPM registry:
-
-   ```sh
-   npm install @magento/venia-product-recommendations
+  ```sh
+    yarn venia add -D @magento/venia-product-recommendations
    ```
-
+   
+    ** OR **
+   
+   ```sh
+    npm install @magento/venia-product-recommendations
+   ```
+    
    This package contains storefront functionality to collect required behavioral data and render the recommendations.
    Some recommendation types use behavioral data from your shoppers to train machine learning models that build personalized recommendations.
    Other recommendation types use catalog data only and do not use any behavioral data.
    See the [user guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview#trainmlmodels) to learn how Adobe Sensei trains machine learning models that results in higher quality recommendations.
+   
+   Also add these frontend dependencies to support product recommendation module
+
+        ```sh
+        yarn venia add -D @magento/recommendations-js-sdk
+        yarn venia add -D @magento/venia-data-collector
+        ```
+
+        ** OR **
+
+        ```sh
+        npm install @magento/recommendations-js-sdk
+        npm install @magento/venia-data-collector
+        ```
 
 1. The backend functionality is provided by the [Product Recommendations module for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure.html).
 
@@ -48,6 +67,11 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
 
    ```bash
    composer require magento/module-data-services-graphql
+   ```
+2. Also, install the `experience-platform-connector` module
+
+   ```bash
+   composer require magento/experience-platform-connector
    ```
 
 ## Create recommendation units
