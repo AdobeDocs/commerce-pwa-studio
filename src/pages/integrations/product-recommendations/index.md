@@ -51,12 +51,12 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
    Also add these frontend dependencies to support product recommendation module
     
       yarn venia add -D @magento/recommendations-js-sdk
-      yarn venia add -D @magento/venia-data-collector
+      yarn venia add -D @magento/experience-platform-connector
    
         OR
 
       npm install @magento/recommendations-js-sdk
-      npm install @magento/venia-data-collector
+      npm install @magento/experience-platform-connector
 
 1. The backend functionality is provided by the [Product Recommendations module for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure.html).
 
