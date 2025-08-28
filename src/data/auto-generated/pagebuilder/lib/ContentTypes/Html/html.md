@@ -33,7 +33,7 @@ Props for [Html](#Html)
 | classes | `Object` | An object containing the class names for the Html |
 | classes.root | `String` | CSS classes for the root container element |
 | html | `String` | HTML code to be rendered as part of component |
-| textAlign | `String` | Alignment of the video within the parent container |
+| textAlign | `String` | Alignment of the HTML content within the parent container |
 | border | `String` | CSS border property |
 | borderColor | `String` | CSS border color property |
 | borderWidth | `String` | CSS border width property |

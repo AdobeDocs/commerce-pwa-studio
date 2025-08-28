@@ -47,4 +47,5 @@ const [observable, { dispatch }] = useEventingContext();
                     break;
             }
         });
+    });
 ```

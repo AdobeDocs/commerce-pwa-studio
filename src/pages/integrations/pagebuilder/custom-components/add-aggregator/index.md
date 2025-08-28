@@ -139,7 +139,7 @@ export default (node, props) => {
 };
 ```
 
-Adding `console.log(node)` at the beginning of your aggregator function, and at he end (`console.log(propObject)`), helps to show you the HTML you receive and the object you return. The property object returned from our aggregator looks like this:
+Adding `console.log(node)` at the beginning of your aggregator function, and at the end (`console.log(propObject)`), helps to show you the HTML you receive and the object you return. The property object returned from our aggregator looks like this:
 
 ![Aggregator object console output](images/AggregatorObjectConsoleOutput.png)
 

@@ -194,7 +194,7 @@ export default MyList;
 Using the _MyList_ component in your storefront with no modifications renders an empty list.
 To add content, the storefront project or a third party extension must intercept and tap into the `myListContent` target to access the API.
 
-The following shows how a storefront or third part extension can access and use that API in their intercept file:
+The following shows how a storefront or third party extension can access and use that API in their intercept file:
 
 ```js
 // intercept.js

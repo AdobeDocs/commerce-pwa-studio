@@ -77,7 +77,7 @@ Intercept function signature for the validateEnv target.
 Interceptors of the `validateEnv` target receive a config object.
 The config object contains the project env, an onFail callback and
 the debug function to be used in case of the debug mode to log more
-inforamtion to the console.
+information to the console.
 
 This Target can be used asynchronously in the parallel mode. If a
 validator needs to stop the process immediately, it can throw an error.
@@ -1479,7 +1479,7 @@ Intercept function signature for the validateEnv target.
 Interceptors of the `validateEnv` target receive a config object.
 The config object contains the project env, an onFail callback and
 the debug function to be used in case of the debug mode to log more
-inforamtion to the console.
+information to the console.
 
 This Target can be used asynchronously in the parallel mode. If a
 validator needs to stop the process immediately, it can throw an error.

@@ -90,7 +90,7 @@ If you are not using the `venia-product-recommendations` package, you can call t
 import { PageTypes } from "@magento/venia-product-recommendations";
 import useRecsData from "@magento/venia-product-recommendations/lib/hooks/useRecsData";
 
-const { data, error, isLoading } = useRecsData({ pageType: Pagetypes.CMS });
+const { data, error, isLoading } = useRecsData({ pageType: PageTypes.CMS });
 ```
 
 [venia-product-recommendations]: /guides/#custom-react-hooks-and-component

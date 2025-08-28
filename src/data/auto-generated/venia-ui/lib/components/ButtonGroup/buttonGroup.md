@@ -36,7 +36,7 @@ Props for [ButtonGroup](#ButtonGroup)
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the ButtonGroup component. |
 | classes.root | `string` | classes for root container |
-| items | [`Array.<buttonProps>`](#buttonProps) | the items to evaluate memoization recomputation. |
+| items | [`Array.<buttonProps>`](#buttonProps) | the array of button items to render in the group. |
 
 Props for a [ButtonGroup](#ButtonGroup) button component
 

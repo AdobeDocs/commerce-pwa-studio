@@ -82,7 +82,7 @@ Boosting a site's SEO while providing a rich, dynamic experience is a balancing 
 
 ### UPWARD and server-side rendering
 
-The UPWARD specification supports server-side rendering through it's [JavaScript][] and [PHP][] server implementations.
+The UPWARD specification supports server-side rendering through its [JavaScript][] and [PHP][] server implementations.
 The specification provide different resolvers that can return HTML content as a response to a request.
 
 [javascript]: https://github.com/magento/pwa-studio/tree/develop/packages/upward-js

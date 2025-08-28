@@ -30,9 +30,9 @@ The [RAIL][] model lays out the user-centric goals for PWA websites:
 [rail]: https://web.dev/rail/
 
 - **Response** – An application is receptive to the user's request.
-- **Animation** – It shows a movement to keep the user pausing.
+- **Animation** – It provides smooth transitions to maintain user engagement.
 - **Idle** – A PWA utilizes the "idle" second to cache content.
-- **Load** – It loads under a moment.
+- **Load** – It loads quickly.
 
 Learn more about Progressive Web Apps:
 
@@ -62,7 +62,7 @@ When you use the CLI tool in this package to [set up a new storefront project][]
 
 [set up a new storefront project]: /tutorials/setup-storefront/
 
-### Custom React hooks and component
+### Custom React hooks and components
 
 The `venia-ui` and `peregrine` packages contain custom React hooks and components for your PWA Studio project.
 

@@ -14,7 +14,7 @@ All of which can adjust the cart total.
 <dd>
 
 A child component of the PriceAdjustments component.
-This component renders a form for addingg a coupon code to the cart.
+This component renders a form for adding a coupon code to the cart.
 
 </dd>
 <dt><a href="#GiftOptions">GiftOptions(props)</a> ⇒ <inlineCode>React.Element</inlineCode></dt>
@@ -54,7 +54,7 @@ import PriceAdjustments from '@magento/venia-ui/lib/components/CartPage/PriceAdj
 ```
 
 A child component of the PriceAdjustments component.
-This component renders a form for addingg a coupon code to the cart.
+This component renders a form for adding a coupon code to the cart.
 
 **Returns:**
 **Parameters**

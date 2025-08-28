@@ -438,7 +438,7 @@ A payment definition object that describes a checkout page payment in your store
 
 | Name | Type | Description |
 | --- | --- | --- |
-| paymentCode | `string` | is use to map your payment |
+| paymentCode | `string` | is used to map your payment |
 | importPath | `string` | Resolvable path to the component the   Route component will render |
 
 **Example** *(A custom payment method)*
@@ -467,7 +467,7 @@ A payment definition object that describes a saved payment in your storefront.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| paymentCode | `string` | is use to map your payment |
+| paymentCode | `string` | is used to map your payment |
 | importPath | `string` | Resolvable path to the component the   Route component will render |
 
 **Example** *(A custom payment method)*
@@ -488,7 +488,7 @@ Interceptors of `editablePaymentTypes` should call `.add` on the provided [payme
 
 | Name | Type | Description |
 | --- | --- | --- |
-| renderers | `EditablePaymentTypesDefinition` | so far in the build. |
+| renderers | `EditablePaymentTypesDefinition` | The list of editable payments registered so far in the build. |
 
 A payment definition object that describes a saved payment in your storefront.
 
@@ -496,7 +496,7 @@ A payment definition object that describes a saved payment in your storefront.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| paymentCode | `string` | is use to map your payment |
+| paymentCode | `string` | is used to map your payment |
 | importPath | `string` | Resolvable path to the component the   Route component will render |
 
 **Example** *(A custom payment method)*
@@ -517,7 +517,7 @@ Interceptors of `rootShimmerTypes` should call `.add` on the provided [shimmer l
 
 | Name | Type | Description |
 | --- | --- | --- |
-| shimmers | [`RootShimmerTypesDefinition`](#RootShimmerTypesDefinition) | so far in the build. |
+| shimmers | [`RootShimmerTypesDefinition`](#RootShimmerTypesDefinition) | The list of shimmer types registered so far in the build. |
 
 A root component shimmer object that can be used during page transitions on your storefront
 
@@ -525,7 +525,7 @@ A root component shimmer object that can be used during page transitions on your
 
 | Name | Type | Description |
 | --- | --- | --- |
-| shimmerType | `string` | is use to map your page type to the component |
+| shimmerType | `string` | is used to map your page type to the component |
 | importPath | `string` | Resolvable path to the component the   Shimmer component will render |
 
 **Example** *(A CMS Page Shimmer)*

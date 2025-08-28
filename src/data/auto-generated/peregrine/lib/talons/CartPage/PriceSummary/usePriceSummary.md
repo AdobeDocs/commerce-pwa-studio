@@ -90,7 +90,8 @@ Props used for rendering a price summary component.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| handleProceedToCheckout | `function` | Callback function which navigates the browser to the checkout * @property {function} handleEnterKeyPress Callback function which navigates the browser to the checkout at the press of enter key |
+| handleProceedToCheckout | `function` | Callback function which navigates the browser to the checkout |
+| handleEnterKeyPress | `function` | Callback function which navigates the browser to the checkout at the press of enter key |
 | hasError | `boolean` | True if a GraphQL query returns an error. False otherwise. |
 | hasItems | `boolean` | True if the cart has any items. False otherwise. |
 | isLoading | `boolean` | True while the GraphQL query is still in flight. False otherwise. |

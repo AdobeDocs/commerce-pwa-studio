@@ -66,7 +66,7 @@ Intercept function signature for the validateEnv target.
 Interceptors of the `validateEnv` target receive a config object.
 The config object contains the project env, an onFail callback and
 the debug function to be used in case of the debug mode to log more
-inforamtion to the console.
+information to the console.
 
 This Target can be used asynchronously in the parallel mode. If a
 validator needs to stop the process immediately, it can throw an error.
@@ -75,7 +75,7 @@ so by calling the onFail function with the error message it wants to report.
 It can call the onFail multiple times if it wants to report multiple errors.
 
 All the errors will be queued and printed into the console at the end of the
-validation process and the build process will be stopeed.
+validation process and the build process will be stopped.
 
 </dd>
 </dl>
@@ -316,7 +316,7 @@ Intercept function signature for the validateEnv target.
 Interceptors of the `validateEnv` target receive a config object.
 The config object contains the project env, an onFail callback and
 the debug function to be used in case of the debug mode to log more
-inforamtion to the console.
+information to the console.
 
 This Target can be used asynchronously in the parallel mode. If a
 validator needs to stop the process immediately, it can throw an error.
@@ -324,7 +324,7 @@ If it needs to report an error but not stop the whole process, it can do
 so by calling the onFail function with the error message it wants to report.
 It can call the onFail multiple times if it wants to report multiple errors.
 
-All the errors will be queued and printed into the console at the end of the validation process and the build process will be stopeed.
+All the errors will be queued and printed into the console at the end of the validation process and the build process will be stopped.
 
 **Returns:**
 **Parameters**
