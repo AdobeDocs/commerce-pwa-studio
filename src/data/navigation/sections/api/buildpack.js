@@ -19,7 +19,7 @@ module.exports = {
           path: "/api/buildpack/cli/create-project/",
         },
         {
-          title: "Create environement file",
+          title: "Create environment file",
           path: "/api/buildpack/cli/create-environment-file/",
         },
         {

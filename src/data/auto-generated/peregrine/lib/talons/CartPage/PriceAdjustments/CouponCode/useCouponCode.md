@@ -29,7 +29,7 @@ This talon performs the following effects:
 <dd>
 
 Contains logic for a shipping method selector component.
-It performs effect and returns props data used to render that component.
+It performs effects and returns props data used to render that component.
 
 This talon performs the following effects:
 
@@ -183,7 +183,7 @@ import { useShippingForm } from '@magento/peregrine/lib/talons/CartPage/PriceAdj
 ```
 
 Contains logic for a shipping method selector component.
-It performs effect and returns props data used to render that component.
+It performs effects and returns props data used to render that component.
 
 This talon performs the following effects:
 

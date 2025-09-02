@@ -1,9 +1,9 @@
 ---
-title: PriceAdjusments
+title: PriceAdjustments
 description: View detailed API reference documentation for the PriceAdjustments talon in the Peregrine package of the PWA Studio framework.
 ---
 
-# PriceAdjusments
+# PriceAdjustments
 
 These talons provide logic for components that may adjust the total price in a shopping cart.
 

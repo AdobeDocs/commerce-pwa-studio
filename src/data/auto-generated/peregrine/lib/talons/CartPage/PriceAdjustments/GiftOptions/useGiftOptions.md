@@ -53,7 +53,7 @@ This talon performs the following effects:
 
 ```js
 
-import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/GiftOptions/useGiftOptions';
+import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions';
 ```
 
 Props data to use when rendering a gift options component.

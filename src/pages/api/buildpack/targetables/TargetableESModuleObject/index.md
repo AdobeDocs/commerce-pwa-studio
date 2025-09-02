@@ -24,7 +24,7 @@ Pass in import statements to the `add()` function to import that module into the
 
 ```js
 // Create a TargetableESModuleObject linked to the `button.js` file
-const buttons = targetable.esModuleArray("path/to/buttons.js");
+const buttons = targetable.esModuleObject("path/to/buttons.js");
 
 // Add import statements
 buttons.add("import Primary from './path/to/Primary'");
@@ -39,9 +39,9 @@ Code editors and linters may also complain if the module is missing.
 After the transforms above, `./path/to/button.js` enters the bundle as:
 
 ```js
-import Primary from './path/to/Primary');
-import { Button as Simple } from './path/to/simple');
-import { Secondary } from './path/to/Standard');
+import Primary from './path/to/Primary';
+import { Button as Simple } from './path/to/simple';
+import { Secondary } from './path/to/Standard';
 
 export default { Primary, Simple, Secondary };
 ```

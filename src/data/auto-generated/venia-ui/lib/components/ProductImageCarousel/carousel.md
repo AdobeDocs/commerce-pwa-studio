@@ -10,10 +10,10 @@ Props for [ProductImageCarousel](#ProductImageCarousel)
 </dd>
 </dl>
 
-Carousel component for product images
+Carousel component for product images.
 Carousel - Component that holds number of images
 where typically one image visible, and other
-images can be navigated through previous and next buttons
+images can be navigated through previous and next buttons.
 
 **Returns:**
 `React.Element`

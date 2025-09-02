@@ -106,7 +106,7 @@ const configuration = await loadEnvironment("/Users/me/path/to/project");
 
 // `loadEnvironment` has now read the contents of
 // `/Users/me/path/to/project/.env` and merged it with any environment
-// variables that were alredy set.
+// variables that were already set.
 
 // Create an UPWARD server using env vars that begin with `UPWARD_JS_`
 createUpwardServer(configuration.section("upwardJs"));

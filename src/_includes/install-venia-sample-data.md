@@ -14,7 +14,7 @@ If you have the previous `magento2-sample-data` module installed, you need to [r
 
 ## Step 1. Set the composer repository in the config
 
-Run the following command in the Magento root directory setup the repository for the sample data in https://repo.magento.com:
+Run the following command in the Magento root directory to setup the repository for the sample data in https://repo.magento.com:
 
 ```sh
 composer config --no-interaction --ansi repositories.venia-sample-data composer https://repo.magento.com

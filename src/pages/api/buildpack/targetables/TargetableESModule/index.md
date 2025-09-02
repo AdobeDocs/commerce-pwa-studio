@@ -56,7 +56,7 @@ import { Button as VeniaButton, Carousel } from "@magento/venia";
 
 #### Import conflicts
 
-A conflict occcurs when an import statement uses a binding that already belongs to another existing import statement.
+A conflict occurs when an import statement uses a binding that already belongs to another existing import statement.
 For example, you add the `logger` import statement in a previous example to a file that already imports another `logger` module.
 When this happens, the `TargetableESModule` class rebinds the `logger` object to a different, unique name, such as `logger$$2`.
 

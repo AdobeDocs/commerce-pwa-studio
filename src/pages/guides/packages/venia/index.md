@@ -31,7 +31,7 @@ Visit [venia.magento.com][] to see a live instance of this application.
 
 ## Venia UI library
 
-The _venia-ui-package_ contains the [Venia UI library][], which is a library of visual components for a PWA Studio storefront.
+The _venia-ui package_ contains the [Venia UI library][], which is a library of visual components for a PWA Studio storefront.
 It provides UI components of various complexity that range from complete features to simple building blocks.
 
 [venia ui library]: /api/venia/

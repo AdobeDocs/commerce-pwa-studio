@@ -102,7 +102,7 @@ Specify the port the dev server should bind to. If this is set, it overrides the
 
 **Type:** `bool`
 
-Use a service worker in developer mode (PWADevServer), which are disabled in dev mode normally to simplify cache. Good for debugging.
+Use a service worker in developer mode (PWADevServer), which is disabled in dev mode normally to simplify cache. Good for debugging.
 
 ### `DEV_SERVER_WATCH_OPTIONS_USE_POLLING`
 

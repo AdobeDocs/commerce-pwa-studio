@@ -14,7 +14,7 @@ The steps shown here describe the recommended process for developing content typ
 
 ![Overview of steps](images/OverviewSteps.svg)
 
-The topics for these steps show you how to create the code that retrieves properties (content and styling) from your content type HTML (in the configAggregator) and assign those properties to the equivalent properties in your in content type component.
+The topics for these steps show you how to create the code that retrieves properties (content and styling) from your content type HTML (in the configAggregator) and assign those properties to the equivalent properties in your content type component.
 
 ## Prerequisites
 

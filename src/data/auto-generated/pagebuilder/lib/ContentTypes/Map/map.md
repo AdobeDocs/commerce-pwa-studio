@@ -36,7 +36,7 @@ Props for [GoogleMap](#GoogleMap)
 | height | `String` | CSS height property |
 | mapOptions | `Object` | specific Google Maps API options for Map object instantiation |
 | locations | `Array` | Locations on the map for Marker placement |
-| textAlign | `String` | Alignment of content within the row |
+| textAlign | `String` | Alignment of the map within the parent container |
 | border | `String` | CSS border property |
 | borderColor | `String` | CSS border color property |
 | borderWidth | `String` | CSS border width property |
