@@ -23,7 +23,6 @@ Provide logic for a single gift card component.
 </dd>
 </dl>
 
-
 Typedefs
 
 <dl>
@@ -53,7 +52,6 @@ Props data to use when rendering a single gift card component.
 </dd>
 </dl>
 
-
 Handles the logic for a component that renders a list of gift cards.
 It performs effects and returns the prop data necessary for rendering
 the component.
@@ -63,7 +61,7 @@ This talon performs the following effects:
 - Fetch the currently applied gift cards for a cart
 - Manage the updating state of the cart while a gift card is being applied or removed
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
@@ -73,7 +71,8 @@ This talon performs the following effects:
 | props.mutations | [`GiftCardsMutations`](#GiftCardsMutations) | GraphQL mutations for Gift Cards |
 | props.queries | [`GiftCardsQueries`](#GiftCardsQueries) | GraphQL queries for Gift Cards |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
+
 ```js
 import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
 ```
@@ -90,6 +89,7 @@ Provide logic for a single gift card component.
 | props.removeGiftCard | `function` | A function that removes a gift card when provided a code |
 
 **Example** *(Importing into your project)*  
+
 ```js
 import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
 ```

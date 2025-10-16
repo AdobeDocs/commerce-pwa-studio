@@ -41,7 +41,7 @@ Upper case the first letter of a string
 
 | Name | Type |
 | --- | --- |
-| string | `string` | 
+| string | `string` |
 
 Props for [Tabs](#Tabs)
 

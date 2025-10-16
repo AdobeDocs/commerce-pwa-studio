@@ -88,7 +88,7 @@ Retrieve background images from a master format node
 
 | Name |
 | --- |
-| node | 
+| node |
 
 Retrieve vertical alignment from a master format node
 
@@ -97,7 +97,7 @@ Retrieve vertical alignment from a master format node
 
 | Name |
 | --- |
-| node | 
+| node |
 
 Convert vertical alignment values to flex values
 
@@ -106,7 +106,7 @@ Convert vertical alignment values to flex values
 
 | Name |
 | --- |
-| alignment | 
+| alignment |
 
 Convert flex to vertical alignment values
 
@@ -115,7 +115,7 @@ Convert flex to vertical alignment values
 
 | Name |
 | --- |
-| flex | 
+| flex |
 
 Retrieve advanced props from content type node
 
@@ -124,7 +124,7 @@ Retrieve advanced props from content type node
 
 | Name |
 | --- |
-| node | 
+| node |
 
 Retrieve the padding from a content type node
 
@@ -133,7 +133,7 @@ Retrieve the padding from a content type node
 
 | Name |
 | --- |
-| node | 
+| node |
 
 Retrieve the margin from a content type node
 
@@ -142,7 +142,7 @@ Retrieve the margin from a content type node
 
 | Name |
 | --- |
-| node | 
+| node |
 
 Retrieve the border from a content type node
 
@@ -151,7 +151,7 @@ Retrieve the border from a content type node
 
 | Name |
 | --- |
-| node | 
+| node |
 
 Retrieve the text align from a content type node
 
@@ -160,7 +160,7 @@ Retrieve the text align from a content type node
 
 | Name |
 | --- |
-| node | 
+| node |
 
 Retrieve the CSS classes from a content type node
 
@@ -169,7 +169,7 @@ Retrieve the CSS classes from a content type node
 
 | Name |
 | --- |
-| node | 
+| node |
 
 Retrieve if CSS display property is set to none from a content type node
 
@@ -178,7 +178,7 @@ Retrieve if CSS display property is set to none from a content type node
 
 | Name |
 | --- |
-| node | 
+| node |
 
 Converts a CSS string style into a JSX object inline style
 
@@ -187,7 +187,7 @@ Converts a CSS string style into a JSX object inline style
 
 | Name | Type |
 | --- | --- |
-| style | `String` | 
+| style | `String` |
 
 Retrieve media queries from a master format node
 
@@ -196,7 +196,7 @@ Retrieve media queries from a master format node
 
 | Name | Type |
 | --- | --- |
-| node |  | 
-| mediaQueries | `Array` | 
+| node |  |
+| mediaQueries | `Array` |
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/utils.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/utils.js)
