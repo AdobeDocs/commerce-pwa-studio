@@ -15,6 +15,7 @@ This talon performs the following effects:
 </dd>
 </dl>
 
+
 Typedefs
 
 <dl>
@@ -38,6 +39,7 @@ Props used for rendering a price summary component.
 </dd>
 </dl>
 
+
 This talon contains logic for a price summary component.
 It performs effects and returns prop data for rendering the component.
 
@@ -45,7 +47,7 @@ This talon performs the following effects:
 
 - Log a GraphQL error if it occurs when getting the price summary
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name | Type | Description |
@@ -53,10 +55,8 @@ This talon performs the following effects:
 | props | `Object` |  |
 | props.queries | [`PriceSummaryQueries`](#PriceSummaryQueries) | GraphQL queries for a price summary component. |
 
-**Example** *(Importing into your project)*
-
+**Example** *(Importing into your project)*  
 ```js
-
 import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
 ```
 
@@ -74,6 +74,7 @@ Query data flattened into a simple object.
 | taxes | `Array.<Object>` | Taxes applied to the cart |
 | shipping | `Array.<Object>` | Shipping addresses associated with this cart |
 
+
 GraphQL queries for price summary component.
 
 **See**: [priceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.js)
@@ -84,17 +85,19 @@ for the queries used in Venia.
 | --- | --- | --- |
 | getPriceSummary | `GraphQLAST` | Query to get the price summary for a cart |
 
+
 Props used for rendering a price summary component.
 
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| handleProceedToCheckout | `function` | Callback function which navigates the browser to the checkout |
-| handleEnterKeyPress | `function` | Callback function which navigates the browser to the checkout at the press of enter key |
+| handleProceedToCheckout | `function` | Callback function which navigates the browser to the checkout * @property {function} handleEnterKeyPress Callback function which navigates the browser to the checkout at the press of enter key |
 | hasError | `boolean` | True if a GraphQL query returns an error. False otherwise. |
 | hasItems | `boolean` | True if the cart has any items. False otherwise. |
 | isLoading | `boolean` | True while the GraphQL query is still in flight. False otherwise. |
 | flatData | [`FlattenedData`](#FlattenedData) | Query data that has been flattened into a simple object |
+
+
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js)

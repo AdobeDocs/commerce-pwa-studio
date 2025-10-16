@@ -10,11 +10,12 @@ Props for [Html](#Html)
 </dd>
 </dl>
 
+
 Page Builder HTML component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns:**
+**Returns: **
 `React.Element`
    — A React component that renders HTML with optional styling properties.
 
@@ -23,6 +24,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 | Name | Type | Description |
 | --- | --- | --- |
 | props | [`props`](#props) | React component props |
+
 
 Props for [Html](#Html)
 
@@ -33,7 +35,7 @@ Props for [Html](#Html)
 | classes | `Object` | An object containing the class names for the Html |
 | classes.root | `String` | CSS classes for the root container element |
 | html | `String` | HTML code to be rendered as part of component |
-| textAlign | `String` | Alignment of the HTML content within the parent container |
+| textAlign | `String` | Alignment of the video within the parent container |
 | border | `String` | CSS border property |
 | borderColor | `String` | CSS border color property |
 | borderWidth | `String` | CSS border width property |
@@ -47,5 +49,7 @@ Props for [Html](#Html)
 | paddingBottom | `String` | CSS padding bottom property |
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
+
+
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Html/html.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Html/html.js)

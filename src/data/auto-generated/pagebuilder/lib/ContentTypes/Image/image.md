@@ -10,11 +10,12 @@ Props for [Image](#Image)
 </dd>
 </dl>
 
+
 Page Builder Image component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns:**
+**Returns: **
 `React.Element`
    — A React component that displays an Image.
 
@@ -23,6 +24,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 | Name | Type | Description |
 | --- | --- | --- |
 | props | [`props`](#props) | React component props |
+
 
 Props for [Image](#Image)
 
@@ -40,7 +42,7 @@ Props for [Image](#Image)
 | linkType | `String` | Type of link |
 | openInNewTab | `bool` | Flag to indicate if link should be opened in a new tab |
 | caption | `String` | Caption for the image |
-| textAlign | `String` | Alignment of the image within the parent container |
+| textAlign | `String` | Alignment of the divider within the parent container |
 | border | `String` | CSS border property |
 | borderColor | `String` | CSS border color property |
 | borderWidth | `String` | CSS border width property |
@@ -54,5 +56,7 @@ Props for [Image](#Image)
 | paddingBottom | `String` | CSS padding bottom property |
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
+
+
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Image/image.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Image/image.js)

@@ -46,6 +46,7 @@ This talon performs the following effects:
 </dd>
 </dl>
 
+
 Typedefs
 
 <dl>
@@ -107,6 +108,7 @@ It provides props data for a product form UI component inside a modal.
 </dd>
 </dl>
 
+
 This talon contains logic for a component that renders a list of products for a cart.
 It performs effects and returns prop data to render the component on a cart page.
 
@@ -115,7 +117,7 @@ This talon performs the following effects:
 - Fetch product listing data associated with the cart
 - Log any GraphQL errors to the console
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name | Type | Description |
@@ -123,10 +125,8 @@ This talon performs the following effects:
 | props | `Object` |  |
 | props.queries | [`ProductListingQueries`](#ProductListingQueries) | GraphQL queries for getting product listing data. |
 
-**Example** *(Importing into your project)*
-
+**Example** *(Importing into your project)*  
 ```js
-
 import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
 ```
 
@@ -137,7 +137,7 @@ This talon performs the following effects:
 
 - Manage the updating state of the cart while a product is being updated or removed
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name | Type | Description |
@@ -148,19 +148,16 @@ This talon performs the following effects:
 | props.setActiveEditItem | `function` | Function for setting the actively editing item |
 | props.setIsCartUpdating | `function` | Function for setting the updating state of the cart |
 
-**Example** *(Importing into your project)*
-
+**Example** *(Importing into your project)*  
 ```js
-
 import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProduct';
 ```
 
 This talon contains logic for a product edit modal used on a cart page.
 It returns prop data for rendering an interactive modal component.
 
-**Returns:**
-**Example** *(Importing into your project)*
-
+**Returns: **
+**Example** *(Importing into your project)*  
 ```js
 import { useEditModal } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
 ```
@@ -173,7 +170,7 @@ This talon performs the following effects:
 - Manage the updating state of the cart while form data is being saved
 - Set the variant price on a product depending on the product's options
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name | Type | Description |
@@ -187,10 +184,8 @@ This talon performs the following effects:
 | props.updateQuantityMutation | `GraphQLDocument` | GraphQL mutation for updating the quantity of a product in a cart. |
 | props.setActiveEditItem | `function` | Function for setting the actively editing item. |
 
-**Example** *(Importing into your project)*
-
+**Example** *(Importing into your project)*  
 ```js
-
 import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
 ```
 
@@ -205,6 +200,7 @@ for the queries used in Venia
 | --- | --- | --- |
 | getProductListingQuery | `GraphQLDocument` | Query to get the product list for a cart |
 
+
 Object type returned by the [useProductListing](#useProductListing) talon.
 It provides props data for a component that renders a product list.
 
@@ -214,9 +210,10 @@ It provides props data for a component that renders a product list.
 | --- | --- | --- |
 | activeEditItem | `Object` | The product item currently being edited |
 | isLoading | `boolean` | True if the query to get the product listing is still in progress. False otherwise. |
-| error | `Error` \| `null` | Graphql errors, if any |
+| error | `Error` \| `null` | An array of graphql errors |
 | items | `Array.<Object>` | A list of products in a cart |
 | setActiveEditItem | `function` | Function for setting the current item to edit |
+
 
 GraphQL mutations for a product in a cart.
 This is a type used by the [useProduct](#useProduct) talon.
@@ -230,6 +227,7 @@ to see the mutations used in Venia
 | removeItemMutation | `GraphQLDocument` | Mutation for removing an item in a cart |
 | updateItemQuantityMutation | `GraphQLDocument` | Mutation for updating the item quantity in a cart |
 
+
 Object type returned by the [useProduct](#useProduct) talon.
 It provides prop data for rendering a product component on a cart page.
 
@@ -237,12 +235,13 @@ It provides prop data for rendering a product component on a cart page.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| errorMessage | `String` | Error message from an operation performed on a cart product. |
+| errorMessage | `String` | Error message from an operation perfored on a cart product. |
 | handleEditItem | `function` | Function to use for handling when a product is modified. |
 | handleRemoveFromCart | `function` | Function to use for handling the removal of a cart product. |
 | handleUpdateItemQuantity | `function` | Function to use for handling updates to the product quantity in a cart. |
 | isEditable | `boolean` | True if a cart product is editable. False otherwise. |
 | product | [`ProductItem`](#ProductItem) | Cart product data |
+
 
 Data about a product item in the cart.
 This type is used in the [ProductTalonProps](#ProductTalonProps) type returned by the [useProduct](#useProduct) talon.
@@ -260,6 +259,7 @@ This type is used in the [ProductTalonProps](#ProductTalonProps) type returned b
 | urlKey | `String` | The product's url key |
 | urlSuffix | `String` | The product's url suffix |
 
+
 Object type returned by the [useQuantityStepper](useQuantityStepper) talon.
 It provides props data for a quantity UI component.
 
@@ -274,6 +274,7 @@ It provides props data for a quantity UI component.
 | handleIncrement | `function` | Callback function for handling an increment event |
 | maskInput | `function` | Function for masking a value when decimal values are allowed |
 
+
 Object type returned by the [useEditModal](#useEditModal) talon.
 It provides props data for rendering an edit modal component.
 
@@ -283,6 +284,7 @@ It provides props data for rendering an edit modal component.
 | --- | --- | --- |
 | setVariantPrice | `function` | Function for setting a product's variant price. |
 | variantPrice | `Object` | The variant price for a product. See [Money object](https://devdocs.magento.com/guides/v2.4/graphql/product/product-interface.html#Money). |
+
 
 Object type returned by the [useProductForm](useProductForm) talon.
 It provides props data for a product form UI component inside a modal.
@@ -300,5 +302,7 @@ It provides props data for a product form UI component inside a modal.
 | isDialogOpen | `boolean` | True if the form is visible. False otherwise. |
 | handleClose | `function` | A callback function for handling form closing |
 | configurableThumbnailSource | `String` | A string indicating which thumbnail should be used for configurable products |
+
+
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/ProductListing/useProductListing.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/ProductListing/useProductListing.js)

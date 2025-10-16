@@ -82,122 +82,137 @@ Retrieve media queries from a master format node
 </dd>
 </dl>
 
+
 Retrieve background images from a master format node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve vertical alignment from a master format node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Convert vertical alignment values to flex values
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| alignment |
+| alignment | 
+
 
 Convert flex to vertical alignment values
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| flex |
+| flex | 
+
 
 Retrieve advanced props from content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve the padding from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve the margin from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve the border from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve the text align from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve the CSS classes from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve if CSS display property is set to none from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Converts a CSS string style into a JSX object inline style
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name | Type |
 | --- | --- |
-| style | `String` |
+| style | `String` | 
+
 
 Retrieve media queries from a master format node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name | Type |
 | --- | --- |
-| node |  |
-| mediaQueries | `Array` |
+| node |  | 
+| mediaQueries | `Array` | 
+
+
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/utils.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/utils.js)

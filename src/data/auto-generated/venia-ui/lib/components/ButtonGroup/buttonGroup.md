@@ -16,9 +16,10 @@ Props for a [ButtonGroup](#ButtonGroup) button component
 </dd>
 </dl>
 
+
 A component that creates a group of buttons.
 
-**Returns:**
+**Returns: **
 `React.Element`
    — A React component that displays multiple buttons.
 
@@ -28,6 +29,7 @@ A component that creates a group of buttons.
 | --- | --- | --- |
 | props | [`props`](#props) | React component props |
 
+
 Props for [ButtonGroup](#ButtonGroup)
 
 **Properties**
@@ -36,7 +38,8 @@ Props for [ButtonGroup](#ButtonGroup)
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the ButtonGroup component. |
 | classes.root | `string` | classes for root container |
-| items | [`Array.<buttonProps>`](#buttonProps) | the array of button items to render in the group. |
+| items | [`Array.<buttonProps>`](#buttonProps) | the items to evaluate memoization recomputation. |
+
 
 Props for a [ButtonGroup](#ButtonGroup) button component
 
@@ -46,5 +49,7 @@ Props for a [ButtonGroup](#ButtonGroup) button component
 | --- | --- | --- |
 | children | `ReactNodeLike` | component to render for the ButtonGroups's button component |
 | key | `string` | the unique id for a button element |
+
+
 
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/ButtonGroup/buttonGroup.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/ButtonGroup/buttonGroup.js)

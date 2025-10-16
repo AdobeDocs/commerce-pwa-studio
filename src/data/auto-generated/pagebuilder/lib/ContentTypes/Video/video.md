@@ -10,11 +10,12 @@ Props for [Video](#Video)
 </dd>
 </dl>
 
+
 Page Builder Video component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns:**
+**Returns: **
 `React.Element`
    — A React component that displays a Video using an iframe.
 
@@ -23,6 +24,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 | Name | Type | Description |
 | --- | --- | --- |
 | props | [`props`](#props) | React component props |
+
 
 Props for [Video](#Video)
 
@@ -54,5 +56,7 @@ Props for [Video](#Video)
 | paddingBottom | `String` | CSS padding bottom property |
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
+
+
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Video/video.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Video/video.js)

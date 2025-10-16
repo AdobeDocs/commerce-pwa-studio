@@ -10,11 +10,12 @@ Props for [GoogleMap](#GoogleMap)
 </dd>
 </dl>
 
+
 Page Builder Map component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns:**
+**Returns: **
 `React.Element`
    — A React component that displays a Map.
 
@@ -23,6 +24,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 | Name | Type | Description |
 | --- | --- | --- |
 | props | [`props`](#props) | React component props |
+
 
 Props for [GoogleMap](#GoogleMap)
 
@@ -36,7 +38,7 @@ Props for [GoogleMap](#GoogleMap)
 | height | `String` | CSS height property |
 | mapOptions | `Object` | specific Google Maps API options for Map object instantiation |
 | locations | `Array` | Locations on the map for Marker placement |
-| textAlign | `String` | Alignment of the map within the parent container |
+| textAlign | `String` | Alignment of content within the row |
 | border | `String` | CSS border property |
 | borderColor | `String` | CSS border color property |
 | borderWidth | `String` | CSS border width property |
@@ -50,5 +52,7 @@ Props for [GoogleMap](#GoogleMap)
 | paddingBottom | `String` | CSS padding bottom property |
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
+
+
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Map/map.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Map/map.js)
