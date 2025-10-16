@@ -41,8 +41,8 @@ Sort products based on the original order
 
 | Name | Type |
 | --- | --- |
-| urlKeys | `Array` | 
-| products | `Array` | 
+| urlKeys | `Array` |
+| products | `Array` |
 
 Props for [Products](#Products)
 

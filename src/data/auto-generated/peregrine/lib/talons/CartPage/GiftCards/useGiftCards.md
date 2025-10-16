@@ -80,7 +80,7 @@ import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
 
 Provide logic for a single gift card component.
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
@@ -105,7 +105,6 @@ for queries used in Venia
 | applyGiftCardMutation | `GraphQLAST` | The mutation used to apply a gift card to the cart. |
 | removeGiftCardMutation | `GraphQLAST` | The mutation used to remove a gift card from the cart. |
 
-
 GraphQL queries for Gift Cards.
 
 **See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/giftCardQueries.gql.ee.js)
@@ -116,7 +115,6 @@ for queries used in Venia
 | --- | --- | --- |
 | getAppliedGiftCardsQuery | `GraphQLAST` | The query used to get the gift cards currently applied to the cart. |
 | getGiftCardBalanceQuery | `GraphQLAST` | The query used to get the gift cards currently applied to the cart. |
-
 
 Props data to use when rendering a list of gift cards.
 
@@ -140,7 +138,6 @@ Props data to use when rendering a list of gift cards.
 | shouldDisplayCardBalance | `boolean` | Whether to display the gift card balance to the user |
 | shouldDisplayCardError | `boolean` | Whether to display an error message under the card input field. |
 
-
 Props data to use when rendering a single gift card component.
 
 **Properties**
@@ -148,7 +145,5 @@ Props data to use when rendering a single gift card component.
 | Name | Type | Description |
 | --- | --- | --- |
 | removeGiftCardWithCode | `function` | Function for removing a gift card associated with the code passed into this talon. |
-
-
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js)
