@@ -188,7 +188,7 @@ instance hasn't been sent as a parameter.
 | context | `string` | Root directory of the BuildBus to get or create. |
 
 **Example** _(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)_
- 
+
 ```js
 const bus = BuildBus.for('./project-dir);
 bus.init();
