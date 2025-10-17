@@ -186,7 +186,6 @@ with these names, rather than an object with these functions as properties.
 **Example** *(A renderer that can render any content containing the string &quot;honk&quot;)*
 
 ```jsx
-
 import React from 'react';
 import PlainHtmlRenderer from '@magento/venia-ui/components/richContent/plainHtmlRenderer';
 
@@ -222,7 +221,6 @@ as product descriptions and CMS blocks.
 **Example** *(Add a renderer)*
 
 ```js
-
 targets.of('@magento/venia-ui').richContentRenderers.tap(
   renderers => renderers.add({
     componentName: 'AdobeXM',
@@ -248,7 +246,6 @@ admin, such as CMS or catalog URLs.
 **Example** *(Add a custom route for a blog module)*
 
 ```js
-
 const veniaTargets = targets.of('@magento/venia-ui')
 const routes = veniaTargets.routes
 routes.tap(
@@ -275,7 +272,6 @@ This target lets you add new checkout page payment to your storefronts.
 **Example** *(Add a payment)*
 
 ```js
-
 targets.of('@magento/venia-ui').checkoutPagePaymentTypes.tap(
   checkoutPagePaymentTypes => checkoutPagePaymentTypes.add({
     paymentCode: 'braintree',
@@ -297,7 +293,6 @@ This target lets you add new saved payment method to your storefronts.
 **Example** *(Add a payment)*
 
 ```js
-
 targets.of('@magento/venia-ui').savedPaymentTypes.tap(
   savedPaymentTypes => savedPaymentTypes.add({
     paymentCode: 'braintree',
@@ -319,7 +314,6 @@ This target lets you add new editable payment method to your storefronts.
 **Example** *(Add a payment)*
 
 ```js
-
 targets.of('@magento/venia-ui').editablePaymentTypes.tap(
   editablePaymentTypes => editablePaymentTypes.add({
     paymentCode: 'braintree',
@@ -341,7 +335,6 @@ This target allows you to add custom payment summary rendering for the summary p
 **Example** *(Add a payment)*
 
 ```js
-
 targets.of('@magento/venia-ui').editablePaymentTypes.tap(
   editablePaymentTypes => editablePaymentTypes.add({
     paymentCode: 'braintree',
@@ -389,7 +382,6 @@ or a new array you have constructed
 **Example**
 
 ```js
-
 const intercept = routesArray => {
      return [
        { name: 'Backstop', pattern: '*', path: '@my-components/backstop' },
@@ -414,7 +406,6 @@ A route definition object that describes a route in your storefront.
 **Example** *(A custom route with a URL parameter)*
 
 ```js
-
 const myCustomRoute = {
      name: 'MyRoute',
      pattern: '/my-route/:myRouteParam',
@@ -438,13 +429,12 @@ A payment definition object that describes a checkout page payment in your store
 
 | Name | Type | Description |
 | --- | --- | --- |
-| paymentCode | `string` | is used to map your payment |
+| paymentCode | `string` | is use to map your payment |
 | importPath | `string` | Resolvable path to the component the   Route component will render |
 
 **Example** *(A custom payment method)*
 
 ```js
-
 const myCustomPayment = {
      paymentCode: 'cc',
     importPath: '@partner/module/path_to_your_component'
@@ -467,13 +457,12 @@ A payment definition object that describes a saved payment in your storefront.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| paymentCode | `string` | is used to map your payment |
+| paymentCode | `string` | is use to map your payment |
 | importPath | `string` | Resolvable path to the component the   Route component will render |
 
 **Example** *(A custom payment method)*
 
 ```js
-
 const myCustomPayment = {
      paymentCode: 'cc',
      importPath: '@partner/module/path_to_your_component'
@@ -488,7 +477,7 @@ Interceptors of `editablePaymentTypes` should call `.add` on the provided [payme
 
 | Name | Type | Description |
 | --- | --- | --- |
-| renderers | `EditablePaymentTypesDefinition` | The list of editable payments registered so far in the build. |
+| renderers | `EditablePaymentTypesDefinition` | so far in the build. |
 
 A payment definition object that describes a saved payment in your storefront.
 
@@ -496,13 +485,12 @@ A payment definition object that describes a saved payment in your storefront.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| paymentCode | `string` | is used to map your payment |
+| paymentCode | `string` | is use to map your payment |
 | importPath | `string` | Resolvable path to the component the   Route component will render |
 
 **Example** *(A custom payment method)*
 
 ```js
-
 const myCustomPayment = {
      paymentCode: 'cc',
      importPath: '@partner/module/path_to_your_component'
@@ -517,7 +505,7 @@ Interceptors of `rootShimmerTypes` should call `.add` on the provided [shimmer l
 
 | Name | Type | Description |
 | --- | --- | --- |
-| shimmers | [`RootShimmerTypesDefinition`](#RootShimmerTypesDefinition) | The list of shimmer types registered so far in the build. |
+| shimmers | [`RootShimmerTypesDefinition`](#RootShimmerTypesDefinition) | so far in the build. |
 
 A root component shimmer object that can be used during page transitions on your storefront
 
@@ -525,13 +513,12 @@ A root component shimmer object that can be used during page transitions on your
 
 | Name | Type | Description |
 | --- | --- | --- |
-| shimmerType | `string` | is used to map your page type to the component |
+| shimmerType | `string` | is use to map your page type to the component |
 | importPath | `string` | Resolvable path to the component the   Shimmer component will render |
 
 **Example** *(A CMS Page Shimmer)*
 
 ```js
-
 const cmsShimmer = {
      shimmerType: 'CMS_PAGE_SHIMMER',
      importPath: '@partner/module/path_to_your_component'

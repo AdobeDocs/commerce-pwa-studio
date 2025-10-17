@@ -50,7 +50,6 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage';
 ```
 

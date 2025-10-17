@@ -126,7 +126,6 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
 ```
 
@@ -151,7 +150,6 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProduct';
 ```
 
@@ -190,7 +188,6 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
 ```
 
@@ -214,7 +211,7 @@ It provides props data for a component that renders a product list.
 | --- | --- | --- |
 | activeEditItem | `Object` | The product item currently being edited |
 | isLoading | `boolean` | True if the query to get the product listing is still in progress. False otherwise. |
-| error | `Error` \| `null` | Graphql errors, if any |
+| error | `Error` \| `null` | An array of graphql errors |
 | items | `Array.<Object>` | A list of products in a cart |
 | setActiveEditItem | `function` | Function for setting the current item to edit |
 
@@ -237,7 +234,7 @@ It provides prop data for rendering a product component on a cart page.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| errorMessage | `String` | Error message from an operation performed on a cart product. |
+| errorMessage | `String` | Error message from an operation perfored on a cart product. |
 | handleEditItem | `function` | Function to use for handling when a product is modified. |
 | handleRemoveFromCart | `function` | Function to use for handling the removal of a cart product. |
 | handleUpdateItemQuantity | `function` | Function to use for handling updates to the product quantity in a cart. |

@@ -28,7 +28,7 @@ Props for [Trigger](#Trigger)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| action | `function` | the handler for on the `onClick` event. |
+| action | `function` | the handler for on the `onClick` event handler. |
 | children | `ReactNodeLike` | any elements that will be child elements inside the root container. |
 | classes | `Object` | An object containing the class names for the Trigger component. |
 | classes.root | `string` | classes for root container |

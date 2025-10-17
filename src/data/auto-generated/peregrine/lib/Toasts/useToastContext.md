@@ -47,7 +47,6 @@ Any component using this hook _must_ be a child of a [ToastContextProvider](#Toa
 **Example**
 
 ```js
-
 const [toastState, dispatch] = useToastState();
 ```
 

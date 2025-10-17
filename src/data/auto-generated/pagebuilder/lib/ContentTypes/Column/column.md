@@ -1,4 +1,3 @@
-
 Typedefs
 
 <dl>
@@ -56,7 +55,7 @@ Props for [Column](#Column)
 | paddingLeft | `String` | CSS padding left property |
 | paddingRight | `String` | CSS padding right property |
 | paddingTop | `String` | CSS padding top property |
-| textAlign | `String` | Horizontal alignment of the contents within the parent container |
+| textAlign | `String` | Horisontal alignment of the contents within the parent container |
 | verticalAlignment | `String` | Vertical alignment of the contents within the parent container |
 | width | `String` | CSS width property |
 

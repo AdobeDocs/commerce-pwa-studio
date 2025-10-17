@@ -9,7 +9,6 @@
 **Example** *(Basic usage)*
 
 ```js
-
 <Link shouldPrefetch={true} to="/about/">About Us</Link>
 ```
 

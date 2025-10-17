@@ -60,7 +60,6 @@ a hook.
 **Example** *(Access the tapable object)*
 
 ```js
-
 const peregrineTargets = targets.of('@magento/peregrine');
 const hooksTarget = peregrineTargets.hooks;
 ```
@@ -84,20 +83,17 @@ Peregrine talon.
 You can also use this target to modify the behavior or output returned by
 a talon.
 
-**See**: [Intercept function signature](#hookInterceptFunction)
+**See**: [Intercept function signature](#hookInterceptFunction)  
 **Example** *(Access the tapable object)*
 
 ```js
-
 const peregrineTargets = targets.of('@magento/peregrine');
 const talonsTarget = peregrineTargets.talons;
-
 ```
 
 **Example** *(Wrap the &#x60;useApp()&#x60; hook  with a logging extension)*
 
 ```js
-
 talonsTarget.tap(talons => {
   talons.App.useApp.wrapWith('@my-extensions/log-wrapper');
 })

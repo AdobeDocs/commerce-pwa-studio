@@ -15,7 +15,6 @@ Gift Cards in the shopping cart.
 **Example** *(Importing into your project)*
 
 ```js
-
 import GiftCards from '@magento/venia-ui/lib/components/CartPage/GiftCards';
 ```
 

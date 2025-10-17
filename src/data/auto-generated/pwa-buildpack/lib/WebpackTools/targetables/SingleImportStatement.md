@@ -1,5 +1,5 @@
 
-Represents a static import statement in an ES module. SingleImportStatements
+Represents a static import statement in an ES module. SingleImportStatemnts
 are used inside TargetableESModule methods to keep track of the new
 dependencies being added to the module, and to resolve conflicts when they
 occur.

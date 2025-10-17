@@ -108,7 +108,7 @@ Tap the builtin `envVarDefinitions` target to define new environment variables.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| sectionName | `string` | Human-readable name of section. If a section with this name exists already, variables will be added to it instead of a new section being created. |
+| sectionName | `string` | Human-readable name of section. If a section with this name exists already, variables will be added to it instead o a new section being created. |
 | variables | `Array.<EnvVarDefinition>` | List of variables to add. |
 
 Creates a new TargetableSet bound to a TargetProvider

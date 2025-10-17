@@ -51,12 +51,11 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | [`PriceSummaryQueries`](#PriceSummaryQueries) | GraphQL queries for a price summary component. |
+| props.queries | [`PriceSummaryQueries`](#PriceSummaryQueries) |GraphQL queries for a price summary component. |
 
 **Example** *(Importing into your project)*
 
 ```js
-
 import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
 ```
 
@@ -90,8 +89,7 @@ Props used for rendering a price summary component.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| handleProceedToCheckout | `function` | Callback function which navigates the browser to the checkout |
-| handleEnterKeyPress | `function` | Callback function which navigates the browser to the checkout at the press of enter key |
+| handleProceedToCheckout | `function` | Callback function which navigates the browser to the checkout * @property {function} handleEnterKeyPress Callback function which navigates the browser to the checkout at the press of enter key |
 | hasError | `boolean` | True if a GraphQL query returns an error. False otherwise. |
 | hasItems | `boolean` | True if the cart has any items. False otherwise. |
 | isLoading | `boolean` | True while the GraphQL query is still in flight. False otherwise. |

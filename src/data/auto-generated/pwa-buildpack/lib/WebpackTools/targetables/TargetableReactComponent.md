@@ -143,7 +143,6 @@ Set JSX props on a JSX element.
 **Example**
 
 ```js
-
 file.setJSXProps('Tab colorScheme="dark"', {
   colorScheme: '"light"',
   className: '{classes.tabs}'

@@ -1,4 +1,3 @@
-
 Typedefs
 
 <dl>
@@ -40,7 +39,7 @@ Props for [Image](#Image)
 | linkType | `String` | Type of link |
 | openInNewTab | `bool` | Flag to indicate if link should be opened in a new tab |
 | caption | `String` | Caption for the image |
-| textAlign | `String` | Alignment of the image within the parent container |
+| textAlign | `String` | Alignment of the divider within the parent container |
 | border | `String` | CSS border property |
 | borderColor | `String` | CSS border color property |
 | borderWidth | `String` | CSS border width property |

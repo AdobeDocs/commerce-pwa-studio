@@ -31,7 +31,7 @@ Props for [Portal](#Portal)
 
 | Name | Type | Description |
 | --- | --- | --- |
-| children | `ReactNodeLike` | any elements that will be child elements rendered in the portal. |
+| children | `ReactNodeLike` | any elements that will be child elements inside the modal. |
 | container | `Object` | the container element (a DOM element) where the children will be rendered. |
 
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/Portal/portal.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Portal/portal.js)

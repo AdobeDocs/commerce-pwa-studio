@@ -15,7 +15,6 @@ It uses child components to render the different pieces of the cart page.
 **Example** *(Importing into your project)*
 
 ```js
-
 import CartPage from "@magento/venia-ui/lib/components/CartPage";
 ```
 

@@ -14,7 +14,6 @@ gift cards applied, tax, shipping, and cart total.
 **Example** *(Importing into your project)*
 
 ```js
-
 import PriceSummary from "@magento/venia-ui/lib/components/CartPage/PriceSummary";
 ```
 

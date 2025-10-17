@@ -66,7 +66,7 @@ Intercept function signature for the validateEnv target.
 Interceptors of the `validateEnv` target receive a config object.
 The config object contains the project env, an onFail callback and
 the debug function to be used in case of the debug mode to log more
-information to the console.
+inforamtion to the console.
 
 This Target can be used asynchronously in the parallel mode. If a
 validator needs to stop the process immediately, it can throw an error.
@@ -75,7 +75,7 @@ so by calling the onFail function with the error message it wants to report.
 It can call the onFail multiple times if it wants to report multiple errors.
 
 All the errors will be queued and printed into the console at the end of the
-validation process and the build process will be stopped.
+validation process and the build process will be stopeed.
 
 </dd>
 </dl>
@@ -110,7 +110,6 @@ configuration with the project-wide environment variable system.
 **Example** *(Add config fields for your extension)*
 
 ```js
-
 targets.of('@magento/pwa-buildpack').envVarDefinitions.tap(defs => {
   defs.sections.push({
     name: 'My Extension Settings',
@@ -143,7 +142,6 @@ areas rather than files on disk.
 **Example** *(Strip unnecessary Lodash code from a specific JS module.)*
 
 ```js
-
 targets.of('@magento/pwa-buildpack').transformModules.tap(addTransform => addTransform({
   type: 'babel',
   fileToTransform: './lib/uses-pipeline-syntax.js',
@@ -161,7 +159,6 @@ to access the [webpack compiler](https://webpack.js.org/api/compiler-hooks/).
 **Example** *(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)*
 
 ```js
-
 targets.of('@magento/pwa-buildpack').webpackCompiler.tap(compiler => {
   compiler.hooks.watchRun.tapPromise(async () => {
      compiler.getInfrastructureLogger('my-extension')
@@ -185,7 +182,6 @@ to add special build features for the modules used in your project.
 **Example** *(Declare that your extension contains CSS modules.)*
 
 ```js
-
 targets.of('@magento/pwa-buildpack').specialFeatures.tap(featuresByModule => {
   featuresByModule['my-module'] = { cssModules: true };
 })
@@ -207,7 +203,6 @@ definition.
 **Example** *(Send empty responses in maintenance mode.)*
 
 ```js
-
 targets.of('@magento/pwa-buildpack').transformUpward.tap(def => {
   const guardMaintenanceMode = (prop, inline) => {
     def[prop] = {
@@ -246,7 +241,6 @@ displayed on the console at the end of the process.
 **Example**
 
 ```js
-
 targets.of('@magento/pwa-buildpack').validateEnv.tapPromise(validateBackendUrl);
 ```
 
@@ -269,7 +263,7 @@ Callback to add a transform.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| transformRequest | `Buildpack/WebpackTools~TransformRequest` |[Request](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/transform-requests/) to apply a transform to a file provided by this dependency. |
+| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/transform-requests/) to apply a transform to a file provided by this dependency. |
 
 Intercept function signature for the webpackCompiler target.
 
@@ -316,7 +310,7 @@ Intercept function signature for the validateEnv target.
 Interceptors of the `validateEnv` target receive a config object.
 The config object contains the project env, an onFail callback and
 the debug function to be used in case of the debug mode to log more
-information to the console.
+inforamtion to the console.
 
 This Target can be used asynchronously in the parallel mode. If a
 validator needs to stop the process immediately, it can throw an error.
@@ -324,7 +318,8 @@ If it needs to report an error but not stop the whole process, it can do
 so by calling the onFail function with the error message it wants to report.
 It can call the onFail multiple times if it wants to report multiple errors.
 
-All the errors will be queued and printed into the console at the end of the validation process and the build process will be stopped.
+All the errors will be queued and printed into the console at the end of the
+validation process and the build process will be stopeed.
 
 **Returns:**
 **Parameters**

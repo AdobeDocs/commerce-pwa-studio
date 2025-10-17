@@ -29,7 +29,7 @@ This talon performs the following effects:
 <dd>
 
 Contains logic for a shipping method selector component.
-It performs effects and returns props data used to render that component.
+It performs effect and returns props data used to render that component.
 
 This talon performs the following effects:
 
@@ -153,7 +153,6 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useCouponCode } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode';
 ```
 
@@ -178,12 +177,11 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useShippingForm } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingForm';
 ```
 
 Contains logic for a shipping method selector component.
-It performs effects and returns props data used to render that component.
+It performs effect and returns props data used to render that component.
 
 This talon performs the following effects:
 
@@ -200,7 +198,6 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useShippingMethods } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingMethods';
 ```
 
@@ -226,7 +223,6 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useShippingRadios } from '@magento/peregrine/lib/talons/CartPage/PriceAdjustments/ShippingMethods/useShippingRadios';
 ```
 

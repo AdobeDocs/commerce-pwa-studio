@@ -33,7 +33,6 @@ This component renders the product listing on the cart page.
 **Example** *(Importing into your project)*
 
 ```js
-
 import ProductListing from "@magento/venia-ui/lib/components/CartPage/ProductListing";
 ```
 
@@ -54,7 +53,6 @@ This component renders an edit modal for a product.
 **Example** *(Importing into your project)*
 
 ```js
-
 import EditModal from "@magento/venia-ui/lib/components/CartPage/ProductListing/EditModal";
 ```
 

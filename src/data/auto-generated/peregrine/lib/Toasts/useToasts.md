@@ -68,7 +68,7 @@ Object containing data for creating toasts using [addToast](#API.addToast).
 | [onDismiss] | `function` | Callback invoked when a user clicks the   dismiss icon.   This property is optional when creating toasts. |
 | [actionText] | `String` | Text to display as a call to action.   This property is optional when creating toasts. |
 | [hasDismissAction] | `Bool` | Indicates whether the toast should have a   dismiss action with the same behavior as the dismiss icon.   This property is optional when creating toasts. |
-| [dismissActionText] | `String` | Text to display as a call to dismissAction.   This property is optional when creating toasts. |
+| [dismissActionText] | `String` | Text to display as a call to dissmisAction.   This property is optional when creating toasts. |
 | [onAction] | `function` | Callback invoked when a user clicks the action   text.   This property is optional when creating toasts. |
 | [timeout] | `Number` | Time, in ms, before the toast is automatically   dismissed.   If `0` or `false` is passed, the toast will not timeout.   This property is optional when creating toasts. |
 
