@@ -46,7 +46,6 @@ This talon performs the following effects:
 </dd>
 </dl>
 
-
 Typedefs
 
 <dl>
