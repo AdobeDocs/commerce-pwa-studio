@@ -45,7 +45,6 @@ it's a Bail target.
 | --- | --- | --- |
 | [...args] | `\*` | All arguments are passed to the interceptor functions that have tapped this Target. |
 
-
 Run `.callAsync(...args)` on the underlying Tapable Hook. Calls
 interceptors asynchronously with the provided arguments. Depending on
 the Target type, calls interceptors in parallel or in subscription

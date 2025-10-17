@@ -187,7 +187,8 @@ instance hasn't been sent as a parameter.
 | --- | --- | --- |
 | context | `string` | Root directory of the BuildBus to get or create. |
 
-**Example** _(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)_  
+**Example** _(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)_
+ 
 ```js
 const bus = BuildBus.for('./project-dir);
 bus.init();
@@ -284,7 +285,7 @@ building block for higher-level extensions that expose functional
 areas rather than files on disk.
 
 **See**: [transformModules intercept function](#transformModulesIntercept)  
-**Example** _(Strip unnecessary Lodash code from a specific JS module.)_ 
+**Example** _(Strip unnecessary Lodash code from a specific JS module.)_
 
 ```js
 targets.of('@magento/pwa-buildpack').transformModules.tap(addTransform => addTransform({
@@ -381,7 +382,7 @@ displayed on the console at the end of the process.
 
 | Name | Type |
 | --- | --- |
-| validator | [`envValidationInterceptor`](#envValidationInterceptor) | 
+| validator | [`envValidationInterceptor`](#envValidationInterceptor) |
 
 **Example**
 

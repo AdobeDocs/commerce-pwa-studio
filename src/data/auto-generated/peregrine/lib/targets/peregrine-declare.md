@@ -62,8 +62,8 @@ a hook.
 ```js
 const peregrineTargets = targets.of('@magento/peregrine');
 const hooksTarget = peregrineTargets.hooks;
-
 ```
+
 **Example** *(Wrap the &#x60;useAwaitQuery()&#x60; hook  with a logging extension)*
 
 ```js
@@ -89,12 +89,11 @@ a talon.
 ```js
 const peregrineTargets = targets.of('@magento/peregrine');
 const talonsTarget = peregrineTargets.talons;
-
 ```
+
 **Example** *(Wrap the &#x60;useApp()&#x60; hook  with a logging extension)*
 
 ```js
-
 talonsTarget.tap(talons => {
   talons.App.useApp.wrapWith('@my-extensions/log-wrapper');
 })

@@ -49,4 +49,5 @@ Any component using this hook _must_ be a child of a [ToastContextProvider](#Toa
 ```js
 const [toastState, dispatch] = useToastState();
 ```
+
 **Source Code**: [pwa-studio/packages/peregrine/lib/Toasts/useToastContext.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Toasts/useToastContext.js)

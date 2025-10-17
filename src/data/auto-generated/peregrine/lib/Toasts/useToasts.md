@@ -90,7 +90,7 @@ Removes a toast from the toast store.
 Dispatches an add action. Includes all props passed along with a hash id
 and a timeout id generated based on the incoming props.
 
-**Returns: **
+**Returns:**
 `Number`
    — id The key referencing the toast in the store
 
