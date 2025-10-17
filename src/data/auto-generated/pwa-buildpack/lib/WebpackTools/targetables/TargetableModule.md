@@ -44,7 +44,6 @@ Empty this module's queue of transforms, returning them as an array.
 `Array.<TransformRequest>`
    — An array of Transform requests.
 
-
 Insert text into the module contents, immediately following the location
 of the search string if it is found.
 

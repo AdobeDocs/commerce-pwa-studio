@@ -75,7 +75,6 @@ to generate an extensively commented `.env` file for a project.
 | sections | [`Array.<EnvVarDefsSection>`](#EnvVarDefsSection) | List of sections, or sub-lists of definitions grouped under a title. |
 | changes | [`Array.<EnvVarDefsChange>`](#EnvVarDefsChange) | List of changes, or objects describing a recent change to a definition. |
 
-
 A list of related definitions concerning a particular functional area.
 
 All defined variable names under a particular functional area should have the same prefix, to help namespace and organize configuration.
