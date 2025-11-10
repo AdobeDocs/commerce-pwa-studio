@@ -52,7 +52,7 @@ Edit the `package.json` file so it looks like the following:
 Create a React component that renders an image from an image placeholder service source provided by an environment variable.
 
 ```sh
-mkdir -p src/components/PlaceholderImage && touch src/components/placeholderImage.js
+mkdir -p src/components/PlaceholderImage && touch src/components/PlaceholderImage/placeholderImage.js
 ```
 
 Inside the `placeholderImage.js`, add the following content:
