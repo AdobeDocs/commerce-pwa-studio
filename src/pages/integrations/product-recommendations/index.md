@@ -25,6 +25,33 @@ At this point, the merchant can create and manage recommendation units from the 
 
 ## Install the Product Recommendations module
 
+<InlineAlert variant="info" slots="text"/>
+
+Before proceeding, complete all Product Recommendations prerequisites for Adobe Commerce. Follow the steps outlined in the official [installation documentation](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure).
+
+## Install the  Product Recommendations Backend module
+
+Next, install an additional backend dependency. 
+Run the following commands to install the backend dependency:
+
+```bash
+composer require magento/module-data-services-graphql
+```
+
+```bash
+magento/experience-platform-connector
+```
+
+```bash
+bin/magento setup:di:compile
+```
+
+```bash
+bin/magento cache:flush
+```
+
+## Install the Product Recommendations Frontend PWA package
+
 Product Recommendations support on PWA requires installing the `venia-product-recommendations` package and the Product Recommendations module for Adobe Commerce.
 
 <InlineAlert variant="info" slots="text"/>
@@ -32,23 +59,61 @@ Product Recommendations support on PWA requires installing the `venia-product-re
 The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https://github.com/magento/pwa-studio/releases/tag/v10.0.0) or later.
 
 1. You can install the PWA `venia-product-recommendations` package from the NPM registry:
+    - For projects cloned from GitHub run the following commands from the project root:
 
-   ```sh
-   npm install @magento/venia-product-recommendations
-   ```
+        ```sh
+        yarn venia add -D @magento/venia-product-recommendations
+        ```
+        
+        ```sh
+        yarn venia add -D @magento/venia-data-collector
+        ```
+        
+          ```sh
+        yarn venia add -D @magento/experience-platform-connector
+        ```
+    
+        **OR**
 
-   This package contains storefront functionality to collect required behavioral data and render the recommendations.
-   Some recommendation types use behavioral data from your shoppers to train machine learning models that build personalized recommendations.
-   Other recommendation types use catalog data only and do not use any behavioral data.
-   See the [user guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview#trainmlmodels) to learn how Adobe Sensei trains machine learning models that results in higher quality recommendations.
+        ```sh
+        npm install @magento/venia-product-recommendations
+        ```
+        
+        ```sh
+        npm install @magento/venia-data-collector
+        ```
+        
+        ```sh
+        npm install @magento/experience-platform-connector
+        ```
 
-1. The backend functionality is provided by the [Product Recommendations module for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure.html).
+    - For scaffolded projects run the following commands from project root:
 
-1. Additionally, you need to install the `module-data-services-graphql` module that expands the application's existing GraphQL coverage to include fields required for storefront behavioral data collection.
+        ```sh
+        yarn add -D @magento/venia-product-recommendations
+        ```
+        
+         ```sh
+        yarn add -D @magento/venia-data-collector
+        ```
+         
+          ```sh
+        yarn add -D @magento/experience-platform-connector
+        ```
 
-   ```bash
-   composer require magento/module-data-services-graphql
-   ```
+        **OR**
+
+        ```sh
+        npm install @magento/venia-product-recommendations
+        ```
+        
+        ```sh
+        npm install @magento/venia-data-collector
+        ```
+        
+        ```sh
+        npm install @magento/experience-platform-connector
+        ```
 
 ## Create recommendation units
 
