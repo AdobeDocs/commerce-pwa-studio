@@ -3,79 +3,283 @@ title: Multiple Sites with UPWARD
 description: Learn how to run multiple PWA Studio storefronts from a single Adobe Commerce or Magento Open Source backend. 
 ---
 
-# Multiple websites with UPWARD
+This guide describes how to configure your UPWARD server to run multiple PWA sites from a single backend, enabling you to serve different stores, regions, or languages with separate PWA experiences.
 
-This topic describes how to configure your UPWARD server to run multiple PWA sites from a single Magento Open Source or Adobe Commerce backend.
+## Overview
 
-## The UPWARD connector module
+The UPWARD connector module (`magento2-upward-connector`) provides CLI tools to configure different PWA sites at the store, website, or global scope level. When you execute the CLI commands, you're adding `pwa_paths` to the `env.php` file that specify the paths to each PWA site's `upward.yml` configuration.
 
-When you use the PWA scaffolding tool to create a PWA Studio project, one of the many modules installed is the UPWARD PHP connector module—`magento2-upward-connector`. This module provides a CLI to help you configure different PWA sites to run from a single Commerce or Open Source server.
+### Configuration Scope Hierarchy
 
-## Configuring the UPWARD server
+Path configurations follow the standard scope hierarchy, serving the most specific available site first:
 
-The first step is to configure the UPWARD server to access the different PWA sites you want to deploy. And the CLI provided by the UPWARD module is how you do it.
+```
+store > website > default (global)
+```
 
-But before we get to the specifics, here's the overview of what you are actually doing. When you execute the CLI commands, you're actually adding `pwa_paths` to the `env.php` file. The commands specify the paths to the `upward.yml` configuration for each PWA site you want to deploy. The following  example shows what an `env.php` configuration file may look like AFTER using the CLI to add two different PWA sites to the `default` and `website` configurations:
+---
+
+## Step 1: Prepare Your Environment Variables
+
+Create environment-specific configuration for each store you want to build.
+
+**Example .env files:**
+
+**.env.french**
+```bash
+MAGENTO_BACKEND_URL=https://french.yoursite.com
+STORE_VIEW_CODE=french
+```
+
+**.env.german**
+```bash
+MAGENTO_BACKEND_URL=https://german.yoursite.com
+STORE_VIEW_CODE=german
+```
+
+---
+
+## Step 2: Build PWA Bundles for Each Store
+
+Build separate bundles for each storefront with their specific backend configurations.
+
+### Option A: Using Environment Files
+
+```bash
+cd /path/to/your/pwa-project
+
+# Build French store
+cp .env.french .env
+yarn build
+mv dist dist-french
+
+# Build German store
+cp .env.german .env
+yarn build
+mv dist dist-german
+
+# Build default store
+cp .env.default .env
+yarn build
+mv dist dist-default
+```
+
+### Option B: Using Inline Environment Variables
+
+```bash
+# Build French store
+MAGENTO_BACKEND_URL=https://french.yoursite.com yarn build
+mv dist dist-french
+
+# Build German store
+MAGENTO_BACKEND_URL=https://german.yoursite.com yarn build
+mv dist dist-german
+
+# Build default store
+MAGENTO_BACKEND_URL=https://yoursite.com yarn build
+mv dist dist-default
+```
+
+{: .bs-callout .bs-callout-tip }
+**Tip:** You can automate this process by creating a build script that iterates through your store configurations.
+
+---
+
+## Step 3: Deploy PWA Bundles
+
+Copy your built PWA bundles to your server where they can be accessed by the UPWARD connector.
+
+```bash
+# Example deployment to server
+scp -r dist-french user@server:/var/www/html/pwa-bundles/
+scp -r dist-german user@server:/var/www/html/pwa-bundles/
+scp -r dist-default user@server:/var/www/html/pwa-bundles/
+```
+
+{: .bs-callout .bs-callout-warning }
+**Important:** Ensure the web server user has read permissions on these directories.
+
+---
+
+## Step 4: Configure UPWARD Paths
+
+Use the UPWARD CLI to configure which bundle to serve for each store.
+
+### Set Default PWA Site
+
+```bash
+cd /path/to/magento/root
+bin/magento pwa:upward:set --path /var/www/html/pwa-bundles/dist-default/upward.yml
+```
+
+### Set Store-Specific PWA Sites
+
+```bash
+# French store
+bin/magento pwa:upward:set \
+  --path /var/www/html/pwa-bundles/dist-french/upward.yml \
+  --scopeType store \
+  --scopeCode french
+
+# German store
+bin/magento pwa:upward:set \
+  --path /var/www/html/pwa-bundles/dist-german/upward.yml \
+  --scopeType store \
+  --scopeCode german
+```
+
+### Set Website-Specific PWA Sites
+
+```bash
+bin/magento pwa:upward:set \
+  --path /var/www/html/pwa-bundles/dist-europe/upward.yml \
+  --scopeType website \
+  --scopeCode europe_site
+```
+
+{: .bs-callout .bs-callout-info }
+**Note:** Paths can be relative (`pwa/dist/upward.yml`) or absolute (`/var/www/html/pwa/dist/upward.yml`).
+
+### Serving Non-PWA Storefronts
+
+To serve a traditional storefront (non-PWA) for a specific store, use an empty string:
+
+```bash
+bin/magento pwa:upward:set --scopeType store --scopeCode traditional_store
+```
+
+---
+
+## Step 5: Verify Configuration
+
+Check your configuration in the `env.php` file:
+
+```bash
+cat app/etc/env.php
+```
+
+You should see a `pwa_path` section like this:
 
 ```php
-// ...
-'downloadable_domains' => [
-    // ...
-],
-# New configuration point
 'pwa_path' => [
     'default' => [
-        'default' => '/var/www/html/my-pwa-site/dist/upward.yml'
+        'default' => '/var/www/html/pwa-bundles/dist-default/upward.yml'
     ],
     'website' => [
-        '<website_code>' => '/var/www/html/my-awesome-pwa-site/dist/upward.yml'
+        'europe_site' => '/var/www/html/pwa-bundles/dist-europe/upward.yml'
     ],
     'store' => [
-        '<store_code>' => '' # Setting an empty string (or `false` value) will serve the specified default site (my-pwa-site)
+        'french' => '/var/www/html/pwa-bundles/dist-french/upward.yml',
+        'german' => '/var/www/html/pwa-bundles/dist-german/upward.yml'
     ]
 ]
 ```
 
-## Using UPWARD CLI commands
+---
 
-The UPWARD module commands provide a convenient way to configure the server to deploy different PWA sites. The following examples show common usage patterns.
+## Step 6: Test Your Setup
 
-**Set UPWARD paths with `scopeType` and `scopeCode`:**
+Clear cache and test each storefront:
 
-```shell
-bin/magento pwa:upward:set --path /var/www/html/pwa/dist/upward.yml --scopeType store --scopeCode <store_code>
+```bash
+bin/magento cache:clean
+bin/magento cache:flush
 ```
 
-To find the paths of your PWA sites (by scope) as shown above for the store scope, use one of the following commands:
+### Testing Checklist
 
--  `bin/magento store:list` (for store scope)
--  `bin/magento store:website:list` (for store and website scopes)
+1. Access each store URL in your browser
+2. Verify the correct PWA bundle loads by checking the Network tab in DevTools
+3. Test store-specific features (language, currency, products)
+4. Verify service worker registration
+5. Test offline functionality
 
-Paths to `upward.yml` can be relative: `pwa/dist/upward.yml` or absolute: `/var/www/html/pwa/dist/upward.yml`.
+---
 
-To serve the default store front (non-PWA), use an empty string:
+## Creating Multiple Bundles - Complete Example
 
-```shell
-bin/magento pwa:upward:set
-```
+Here's a complete workflow for deploying French and German storefronts:
 
-The UPWARD path configurations work the same as other store configurations: The config settings fall up in scope from `store` > `website` > `global` (default), trying to serve the most specific, available site scope first.
+```bash
+cd /path/to/your/pwa-project
 
-## Creating multiple bundles
-
-You can also generate unique bundles per website within a single scaffolded project.
-
-For example, if you want to deploy both French and German versions of your site, you could use the following commands to configure your UPWARD server:
-
-```shell
-MAGENTO_BACKEND_URL=https://french.mysite.mg yarn build
+# Build French bundle
+MAGENTO_BACKEND_URL=https://french.mysite.com yarn build
 mv dist dist-french
-MAGENTO_BACKEND_URL=https://german.mysite.mg yarn build
+
+# Build German bundle
+MAGENTO_BACKEND_URL=https://german.mysite.com yarn build
 mv dist dist-german
- 
-# copy these bundles to your Magento root and set configuration variables
-bin/magento pwa:upward:set --path ./dist-french/upward.yml --scopeType website --scopeCode fr
-bin/magento pwa:upward:set --path ./dist-german/upward.yml --scopeType website --scopeCode de
+
+# Copy bundles to server
+scp -r dist-french user@server:/var/www/html/magento/pwa/
+scp -r dist-german user@server:/var/www/html/magento/pwa/
+
+# SSH to server and configure
+ssh user@server
+cd /var/www/html/magento
+
+bin/magento pwa:upward:set \
+  --path ./pwa/dist-french/upward.yml \
+  --scopeType website \
+  --scopeCode fr
+
+bin/magento pwa:upward:set \
+  --path ./pwa/dist-german/upward.yml \
+  --scopeType website \
+  --scopeCode de
+
+bin/magento cache:flush
 ```
 
-With this configuration, a single UPWARD server can process requests for many different website bundles.
+With this configuration, a single UPWARD server can process requests for multiple website bundles.
+
+---
+
+## Troubleshooting
+
+### Wrong PWA Site Loads
+
+**Issue:** The wrong bundle loads for a specific store.
+
+**Solution:** Verify the scope hierarchy. Store-level configuration takes precedence over website and default.
+
+```bash
+cat app/etc/env.php | grep -A 20 "pwa_path"
+```
+
+### 404 Errors for Resources
+
+**Issue:** Assets return 404 errors.
+
+**Solution:** Verify file paths exist and have correct permissions.
+
+```bash
+ls -la /var/www/html/pwa-bundles/dist-french/upward.yml
+sudo -u www-data cat /var/www/html/pwa-bundles/dist-french/upward.yml
+```
+
+### Changes Not Reflected
+
+**Issue:** Configuration changes don't take effect.
+
+**Solution:** Clear the configuration cache.
+
+```bash
+bin/magento cache:clean config
+bin/magento cache:flush
+```
+
+### Wrong Backend URL in Bundle
+
+**Issue:** Bundle connects to incorrect backend.
+
+**Solution:** Verify environment variables and rebuild.
+
+```bash
+# Verify what's in the bundle
+grep -r "yoursite.com" dist-french/
+
+# Rebuild with correct URL
+MAGENTO_BACKEND_URL=https://correct-backend.com yarn build
+```
