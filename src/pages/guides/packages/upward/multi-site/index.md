@@ -13,7 +13,7 @@ The UPWARD connector module (`magento2-upward-connector`) provides CLI tools to 
 
 Path configurations follow the standard scope hierarchy, serving the most specific available site first:
 
-```
+```text
 store > website > default (global)
 ```
 
@@ -26,12 +26,14 @@ Create environment-specific configuration for each store you want to build.
 **Example .env files:**
 
 **.env.french**
+
 ```bash
 MAGENTO_BACKEND_URL=https://french.yoursite.com
 STORE_VIEW_CODE=french
 ```
 
 **.env.german**
+
 ```bash
 MAGENTO_BACKEND_URL=https://german.yoursite.com
 STORE_VIEW_CODE=german
