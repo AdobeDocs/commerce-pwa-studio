@@ -219,3 +219,23 @@ function localIntercept(targets) {
 
 module.exports = localIntercept;
 ```
+
+# Support Policy
+### Supported Versions
+
+Support is currently provided for **version 14.3.1 and above**.
+This includes:
+
+- Bug fixes
+- Technical support and troubleshooting
+
+### Upgrade Recommendation
+
+To receive continued support, please ensure your environment is updated to **version 14.3.1 or later**. Refer to the official upgrade documentation for guidance on updating safely.
+
+### Contact & Assistance
+
+If you have questions about version support or need help upgrading, please contact the support team or open a support request through the appropriate support channel.
+
+[venia-product-recommendations]: /guides/#custom-react-hooks-and-component
+[extensibility framework]: /guides/general-concepts/extensibility/#intercept-files
