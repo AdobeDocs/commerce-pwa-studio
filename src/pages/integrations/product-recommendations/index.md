@@ -79,13 +79,13 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
         npm install @magento/venia-product-recommendations
         ```
         
-        ```sh
-        npm install @magento/venia-data-collector
-        ```
+```sh
+npm install @magento/venia-data-collector
+```
         
-        ```sh
-        npm install @magento/experience-platform-connector
-        ```
+```sh
+npm install @magento/experience-platform-connector
+```
 
     - For scaffolded projects run the following commands from project root:
 
@@ -110,9 +110,9 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
         ```sh
         npm install @magento/venia-data-collector
         ```
-        
-        ```sh
-        npm install @magento/experience-platform-connector
+
+      ```sh
+      npm install @magento/experience-platform-connector
         ```
 
 ## Create recommendation units
@@ -165,6 +165,7 @@ const { data, error, isLoading } = useRecsData({ pageType: PageTypes.CMS });
 Support is currently provided for **version 14.0.1 and above**.
 
 This includes:
+
 - Bug fixes
 - Technical support and troubleshooting
 
@@ -175,7 +176,6 @@ To receive continued support, please ensure your environment is updated to **ver
 ## Contact & Assistance
 
 If you have questions about version support or need help upgrading, please contact the support team or open a support request through the appropriate support channel.
-
 
 [venia-product-recommendations]: /guides/#custom-react-hooks-and-component
 [extensibility framework]: /guides/general-concepts/extensibility/#intercept-files
