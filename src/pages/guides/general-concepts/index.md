@@ -14,40 +14,40 @@ This topic lists the basic concepts you need to know to work with PWA Studio too
 
 ## Development concepts
 
-[CSS modules](css-modules/)
+[CSS modules](css-modules/index.md)
 
 CSS modules are modular and reusable CSS styles.
 This allows you to develop components with styles that do not conflict with external style definitions.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Configuration management](configuration/)
+[Configuration management](configuration/index.md)
 
 PWA Studio provides tools to help manage configurations across different environments, such as local development, staging, and production.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[GraphQL](graphql/)
+[GraphQL](graphql/index.md)
 
 GraphQL is a specification for a data query language on the client side and a service layer on the server side.
 It is used to request and push data in a progressive web application.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Routing](routing/)
+[Routing](routing/index.md)
 
 Routing is the process of mapping a URL to specific page resources.
 Learn what tools PWA Studio provides to support both server-side and client-side routing.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[State management](state-management/)
+[State management](state-management/index.md)
 
 State management describes the way the application handles changing state data as a result of user interactions.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Talons](talons/)
+[Talons](talons/index.md)
 
 Peregrine Talons are the logic component counterparts for Venia UI components.
 Each Talon in Peregrine is designed to provide data or perform side effects for a specific Venia UI component.
@@ -56,31 +56,31 @@ Each Talon in Peregrine is designed to provide data or perform side effects for 
 
 ## Application features
 
-[Application shell](application-shell/)
+[Application shell](application-shell/index.md)
 
 An application shell provides the basic user interface structure for a progressive web application.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Client-side caching](client-side-caching/)
+[Client-side caching](client-side-caching/index.md)
 
 Client-side caching is the process of storing data into a local cache after a network fetch.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Content rendering](content-rendering/)
+[Content rendering](content-rendering/index.md)
 
 Content rendering explains how a browser gets the final HTML content for a requested page.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Extensibility](extensibility/)
+[Extensibility](extensibility/index.md)
 
 Learn about PWA Studio's extensibility framework and how you can extend the base Venia storefront application.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Internationalization](internationalization/)
+[Internationalization](internationalization/index.md)
 
 Internationalization (i18n) is a feature that lets you localize content for a culture, region, or language.
 

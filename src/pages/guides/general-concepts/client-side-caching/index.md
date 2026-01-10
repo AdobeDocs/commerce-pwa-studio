@@ -54,13 +54,13 @@ A separate network request is made for that resource and the cache is updated fo
 
 This strategy is used when the most up to date version of a resource is not necessary for an application.
 
-<!-- prettier-ignore-start -->
+\<!-- prettier-ignore-start --\>
 | Route pattern                                                       | Description          |
 | ------------------------------------------------------------------- | -------------------- |
 | /                                                                   | The application root |
 | /.\\.js$                                                            | JavaScript files     |
 | /\/media\/catalog.*\.(?:png&#124;gif&#124;jpg&#124;jpeg&#124;svg)$/ | Catalog image files  |
-<!-- prettier-ignore-end -->
+\<!-- prettier-ignore-end --\>
 
 #### Network first
 

@@ -22,11 +22,10 @@ There are two ways to access the environment variable definitions object:
 [`envvardefinitions`]: /api/buildpack/environment/definition-object/
 [`getenvvardefinitions()`]: https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js
 
-<!--
+\<!--
 The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
--->
+--\>
 
-import Docs from '/src/data/auto-generated/buildpack/reference/envVarDefinitions.md'
+<Fragment src='../../../../data/auto-generated/buildpack/reference/envVarDefinitions.md'/>
 
-<Docs />

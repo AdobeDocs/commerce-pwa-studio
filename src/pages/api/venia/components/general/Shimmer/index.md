@@ -5,20 +5,18 @@ description: View detailed API reference documentation about the shimmer compone
 
 # Shimmer
 
-import Shimmer from '/src/data/auto-generated/venia-ui/lib/components/Shimmer/shimmer.md';
-
 The Shimmer component is a loading indicator that takes the shape of the component being loaded.
 Instead of blocking the entire page like a traditional full-screen loader, Shimmer loaders are component-shape specific to show users previews of what's loading on the page.
 
 These previews improve the perceived performance of the app and prevents CLS (Content Layout Shift).
 The Shimmer component eliminates most of the CLS on a page, which helps improve Google Lighthouse scores.
 
-<!--
+\<!--
 The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
--->
+--\>
 
-<Shimmer />
+<Fragment src='../../../../../data/auto-generated/venia-ui/lib/components/Shimmer/shimmer.md' />
 
 ## Shimmer for Components
 
@@ -64,7 +62,7 @@ export default () => {
 // ....
 ```
 
----
+\---
 
 **../path/to/SubComponent/index.js**
 
@@ -74,7 +72,7 @@ export { default } from './subComponent.js';
 export { default as SubComponentShimmer } from './subComponent.shimmer.js';
 ```
 
----
+\---
 
 **../path/to/SubComponent/subComponent.js**
 
@@ -105,7 +103,7 @@ SubComponent.propTypes = {
 export default SubComponent;
 ```
 
----
+\---
 
 **../path/to/SubComponent/subComponent.shimmer.js**
 

@@ -48,11 +48,9 @@ Extensions which use wrapper modules _must_ also intercept the [Buildpack `speci
 
 [buildpack `specialfeatures` target]: /api/buildpack/targets/
 
-<!--
+\<!--
 The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
--->
+--\>
 
-import Targets from '/src/data/auto-generated/peregrine/lib/targets/peregrine-declare.md'
-
-<Targets />
+<Fragment src='../../../data/auto-generated/peregrine/lib/targets/peregrine-declare.md'/>

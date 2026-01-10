@@ -156,7 +156,7 @@ An NPM dependency is a language package if it meets the following criteria:
 - The package contains an `i18n` directory
 - The `i18n` directory contains a dictionary file with a locale formatted name
 
-<!-- TODO: Create an in-depth tutorial for creating a language package extension -->
+\<!-- TODO: Create an in-depth tutorial for creating a language package extension --\>
 
 ## Build process
 

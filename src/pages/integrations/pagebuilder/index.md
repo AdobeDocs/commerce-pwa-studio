@@ -5,18 +5,18 @@ keywords:
   - Integration
   - Page Builder
   - Storefront
-edition: paas
 ---
 
+<Edition slot="text" backgroundColor="blue"/>
+
+PaaS only
 # Page Builder
 
 At the highest level, the Page Builder integration into PWA Studio simply ensures that CMS Pages built in the backend with _native_ Page Builder content types are rendered correctly within PWA Studio apps.
 
 ## Integration overview
 
-<div style="position: relative; overflow: hidden; padding-top: 56.25%; border: 1px solid #ccc;">
-   <iframe style="position: absolute; top:0; left:0; width: 100%; height:100%; border: 0;" title="Adobe Video Publishing Cloud Player" src="https://video.tv.adobe.com/v/31598t1/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
-</div>
+<iframe src="https://video.tv.adobe.com/v/31598t1/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on"></iframe>
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -49,11 +49,9 @@ To develop and integrate your own custom content type components into your PWA S
 
 As part of the Page Builder integration to PWA Studio, we implemented a framework that converts Page Builder's master format (HTML) into a structured format that works in React and PWA Studio. The following video describes the components of this framework, followed by detailed descriptions of each.
 
-<div style="position: relative; overflow: hidden; padding-top: 56.25%; border: 1px solid #ccc;">
-   <iframe style="position: absolute; top:0; left:0; width: 100%; height:100%; border: 0;" title="Adobe Video Publishing Cloud Player" src="https://video.tv.adobe.com/v/31597t1/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
-</div>
+<iframe src="https://video.tv.adobe.com/v/31597t1/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on"></iframe>
 
----
+\---
 
 The Page Builder integration framework processes content as outlined here:
 
@@ -103,9 +101,7 @@ The `<ContentTypeFactory />` component parses a property object tree to retrieve
 
 The framework executes on the client side to ensure compatibility with the various hosting options available for Adobe Commerce and Magento Open Source. The following video and subsequent flow diagram describes how the parts of the framework combine to render Page Builder components within the Venia app.
 
-<div style="position: relative; overflow: hidden; padding-top: 56.25%; border: 1px solid #ccc;">
-   <iframe style="position: absolute; top:0; left:0; width: 100%; height:100%; border: 0;" title="Adobe Video Publishing Cloud Player" src="https://video.tv.adobe.com/v/31596t2/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
-</div>
+<iframe src="https://video.tv.adobe.com/v/31596t2/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on"></iframe>
 
 The following diagram describes the same process shown in the video, followed by detailed explanations of each step in the process.
 

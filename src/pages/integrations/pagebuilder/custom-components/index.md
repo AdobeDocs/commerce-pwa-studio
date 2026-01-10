@@ -1,8 +1,10 @@
 ---
 title: Creating custom components
 description: Learn how to create a custom Page Builder component for a PWA Studio storefront project.
-edition: paas
 ---
+
+<Edition slot="text" backgroundColor="blue"/>
+PaaS only
 
 # Creating custom components
 

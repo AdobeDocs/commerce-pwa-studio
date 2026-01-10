@@ -11,11 +11,10 @@ Interceptors of this target receive a single function as their first argument. T
 
 [`transformmodules`]: /api/buildpack/targets/
 
-<!--
+\<!--
 The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
--->
+--\>
 
-import Docs from '/src/data/auto-generated/pwa-buildpack/lib/WebpackTools/ModuleTransformConfig.md'
+<Fragment src='../../../data/auto-generated/pwa-buildpack/lib/WebpackTools/ModuleTransformConfig.md'/>
 
-<Docs />

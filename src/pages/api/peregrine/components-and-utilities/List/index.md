@@ -7,14 +7,13 @@ description: View detailed API reference documentation for the list utility in t
 
 A component for generating a list component.
 
-<!--
+\<!--
 The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
--->
+--\>
 
-import Component from '/src/data/auto-generated/peregrine/lib/List/list.md'
+<Fragment src='../../../../data/auto-generated/peregrine/lib/List/list.md'/>
 
-<Component />
 
 ## Selection models
 
