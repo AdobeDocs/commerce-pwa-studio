@@ -31,7 +31,7 @@ Before proceeding, complete all Product Recommendations prerequisites for Adobe 
 
 ## Install the  Product Recommendations Backend module
 
-Next, install an additional backend dependency. 
+Next, install an additional backend dependency.
 Run the following commands to install the backend dependency:
 
 ```bash
@@ -64,33 +64,39 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
         ```sh
         yarn venia add -D @magento/venia-product-recommendations
         ```
+
         ```sh
         yarn venia add -D @magento/venia-data-collector
         ```
+  
         ```sh
         yarn venia add -D @magento/experience-platform-connector
         ```
-    
+
         **OR**
 
         ```sh
         npm install @magento/venia-product-recommendations
         ```
+
         ```sh
         npm install @magento/venia-data-collector
         ```
+  
         ```sh
         npm install @magento/experience-platform-connector
         ```
 
-   - For scaffolded projects run the following commands from project root:
+    - For scaffolded projects run the following commands from project root:
 
       ```sh
         yarn add -D @magento/venia-product-recommendations
         ```
+
         ```sh
         yarn add -D @magento/venia-data-collector
         ```
+
         ```sh
         yarn add -D @magento/experience-platform-connector
         ```
@@ -100,7 +106,7 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
         ```sh
         npm install @magento/venia-product-recommendations
         ```
-        
+
         ```sh
         npm install @magento/venia-data-collector
         ```
@@ -153,6 +159,7 @@ const { data, error, isLoading } = useRecsData({ pageType: PageTypes.CMS });
 ```
 
 # Support Policy
+
 ### Supported Versions
 
 Support is currently provided for **version 14.0.1 and above**.
