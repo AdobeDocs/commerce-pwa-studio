@@ -13,5 +13,5 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../../data/auto-generated/pagebuilder/lib/ContentTypes/Image/image.md'/>
+<Fragment src='../../../../data/auto-generated/pagebuilder/lib/content-types/Image/image.md'/>
 

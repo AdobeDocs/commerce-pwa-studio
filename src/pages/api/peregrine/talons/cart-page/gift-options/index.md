@@ -10,7 +10,7 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../../../data/auto-generated/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions.md'/>
+<Fragment src='../../../../../data/auto-generated/peregrine/lib/talons/cart-page/price-adjustments/gift-options/use-gift-options.md'/>
 
 
 ## Examples

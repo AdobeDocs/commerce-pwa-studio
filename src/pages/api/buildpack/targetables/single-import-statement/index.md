@@ -10,7 +10,7 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../../data/auto-generated/pwa-buildpack/lib/WebpackTools/targetables/SingleImportStatement.md'/>
+<Fragment src='../../../../data/auto-generated/pwa-buildpack/lib/webpack-tools/targetables/single-import-statement.md'/>
 
 ## Examples
 

@@ -27,6 +27,6 @@ API for general use components.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Shopping cart page](/api/venia/components/CartPage/)
+[Shopping cart page](/api/venia/components/cart-page/)
 
 Components used in the Shopping Cart page feature.

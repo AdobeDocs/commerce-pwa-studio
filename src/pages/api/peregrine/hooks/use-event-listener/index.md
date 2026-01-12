@@ -10,5 +10,5 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../../data/auto-generated/peregrine/lib/hooks/useEventListener.md'/>
+<Fragment src='../../../../data/auto-generated/peregrine/lib/hooks/use-event-listener.md'/>
 

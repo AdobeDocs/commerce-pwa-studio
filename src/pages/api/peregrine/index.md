@@ -33,6 +33,6 @@ API for general use logic.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Shopping cart page](/api/peregrine/talons/CartPage/)
+[Shopping cart page](/api/peregrine/talons/cart-page/)
 
 Logic components used in the Shopping Cart page feature.

@@ -10,5 +10,5 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../../../data/auto-generated/venia-ui/lib/components/ButtonGroup/buttonGroup.md'/>
+<Fragment src='../../../../../data/auto-generated/venia-ui/lib/components/button-group/button-group.md'/>
 

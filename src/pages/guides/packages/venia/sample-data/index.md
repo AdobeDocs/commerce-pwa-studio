@@ -6,5 +6,5 @@ adobeio: /guides/packages/venia/sample-data/
 
 # Venia sample data
 
-<Fragment src='../../../../_includes/install-venia-sample-data.md'/>
+<Fragment src='../../../../includes/install-venia-sample-data.md'/>
 

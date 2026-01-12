@@ -31,4 +31,4 @@ To update this section, update the doc blocks in the source code
 
 <Fragment src='../../../data/auto-generated/venia-ui/lib/targets/venia-ui-declare.md'/>
 
-<Fragment src='../../../data/auto-generated/venia-ui/lib/targets/RichContentRendererList.md'/>
+<Fragment src='../../../data/auto-generated/venia-ui/lib/targets/rich-content-renderer-list.md'/>

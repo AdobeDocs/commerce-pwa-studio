@@ -15,7 +15,7 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../../data/auto-generated/pagebuilder/lib/ContentTypes/Tabs/tabs.md'/>
+<Fragment src='../../../../data/auto-generated/pagebuilder/lib/content-types/Tabs/tabs.md'/>
 
 ## TabItem
 
@@ -24,5 +24,5 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../../data/auto-generated/pagebuilder/lib/ContentTypes/TabItem/tabItem.md'/>
+<Fragment src='../../../../data/auto-generated/pagebuilder/lib/content-types/tab-item/tab-item.md'/>
 
