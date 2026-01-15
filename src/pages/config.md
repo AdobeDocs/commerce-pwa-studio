@@ -1,10 +1,8 @@
 - pathPrefix:
     - /commerce/pwa-studio/
 
-- home:
-    - [Commerce](/commerce/docs)
-
 - pages:
+    - [Commerce](https://developer.adobe.com/commerce/docs)
     - [PWA Studio](/index.md)
     - [Guides](/guides/index.md)
     - [Integrations](/integrations/index.md)
@@ -44,7 +42,6 @@
         - [Overview](/guides/packages/index.md)
         - [Buildpack](/guides/packages/buildpack/index.md)
             - [Scaffolding](/guides/packages/buildpack/scaffolding/index.md)
-                - [Overview](/guides/packages/buildpack/scaffolding/index.md)
             - [Custom project templates](/guides/packages/buildpack/project-templates/index.md)
         - [Peregrine](/guides/packages/peregrine/index.md)
         - [Venia](/guides/packages/venia/index.md)
@@ -55,11 +52,10 @@
             - [Multiple Sites with UPWARD](/guides/packages/upward/multi-site/index.md)
     - [Upgrading versions](/guides/upgrading-versions/index.md)
     - [Integrations](/integrations/index.md)
-        - [Overview](/integrations/index.md)
     - [Adobe Commerce](/integrations/adobe-commerce/index.md)
         - [Overview](/integrations/adobe-commerce/index.md)
         - [Adobe Experience Platform](/integrations/adobe-commerce/aep/index.md)
-        - [Commerce coverage](/integrations/adobe-commerce/features.md)
+        - [Commerce coverage](/integrations/adobe-commerce/features/index.md)
         - [Version compatibility](/integrations/adobe-commerce/version-compatibility/index.md)
         - [Theme vs Storefront](/integrations/adobe-commerce/theme-vs-storefront/index.md)
     - [Page Builder](/integrations/pagebuilder/index.md)
@@ -90,9 +86,7 @@
             - [Text](/integrations/pagebuilder/components/text/index.md)
             - [Video](/integrations/pagebuilder/components/video/index.md)
     - [Product Recommendations](/integrations/product-recommendations/index.md)
-        - [Overview](/integrations/product-recommendations/index.md)
     - [Live Search](/integrations/live-search/index.md)
-        - [Overview](/integrations/live-search/index.md)
     - [Get started](/tutorials/index.md)
         - [Overview](/tutorials/index.md)
         - [Setup a storefront project](/tutorials/setup-storefront/index.md)
