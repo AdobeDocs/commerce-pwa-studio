@@ -16,10 +16,10 @@ const path = require('path');
 const CONFIG_FILE = path.join(__dirname, '../src/pages/config.md');
 const PAGES_DIR = path.join(__dirname, '../src/pages');
 
-// Regex patterns
-const MARKDOWN_LINK_REGEX = /^\[.+\]\([^)]+\)$/;
-const TITLE_REGEX = /^\[(.+)\]/;
-const LINK_REGEX = /\]\((.+)\)$/;
+// Regex patterns - using negated character classes per regex-patterns.mdc
+const MARKDOWN_LINK_REGEX = /^\[[^\]]+\]\([^)]+\)$/;
+const TITLE_REGEX = /^\[([^\]]+)\]/;
+const LINK_REGEX = /\]\(([^)]+)\)$/;
 
 /**
  * Helper functions to reduce duplication
@@ -82,7 +82,7 @@ const parseSubPagesNesting = (content) => {
 
     if (currentSection === 'subPages') {
       const indent = line.match(/^(\s*)/)[1].length;
-      const match = line.match(/^\s*- (\[.+\]\(.+\))$/);
+      const match = line.match(/^\s*- (\[[^\]]+\]\([^)]+\))$/);
       
       if (match) {
         const entry = match[1];
@@ -191,7 +191,7 @@ function parseConfig(content) {
     } else if (currentSection === 'pages' || currentSection === 'subPages') {
       // Check indentation level
       const indent = line.match(/^(\s*)/)[1].length;
-      const match = line.match(/^\s*- (\[.+\]\(.+\))$/);
+      const match = line.match(/^\s*- (\[[^\]]+\]\([^)]+\))$/);
       
       if (match) {
         const entry = match[1];
@@ -288,7 +288,7 @@ describe('Config.md Navigation Tests', () => {
         // Check if line looks like it should be a link entry
         if (currentSection && line.trim().startsWith('- [')) {
           // Should match proper markdown link format [text](url)
-          if (!line.match(/^\s*- \[.+\]\(.+\)$/)) {
+          if (!line.match(/^\s*- \[[^\]]+\]\([^)]+\)$/)) {
             malformedLines.push({
               line: i + 1,
               content: line.trim(),
