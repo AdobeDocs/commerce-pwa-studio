@@ -1,6 +1,6 @@
 
 ## Functions
- 
+
 [useCouponCode(props)] ⇒ `[CouponCodeTalonProps]`
 
 This talon contains the logic for a coupon code form component.
@@ -39,9 +39,8 @@ This talon performs the following effects:
 - Sets the value of the shipping method to a default value if there is no current method selected
 - Manage the updating state of the cart while a shipping method is being applied
 
-
 ## Typedefs
- 
+
 [CouponCodeMutations] : `Object`
 
 GraphQL mutations for a cart's coupon code.
@@ -96,7 +95,6 @@ This is a type used by the [useShippingRadios](#useShippingRadios) talon.
 
 Object type returned by the [useShippingRadios](#useShippingRadios) talon.
 It provides data to use when rendering a radio selector for shipping methods.
-
 
 This talon contains the logic for a coupon code form component.
 It performs effects and returns props data for rendering the component.

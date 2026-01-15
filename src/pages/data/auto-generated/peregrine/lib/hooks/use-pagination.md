@@ -1,6 +1,6 @@
 
 ## Functions
- 
+
 [usePagination(config)] ⇒ `Array.&lt;Object>`
 
 A [React Hook](https://reactjs.org/docs/hooks-intro.html) that provides
@@ -8,7 +8,6 @@ pagination logic.
 
 Use this hook to implement components that need to navigate through paged
 data.
-
 
 The current pagination state
 

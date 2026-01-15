@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [Slider](#Slider)
-
 
 Page Builder Slider component.
 

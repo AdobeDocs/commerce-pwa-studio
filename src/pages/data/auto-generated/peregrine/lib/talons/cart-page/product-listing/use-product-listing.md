@@ -1,6 +1,6 @@
 
 ## Functions
- 
+
 [useProductListing(props)] ⇒ `[ProductListingTalonProps]`
 
 This talon contains logic for a component that renders a list of products for a cart.
@@ -35,9 +35,8 @@ This talon performs the following effects:
 - Manage the updating state of the cart while form data is being saved
 - Set the variant price on a product depending on the product's options
 
-
 ## Typedefs
- 
+
 [ProductListingQueries] : `Object`
 
 GraphQL queries for getting product listing data.
@@ -77,7 +76,6 @@ It provides props data for rendering an edit modal component.
 
 Object type returned by the [useProductForm](useProductForm) talon.
 It provides props data for a product form UI component inside a modal.
-
 
 This talon contains logic for a component that renders a list of products for a cart.
 It performs effects and returns prop data to render the component on a cart page.

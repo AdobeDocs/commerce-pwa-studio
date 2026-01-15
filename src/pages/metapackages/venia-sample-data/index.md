@@ -10,4 +10,3 @@ keywords:
 # Venia sample data metapackage
 
 <Fragment src='../../includes/install-venia-sample-data.md'/>
-

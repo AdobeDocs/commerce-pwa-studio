@@ -1,16 +1,14 @@
 ## Functions
- 
+
 [upperCaseString(string)] ⇒ `string`
 
 Upper case the first letter of a string
 
-
 ## Typedefs
- 
+
 [props]
 
 Props for [Tabs](#Tabs)
-
 
 Page Builder Tabs component.
 

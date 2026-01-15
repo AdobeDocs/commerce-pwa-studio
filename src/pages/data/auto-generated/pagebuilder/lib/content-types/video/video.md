@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [Video](#Video)
-
 
 Page Builder Video component.
 

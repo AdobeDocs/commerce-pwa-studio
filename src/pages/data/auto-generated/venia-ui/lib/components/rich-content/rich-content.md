@@ -1,10 +1,9 @@
 
 ## Typedefs
- 
+
 [props]
 
 Props for [RichContent](#RichContent)
-
 
 RichContent component.
 

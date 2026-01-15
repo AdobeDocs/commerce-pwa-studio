@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [Html](#Html)
-
 
 Page Builder HTML component.
 

@@ -51,4 +51,3 @@ Log into the Admin section or visit the store of your Magento instance to verify
 ![Sample data installed in Magento](images/sample-data-installed.png)
 
 [remove the sample data modules]: https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/remove-or-update.html
-[PWA Studio]: https://github.com/magento/pwa-studio

@@ -1,6 +1,6 @@
 
 ## Functions
- 
+
 [useCartPage(props)] ⇒ `[CartPageTalonProps]`
 
 This talon contains logic for a cart page component.
@@ -10,9 +10,8 @@ This talon performs the following effects:
 
 - Manages the updating state of the cart while cart details data is being fetched
 
-
 ## Typedefs
- 
+
 [CartPageQueries] : `Object`
 
 GraphQL formatted string queries used in this talon.
@@ -20,7 +19,6 @@ GraphQL formatted string queries used in this talon.
 [CartPageTalonProps] : `Object`
 
 Props data to use when rendering a cart page component.
-
 
 This talon contains logic for a cart page component.
 It performs effects and returns prop data for rendering the component.

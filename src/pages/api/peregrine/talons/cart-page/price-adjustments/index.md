@@ -14,7 +14,6 @@ To update this section, update the doc blocks in the source code
 
 <Fragment src='../../../../../data/auto-generated/peregrine/lib/talons/cart-page/price-adjustments/coupon-code/use-coupon-code.md'/>
 
-
 ## Examples
 
 ### useCouponCode()

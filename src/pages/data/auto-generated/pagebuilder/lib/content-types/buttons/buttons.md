@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [Buttons](#Buttons)
-
 
 Page Builder Buttons component.
 

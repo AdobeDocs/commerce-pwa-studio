@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [Divider](#Divider)
-
 
 Page Builder Divider component.
 

@@ -14,7 +14,6 @@ To update this section, update the doc blocks in the source code
 
 <Fragment src='../../../../../data/auto-generated/peregrine/lib/talons/cart-page/product-listing/use-product-listing.md'/>
 
-
 ## Examples
 
 ### useProductListing()

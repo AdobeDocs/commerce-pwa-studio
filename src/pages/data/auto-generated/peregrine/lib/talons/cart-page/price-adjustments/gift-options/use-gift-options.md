@@ -1,6 +1,6 @@
 
 ## Functions
- 
+
 [useGiftOptions(props)] ⇒ `[GiftOptionsTalonProps]`
 
 This talon contains the logic for a gift options component.
@@ -11,9 +11,8 @@ This talon performs the following effects:
 - Fetch the gift options associated with the cart
 - Update the [GiftOptionsTalonProps](#GiftOptionsTalonProps) values with the data returned by the query
 
-
 ## Typedefs
- 
+
 [GiftOptionsTalonProps] : `Object`
 
 Props data to use when rendering a gift options component.
@@ -21,7 +20,6 @@ Props data to use when rendering a gift options component.
 [GiftOptionsOperations] : `Object`
 
 This is a type used by the [useGiftOptions](#useGiftOptions) talon.
-
 
 This talon contains the logic for a gift options component.
 It performs effects and returns a data object containing values for rendering the component.

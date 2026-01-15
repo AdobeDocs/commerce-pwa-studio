@@ -1,10 +1,9 @@
 
 ## Typedefs
- 
+
 [props]
 
 Props for [Portal](#Portal)
-
 
 A component that renders content into a DOM node that exists
 outside of the DOM hierarchy of the parent component.

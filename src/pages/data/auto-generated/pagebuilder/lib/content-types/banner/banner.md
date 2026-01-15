@@ -1,10 +1,9 @@
 
 ## Typedefs
- 
+
 [props]
 
 Props for [Banner](#Banner)
-
 
 Page Builder Banner component.
 

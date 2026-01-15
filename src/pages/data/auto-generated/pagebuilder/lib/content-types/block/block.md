@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [Block](#Block)
-
 
 Page Builder Block component.
 

@@ -1,6 +1,6 @@
 
 ## Typedefs
- 
+
 [props]
 
 Props for [ButtonGroup](#ButtonGroup)
@@ -8,7 +8,6 @@ Props for [ButtonGroup](#ButtonGroup)
 [buttonProps]
 
 Props for a [ButtonGroup](#ButtonGroup) button component
-
 
 A component that creates a group of buttons.
 

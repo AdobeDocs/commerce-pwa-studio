@@ -15,4 +15,3 @@ To update this section, update the doc blocks in the source code
 --\>
 
 <Fragment src='../../../../data/auto-generated/pagebuilder/lib/content-types/Block/block.md'/>
-

@@ -1,6 +1,6 @@
 
 ## Constants
- 
+
 [useWindowSize](#useWindowSize) : `number`
 
 The current context value for the window size context.
@@ -9,14 +9,13 @@ This value updates whenever the window is resized.
 Use this inside a [WindowSizeContextProvider](#WindowSizeContextProvider).
 
 ## Functions
- 
+
 [WindowSizeContextProvider(props)] ⇒ `Context.Provider`
 
 This component contains a hook that listens for resize events.
 Use this component with [useWindowSize](#useWindowSize) to get the value of the resized window.
 
 It is recommended to only create/use a single time at the top level of your app
-
 
 The current context value for the window size context.
 This value updates whenever the window is resized.

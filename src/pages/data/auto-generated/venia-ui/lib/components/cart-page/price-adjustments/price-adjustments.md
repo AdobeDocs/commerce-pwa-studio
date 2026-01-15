@@ -1,6 +1,6 @@
 
 ## Functions
- 
+
 [PriceAdjustments(props)] ⇒ `React.Element`
 
 PriceAdjustments is a child component of the CartPage component.
@@ -21,7 +21,6 @@ This component displays the form for adding gift options.
 
 A child component of the PriceAdjustments component.
 This component renders the form for adding the shipping method for the cart.
-
 
 PriceAdjustments is a child component of the CartPage component.
 It renders the price adjustments forms for applying gift cards, coupons, and the shipping method.

@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [GoogleMap](#GoogleMap)
-
 
 Page Builder Map component.
 

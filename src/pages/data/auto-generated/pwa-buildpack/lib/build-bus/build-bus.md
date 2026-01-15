@@ -1,5 +1,5 @@
 ## Modules
- 
+
 [@magento/pwa-buildpack](#module_@magento/pwa-buildpack)
 
 ## Typedefs

@@ -17,7 +17,6 @@ To update this section, update the doc blocks in the source code
 
 <Fragment src='../../../../data/auto-generated/pagebuilder/lib/content-types/Column/column.md'/>
 
-
 ## ColumnGroup
 
 \<!--
@@ -26,4 +25,3 @@ To update this section, update the doc blocks in the source code
 --\>
 
 <Fragment src='../../../../data/auto-generated/pagebuilder/lib/content-types/column-group/column-group.md'/>
-

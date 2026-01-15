@@ -1,6 +1,6 @@
 
 ## Members
- 
+
 [richContentRenderers] : `tapable.SyncHook`
 
 Provides access to the list of rendering strategies used by the
@@ -50,9 +50,8 @@ Provides access to Venia's summary page for a payment method.
 
 This target allows you to add custom payment summary rendering for the summary page in the checkout.
 
-
 ## Typedefs
- 
+
 [rendererInterceptFunction] : `function`
 
 Intercept function signature for the `richContentRenderers` target.
@@ -120,9 +119,8 @@ Interceptors of `rootShimmerTypes` should call `.add` on the provided [shimmer l
 
 A root component shimmer object that can be used during page transitions on your storefront
 
-
 ## Interfaces
- 
+
 [RichContentRenderer](#RichContentRenderer) : `Object`
 
 Rich content renderers for the RichContent component must implement this
