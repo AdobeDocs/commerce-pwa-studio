@@ -352,13 +352,30 @@ describe('Config.md Navigation Tests', () => {
     });
 
     test('internal page links should point to existing files', () => {
+      const missingFiles = [];
+      
       configData.pages.forEach((page) => {
         const link = extractLink(page);
         if (link && !isExternalUrl(link) && !isAnchorLink(link)) {
           const filePath = path.join(PAGES_DIR, link);
-          expect(fs.existsSync(filePath)).toBe(true);
+          if (!fs.existsSync(filePath)) {
+            missingFiles.push({
+              entry: page,
+              link: link,
+              expectedPath: filePath
+            });
+          }
         }
       });
+
+      if (missingFiles.length > 0) {
+        const errorMsg = missingFiles.map(m => 
+          `  Entry: ${m.entry}\n    Link: ${m.link}\n    Expected file: ${m.expectedPath}`
+        ).join('\n\n');
+        throw new Error(`Found ${missingFiles.length} broken link(s) in pages section:\n\n${errorMsg}`);
+      }
+
+      expect(missingFiles.length).toBe(0);
     });
   });
 
@@ -387,21 +404,48 @@ describe('Config.md Navigation Tests', () => {
     });
 
     test('internal subPage links should point to existing files', () => {
-      configData.subPages.forEach((item) => {
+      const missingFiles = [];
+
+      configData.subPages.forEach((item, parentIndex) => {
+        const parentTitle = extractTitle(item.parent);
         const parentLink = extractLink(item.parent);
+        
         if (parentLink && !isExternalUrl(parentLink) && !isAnchorLink(parentLink)) {
           const filePath = path.join(PAGES_DIR, parentLink);
-          expect(fs.existsSync(filePath)).toBe(true);
+          if (!fs.existsSync(filePath)) {
+            missingFiles.push({
+              section: `subPages[${parentIndex}] parent`,
+              entry: item.parent,
+              link: parentLink,
+              expectedPath: filePath
+            });
+          }
         }
         
-        item.children.forEach((child) => {
+        item.children.forEach((child, childIndex) => {
           const childLink = extractLink(child);
           if (childLink && !isExternalUrl(childLink) && !isAnchorLink(childLink)) {
             const filePath = path.join(PAGES_DIR, childLink);
-            expect(fs.existsSync(filePath)).toBe(true);
+            if (!fs.existsSync(filePath)) {
+              missingFiles.push({
+                section: `subPages[${parentIndex}] "${parentTitle}" -> child[${childIndex}]`,
+                entry: child,
+                link: childLink,
+                expectedPath: filePath
+              });
+            }
           }
         });
       });
+
+      if (missingFiles.length > 0) {
+        const errorMsg = missingFiles.map(m => 
+          `  Section: ${m.section}\n    Entry: ${m.entry}\n    Link: ${m.link}\n    Expected file: ${m.expectedPath}`
+        ).join('\n\n');
+        throw new Error(`Found ${missingFiles.length} broken link(s) in subPages section:\n\n${errorMsg}`);
+      }
+
+      expect(missingFiles.length).toBe(0);
     });
 
     test('nested pages should be properly structured', () => {
@@ -544,11 +588,26 @@ describe('Config.md Navigation Tests', () => {
     test('all referenced markdown files should exist', () => {
       const links = getAllLinks(configData, true);
       const markdownLinks = links.filter(link => link.endsWith('.md'));
+      const missingFiles = [];
       
       markdownLinks.forEach((link) => {
         const filePath = path.join(PAGES_DIR, link);
-        expect(fs.existsSync(filePath)).toBe(true);
+        if (!fs.existsSync(filePath)) {
+          missingFiles.push({
+            link: link,
+            expectedPath: filePath
+          });
+        }
       });
+
+      if (missingFiles.length > 0) {
+        const errorMsg = missingFiles.map(m => 
+          `  Link: ${m.link}\n    Expected file: ${m.expectedPath}`
+        ).join('\n\n');
+        throw new Error(`Found ${missingFiles.length} missing markdown file(s):\n\n${errorMsg}`);
+      }
+
+      expect(missingFiles.length).toBe(0);
     });
   });
 });
