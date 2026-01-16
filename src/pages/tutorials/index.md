@@ -1,3 +1,8 @@
+---
+title: Get started
+description: Learn the minimum requirements for developing with PWA Studio.
+---
+
 # Get started
 
 Before you can start developing with PWA Studio, make sure you meet the requirements listed on this page.
