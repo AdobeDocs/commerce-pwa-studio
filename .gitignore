@@ -8,7 +8,6 @@
 .editorconfig
 .cursor
 
-
 # npm yarn
 node_modules
 package.lock
@@ -46,3 +45,6 @@ local-test.yml
 # yalc
 .yalc
 yalc.lock
+
+# local files
+/tmp/
