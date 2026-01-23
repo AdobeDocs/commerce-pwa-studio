@@ -9,7 +9,7 @@
   "author": "PWA Studio Team",
   "scripts": {
     "dev": "node ./dev.mjs",
-    "buildNavigation": "npx --yes github:AdobeDocs/adp-devsite-utils#devsite-1982-buildNav buildNavigation -v",
+    "buildNavigation": "npx --yes github:AdobeDocs/adp-devsite-utils buildNavigation -v",
     "buildRedirections": "npx --yes github:AdobeDocs/adp-devsite-utils buildRedirections -v",
     "renameFiles": "npx --yes github:AdobeDocs/adp-devsite-utils renameFiles -v",
     "normalizeLinks": "npx --yes github:AdobeDocs/adp-devsite-utils normalizeLinks -v",
