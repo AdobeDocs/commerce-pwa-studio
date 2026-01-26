@@ -28,13 +28,19 @@ Magento Open Source does not support the Experience Platform.
 
 Use your storefront project's package manager(`node` or `yarn`), to install the Data Connection extension into your storefront project.
 
-For example, if your project uses `yarn` run the following command:
+For example, if your project uses `yarn` run one of the following commands:
 
-```terminal
-yarn add -D @magento/experience-platform-connector (for scafholded PWA frontend code)
-or 
-yarn venia add -D @magento/experience-platform-connector (for Cloned PWA Code)
-```
+- If your project is based on scaffolded PWA frontend code:
+
+  ```terminal
+  yarn add -D @magento/experience-platform-connector (for scaffolded PWA frontend code)
+  ```
+
+- If your project is based on cloned PWA code:
+
+  ```
+  yarn venia add -D @magento/experience-platform-connector (for Cloned PWA Code)
+  ```
 
 ## Adobe Commerce backend configuration
 
@@ -44,9 +50,9 @@ There are few steps to take to establish a data stream and then install and conf
 
 - Install the `data-services-graphql` module by running the following command:
 
-```terminal
-composer require magento/module-data-services-graphql
-```
+  ```terminal
+  composer require magento/module-data-services-graphql
+  ```
 
 - Check the prerequisites in the [Data Connection overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html#prereqs).
 
