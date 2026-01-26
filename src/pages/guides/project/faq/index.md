@@ -120,14 +120,14 @@ _**Note:** For testing, resize the viewport manually instead of using the native
 
 ## How to bypass `css-loader` for external css files
 
-In your React compotent, bypass the style-loader with:
+In your React component, bypass the style-loader with:
 
 ```js
-// ... Addtional imports
+// ... Additional imports
 
 import '!style-loader!css-loader!@my-external-module/import.css';
 
 const myExternalDropIn = props => {
-//... your ui logic
+//... your UI logic
 }
 ```

@@ -1,6 +1,7 @@
 ---
 title: Add component
 description: View code samples for adding a custom Page Builder component to PWA Studio storefront projects.
+edition: paas
 ---
 
 # Add component
@@ -155,7 +156,7 @@ Merging the `props.classes` ensures that our component can apply and override st
 
 In the previous code block, we only used a single class, `classes.quote`, to style the quote in our component. However, our original class required two different classes (`.quote` and `.blue-quote`) for styling. As a best practice, you want to use the `composes` construct from [CSS Modules][] as much as possible.
 
-For example, in our `exampleQuote.css`, we composed each color quote class with the `.qoute` class as shown in the following snippet:
+For example, in our `exampleQuote.css`, we composed each color quote class with the `.quote` class as shown in the following snippet:
 
 ```css
 .quote {

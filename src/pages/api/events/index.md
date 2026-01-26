@@ -75,7 +75,7 @@ payload: {
 
 ## CART_UPDATE_ITEM
 
-The `CART_UPDATE_ITEM` event is fired whenever a user update a product in their cart.
+The `CART_UPDATE_ITEM` event is fired whenever a user updates a product in their cart.
 
 ```javascript
 payload: {
@@ -218,7 +218,7 @@ payload: {
           firstName: formValues.customer.firstName,
           lastName: formValues.customer.lastName,
           isSubscribed: !!formValues.subscribe
-         ß}
+         }
 ```
 
 ## USER_SIGN_IN

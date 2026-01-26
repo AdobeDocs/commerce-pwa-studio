@@ -36,7 +36,7 @@ yarn add @magento/experience-platform-connector
 
 ## Adobe Commerce backend configuration
 
-There are few steps to take to establish a data stream and then install and configure the Data Connection extension.
+There are a few steps to take to establish a data stream and then install and configure the Data Connection extension.
 
 - Make sure you have added the ability to [add required Adobe Commerce extensions](https://developer.adobe.com/commerce/pwa-studio/tutorials/production-deployment/adobe-commerce/#add-required-adobe-commerce-extensions) to your PWA environment.
 

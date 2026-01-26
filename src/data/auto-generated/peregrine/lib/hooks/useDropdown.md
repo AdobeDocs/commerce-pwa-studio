@@ -1,4 +1,3 @@
-
 Functions
 
 <dl>
@@ -9,7 +8,6 @@ A React Hook for adding dropdown-related logic.
 
 </dd>
 </dl>
-
 
 Typedefs
 
@@ -22,13 +20,11 @@ The object returned contains the pieces needed to add the dropdown logic to your
 </dd>
 </dl>
 
-
 A React Hook for adding dropdown-related logic.
 
-**Returns: **
+**Returns:**
 [`Dropdown`](#Dropdown)
    — An object containing functions and values to add dropdown logic
-
 
 The object returned contains the pieces needed to add the dropdown logic to your components
 
@@ -40,7 +36,5 @@ The object returned contains the pieces needed to add the dropdown logic to your
 | expanded | `Boolean` | The value of the `expanded` state |
 | setExpanded | `function` | [State Hook](https://reactjs.org/docs/hooks-state.html) function for setting the expanded state |
 | triggerRef | `Ref` | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements |
-
-
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useDropdown.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useDropdown.js)

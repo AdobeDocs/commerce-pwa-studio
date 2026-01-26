@@ -35,8 +35,6 @@ src
 This directory contains configurations for [Storybook][] testing.
 You can delete this directory if you do not need it.
 
-[storybook]: https://storybook.js.org/docs/react/workflows/testing-with-storybook
-
 ### `ServiceWorker`
 
 The ServiceWorker directory contains all the logic for providing [service worker features][].

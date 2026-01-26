@@ -1,6 +1,7 @@
 ---
 title: Page Builder components
 description: Learn about rendering Page Builder content types in PWA Studio storefront projects.
+edition: paas
 ---
 
 # Page Builder components

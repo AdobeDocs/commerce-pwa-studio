@@ -98,7 +98,7 @@ If an image does not have a width parameter, a cached image with the same name b
 The Venia implementation storefront uses the Apollo GraphQL client to make requests to the Adobe Commerce or Magento Open Source GraphQL endpoint.
 It also incorporates the default [InMemoryCache][] implementation to add caching abilities to the client.
 
-[inmemorycache]: https://www.apollographql.com/docs/react/advanced/caching
+[inmemorycache]: https://www.apollographql.com/docs/react/api/cache/InMemoryCache
 
 The cache is persisted between browser sessions in `window.localstorage` using the [apollo-cache-persist][] module.
 This lets the Apollo client maintain its cached data even when the user closes the application.

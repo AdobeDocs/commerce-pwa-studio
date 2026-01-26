@@ -1,6 +1,7 @@
 ---
 title: HTML Code
 description: View detailed API reference documentation about the HTML code content type of the Page Builder component for PWA Studio storefront projects.
+edition: paas
 ---
 
 # HTML Code

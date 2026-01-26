@@ -429,7 +429,7 @@ module.exports = {
     extend: {
       screens: {
         lg: "992px",
-        max: "2560",
+        max: "2560px",
       },
     },
   },

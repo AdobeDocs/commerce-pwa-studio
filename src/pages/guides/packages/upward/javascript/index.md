@@ -60,7 +60,7 @@ Example:
 ```js
 const { server } = require("@magento/upward-js");
 
-const { app } = upward({
+const { app } = server({
   upwardPath: "./my-upward-server.yml",
 });
 

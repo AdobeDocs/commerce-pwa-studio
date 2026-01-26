@@ -66,7 +66,7 @@ They allow the use of state and logic encapsulation without using class componen
 Since hooks allow you to store state inside functional components, they are a good alternative to using [Redux](#redux).
 
 The [Peregrine][] library provides custom hooks for common storefront behaviors and logic.
-Developers must be familiar with using hooks to get the most out of the PWA Studo library.
+Developers must be familiar with using hooks to get the most out of the PWA Studio library.
 
 ## Redux
 

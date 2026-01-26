@@ -2,6 +2,7 @@
 title: Block
 description: View detailed API reference documentation about the block content type of the Page Builder component for PWA Studio storefront projects.
 jsDoc: true
+edition: paas
 ---
 
 # Block

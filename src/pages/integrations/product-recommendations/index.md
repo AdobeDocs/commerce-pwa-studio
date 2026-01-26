@@ -1,6 +1,6 @@
 ---
 title: Product Recommendations
-description: Leanr how to integrate the Product Recommendations service in your PWA Studio storefront project.
+description: Learn how to integrate the Product Recommendations service in your PWA Studio storefront project.
 keywords:
   - Integration
   - Recommendations
@@ -16,10 +16,10 @@ You can integrate Product Recommendations powered by [Adobe Sensei](https://www.
 
 ![Product Recommendations for PWA Studio](images/pwa-arch-diag-sensei.svg)
 
-Adobe's [Product Recommendations powered by Adobe Sensei](https://docs.magento.com/user-guide/marketing/product-recommendations.html) is a feature backed by several SaaS services.
+Adobe's [Product Recommendations powered by Adobe Sensei](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview) is a feature backed by several SaaS services.
 The **Store** side includes your PWA storefront, which contains the event collector and recommendations layout template, and the backend, which includes the GraphQL endpoints, SaaS Export module, and the Admin UI.
 
-After you install the Product Recommendations PWA extension on your store, it will start sending [behavioral data](https://devdocs.magento.com/recommendations/events.html) to Adobe Sensei with no additional setup.
+After you install the Product Recommendations PWA extension on your store, it will start sending [behavioral data](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/events) to Adobe Sensei with no additional setup.
 Adobe Sensei processes this behavioral data along with the catalog data from the backend and calculates the product associations leveraged by the recommendations service.
 At this point, the merchant can create and manage recommendation units from the Adobe Commerce Admin UI then fetch those product recommendation units from their PWA storefront.
 
@@ -40,7 +40,7 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
    This package contains storefront functionality to collect required behavioral data and render the recommendations.
    Some recommendation types use behavioral data from your shoppers to train machine learning models that build personalized recommendations.
    Other recommendation types use catalog data only and do not use any behavioral data.
-   See the [user guide](https://docs.magento.com/user-guide/marketing/product-recommendations.html#trainmlmodels) to learn how Adobe Sensei trains machine learning models that results in higher quality recommendations.
+   See the [user guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview#trainmlmodels) to learn how Adobe Sensei trains machine learning models that results in higher quality recommendations.
 
 1. The backend functionality is provided by the [Product Recommendations module for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure.html).
 
@@ -52,8 +52,8 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
 
 ## Create recommendation units
 
-Creating a product recommendation unit for your PWA storefront is the same as [creating one for a theme](https://docs.magento.com/user-guide/marketing/create-new-rec.html).
-When you create a recommendation unit in the Admin UI panel, you will need to place components that render product recommendations on appropriate storefront pages. You will do this only once per [supported page type](https://docs.magento.com/user-guide/marketing/product-recommendations.html#supportedrecs).
+Creating a product recommendation unit for your PWA storefront is the same as [creating one for a theme](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/admin/create).
+When you create a recommendation unit in the Admin UI panel, you will need to place components that render product recommendations on appropriate storefront pages. You will do this only once per [supported page type](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview#supportedrecs).
 
 ## Render recommendations
 
@@ -90,8 +90,8 @@ If you are not using the `venia-product-recommendations` package, you can call t
 import { PageTypes } from "@magento/venia-product-recommendations";
 import useRecsData from "@magento/venia-product-recommendations/lib/hooks/useRecsData";
 
-const { data, error, isLoading } = useRecsData({ pageType: Pagetypes.CMS });
+const { data, error, isLoading } = useRecsData({ pageType: PageTypes.CMS });
 ```
 
 [venia-product-recommendations]: /guides/#custom-react-hooks-and-component
-[extensibility framework]: /general-concepts/extensibility/#intercept-files
+[extensibility framework]: /guides/general-concepts/extensibility/#intercept-files

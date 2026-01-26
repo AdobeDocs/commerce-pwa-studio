@@ -112,7 +112,7 @@ For this tutorial, create the file under a `src/targets` directory.
 
 ```sh
 mkdir -p src/targets
-touch -p src/targets/local-intercept.js
+touch src/targets/local-intercept.js
 ```
 
 Inside the `src/targets/local-intercept.js` file, write the following content:

@@ -58,7 +58,7 @@ These extension points are variants of a simple, common JavaScript pattern calle
 [`eventemitter` class]: https://nodejs.org/api/events.html#events_class_eventemitter
 
 Targets let you choose a code process's extension point _by name_ and let you run interceptor code when that process executes.
-Unlike `EventEmmitter` objects, Targets have defined behavior for how and in what order they run their interceptors.
+Unlike `EventEmitter` objects, Targets have defined behavior for how and in what order they run their interceptors.
 How those interceptors change the logic is also a defined behavior for Targets.
 
 Targets are part of a package's public API along with the modules it exports.

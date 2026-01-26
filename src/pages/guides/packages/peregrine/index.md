@@ -62,6 +62,6 @@ This lets you specify the variable names of the provided objects when you [destr
 
 Other Peregrine hooks return a single object.
 
-Use the reference docs on this site or in the [JSDoc][] blocks in the source code learn the API for each hook.
+Use the reference docs on this site or in the [JSDoc][] blocks in the source code to learn the API for each hook.
 
 [jsdoc]: https://devdocs.io/jsdoc/

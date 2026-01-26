@@ -1,6 +1,7 @@
 ---
 title: Tabs
 description: View detailed API reference documentation about the tabs content type of the Page Builder component for PWA Studio storefront projects.
+edition: paas
 ---
 
 # Tabs and TabItem

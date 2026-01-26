@@ -26,7 +26,7 @@ npx @magento/pwa-buildpack create-project ./new-pwa \
 ```
 
 This command creates a new project in the `./new-pwa` folder.
-The package metadata for the project lists the project name as `@magezill/new-pwa` and the author as `MageZilla`.
+The package metadata for the project lists the project name as `@magezilla/new-pwa` and the author as `MageZilla`.
 It also creates a `.env` file with the backend URL set to `https://local.magento`.
 
 After creating the project, it installs the package dependencies, including the Venia, Peregrine and Buildpack libraries needed to build the application.
