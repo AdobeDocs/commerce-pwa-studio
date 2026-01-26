@@ -7,7 +7,7 @@ This guide describes how to configure your UPWARD server to run multiple PWA sit
 
 ## Overview
 
-The UPWARD connector module (`magento2-upward-connector`) provides CLI tools to configure different PWA sites at the store, website, or global scope level. When you execute the CLI commands, you're adding `pwa_paths` to the `env.php` file that specify the paths to each PWA site's `upward.yml` configuration.
+The UPWARD connector module (`magento2-upward-connector`) provides CLI tools to configure different PWA sites at the store, website, or global scope level. When you run the CLI commands, you add `pwa_paths` to the `env.php` file that specifies the paths to each PWA site's `upward.yml` configuration.
 
 ### Configuration Scope Hierarchy
 
