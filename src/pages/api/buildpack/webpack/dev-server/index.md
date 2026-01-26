@@ -5,7 +5,7 @@ description: View detailed reference documentation about the development server 
 
 # PWA development server
 
-A utility for configuring a development OS and a `webpack-dev-server` for PWA development.
+A utility for configuring a development environment and a `webpack-dev-server` for PWA development.
 A typical webpack local development environment uses the [`devServer`][] settings in `webpack.config.js` to create a temporary, local HTTP server to show edits in real time.
 
 [`devserver`]: https://webpack.js.org/configuration/dev-server/

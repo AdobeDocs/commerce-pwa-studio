@@ -202,7 +202,7 @@ The PlaceholderImage component uses this value to compute the source when it ren
 Create a demo page component to render the ImagePlaceholder component.
 
 ```sh
-mkdir -p src/components/PlaceholderImageDemo && touch src/component/PlaceholderImageDemo/placeholderImageDemo.js
+mkdir -p src/components/PlaceholderImageDemo && touch src/components/PlaceholderImageDemo/placeholderImageDemo.js
 ```
 
 Inside `placeholderImageDemo.js`, add the following content:

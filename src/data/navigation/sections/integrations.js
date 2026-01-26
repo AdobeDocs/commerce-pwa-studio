@@ -160,4 +160,12 @@ module.exports = [
       { title: "Overview", path: "/integrations/product-recommendations/" },
     ],
   },
+  {
+    title: "Live Search",
+    path: "/integrations/live-search/",
+    header: true,
+    pages: [
+      { title: "Overview", path: "/integrations/live-search/" },
+    ],
+  }
 ];

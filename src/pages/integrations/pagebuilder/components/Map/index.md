@@ -1,6 +1,7 @@
 ---
 title: Map
 description: View detailed API reference documentation about the map content type of the Page Builder component for PWA Studio storefront projects.
+edition: paas
 ---
 
 # Map

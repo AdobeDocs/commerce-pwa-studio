@@ -46,18 +46,16 @@ This talon performs the following effects:
 - Log a GraphQL error if it occurs when getting the price summary
 
 **Returns:**
-
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | [`PriceSummaryQueries`](#PriceSummaryQueries) | GraphQL queries for a price summary component. |
+| props.queries | [`PriceSummaryQueries`](#PriceSummaryQueries) |GraphQL queries for a price summary component. |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
 
 ```js
-
 import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
 ```
 

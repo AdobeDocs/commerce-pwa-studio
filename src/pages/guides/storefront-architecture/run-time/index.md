@@ -13,7 +13,7 @@ Many of these characteristics follow the principles of [service isolation][].
 
 ## API-only relationships
 
-A PWA Studio storefront application communicates with it's backend application using its external API.
+A PWA Studio storefront application communicates with its backend application using its external API.
 Those external API services communicate with the backend application's internal service modules and returns any results through that same external API.
 
 **GraphQL** is the preferred API to use for client data and store behavior.

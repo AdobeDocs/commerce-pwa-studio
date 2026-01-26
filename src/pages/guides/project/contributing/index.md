@@ -7,7 +7,7 @@ description: Learn how to contribute code to the PWA Studio project.
 
 Thank you for your interest in contributing to the PWA Studio project!
 
-## Guidlines
+## Guidelines
 
 Before you start, please take a moment to read through the following guidelines:
 
@@ -40,7 +40,7 @@ This person is responsible for ensuring the issue is completed in a reasonable a
 ## Ways to contribute
 
 - [Contributing](#contributing)
-  - [Guidlines](#guidlines)
+  - [Guidelines](#guidelines)
   - [Terms](#terms)
   - [Ways to contribute](#ways-to-contribute)
     - [Identify and create issues](#identify-and-create-issues)

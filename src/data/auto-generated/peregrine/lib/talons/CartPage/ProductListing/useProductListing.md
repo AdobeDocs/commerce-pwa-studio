@@ -116,7 +116,6 @@ This talon performs the following effects:
 - Log any GraphQL errors to the console
 
 **Returns:**
-
 **Parameters**
 
 | Name | Type | Description |
@@ -127,7 +126,6 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
 ```
 
@@ -139,7 +137,6 @@ This talon performs the following effects:
 - Manage the updating state of the cart while a product is being updated or removed
 
 **Returns:**
-
 **Parameters**
 
 | Name | Type | Description |
@@ -153,7 +150,6 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProduct';
 ```
 
@@ -161,11 +157,9 @@ This talon contains logic for a product edit modal used on a cart page.
 It returns prop data for rendering an interactive modal component.
 
 **Returns:**
-
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useEditModal } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
 ```
 
@@ -178,7 +172,6 @@ This talon performs the following effects:
 - Set the variant price on a product depending on the product's options
 
 **Returns:**
-
 **Parameters**
 
 | Name | Type | Description |
@@ -195,7 +188,6 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
 ```
 
@@ -287,7 +279,7 @@ It provides props data for rendering an edit modal component.
 | Name | Type | Description |
 | --- | --- | --- |
 | setVariantPrice | `function` | Function for setting a product's variant price. |
-| variantPrice | `Object` | The variant price for a product. See [Money object](https://developer.adobe.com/commerce/webapi/graphql/product/product-interface.html#Money). |
+| variantPrice | `Object` | The variant price for a product. See [Money object](https://devdocs.magento.com/guides/v2.4/graphql/product/product-interface.html#Money). |
 
 Object type returned by the [useProductForm](useProductForm) talon.
 It provides props data for a product form UI component inside a modal.

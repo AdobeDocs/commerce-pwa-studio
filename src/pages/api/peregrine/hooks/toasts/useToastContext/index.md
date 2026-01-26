@@ -46,7 +46,7 @@ Call **useToastContext()** to get the current state of the toast store and a dis
 ```jsx
 // MyToastComponents.js
 
-import { useToastContext } from "@magnto/peregrine";
+import { useToastContext } from "@magento/peregrine";
 
 export const ToastContainer = () => {
   const [toastState, toastDispatch] = useToastContext();

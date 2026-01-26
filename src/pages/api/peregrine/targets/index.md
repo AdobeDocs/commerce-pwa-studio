@@ -26,7 +26,7 @@ See the [PWA Studio Target Experiments][] project repository for documented exam
 
 You can extend the functionality of Peregrine's custom hooks and talons by applying wrapper modules.
 
-The `talon.wrapWith(module)` method is simlar to the [interceptor pattern][] used in Magento backend plugins.
+The `talon.wrapWith(module)` method is similar to the [interceptor pattern][] used in Magento backend plugins.
 Peregrine will dynamically inject the code from the passed `module` "around" the implementation of a talon, by passing the talon function through the wrapper function before exporting it.
 
 [interceptor pattern]: https://developer.adobe.com/commerce/php/development/components/plugins/

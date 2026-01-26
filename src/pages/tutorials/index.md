@@ -5,14 +5,14 @@ Before you can start developing with PWA Studio, make sure you meet the requirem
 ## Minimum requirements
 
 - A basic knowledge of [React][]
-- Node >= 14
+- Node >= 18
 - Yarn (recommended) or NPM
 
 ## Check Node and Yarn versions
 
 Verify your development environment has the minimum prerequisite versions of Node and Yarn installed:
 
-- [NodeJS >=14 LTS](https://nodejs.org/en/)
+- [NodeJS >=18 LTS](https://nodejs.org/en/)
 - [Yarn >=1.12.0](https://yarnpkg.com)
 
 Yarn v2 is currently not supported as its hoisting method is fundamentally different than v1.
@@ -34,7 +34,7 @@ node -v
 #### Output
 
 ```bash
-v14.0.0
+v18.16.0
 ```
 
 ### Yarn

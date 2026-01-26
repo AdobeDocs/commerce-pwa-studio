@@ -94,7 +94,7 @@ For more information about contributing to this repository, see the [Contributio
 ### Documentation contributions
 
 We encourage you to participate in our open documentation initiative.
-If you have suggestions, corrections, additions or deletions for this documentation, check out the source from [this GitHub repo][], and submit a pull request with your contribution.
+If you have suggestions, corrections, additions or deletions for this documentation, check out the source from [this GitHub repo][] and submit a pull request with your contribution.
 For more information, refer to this project's [Contribution Guide](https://github.com/AdobeDocs/commerce-pwa-studio/blob/main/.github/CONTRIBUTING.md).
 
 [community wiki]: https://github.com/magento/pwa-studio/wiki

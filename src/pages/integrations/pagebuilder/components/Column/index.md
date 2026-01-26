@@ -1,6 +1,7 @@
 ---
 title: Column
 description: View detailed API reference documentation about the column content type of the Page Builder component for PWA Studio storefront projects.
+edition: paas
 ---
 
 # Column and ColumnGroup
