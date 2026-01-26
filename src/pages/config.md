@@ -54,15 +54,15 @@
             - [JavaScript](/guides/packages/upward/javascript/index.md)
             - [Multiple Sites with UPWARD](/guides/packages/upward/multi-site/index.md)
     - [Upgrading versions](/guides/upgrading-versions/index.md)
-    - Integrations - header
+    - Integrations header
     - [Overview](/integrations/index.md)
-    - Adobe Commerce - header
+    - Adobe Commerce header
     - [Overview](/integrations/adobe-commerce/index.md)
     - [Adobe Experience Platform](/integrations/adobe-commerce/aep/index.md)
     - [Commerce coverage](/integrations/adobe-commerce/features.md)
     - [Version compatibility](/integrations/adobe-commerce/version-compatibility/index.md)
     - [Theme vs Storefront](/integrations/adobe-commerce/theme-vs-storefront/index.md)
-    - Page Builder - header
+    - Page Builder header
     - [Overview](/integrations/pagebuilder/index.md)
     - [Known limitations](/integrations/pagebuilder/limitations/index.md)
     - [Creating custom components](/integrations/pagebuilder/custom-components/index.md)
@@ -89,32 +89,32 @@
         - [Tabs](/integrations/pagebuilder/components/Tabs/index.md)
         - [Text](/integrations/pagebuilder/components/Text/index.md)
         - [Video](/integrations/pagebuilder/components/Video/index.md)
-    - Product Recommendations - header
+    - Product Recommendations header
     - [Overview](/integrations/product-recommendations/index.md)
-    - Live Search - header
+    - Live Search header
     - [Overview](/integrations/live-search/index.md)
-    - Get started - header
+    - Get started header
     - [Overview](/tutorials/index.md)
     - [Setup a storefront project](/tutorials/setup-storefront/index.md)
         - [Explore the files](/tutorials/setup-storefront/file-structure/index.md)
         - [Common setup issues](/tutorials/setup-storefront/issues/index.md)
-    - Basic modifications - header
+    - Basic modifications header
     - [Overview](/tutorials/basic-modifications/index.md)
     - [Enable SASS or LESS support](/tutorials/basic-modifications/enable-sass-less/index.md)
     - [Add a static route](/tutorials/basic-modifications/add-static-route/index.md)
     - [Modify the site footer](/tutorials/basic-modifications/modify-footer/index.md)
-    - Events - header
+    - Events header
     - [Custom Events](/tutorials/events/custom-events/index.md)
     - [Subscribing to Events](/tutorials/events/subscribe-events/index.md)
-    - Targets and Targetables - header
+    - Targets and Targetables header
     - [Overview](/tutorials/targets/index.md)
     - [Modify talon results](/tutorials/targets/modify-talon-results/index.md)
     - [Add a new environment variable](/tutorials/targets/add-environment-variable/index.md)
     - [Change static assets directory](/tutorials/targets/change-static-assets-directory/index.md)
-    - Extension development - header
+    - Extension development header
     - [Overview](/tutorials/extensions/index.md)
     - [Create a tag list extension](/tutorials/extensions/taglist/index.md)
-    - Production deployments - header
+    - Production deployments header
     - [Deployment checklist](/tutorials/production-deployment/checklist/index.md)
     - [Deploy to Adobe Commerce](/tutorials/production-deployment/adobe-commerce/index.md)
     - [Overview](/api/index.md)
@@ -189,7 +189,7 @@
             - [Price Adjustments](/api/venia/components/CartPage/PriceAdjustments.md)
             - [Price Summary](/api/venia/components/CartPage/PriceSummary.md)
             - [Product Listing](/api/venia/components/CartPage/ProductListing.md)
-    - Metapackages - header
+    - Metapackages header
     - [Overview](/metapackages/index.md)
     - [Install Open Source metapackage](/metapackages/open-source/index.md)
     - [Install Venia sample data metapackage](/metapackages/venia-sample-data/index.md)
