@@ -33,14 +33,14 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
 
 1. You can install the PWA `venia-product-recommendations` package from the NPM registry:
 
-  ```sh
-    yarn venia add -D @magento/venia-product-recommendations
+   ```terminal
+   yarn venia add -D @magento/venia-product-recommendations
    ```
  
-    ** OR **
+   ** OR **
 
-   ```sh
-    npm install @magento/venia-product-recommendations
+   ```terminal
+   npm install @magento/venia-product-recommendations
    ```
 
    This package contains storefront functionality to collect required behavioral data and render the recommendations.
@@ -48,27 +48,31 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
    Other recommendation types use catalog data only and do not use any behavioral data.
    See the [user guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview#trainmlmodels) to learn how Adobe Sensei trains machine learning models that results in higher quality recommendations.
 
-   Also add these frontend dependencies to support product recommendation module
-    
-      yarn venia add -D @magento/recommendations-js-sdk
-      yarn venia add -D @magento/experience-platform-connector
-   
-        OR
+   Also, add these frontend dependencies to support the product recommendations module:
 
-      npm install @magento/recommendations-js-sdk
-      npm install @magento/experience-platform-connector
+   ```terminal
+   yarn venia add -D @magento/recommendations-js-sdk
+   yarn venia add -D @magento/experience-platform-connector
+   ```
+   
+   **OR**
+
+    ```terminal
+    npm install @magento/recommendations-js-sdk
+    npm install @magento/experience-platform-connector
+    ```
 
 1. The backend functionality is provided by the [Product Recommendations module for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure.html).
 
 1. Additionally, you need to install the `module-data-services-graphql` module that expands the application's existing GraphQL coverage to include fields required for storefront behavioral data collection.
 
-   ```bash
+   ```terminal
    composer require magento/module-data-services-graphql
    ```
 
 2. Also, install the `experience-platform-connector` module
 
-   ```bash
+   ```terminal
    composer require magento/experience-platform-connector
    ```
 
