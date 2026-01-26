@@ -2,6 +2,7 @@
 title: Utility functions
 description: View detailed API reference documentation about PWA Studio utility functions.
 jsDoc: true
+edition: paas
 ---
 
 # Utility functions

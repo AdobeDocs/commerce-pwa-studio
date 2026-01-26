@@ -2,6 +2,7 @@
 title: Buttons
 description: View detailed API reference documentation about the buttons content type of the Page Builder component for PWA Studio storefront projects.
 jsDoc: true
+edition: paas
 ---
 
 # Buttons and ButtonItem

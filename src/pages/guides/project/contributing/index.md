@@ -7,7 +7,7 @@ description: Learn how to contribute code to the PWA Studio project.
 
 Thank you for your interest in contributing to the PWA Studio project!
 
-## Guidlines
+## Guidelines
 
 Before you start, please take a moment to read through the following guidelines:
 
@@ -40,7 +40,7 @@ This person is responsible for ensuring the issue is completed in a reasonable a
 ## Ways to contribute
 
 - [Contributing](#contributing)
-  - [Guidlines](#guidlines)
+  - [Guidelines](#guidelines)
   - [Terms](#terms)
   - [Ways to contribute](#ways-to-contribute)
     - [Identify and create issues](#identify-and-create-issues)
@@ -57,7 +57,6 @@ Provide as much detail as you can to help us reproduce or analyze the issue befo
 
 [creating an issue]: https://github.com/magento/pwa-studio/issues/new/choose
 
-When the issue is created, it is placed in the **Backlog** column of the [Community Backlog][] project.
 Contact someone from the Community Advisory Board to bring the issue to our attention and we will add the **help wanted** label to it.
 
 _Please avoid creating GitHub issues asking for help on bugs in your own project that are outside the scope of this project._
@@ -73,20 +72,15 @@ If there is no response before the next grooming session, the issue is closed.
 ### Select a groomed issue
 
 The main way to contribute to the project is by working on an issue.
-Look through the **Prioritized** column in the [Community Backlog][] for issues that are available for you to work on.
 
 _Do not attempt to work on something unrelated to the issues inside the **Prioritized** column._
 
 If you see an issue you would like to work on in the **Prioritized** column, notify a Community Maintainer in the issue comments (by using @) to let them know you are interested.
 The Community Maintainer will follow up with you to make sure you understand the scope of the changes being asked for in the issue.
 
-After the Community Maintainer assigns the issue to you, it is moved to the **In Progress** column of the [Community Backlog][] to prevent others from picking up the issue.
-
-[community backlog]: https://github.com/magento/pwa-studio/projects/1
-
 #### Working on the solution
 
-As a contributer, you should familiarize yourself with the project's [coding standards and conventions][].
+As a contributor, you should familiarize yourself with the project's [coding standards and conventions][].
 
 [coding standards and conventions]: https://github.com/magento/pwa-studio/wiki/Project-coding-standards-and-conventions
 

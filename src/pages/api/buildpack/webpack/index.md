@@ -16,7 +16,7 @@ The Buildpack package provides different tools that give you access to this proc
 
 [Configure Webpack](/api/buildpack/webpack/configure/)
 
-A function to that returns the default PWA Studio Webpack configuration.
+A function that returns the default PWA Studio Webpack configuration.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 

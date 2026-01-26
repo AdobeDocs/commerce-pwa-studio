@@ -29,7 +29,7 @@ PWA Studio provides tools to help manage configurations across different environ
 
 [GraphQL](graphql/)
 
-GraphQL is a specification for a data query language client side and a service layer on the server side.
+GraphQL is a specification for a data query language on the client side and a service layer on the server side.
 It is used to request and push data in a progressive web application.
 
 <DiscoverBlock width="100%" slots="link, text"/>

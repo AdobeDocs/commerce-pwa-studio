@@ -5,7 +5,7 @@ description: View detailed reference documentation for creating an environment f
 
 # Create environment file
 
-Whether its a new storefront project or a fresh PWA Studio repository clone, PWA Studio requires a `.env` file to set up the environment for your site.
+Whether it's a new storefront project or a fresh PWA Studio repository clone, PWA Studio requires a `.env` file to set up the environment for your site.
 The `create-env-file` subcommand for the [`buildpack`][] CLI command automatically creates this file using pre-defined environment variables and default values.
 
 [`buildpack`]: /api/buildpack/cli/

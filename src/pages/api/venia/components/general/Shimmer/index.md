@@ -10,7 +10,7 @@ import Shimmer from '/src/data/auto-generated/venia-ui/lib/components/Shimmer/sh
 The Shimmer component is a loading indicator that takes the shape of the component being loaded.
 Instead of blocking the entire page like a traditional full-screen loader, Shimmer loaders are component-shape specific to show users previews of what's loading on the page.
 
-These previews improves the perceived performance of the app and prevents CLS (Content Layout Shift).
+These previews improve the perceived performance of the app and prevents CLS (Content Layout Shift).
 The Shimmer component eliminates most of the CLS on a page, which helps improve Google Lighthouse scores.
 
 <!--
