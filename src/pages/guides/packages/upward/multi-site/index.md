@@ -27,14 +27,14 @@ Create environment-specific configuration for each store you want to build.
 
 **.env.french**
 
-```bash
+```terminal
 MAGENTO_BACKEND_URL=https://french.yoursite.com
 STORE_VIEW_CODE=french
 ```
 
 **.env.german**
 
-```bash
+```terminal
 MAGENTO_BACKEND_URL=https://german.yoursite.com
 STORE_VIEW_CODE=german
 ```
@@ -47,7 +47,7 @@ Build separate bundles for each storefront with their specific backend configura
 
 ### Option A: Using Environment Files
 
-```bash
+```terminal
 cd /path/to/your/pwa-project
 
 # Build French store
@@ -68,7 +68,7 @@ mv dist dist-default
 
 ### Option B: Using Inline Environment Variables
 
-```bash
+```terminal
 # Build French store
 MAGENTO_BACKEND_URL=https://french.yoursite.com yarn build
 mv dist dist-french
