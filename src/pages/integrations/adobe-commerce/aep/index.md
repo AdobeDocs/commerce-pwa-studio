@@ -38,7 +38,7 @@ For example, if your project uses `yarn` run one of the following commands:
 
 - If your project is based on cloned PWA code:
 
-  ```
+  ```terminal
   yarn venia add -D @magento/experience-platform-connector (for Cloned PWA Code)
   ```
 
