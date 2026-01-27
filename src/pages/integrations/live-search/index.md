@@ -235,7 +235,7 @@ To receive continued support, ensure that your environment is updated to **versi
 
 ### Contact & Assistance
 
-If you have questions about version support or need help upgrading, please contact the support team or open a support request through the appropriate support channel.
+If you have questions about version support or need help upgrading, contact the support team or open a support request through the appropriate support channel.
 
 [venia-product-recommendations]: /guides/#custom-react-hooks-and-component
 [extensibility framework]: /guides/general-concepts/extensibility/#intercept-files
