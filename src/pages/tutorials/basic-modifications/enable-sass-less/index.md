@@ -156,7 +156,7 @@ Edit `webpack.config.js` and add a new `config` rule entry:
 +   });
 ```
 
-### Step 3. Create a LESS file and import it on your component
+### Step 3. Create a LESS file and import it in your component
 
 Create the `myComponent.less` file:
 

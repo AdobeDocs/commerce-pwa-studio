@@ -16,7 +16,6 @@ This talon performs the following effects:
 </dd>
 </dl>
 
-
 Typedefs
 
 <dl>
@@ -34,7 +33,6 @@ This is a type used by the [useGiftOptions](#useGiftOptions) talon.
 </dd>
 </dl>
 
-
 This talon contains the logic for a gift options component.
 It performs effects and returns a data object containing values for rendering the component.
 
@@ -43,15 +41,16 @@ This talon performs the following effects:
 - Fetch the gift options associated with the cart
 - Update the [GiftOptionsTalonProps](#GiftOptionsTalonProps) values with the data returned by the query
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type |
 | --- | --- |
-| props | `Object` | 
-| props.operations | [`GiftOptionsOperations`](#GiftOptionsOperations) | 
+| props | `Object` |
+| props.operations | [`GiftOptionsOperations`](#GiftOptionsOperations) |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
+
 ```js
 import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/GiftOptions/useGiftOptions';
 ```
@@ -80,7 +79,6 @@ Props data to use when rendering a gift options component.
 | saveGiftMessageButtonProps | `Object` | Props for the Update Gift Message button. |
 | optionsFormProps | `Object` | Props for the form element. |
 
-
 This is a type used by the [useGiftOptions](#useGiftOptions) talon.
 
 **Properties**
@@ -89,7 +87,5 @@ This is a type used by the [useGiftOptions](#useGiftOptions) talon.
 | --- | --- | --- |
 | setGiftOptionsOnCartMutation | `GraphQLAST` | sets the gift options on cart. |
 | getGiftOptionsQuery | `GraphQLAST` | fetch the gift options. |
-
-
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions.js)

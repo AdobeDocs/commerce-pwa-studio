@@ -40,7 +40,7 @@ const buildpack = require('@magento/pwa-buildpack');
 const MagentoResolver = buildpack.Webpack.MagentoResolver;
 
 module.exports = async env => {
-    const config {
+    const config  = {
         /* webpack entry, output, rules, etc */
 
 

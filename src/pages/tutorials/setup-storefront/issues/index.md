@@ -20,7 +20,7 @@ We recommend to always use a node LTS version. These are even-numbered major ver
 [n]: https://github.com/tj/n
 [nvm]: https://github.com/nvm-sh/nvm/
 
-If you are using node 12, you may see the a deprecation warning in the log when you run the watch command.
+If you are using node 12, you may see a deprecation warning in the log when you run the watch command.
 This is caused by a project dependency used by PWA Studio and not by PWA Studio itself.
 
 ## Caching issues

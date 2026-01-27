@@ -19,8 +19,8 @@ import Component from '/src/data/auto-generated/peregrine/lib/talons/CartPage/Gi
 ### useGiftCards()
 
 ```jsx
-import React from 'react'
-import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
+import React from 'react';
+import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards';
 import {
     GET_CART_GIFT_CARDS_QUERY,
     GET_GIFT_CARD_BALANCE_QUERY,
@@ -42,7 +42,6 @@ const MyGiftCards = props => {
      }
  });
 
- const propsFromTalon = useGiftCards(talonProps)
 
  const {
      applyGiftCard,
@@ -59,7 +58,7 @@ const MyGiftCards = props => {
      setFormApi,
      shouldDisplayCardBalance,
      shouldDisplayCardError
- } = propsFromTalon;
+ } = talonProps;
 
  return (
      // JSX using the props from the talon
@@ -72,7 +71,7 @@ export default MyGiftCards
 ### useGiftCard()
 
 ```jsx
-import React from 'react'
+import React from 'react';
 import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
 
 const MyGiftCard = props => {

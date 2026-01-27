@@ -5,6 +5,7 @@ keywords:
   - Integration
   - Page Builder
   - Storefront
+edition: paas
 ---
 
 # Page Builder

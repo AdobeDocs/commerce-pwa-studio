@@ -86,7 +86,7 @@ it may slow down the build if you add too many modules that do not have RootComp
 
 #### `upward` flag
 
-If `true`, `configureWebpack()` generates the configuration that tells weback to look for an `upward.yml` file in a module's root directory and merge it with the project's root `upward.yml` file.
+If `true`, `configureWebpack()` generates the configuration that tells webpack to look for an `upward.yml` file in a module's root directory and merge it with the project's root `upward.yml` file.
 
 This lets third-party dependencies contribute to UPWARD behavior, but
 it may cause collisions or merge problems if the UPWARD files contradict each other.
@@ -121,7 +121,7 @@ module.exports = async env => {
             // as ES Modules, just like the project source itself.
             '@magento/peregrine': {
                 esModules: true
-            }
+            },
             // Treat code originating in the `@magento/venia-ui` as though
             // it uses ES Modules, CSS Modules, GraphQL queries, RootComponents,
             // and UPWARD definitions. This is the right set of flags for a UI

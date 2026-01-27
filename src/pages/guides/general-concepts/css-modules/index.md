@@ -230,7 +230,7 @@ The following example defines a `Subtitle` component which uses the `titleHighli
 import React, { Component } from 'react';
 import myStyles from './styles.css';
 
-export Subtitle extends Component
+class Subtitle extends Component
 {
     render() {
       return (
