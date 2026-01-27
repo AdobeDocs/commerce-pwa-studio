@@ -115,7 +115,7 @@ module.exports = (targets) => {
   // Set the buildpack features required by this extension
   const builtins = targets.of("@magento/pwa-buildpack");
   builtins.specialFeatures.tap((featuresByModule) => {
-    featuresByModule["@my-extension/my-product-page"] = {
+    featuresByModule["my-extension"] = {
       // Wrapper modules must be ES Modules
       esModules: true,
     };
@@ -139,7 +139,7 @@ Inside the `useProductCategoriesList.js` file, add the following content:
 
 ```js
 import { useMemo } from "react";
-import { useQuery } from "@apollo/react-hooks";
+import { useQuery } from "@apollo/client";
 import gql from "graphql-tag";
 
 const GET_PRODUCT_CATEGORIES = gql`
