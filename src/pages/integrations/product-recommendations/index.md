@@ -36,8 +36,8 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
    ```terminal
    yarn venia add -D @magento/venia-product-recommendations
    ```
- 
-   ** OR **
+
+   **OR**
 
    ```terminal
    npm install @magento/venia-product-recommendations
@@ -54,7 +54,7 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
    yarn venia add -D @magento/recommendations-js-sdk
    yarn venia add -D @magento/experience-platform-connector
    ```
-   
+
    **OR**
 
     ```terminal
