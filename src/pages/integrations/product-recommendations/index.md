@@ -158,7 +158,7 @@ import useRecsData from "@magento/venia-product-recommendations/lib/hooks/useRec
 const { data, error, isLoading } = useRecsData({ pageType: PageTypes.CMS });
 ```
 
-# Support Policy
+## Support Policy
 
 ### Supported Versions
 

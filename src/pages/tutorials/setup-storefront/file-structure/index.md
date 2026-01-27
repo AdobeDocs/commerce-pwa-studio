@@ -32,7 +32,7 @@ src
 
 ### `.storybook`
 
-This directory contains configurations for [Storybook][] testing.
+This directory contains configurations for Storybook testing.
 You can delete this directory if you do not need it.
 
 ### `ServiceWorker`

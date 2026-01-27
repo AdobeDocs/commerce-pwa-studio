@@ -52,8 +52,6 @@ As part of the Page Builder integration to PWA Studio, we implemented a framewor
 
 <iframe src="https://video.tv.adobe.com/v/31597t1/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on"></iframe>
 
-\---
-
 The Page Builder integration framework processes content as outlined here:
 
 1. The framework receives Page Builder content types in the original HTML format (**RichContent** and **PageBuilder** components)

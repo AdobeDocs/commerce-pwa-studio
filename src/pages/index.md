@@ -19,7 +19,7 @@ PWA Studio offers the tools you need to develop a Progressive Web Application st
 
 <Resources slots="heading, links"/>
 
-#### Resources
+## Resources
 
 - [Latest release notes](https://github.com/magento/pwa-studio/releases/latest)
 - [PWA Studio GitHub repository](https://github.com/magento/pwa-studio)

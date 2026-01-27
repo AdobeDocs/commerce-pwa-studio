@@ -38,6 +38,7 @@ MD033:
     - SuperHero
     - CodeBlock
     - Fragment
+    - iframe
 
 # MD034/no-bare-urls - Bare URL used
 MD034: false

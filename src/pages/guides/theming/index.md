@@ -31,13 +31,13 @@ Install the following packages using `yarn add` or `npm install` as follows:
 
 <CodeBlock slots="heading, code" repeat="2" languages="bash,bash" />
 
-#### yarn
+### yarn
 
 ```bash
 yarn add -D @magento/pwa-theme-venia@^1.3.0 tailwindcss@~2.2.19 postcss@~8.3.11 postcss-loader@~4.3.0 autoprefixer@latest
 ```
 
-#### npm
+### npm
 
 ```bash
 npm install -D @magento/pwa-theme-venia@^1.3.0 tailwindcss@~2.2.19 postcss@~8.3.11 postcss-loader@~4.3.0 autoprefixer@latest

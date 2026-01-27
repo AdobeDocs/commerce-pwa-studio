@@ -220,7 +220,7 @@ function localIntercept(targets) {
 module.exports = localIntercept;
 ```
 
-# Support Policy
+## Support Policy
 
 ### Supported Versions
 
@@ -236,4 +236,3 @@ To receive continued support, ensure that your environment is updated to **versi
 ### Contact & Assistance
 
 If you have questions about version support or need help upgrading, contact the support team or open a support request through the appropriate support channel.
-
