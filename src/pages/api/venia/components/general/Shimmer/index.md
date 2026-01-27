@@ -36,7 +36,7 @@ There are 4 critical files for creating a Shimmer component:
 * **SubComponent/subComponent.shimmer.js** - `.shimmer.js` extension is used for easily identifying that it's a shimmer and
   the component it's attached to. It can contain complex arrangement of base Shimmer elements, or include other subcomponents Shimmers.
 
-**Main.js**
+**Main.js:**
 
 ```jsx
 import React from 'react';
@@ -62,9 +62,7 @@ export default () => {
 // ....
 ```
 
-\---
-
-**../path/to/SubComponent/index.js**
+**../path/to/SubComponent/index.js:**
 
 ```jsx
 export { default } from './subComponent.js';
@@ -72,9 +70,7 @@ export { default } from './subComponent.js';
 export { default as SubComponentShimmer } from './subComponent.shimmer.js';
 ```
 
-\---
-
-**../path/to/SubComponent/subComponent.js**
+**../path/to/SubComponent/subComponent.js:**
 
 ```jsx
 import React from 'react';
@@ -103,9 +99,7 @@ SubComponent.propTypes = {
 export default SubComponent;
 ```
 
-\---
-
-**../path/to/SubComponent/subComponent.shimmer.js**
+**../path/to/SubComponent/subComponent.shimmer.js:**
 
 ```jsx
 import React from 'react';
@@ -139,7 +133,7 @@ export default SubComponentShimmer;
 When you make layout changes to a Shimmer's parent component, you should also adjust the Shimmer component to match.
 In this example, we'll add a custom attribute shimmer to the detail section of the product page.
 
-**local-intercept.js**
+**local-intercept.js:**
 
 ```jsx
 const { Targetables } = require('@magento/pwa-buildpack');

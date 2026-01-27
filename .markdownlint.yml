@@ -67,5 +67,11 @@ MD049: false
 MD050:
   style: asterisk
 
+MD059:
+  prohibited_texts:
+    - "click here"
+    - "here"
+    - "more"
+
 # MD060/table-column-style - Table column style (disabled for flexible formatting)
 MD060: false
