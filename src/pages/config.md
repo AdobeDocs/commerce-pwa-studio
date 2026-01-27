@@ -1,10 +1,8 @@
 - pathPrefix:
     - /commerce/pwa-studio/
 
-- home:
-    - [Commerce](/commerce/docs.md)
-
 - pages:
+    - [Commerce](https://developer.adobe.com/commerce/docs)
     - [PWA Studio](/index.md)
     - [Guides](/guides/index.md)
     - [Integrations](/integrations/index.md)
