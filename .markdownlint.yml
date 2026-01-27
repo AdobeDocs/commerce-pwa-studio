@@ -46,6 +46,9 @@ MD034: false
 MD035:
   style: "---"
 
+# MD036/no-emphasis-as-heading - Emphasis used instead of a heading
+MD036: false
+
 # MD041/first-line-heading/first-line-h1 - First line in file should be a top level heading
 MD041: false
 
@@ -67,6 +70,10 @@ MD049: false
 MD050:
   style: asterisk
 
+# MD051/link-fragments Link fragments should be valid
+MD051: false
+
+# MD059/descriptive-link-text - Link text should be descriptive
 MD059:
   prohibited_texts:
     - "click here"
