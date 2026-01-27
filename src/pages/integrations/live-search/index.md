@@ -231,7 +231,7 @@ Support is currently provided for **version 14.3.1 and above** and includes the 
 
 ### Upgrade Recommendation
 
-To receive continued support, please ensure your environment is updated to **version 14.3.1 or later**. Refer to the official upgrade documentation for guidance on updating safely.
+To receive continued support, ensure that your environment is updated to **version 14.3.1 or later**. Refer to the official upgrade documentation for guidance on updating safely.
 
 ### Contact & Assistance
 
