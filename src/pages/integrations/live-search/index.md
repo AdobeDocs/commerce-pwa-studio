@@ -224,8 +224,7 @@ module.exports = localIntercept;
 
 ### Supported Versions
 
-Support is currently provided for **version 14.3.1 and above**.
-This includes:
+Support is currently provided for **version 14.3.1 and above** and includes the following:
 
 - Bug fixes
 - Technical support and troubleshooting
