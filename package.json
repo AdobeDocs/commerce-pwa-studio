@@ -19,10 +19,13 @@
     "link:skipdeadlinks": "npx --yes github:AdobeDocs/adp-devsite-utils runLint --skip-dead-links -v",
     "link:deadlinkonly": "npx --yes github:AdobeDocs/adp-devsite-utils runLint --dead-links-only -v",
     "redirectCheck:stage": "npx --yes github:AdobeDocs/adp-devsite-utils redirectChecker stage --verbose",
-    "redirectCheck:prod": "npx --yes github:AdobeDocs/adp-devsite-utils redirectChecker prod --verbose"
+    "redirectCheck:prod": "npx --yes github:AdobeDocs/adp-devsite-utils redirectChecker prod --verbose",
+    "lint:md": "npx --yes markdownlint-cli2 'src/pages/**/*.md' '*.md' --ignore '**/config.md'",
+    "lint:md:fix": "npx --yes markdownlint-cli2 --fix 'src/pages/**/*.md' '*.md' --ignore '**/config.md'",
+    "test": "npx --yes jest",
+    "test:config": "npx --yes jest tests/config.test.js"
   },
   "devDependencies": {
-    "express": "5.1.0"
-  },
-  "packageManager": "yarn@3.2.4"
+    "express": "5.2.1"
+  }
 }
