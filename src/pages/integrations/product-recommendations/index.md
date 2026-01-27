@@ -25,6 +25,33 @@ At this point, the merchant can create and manage recommendation units from the 
 
 ## Install the Product Recommendations module
 
+<InlineAlert variant="info" slots="text"/>
+
+Before proceeding, complete all Product Recommendations prerequisites for Adobe Commerce. Follow the steps outlined in the official [installation documentation](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure).
+
+## Install the Product Recommendations Backend module
+
+Next, install an additional backend dependency.
+Run the following commands to install the backend dependency:
+
+```terminal
+composer require magento/module-data-services-graphql
+```
+
+```terminal
+magento/experience-platform-connector
+```
+
+```terminal
+bin/magento setup:di:compile
+```
+
+```terminal
+bin/magento cache:flush
+```
+
+## Install the Product Recommendations Frontend PWA package
+
 Product Recommendations support on PWA requires installing the `venia-product-recommendations` package and the Product Recommendations module for Adobe Commerce.
 
 <InlineAlert variant="info" slots="text"/>
@@ -32,23 +59,61 @@ Product Recommendations support on PWA requires installing the `venia-product-re
 The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https://github.com/magento/pwa-studio/releases/tag/v10.0.0) or later.
 
 1. You can install the PWA `venia-product-recommendations` package from the NPM registry:
+    - For projects cloned from GitHub run the following commands from the project root:
 
-   ```sh
-   npm install @magento/venia-product-recommendations
-   ```
+        ```sh
+        yarn venia add -D @magento/venia-product-recommendations
+        ```
 
-   This package contains storefront functionality to collect required behavioral data and render the recommendations.
-   Some recommendation types use behavioral data from your shoppers to train machine learning models that build personalized recommendations.
-   Other recommendation types use catalog data only and do not use any behavioral data.
-   See the [user guide](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview#trainmlmodels) to learn how Adobe Sensei trains machine learning models that results in higher quality recommendations.
+        ```sh
+        yarn venia add -D @magento/venia-data-collector
+        ```
+  
+        ```sh
+        yarn venia add -D @magento/experience-platform-connector
+        ```
 
-1. The backend functionality is provided by the [Product Recommendations module for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure.html).
+        **OR**
 
-1. Additionally, you need to install the `module-data-services-graphql` module that expands the application's existing GraphQL coverage to include fields required for storefront behavioral data collection.
+        ```sh
+        npm install @magento/venia-product-recommendations
+        ```
 
-   ```bash
-   composer require magento/module-data-services-graphql
-   ```
+        ```sh
+        npm install @magento/venia-data-collector
+        ```
+  
+        ```sh
+        npm install @magento/experience-platform-connector
+        ```
+
+    - For scaffolded projects run the following commands from project root:
+
+      ```sh
+        yarn add -D @magento/venia-product-recommendations
+        ```
+
+        ```sh
+        yarn add -D @magento/venia-data-collector
+        ```
+
+        ```sh
+        yarn add -D @magento/experience-platform-connector
+        ```
+
+        **OR**
+
+        ```sh
+        npm install @magento/venia-product-recommendations
+        ```
+
+        ```sh
+        npm install @magento/venia-data-collector
+        ```
+
+      ```sh
+      npm install @magento/experience-platform-connector
+        ```
 
 ## Create recommendation units
 
@@ -92,6 +157,24 @@ import useRecsData from "@magento/venia-product-recommendations/lib/hooks/useRec
 
 const { data, error, isLoading } = useRecsData({ pageType: PageTypes.CMS });
 ```
+
+# Support Policy
+
+### Supported Versions
+
+Support is currently provided for **version 14.0.1 and above**.
+This includes:
+
+- Bug fixes
+- Technical support and troubleshooting
+
+### Upgrade Recommendation
+
+To receive continued support, please ensure your environment is updated to **version 14.0.1 or later**. Refer to the official upgrade documentation for guidance on updating safely.
+
+### Contact & Assistance
+
+If you have questions about version support or need help upgrading, please contact the support team or open a support request through the appropriate support channel.
 
 [venia-product-recommendations]: /guides/#custom-react-hooks-and-component
 [extensibility framework]: /guides/general-concepts/extensibility/#intercept-files
