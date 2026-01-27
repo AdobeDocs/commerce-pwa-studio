@@ -34,19 +34,19 @@ Before proceeding, complete all Product Recommendations prerequisites for Adobe 
 Next, install an additional backend dependency.
 Run the following commands to install the backend dependency:
 
-```bash
+```terminal
 composer require magento/module-data-services-graphql
 ```
 
-```bash
+```terminal
 magento/experience-platform-connector
 ```
 
-```bash
+```terminal
 bin/magento setup:di:compile
 ```
 
-```bash
+```terminal
 bin/magento cache:flush
 ```
 
