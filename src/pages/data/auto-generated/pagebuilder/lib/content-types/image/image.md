@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [Image](#Image)
-
 
 Page Builder Image component.
 

@@ -14,7 +14,6 @@ To update this section, update the doc blocks in the source code
 
 <Fragment src='../../../../data/auto-generated/peregrine/lib/List/list.md'/>
 
-
 ## Selection models
 
 The `selectionModel` currently accepts the following values:

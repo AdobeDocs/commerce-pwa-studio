@@ -1,6 +1,6 @@
 
 ## Functions
- 
+
 [useGiftCards(props)] ⇒ `[GiftCardsTalonProps]`
 
 Handles the logic for a component that renders a list of gift cards.
@@ -16,9 +16,8 @@ This talon performs the following effects:
 
 Provide logic for a single gift card component.
 
-
 ## Typedefs
- 
+
 [GiftCardsMutations] : `Object`
 
 GraphQL mutations for Gift Cards.
@@ -34,7 +33,6 @@ Props data to use when rendering a list of gift cards.
 [GiftCardTalonProps] : `Object`
 
 Props data to use when rendering a single gift card component.
-
 
 Handles the logic for a component that renders a list of gift cards.
 It performs effects and returns the prop data necessary for rendering

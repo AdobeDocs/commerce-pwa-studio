@@ -1,6 +1,6 @@
 
 ## Functions
- 
+
 [usePriceSummary(props)] ⇒ `[PriceSummaryTalonProps]`
 
 This talon contains logic for a price summary component.
@@ -10,9 +10,8 @@ This talon performs the following effects:
 
 - Log a GraphQL error if it occurs when getting the price summary
 
-
 ## Typedefs
- 
+
 [FlattenedData] : `Object`
 
 Query data flattened into a simple object.
@@ -24,7 +23,6 @@ GraphQL queries for price summary component.
 [PriceSummaryTalonProps] : `Object`
 
 Props used for rendering a price summary component.
-
 
 This talon contains logic for a price summary component.
 It performs effects and returns prop data for rendering the component.

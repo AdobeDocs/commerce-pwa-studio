@@ -29,4 +29,3 @@ To update this section, update the doc blocks in the source code
 --\>
 
 <Fragment src='../../../data/auto-generated/pwa-buildpack/lib/build-bus/declare-base.md'/>
-

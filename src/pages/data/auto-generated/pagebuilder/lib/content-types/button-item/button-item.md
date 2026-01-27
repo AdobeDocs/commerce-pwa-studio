@@ -1,10 +1,9 @@
 
 ## Typedefs
- 
+
 [props]
 
 Props for [ButtonItem](#ButtonItem)
-
 
 Page Builder ButtonItem component.
 

@@ -1,10 +1,9 @@
 
 ## Typedefs
- 
+
 [props]
 
 Props for [ToastContainer](#ToastContainer)
-
 
 A container for toast notifications.
 

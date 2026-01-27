@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [Row](#Row)
-
 
 Page Builder Row component.
 

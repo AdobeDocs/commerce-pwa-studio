@@ -10,6 +10,7 @@ keywords:
 <Edition slot="text" backgroundColor="blue"/>
 
 PaaS only
+
 # Page Builder
 
 At the highest level, the Page Builder integration into PWA Studio simply ensures that CMS Pages built in the backend with _native_ Page Builder content types are rendered correctly within PWA Studio apps.

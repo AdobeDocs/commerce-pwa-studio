@@ -12,7 +12,6 @@ To update this section, update the doc blocks in the source code
 
 <Fragment src='../../../../../data/auto-generated/peregrine/lib/talons/cart-page/gift-cards/use-gift-cards.md'/>
 
-
 ## Examples
 
 ### useGiftCards()

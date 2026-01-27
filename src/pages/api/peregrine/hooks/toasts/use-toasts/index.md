@@ -12,7 +12,6 @@ To update this section, update the doc blocks in the source code
 
 <Fragment src='../../../../../data/auto-generated/peregrine/lib/Toasts/use-toasts.md'/>
 
-
 ## Examples
 
 ### Adding a toast

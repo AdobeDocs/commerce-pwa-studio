@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [TabItem](#TabItem)
-
 
 Page Builder TabItem component.
 

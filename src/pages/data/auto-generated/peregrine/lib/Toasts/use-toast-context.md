@@ -1,6 +1,6 @@
 
 ## Typedefs
- 
+
 [ToastState] : `Object`
 
 The current state of the toast store.
@@ -15,7 +15,6 @@ functionality consumers.
 
 A hook that provides access to the toast state and dispatch.
 Any component using this hook _must_ be a child of a [ToastContextProvider](#ToastContextProvider).
-
 
 The current state of the toast store.
 

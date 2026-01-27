@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [Text](#Text)
-
 
 Page Builder Text component.
 

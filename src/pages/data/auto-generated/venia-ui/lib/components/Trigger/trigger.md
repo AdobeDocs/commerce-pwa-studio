@@ -1,10 +1,9 @@
 
 ## Typedefs
- 
+
 [props]
 
 Props for [Trigger](#Trigger)
-
 
 A component that will trigger a given action.
 

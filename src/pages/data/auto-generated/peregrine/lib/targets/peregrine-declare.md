@@ -1,5 +1,5 @@
 ## Members
- 
+
 [hooks](#hooks) : `tapable.AsyncSeriesHook`
 
 Provides access to Peregrine React hooks.

@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [Heading](#Heading)
-
 
 Page Builder Heading component.
 

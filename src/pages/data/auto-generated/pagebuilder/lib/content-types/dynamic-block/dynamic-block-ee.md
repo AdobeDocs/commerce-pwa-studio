@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [DynamicBlock](#DynamicBlock)
-
 
 Page Builder Dynamic Block component.
 

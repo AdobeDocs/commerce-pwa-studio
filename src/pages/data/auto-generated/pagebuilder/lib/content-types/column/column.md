@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [Column](#Column)
-
 
 Page Builder Column component.
 

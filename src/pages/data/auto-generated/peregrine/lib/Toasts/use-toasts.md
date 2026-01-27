@@ -1,6 +1,6 @@
 
 ## Functions
- 
+
 [getToastId(properties)]
 
 Generates an identifier for a toast by inspecting the properties that
@@ -10,9 +10,8 @@ differentiate toasts from one another.
 
 A hook that provides access to the toast state and toast api.
 
-
 ## Typedefs
- 
+
 [ToastProps]
 
 Object containing data for creating toasts using [addToast](#API.addToast).
@@ -21,7 +20,6 @@ Object containing data for creating toasts using [addToast](#API.addToast).
 
 The API for managing toasts.
 Use this API to add and remove toasts.
-
 
 Generates an identifier for a toast by inspecting the properties that
 differentiate toasts from one another.

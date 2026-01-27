@@ -1,16 +1,14 @@
 ## Functions
- 
+
 [useDropdown()] ⇒ `[Dropdown]`
 
 A React Hook for adding dropdown-related logic.
 
-
 ## Typedefs
- 
+
 [Dropdown] : `Object`
 
 The object returned contains the pieces needed to add the dropdown logic to your components
-
 
 A React Hook for adding dropdown-related logic.
 

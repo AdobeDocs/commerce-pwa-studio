@@ -1,9 +1,8 @@
 ## Typedefs
- 
+
 [props]
 
 Props for [ColumnGroup](#ColumnGroup)
-
 
 Page Builder ColumnGroup component.
 

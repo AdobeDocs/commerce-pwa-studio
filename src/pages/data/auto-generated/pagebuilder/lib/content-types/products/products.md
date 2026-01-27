@@ -1,16 +1,14 @@
 ## Functions
- 
+
 [restoreSortOrder(urlKeys, products)] ⇒ `Array`
 
 Sort products based on the original order
 
-
 ## Typedefs
- 
+
 [props]
 
 Props for [Products](#Products)
-
 
 Page Builder Products component.
 

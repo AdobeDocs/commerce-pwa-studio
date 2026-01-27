@@ -1,5 +1,5 @@
 ## Classes
- 
+
 [TargetableSet](#TargetableSet)
 
 A factory and manager for Targetable instances.

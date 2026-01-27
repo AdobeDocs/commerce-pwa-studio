@@ -1,5 +1,5 @@
 ## Functions
- 
+
 [getBackgroundImages(node)] ⇒ `Object`
 
 Retrieve background images from a master format node
@@ -51,7 +51,6 @@ Converts a CSS string style into a JSX object inline style
 [getMediaQueries(node, mediaQueries)] ⇒ `Object`
 
 Retrieve media queries from a master format node
-
 
 Retrieve background images from a master format node
 

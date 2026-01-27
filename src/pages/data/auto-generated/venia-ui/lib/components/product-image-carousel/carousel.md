@@ -1,10 +1,9 @@
 
 ## Typedefs
- 
+
 [props]
 
 Props for [ProductImageCarousel](#ProductImageCarousel)
-
 
 Carousel component for product images
 Carousel - Component that holds number of images
