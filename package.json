@@ -8,10 +8,10 @@
   },
   "author": "PWA Studio Team",
   "scripts": {
-    "buildNavigation": "npx --yes github:AdobeDocs/adp-devsite-utils#devsite-1982-buildNav buildNavigation -v",
+    "dev": "node ./dev.mjs",
+    "buildNavigation": "npx --yes github:AdobeDocs/adp-devsite-utils buildNavigation -v",
     "buildRedirections": "npx --yes github:AdobeDocs/adp-devsite-utils buildRedirections -v",
     "buildSiteWideBanner": "npx --yes github:AdobeDocs/adp-devsite-utils buildSiteWideBanner -v",
-    "dev": "node ./dev.mjs",
     "link:deadlinkonly": "npx --yes github:AdobeDocs/adp-devsite-utils runLint --dead-links-only -v",
     "link:skipdeadlinks": "npx --yes github:AdobeDocs/adp-devsite-utils runLint --skip-dead-links -v",
     "lint": "npx --yes github:AdobeDocs/adp-devsite-utils runLint -v",
