@@ -29,7 +29,7 @@ At this point, the merchant can create and manage recommendation units from the 
 
 Before proceeding, complete all Product Recommendations prerequisites for Adobe Commerce. Follow the steps outlined in the official [installation documentation](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/getting-started/install-configure).
 
-## Install the  Product Recommendations Backend module
+## Install the Product Recommendations Backend module
 
 Next, install an additional backend dependency.
 Run the following commands to install the backend dependency:
