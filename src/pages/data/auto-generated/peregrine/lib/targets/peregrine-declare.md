@@ -31,7 +31,7 @@ a talon.
 Intercept function signature for the `talons` and `hooks` targets.
 
 Interceptors of `hooks` should call `wrapWith` on the individual hooks in
-the provided [`HookInterceptorSet` object](https://developer.adobe.com/commerce/pwa-studio/tutorials/targets/modify-talon-results/).
+the provided [`HookInterceptorSet` object](/tutorials/targets/modify-talon-results/).
 
 Provides access to Peregrine React hooks.
 
@@ -89,7 +89,7 @@ talonsTarget.tap(talons => {
 Intercept function signature for the `talons` and `hooks` targets.
 
 Interceptors of `hooks` should call `wrapWith` on the individual hooks in
-the provided [`HookInterceptorSet` object](https://developer.adobe.com/commerce/pwa-studio/tutorials/targets/modify-talon-results/).
+the provided [`HookInterceptorSet` object](/tutorials/targets/modify-talon-results/).
 
 **Parameters**
 

@@ -9,10 +9,10 @@
 Defines the global settings of the project as a list of typed environment variables.
 Includes a set of changes made to the environment variables in recent versions, to aid with migration and upgrades.
 
-`EnvVarDefinitions` are used by [`loadEnvironment()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/load-environment-file/)
+`EnvVarDefinitions` are used by [`loadEnvironment()`](/api/buildpack/cli/load-environment-file/)
 to validate the currently defined values in the environment.
 
-`EnvVarDefinitions` are also used by [`createDotEnvFile()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/create-environment-file/)
+`EnvVarDefinitions` are also used by [`createDotEnvFile()`](/api/buildpack/cli/create-environment-file/)
 to generate an extensively commented `.env` file for a project.
 
 [EnvVarDefsSection](#EnvVarDefsSection) : `Object`
@@ -30,8 +30,8 @@ Must define a name, type and description. Optionally, may define a `default` whi
 and/or an array of `choices` to limit the valid values.
 
 The recommended way to access the current environment values in build scripts and interceptors is through the
-[Configuration object](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/configuration/#configuration-object)
-object returned by [`loadEnvironment()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/load-environment-file/).
+[Configuration object](/guides/general-concepts/configuration/#configuration-object)
+object returned by [`loadEnvironment()`](/api/buildpack/cli/load-environment-file/).
 
 **Note:** Any build environment will have hundreds of environment variables _set_, most of which are unrelated to the build process.
 Any environment variable during the build is accessible via `process.env` in NodeJS.
@@ -47,10 +47,10 @@ They may also be used to make `loadEnvironment()` support the legacy name of a r
 Defines the global settings of the project as a list of typed environment variables.
 Includes a set of changes made to the environment variables in recent versions, to aid with migration and upgrades.
 
-`EnvVarDefinitions` are used by [`loadEnvironment()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/load-environment-file/)
+`EnvVarDefinitions` are used by [`loadEnvironment()`](/api/buildpack/cli/load-environment-file/)
 to validate the currently defined values in the environment.
 
-`EnvVarDefinitions` are also used by [`createDotEnvFile()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/create-environment-file/)
+`EnvVarDefinitions` are also used by [`createDotEnvFile()`](/api/buildpack/cli/create-environment-file/)
 to generate an extensively commented `.env` file for a project.
 
 **Properties**
@@ -78,8 +78,8 @@ Must define a name, type and description. Optionally, may define a `default` whi
 and/or an array of `choices` to limit the valid values.
 
 The recommended way to access the current environment values in build scripts and interceptors is through the
-[Configuration object](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/configuration/#configuration-object)
-object returned by [`loadEnvironment()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/load-environment-file/).
+[Configuration object](/guides/general-concepts/configuration/#configuration-object)
+object returned by [`loadEnvironment()`](/api/buildpack/cli/load-environment-file/).
 
 **Note:** Any build environment will have hundreds of environment variables _set_, most of which are unrelated to the build process.
 Any environment variable during the build is accessible via `process.env` in NodeJS.

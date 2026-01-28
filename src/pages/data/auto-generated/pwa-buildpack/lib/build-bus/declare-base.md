@@ -79,14 +79,14 @@ configuration with the project-wide environment variable system.
 
 **See**
 
-* [Variable definition schema](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/)
-* [Core variable definitions](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/variables/)
+* [Variable definition schema](/api/buildpack/environment/definition-object/)
+* [Core variable definitions](/api/buildpack/environment/variables/)
 
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| envVarDefinitions | `object` | The [variable definitions object](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/). Modify in place. |
+| envVarDefinitions | `object` | The [variable definitions object](/api/buildpack/environment/definition-object/). Modify in place. |
 
 **Example** *(Add config fields for your extension)*
 
@@ -159,7 +159,7 @@ Likewise, if your extension uses CSS Modules, you must add the `cssModules` flag
 Use a [specialFeatures intercept function](#specialFeaturesIntercept)
 to add special build features for the modules used in your project.
 
-**See**: [Special flags in `configureWebpack()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/webpack/configure/#special-flags)  
+**See**: [Special flags in `configureWebpack()`](/api/buildpack/webpack/configure/#special-flags)  
 **Example** *(Declare that your extension contains CSS modules.)*
 
 ```js
@@ -239,12 +239,12 @@ Any returned value will be ignored.
 
 Callback to add a transform.
 
-**See**: [TransformRequest](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/transform-requests/)  
+**See**: [TransformRequest](/api/buildpack/transform-requests/)  
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/transform-requests/) to apply a transform to a file provided by this dependency. |
+| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](/api/buildpack/transform-requests/) to apply a transform to a file provided by this dependency. |
 
 Intercept function signature for the webpackCompiler target.
 

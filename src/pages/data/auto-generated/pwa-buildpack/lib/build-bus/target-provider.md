@@ -42,7 +42,7 @@ Creates an instance of TargetProvider.
 | bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
 | dep | `Object` | The package which owns this TargetProvider. |
 | dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders) |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](/guides/general-concepts/extensibility/#targetproviders) |
 
 The targets this package has declared in the `declare` phase.
 
@@ -72,7 +72,7 @@ objects.
 | --- | --- | --- |
 | depName | `string` | The package whose targets you want to retrieve. |
 
-Respond to a request from a [TargetProvider](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders)
+Respond to a request from a [TargetProvider](/guides/general-concepts/extensibility/#targetproviders)
 to retrieve a different(external) TargetProvider.
 
 This callback pattern helps to loosely couple TargetProviders so
