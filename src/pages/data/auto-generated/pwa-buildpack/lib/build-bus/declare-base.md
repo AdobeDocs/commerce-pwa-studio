@@ -71,7 +71,7 @@ validation process and the build process will be stopeed.
 
 Called to collect the definitions and documentation for project-wide
 configuration values. Core environment variables are defined in the
-[`envVarDefinitions.json` file](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/envVarDefinitions.json).
+[`envVarDefinitions.json` file](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/envVarDefinitions.json).
 
 Intercept this target in your project to add new environment
 variables, typed and documented. This integrates your extension
@@ -311,4 +311,4 @@ validation process and the build process will be stopeed.
 | config.onFail | `function` | On fail callback |
 | config.debug | `function` | Debug function to be used for additional reporting in debug mode |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/declare-base.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/declare-base.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/declare-base.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/BuildBus/declare-base.js)

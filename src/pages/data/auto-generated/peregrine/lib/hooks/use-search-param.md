@@ -1,5 +1,5 @@
 
-A [React Hook](https://reactjs.org/docs/hooks-intro.html) that gets
+A [React Hook](https://legacy.reactjs.org/docs/hooks-intro.html) that gets
 a search parameter from a URL and calls a provided setter function with
 the corresponding value.
 
@@ -11,4 +11,4 @@ the corresponding value.
 | props.parameter | `String` | The parameter to search for |
 | props.setValue | `function` | A setter function that is passed the parameter value found in the URL |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useSearchParam.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useSearchParam.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useSearchParam.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/hooks/useSearchParam.js)

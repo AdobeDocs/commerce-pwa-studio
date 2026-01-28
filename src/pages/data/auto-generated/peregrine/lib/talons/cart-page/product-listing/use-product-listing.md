@@ -164,7 +164,7 @@ import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductLi
 GraphQL queries for getting product listing data.
 This is a type used in the [useProductListing](#useProductListing) talon.
 
-**See**: [productListingFragments.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js)
+**See**: [productListingFragments.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js)
 for the queries used in Venia  
 **Properties**
 
@@ -188,7 +188,7 @@ It provides props data for a component that renders a product list.
 GraphQL mutations for a product in a cart.
 This is a type used by the [useProduct](#useProduct) talon.
 
-**See**: [product.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/ProductListing/product.js)
+**See**: [product.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/ProductListing/product.js)
 to see the mutations used in Venia  
 **Properties**
 
@@ -249,7 +249,7 @@ It provides props data for rendering an edit modal component.
 | Name | Type | Description |
 | --- | --- | --- |
 | setVariantPrice | `function` | Function for setting a product's variant price. |
-| variantPrice | `Object` | The variant price for a product. See [Money object](https://devdocs.magento.com/guides/v2.4/graphql/product/product-interface.html#Money). |
+| variantPrice | `Object` | The variant price for a product. See [Money object](https://developer.adobe.com/commerce/webapi/graphql/). |
 
 Object type returned by the [useProductForm](useProductForm) talon.
 It provides props data for a product form UI component inside a modal.
@@ -268,4 +268,4 @@ It provides props data for a product form UI component inside a modal.
 | handleClose | `function` | A callback function for handling form closing |
 | configurableThumbnailSource | `String` | A string indicating which thumbnail should be used for configurable products |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/ProductListing/useProductListing.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/ProductListing/useProductListing.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/ProductListing/useProductListing.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/talons/CartPage/ProductListing/useProductListing.js)

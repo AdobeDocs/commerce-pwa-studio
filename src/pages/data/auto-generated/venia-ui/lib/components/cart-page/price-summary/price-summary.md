@@ -9,7 +9,7 @@ gift cards applied, tax, shipping, and cart total.
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.classes | `Object` | CSS className overrides. See [priceSummary.module.css](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.module.css) for a list of classes you can override. |
+| props.classes | `Object` | CSS className overrides. See [priceSummary.module.css](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.module.css) for a list of classes you can override. |
 
 **Example** *(Importing into your project)*
 
@@ -17,4 +17,4 @@ gift cards applied, tax, shipping, and cart total.
 import PriceSummary from "@magento/venia-ui/lib/components/CartPage/PriceSummary";
 ```
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.js)

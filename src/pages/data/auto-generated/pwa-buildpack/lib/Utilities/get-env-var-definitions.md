@@ -113,4 +113,4 @@ They may also be used to make `loadEnvironment()` support the legacy name of a r
 | [update] | `String` | New name of the variable. Required when the change is a rename. |
 | [supportLegacy] | `boolean` | If the change is a rename, set this to `true` to support the old name (while logging a warning). If the old name is set and the new name is not, `loadEnvironment` will set the new variable name to the value of the old one. |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js)

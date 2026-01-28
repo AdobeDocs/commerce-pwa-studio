@@ -40,7 +40,7 @@ The first step in modifying anything in the Venia storefront is to identify the 
 [React DevTools][] is a browser plugin for React developers.
 It gives you the ability to navigate and inspect component nodes in the React DOM tree.
 
-[react devtools]: https://reactjs.org/blog/2019/08/15/new-react-devtools.html
+[react devtools]: https://legacy.reactjs.org/blog/2019/08/15/new-react-devtools.html
 
 After you install React DevTools in your browser, open your storefront and your browser's web developer tools.
 
@@ -72,9 +72,9 @@ For this tutorial, the render chain for the Footer component in the Venia storef
 You can verify this by looking at the source for the [Adapter][], [Main][] and [App][] components.
 Main imports and renders the Footer component, and App imports and renders the Main component.
 
-[Main]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Main/main.js
-[App]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/app.js
-[Adapter]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Adapter/adapter.js
+[Main]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Main/main.js
+[App]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/App/app.js
+[Adapter]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Adapter/adapter.js
 
 ### Root components
 
@@ -129,7 +129,7 @@ cp node_modules/@magento/venia-ui/lib/components/App/app.js src/components/App
 If you look at the [`index.js`][] file for Venia's App component, its default export is not `app.js`.
 The default export for this component is `container.js`, which is a container for the `app.js` module, so copy the `container.js` file into your project.
 
-[`index.js`]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/index.js
+[`index.js`]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/App/index.js
 
 ```sh
 cp node_modules/@magento/venia-ui/lib/components/App/container.js src/components/App

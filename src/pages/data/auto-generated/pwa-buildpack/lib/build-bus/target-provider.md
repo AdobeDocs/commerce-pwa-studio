@@ -89,4 +89,4 @@ they are more testable.
 | requestor | `TargetProvider` | TargetProvider making the request. |
 | requested | `string` | External targets being requested. |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/TargetProvider.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/TargetProvider.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/TargetProvider.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/BuildBus/TargetProvider.js)

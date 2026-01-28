@@ -34,4 +34,4 @@ Props for [Button](#Button)
 | negative | `bool` | whether the button should be displayed in red for a negative action |
 | disabled | `bool` | is the button disabled |
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Button/button.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Button/button.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Button/button.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Button/button.js)

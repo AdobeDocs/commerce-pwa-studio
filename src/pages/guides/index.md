@@ -27,7 +27,7 @@ The following features define a basic PWA website:
 
 The [RAIL][] model lays out the user-centric goals for PWA websites:
 
-[rail]: https://web.dev/rail/
+[rail]: https://web.dev/articles/rail
 
 - **Response** – An application is receptive to the user's request.
 - **Animation** – It provides smooth transitions to maintain user engagement.
@@ -40,8 +40,8 @@ Learn more about Progressive Web Apps:
 - [developer.mozilla.org][]
 - [developers.google.com][]
 
-[web.dev]: https://web.dev/progressive-web-apps/
-[developers.google.com]: https://developers.google.com/web/updates/2015/12/getting-started-pwa
+[web.dev]: https://web.dev/explore/progressive-web-apps
+[developers.google.com]: https://web.dev/explore/progressive-web-apps
 [developer.mozilla.org]: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps
 
 ## What is the PWA Studio project

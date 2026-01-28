@@ -54,4 +54,4 @@ Props for [Column](#Column)
 | verticalAlignment | `String` | Vertical alignment of the contents within the parent container |
 | width | `String` | CSS width property |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Column/column.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Column/column.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Column/column.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/Column/column.js)

@@ -20,7 +20,7 @@ Code examples for the `TargetableESModuleArray` class.
 
 This example uses the `TargetableESModuleArray` class to add `PageBuilder` and `PlainHtmlRenderer` to the array exported by the [`richContentRenderers.js` file][].
 
-[`richcontentrenderers.js` file]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/RichContent/richContentRenderers.js
+[`richcontentrenderers.js` file]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/RichContent/richContentRenderers.js
 
 ```js
 // Create a TargetableESModuleArray linked to the richContentRenderers.js file

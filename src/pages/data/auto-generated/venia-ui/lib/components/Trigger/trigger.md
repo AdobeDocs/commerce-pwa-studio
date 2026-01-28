@@ -28,4 +28,4 @@ Props for [Trigger](#Trigger)
 | classes | `Object` | An object containing the class names for the Trigger component. |
 | classes.root | `string` | classes for root container |
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Trigger/trigger.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Trigger/trigger.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Trigger/trigger.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Trigger/trigger.js)

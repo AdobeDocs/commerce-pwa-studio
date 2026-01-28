@@ -193,7 +193,7 @@ import { useShippingRadios } from '@magento/peregrine/lib/talons/CartPage/PriceA
 GraphQL mutations for a cart's coupon code.
 This is a type used by the [useCouponCode](#useCouponCode) talon.
 
-**See**: [CouponCode.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode/couponCode.js)
+**See**: [CouponCode.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode/couponCode.js)
 for the queries used Venia  
 **Properties**
 
@@ -205,7 +205,7 @@ for the queries used Venia
 GraphQL queries for a cart's coupon code.
 This is a type used by the [useCouponCode](#useCouponCode) talon.
 
-**See**: [CouponCode.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode/couponCode.js)
+**See**: [CouponCode.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode/couponCode.js)
 for the queries used Venia  
 **Properties**
 
@@ -244,7 +244,7 @@ This is a prop used by the [useShippingForm](#useShippingForm) talon.
 GraphQL mutations for the shipping form.
 This is a type used by the [useShippingForm](#useShippingForm) talon.
 
-**See**: [shippingForm.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingForm.js)
+**See**: [shippingForm.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingForm.js)
 for the query used in Venia  
 **Properties**
 
@@ -255,7 +255,7 @@ for the query used in Venia
 GraphQL queries for the shipping form.
 This is a type used by the [useShippingForm](#useShippingForm) talon.
 
-**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
+**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
 for the query used in Venia  
 **Properties**
 
@@ -279,7 +279,7 @@ It provides props data to use when rendering a shipping form component.
 GraphQL queries for shipping methods.
 This is a type used in the [useShippingMethods](#useShippingMethods) talon.
 
-**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
+**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
 for the queries used in Venia  
 **Properties**
 
@@ -321,4 +321,4 @@ It provides data to use when rendering a radio selector for shipping methods.
 | formattedShippingMethods | `Object` | Shipping method data that has been formatted. |
 | handleShippingSelection | `function` | Callback function for handling shipping selection form updates. |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode.js)

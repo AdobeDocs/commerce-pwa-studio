@@ -97,4 +97,4 @@ the provided [`HookInterceptorSet` object](https://developer.adobe.com/commerce/
 | --- | --- | --- |
 | hookInterceptors | `HookInterceptorSet` | Registry of wrappable hook namespaces |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/targets/peregrine-declare.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/targets/peregrine-declare.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/targets/peregrine-declare.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/targets/peregrine-declare.js)

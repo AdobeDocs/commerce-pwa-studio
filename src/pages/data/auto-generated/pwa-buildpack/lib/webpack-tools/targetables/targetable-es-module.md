@@ -47,4 +47,4 @@ Pass exports of this module through a wrapper module.
 | [exportName] | `string` | Name of export to wrap. If not provided, will wrap the default export. |
 | wrapperModule | `string` | Package-absolute import path to the wrapper module. |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js)

@@ -39,4 +39,4 @@ Props for [ProductImageCarousel](#ProductImageCarousel)
 | images[].label | `string` | label for image |
 | images[].position | `string` | Position of image in Carousel |
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js)

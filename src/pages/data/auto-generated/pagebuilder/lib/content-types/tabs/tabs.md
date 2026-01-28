@@ -75,4 +75,4 @@ Props for [Tabs](#Tabs)
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js)

@@ -26,7 +26,7 @@ Instead, PWA Studio provides its own i18n feature that follows a similar design 
 PWA Studio provides a context provider for translations called the [LocaleProvider][].
 This context provider contains translation data from dictionary files and supplies them to its child components.
 
-[localeprovider]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/localeProvider.js
+[localeprovider]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/App/localeProvider.js
 
 The i18n feature in PWA Studio is an implementation of the [react-intl][] library.
 The `LocaleProvider` component in PWA Studio wraps around the library's [IntlProvider][] and provides it with translation data.

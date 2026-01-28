@@ -22,7 +22,7 @@ The `TargetableReactComponent` class provides functions that change the JSX stru
 The following example uses some of these functions to make changes to Venia's Main component.
 It uses JSX strings found in the [`main.js`][] file to specify where these changes should happen.
 
-[`main.js`]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Main/main.js
+[`main.js`]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Main/main.js
 
 ```js
 const { Targetables } = require("@magento/pwa-buildpack");

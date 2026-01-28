@@ -23,7 +23,7 @@ This command generates a `.env` file in the specified directory.
 The `.env` file follows the `dotenv` file format and includes documentation comments for the environment variable declarations.
 The `create-env-file` command uses the [`envVarDefinitions.json`][] file in the PWA Studio source code to create this file.
 
-[`envvardefinitions.json`]: https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/envVarDefinitions.json
+[`envvardefinitions.json`]: https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/envVarDefinitions.json
 
 ## Command flags
 

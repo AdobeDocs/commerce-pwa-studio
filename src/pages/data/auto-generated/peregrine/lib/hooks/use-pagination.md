@@ -3,7 +3,7 @@
 
 [usePagination(config)] ⇒ `Array.&lt;Object>`
 
-A [React Hook](https://reactjs.org/docs/hooks-intro.html) that provides
+A [React Hook](https://legacy.reactjs.org/docs/hooks-intro.html) that provides
 pagination logic.
 
 Use this hook to implement components that need to navigate through paged
@@ -40,7 +40,7 @@ Set the total number of pages
 | --- | --- | --- |
 | total | `Number` | The number to set the amount of pages available |
 
-A [React Hook](https://reactjs.org/docs/hooks-intro.html) that provides
+A [React Hook](https://legacy.reactjs.org/docs/hooks-intro.html) that provides
 pagination logic.
 
 Use this hook to implement components that need to navigate through paged
@@ -60,4 +60,4 @@ data.
 | config.initialPage | `Number` | ``                 | The initial current page value |
 | config.initialTotalPages | `Number` | `1`                | The total pages expected to be usable by this hook |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/usePagination.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/usePagination.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/usePagination.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/hooks/usePagination.js)

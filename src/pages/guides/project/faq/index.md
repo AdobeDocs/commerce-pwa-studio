@@ -95,8 +95,8 @@ To let the storefront query a specific store view in the Adobe Commerce or Magen
 
   - Add `headers:{ Store: YOUR_STORE_CODE }`
 
-[packages/peregrine/lib/router/resolveunknownroute.js]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Router/resolveUnknownRoute.js#L97
-[packages/venia-ui/lib/drivers/adapter.js]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/drivers/adapter.js#L120
+[packages/peregrine/lib/router/resolveunknownroute.js]: https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/Router/resolveUnknownRoute.js#L97
+[packages/venia-ui/lib/drivers/adapter.js]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/drivers/adapter.js#L120
 
 ## Image component loads wrongly sized images from the srcSet
 
@@ -111,8 +111,8 @@ When you use the `<Image/>` component from `venia-ui`, change the following valu
 
   - Supply the `<Image />` component with a `widths` prop as shown in the GalleryItem component defined in the linked file.
 
-[packages/venia-ui/lib/util/images.js]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/util/images.js#L6
-[packages/venia-ui/lib/components/gallery/item.js]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Gallery/item.js#L18
+[packages/venia-ui/lib/util/images.js]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/util/images.js#L6
+[packages/venia-ui/lib/components/gallery/item.js]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Gallery/item.js#L18
 
 <InlineAlert variant="info" slots="text"/>
 

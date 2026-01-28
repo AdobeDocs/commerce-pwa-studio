@@ -10,7 +10,7 @@ Gift Cards in the shopping cart.
 | --- | --- | --- |
 | props | `Object` | Component props |
 | props.setIsCartUpdating | `function` | Callback function to call when adding or removing a gift card |
-| props.classes | `Object` | CSS className overrides. See [giftCards.module.css](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/GiftCards/giftCards.module.css) for a list of classes you can override. |
+| props.classes | `Object` | CSS className overrides. See [giftCards.module.css](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/GiftCards/giftCards.module.css) for a list of classes you can override. |
 
 **Example** *(Importing into your project)*
 
@@ -18,4 +18,4 @@ Gift Cards in the shopping cart.
 import GiftCards from '@magento/venia-ui/lib/components/CartPage/GiftCards';
 ```
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/CartPage/GiftCards/giftCards.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/GiftCards/giftCards.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/CartPage/GiftCards/giftCards.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/GiftCards/giftCards.js)

@@ -17,7 +17,7 @@ You will create a PWA Studio storefront project based on the [Venia concept stor
 To see a demo of the Venia concept storefront, visit [venia.magento.com][].
 
 [venia concept storefront]: /guides/packages/venia/
-[venia.magento.com]: http://venia.magento.com/
+[venia.magento.com]: https://venia.magento.com/
 
 ## Run the scaffolding tool
 

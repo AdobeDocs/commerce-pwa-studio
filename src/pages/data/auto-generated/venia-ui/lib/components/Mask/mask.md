@@ -14,4 +14,4 @@ A component that masks content.
 | props.dismiss | `callback` | Handler for the onClick() event |
 | props.isActive | `callback` | True if the mask is in an active state. False otherwise. |
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Mask/mask.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Mask/mask.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Mask/mask.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Mask/mask.js)

@@ -49,4 +49,4 @@ Props for [Video](#Video)
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Video/video.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Video/video.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Video/video.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/Video/video.js)

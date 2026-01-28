@@ -43,7 +43,7 @@ Examples of service workers features include push notifications, background sync
 The service worker also gives you the ability to intercept and handle network requests.
 This gives you better control over your site's client-side caching logic.
 
-[service worker features]: https://developers.google.com/web/fundamentals/primers/service-workers
+[service worker features]: https://web.dev/articles/service-workers
 
 ### `drivers.js`
 
@@ -110,7 +110,7 @@ You can edit this file if you want to change how your project's UPWARD server re
 but the preferred method is to use Targetables to make these changes.
 
 [upward]: /guides/packages/upward/
-[venia-ui package's `upward.yml` file]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/upward.yml
+[venia-ui package's `upward.yml` file]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/upward.yml
 
 ### `template.html`
 

@@ -3,7 +3,7 @@ Builds a simple ES module that imports a list of other modules you provide,
 and then re-exports those modules in order as an array.
 Useful for building extensible navigation lists, routes, strategies, etc.
 
-This class uses [export-esm-collection-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/export-esm-collection-loader.js) to build the source code.
+This class uses [export-esm-collection-loader](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/export-esm-collection-loader.js) to build the source code.
 
 * [TargetableESModuleArray](#TargetableESModuleArray)
     * [.addImport(importString)](#TargetableESModuleArray+addImport) ⇒ `undefined`
@@ -51,4 +51,4 @@ Add a module or modules to the _beginning_ of the array.
 | --- | --- | --- |
 | ...importString | `string` | Static import declaration(s) |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModuleArray.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModuleArray.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModuleArray.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModuleArray.js)

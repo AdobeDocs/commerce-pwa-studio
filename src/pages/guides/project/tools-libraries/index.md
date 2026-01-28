@@ -103,20 +103,20 @@ It is useful for boosting performance by controlling cache behavior and enables 
 
 ## PWA Studio UI Kit for Adobe XD
 
-Adobe XD makes handoff between designers and engineers more efficient through easy-to-use collaboration tools. The [PWA Studio UI Kit](https://www.adobe.io/commerce-xd-kits/) contains a collection of templates and components compatible with Adobe Commerce.  
+Adobe XD makes handoff between designers and engineers more efficient through easy-to-use collaboration tools. The [PWA Studio UI Kit](https://www.adobe.io/commerce-xd-kits) contains a collection of templates and components compatible with Adobe Commerce.  
 
-[service workers]: https://developers.google.com/web/fundamentals/primers/service-workers/
+[service workers]: https://web.dev/articles/service-workers/
 [php]: https://www.php.net/
 [javascript]: https://developer.mozilla.org/en-US/docs/Learn/JavaScript
 [webpack]: https://webpack.js.org/
-[react]: https://reactjs.org/
+[react]: https://legacy.reactjs.org/
 [redux]: https://redux.js.org/
 [graphql]: https://graphql.org/
-[workbox]: https://developers.google.com/web/tools/workbox/
+[workbox]: https://developer.chrome.com/docs/workbox/
 [rest]: https://en.wikipedia.org/wiki/REST
 [apollo client]: https://www.apollographql.com/docs/react/why-apollo/
 [venia example storefront]: /guides/packages/venia/storefront/
 [peregrine]: /guides/packages/peregrine
-[react hooks]: https://reactjs.org/docs/hooks-intro.html
+[react hooks]: https://legacy.reactjs.org/docs/hooks-intro.html
 [node.js]: https://nodejs.org/en/about/
 [pwa-buildpack]: /guides/packages/buildpack/

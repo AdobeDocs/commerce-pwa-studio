@@ -106,4 +106,4 @@ rules](https://v4.webpack.js.org/configuration/module/#modulerules).
 | transformModule | `string` | Absolute path to the Node module that will actually be doing the transforming. This path may be resolved using different rules at different times, so it's best for this path to always be absolute. |
 | [options] | `object` | Config values to send to the transform function.   _Note: Options should be serializable to JSON as Webpack loader options   and/or Babel plugin options.._ |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/ModuleTransformConfig.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/ModuleTransformConfig.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/ModuleTransformConfig.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/ModuleTransformConfig.js)

@@ -480,4 +480,4 @@ const cmsShimmer = {
 }
 ```
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/targets/venia-ui-declare.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/targets/venia-ui-declare.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/targets/venia-ui-declare.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/targets/venia-ui-declare.js)

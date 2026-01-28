@@ -14,8 +14,8 @@ Before you start, please take a moment to read through the following guidelines:
 - [Code of Conduct][]
 - [Support][]
 
-[code of conduct]: https://github.com/magento/pwa-studio/blob/develop/.github/CODE_OF_CONDUCT.md
-[support]: https://github.com/magento/pwa-studio/blob/develop/.github/SUPPORT.md
+[code of conduct]: https://github.com/magento/pwa-studio/tree/develop/.github/CODE_OF_CONDUCT.md
+[support]: https://github.com/magento/pwa-studio/tree/develop/.github/SUPPORT.md
 
 ## Terms
 

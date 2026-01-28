@@ -44,7 +44,7 @@ Unlike an Adobe Commerce or Magento Open Source theme, a storefront application 
 Instead, the application is composed of [React][] modules that provide the different pieces of functionality.
 These pieces can be swapped out to change behavior or even removed entirely.
 
-[react]: https://reactjs.org/
+[react]: https://legacy.reactjs.org/
 
 For an example of a storefront application, read about the [Venia][] storefront, a reference implementation created using PWA Studio tools.
 
@@ -122,7 +122,7 @@ The following table is a summary of general skills needed for theme development:
 [jquery]: https://jquery.com/
 [knockoutjs]: https://knockoutjs.com/
 [css]: https://developer.adobe.com/commerce/frontend-core/guide/css/
-[less]: http://lesscss.org/
+[less]: https://lesscss.org/
 [theme layouts]: https://developer.adobe.com/commerce/frontend-core/guide/layouts/
 [theme templates]: https://developer.adobe.com/commerce/frontend-core/guide/templates/
 [theme ui library]: https://commerce-docs.github.io/magento2-ui-library/

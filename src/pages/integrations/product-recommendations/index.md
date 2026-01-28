@@ -16,10 +16,10 @@ You can integrate Product Recommendations powered by [Adobe Sensei](https://www.
 
 ![Product Recommendations for PWA Studio](images/pwa-arch-diag-sensei.svg)
 
-Adobe's [Product Recommendations powered by Adobe Sensei](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview) is a feature backed by several SaaS services.
+Adobe's [Product Recommendations powered by Adobe Sensei](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview) is a feature backed by several SaaS services.
 The **Store** side includes your PWA storefront, which contains the event collector and recommendations layout template, and the backend, which includes the GraphQL endpoints, SaaS Export module, and the Admin UI.
 
-After you install the Product Recommendations PWA extension on your store, it will start sending [behavioral data](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/events) to Adobe Sensei with no additional setup.
+After you install the Product Recommendations PWA extension on your store, it will start sending [behavioral data](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/events) to Adobe Sensei with no additional setup.
 Adobe Sensei processes this behavioral data along with the catalog data from the backend and calculates the product associations leveraged by the recommendations service.
 At this point, the merchant can create and manage recommendation units from the Adobe Commerce Admin UI then fetch those product recommendation units from their PWA storefront.
 
@@ -117,8 +117,8 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
 
 ## Create recommendation units
 
-Creating a product recommendation unit for your PWA storefront is the same as [creating one for a theme](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/admin/create).
-When you create a recommendation unit in the Admin UI panel, you will need to place components that render product recommendations on appropriate storefront pages. You will do this only once per [supported page type](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview#supportedrecs).
+Creating a product recommendation unit for your PWA storefront is the same as [creating one for a theme](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/admin/create).
+When you create a recommendation unit in the Admin UI panel, you will need to place components that render product recommendations on appropriate storefront pages. You will do this only once per [supported page type](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview#supportedrecs).
 
 ## Render recommendations
 

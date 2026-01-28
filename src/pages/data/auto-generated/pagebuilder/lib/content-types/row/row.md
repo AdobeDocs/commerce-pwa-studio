@@ -62,4 +62,4 @@ Props for [Row](#Row)
 | videoLazyLoading | `Boolean` | Load video when it is visible |
 | videoOverlayColor | `String` | Color for video overlay |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Row/row.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Row/row.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Row/row.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/Row/row.js)

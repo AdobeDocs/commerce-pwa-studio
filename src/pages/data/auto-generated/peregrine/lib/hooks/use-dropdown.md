@@ -22,9 +22,9 @@ The object returned contains the pieces needed to add the dropdown logic to your
 
 | Name | Type | Description |
 | --- | --- | --- |
-| elementRef | `Ref` | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements |
+| elementRef | `Ref` | A [ref](https://legacy.reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements |
 | expanded | `Boolean` | The value of the `expanded` state |
-| setExpanded | `function` | [State Hook](https://reactjs.org/docs/hooks-state.html) function for setting the expanded state |
-| triggerRef | `Ref` | A [ref](https://reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements |
+| setExpanded | `function` | [State Hook](https://legacy.reactjs.org/docs/hooks-state.html) function for setting the expanded state |
+| triggerRef | `Ref` | A [ref](https://legacy.reactjs.org/docs/refs-and-the-dom.html) object for attaching to React elements |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useDropdown.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useDropdown.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useDropdown.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/hooks/useDropdown.js)

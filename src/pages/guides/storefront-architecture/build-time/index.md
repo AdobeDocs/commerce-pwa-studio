@@ -68,7 +68,7 @@ PWA Studio projects use [NPM scripts][] to organize frequently used commands.
 These `yarn run` commands are found in the `scripts` section of the Venia storefront's [package.json][] file.
 
 [npm scripts]: https://docs.npmjs.com/misc/scripts
-[package.json]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/package.json
+[package.json]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-concept/package.json
 
 Use the `build` command to start the build process:
 

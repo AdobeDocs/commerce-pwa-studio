@@ -37,4 +37,4 @@ props for [List](#List)
 
 default props for [List](#List)
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/List/list.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/List/list.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/List/list.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/List/list.js)

@@ -76,4 +76,4 @@ This is a type used by the [useGiftOptions](#useGiftOptions) talon.
 | setGiftOptionsOnCartMutation | `GraphQLAST` | sets the gift options on cart. |
 | getGiftOptionsQuery | `GraphQLAST` | fetch the gift options. |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/talons/CartPage/PriceAdjustments/GiftOptions/useGiftOptions.js)

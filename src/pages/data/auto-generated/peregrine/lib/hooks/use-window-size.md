@@ -30,7 +30,7 @@ It is recommended to only create/use a single time at the top level of your app
 **Summary**: A React context provider.  
 **Returns:**
 `Context.Provider`
-   — A [React context provider](https://reactjs.org/docs/context.html)
+   — A [React context provider](https://legacy.reactjs.org/docs/context.html)
 
 **Parameters**
 
@@ -38,4 +38,4 @@ It is recommended to only create/use a single time at the top level of your app
 | --- | --- | --- |
 | props | `Object` | React component props |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useWindowSize.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useWindowSize.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useWindowSize.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/hooks/useWindowSize.js)

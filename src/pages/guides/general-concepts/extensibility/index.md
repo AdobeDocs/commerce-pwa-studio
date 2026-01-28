@@ -46,7 +46,7 @@ The framework uses the [BuildBus][] to gather instructions from each extension's
 These files determine which Targets the extension intercepts and extends during the build process.
 
 [targets]: #targets
-[buildbus]: https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/BuildBus.js
+[buildbus]: https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/BuildBus/BuildBus.js
 [intercept files]: #intercept-files
 
 ## Targets
@@ -84,7 +84,7 @@ Calling the `add()` function on this object lets you add a custom rendering stra
 The [Page Builder extension][] provides an example of how to intercept this Target.
 It taps the Target and provides an intercept function that adds a custom renderer for any detected Page Builder content.
 
-[page builder extension]: https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/intercept.js
+[page builder extension]: https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/intercept.js
 
 ```js
 targets

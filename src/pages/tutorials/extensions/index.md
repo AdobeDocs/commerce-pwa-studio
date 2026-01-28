@@ -33,12 +33,12 @@ PWA Studio extensions are [Node packages][], which means it requires a `package.
 The `package.json` file is the project manifest.
 It contains metadata about the project, such as the name, entry point, and dependencies.
 
-[node packages]: https://docs.npmjs.com/about-packages-and-modules
+[node packages]: https://docs.npmjs.com/about-packages-and-modules/
 
 You can manually create this file, but we recommend using the CLI command [`yarn init`][] or [`npm init`][] in your project directory.
 Running either command launches an interactive questionnaire to help you fill in your project metadata.
 
-[`yarn init`]: https://yarnpkg.com/lang/en/docs/cli/init/
+[`yarn init`]: https://classic.yarnpkg.com/en/docs/cli/init/
 [`npm init`]: https://docs.npmjs.com/cli-commands/init/
 
 ### Example manifest file
@@ -260,7 +260,7 @@ Buildpack provides an alternate way of installing a local extensions by linking 
 Use the [`yarn link`][] or [`npm link`][] command in your extension project to symlink it to the global package set.
 
 [`yarn link`]: https://classic.yarnpkg.com/en/docs/cli/link/
-[`npm link`]: https://docs.npmjs.com/cli/v6/commands/npm-link
+[`npm link`]: https://docs.npmjs.com/cli/v6/commands/npm-link/
 
 In your storefront project, run `yarn link <package-name>` or `npm link <package-name>` to link the two packages together.
 This lets Node and Webpack resolve your extension from the storefront project without adding it as an entry in the dependency array.

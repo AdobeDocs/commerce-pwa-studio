@@ -40,4 +40,4 @@ Props for a [ButtonGroup](#ButtonGroup) button component
 | children | `ReactNodeLike` | component to render for the ButtonGroups's button component |
 | key | `string` | the unique id for a button element |
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/ButtonGroup/buttonGroup.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/ButtonGroup/buttonGroup.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/ButtonGroup/buttonGroup.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/ButtonGroup/buttonGroup.js)

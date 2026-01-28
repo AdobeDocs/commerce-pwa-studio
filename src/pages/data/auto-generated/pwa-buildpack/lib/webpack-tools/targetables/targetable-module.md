@@ -82,7 +82,7 @@ Add text to the beginning of a file.
 | --- | --- | --- |
 | insert | `string` | Text to insert up top |
 
-Do any splice operation supported by [splice-source-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/splice-source-loader.js).
+Do any splice operation supported by [splice-source-loader](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/splice-source-loader.js).
 
 **Chainable**  
 **Returns:**
@@ -92,4 +92,4 @@ Do any splice operation supported by [splice-source-loader](https://github.com/m
 | --- | --- | --- |
 | instruction | `object` | Splice instruction. |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js)

@@ -70,7 +70,7 @@ Edit your project's `package.json` file and remove any packages you only use in 
 [Lighthouse][] is a web developer tool that audits your website.
 It checks the quality of your site by measuring performance, accessibility, SEO, and whether it qualifies as a progressive web application.
 
-[lighthouse]: https://developers.google.com/web/tools/lighthouse/
+[lighthouse]: https://developer.chrome.com/docs/lighthouse/overview/
 
 The tool scores your site on how well it performs and creates a report with suggestions on how to improve your Lighthouse scores.
 Use the report from Lighthouse to identify opportunities for improvement in your storefront to make sure you are launching an accessible and performant progressive web application.

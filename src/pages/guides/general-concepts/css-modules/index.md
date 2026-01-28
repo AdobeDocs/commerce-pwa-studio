@@ -36,7 +36,7 @@ CSS modules make it easy and fast to achieve tasks such as upgrading buttons, he
 
 For more information on reusable components and code sharing in front end development see: [Block Element Modifier (BEM)][]
 
-[block element modifier (bem)]: http://getbem.com/
+[block element modifier (bem)]: https://getbem.com/
 
 ## Webpack configuration
 

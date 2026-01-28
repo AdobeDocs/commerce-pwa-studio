@@ -126,4 +126,4 @@ Provides the JSON object representation of this target
 `object`
    — JSON object
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/Target.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/Target.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/Target.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/BuildBus/Target.js)

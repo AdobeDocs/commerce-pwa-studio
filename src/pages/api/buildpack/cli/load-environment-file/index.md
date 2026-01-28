@@ -10,7 +10,7 @@ This includes any deprecated or changed settings.
 When loading from `.env`, `buildpack` does not override previously declared variables.
 
 [`buildpack`]: /api/buildpack/cli/
-[`envvardefinitions.json`]: https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/envVarDefinitions.json
+[`envvardefinitions.json`]: https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/envVarDefinitions.json
 
 ## Command flags
 
@@ -82,7 +82,7 @@ This lets you pass smaller objects instead of a single, plain object full of glo
 : Returns a plain object with environment variables in the `sectionName` namespace.
 The property keys are [camelCased][] for convenience.
 
-[camelcased]: https://npmjs.com/package/camelspace
+[camelcased]: https://www.npmjs.com/package/camelspace
 
 `sections(...sectionNames)`
 : Returns a plain object with environment variables from the specified namespaces.

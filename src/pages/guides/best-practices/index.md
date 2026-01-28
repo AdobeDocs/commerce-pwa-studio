@@ -40,4 +40,4 @@ The PWA Studio [extensibility framework](https://developer.adobe.com/commerce/pw
 
 ## Performance
 
-Look into the [Apollo caching framework](https://www.apollographql.com/docs/react/caching/cache-configuration/) for improved performance.
+Look into the [Apollo caching framework](https://www.apollographql.com/docs/react/caching/cache-configuration) for improved performance.

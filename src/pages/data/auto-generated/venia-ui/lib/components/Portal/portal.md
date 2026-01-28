@@ -12,7 +12,7 @@ outside of the DOM hierarchy of the parent component.
 `React.ReactPortal`
    — The React portal.
 
-**See**: https://reactjs.org/docs/portals.html  
+**See**: https://legacy.reactjs.org/docs/portals.html  
 **Parameters**
 
 | Name | Type | Description |
@@ -29,4 +29,4 @@ Props for [Portal](#Portal)
 | children | `ReactNodeLike` | any elements that will be child elements inside the modal. |
 | container | `Object` | the container element (a DOM element) where the children will be rendered. |
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Portal/portal.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Portal/portal.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Portal/portal.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Portal/portal.js)

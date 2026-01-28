@@ -78,7 +78,7 @@ import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/us
 
 GraphQL mutations for Gift Cards.
 
-**See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/giftCardQueries.gql.ee.js)
+**See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/talons/CartPage/GiftCards/giftCardQueries.gql.ee.js)
 for queries used in Venia  
 **Properties**
 
@@ -89,7 +89,7 @@ for queries used in Venia
 
 GraphQL queries for Gift Cards.
 
-**See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/giftCardQueries.gql.ee.js)
+**See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/talons/CartPage/GiftCards/giftCardQueries.gql.ee.js)
 for queries used in Venia  
 **Properties**
 
@@ -128,4 +128,4 @@ Props data to use when rendering a single gift card component.
 | --- | --- | --- |
 | removeGiftCardWithCode | `function` | Function for removing a gift card associated with the code passed into this talon. |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js)

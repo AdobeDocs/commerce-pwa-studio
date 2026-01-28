@@ -28,4 +28,4 @@ Props for [ColumnGroup](#ColumnGroup)
 | classes.root | `String` | CSS classes for the root container element |
 | display | `String` | CSS display property |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/ColumnGroup/columnGroup.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/ColumnGroup/columnGroup.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/ColumnGroup/columnGroup.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/ColumnGroup/columnGroup.js)

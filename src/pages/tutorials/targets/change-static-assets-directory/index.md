@@ -171,8 +171,8 @@ To serve these files from the root, you must configure the UPWARD server to look
 The [`veniaResponse` object][] in the base `upward.yml` file contains the [conditional resolver][] that tells the server to resolve requests for these files using the `staticFromRoot` object.
 According to this object, the current rule for resolving requests for these files is to look for and return them from the `venia-static` directory.
 
-[`veniaResponse` object]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/upward.yml
-[conditional resolver]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/upward.yml
+[`veniaResponse` object]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/upward.yml
+[conditional resolver]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/upward.yml
 
 ### Update UPWARD configuration using targets
 

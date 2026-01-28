@@ -43,7 +43,7 @@ yarn add -D @magento/pwa-theme-venia@^1.3.0 tailwindcss@~2.2.19 postcss@~8.3.11 
 npm install -D @magento/pwa-theme-venia@^1.3.0 tailwindcss@~2.2.19 postcss@~8.3.11 postcss-loader@~4.3.0 autoprefixer@latest
 ```
 
-- **@magento/pwa-theme-venia** — The Venia base theme ([theme source file](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-theme-venia/tailwind.preset.js))
+- **@magento/pwa-theme-venia** — The Venia base theme ([theme source file](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-theme-venia/tailwind.preset.js))
 - **tailwindcss** — v2.2.x patch release of the Tailwind CSS framework ([npm package](https://www.npmjs.com/package/tailwindcss/v/2.2.19))
 - **postcss** — v8.3.x patch release for installing Tailwind as a PostCSS plugin ([npm package](https://www.npmjs.com/package/postcss/v/8.3.11))
 - **postcss-loader** — v4.3.x patch release for loading PostCSS as a Webpack loader ([npm package](https://www.npmjs.com/package/postcss-loader/v/4.3.0))
@@ -348,7 +348,7 @@ module.exports = {
 
 ### Customize Venia base styles
 
-To override or extend the Venia base styles included in `@magento/pwa-theme-venia`, use [Venia's tailwind.preset.js file](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-theme-venia/tailwind.preset.js#L21-L195) as a reference to its base styles.
+To override or extend the Venia base styles included in `@magento/pwa-theme-venia`, use [Venia's tailwind.preset.js file](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-theme-venia/tailwind.preset.js#L21-L195) as a reference to its base styles.
 
 For example, to **override** Venia's default `fontFamily` options and **extend** its default `backgroundColor` and `borderRadius`, you could add the following `theme` properties to your preset:
 

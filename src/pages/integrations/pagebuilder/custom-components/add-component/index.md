@@ -194,4 +194,4 @@ If you have followed along using the `ExampleQuote` component, you should see so
 
 [utility functions]: /integrations/pagebuilder/utility-functions/
 [css modules]: /guides/general-concepts/css-modules/
-[dangerouslysetinnerhtml]: https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml
+[dangerouslysetinnerhtml]: https://legacy.reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml

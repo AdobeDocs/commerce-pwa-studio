@@ -27,7 +27,7 @@ When you [set up a new project][], this is the package the scaffolding tool uses
 
 Visit [venia.magento.com][] to see a live instance of this application.
 
-[venia.magento.com]: http://venia.magento.com/
+[venia.magento.com]: https://venia.magento.com/
 
 ## Venia UI library
 

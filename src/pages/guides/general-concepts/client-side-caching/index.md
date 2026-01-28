@@ -28,22 +28,22 @@ Once a resource has been cached, the service worker uses the cache on future req
 A [service worker][] is a JavaScript file that runs in a separate thread from the main execution thread in a web application.
 Service workers can intercept network requests and fetch cached data or store results from a network request into the cache.
 
-[service worker]: https://developers.google.com/web/ilt/pwa/introduction-to-service-worker
+[service worker]: https://web.dev/learn/pwa/service-workers
 
 ### Venia service worker
 
 Venia's service worker uses Google's [Workbox][] library.
 Its behavior is defined in files inside the [src/ServiceWorker/][] directory.
 
-[workbox]: https://developers.google.com/web/tools/workbox/
-[src/serviceworker/]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/src/ServiceWorker/
+[workbox]: https://developer.chrome.com/docs/workbox/
+[src/serviceworker/]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-concept/src/ServiceWorker/
 
 You do not need to use Workbox to define service worker behavior, but
 Workbox makes this task easier by removing boilerplate code that is always used when working with service workers.
 
 Venia uses the following [caching strategies][] with its service worker:
 
-[caching strategies]: https://developers.google.com/web/tools/workbox/modules/workbox-strategies
+[caching strategies]: https://developer.chrome.com/docs/workbox/modules/workbox-strategies/
 
 #### Stale-while-revalidate
 

@@ -89,8 +89,8 @@ Buildpack combines the features of several tools:
 - [camelspace][] for easily translating configuration between flat environment variables and namespaced objects
 
 [dotenv]: https://www.npmjs.com/package/dotenv
-[envalid]: https://npmjs.com/package/envalid
-[camelspace]: https://npmjs.com/package/camelspace
+[envalid]: https://www.npmjs.com/package/envalid
+[camelspace]: https://www.npmjs.com/package/camelspace
 
 ## Best practices
 
@@ -185,7 +185,7 @@ too much fall-through of project configuration can result in unpredictable and h
 
 All the environment variables expected and/or used by buildpack are defined in [packages/pwa-buildpack/envVarDefinitions.json][].
 
-[packages/pwa-buildpack/envvardefinitions.json]: https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/envVarDefinitions.json
+[packages/pwa-buildpack/envvardefinitions.json]: https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/envVarDefinitions.json
 
 This file is used for:
 

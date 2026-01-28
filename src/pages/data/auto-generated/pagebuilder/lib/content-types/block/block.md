@@ -40,4 +40,4 @@ Props for [Block](#Block)
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Block/block.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Block/block.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Block/block.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/Block/block.js)
