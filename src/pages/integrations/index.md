@@ -17,7 +17,7 @@ This section lists the different Adobe Commerce features available to PWA Studio
 
 [Page Builder](pagebuilder/index.md)
 
-Add Page Builder content to your storefront. __[[PaaS only](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions)]__
+Add Page Builder content to your storefront. **[[PaaS only](https://experienceleague.adobe.com/en/docs/commerce/user-guides/product-solutions)]**
 
 <DiscoverBlock width="45%" slots="link, text"/>
 
