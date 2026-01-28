@@ -29,7 +29,7 @@ Make the most of your Adobe Commerce instance.
 
 [Product Recommendations](product-recommendations/index.md)
 
-Add a recommendation engine powered by Adobe Sensei.
+Add a recommendation engine powered by Adobe AI.
 
 [Live search](live-search/index.md)
 
