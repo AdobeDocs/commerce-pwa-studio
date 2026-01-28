@@ -21,7 +21,7 @@ Code examples for the `TargetableESModule` class.
 Calling the `addImport()` function returns a [`SingleImportStatement`][] object.
 Use this object to refer to the component in your code.
 
-[`singleimportstatement`]: /api/buildpack/targetables/SingleImportStatement/
+[`singleimportstatement`]: /api/buildpack/targetables/single-import-statement/
 
 ```jsx
 const logger = esModule.addImport('import logger from "./logger"');

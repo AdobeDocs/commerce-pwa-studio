@@ -133,7 +133,7 @@ module.exports = (targets) => {
 The code in this file accesses the [routes target][] of `@magento/venia-ui` and adds a new entry to the list.
 It adds a new route definition object that specifies the pattern for a new route and which page component renders that route.
 
-[routes target]: /api/peregrine/extension-points/targets/
+[routes target]: /api/venia/targets/
 
 ### Register the intercept file
 

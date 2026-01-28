@@ -76,7 +76,7 @@ The following PWA Studio packages contain Targets that developers can intercept:
 - [Venia UI][]
 
 [buildpack]: /api/buildpack/targets/
-[peregrine]: /api/peregrine/extension-points/targets/
+[peregrine]: /api/peregrine/targets/
 [venia ui]: /api/venia/targets/
 
 ## Targetables
@@ -94,7 +94,7 @@ Targetables are useful in two scenarios:
 The most common pattern for working with Targetable objects is to connect an instance of the [TargetableSet][] to the TargetProvider sent to the intercept file.
 Then, you can use that instance to create Targetable objects.
 
-[targetableset]: /api/buildpack/targetables/TargetableSet/
+[targetableset]: /api/buildpack/targetables/targetable-set/
 
 ```js
 // Access the TargetableSet class
@@ -114,7 +114,7 @@ Use the TargetableSet instance to create a [TargetableModule][] class object or 
 The TargetableModule class itself represents a plain module.
 It contains functions that let it manipulate the source code directly.
 
-[targetablemodule]: /api/buildpack/targetables/TargetableModule/
+[targetablemodule]: /api/buildpack/targetables/targetable-module/
 
 ```js
 const { Targetables } = require("@magento/pwa-buildpack");
@@ -138,14 +138,14 @@ module.exports = (targets) => {
 Other Targetable classes, such as [TargetableESModule][], are subclasses of TargetableModule.
 They contain specialized functions that let it work with different modules or file types.
 
-[targetableesmodule]: /api/buildpack/targetables/TargetableESModule/
+[targetableesmodule]: /api/buildpack/targetables/targetable-es-module/
 
 ### Chain transformations
 
 Some Targetable classes, such as TargetableModule and [TargetableReactComponent][], support method chaining.
 Certain methods in these classes are chainable, which let you call these methods one after another in your code.
 
-[targetablereactcomponent]: /api/buildpack/targetables/TargetableReactComponent/
+[targetablereactcomponent]: /api/buildpack/targetables/targetable-react-component/
 
 ```js
 const { Targetables } = require("@magento/pwa-buildpack");

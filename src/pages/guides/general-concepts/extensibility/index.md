@@ -271,7 +271,7 @@ The following is a list of PWA Studio packages that contain Targets.
 They are often used as building blocks for more complicated feature Targets.
 You can also find Targets that let you add environment variables or change UPWARD behavior in this package.
 
-[Peregrine](/api/peregrine/extension-points/targets/)
+[Peregrine](/api/peregrine/targets/)
 : Targets in the Peregrine package focus mainly on the set of talons it provides.
 The `talons` Target lets you [wrap a Talon][] with your own module.
 

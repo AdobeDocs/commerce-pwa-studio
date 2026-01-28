@@ -166,9 +166,9 @@ For more information on the Targetables API used in this example, see the follow
 - [TargetableModule][]
 - [TargetablePublisher][]
 
-[targetables manager]: /api/buildpack/targetables/TargetableSet/
-[targetablemodule]: /api/buildpack/targetables/TargetableModule/
-[targetablepublisher]: /api/buildpack/targetables/TargetableSet/#TargetablePublisher
+[targetables manager]: /api/buildpack/targetables/targetable-set/
+[targetablemodule]: /api/buildpack/targetables/targetable-module/
+[targetablepublisher]: /api/buildpack/targetables/targetable-set/#TargetablePublisher
 
 The API the `myListContent` target publishes contains an `addContent()` function that makes modifications to the `src/myList.js` file.
 The content for `src/myList.js` is as follows:

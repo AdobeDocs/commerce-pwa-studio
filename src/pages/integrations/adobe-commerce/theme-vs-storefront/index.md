@@ -65,7 +65,7 @@ React components are modular pieces that make up a React application, such as a 
 These pieces can contain pure logic, such as [Peregrine components][], or visual elements, such as [Venia's UI components][].
 
 [peregrine components]: /guides/packages/peregrine/
-[venia's ui components]: /guides/packages/venia/ui-components/
+[venia's ui components]: /guides/packages/venia/
 
 ## Dependency management
 

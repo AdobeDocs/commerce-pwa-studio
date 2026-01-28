@@ -18,7 +18,7 @@ The PWA Buildpack package provides build and development tools for creating and 
 
 Use the scaffolding tool to set up a new project using a [project template][].
 
-[project template]: /guides/packages/buildpack/project-template/
+[project template]: /guides/packages/buildpack/project-templates/
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
