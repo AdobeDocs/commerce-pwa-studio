@@ -15,7 +15,7 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../../data/auto-generated/pagebuilder/lib/content-types/Column/column.md'/>
+<Fragment src='../../../../data/auto-generated/pagebuilder/lib/content-types/column/column.md'/>
 
 ## ColumnGroup
 
