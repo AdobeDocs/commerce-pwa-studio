@@ -71,9 +71,6 @@ MD049: false
 MD050:
   style: asterisk
 
-# MD051/link-fragments Link fragments should be valid
-MD051: false
-
 # MD059/descriptive-link-text - Link text should be descriptive
 MD059:
   prohibited_texts:

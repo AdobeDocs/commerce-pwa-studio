@@ -4,8 +4,8 @@
         * .call([...args]) ⇒ `\*`
         * .callAsync(...args) ⇒ `undefined`
         * .intercept(options) ⇒ `void`
-        * [.promise([...args])](#module_Buildpack/BuildBus..Target+promise) ⇒ `Promise`
-        * [.tap([name], interceptor)](#module_Buildpack/BuildBus..Target+tap) ⇒ `undefined`
+        * .promise([...args]) ⇒ `Promise`
+        * .tap([name], interceptor) ⇒ `undefined`
         * .tapAsync(name, interceptor) ⇒ `undefined`
         * .tapPromise(name, interceptor) ⇒ `undefined`
         * .toJSON() ⇒ `object`
