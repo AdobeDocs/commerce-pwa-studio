@@ -89,7 +89,7 @@ A UI library of React components for your storefront.
 Are you interested in contributing to the PWA Studio project?
 Visit the [community wiki][] for information on how to contribute the PWA Studio project.
 
-For more information about contributing to this repository, see the [Contribution Guide](https://github.com/magento/pwa-studio/tree/develop/.github/CONTRIBUTING.md).
+For more information about contributing to this repository, see the [Contribution Guide](https://github.com/magento/pwa-studio/blob/develop/.github/CONTRIBUTING.md).
 
 ### Documentation contributions
 

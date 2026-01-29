@@ -1,14 +1,14 @@
 
-* [Buildpack/BuildBus](#module_Buildpack/BuildBus)
-    * [~Target](#module_Buildpack/BuildBus..Target) ⇐ `Trackable`
+* Buildpack/BuildBus
+    * ~Target ⇐ `Trackable`
         * [.call([...args])](#module_Buildpack/BuildBus..Target+call) ⇒ `\*`
-        * [.callAsync(...args)](#module_Buildpack/BuildBus..Target+callAsync) ⇒ `undefined`
-        * [.intercept(options)](#module_Buildpack/BuildBus..Target+intercept) ⇒ `void`
+        * .callAsync(...args) ⇒ `undefined`
+        * .intercept(options) ⇒ `void`
         * [.promise([...args])](#module_Buildpack/BuildBus..Target+promise) ⇒ `Promise`
         * [.tap([name], interceptor)](#module_Buildpack/BuildBus..Target+tap) ⇒ `undefined`
-        * [.tapAsync(name, interceptor)](#module_Buildpack/BuildBus..Target+tapAsync) ⇒ `undefined`
-        * [.tapPromise(name, interceptor)](#module_Buildpack/BuildBus..Target+tapPromise) ⇒ `undefined`
-        * [.toJSON()](#module_Buildpack/BuildBus..Target+toJSON) ⇒ `object`
+        * .tapAsync(name, interceptor) ⇒ `undefined`
+        * .tapPromise(name, interceptor) ⇒ `undefined`
+        * .toJSON() ⇒ `object`
 
 Represents an edge on the graph, or a "route" between stops, created between
 two extensions when one of them references the target(s) of another. When
@@ -19,15 +19,15 @@ better logging, error checking, and validation.
 **Extends**: `Trackable`  
 **See**: [Tapable docs](https://github.com/webpack/tapable)  
 
-* [~Target](#module_Buildpack/BuildBus..Target) ⇐ `Trackable`
+* ~Target ⇐ `Trackable`
     * [.call([...args])](#module_Buildpack/BuildBus..Target+call) ⇒ `\*`
-    * [.callAsync(...args)](#module_Buildpack/BuildBus..Target+callAsync) ⇒ `undefined`
-    * [.intercept(options)](#module_Buildpack/BuildBus..Target+intercept) ⇒ `void`
+    * .callAsync(...args) ⇒ `undefined`
+    * .intercept(options) ⇒ `void`
     * [.promise([...args])](#module_Buildpack/BuildBus..Target+promise) ⇒ `Promise`
     * [.tap([name], interceptor)](#module_Buildpack/BuildBus..Target+tap) ⇒ `undefined`
-    * [.tapAsync(name, interceptor)](#module_Buildpack/BuildBus..Target+tapAsync) ⇒ `undefined`
-    * [.tapPromise(name, interceptor)](#module_Buildpack/BuildBus..Target+tapPromise) ⇒ `undefined`
-    * [.toJSON()](#module_Buildpack/BuildBus..Target+toJSON) ⇒ `object`
+    * .tapAsync(name, interceptor) ⇒ `undefined`
+    * .tapPromise(name, interceptor) ⇒ `undefined`
+    * .toJSON() ⇒ `object`
 
 Run `.call(...args)` on the underlying Tapable Hook.
 Calls interceptors synchronously and in subscription order with the
@@ -126,4 +126,4 @@ Provides the JSON object representation of this target
 `object`
    — JSON object
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/Target.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/BuildBus/Target.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/Target.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/Target.js)

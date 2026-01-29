@@ -2,7 +2,7 @@
 
 [props]
 
-Props for [TabItem](#TabItem)
+Props for TabItem
 
 Page Builder TabItem component.
 
@@ -16,9 +16,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | `props` | React component props |
 
-Props for [TabItem](#TabItem)
+Props for TabItem
 
 **Properties**
 
@@ -52,4 +52,4 @@ Props for [TabItem](#TabItem)
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/TabItem/tabItem.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/TabItem/tabItem.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/TabItem/tabItem.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/TabItem/tabItem.js)

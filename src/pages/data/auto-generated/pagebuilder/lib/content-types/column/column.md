@@ -2,7 +2,7 @@
 
 [props]
 
-Props for [Column](#Column)
+Props for Column
 
 Page Builder Column component.
 
@@ -16,9 +16,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | `props` | React component props |
 
-Props for [Column](#Column)
+Props for Column
 
 **Properties**
 
@@ -54,4 +54,4 @@ Props for [Column](#Column)
 | verticalAlignment | `String` | Vertical alignment of the contents within the parent container |
 | width | `String` | CSS width property |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Column/column.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/Column/column.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Column/column.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Column/column.js)

@@ -40,27 +40,27 @@ This talon performs the following effects:
 [ProductListingQueries] : `Object`
 
 GraphQL queries for getting product listing data.
-This is a type used in the [useProductListing](#useProductListing) talon.
+This is a type used in the useProductListing talon.
 
 [ProductListingTalonProps] : `Object`
 
-Object type returned by the [useProductListing](#useProductListing) talon.
+Object type returned by the useProductListing talon.
 It provides props data for a component that renders a product list.
 
 [ProductMutations] : `Object`
 
 GraphQL mutations for a product in a cart.
-This is a type used by the [useProduct](#useProduct) talon.
+This is a type used by the useProduct talon.
 
 [ProductTalonProps] : `Object`
 
-Object type returned by the [useProduct](#useProduct) talon.
+Object type returned by the useProduct talon.
 It provides prop data for rendering a product component on a cart page.
 
 [ProductItem] : `Object`
 
 Data about a product item in the cart.
-This type is used in the [ProductTalonProps](#ProductTalonProps) type returned by the [useProduct](#useProduct) talon.
+This type is used in the ProductTalonProps type returned by the useProduct talon.
 
 [QuantityTalonProps] : `Object`
 
@@ -69,7 +69,7 @@ It provides props data for a quantity UI component.
 
 [EditModalTalonProps] : `Object`
 
-Object type returned by the [useEditModal](#useEditModal) talon.
+Object type returned by the useEditModal talon.
 It provides props data for rendering an edit modal component.
 
 [ProductFormTalonProps] : `Object`
@@ -91,7 +91,7 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | [`ProductListingQueries`](#ProductListingQueries) | GraphQL queries for getting product listing data. |
+| props.queries | `ProductListingQueries` | GraphQL queries for getting product listing data. |
 
 **Example** *(Importing into your project)*
 
@@ -112,8 +112,8 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.item | [`ProductItem`](#ProductItem) | Product item data |
-| props.operations | [`ProductMutations`](#ProductMutations) | GraphQL mutations for a product in a cart |
+| props.item | `ProductItem` | Product item data |
+| props.operations | `ProductMutations` | GraphQL mutations for a product in a cart |
 | props.setActiveEditItem | `function` | Function for setting the actively editing item |
 | props.setIsCartUpdating | `function` | Function for setting the updating state of the cart |
 
@@ -162,9 +162,9 @@ import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductLi
 ```
 
 GraphQL queries for getting product listing data.
-This is a type used in the [useProductListing](#useProductListing) talon.
+This is a type used in the useProductListing talon.
 
-**See**: [productListingFragments.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js)
+**See**: [productListingFragments.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js)
 for the queries used in Venia  
 **Properties**
 
@@ -172,7 +172,7 @@ for the queries used in Venia
 | --- | --- | --- |
 | getProductListingQuery | `GraphQLDocument` | Query to get the product list for a cart |
 
-Object type returned by the [useProductListing](#useProductListing) talon.
+Object type returned by the useProductListing talon.
 It provides props data for a component that renders a product list.
 
 **Properties**
@@ -186,9 +186,9 @@ It provides props data for a component that renders a product list.
 | setActiveEditItem | `function` | Function for setting the current item to edit |
 
 GraphQL mutations for a product in a cart.
-This is a type used by the [useProduct](#useProduct) talon.
+This is a type used by the useProduct talon.
 
-**See**: [product.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/ProductListing/product.js)
+**See**: [product.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/ProductListing/product.js)
 to see the mutations used in Venia  
 **Properties**
 
@@ -197,7 +197,7 @@ to see the mutations used in Venia
 | removeItemMutation | `GraphQLDocument` | Mutation for removing an item in a cart |
 | updateItemQuantityMutation | `GraphQLDocument` | Mutation for updating the item quantity in a cart |
 
-Object type returned by the [useProduct](#useProduct) talon.
+Object type returned by the useProduct talon.
 It provides prop data for rendering a product component on a cart page.
 
 **Properties**
@@ -209,10 +209,10 @@ It provides prop data for rendering a product component on a cart page.
 | handleRemoveFromCart | `function` | Function to use for handling the removal of a cart product. |
 | handleUpdateItemQuantity | `function` | Function to use for handling updates to the product quantity in a cart. |
 | isEditable | `boolean` | True if a cart product is editable. False otherwise. |
-| product | [`ProductItem`](#ProductItem) | Cart product data |
+| product | `ProductItem` | Cart product data |
 
 Data about a product item in the cart.
-This type is used in the [ProductTalonProps](#ProductTalonProps) type returned by the [useProduct](#useProduct) talon.
+This type is used in the ProductTalonProps type returned by the useProduct talon.
 
 **Properties**
 
@@ -241,7 +241,7 @@ It provides props data for a quantity UI component.
 | handleIncrement | `function` | Callback function for handling an increment event |
 | maskInput | `function` | Function for masking a value when decimal values are allowed |
 
-Object type returned by the [useEditModal](#useEditModal) talon.
+Object type returned by the useEditModal talon.
 It provides props data for rendering an edit modal component.
 
 **Properties**
@@ -268,4 +268,4 @@ It provides props data for a product form UI component inside a modal.
 | handleClose | `function` | A callback function for handling form closing |
 | configurableThumbnailSource | `String` | A string indicating which thumbnail should be used for configurable products |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/ProductListing/useProductListing.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/talons/CartPage/ProductListing/useProductListing.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/ProductListing/useProductListing.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/ProductListing/useProductListing.js)

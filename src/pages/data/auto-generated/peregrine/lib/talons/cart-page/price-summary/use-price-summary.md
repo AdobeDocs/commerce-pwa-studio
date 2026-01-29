@@ -37,7 +37,7 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | [`PriceSummaryQueries`](#PriceSummaryQueries) |GraphQL queries for a price summary component. |
+| props.queries | `PriceSummaryQueries` |GraphQL queries for a price summary component. |
 
 **Example** *(Importing into your project)*
 
@@ -61,7 +61,7 @@ Query data flattened into a simple object.
 
 GraphQL queries for price summary component.
 
-**See**: [priceSummary.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.js)
+**See**: [priceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.js)
 for the queries used in Venia.  
 **Properties**
 
@@ -79,6 +79,6 @@ Props used for rendering a price summary component.
 | hasError | `boolean` | True if a GraphQL query returns an error. False otherwise.                                                                                                                                         |
 | hasItems | `boolean` | True if the cart has any items. False otherwise.                                                                                                                                                   |
 | isLoading | `boolean` | True while the GraphQL query is still in flight. False otherwise.                                                                                                                                  |
-| flatData | [`FlattenedData`](#FlattenedData) | Query data that has been flattened into a simple object                                                                                                                                            |
+| flatData | `FlattenedData` | Query data that has been flattened into a simple object                                                                                                                                            |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js)

@@ -68,7 +68,7 @@ PWA Studio projects use [NPM scripts][] to organize frequently used commands.
 These `yarn run` commands are found in the `scripts` section of the Venia storefront's [package.json][] file.
 
 [npm scripts]: https://docs.npmjs.com/misc/scripts
-[package.json]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-concept/package.json
+[package.json]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/package.json
 
 Use the `build` command to start the build process:
 
@@ -100,7 +100,7 @@ If there is no `.env` file in your project, create one with the [`buildpack crea
 After the environment validation phase, the build runs the `validate-queries` script.
 This script uses the [`graphql-cli-validate-magento-pwa-queries`][] tool to analyze the GraphQL queries in the project and validates them against the schema downloaded from the configured Magento instance.
 
-[`graphql-cli-validate-magento-pwa-queries`]: https://github.com/magento/pwa-studio/tree/develop/packages/graphql-cli-validate-magento-pwa-queries
+[`graphql-cli-validate-magento-pwa-queries`]: https://github.com/magento/pwa-studio/blob/develop/packages/graphql-cli-validate-magento-pwa-queries
 
 <InlineAlert variant="info" slots="text"/>
 

@@ -22,4 +22,4 @@ Props for the Logo component.
 | [height] | `number` | `18` | Height of the logo. |
 | [width] | `number` | `102` | Width of the logo. |
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Logo/logo.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Logo/logo.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Logo/logo.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Logo/logo.js)

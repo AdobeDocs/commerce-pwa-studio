@@ -44,56 +44,56 @@ This talon performs the following effects:
 [CouponCodeMutations] : `Object`
 
 GraphQL mutations for a cart's coupon code.
-This is a type used by the [useCouponCode](#useCouponCode) talon.
+This is a type used by the useCouponCode talon.
 
 [CouponCodeQueries] : `Object`
 
 GraphQL queries for a cart's coupon code.
-This is a type used by the [useCouponCode](#useCouponCode) talon.
+This is a type used by the useCouponCode talon.
 
 [CouponCodeTalonProps] : `Object`
 
-Object type returned by the [useCouponCode](#useCouponCode) talon.
+Object type returned by the useCouponCode talon.
 It provides props data to use when rendering a coupon code component.
 
 [SelectShippingFields] : `Object`
 
 Values for the select input fields on the shipping form.
-This is a prop used by the [useShippingForm](#useShippingForm) talon.
+This is a prop used by the useShippingForm talon.
 
 [ShippingFormMutations] : `Object`
 
 GraphQL mutations for the shipping form.
-This is a type used by the [useShippingForm](#useShippingForm) talon.
+This is a type used by the useShippingForm talon.
 
 [ShippingFormQueries] : `Object`
 
 GraphQL queries for the shipping form.
-This is a type used by the [useShippingForm](#useShippingForm) talon.
+This is a type used by the useShippingForm talon.
 
 [ShippingFormTalonProps] : `Object`
 
-Object type returned by the [useShippingForm](#useShippingForm) talon.
+Object type returned by the useShippingForm talon.
 It provides props data to use when rendering a shipping form component.
 
 [ShippingMethodsQueries] : `Object`
 
 GraphQL queries for shipping methods.
-This is a type used in the [useShippingMethods](#useShippingMethods) talon.
+This is a type used in the useShippingMethods talon.
 
 [ShippingMethodsTalonProps] : `Object`
 
-Object type returned by the [useShippingMethods](#useShippingMethods) talon.
+Object type returned by the useShippingMethods talon.
 It provides prop data to use when rendering shipping methods.
 
 [ShippingRadiosMutations] : `Object`
 
 GraphQL mutations for a shipping radio selector component.
-This is a type used by the [useShippingRadios](#useShippingRadios) talon.
+This is a type used by the useShippingRadios talon.
 
 [ShippingRadiosTalonProps] : `Object`
 
-Object type returned by the [useShippingRadios](#useShippingRadios) talon.
+Object type returned by the useShippingRadios talon.
 It provides data to use when rendering a radio selector for shipping methods.
 
 This talon contains the logic for a coupon code form component.
@@ -111,8 +111,8 @@ This talon performs the following effects:
 | --- | --- | --- |
 | props | `Object` |  |
 | props.setIsCartUpdating | `function` | Callback function for setting the update state for the cart. |
-| props.mutations | [`CouponCodeMutations`](#CouponCodeMutations) | GraphQL mutations for a cart's coupon code. |
-| props.queries | [`CouponCodeQueries`](#CouponCodeQueries) | GraphQL queries for a cart's coupon code. |
+| props.mutations | `CouponCodeMutations` | GraphQL mutations for a cart's coupon code. |
+| props.queries | `CouponCodeQueries` | GraphQL queries for a cart's coupon code. |
 
 **Example** *(Importing into your project)*
 
@@ -133,10 +133,10 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.selectedValues | [`SelectShippingFields`](#SelectShippingFields) | The values from the select input fields in the shipping form |
+| props.selectedValues | `SelectShippingFields` | The values from the select input fields in the shipping form |
 | props.setIsCartUpdating | `function` | Callback function for setting the update state for the cart. |
-| props.mutations | [`ShippingFormMutations`](#ShippingFormMutations) | GraphQL mutations for the shipping form. |
-| props.queries | [`ShippingFormQueries`](#ShippingFormQueries) | GraphQL queries for the shipping form. |
+| props.mutations | `ShippingFormMutations` | GraphQL mutations for the shipping form. |
+| props.queries | `ShippingFormQueries` | GraphQL queries for the shipping form. |
 
 **Example** *(Importing into your project)*
 
@@ -157,7 +157,7 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | [`ShippingMethodsQueries`](#ShippingMethodsQueries) | GraphQL queries for shipping methods |
+| props.queries | `ShippingMethodsQueries` | GraphQL queries for shipping methods |
 
 **Example** *(Importing into your project)*
 
@@ -182,7 +182,7 @@ This talon performs the following effects:
 | props.setIsCartUpdating      | `function`                                            | Function for setting the updating state of the shopping cart |
 | props.selectedShippingMethod | `String`                                              | A serialized string of `$\{carrier-code}\          \| $\{method-code\}`, eg. `usps\|priority`. |
 | props.shippingMethods        | `Array.<Object>`                                      | An array of available shipping methods              |
-| props.mutations              | [`ShippingRadiosMutations`](#ShippingRadiosMutations) | GraphQL mutations for a shipping radio selector component. |
+| props.mutations              | `ShippingRadiosMutations` | GraphQL mutations for a shipping radio selector component. |
 
 **Example** *(Importing into your project)*
 
@@ -191,9 +191,9 @@ import { useShippingRadios } from '@magento/peregrine/lib/talons/CartPage/PriceA
 ```
 
 GraphQL mutations for a cart's coupon code.
-This is a type used by the [useCouponCode](#useCouponCode) talon.
+This is a type used by the useCouponCode talon.
 
-**See**: [CouponCode.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode/couponCode.js)
+**See**: [CouponCode.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode/couponCode.js)
 for the queries used Venia  
 **Properties**
 
@@ -203,9 +203,9 @@ for the queries used Venia
 | removeCouponMutation | `GraphQLAST` | Mutation for removing a coupon code from a cart. |
 
 GraphQL queries for a cart's coupon code.
-This is a type used by the [useCouponCode](#useCouponCode) talon.
+This is a type used by the useCouponCode talon.
 
-**See**: [CouponCode.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode/couponCode.js)
+**See**: [CouponCode.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode/couponCode.js)
 for the queries used Venia  
 **Properties**
 
@@ -213,7 +213,7 @@ for the queries used Venia
 | --- | --- | --- |
 | getAppliedCouponsQuery | `GraphQLAST` | Query to fetch the currently applied coupons for a cart. |
 
-Object type returned by the [useCouponCode](#useCouponCode) talon.
+Object type returned by the useCouponCode talon.
 It provides props data to use when rendering a coupon code component.
 
 **Properties**
@@ -231,7 +231,7 @@ It provides props data to use when rendering a coupon code component.
 | removingCoupon | `boolean` | True if a coupon code is currently being removed. False otherwise. |
 
 Values for the select input fields on the shipping form.
-This is a prop used by the [useShippingForm](#useShippingForm) talon.
+This is a prop used by the useShippingForm talon.
 
 **Properties**
 
@@ -242,9 +242,9 @@ This is a prop used by the [useShippingForm](#useShippingForm) talon.
 | zip | `String` | Country's zip code shipping destination |
 
 GraphQL mutations for the shipping form.
-This is a type used by the [useShippingForm](#useShippingForm) talon.
+This is a type used by the useShippingForm talon.
 
-**See**: [shippingForm.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingForm.js)
+**See**: [shippingForm.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingForm.js)
 for the query used in Venia  
 **Properties**
 
@@ -253,9 +253,9 @@ for the query used in Venia
 | setShippingAddressMutation | `GraphQLAST` | Mutation for setting the shipping address on a cart |
 
 GraphQL queries for the shipping form.
-This is a type used by the [useShippingForm](#useShippingForm) talon.
+This is a type used by the useShippingForm talon.
 
-**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
+**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
 for the query used in Venia  
 **Properties**
 
@@ -263,7 +263,7 @@ for the query used in Venia
 | --- | --- | --- |
 | shippingMethodsQuery | `GraphQLAST` | Query for getting data about available shipping methods |
 
-Object type returned by the [useShippingForm](#useShippingForm) talon.
+Object type returned by the useShippingForm talon.
 It provides props data to use when rendering a shipping form component.
 
 **Properties**
@@ -277,9 +277,9 @@ It provides props data to use when rendering a shipping form component.
 | isSetShippingLoading | `boolean` | True if the cart shipping information is being set. False otherwise. |
 
 GraphQL queries for shipping methods.
-This is a type used in the [useShippingMethods](#useShippingMethods) talon.
+This is a type used in the useShippingMethods talon.
 
-**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
+**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
 for the queries used in Venia  
 **Properties**
 
@@ -287,7 +287,7 @@ for the queries used in Venia
 | --- | --- | --- |
 | getShippingMethodsQuery | `GraphQLAST` | Query to get the available shipping methods. |
 
-Object type returned by the [useShippingMethods](#useShippingMethods) talon.
+Object type returned by the useShippingMethods talon.
 It provides prop data to use when rendering shipping methods.
 
 **Properties**
@@ -296,14 +296,14 @@ It provides prop data to use when rendering shipping methods.
 |------------------------|-------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
 | hasMethods             | `number`                                        | Provides the number of shipping methods available. Can be used as a boolean value since having no shipping methods would return 0.  |
 | isShowingForm          | `boolean`                                       | True if the form should be shown. False otherwise.                                                                                  |
-| selectedShippingFields | [`SelectShippingFields`](#SelectShippingFields) | Values for the select input fields on the shipping form                                                                             |
+| selectedShippingFields | `SelectShippingFields` | Values for the select input fields on the shipping form                                                                             |
 | selectedShippingMethod | `String`                                        | A serialized string of `$\{carrier-code}\                                                                                          \|$\{method-code\}`, eg. `usps\|priority`. |
 | shippingMethods        | `Array.<Object>`                                | A list of available shipping methods based on the primary shipping address                                                          |
 | showForm               | `function`                                      | A function that sets the `isShowingForm` value to true.                                                                             |
 | showFormOnEnter        | `function`                                      | A function that sets the `isShowingForm` value to true.                                                                             |
 
 GraphQL mutations for a shipping radio selector component.
-This is a type used by the [useShippingRadios](#useShippingRadios) talon.
+This is a type used by the useShippingRadios talon.
 
 **Properties**
 
@@ -311,7 +311,7 @@ This is a type used by the [useShippingRadios](#useShippingRadios) talon.
 | --- | --- | --- |
 | setShippingMethodMutation | `GraphQLAST` | Mutation for setting the shipping method on a cart. |
 
-Object type returned by the [useShippingRadios](#useShippingRadios) talon.
+Object type returned by the useShippingRadios talon.
 It provides data to use when rendering a radio selector for shipping methods.
 
 **Properties**
@@ -321,4 +321,4 @@ It provides data to use when rendering a radio selector for shipping methods.
 | formattedShippingMethods | `Object` | Shipping method data that has been formatted. |
 | handleShippingSelection | `function` | Callback function for handling shipping selection form updates. |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode.js)

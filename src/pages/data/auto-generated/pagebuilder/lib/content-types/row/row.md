@@ -2,7 +2,7 @@
 
 [props]
 
-Props for [Row](#Row)
+Props for Row
 
 Page Builder Row component.
 
@@ -16,9 +16,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | `props` | React component props |
 
-Props for [Row](#Row)
+Props for Row
 
 **Properties**
 
@@ -62,4 +62,4 @@ Props for [Row](#Row)
 | videoLazyLoading | `Boolean` | Load video when it is visible |
 | videoOverlayColor | `String` | Color for video overlay |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Row/row.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/Row/row.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Row/row.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Row/row.js)

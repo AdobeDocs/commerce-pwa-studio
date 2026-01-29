@@ -10,7 +10,7 @@ This includes any deprecated or changed settings.
 When loading from `.env`, `buildpack` does not override previously declared variables.
 
 [`buildpack`]: /api/buildpack/cli/
-[`envvardefinitions.json`]: https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/envVarDefinitions.json
+[`envvardefinitions.json`]: https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/envVarDefinitions.json
 
 ## Command flags
 

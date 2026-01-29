@@ -36,8 +36,8 @@ The following is a list of environment variables you should set in your producti
 - [`MAGENTO_BACKEND_URL`][] - Set the value of this environment variable to your **production** Adobe Commerce or Magento Open Source backend instance.
 - [`CHECKOUT_BRAINTREE_TOKEN`][] - Set this value to the BrainTree token associated with your **production** backend instance.
 
-[`magento_backend_url`]: /api/buildpack/environment/variables/#magento_backend_url
-[`checkout_braintree_token`]: /api/buildpack/environment/variables/#checkout_braintree_token
+[`magento_backend_url`]: /api/buildpack/environment/variables/
+[`checkout_braintree_token`]: /api/buildpack/environment/variables/
 
 ## Create a production build
 

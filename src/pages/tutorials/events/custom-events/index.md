@@ -12,7 +12,7 @@ keywords:
 The eventing framework introduced in the PWA Studio 12.5 release comes with a core set of storefront events related to various interactions with the application.
 You can use PWA Studio's extensibility framework to modify your storefront and have it publish events not covered by the default set.
 
-PWA Studio provides the source for the [Experience Platform Connector extension](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/experience-platform-connector/) to show how you can add a custom event.
+PWA Studio provides the source for the [Experience Platform Connector extension](https://github.com/magento/pwa-studio/blob/develop/packages/extensions/experience-platform-connector/) to show how you can add a custom event.
 
 This extension dispatches a `SEARCH_RESPONSE` event, which is not part of the default set. This event fires when a search result is returned in the application's search bar.
 

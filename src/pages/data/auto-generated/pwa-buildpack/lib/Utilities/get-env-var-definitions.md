@@ -1,10 +1,10 @@
 ## Modules
 
-[Buildpack/Utilities](#module_Buildpack/Utilities)
+Buildpack/Utilities
 
 ## Typedefs
 
-[EnvVarDefinitions](#EnvVarDefinitions) : `Object`
+EnvVarDefinitions : `Object`
 
 Defines the global settings of the project as a list of typed environment variables.
 Includes a set of changes made to the environment variables in recent versions, to aid with migration and upgrades.
@@ -15,14 +15,14 @@ to validate the currently defined values in the environment.
 `EnvVarDefinitions` are also used by [`createDotEnvFile()`](/api/buildpack/cli/create-environment-file/)
 to generate an extensively commented `.env` file for a project.
 
-[EnvVarDefsSection](#EnvVarDefsSection) : `Object`
+EnvVarDefsSection : `Object`
 
 A list of related definitions concerning a particular functional area.
 
 All defined variable names under a particular functional area should have the same prefix, to help namespace and organize configuration.
 For instance, all variable names in the "Custom local origin" section begin with `CUSTOM_ORIGIN_`.
 
-[EnvVarDefinition](#EnvVarDefinition) : `Object`
+EnvVarDefinition : `Object`
 
 A definition of an environment variable that will be used somewhere else in the project, in the backend and/or the frontend.
 
@@ -37,7 +37,7 @@ object returned by [`loadEnvironment()`](/api/buildpack/cli/load-environment-fil
 Any environment variable during the build is accessible via `process.env` in NodeJS.
 However, only the variables defined by `EnvVarDefinition` entries will be available in the frontend, via the [Webpack EnvironmentPlugin](https://webpack.js.org/plugins/environment-plugin/).
 
-[EnvVarDefsChange](#EnvVarDefsChange) : `Object`
+EnvVarDefsChange : `Object`
 
 Describes a recent change to a particular environment variable.
 Can indicate that the environment variable was _removed_ or _renamed_.
@@ -57,8 +57,8 @@ to generate an extensively commented `.env` file for a project.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| sections | [`Array.<EnvVarDefsSection>`](#EnvVarDefsSection) | List of sections, or sub-lists of definitions grouped under a title. |
-| changes | [`Array.<EnvVarDefsChange>`](#EnvVarDefsChange) | List of changes, or objects describing a recent change to a definition. |
+| sections | `Array.<EnvVarDefsSection>` | List of sections, or sub-lists of definitions grouped under a title. |
+| changes | `Array.<EnvVarDefsChange>` | List of changes, or objects describing a recent change to a definition. |
 
 A list of related definitions concerning a particular functional area.
 
@@ -70,7 +70,7 @@ For instance, all variable names in the "Custom local origin" section begin with
 | Name | Type | Description |
 | --- | --- | --- |
 | name | `String` | Title of the section, describing the functional area of the included variables. |
-| variables | [`Array.<EnvVarDefinition>`](#EnvVarDefinition) | List of variable definitions. |
+| variables | `Array.<EnvVarDefinition>` | List of variable definitions. |
 
 A definition of an environment variable that will be used somewhere else in the project, in the backend and/or the frontend.
 
@@ -113,4 +113,4 @@ They may also be used to make `loadEnvironment()` support the legacy name of a r
 | [update] | `String` | New name of the variable. Required when the change is a rename. |
 | [supportLegacy] | `boolean` | If the change is a rename, set this to `true` to support the old name (while logging a warning). If the old name is set and the new name is not, `loadEnvironment` will set the new variable name to the value of the old one. |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js)

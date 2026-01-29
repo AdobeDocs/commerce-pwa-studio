@@ -33,7 +33,7 @@ All of which can adjust the cart total.
 | --- | --- | --- |
 | props | `Object` |  |
 | props.setIsCartUpdating | `function` | A callback function for setting the updating state of the cart. |
-| props.classes | `Object` | CSS className overrides. See [priceAdjustments.module.css](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/priceAdjustments.module.css) for a list of classes you can override. |
+| props.classes | `Object` | CSS className overrides. See [priceAdjustments.module.css](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/priceAdjustments.module.css) for a list of classes you can override. |
 
 **Example** *(Importing into your project)*
 
@@ -51,7 +51,7 @@ This component renders a form for addingg a coupon code to the cart.
 | --- | --- | --- |
 | props | `Object` |  |
 | props.setIsCartUpdating | `function` | Function for setting the updating state for the cart. |
-| props.classes | `Object` | CSS className overrides. See [couponCode.module.css](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode/couponCode.module.css) for a list of classes you can override. |
+| props.classes | `Object` | CSS className overrides. See [couponCode.module.css](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/CouponCode/couponCode.module.css) for a list of classes you can override. |
 
 **Example** *(Importing into your project)*
 
@@ -69,7 +69,7 @@ This component displays the form for adding gift options.
 | --- | --- | --- |
 | props | `Object` |  |
 | [props.classes] | `Object` | CSS className overrides. |
-| [props.giftOptionsConfigData] | `Object` | store config data. See [giftOptions.module.css](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/GiftOptions/giftOptions.module.css) for a list of classes you can override. |
+| [props.giftOptionsConfigData] | `Object` | store config data. See [giftOptions.module.css](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/GiftOptions/giftOptions.module.css) for a list of classes you can override. |
 
 **Example** *(Importing into your project)*
 
@@ -87,7 +87,7 @@ This component renders the form for adding the shipping method for the cart.
 | --- | --- | --- |
 | props | `Object` |  |
 | props.setIsCartUpdating | `function` | Function for setting the updating state of the cart. |
-| props.classes | `Object` | CSS className overrides. See [shippingMethods.module.css](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.module.css) for a list of classes you can override. |
+| props.classes | `Object` | CSS className overrides. See [shippingMethods.module.css](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.module.css) for a list of classes you can override. |
 
 **Example** *(Importing into your project)*
 
@@ -95,4 +95,4 @@ This component renders the form for adding the shipping method for the cart.
 import ShippingMethods from "@magento/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods";
 ```
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/CartPage/PriceAdjustments/priceAdjustments.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/priceAdjustments.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/CartPage/PriceAdjustments/priceAdjustments.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/priceAdjustments.js)

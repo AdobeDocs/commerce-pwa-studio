@@ -4,7 +4,7 @@ An ECMAScript module containing a React component with JSX to render it.
 Presents a convenient API for consumers to add common transforms to React
 components and the JSX in them, in a semantic way.
 
-* [TargetableReactComponent](#TargetableReactComponent)
+* TargetableReactComponent
     * [.addJSXClassName(element, className, [options])](#TargetableReactComponent+addJSXClassName) ⇒ `this`
     * [.addReactLazyImport(modulePath, [localName])](#TargetableReactComponent+addReactLazyImport) ⇒ `string`
     * [.appendJSX(element, newChild, [options])](#TargetableReactComponent+appendJSX) ⇒ `this`
@@ -161,4 +161,4 @@ Wrap a JSX element in an outer element.
 | newParent | `string` | The wrapper element as a JSX string. It must be one and only one JSX element with no children; the matching element will be the only child of the new wrapper. |
 | [options] | `JSXModifierOptions` |  |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableReactComponent.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableReactComponent.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableReactComponent.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableReactComponent.js)

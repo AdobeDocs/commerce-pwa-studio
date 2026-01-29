@@ -1,16 +1,16 @@
 
-* [Buildpack/BuildBus](#module_Buildpack/BuildBus)
-    * [~TargetProvider](#module_Buildpack/BuildBus..TargetProvider) ⇐ `Trackable`
-        * [new TargetProvider(bus, dep, getExternalTargets)](#new_module_Buildpack/BuildBus..TargetProvider_new)
+* Buildpack/BuildBus
+    * ~TargetProvider ⇐ `Trackable`
+        * new TargetProvider(bus, dep, getExternalTargets)
         * _instance_
-            * [.name](#module_Buildpack/BuildBus..TargetProvider+name) : `string`
-            * [.own](#module_Buildpack/BuildBus..TargetProvider+own) : `Object.<string, Target>`
-            * [.phase](#module_Buildpack/BuildBus..TargetProvider+phase) : `string`
-            * [.declare(declarations)](#module_Buildpack/BuildBus..TargetProvider+declare)
-            * [.of(depName)](#module_Buildpack/BuildBus..TargetProvider+of) ⇒ `Object.<string, Target>`
+            * .name : `string`
+            * .own : `Object.<string, Target>`
+            * .phase : `string`
+            * .declare(declarations)
+            * .of(depName) ⇒ `Object.<string, Target>`
         * _inner_
-            * [~toJSON()](#module_Buildpack/BuildBus..TargetProvider..toJSON)
-    * [~getExternalTargets](#module_Buildpack/BuildBus..getExternalTargets) ⇒ `TargetProvider`
+            * ~toJSON()
+    * ~getExternalTargets ⇒ `TargetProvider`
 
 Handles interactions between a BuildBus and an "extension" package
 participating in the BuildBus declare/intercept lifecycle.
@@ -22,16 +22,16 @@ targets of other extensions.
 
 **Extends**: `Trackable`  
 
-* [~TargetProvider](#module_Buildpack/BuildBus..TargetProvider) ⇐ `Trackable`
-    * [new TargetProvider(bus, dep, getExternalTargets)](#new_module_Buildpack/BuildBus..TargetProvider_new)
+* ~TargetProvider ⇐ `Trackable`
+    * new TargetProvider(bus, dep, getExternalTargets)
     * _instance_
-        * [.name](#module_Buildpack/BuildBus..TargetProvider+name) : `string`
-        * [.own](#module_Buildpack/BuildBus..TargetProvider+own) : `Object.<string, Target>`
-        * [.phase](#module_Buildpack/BuildBus..TargetProvider+phase) : `string`
-        * [.declare(declarations)](#module_Buildpack/BuildBus..TargetProvider+declare)
-        * [.of(depName)](#module_Buildpack/BuildBus..TargetProvider+of) ⇒ `Object.<string, Target>`
+        * .name : `string`
+        * .own : `Object.<string, Target>`
+        * .phase : `string`
+        * .declare(declarations)
+        * .of(depName) ⇒ `Object.<string, Target>`
     * _inner_
-        * [~toJSON()](#module_Buildpack/BuildBus..TargetProvider..toJSON)
+        * ~toJSON()
 
 Creates an instance of TargetProvider.
 
@@ -89,4 +89,4 @@ they are more testable.
 | requestor | `TargetProvider` | TargetProvider making the request. |
 | requested | `string` | External targets being requested. |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/TargetProvider.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/BuildBus/TargetProvider.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/TargetProvider.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/TargetProvider.js)

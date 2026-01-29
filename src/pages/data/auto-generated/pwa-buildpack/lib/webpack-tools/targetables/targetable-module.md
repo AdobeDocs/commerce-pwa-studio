@@ -7,14 +7,14 @@ to that source file, meant to be passed to interceptors. Inside
 interceptors, extensions and projects can configure the TargetableModule to
 transform it in many ways.
 
-* [TargetableModule](#TargetableModule)
-    * [new TargetableModule(file, trackingOwner)](#new_TargetableModule_new)
-    * [.addTransform(type, transformModule, options)](#TargetableModule+addTransform) ⇒ `this`
-    * [.flush()](#TargetableModule+flush) ⇒ `Array.<TransformRequest>`
+* TargetableModule
+    * new TargetableModule(file, trackingOwner)
+    * .addTransform(type, transformModule, options) ⇒ `this`
+    * .flush() ⇒ `Array.<TransformRequest>`
     * [.insertAfterSource(after, insert, [options])](#TargetableModule+insertAfterSource) ⇒ `this`
     * [.insertBeforeSource(before, insert, [options])](#TargetableModule+insertBeforeSource) ⇒ `this`
-    * [.prependSource(insert)](#TargetableModule+prependSource) ⇒ `this`
-    * [.spliceSource(instruction)](#TargetableModule+spliceSource) ⇒ `this`
+    * .prependSource(insert) ⇒ `this`
+    * .spliceSource(instruction) ⇒ `this`
 
 Create a TargetableModule representing a file.
 
@@ -82,7 +82,7 @@ Add text to the beginning of a file.
 | --- | --- | --- |
 | insert | `string` | Text to insert up top |
 
-Do any splice operation supported by [splice-source-loader](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/splice-source-loader.js).
+Do any splice operation supported by [splice-source-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/splice-source-loader.js).
 
 **Chainable**  
 **Returns:**
@@ -92,4 +92,4 @@ Do any splice operation supported by [splice-source-loader](https://github.com/m
 | --- | --- | --- |
 | instruction | `object` | Splice instruction. |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableModule.js)

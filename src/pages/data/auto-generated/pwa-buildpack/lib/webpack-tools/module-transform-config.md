@@ -1,6 +1,6 @@
 ## Classes
 
-[ModuleTransformConfig](#ModuleTransformConfig)
+ModuleTransformConfig
 
 Configuration builder for module transforms. Accepts TransformRequests
 and emits loader config objects for Buildpack's custom transform loaders.
@@ -16,12 +16,12 @@ loader and plugin configuration.
 
 ## Typedefs
 
-[addTransform](#addTransform) ⇒
+addTransform ⇒
 
 Add a request to transform a file in the build. This function is passed as
 the first argument to an interceptor of the `transformModules` target.
 
-[TransformRequest](#TransformRequest) : `Object`
+TransformRequest : `Object`
 
 Instruction for configuring Webpack to apply custom transformations to one
 particular file. The [`configureWebpack()` function](/api/buildpack/webpack/configure/)
@@ -41,11 +41,11 @@ of the transforms by calling `transformConfig.collect()` on this object,
 which yields a structured object that configureWebpack can use to set up
 loader and plugin configuration.
 
-* [ModuleTransformConfig](#ModuleTransformConfig)
-    * [new ModuleTransformConfig(resolver, localProjectName)](#new_ModuleTransformConfig_new)
-    * [.add()](#ModuleTransformConfig+add)
-        * [.add](#ModuleTransformConfig+add.add) ⇒
-    * [.toLoaderOptions()](#ModuleTransformConfig+toLoaderOptions) ⇒ `object`
+* ModuleTransformConfig
+    * new ModuleTransformConfig(resolver, localProjectName)
+    * .add()
+        * .add ⇒
+    * .toLoaderOptions() ⇒ `object`
 
 **Parameters**
 
@@ -64,7 +64,7 @@ the first argument to an interceptor of the `transformModules` target.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| req | [`TransformRequest`](#TransformRequest) | Instruction object for the requested transform, including the transform to apply, the target source code, and other options. |
+| req | `TransformRequest` | Instruction object for the requested transform, including the transform to apply, the target source code, and other options. |
 
 Resolve paths and emit as JSON.
 
@@ -89,7 +89,7 @@ the first argument to an interceptor of the `transformModules` target.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| req | [`TransformRequest`](#TransformRequest) | Instruction object for the requested transform, including the transform to apply, the target source code, and other options. |
+| req | `TransformRequest` | Instruction object for the requested transform, including the transform to apply, the target source code, and other options. |
 
 Instruction for configuring Webpack to apply custom transformations to one
 particular file. The [`configureWebpack()` function](/api/buildpack/webpack/configure/)
@@ -101,9 +101,9 @@ rules](https://v4.webpack.js.org/configuration/module/#modulerules).
 
 | Name | Type | Description |
 | --- | --- | --- |
-| type | [`TransformType`](#TransformType) | The type of transformation to apply. |
+| type | `TransformType` | The type of transformation to apply. |
 | fileToTransform | `string` | Resolvable path to the file to be transformed itself, the same path that you'd use in `import` or `require()`. |
 | transformModule | `string` | Absolute path to the Node module that will actually be doing the transforming. This path may be resolved using different rules at different times, so it's best for this path to always be absolute. |
 | [options] | `object` | Config values to send to the transform function.   _Note: Options should be serializable to JSON as Webpack loader options   and/or Babel plugin options.._ |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/ModuleTransformConfig.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/ModuleTransformConfig.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/ModuleTransformConfig.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/ModuleTransformConfig.js)

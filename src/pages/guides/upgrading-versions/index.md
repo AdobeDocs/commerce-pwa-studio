@@ -44,7 +44,7 @@ For example, the `package.json` file for the **v10.0.0** release is at:
 
 [https://github.com/magento/pwa-studio/blob/v10.0.0/packages/venia-concept/package.json](https://github.com/magento/pwa-studio/blob/v10.0.0/packages/venia-concept/package.json)
 
-[template project's `package.json` file]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-concept/package.json
+[template project's `package.json` file]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/package.json
 
 ![Switching versions in GitHub](images/switch-versions.png)
 

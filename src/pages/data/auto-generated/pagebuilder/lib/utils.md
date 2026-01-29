@@ -170,4 +170,4 @@ Retrieve media queries from a master format node
 | node |  |
 | mediaQueries | `Array` |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/utils.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/utils.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/utils.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/utils.js)

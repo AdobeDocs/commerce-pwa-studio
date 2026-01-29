@@ -3,7 +3,7 @@
 
 [props]
 
-Props for [Banner](#Banner)
+Props for Banner
 
 Page Builder Banner component.
 
@@ -17,9 +17,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | `props` | React component props |
 
-Props for [Banner](#Banner)
+Props for Banner
 
 **Properties**
 
@@ -84,4 +84,4 @@ Props for [Banner](#Banner)
 | videoOverlayColor | `String` | Color for video overlay |
 | getParallax | `function` | Return parallax element and options |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Banner/banner.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/Banner/banner.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Banner/banner.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Banner/banner.js)

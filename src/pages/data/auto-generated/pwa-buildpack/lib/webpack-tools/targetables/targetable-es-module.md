@@ -4,9 +4,9 @@ An ECMAScript module that can be changed by a third party.
 This class presents a convenient API for consumers to add common transforms to ES
 Modules in a semantic way.
 
-* [TargetableESModule](#TargetableESModule)
-    * [.addImport(statement)](#TargetableESModule+addImport) ⇒ `SingleImportStatement`
-    * [.uniqueIdentifier(binding)](#TargetableESModule+uniqueIdentifier) ⇒ `string`
+* TargetableESModule
+    * .addImport(statement) ⇒ `SingleImportStatement`
+    * .uniqueIdentifier(binding) ⇒ `string`
     * [.wrapWithFile([exportName], wrapperModule)](#TargetableESModule+wrapWithFile) ⇒ `this`
 
 Adds a static import statement to the module source code, thus importing
@@ -47,4 +47,4 @@ Pass exports of this module through a wrapper module.
 | [exportName] | `string` | Name of export to wrap. If not provided, will wrap the default export. |
 | wrapperModule | `string` | Package-absolute import path to the wrapper module. |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableESModule.js)

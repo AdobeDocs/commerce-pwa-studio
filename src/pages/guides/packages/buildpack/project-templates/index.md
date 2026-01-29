@@ -15,7 +15,7 @@ you can use your own custom project template if it contains the necessary instru
 The presence of a `create.js` file inside a `_buildpack` directory indicates that a project can be used as a template for the scaffolding command.
 You can see an example of this directory in the [`venia-concept` package][].
 
-[`venia-concept` package]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-concept/_buildpack
+[`venia-concept` package]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/_buildpack
 
 ### The `create.js` file
 

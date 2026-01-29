@@ -2,7 +2,7 @@
 
 [props]
 
-Props for [Html](#Html)
+Props for Html
 
 Page Builder HTML component.
 
@@ -16,9 +16,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | `props` | React component props |
 
-Props for [Html](#Html)
+Props for Html
 
 **Properties**
 
@@ -42,4 +42,4 @@ Props for [Html](#Html)
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Html/html.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/Html/html.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Html/html.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Html/html.js)

@@ -33,7 +33,7 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | [`CartPageQueries`](#CartPageQueries) | GraphQL queries |
+| props.queries | `CartPageQueries` | GraphQL queries |
 
 **Example** *(Importing into your project)*
 
@@ -43,7 +43,7 @@ import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage'
 
 GraphQL formatted string queries used in this talon.
 
-**See**: [cartPage.gql.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/CartPage/cartPage.gql.js)
+**See**: [cartPage.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/cartPage.gql.js)
 for queries used in Venia  
 **Properties**
 
@@ -63,4 +63,4 @@ Props data to use when rendering a cart page component.
 | setIsCartUpdating | `function` | Callback function for setting the updating state of the cart page. |
 | shouldShowLoadingIndicator | `boolean` | True if the loading indicator should be rendered. False otherwise. |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/useCartPage.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/talons/CartPage/useCartPage.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/useCartPage.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/useCartPage.js)

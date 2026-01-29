@@ -20,9 +20,9 @@ The current pagination state
 
 The API object used for modifying the PaginationState.
 
-* [API](#API)
-    * [.setCurrentPage(page)](#API.setCurrentPage)
-    * [.setTotalPages(total)](#API.setTotalPages)
+* API
+    * .setCurrentPage(page)
+    * .setTotalPages(total)
 
 Set the current page
 
@@ -48,7 +48,7 @@ data.
 
 **Returns:**
 `Array.<Object>`
-   — An array with two entries containing the following content: [ [PaginationState](#PaginationState), [API](#API) ]
+   — An array with two entries containing the following content:  [PaginationState, API ]
 
 **Parameters**
 
@@ -60,4 +60,4 @@ data.
 | config.initialPage | `Number` | ``                 | The initial current page value |
 | config.initialTotalPages | `Number` | `1`                | The total pages expected to be usable by this hook |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/usePagination.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/hooks/usePagination.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/hooks/usePagination.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/usePagination.js)

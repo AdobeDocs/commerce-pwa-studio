@@ -3,7 +3,7 @@
 
 [props]
 
-Props for [Trigger](#Trigger)
+Props for Trigger
 
 A component that will trigger a given action.
 
@@ -15,9 +15,9 @@ A component that will trigger a given action.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | `props` | React component props |
 
-Props for [Trigger](#Trigger)
+Props for Trigger
 
 **Properties**
 
@@ -28,4 +28,4 @@ Props for [Trigger](#Trigger)
 | classes | `Object` | An object containing the class names for the Trigger component. |
 | classes.root | `string` | classes for root container |
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Trigger/trigger.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Trigger/trigger.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Trigger/trigger.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Trigger/trigger.js)

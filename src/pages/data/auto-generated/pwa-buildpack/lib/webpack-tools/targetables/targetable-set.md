@@ -1,6 +1,6 @@
 ## Classes
 
-[TargetableSet](#TargetableSet)
+TargetableSet
 
 A factory and manager for Targetable instances.
 This class wraps around a TargetProvider, which identifies it as "your"
@@ -8,7 +8,7 @@ Targetable and enables automatic interception of targets.
 
 ## Typedefs
 
-[TargetablePublisher](#TargetablePublisher) : `function`
+TargetablePublisher : `function`
 
 Callback function which runs before committing this module's list of requested transforms to the build. Invoked as an intercept to `builtins.transformModules`, this is the typical time to invoke your own target with your custom API.
 
@@ -16,17 +16,17 @@ A factory and manager for Targetable instances.
 This class wraps around a TargetProvider, which identifies it as "your"
 Targetable and enables automatic interception of targets.
 
-* [TargetableSet](#TargetableSet)
+* TargetableSet
     * _instance_
         * [.module(modulePath, [publisher])](#TargetableSet+module) ⇒ `TargetableModule`
         * [.esModule(modulePath, [publisher])](#TargetableSet+esModule) ⇒ `TargetableESModule`
         * [.esModuleArray(modulePath, [publisher])](#TargetableSet+esModuleArray) ⇒ `TargetableESModuleArray`
         * [.esModuleObject(modulePath, [publisher])](#TargetableSet+esModuleObject) ⇒ `TargetableESModuleObject`
         * [.reactComponent(modulePath, [publisher])](#TargetableSet+reactComponent) ⇒ `TargetableReactComponent`
-        * [.setSpecialFeatures(...Feature)](#TargetableSet+setSpecialFeatures)
-        * [.defineEnvVars(sectionName, variables)](#TargetableSet+defineEnvVars)
+        * .setSpecialFeatures(...Feature)
+        * .defineEnvVars(sectionName, variables)
     * _static_
-        * [.using(targets)](#TargetableSet.using) ⇒ [`TargetableSet`](#TargetableSet)
+        * .using(targets) ⇒ `TargetableSet`
 
 **Returns:**
 `TargetableModule`
@@ -37,7 +37,7 @@ Targetable and enables automatic interception of targets.
 | Name | Type | Description |
 | --- | --- | --- |
 | modulePath | `string` | Path to the module file this Targetable represents. |
-| [publisher] | [`TargetablePublisher`](#TargetablePublisher) | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
+| [publisher] | `TargetablePublisher` | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
 **Returns:**
 `TargetableESModule`
@@ -48,7 +48,7 @@ Targetable and enables automatic interception of targets.
 | Name | Type | Description |
 | --- | --- | --- |
 | modulePath | `string` | Path to the module file this Targetable represents. |
-| [publisher] | [`TargetablePublisher`](#TargetablePublisher) | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
+| [publisher] | `TargetablePublisher` | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
 **Returns:**
 `TargetableESModuleArray`
@@ -59,7 +59,7 @@ Targetable and enables automatic interception of targets.
 | Name | Type | Description |
 | --- | --- | --- |
 | modulePath | `string` | Path to the module file this Targetable represents. |
-| [publisher] | [`TargetablePublisher`](#TargetablePublisher) | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
+| [publisher] | `TargetablePublisher` | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
 **Returns:**
 `TargetableESModuleObject`
@@ -70,7 +70,7 @@ Targetable and enables automatic interception of targets.
 | Name | Type | Description |
 | --- | --- | --- |
 | modulePath | `string` | Path to the module file this Targetable represents. |
-| [publisher] | [`TargetablePublisher`](#TargetablePublisher) | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
+| [publisher] | `TargetablePublisher` | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
 **Returns:**
 `TargetableReactComponent`
@@ -81,7 +81,7 @@ Targetable and enables automatic interception of targets.
 | Name | Type | Description |
 | --- | --- | --- |
 | modulePath | `string` | Path to the module file this Targetable represents. |
-| [publisher] | [`TargetablePublisher`](#TargetablePublisher) | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
+| [publisher] | `TargetablePublisher` | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
 Taps the builtin `specialFeatures` target and sets the supplied feature flags.
 
@@ -118,4 +118,4 @@ Callback function which runs before committing this module's list of requested t
 | --- | --- | --- |
 | self | `TargetableModule` | The TargetableModule instance (for use if `this` is not available) |
 
-**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet.js](https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet.js)
+**Source Code**: [pwa-studio/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/targetables/TargetableSet.js)

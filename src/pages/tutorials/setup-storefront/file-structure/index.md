@@ -110,7 +110,7 @@ You can edit this file if you want to change how your project's UPWARD server re
 but the preferred method is to use Targetables to make these changes.
 
 [upward]: /guides/packages/upward/
-[venia-ui package's `upward.yml` file]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/upward.yml
+[venia-ui package's `upward.yml` file]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/upward.yml
 
 ### `template.html`
 

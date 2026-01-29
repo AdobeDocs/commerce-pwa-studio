@@ -1,6 +1,6 @@
 ## Members
 
-[hooks](#hooks) : `tapable.AsyncSeriesHook`
+hooks : `tapable.AsyncSeriesHook`
 
 Provides access to Peregrine React hooks.
 
@@ -12,7 +12,7 @@ Peregrine hook.
 You can also use this target to modify the behavior or output returned by
 a hook.
 
-[talons](#talons) : `tapable.AsyncSeriesHook`
+talons : `tapable.AsyncSeriesHook`
 
 Provides access to Peregrine talon wrappers.
 
@@ -26,7 +26,7 @@ a talon.
 
 ## Typedefs
 
-[hookInterceptFunction](#hookInterceptFunction) : `function`
+hookInterceptFunction : `function`
 
 Intercept function signature for the `talons` and `hooks` targets.
 
@@ -43,7 +43,7 @@ Peregrine hook.
 You can also use this target to modify the behavior or output returned by
 a hook.
 
-**See**: [Intercept function signature](#hookInterceptFunction)  
+**See**: Intercept function signature  
 **Example** *(Access the tapable object)*
 
 ```js
@@ -70,7 +70,7 @@ Peregrine talon.
 You can also use this target to modify the behavior or output returned by
 a talon.
 
-**See**: [Intercept function signature](#hookInterceptFunction)  
+**See**: Intercept function signature  
 **Example** *(Access the tapable object)*
 
 ```js
@@ -97,4 +97,4 @@ the provided [`HookInterceptorSet` object](/tutorials/targets/modify-talon-resul
 | --- | --- | --- |
 | hookInterceptors | `HookInterceptorSet` | Registry of wrappable hook namespaces |
 
-**Source Code**: [pwa-studio/packages/peregrine/lib/targets/peregrine-declare.js](https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/targets/peregrine-declare.js)
+**Source Code**: [pwa-studio/packages/peregrine/lib/targets/peregrine-declare.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/targets/peregrine-declare.js)

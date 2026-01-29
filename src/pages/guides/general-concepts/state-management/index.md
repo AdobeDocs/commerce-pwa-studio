@@ -79,7 +79,7 @@ Components can also [subscribe][] to state changes to update their appearance or
 Early versions of PWA Studio used the Redux library directly as the primary mechanism for managing application state,
 and the Redux pattern can be seen in hooks such as [`useRestResponse()`][].
 
-[`userestresponse()`]: https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/hooks/useRestResponse.js
+[`userestresponse()`]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useRestResponse.js
 
 Currently, PWA Studio abstracts away its Redux implementation details using Peregrine hooks and context providers.
 This opens up the possibility of the project replacing Redux in Peregrine with another state management library without breaking state dependent components, such as those in Venia.
@@ -145,7 +145,7 @@ a corresponding `Context.Consumer` acquires the data and subscribes to any chang
 PWA Studio uses the Context feature to provide application state data to storefront components through the [`PeregrineContextProvider`][] component.
 Wrapping an application with the `PeregrineContextProvider` lets its components access different slices of the entire application state.
 
-[`peregrinecontextprovider`]: https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/PeregrineContextProvider/peregrineContextProvider.js
+[`peregrinecontextprovider`]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/PeregrineContextProvider/peregrineContextProvider.js
 
 ```jsx
 // Example src/index.js
@@ -187,7 +187,7 @@ To access a global state slice, wrap the `PeregrineContextProvider` around the m
 Next, import the appropriate [context hook][] and decompose the array returned by the hook function call.
 The decomposed array yields the state data and an API object to update that state.
 
-[context hook]: https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/context
+[context hook]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/context
 
 ```jsx
 // Example src/components/MyWelcomeMessage/myWelcomeMessage.js

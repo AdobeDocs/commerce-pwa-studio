@@ -3,7 +3,7 @@
 
 [props]
 
-Props for [Button](#Button)
+Props for Button
 
 A component for buttons.
 
@@ -15,9 +15,9 @@ A component for buttons.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | `props` | React component props |
 
-Props for [Button](#Button)
+Props for Button
 
 **Properties**
 
@@ -34,4 +34,4 @@ Props for [Button](#Button)
 | negative | `bool` | whether the button should be displayed in red for a negative action |
 | disabled | `bool` | is the button disabled |
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Button/button.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Button/button.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/Button/button.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Button/button.js)

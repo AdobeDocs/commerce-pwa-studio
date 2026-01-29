@@ -85,7 +85,7 @@ Boosting a site's SEO while providing a rich, dynamic experience is a balancing 
 The UPWARD specification supports server-side rendering through its [JavaScript][] and [PHP][] server implementations.
 The specification provide different resolvers that can return HTML content as a response to a request.
 
-[javascript]: https://github.com/magento/pwa-studio/tree/develop/packages/upward-js
+[javascript]: https://github.com/magento/pwa-studio/blob/develop/packages/upward-js
 [php]: https://github.com/magento/upward-php
 
 Use the following resolvers in your applications UPWARD configuration file to enable server-side rendering.

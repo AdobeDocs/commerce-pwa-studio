@@ -8,7 +8,7 @@ Upper case the first letter of a string
 
 [props]
 
-Props for [Tabs](#Tabs)
+Props for Tabs
 
 Page Builder Tabs component.
 
@@ -22,7 +22,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | `props` | React component props |
 
 Upper case the first letter of a string
 
@@ -33,7 +33,7 @@ Upper case the first letter of a string
 | --- | --- |
 | string | `string` |
 
-Props for [Tabs](#Tabs)
+Props for Tabs
 
 **Properties**
 
@@ -75,4 +75,4 @@ Props for [Tabs](#Tabs)
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js)

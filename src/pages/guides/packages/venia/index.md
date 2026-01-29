@@ -12,8 +12,8 @@ PWA Studio provides two Venia packages.
 The [venia-concept package][] is a proof-of-concept storefront project built with PWA Studio tools.
 The [venia-ui package][] is a library of UI components you can use to build a storefront.
 
-[venia-concept package]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-concept
-[venia-ui package]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui
+[venia-concept package]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept
+[venia-ui package]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui
 
 ## Venia storefront template
 

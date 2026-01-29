@@ -72,9 +72,9 @@ For this tutorial, the render chain for the Footer component in the Venia storef
 You can verify this by looking at the source for the [Adapter][], [Main][] and [App][] components.
 Main imports and renders the Footer component, and App imports and renders the Main component.
 
-[Main]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Main/main.js
-[App]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/App/app.js
-[Adapter]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Adapter/adapter.js
+[Main]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Main/main.js
+[App]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/app.js
+[Adapter]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Adapter/adapter.js
 
 ### Root components
 
@@ -83,7 +83,7 @@ Static imported components, such as Header, Footer, and side Navigation, have re
 Root components are dynamically loaded components associated with an Adobe Commerce or Magento Open Source page type or route.
 A list of Venia's root components can be found in the [RootComponent][] directory in the PWA Studio project.
 
-[rootcomponent]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/RootComponents
+[rootcomponent]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/RootComponents
 
 ## Create component directories
 
@@ -129,7 +129,7 @@ cp node_modules/@magento/venia-ui/lib/components/App/app.js src/components/App
 If you look at the [`index.js`][] file for Venia's App component, its default export is not `app.js`.
 The default export for this component is `container.js`, which is a container for the `app.js` module, so copy the `container.js` file into your project.
 
-[`index.js`]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/App/index.js
+[`index.js`]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/App/index.js
 
 ```sh
 cp node_modules/@magento/venia-ui/lib/components/App/container.js src/components/App

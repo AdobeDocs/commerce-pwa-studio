@@ -185,7 +185,7 @@ too much fall-through of project configuration can result in unpredictable and h
 
 All the environment variables expected and/or used by buildpack are defined in [packages/pwa-buildpack/envVarDefinitions.json][].
 
-[packages/pwa-buildpack/envvardefinitions.json]: https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/envVarDefinitions.json
+[packages/pwa-buildpack/envvardefinitions.json]: https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/envVarDefinitions.json
 
 This file is used for:
 

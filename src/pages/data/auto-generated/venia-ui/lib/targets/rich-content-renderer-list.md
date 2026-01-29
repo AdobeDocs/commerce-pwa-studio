@@ -18,4 +18,4 @@ Add a rendering strategy to the RichContent component.
 | strategy.importPath | `string` | Import path to the RichContentRenderer module. Should be package-absolute. |
 | strategy.componentName | `string` | Name that will be given to the imported renderer in generated code. This is used for debugging purposes. |
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/targets/RichContentRendererList.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/targets/RichContentRendererList.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/targets/RichContentRendererList.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/targets/RichContentRendererList.js)

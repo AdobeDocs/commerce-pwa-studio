@@ -8,7 +8,7 @@ Sort products based on the original order
 
 [props]
 
-Props for [Products](#Products)
+Props for Products
 
 Page Builder Products component.
 
@@ -22,7 +22,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | `props` | React component props |
 
 Sort products based on the original order
 
@@ -34,7 +34,7 @@ Sort products based on the original order
 | urlKeys | `Array` |
 | products | `Array` |
 
-Props for [Products](#Products)
+Props for Products
 
 **Properties**
 
@@ -76,4 +76,4 @@ Props for [Products](#Products)
 | slidesToShowSmall | `Number` | # of slides to show at a time on small screen |
 | slidesToShowSmallCenterMode | `Number` | # of slides to show at a time on small screen in centerMode |
 
-**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Products/products.js](https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/ContentTypes/Products/products.js)
+**Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Products/products.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Products/products.js)

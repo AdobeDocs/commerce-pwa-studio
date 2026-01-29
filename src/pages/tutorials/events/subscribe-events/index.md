@@ -11,7 +11,7 @@ keywords:
 
 Third-party modules can subscribe to events, allowing you to use other analytics collection schemes.
 
-The [venia-sample-eventing](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/venia-sample-eventing) module shows how to subscribe to events.
+The [venia-sample-eventing](https://github.com/magento/pwa-studio/blob/develop/packages/extensions/venia-sample-eventing) module shows how to subscribe to events.
 
 Within `main.js`, the subscription code is:
 

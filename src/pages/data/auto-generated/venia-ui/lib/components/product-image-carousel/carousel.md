@@ -3,7 +3,7 @@
 
 [props]
 
-Props for [ProductImageCarousel](#ProductImageCarousel)
+Props for ProductImageCarousel
 
 Carousel component for product images
 Carousel - Component that holds number of images
@@ -18,9 +18,9 @@ images can be navigated through previous and next buttons
 
 | Name | Type |
 | --- | --- |
-| props | [`props`](#props) |
+| props | `props` |
 
-Props for [ProductImageCarousel](#ProductImageCarousel)
+Props for ProductImageCarousel
 
 **Properties**
 
@@ -39,4 +39,4 @@ Props for [ProductImageCarousel](#ProductImageCarousel)
 | images[].label | `string` | label for image |
 | images[].position | `string` | Position of image in Carousel |
 
-**Source Code**: [pwa-studio/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js](https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js)
+**Source Code**: [pwa-studio/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js)

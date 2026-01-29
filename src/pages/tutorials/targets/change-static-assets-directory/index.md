@@ -9,7 +9,7 @@ When you build a storefront project based on the Venia template, it copies the [
 This directory contains brand-specific files such as icons and the website's `manifest.json` file.
 To use a different set of these files, you will need to create a new static assets directory and copy it into `dist` during build time.
 
-[`venia-static` directory]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/venia-static
+[`venia-static` directory]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/venia-static
 
 ## Tasks overview
 
@@ -171,8 +171,8 @@ To serve these files from the root, you must configure the UPWARD server to look
 The [`veniaResponse` object][] in the base `upward.yml` file contains the [conditional resolver][] that tells the server to resolve requests for these files using the `staticFromRoot` object.
 According to this object, the current rule for resolving requests for these files is to look for and return them from the `venia-static` directory.
 
-[`veniaResponse` object]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/upward.yml
-[conditional resolver]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/upward.yml
+[`veniaResponse` object]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/upward.yml
+[conditional resolver]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/upward.yml
 
 ### Update UPWARD configuration using targets
 

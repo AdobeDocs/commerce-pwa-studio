@@ -105,7 +105,7 @@ When you [set up a new project][], the scaffolding tool creates an UPWARD defini
 This file contains references to a `veniaResponse` object defined in the [`venia-ui` package][].
 
 [set up a new project]: /tutorials/setup-storefront/
-[`venia-ui` package]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/upward.yml
+[`venia-ui` package]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/upward.yml
 
 To deploy your storefront application, pass this file onto an UPWARD server to make it accessible to users.
 
@@ -120,4 +120,4 @@ You can also tap into the [`transformUpward` target][] in your storefront or ext
 See the [`upward-security-headers` extension][] for an example of this approach.
 
 [`transformupward` target]: /api/buildpack/targets/
-[`upward-security-headers` extension]: https://github.com/magento/pwa-studio/tree/develop/packages/extensions/upward-security-headers/intercept.js
+[`upward-security-headers` extension]: https://github.com/magento/pwa-studio/blob/develop/packages/extensions/upward-security-headers/intercept.js

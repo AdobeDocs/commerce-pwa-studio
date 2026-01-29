@@ -41,7 +41,7 @@ module.exports = (targets) => {
 
 The following example makes the following code modifications to [`main.js`][] for the final bundle:
 
-[`main.js`]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/components/Main/main.js
+[`main.js`]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Main/main.js
 
 ```diff
   const Main = props => {

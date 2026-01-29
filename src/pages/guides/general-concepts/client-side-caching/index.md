@@ -36,7 +36,7 @@ Venia's service worker uses Google's [Workbox][] library.
 Its behavior is defined in files inside the [src/ServiceWorker/][] directory.
 
 [workbox]: https://developer.chrome.com/docs/workbox/
-[src/serviceworker/]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-concept/src/ServiceWorker/
+[src/serviceworker/]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/src/ServiceWorker/
 
 You do not need to use Workbox to define service worker behavior, but
 Workbox makes this task easier by removing boilerplate code that is always used when working with service workers.

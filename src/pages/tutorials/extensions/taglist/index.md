@@ -221,7 +221,7 @@ The TagList component requires data the [ProductDetailsFragment][] does not prov
 you need to create a data fetch hook.
 The data fetch hook is a custom React hook that sends a GraphQL query requesting the product categories for a product.
 
-[productdetailsfragment]: https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/talons/RootComponents/Product/productDetailFragment.gql.js
+[productdetailsfragment]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/RootComponents/Product/productDetailFragment.gql.js
 
 Run the following command to create this file:
 

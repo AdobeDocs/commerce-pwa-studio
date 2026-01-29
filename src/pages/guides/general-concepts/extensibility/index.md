@@ -46,7 +46,7 @@ The framework uses the [BuildBus][] to gather instructions from each extension's
 These files determine which Targets the extension intercepts and extends during the build process.
 
 [targets]: #targets
-[buildbus]: https://github.com/magento/pwa-studio/tree/develop/packages/pwa-buildpack/lib/BuildBus/BuildBus.js
+[buildbus]: https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/BuildBus.js
 [intercept files]: #intercept-files
 
 ## Targets
@@ -79,12 +79,12 @@ This Target lets you change the behavior of the `RichContent` component across y
 Tapping into this Target gives access to a `richContentRenders` list object in your intercept function.
 Calling the `add()` function on this object lets you add a custom rendering strategy for your storefront.
 
-[`richcontentrenderers` target]: /api/venia/targets/#richContentRenderers
+[`richcontentrenderers` target]: /api/venia/targets/
 
 The [Page Builder extension][] provides an example of how to intercept this Target.
 It taps the Target and provides an intercept function that adds a custom renderer for any detected Page Builder content.
 
-[page builder extension]: https://github.com/magento/pwa-studio/tree/develop/packages/pagebuilder/lib/intercept.js
+[page builder extension]: https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/intercept.js
 
 ```js
 targets
@@ -287,8 +287,8 @@ The PWA Studio scaffolding tool also installs extensions on all new storefront p
 These extensions use the framework to add useful features on top of the base application.
 They are also examples of what a PWA Studio storefront extension looks like.
 
-[@magento/upward-security-headers](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/upward-security-headers)
+[@magento/upward-security-headers](https://github.com/magento/pwa-studio/blob/develop/packages/extensions/upward-security-headers)
 : This extension adds security headers to UPWARD by tapping into the `transformUpward` Target in Buildpack.
 
-[@magento/venia-sample-language-packs](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/venia-sample-language-packs)
+[@magento/venia-sample-language-packs](https://github.com/magento/pwa-studio/blob/develop/packages/extensions/venia-sample-language-packs)
 : This extension provides sample translations for PWA Studio's internationalization feature.
