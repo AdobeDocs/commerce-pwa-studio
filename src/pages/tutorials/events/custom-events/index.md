@@ -69,7 +69,7 @@ export default {
 
 ## wrapUseAutocomplete.js
 
-This file is a [talon wrapper](/tutorials/targets/modify-talon-results/) that wraps around the `useAutocomplete()` talon to add additional event dispatching logic.
+This file is a [talon wrapper](/tutorials/targets/modify-talon-results/index.md) that wraps around the `useAutocomplete()` talon to add additional event dispatching logic.
 In `wrapUseAutocomplete.js` the search result is received and the payload is defined and dispatched. This takes place in the `useEffect` function:
 
 ```javascript
@@ -123,7 +123,7 @@ const wrapUseAutocomplete = useAutocomplete => {
 export default wrapUseAutocomplete;
 ```
 
-Read more about [PWA Studio extensibility](/guides/general-concepts/extensibility/).
+Read more about [PWA Studio extensibility](/guides/general-concepts/extensibility/index.md).
 
 ## intercept.js
 
@@ -141,4 +141,4 @@ In this particular code, the `useApp()`, `useAccountMenu()`, and `useAutocomplet
         );
 ```
 
-When your code is complete, you can [test on a local instance](/tutorials/targets/modify-talon-results/#test-on-a-local-instance).
+When your code is complete, you can [test on a local instance](/tutorials/targets/modify-talon-results/index.md#test-on-a-local-instance).

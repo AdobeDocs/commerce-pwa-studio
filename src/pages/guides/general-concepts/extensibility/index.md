@@ -266,18 +266,18 @@ As shown in the previous examples, a common practice when authoring these files 
 When you create a new storefront project using the scaffolding tool, you have access to all the same PWA Studio Targets as the Venia storefront.
 The following is a list of PWA Studio packages that contain Targets.
 
-[Buildpack](/api/buildpack/targets/)
+[Buildpack](/api/buildpack/targets/index.md)
 : Targets in the Buildpack are low level and generic.
 They are often used as building blocks for more complicated feature Targets.
 You can also find Targets that let you add environment variables or change UPWARD behavior in this package.
 
-[Peregrine](/api/peregrine/targets/)
+[Peregrine](/api/peregrine/targets/index.md)
 : Targets in the Peregrine package focus mainly on the set of talons it provides.
 The `talons` Target lets you [wrap a Talon][] with your own module.
 
-[wrap a talon]: /tutorials/targets/modify-talon-results/
+[wrap a talon]: /tutorials/targets/modify-talon-results/index.md
 
-[Venia UI](/api/venia/targets/)
+[Venia UI](/api/venia/targets/index.md)
 : Targets in the Venia UI provide access to the list of items used in the UI components.
 These Targets let you add new routes, rendering strategies, and payment methods.
 

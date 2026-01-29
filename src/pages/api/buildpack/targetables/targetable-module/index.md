@@ -66,4 +66,4 @@ The following example makes the following code modifications to [`main.js`][] fo
 
 ## Related content
 
-- [Transform Requests](/api/buildpack/transform-requests/)
+- [Transform Requests](/api/buildpack/transform-requests/index.md)

@@ -24,7 +24,7 @@ the first argument to an interceptor of the `transformModules` target.
 TransformRequest : `Object`
 
 Instruction for configuring Webpack to apply custom transformations to one
-particular file. The [`configureWebpack()` function](/api/buildpack/webpack/configure/)
+particular file. The [`configureWebpack()` function](/api/buildpack/webpack/configure/index.md)
 gathers TransformRequests from all interceptors of the `transformModules`
 target and turns them into a configuration of Webpack [module
 rules](https://v4.webpack.js.org/configuration/module/#modulerules).
@@ -92,7 +92,7 @@ the first argument to an interceptor of the `transformModules` target.
 | req | `TransformRequest` | Instruction object for the requested transform, including the transform to apply, the target source code, and other options. |
 
 Instruction for configuring Webpack to apply custom transformations to one
-particular file. The [`configureWebpack()` function](/api/buildpack/webpack/configure/)
+particular file. The [`configureWebpack()` function](/api/buildpack/webpack/configure/index.md)
 gathers TransformRequests from all interceptors of the `transformModules`
 target and turns them into a configuration of Webpack [module
 rules](https://v4.webpack.js.org/configuration/module/#modulerules).

@@ -11,16 +11,16 @@ keywords:
 
 PWA Studio 12.5.0 introduces an eventing framework for collecting user interactions with your site.
 
-A set of [default events](/api/events/) are included within PWA Studio. These events cover the most common interactions most store owners would likely want to track: user log in/out, product clicks, cart operations, etc.
-[Custom events](/tutorials/events/custom-events/) can be written to cover your own specific needs.
+A set of [default events](/api/events/index.md) are included within PWA Studio. These events cover the most common interactions most store owners would likely want to track: user log in/out, product clicks, cart operations, etc.
+[Custom events](/tutorials/events/custom-events/index.md) can be written to cover your own specific needs.
 
-It is also possible to [subscribe](/tutorials/events/custom-events/) to events so that event data can be sent to other analytics platforms.
+It is also possible to [subscribe](/tutorials/events/custom-events/index.md) to events so that event data can be sent to other analytics platforms.
 
 This event data can be collected and sent to analytics systems for processing.
 
-For Adobe Commerce users with an [Adobe Experience Platform](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) subscription, an [extension](/integrations/adobe-commerce/aep/) is available for PWA studio that connects to an Adobe Commerce backend.
+For Adobe Commerce users with an [Adobe Experience Platform](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) subscription, an [extension](/integrations/adobe-commerce/aep/index.md) is available for PWA studio that connects to an Adobe Commerce backend.
 
-The Adobe Commerce backend can be [configured](/integrations/adobe-commerce/aep/) to send event data to the Adobe Experience Platform.
+The Adobe Commerce backend can be [configured](/integrations/adobe-commerce/aep/index.md) to send event data to the Adobe Experience Platform.
 
 ## Eventing basics
 

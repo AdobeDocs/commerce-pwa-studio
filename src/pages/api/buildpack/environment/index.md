@@ -11,12 +11,12 @@ A PWA Studio storefront uses environment variables set in the server and a `.env
 
 ## Reference
 
-[Core variable definitions](/api/buildpack/environment/variables/)
+[Core variable definitions](/api/buildpack/environment/variables/index.md)
 
 A list of core environmental variables used in PWA Studio storefront projects.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Environment variable definition object](/api/buildpack/environment/definition-object/)
+[Environment variable definition object](/api/buildpack/environment/definition-object/index.md)
 
 Programmatic API for the `EnvVarDefinitions` object.

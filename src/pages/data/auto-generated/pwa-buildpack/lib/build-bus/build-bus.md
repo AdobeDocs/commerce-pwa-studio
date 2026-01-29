@@ -214,14 +214,14 @@ configuration with the project-wide environment variable system.
 
 **See**
 
-* [Variable definition schema](/api/buildpack/environment/definition-object/)
-* [Core variable definitions](/api/buildpack/environment/variables/)
+* [Variable definition schema](/api/buildpack/environment/definition-object/index.md)
+* [Core variable definitions](/api/buildpack/environment/variables/index.md)
 
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| envVarDefinitions | `object` | The [variable definitions object](/api/buildpack/environment/definition-object/). Modify in place. |
+| envVarDefinitions | `object` | The [variable definitions object](/api/buildpack/environment/definition-object/index.md). Modify in place. |
 
 **Example** _(Add config fields for your extension)_
 
@@ -294,7 +294,7 @@ Likewise, if your extension uses CSS Modules, you must add the `cssModules` flag
 Use a specialFeatures intercept function
 to add special build features for the modules used in your project.
 
-**See**: [Special flags in `configureWebpack()`](/api/buildpack/webpack/configure/#special-flags)  
+**See**: [Special flags in `configureWebpack()`](/api/buildpack/webpack/configure/index.md#special-flags)  
 **Example** _(Declare that your extension contains CSS modules.)_
 
 ```js
@@ -555,7 +555,7 @@ Creates an instance of TargetProvider.
 | bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
 | dep | `Object` | The package which owns this TargetProvider. |
 | dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](/guides/general-concepts/extensibility/#targetproviders) |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](/guides/general-concepts/extensibility/index.md#targetproviders) |
 
 The targets this package has declared in the `declare` phase.
 
@@ -639,7 +639,7 @@ the end). Otherwise, returns `<unknown>`.
 | --- | --- | --- |
 | hook | `object` | Potental Tapable hook object |
 
-Respond to a request from a [TargetProvider](/guides/general-concepts/extensibility/#targetproviders)
+Respond to a request from a [TargetProvider](/guides/general-concepts/extensibility/index.md#targetproviders)
 to retrieve a different(external) TargetProvider.
 
 This callback pattern helps to loosely couple TargetProviders so
@@ -849,7 +849,7 @@ Creates an instance of TargetProvider.
 | bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
 | dep | `Object` | The package which owns this TargetProvider. |
 | dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](/guides/general-concepts/extensibility/#targetproviders) |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](/guides/general-concepts/extensibility/index.md#targetproviders) |
 
 The targets this package has declared in the `declare` phase.
 
@@ -933,7 +933,7 @@ the end). Otherwise, returns `<unknown>`.
 | --- | --- | --- |
 | hook | `object` | Potental Tapable hook object |
 
-Respond to a request from a [TargetProvider](/guides/general-concepts/extensibility/#targetproviders)
+Respond to a request from a [TargetProvider](/guides/general-concepts/extensibility/index.md#targetproviders)
 to retrieve a different(external) TargetProvider.
 
 This callback pattern helps to loosely couple TargetProviders so
@@ -1278,7 +1278,7 @@ Creates an instance of TargetProvider.
 | bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
 | dep | `Object` | The package which owns this TargetProvider. |
 | dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](/guides/general-concepts/extensibility/#targetproviders) |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](/guides/general-concepts/extensibility/index.md#targetproviders) |
 
 The targets this package has declared in the `declare` phase.
 
@@ -1362,7 +1362,7 @@ the end). Otherwise, returns `<unknown>`.
 | --- | --- | --- |
 | hook | `object` | Potental Tapable hook object |
 
-Respond to a request from a [TargetProvider](/guides/general-concepts/extensibility/#targetproviders)
+Respond to a request from a [TargetProvider](/guides/general-concepts/extensibility/index.md#targetproviders)
 to retrieve a different(external) TargetProvider.
 
 This callback pattern helps to loosely couple TargetProviders so
@@ -1393,12 +1393,12 @@ Any returned value will be ignored.
 
 Callback to add a transform.
 
-**See**: [TransformRequest](/api/buildpack/transform-requests/)  
+**See**: [TransformRequest](/api/buildpack/transform-requests/index.md)  
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](/api/buildpack/transform-requests/) to apply a transform to a file provided by this dependency. |
+| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](/api/buildpack/transform-requests/index.md) to apply a transform to a file provided by this dependency. |
 
 Intercept function signature for the webpackCompiler target.
 
