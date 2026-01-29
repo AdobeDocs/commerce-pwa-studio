@@ -58,7 +58,7 @@ This lets you specify the variable names of the provided objects when you [destr
 
 [usestate()]: https://legacy.reactjs.org/docs/hooks-reference.html#usestate
 [usereducer()]: https://legacy.reactjs.org/docs/hooks-reference.html#usereducer
-[destructure]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+[destructure]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring
 
 Other Peregrine hooks return a single object.
 

@@ -62,13 +62,13 @@ It promotes the idea of a global object tree that contains the state of the whol
 This object is known as a [store][].
 
 [redux]: https://redux.js.org/introduction/getting-started
-[store]: https://redux.js.org/glossary#store
+[store]: https://redux.js.org/understanding/thinking-in-redux/glossary#store
 
 The store is a read-only object, which can only be updated by dispatching a [reducer][] function.
 Reducer functions accept the current state and an [action][] object as parameters and returns the next state.
 
 [reducer]: https://redux.js.org/understanding/thinking-in-redux/glossary#reducer
-[action]: https://redux.js.org/basics/actions
+[action]: https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow
 
 Application components are able to [dispatch][] various actions to update the state.
 Components can also [subscribe][] to state changes to update their appearance or behavior.

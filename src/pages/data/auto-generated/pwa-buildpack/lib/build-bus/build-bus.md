@@ -364,7 +364,7 @@ Mapping Tapable hooks to the Buildpack facade of Targets.
 
 * Buildpack/BuildBus
     * ~Target ⇐ `Trackable`
-        * [.call([...args])](#module_Buildpack/BuildBus..Target+call) ⇒ `\*`
+        * .call([...args]) ⇒ `\*`
         * .callAsync(...args) ⇒ `undefined`
         * .intercept(options) ⇒ `void`
         * [.promise([...args])](#module_Buildpack/BuildBus..Target+promise) ⇒ `Promise`
@@ -400,11 +400,11 @@ better logging, error checking, and validation.
 **See**: [Tapable docs](https://github.com/webpack/tapable)  
 
 * ~Target ⇐ `Trackable`
-    * [.call([...args])](#module_Buildpack/BuildBus..Target+call) ⇒ `\*`
+    * .call([...args]) ⇒ `\*`
     * .callAsync(...args) ⇒ `undefined`
     * .intercept(options) ⇒ `void`
-    * [.promise([...args])](#module_Buildpack/BuildBus..Target+promise) ⇒ `Promise`
-    * [.tap([name], interceptor)](#module_Buildpack/BuildBus..Target+tap) ⇒ `undefined`
+    * .promise([...args]) ⇒ `Promise`
+    * .tap([name], interceptor) ⇒ `undefined`
     * .tapAsync(name, interceptor) ⇒ `undefined`
     * .tapPromise(name, interceptor) ⇒ `undefined`
     * .toJSON() ⇒ `object`
@@ -658,7 +658,7 @@ they are more testable.
 
 * Buildpack/BuildBus
     * ~Target ⇐ `Trackable`
-        * [.call([...args])](#module_Buildpack/BuildBus..Target+call) ⇒ `\*`
+        * .call([...args]) ⇒ `\*`
         * .callAsync(...args) ⇒ `undefined`
         * .intercept(options) ⇒ `void`
         * [.promise([...args])](#module_Buildpack/BuildBus..Target+promise) ⇒ `Promise`
@@ -694,11 +694,11 @@ better logging, error checking, and validation.
 **See**: [Tapable docs](https://github.com/webpack/tapable)  
 
 * ~Target ⇐ `Trackable`
-    * [.call([...args])](#module_Buildpack/BuildBus..Target+call) ⇒ `\*`
+    * .call([...args]) ⇒ `\*`
     * .callAsync(...args) ⇒ `undefined`
     * .intercept(options) ⇒ `void`
-    * [.promise([...args])](#module_Buildpack/BuildBus..Target+promise) ⇒ `Promise`
-    * [.tap([name], interceptor)](#module_Buildpack/BuildBus..Target+tap) ⇒ `undefined`
+    * .promise([...args]) ⇒ `Promise`
+    * .tap([name], interceptor) ⇒ `undefined`
     * .tapAsync(name, interceptor) ⇒ `undefined`
     * .tapPromise(name, interceptor) ⇒ `undefined`
     * .toJSON() ⇒ `object`
@@ -1087,7 +1087,7 @@ not be called.
 
 * Buildpack/BuildBus
     * ~Target ⇐ `Trackable`
-        * [.call([...args])](#module_Buildpack/BuildBus..Target+call) ⇒ `\*`
+        * .call([...args]) ⇒ `\*`
         * .callAsync(...args) ⇒ `undefined`
         * .intercept(options) ⇒ `void`
         * [.promise([...args])](#module_Buildpack/BuildBus..Target+promise) ⇒ `Promise`
@@ -1123,11 +1123,11 @@ better logging, error checking, and validation.
 **See**: [Tapable docs](https://github.com/webpack/tapable)  
 
 * ~Target ⇐ `Trackable`
-    * [.call([...args])](#module_Buildpack/BuildBus..Target+call) ⇒ `\*`
+    * .call([...args]) ⇒ `\*`
     * .callAsync(...args) ⇒ `undefined`
     * .intercept(options) ⇒ `void`
-    * [.promise([...args])](#module_Buildpack/BuildBus..Target+promise) ⇒ `Promise`
-    * [.tap([name], interceptor)](#module_Buildpack/BuildBus..Target+tap) ⇒ `undefined`
+    * .promise([...args]) ⇒ `Promise`
+    * .tap([name], interceptor) ⇒ `undefined`
     * .tapAsync(name, interceptor) ⇒ `undefined`
     * .tapPromise(name, interceptor) ⇒ `undefined`
     * .toJSON() ⇒ `object`

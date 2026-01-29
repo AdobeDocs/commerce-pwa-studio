@@ -5,17 +5,17 @@ Presents a convenient API for consumers to add common transforms to React
 components and the JSX in them, in a semantic way.
 
 * TargetableReactComponent
-    * [.addJSXClassName(element, className, [options])](#TargetableReactComponent+addJSXClassName) ⇒ `this`
-    * [.addReactLazyImport(modulePath, [localName])](#TargetableReactComponent+addReactLazyImport) ⇒ `string`
-    * [.appendJSX(element, newChild, [options])](#TargetableReactComponent+appendJSX) ⇒ `this`
-    * [.insertAfterJSX(element, newSibling, [options])](#TargetableReactComponent+insertAfterJSX) ⇒ `this`
-    * [.insertBeforeJSX(element, newSibling, [options])](#TargetableReactComponent+insertBeforeJSX) ⇒ `this`
-    * [.prependJSX(element, newChild, [options])](#TargetableReactComponent+prependJSX) ⇒ `this`
-    * [.removeJSX(element, [options])](#TargetableReactComponent+removeJSX) ⇒ `this`
-    * [.removeJSXProps(element, propNames, [options])](#TargetableReactComponent+removeJSXProps) ⇒ `this`
-    * [.replaceJSX(jsx, replacement, [options])](#TargetableReactComponent+replaceJSX) ⇒ `this`
-    * [.setJSXProps(element, props, [options])](#TargetableReactComponent+setJSXProps) ⇒ `this`
-    * [.surroundJSX(element, newParent, [options])](#TargetableReactComponent+surroundJSX) ⇒ `this`
+    * .addJSXClassName(element, className, [options]) ⇒ `this`
+    * .addReactLazyImport(modulePath, [localName]) ⇒ `string`
+    * .appendJSX(element, newChild, [options]) ⇒ `this`
+    * .insertAfterJSX(element, newSibling, [options]) ⇒ `this`
+    * .insertBeforeJSX(element, newSibling, [options]) ⇒ `this`
+    * .prependJSX(element, newChild, [options]) ⇒ `this`
+    * .removeJSX(element, [options]) ⇒ `this`
+    * .removeJSXProps(element, propNames, [options]) ⇒ `this`
+    * .replaceJSX(jsx, replacement, [options]) ⇒ `this`
+    * .setJSXProps(element, props, [options]) ⇒ `this`
+    * .surroundJSX(element, newParent, [options]) ⇒ `this`
 
 Add a CSS classname to a JSX element. Unlike setting the className prop,
 this is non-destructive. It will append the classname to any existing

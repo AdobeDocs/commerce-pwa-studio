@@ -7,7 +7,7 @@ Modules in a semantic way.
 * TargetableESModule
     * .addImport(statement) ⇒ `SingleImportStatement`
     * .uniqueIdentifier(binding) ⇒ `string`
-    * [.wrapWithFile([exportName], wrapperModule)](#TargetableESModule+wrapWithFile) ⇒ `this`
+    * .wrapWithFile([exportName], wrapperModule) ⇒ `this`
 
 Adds a static import statement to the module source code, thus importing
 a new dependency.

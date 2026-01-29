@@ -11,8 +11,8 @@ transform it in many ways.
     * new TargetableModule(file, trackingOwner)
     * .addTransform(type, transformModule, options) ⇒ `this`
     * .flush() ⇒ `Array.<TransformRequest>`
-    * [.insertAfterSource(after, insert, [options])](#TargetableModule+insertAfterSource) ⇒ `this`
-    * [.insertBeforeSource(before, insert, [options])](#TargetableModule+insertBeforeSource) ⇒ `this`
+    * .insertAfterSource(after, insert, [options]) ⇒ `this`
+    * .insertBeforeSource(before, insert, [options]) ⇒ `this`
     * .prependSource(insert) ⇒ `this`
     * .spliceSource(instruction) ⇒ `this`
 

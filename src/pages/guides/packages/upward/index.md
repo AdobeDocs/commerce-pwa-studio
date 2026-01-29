@@ -83,10 +83,9 @@ UPWARD server implementations must serve data over [HTTPS][] to protect the info
 
 An UPWARD server itself is not a cache,
 but it must serve static resources from [edge servers][] when possible.
-This supports the need for content that a PWA can [cache and reuse when offline][].
+This supports the need for content that a PWA can cache and reuse when offline.
 
 [edge servers]: https://en.wikipedia.org/wiki/Content_delivery_network
-[cache and reuse when offline]: https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/
 
 ## UPWARD and PWA Studio storefronts
 

@@ -11,7 +11,7 @@ keywords:
 [Adobe Commerce][] provides a managed and automated hosting platform for its commerce software in the Cloud.
 You can use this platform to host your storefront code by installing packages developed specifically to connect your storefront with Adobe Commerce software on the same server.
 
-[adobe commerce]: https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview
+[adobe commerce]: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/overview
 
 ## Overview
 
@@ -24,9 +24,9 @@ You can use this setup to update and deploy your storefront project in the Cloud
 Before you follow this tutorial, you should be familiar with Cloud's [Starter workflow][] or [Pro workflow][] depending on your plan.
 Make sure you complete the [Cloud onboarding tasks][] to avoid account or access issues.
 
-[starter workflow]: https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-develop-deploy-workflow
-[pro workflow]: https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-develop-deploy-workflow
-[cloud onboarding tasks]: https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding
+[starter workflow]: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/starter-develop-deploy-workflow
+[pro workflow]: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow
+[cloud onboarding tasks]: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/start/onboarding
 
 Verify that your Adobe Commerce instance is [compatible][] with the PWA Studio version you use in your storefront project.
 
@@ -39,12 +39,12 @@ This tutorial requires the following tools:
 - [Composer][]
 - Yarn or NPM (depends on your storefront project configuration)
 
-[adobe commerce cli]: https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview
+[adobe commerce cli]: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview
 [composer]: https://getcomposer.org/
 
 If you need to do more advanced Cloud tasks, see the [Cloud technologies and requirements][] for the full list of tools you need to fully manage the rest of your Cloud project.
 
-[cloud technologies and requirements]: https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview
+[cloud technologies and requirements]: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/overview
 
 You also need an existing storefront project to do this tutorial.
 Follow the instructions on the [Project setup][] page to set up your storefront project using the scaffolding tool.
@@ -166,7 +166,7 @@ PWA Studio storefronts require you to set specific [environment variables][] in 
 
 To set your Cloud project's runtime variables, edit the [`.magento.app.yaml`][] file and add entries to the `variables.env` section.
 
-[`.magento.app.yaml`]: https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml
+[`.magento.app.yaml`]: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/env/configure-env-yaml
 
 ```text
 variables:
@@ -207,7 +207,7 @@ In the previous example, `/app/pmu35riuj7btw_stg/` is the Adobe Commerce applica
 This value is different for each environment in your Cloud project, so you must configure each of your project environments with the path specific to each instance.
 To find the correct root directory path for an environment, [SSH][] into the remote server and use the `pwd` command to find the Magento application root directory.
 
-[ssh]: https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections
+[ssh]: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/secure-connections
 
 ## Build your storefront application
 
@@ -262,7 +262,7 @@ After you push changes to your Cloud project, the remote build process runs and 
 The Cloud topic on how to [Deploy your store][] provides more details on the deployment process.
 It also includes instructions for merging environment branches, such as integration to staging or staging to production.
 
-[deploy your store]: https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production
+[deploy your store]: https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/deploy/staging-production
 
 If your workflow involves merging environment branches,
 you must rebuild your application bundle with the correct environment variables before you push your changes to the Cloud service because

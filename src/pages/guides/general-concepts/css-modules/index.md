@@ -42,8 +42,8 @@ For more information on reusable components and code sharing in front end develo
 
 [Webpack][] uses the Webpack [style-loader][] and [css-loader][] modules to bundle CSS styles using a configuration that looks like the following:
 
-[style-loader]: https://github.com/webpack-contrib/style-loader
-[css-loader]: https://github.com/webpack-contrib/css-loader
+[style-loader]: https://github.com/webpack/style-loader
+[css-loader]: https://github.com/webpack/css-loader
 
 ```javascript
 // webpack configuration

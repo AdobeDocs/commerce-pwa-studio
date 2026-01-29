@@ -81,7 +81,7 @@ community members have suggested the following workarounds:
 - Using Docker to spin up a Linux environment
 - Using the [Windows Subsystem for Linux][]
 
-[windows subsystem for linux]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+[windows subsystem for linux]: https://learn.microsoft.com/en-us/windows/wsl/install
 
 ## How can I query other stores via GraphQL
 

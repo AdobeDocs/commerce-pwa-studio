@@ -306,7 +306,7 @@ We recommended this option for all but the smallest changes. The steps for creat
 
 ### Customize Tailwind base styles
 
-To override or extend the Tailwind base styles for a specific Tailwind version, use this site as a [reference to the Tailwind base styles](https://unpkg.com/browse/tailwindcss@2.2.19/stubs/defaultConfig.stub.js).
+To override or extend the Tailwind base styles for a specific Tailwind version, use this site as a [reference to the Tailwind base styles](https://app.unpkg.com/tailwindcss@2.2.19/files/stubs/defaultConfig.stub.js).
 
 For example, to **override** Tailwind's default `colors` and `fontFamily` while **extending** its base `flexGrow` and `zIndex`, you could add the following properties to your theme preset:
 

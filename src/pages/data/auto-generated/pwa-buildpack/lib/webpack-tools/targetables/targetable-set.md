@@ -18,11 +18,11 @@ Targetable and enables automatic interception of targets.
 
 * TargetableSet
     * _instance_
-        * [.module(modulePath, [publisher])](#TargetableSet+module) ⇒ `TargetableModule`
-        * [.esModule(modulePath, [publisher])](#TargetableSet+esModule) ⇒ `TargetableESModule`
-        * [.esModuleArray(modulePath, [publisher])](#TargetableSet+esModuleArray) ⇒ `TargetableESModuleArray`
-        * [.esModuleObject(modulePath, [publisher])](#TargetableSet+esModuleObject) ⇒ `TargetableESModuleObject`
-        * [.reactComponent(modulePath, [publisher])](#TargetableSet+reactComponent) ⇒ `TargetableReactComponent`
+        * .module(modulePath, [publisher]) ⇒ `TargetableModule`
+        * .esModule(modulePath, [publisher]) ⇒ `TargetableESModule`
+        * .esModuleArray(modulePath, [publisher]) ⇒ `TargetableESModuleArray`
+        * .esModuleObject(modulePath, [publisher]) ⇒ `TargetableESModuleObject`
+        * .reactComponent(modulePath, [publisher]) ⇒ `TargetableReactComponent`
         * .setSpecialFeatures(...Feature)
         * .defineEnvVars(sectionName, variables)
     * _static_

@@ -31,7 +31,7 @@ This context provider contains translation data from dictionary files and suppli
 The i18n feature in PWA Studio is an implementation of the [react-intl][] library.
 The `LocaleProvider` component in PWA Studio wraps around the library's [IntlProvider][] and provides it with translation data.
 
-[react-intl]: https://formatjs.io/docs/react-intl/
+[react-intl]: https://formatjs.github.io/docs/react-intl
 [intlprovider]: https://formatjs.github.io/#intlprovider
 
 This library also provides [formatMessage()][] and [FormattedMessage][] to localize text in child components under `LocaleProvider`.
@@ -115,7 +115,7 @@ Both approach have their pros and cons, and developers are free to choose which 
 The i18n feature accepts the same [message syntax][] as the underlying `react-intl` library.
 Along with static text, this syntax supports variables, dates, and even conditional formatting.
 
-[message syntax]: https://formatjs.io/docs/core-concepts/icu-syntax
+[message syntax]: https://formatjs.github.io/docs/core-concepts/icu-syntax
 
 To translate text with variables, pass in a mapping object to the `values` prop in the `FormattedMessage` component.
 

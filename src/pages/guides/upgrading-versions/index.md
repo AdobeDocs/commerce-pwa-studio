@@ -126,7 +126,7 @@ git diff v9.0.1..v10.0.0 webpack.config.js
 You can also use one of the many [diff tools in Visual Studio Code][] or a standalone application, such as [GitHub's desktop application][], to make these comparisons easier.
 
 [diff tools in Visual Studio Code]: https://marketplace.visualstudio.com/search?term=diff&target=VSCode&category=All%20categories&sortBy=Relevance
-[github's desktop application]: https://desktop.github.com
+[github's desktop application]: https://github.com/apps/desktop
 
 ## Check for new environment variables
 
