@@ -29,6 +29,6 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../data/auto-generated/venia-ui/lib/targets/venia-ui-declare.md'/>
+<Fragment src='../../../includes/auto-generated/venia-ui/lib/targets/venia-ui-declare.md'/>
 
-<Fragment src='../../../data/auto-generated/venia-ui/lib/targets/rich-content-renderer-list.md'/>
+<Fragment src='../../../includes/auto-generated/venia-ui/lib/targets/rich-content-renderer-list.md'/>

@@ -10,7 +10,7 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../../data/auto-generated/pwa-buildpack/lib/webpack-tools/targetables/targetable-react-component.md'/>
+<Fragment src='../../../../includes/auto-generated/pwa-buildpack/lib/webpack-tools/targetables/targetable-react-component.md'/>
 
 ## Examples
 

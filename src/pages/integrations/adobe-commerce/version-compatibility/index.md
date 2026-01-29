@@ -11,7 +11,7 @@ This page lists PWA Studio versions and their compatible Adobe Commerce and Mage
 This table is generated automatically from the source code.
 --\>
 
-<Fragment src='../../../data/auto-generated/magento-compatibility.md'/>
+<Fragment src='../../../includes/auto-generated/magento-compatibility.md'/>
 
 ## What compatibility means
 

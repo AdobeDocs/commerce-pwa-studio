@@ -53,4 +53,4 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../data/auto-generated/peregrine/lib/targets/peregrine-declare.md'/>
+<Fragment src='../../../includes/auto-generated/peregrine/lib/targets/peregrine-declare.md'/>
