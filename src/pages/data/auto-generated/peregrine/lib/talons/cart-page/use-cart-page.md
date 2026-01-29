@@ -43,7 +43,7 @@ import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage'
 
 GraphQL formatted string queries used in this talon.
 
-**See**: [cartPage.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/cartPage.gql.js)
+**See**: [cartPage.gql.js](https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/components/CartPage/cartPage.gql.js)
 for queries used in Venia  
 **Properties**
 

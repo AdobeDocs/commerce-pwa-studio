@@ -43,7 +43,7 @@ Examples of service workers features include push notifications, background sync
 The service worker also gives you the ability to intercept and handle network requests.
 This gives you better control over your site's client-side caching logic.
 
-[service worker features]: https://web.dev/articles/service-workers
+[service worker features]: https://web.dev/learn/pwa/service-workers
 
 ### `drivers.js`
 

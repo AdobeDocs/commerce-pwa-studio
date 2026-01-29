@@ -164,7 +164,7 @@ import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductLi
 GraphQL queries for getting product listing data.
 This is a type used in the useProductListing talon.
 
-**See**: [productListingFragments.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js)
+**See**: [productListingFragments.js](https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js)
 for the queries used in Venia  
 **Properties**
 

@@ -105,7 +105,7 @@ It is useful for boosting performance by controlling cache behavior and enables 
 
 Adobe XD makes handoff between designers and engineers more efficient through easy-to-use collaboration tools. The [PWA Studio UI Kit](https://www.adobe.io/commerce-xd-kits) contains a collection of templates and components compatible with Adobe Commerce.  
 
-[service workers]: https://web.dev/articles/service-workers/
+[service workers]: https://web.dev/learn/pwa/service-workers
 [php]: https://www.php.net/
 [javascript]: https://developer.mozilla.org/en-US/docs/Learn/JavaScript
 [webpack]: https://webpack.js.org/

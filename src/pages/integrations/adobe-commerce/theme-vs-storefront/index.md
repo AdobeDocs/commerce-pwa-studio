@@ -38,7 +38,7 @@ A PWA Studio storefront application is a [progressive web app][] built using PWA
 It is made up of an application shell that exists in the browser and a [middle tier service layer][] that sits between the shell and a [headless backend][] running Adobe Commerce or Magento Open Source.
 
 [middle tier service layer]: /guides/packages/upward/
-[headless backend]: https://magento.com/blog/best-practices/future-headless
+[headless backend]: https://business.adobe.com/blog/basics/a-complete-guide-to-headless-ecommerce
 
 Unlike an Adobe Commerce or Magento Open Source theme, a storefront application does not inherit from a parent theme.
 Instead, the application is composed of [React][] modules that provide the different pieces of functionality.

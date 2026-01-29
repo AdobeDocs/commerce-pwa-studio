@@ -41,7 +41,7 @@ Some of the Venia components in your storefront will not work if you do not wrap
 If you [set up your project][] using the scaffolding tool, your project code already wraps the application with the adapter.
 
 [adapter component]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/drivers/adapter.js
-[apolloprovider]: https://www.apollographql.com/docs/react/get-started/#connect-your-client-to-react
+[apolloprovider]: https://www.apollographql.com/docs/react/get-started#connect-your-client-to-react
 [reduxprovider]: https://react-redux.js.org/api/provider
 [browserrouter]: https://reactrouter.com/en/main/router-components/browser-router
 [set up your project]: /tutorials/setup-storefront/

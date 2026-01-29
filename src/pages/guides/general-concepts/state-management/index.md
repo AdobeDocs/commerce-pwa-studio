@@ -67,7 +67,7 @@ This object is known as a [store][].
 The store is a read-only object, which can only be updated by dispatching a [reducer][] function.
 Reducer functions accept the current state and an [action][] object as parameters and returns the next state.
 
-[reducer]: https://redux.js.org/glossary#reducer
+[reducer]: https://redux.js.org/understanding/thinking-in-redux/glossary#reducer
 [action]: https://redux.js.org/basics/actions
 
 Application components are able to [dispatch][] various actions to update the state.

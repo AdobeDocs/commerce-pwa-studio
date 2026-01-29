@@ -32,13 +32,13 @@ The i18n feature in PWA Studio is an implementation of the [react-intl][] librar
 The `LocaleProvider` component in PWA Studio wraps around the library's [IntlProvider][] and provides it with translation data.
 
 [react-intl]: https://formatjs.io/docs/react-intl/
-[intlprovider]: https://formatjs.io/docs/react-intl/components/#intlprovider
+[intlprovider]: https://formatjs.github.io/#intlprovider
 
 This library also provides [formatMessage()][] and [FormattedMessage][] to localize text in child components under `LocaleProvider`.
 You must at least supply values for `id` and a `defaultMessage` fallback when you use either the function or component.
 
-[formatmessage()]: https://formatjs.io/docs/react-intl/api#formatmessage
-[formattedmessage]: https://formatjs.io/docs/react-intl/components#formattedmessage
+[formatmessage()]: https://formatjs.github.io/#formatmessage
+[formattedmessage]: https://formatjs.github.io/#formattedmessage
 
 The following code samples produce the same results:
 

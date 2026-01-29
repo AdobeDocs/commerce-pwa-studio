@@ -50,7 +50,7 @@ Venia uses the following [caching strategies][] with its service worker:
 The [stale-while-revalidate][] strategy tells the service worker to use a cached response if it exists.
 A separate network request is made for that resource and the cache is updated for future requests.
 
-[stale-while-revalidate]: https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#stale-while-revalidate
+[stale-while-revalidate]: https://web.dev/articles/offline-cookbook#stale-while-revalidate
 
 This strategy is used when the most up to date version of a resource is not necessary for an application.
 
@@ -65,7 +65,7 @@ This strategy is used when the most up to date version of a resource is not nece
 The [network first][] strategy tells the service worker to get a resource from the network first.
 If a network connection cannot be made, the service worker uses the cache as a fallback.
 
-[network first]: https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#network-falling-back-to-cache
+[network first]: https://web.dev/articles/offline-cookbook#network-falling-back-to-cache
 
 This strategy is used for data that may change frequently on the server.
 
@@ -78,7 +78,7 @@ This strategy is used for data that may change frequently on the server.
 The [cache first][] strategy tells the service worker to use the data from the cache.
 Unlike the stale-while-revalidate strategy, no network call is made to update the cache.
 
-[cache first]: https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#cache-falling-back-to-network
+[cache first]: https://web.dev/articles/offline-cookbook#cache-falling-back-to-network
 
 If a response is not found in the cache, a network call is made to get the resource and cache the response.
 

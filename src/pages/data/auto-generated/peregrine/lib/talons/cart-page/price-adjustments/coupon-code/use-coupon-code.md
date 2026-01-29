@@ -255,7 +255,7 @@ for the query used in Venia
 GraphQL queries for the shipping form.
 This is a type used by the useShippingForm talon.
 
-**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
+**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
 for the query used in Venia  
 **Properties**
 
@@ -279,7 +279,7 @@ It provides props data to use when rendering a shipping form component.
 GraphQL queries for shipping methods.
 This is a type used in the useShippingMethods talon.
 
-**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
+**See**: [shippingMethods.gql.js](https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/components/CartPage/PriceAdjustments/ShippingMethods/shippingMethods.gql.js)
 for the queries used in Venia  
 **Properties**
 
