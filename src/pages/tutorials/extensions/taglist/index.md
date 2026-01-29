@@ -13,7 +13,7 @@ This tutorial provides steps for creating and installing an extension that displ
 Before you start this tutorial, make sure you have a storefront project set up using the steps outlined in the [Setup your project][] topic.
 This is the storefront you will use to install your extension in this tutorial.
 
-[setup your project]: /tutorials/setup-storefront/
+[setup your project]: /tutorials/setup-storefront/index.md
 
 ## Set up the extension project
 
@@ -413,7 +413,7 @@ This adds a new entry under `devDependencies` in your storefront project's `pack
 All scaffolded projects come with an intercept file called `local-intercept.js`.
 This file lets you use [Targets and Targetables][] to make modifications to the Venia application code without copying over the source file.
 
-[targets and targetables]: /tutorials/targets/
+[targets and targetables]: /tutorials/targets/index.md
 
 Edit this file so it looks like the following:
 

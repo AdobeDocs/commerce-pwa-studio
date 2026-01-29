@@ -192,6 +192,6 @@ If you have followed along using the `ExampleQuote` component, you should see so
 
 ![Add Component output](images/AddComponentOutput.svg)
 
-[utility functions]: /integrations/pagebuilder/utility-functions/
-[css modules]: /guides/general-concepts/css-modules/
+[utility functions]: /integrations/pagebuilder/utility-functions/index.md
+[css modules]: /guides/general-concepts/css-modules/index.md
 [dangerouslysetinnerhtml]: https://legacy.reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml

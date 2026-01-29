@@ -42,7 +42,7 @@ However, if you use one or more of your own custom Page Builder content types wi
 
 To develop and integrate your own custom content type components into your PWA Studio app, follow our [Creating custom components][] tutorial.
 
-[creating custom components]: /integrations/pagebuilder/custom-components/
+[creating custom components]: /integrations/pagebuilder/custom-components/index.md
 
 ![Page Builder Integration Overview](images/PageBuilderIntegration.svg)
 
@@ -78,19 +78,19 @@ The master format parser (`parseStorageHtml()`) decomposes the master format HTM
 
 _Integration point_. The configuration function (`getContentTypeConfig()`) provides an interface for retrieving a content type's _property aggregator_ and its corresponding _content type component_. The configuration object also provides the integration point for your own custom content type components. See [Set up component][] for details.
 
-[set up component]: /integrations/pagebuilder/custom-components/setup/
+[set up component]: /integrations/pagebuilder/custom-components/setup/index.md
 
 ### Property aggregator
 
 _Integration point_. The property aggregator for a content type (example: `bannerConfigAggregator`) is a function that retrieves both content and style properties from the content type's HTML. Aggregators typically use both DOM properties and several provided framework utility functions to retrieve these properties and write them to flat property objects used to populate the content type React components. For each of your custom content types, you will need to create your own property aggregator. See [Add aggregator][] for details.
 
-[add aggregator]: /integrations/pagebuilder/custom-components/add-aggregator/
+[add aggregator]: /integrations/pagebuilder/custom-components/add-aggregator/index.md
 
 ### Content type component
 
 _Integration point_. The content type component is a React component that is equivalent to a Page Builder content type. There are 15 content type components within PWA Studio: Row, Column, Tabs, Banners, Sliders, and so on. Each content type component is populated with the original content and style properties from the content type to faithfully represent your Page Builder content within a PWA Studio app like Venia. For each of your custom content types, you will need to create the equivalent content type React component . See [Add component][] for details.
 
-[add component]: /integrations/pagebuilder/custom-components/add-component/
+[add component]: /integrations/pagebuilder/custom-components/add-component/index.md
 
 ### ContentTypeFactory
 

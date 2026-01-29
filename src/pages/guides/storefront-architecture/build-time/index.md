@@ -35,7 +35,7 @@ The preferred approach is to add PWA Studio tools and libraries as dependencies 
 
 The recommended way of getting started is to use the scaffolding tool to [setup a new storefront project][].
 
-[setup a new storefront project]: /tutorials/setup-storefront/
+[setup a new storefront project]: /tutorials/setup-storefront/index.md
 
 ## Build pipeline
 
@@ -87,13 +87,13 @@ This file is found in the root directory of the Venia concept project.
 
 See [Configuration management][] for more information.
 
-[configuration management]: /guides/general-concepts/configuration/
+[configuration management]: /guides/general-concepts/configuration/index.md
 
 <InlineAlert variant="info" slots="text"/>
 
 If there is no `.env` file in your project, create one with the [`buildpack create-env-file` command][].
 
-[`buildpack create-env-file` command]: /api/buildpack/cli/create-environment-file/
+[`buildpack create-env-file` command]: /api/buildpack/cli/create-environment-file/index.md
 
 #### Query validation
 

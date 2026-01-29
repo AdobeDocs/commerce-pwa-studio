@@ -79,7 +79,7 @@ This Target lets you change the behavior of the `RichContent` component across y
 Tapping into this Target gives access to a `richContentRenders` list object in your intercept function.
 Calling the `add()` function on this object lets you add a custom rendering strategy for your storefront.
 
-[`richcontentrenderers` target]: /api/venia/targets/
+[`richcontentrenderers` target]: /api/venia/targets/index.md
 
 The [Page Builder extension][] provides an example of how to intercept this Target.
 It taps the Target and provides an intercept function that adds a custom renderer for any detected Page Builder content.
@@ -218,7 +218,7 @@ The TargetProvider object provides an `of()` function and an `own` property to a
 
 For more information on how intercept files work, see the tutorial on how to [Intercept a Target][].
 
-[intercept a target]: /tutorials/targets/
+[intercept a target]: /tutorials/targets/index.md
 
 ### Example intercept file content
 

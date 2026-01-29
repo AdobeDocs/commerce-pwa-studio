@@ -16,14 +16,14 @@ This tutorial provides the first steps for working with PWA Studio by teaching y
 You will create a PWA Studio storefront project based on the [Venia concept storefront][] and configure it based on your environment.
 To see a demo of the Venia concept storefront, visit [venia.magento.com][].
 
-[venia concept storefront]: /guides/packages/venia/
+[venia concept storefront]: /guides/packages/venia/index.md
 [venia.magento.com]: https://venia.magento.com/
 
 ## Run the scaffolding tool
 
 In your terminal, navigate to the directory where you want to install your storefront project and run the [scaffolding][] tool.
 
-[scaffolding]: /guides/packages/buildpack/scaffolding/
+[scaffolding]: /guides/packages/buildpack/scaffolding/index.md
 
 ### Scaffolding tool commands
 
@@ -75,8 +75,8 @@ Fortunately, PWA Studio provides an easy method of creating a custom domain and 
 
 Use the [`create-custom-origin`][] sub-command from the [buildpack CLI][] to create a custom hostname and SSL cert:
 
-[`create-custom-origin`]: /api/buildpack/cli/create-custom-origin/
-[buildpack cli]: /api/buildpack/cli/
+[`create-custom-origin`]: /api/buildpack/cli/create-custom-origin/index.md
+[buildpack cli]: /api/buildpack/cli/index.md
 
 ```bash
 yarn buildpack create-custom-origin ./
@@ -115,7 +115,7 @@ This step is optional because the scaffolding command already adds the required 
 
 If you want to change [environment variables][], such as `MAGENTO_BACKEND_URL` or `BRAINTREE_TOKEN`, update your project's `.env` file and change the property values.
 
-[environment variables]: /api/buildpack/environment/variables/
+[environment variables]: /api/buildpack/environment/variables/index.md
 
 ## Next steps
 

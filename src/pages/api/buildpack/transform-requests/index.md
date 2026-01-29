@@ -9,7 +9,7 @@ The built-in [`transformModules`][] target is a powerful way to customize the bu
 Many common Targets are implemented using the `transformModules` target and a custom transformer module.
 Interceptors of this target receive a single function as their first argument. This is the `addTransform` function documented below.
 
-[`transformmodules`]: /api/buildpack/targets/
+[`transformmodules`]: /api/buildpack/targets/index.md
 
 \<!--
 The reference doc content is generated automatically from the source code.

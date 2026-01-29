@@ -12,7 +12,7 @@ The Peregrine package is a collection of functions that act as the brains of you
 They provide pieces of logic for UI components, such as the ones provided by the [Venia][] library.
 Use or remix these functions and components to create a unique PWA Studio storefront.
 
-[venia]: /guides/packages/venia/
+[venia]: /guides/packages/venia/index.md
 
 ## Custom React hooks
 
@@ -47,7 +47,7 @@ PWA Studio separates these two sections into distinct components with specific c
 
 For more information, read the [Talons][] topic.
 
-[talons]: /guides/general-concepts/talons/
+[talons]: /guides/general-concepts/talons/index.md
 
 ### Return signatures
 

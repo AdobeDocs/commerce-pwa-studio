@@ -8,8 +8,8 @@ description: Learn how to access environment variables with the Buildpack packag
 Environment variable definitions are used for validation and documentation of the [configuration management system][] in PWA Studio.
 Build scripts normally use the [values set in the current environment][], but it is sometimes necessary to use the definitions themselves, such as when an extension defines its own global config variables.
 
-[configuration management system]: /guides/general-concepts/configuration/
-[values set in the current environment]: /api/buildpack/cli/load-environment-file/
+[configuration management system]: /guides/general-concepts/configuration/index.md
+[values set in the current environment]: /api/buildpack/cli/load-environment-file/index.md
 
 ## Access environment variable definition object
 
@@ -19,7 +19,7 @@ There are two ways to access the environment variable definitions object:
 - Core Buildpack code uses [`getEnvVarDefinitions()`][], which builds environment variable definitions for the project.
   It starts with core variables listed below and then calls the `envVarDefinitions` target so installed extensions can add their own variables.
 
-[`envvardefinitions`]: /api/buildpack/environment/definition-object/
+[`envvardefinitions`]: /api/buildpack/environment/definition-object/index.md
 [`getenvvardefinitions()`]: https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/Utilities/getEnvVarDefinitions.js
 
 \<!--

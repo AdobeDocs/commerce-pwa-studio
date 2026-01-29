@@ -30,7 +30,7 @@ Make sure you complete the [Cloud onboarding tasks][] to avoid account or access
 
 Verify that your Adobe Commerce instance is [compatible][] with the PWA Studio version you use in your storefront project.
 
-[compatible]: /integrations/adobe-commerce/version-compatibility/
+[compatible]: /integrations/adobe-commerce/version-compatibility/index.md
 
 This tutorial requires the following tools:
 
@@ -49,7 +49,7 @@ If you need to do more advanced Cloud tasks, see the [Cloud technologies and req
 You also need an existing storefront project to do this tutorial.
 Follow the instructions on the [Project setup][] page to set up your storefront project using the scaffolding tool.
 
-[project setup]: /tutorials/setup-storefront/
+[project setup]: /tutorials/setup-storefront/index.md
 
 ## Tasks overview
 
@@ -154,7 +154,7 @@ composer require magento/pwa-commerce
 
 PWA Studio storefronts require you to set specific [environment variables][] in your project for the build and runtime processes.
 
-[environment variables]: /api/buildpack/environment/variables/
+[environment variables]: /api/buildpack/environment/variables/index.md
 
 ### Runtime variables
 

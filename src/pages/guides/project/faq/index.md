@@ -14,11 +14,11 @@ If you have a question that is not answered on this page, try asking in our [#pw
 
 If you are developing a new storefront, the [Tutorials][] sections provides an introduction to the different concepts and features of PWA Studio.
 
-[tutorials]: /tutorials/
+[tutorials]: /tutorials/index.md
 
 If you want to learn about the technologies and concepts behind PWA Studio, the [Getting Started][] section of this site provides background information about this project.
 
-[getting started]: /guides/
+[getting started]: /guides/index.md
 
 If you are interested in looking at the project source or contributing to the project, check out the [project repository][].
 
@@ -29,7 +29,7 @@ If you are interested in looking at the project source or contributing to the pr
 Yes, PWA Studio provides tools that support both server-side and client-side rendering strategies.
 For more information on content rendering support, see the [Content Rendering][] topic.
 
-[content rendering]: /guides/general-concepts/content-rendering/
+[content rendering]: /guides/general-concepts/content-rendering/index.md
 
 Community members have also suggested the following tools and services to address SEO and SSR needs:
 
@@ -46,8 +46,8 @@ The Tutorials section of this site contains a number of tutorials which cover cu
 - [How to add a static route][]
 - [How to modify the site footer][]
 
-[how to add a static route]: /tutorials/basic-modifications/add-static-route/
-[how to modify the site footer]: /tutorials/basic-modifications/modify-footer/
+[how to add a static route]: /tutorials/basic-modifications/add-static-route/index.md
+[how to modify the site footer]: /tutorials/basic-modifications/modify-footer/index.md
 
 ## Which payment methods does PWA Studio support
 
@@ -69,7 +69,7 @@ It is a dependency of the [Magento 2 UPWARD connector module][], which lets you 
 See the [Deploy to Adobe Commerce][] tutorial to learn how to deploy your storefront to an Adobe Commerce service in the Cloud.
 
 [magento 2 upward connector module]: https://github.com/magento/magento2-upward-connector
-[deploy to adobe commerce]: /tutorials/production-deployment/adobe-commerce/
+[deploy to adobe commerce]: /tutorials/production-deployment/adobe-commerce/index.md
 
 ## Can I use Windows with PWA Studio for development
 

@@ -169,7 +169,7 @@ module.exports = (targets) => {
 When this file runs, it taps into the `envVarDefinitions` target from the available targets in `@magento/pwa-buildpack` and passes in an intercept function.
 The intercept function appends a new definition to the [core environment variable definitions][], which allows frontend code access to the `IMAGE_PLACEHOLDER_SERVICE_URL` environment variable.
 
-[core environment variable definitions]: /api/buildpack/environment/variables/
+[core environment variable definitions]: /api/buildpack/environment/variables/index.md
 
 ## Test on a local instance
 

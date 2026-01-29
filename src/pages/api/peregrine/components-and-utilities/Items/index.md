@@ -7,7 +7,7 @@ description: View detailed API reference documentation for the items utility in 
 
 The `Items` component uses content in a data object to render a list of [`Item`][] components.
 
-[`item`]: /api/peregrine/components-and-utilities/Item/
+[`item`]: /api/peregrine/components-and-utilities/Item/index.md
 
 It follows the [Fragments][] pattern and returns its children without a wrapping element.
 This allows you to decide how you want to wrap your list of items.
@@ -16,7 +16,7 @@ This allows you to decide how you want to wrap your list of items.
 
 The `Items` component is used as a direct child of the [`List`][] component.
 
-[`list`]: /api/peregrine/components-and-utilities/List/
+[`list`]: /api/peregrine/components-and-utilities/List/index.md
 
 ## Props
 

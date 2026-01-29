@@ -22,7 +22,7 @@ yarn add @magento/upward-js
 
 If you followed the [project setup tutorial][], your project is already set up to use this implementation as an application server.
 
-[project setup tutorial]: /tutorials/setup-storefront/
+[project setup tutorial]: /tutorials/setup-storefront/index.md
 
 ## Usage
 

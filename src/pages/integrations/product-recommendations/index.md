@@ -176,5 +176,5 @@ To receive continued support, please ensure your environment is updated to **ver
 
 If you have questions about version support or need help upgrading, please contact the support team or open a support request through the appropriate support channel.
 
-[venia-product-recommendations]: /guides/
-[extensibility framework]: /guides/general-concepts/extensibility/#intercept-files
+[venia-product-recommendations]: /guides/index.md
+[extensibility framework]: /guides/general-concepts/extensibility/index.md#intercept-files

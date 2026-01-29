@@ -7,7 +7,7 @@ description: Review developer resources for Targetables API in the Buildpack pac
 
 The Targetables API is used to modify source code using the [extensibility framework][].
 
-[extensibility framework]: /guides/general-concepts/extensibility/
+[extensibility framework]: /guides/general-concepts/extensibility/index.md
 
 <DiscoverBlock width="100%" slots="heading, link, text"/>
 

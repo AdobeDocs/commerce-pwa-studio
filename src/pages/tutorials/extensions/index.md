@@ -16,12 +16,12 @@ Extensions provide new storefront functionality, extend existing components, or 
 PWA Studio merges third-party code into the final application bundle to build web functionality on top of a base storefront.
 The [extensibility framework][] provided by the `pwa-buildpack` package lets you create these third-party extensions for PWA Studio storefronts, such as Venia.
 
-[extensibility framework]: /guides/general-concepts/extensibility/
+[extensibility framework]: /guides/general-concepts/extensibility/index.md
 
 Extensions can change the behavior of existing components, add new features, or even provide translations.
 Language packs are a specific extension type which provide translation data for the [internationalization feature][].
 
-[internationalization feature]: /guides/general-concepts/internationalization/
+[internationalization feature]: /guides/general-concepts/internationalization/index.md
 
 <InlineAlert variant="help" slots="text"/>
 Setting up a project workspace that contains both a storefront project and an extension project may result in `buildpack` issues due to dependency conflicts.
@@ -86,7 +86,7 @@ Declare files export a function that receives a [TargetProvider][] object.
 The TargetProvider object has a `declare()` function that accepts a dictionary object of named Targets.
 The TargetProvider also provides a utility collection called `types`, which holds all the legal constructors for Targets.
 
-[targetprovider]: /guides/general-concepts/extensibility/#targetproviders
+[targetprovider]: /guides/general-concepts/extensibility/index.md#targetproviders
 
 #### Example for declaring a target
 
@@ -166,9 +166,9 @@ For more information on the Targetables API used in this example, see the follow
 - [TargetableModule][]
 - [TargetablePublisher][]
 
-[targetables manager]: /api/buildpack/targetables/targetable-set/
-[targetablemodule]: /api/buildpack/targetables/targetable-module/
-[targetablepublisher]: /api/buildpack/targetables/targetable-set/
+[targetables manager]: /api/buildpack/targetables/targetable-set/index.md
+[targetablemodule]: /api/buildpack/targetables/targetable-module/index.md
+[targetablepublisher]: /api/buildpack/targetables/targetable-set/index.md
 
 The API the `myListContent` target publishes contains an `addContent()` function that makes modifications to the `src/myList.js` file.
 The content for `src/myList.js` is as follows:

@@ -13,7 +13,7 @@ PWA Studio provides a scaffolding tool to simplify project creation and help dev
 The scaffolding tool uses the `venia-concept` package as the default template for all new PWA Studio storefront projects.
 When you [set up a new project][], the result is a project structure based on the files in this package.
 
-[set up a new project]: /tutorials/setup-storefront/
+[set up a new project]: /tutorials/setup-storefront/index.md
 
 Most of its UI and logic come from its `@magento/venia-ui` and `@magento/peregrine` dependencies, so
 it has very little code in its own project folder.
@@ -22,15 +22,15 @@ Customizing these projects is as simple as importing small pieces of `venia-ui` 
 
 For more information about the project template, see [Project Templates][].
 
-[project templates]: /guides/packages/buildpack/project-templates/
+[project templates]: /guides/packages/buildpack/project-templates/index.md
 
 ## Scaffolding commands
 
 When you [set up a new project][] you use the `@magento/create-pwa` package.
 It is a simpler interface than the [create-project][] sub-command in the [pwa-buildpack][] CLI tool.
 
-[create-project]: /api/buildpack/cli/create-project/
-[pwa-buildpack]: /api/buildpack/cli/
+[create-project]: /api/buildpack/cli/create-project/index.md
+[pwa-buildpack]: /api/buildpack/cli/index.md
 
 Since the package name begins with `create-`, it is considered a project generator and can be run simply as `@magento/pwa`.
 This command launches an interactive questionnaire in the command line for configuring different parts of the project.

@@ -10,8 +10,8 @@ Normally this command is used indirectly through the `@magento/pwa` scaffolding 
 The tool collects the parameter values through its interactive prompt and passes them on to this command as options.
 This tool is also available for developers or third-party automation tools to use directly.
 
-[`buildpack`]: /api/buildpack/cli/
-[scaffolding]: /guides/packages/buildpack/scaffolding/
+[`buildpack`]: /api/buildpack/cli/index.md
+[scaffolding]: /guides/packages/buildpack/scaffolding/index.md
 
 ## Example
 

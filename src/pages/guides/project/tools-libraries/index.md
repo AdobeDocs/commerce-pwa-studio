@@ -115,8 +115,8 @@ Adobe XD makes handoff between designers and engineers more efficient through ea
 [workbox]: https://developer.chrome.com/docs/workbox/
 [rest]: https://en.wikipedia.org/wiki/REST
 [apollo client]: https://www.apollographql.com/docs/react/why-apollo
-[venia example storefront]: /guides/packages/venia/
+[venia example storefront]: /guides/packages/venia/index.md
 [peregrine]: /guides/packages/peregrine
 [react hooks]: https://legacy.reactjs.org/docs/hooks-intro.html
 [node.js]: https://nodejs.org/en/about/
-[pwa-buildpack]: /guides/packages/buildpack/
+[pwa-buildpack]: /guides/packages/buildpack/index.md
