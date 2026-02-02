@@ -1,6 +1,6 @@
 ---
 title: Multiple Sites with UPWARD
-description: Learn how to run multiple PWA Studio storefronts from a single Adobe Commerce or Magento Open Source backend. 
+description: Learn how to run multiple PWA Studio storefronts from a single Adobe Commerce or Magento Open Source backend.
 ---
 
 This guide describes how to configure your UPWARD server to run multiple PWA sites from a single backend, enabling you to serve different stores, regions, or languages with separate PWA experiences.
@@ -82,7 +82,6 @@ MAGENTO_BACKEND_URL=https://yoursite.com yarn build
 mv dist dist-default
 ```
 
-
 **Tip:** You can automate this process by creating a build script that iterates through your store configurations.
 
 ---
@@ -97,7 +96,6 @@ scp -r dist-french user@server:/var/www/html/pwa-bundles/
 scp -r dist-german user@server:/var/www/html/pwa-bundles/
 scp -r dist-default user@server:/var/www/html/pwa-bundles/
 ```
-
 
 **Important:** Ensure the web server user has read permissions on these directories.
 
@@ -138,7 +136,6 @@ bin/magento pwa:upward:set \
   --scopeType website \
   --scopeCode europe_site
 ```
-
 
 **Note:** Paths can be relative (`pwa/dist/upward.yml`) or absolute (`/var/www/html/pwa/dist/upward.yml`).
 
