@@ -82,7 +82,7 @@ MAGENTO_BACKEND_URL=https://yoursite.com yarn build
 mv dist dist-default
 ```
 
-{: .bs-callout .bs-callout-tip }
+
 **Tip:** You can automate this process by creating a build script that iterates through your store configurations.
 
 ---
@@ -98,7 +98,7 @@ scp -r dist-german user@server:/var/www/html/pwa-bundles/
 scp -r dist-default user@server:/var/www/html/pwa-bundles/
 ```
 
-{: .bs-callout .bs-callout-warning }
+
 **Important:** Ensure the web server user has read permissions on these directories.
 
 ---
@@ -139,7 +139,7 @@ bin/magento pwa:upward:set \
   --scopeCode europe_site
 ```
 
-{: .bs-callout .bs-callout-info }
+
 **Note:** Paths can be relative (`pwa/dist/upward.yml`) or absolute (`/var/www/html/pwa/dist/upward.yml`).
 
 ### Serving Non-PWA Storefronts
