@@ -16,7 +16,7 @@ By the end of this tutorial, you will know how to override different pieces of V
 
 This tutorial requires you to have a project set up using the steps provided in the [Project Setup][] tutorial.
 
-[project setup]: /tutorials/setup-storefront/
+[project setup]: /tutorials/setup-storefront/index.md
 
 When modifying any storefront component from the default Venia storefront, follow these basic steps:
 
@@ -29,7 +29,7 @@ When modifying any storefront component from the default Venia storefront, follo
 The steps outlined in this tutorial explain the render chain replacement approach.
 This is a valid pattern in some situations, but you can make similar customizations with less code using [Targets and Targetables][].
 
-[targets and targetables]: /tutorials/targets/
+[targets and targetables]: /tutorials/targets/index.md
 
 ## Identify the target component
 
@@ -40,7 +40,7 @@ The first step in modifying anything in the Venia storefront is to identify the 
 [React DevTools][] is a browser plugin for React developers.
 It gives you the ability to navigate and inspect component nodes in the React DOM tree.
 
-[react devtools]: https://reactjs.org/blog/2019/08/15/new-react-devtools.html
+[react devtools]: https://legacy.reactjs.org/blog/2019/08/15/new-react-devtools.html
 
 After you install React DevTools in your browser, open your storefront and your browser's web developer tools.
 
@@ -83,7 +83,7 @@ Static imported components, such as Header, Footer, and side Navigation, have re
 Root components are dynamically loaded components associated with an Adobe Commerce or Magento Open Source page type or route.
 A list of Venia's root components can be found in the [RootComponent][] directory in the PWA Studio project.
 
-[rootcomponent]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/RootComponents
+[rootcomponent]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/RootComponents
 
 ## Create component directories
 
@@ -159,7 +159,7 @@ Open `src/components/Footer/footer.js` and make the following modifications to a
 
 Use the Link component to create a link to an internal route defined in the [Add a static route tutorial][]:
 
-[add a static route tutorial]: /tutorials/basic-modifications/add-static-route/
+[add a static route tutorial]: /tutorials/basic-modifications/add-static-route/index.md
 
 ```diff
     <footer className={classes.root}>

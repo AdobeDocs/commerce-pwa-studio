@@ -36,14 +36,14 @@ CSS modules make it easy and fast to achieve tasks such as upgrading buttons, he
 
 For more information on reusable components and code sharing in front end development see: [Block Element Modifier (BEM)][]
 
-[block element modifier (bem)]: http://getbem.com/
+[block element modifier (bem)]: https://getbem.com/
 
 ## Webpack configuration
 
 [Webpack][] uses the Webpack [style-loader][] and [css-loader][] modules to bundle CSS styles using a configuration that looks like the following:
 
-[style-loader]: https://github.com/webpack-contrib/style-loader
-[css-loader]: https://github.com/webpack-contrib/css-loader
+[style-loader]: https://github.com/webpack/style-loader
+[css-loader]: https://github.com/webpack/css-loader
 
 ```javascript
 // webpack configuration

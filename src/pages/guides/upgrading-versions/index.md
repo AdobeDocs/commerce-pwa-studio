@@ -42,7 +42,7 @@ Compare the contents of your project's `package.json` file with the one in `veni
 You can find the latest package versions by opening the [template project's `package.json` file][] in GitHub and using the version switcher to view the latest release version under the **Tags** tab.
 For example, the `package.json` file for the **v10.0.0** release is at:
 
-<https://github.com/magento/pwa-studio/blob/v10.0.0/packages/venia-concept/package.json>
+[https://github.com/magento/pwa-studio/blob/v10.0.0/packages/venia-concept/package.json](https://github.com/magento/pwa-studio/blob/v10.0.0/packages/venia-concept/package.json)
 
 [template project's `package.json` file]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/package.json
 
@@ -126,7 +126,7 @@ git diff v9.0.1..v10.0.0 webpack.config.js
 You can also use one of the many [diff tools in Visual Studio Code][] or a standalone application, such as [GitHub's desktop application][], to make these comparisons easier.
 
 [diff tools in Visual Studio Code]: https://marketplace.visualstudio.com/search?term=diff&target=VSCode&category=All%20categories&sortBy=Relevance
-[github's desktop application]: https://desktop.github.com/
+[github's desktop application]: https://github.com/apps/desktop
 
 ## Check for new environment variables
 

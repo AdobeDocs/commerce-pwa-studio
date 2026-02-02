@@ -5,8 +5,11 @@ keywords:
   - Integration
   - Page Builder
   - Storefront
-edition: paas
 ---
+
+<Edition slot="text" backgroundColor="blue"/>
+
+PaaS only
 
 # Page Builder
 
@@ -14,9 +17,7 @@ At the highest level, the Page Builder integration into PWA Studio simply ensure
 
 ## Integration overview
 
-<div style="position: relative; overflow: hidden; padding-top: 56.25%; border: 1px solid #ccc;">
-   <iframe style="position: absolute; top:0; left:0; width: 100%; height:100%; border: 0;" title="Adobe Video Publishing Cloud Player" src="https://video.tv.adobe.com/v/31598t1/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
-</div>
+<iframe src="https://video.tv.adobe.com/v/31598t1/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on"></iframe>
 
 <InlineAlert variant="info" slots="text"/>
 
@@ -41,7 +42,7 @@ However, if you use one or more of your own custom Page Builder content types wi
 
 To develop and integrate your own custom content type components into your PWA Studio app, follow our [Creating custom components][] tutorial.
 
-[creating custom components]: /integrations/pagebuilder/custom-components/
+[creating custom components]: /integrations/pagebuilder/custom-components/index.md
 
 ![Page Builder Integration Overview](images/PageBuilderIntegration.svg)
 
@@ -49,11 +50,7 @@ To develop and integrate your own custom content type components into your PWA S
 
 As part of the Page Builder integration to PWA Studio, we implemented a framework that converts Page Builder's master format (HTML) into a structured format that works in React and PWA Studio. The following video describes the components of this framework, followed by detailed descriptions of each.
 
-<div style="position: relative; overflow: hidden; padding-top: 56.25%; border: 1px solid #ccc;">
-   <iframe style="position: absolute; top:0; left:0; width: 100%; height:100%; border: 0;" title="Adobe Video Publishing Cloud Player" src="https://video.tv.adobe.com/v/31597t1/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
-</div>
-
----
+<iframe src="https://video.tv.adobe.com/v/31597t1/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on"></iframe>
 
 The Page Builder integration framework processes content as outlined here:
 
@@ -81,19 +78,19 @@ The master format parser (`parseStorageHtml()`) decomposes the master format HTM
 
 _Integration point_. The configuration function (`getContentTypeConfig()`) provides an interface for retrieving a content type's _property aggregator_ and its corresponding _content type component_. The configuration object also provides the integration point for your own custom content type components. See [Set up component][] for details.
 
-[set up component]: /integrations/pagebuilder/custom-components/setup/
+[set up component]: /integrations/pagebuilder/custom-components/setup/index.md
 
 ### Property aggregator
 
 _Integration point_. The property aggregator for a content type (example: `bannerConfigAggregator`) is a function that retrieves both content and style properties from the content type's HTML. Aggregators typically use both DOM properties and several provided framework utility functions to retrieve these properties and write them to flat property objects used to populate the content type React components. For each of your custom content types, you will need to create your own property aggregator. See [Add aggregator][] for details.
 
-[add aggregator]: /integrations/pagebuilder/custom-components/add-aggregator/
+[add aggregator]: /integrations/pagebuilder/custom-components/add-aggregator/index.md
 
 ### Content type component
 
 _Integration point_. The content type component is a React component that is equivalent to a Page Builder content type. There are 15 content type components within PWA Studio: Row, Column, Tabs, Banners, Sliders, and so on. Each content type component is populated with the original content and style properties from the content type to faithfully represent your Page Builder content within a PWA Studio app like Venia. For each of your custom content types, you will need to create the equivalent content type React component . See [Add component][] for details.
 
-[add component]: /integrations/pagebuilder/custom-components/add-component/
+[add component]: /integrations/pagebuilder/custom-components/add-component/index.md
 
 ### ContentTypeFactory
 
@@ -103,9 +100,7 @@ The `<ContentTypeFactory />` component parses a property object tree to retrieve
 
 The framework executes on the client side to ensure compatibility with the various hosting options available for Adobe Commerce and Magento Open Source. The following video and subsequent flow diagram describes how the parts of the framework combine to render Page Builder components within the Venia app.
 
-<div style="position: relative; overflow: hidden; padding-top: 56.25%; border: 1px solid #ccc;">
-   <iframe style="position: absolute; top:0; left:0; width: 100%; height:100%; border: 0;" title="Adobe Video Publishing Cloud Player" src="https://video.tv.adobe.com/v/31596t2/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on" frameborder="2" webkitallowfullscreen mozallowfullscreen allowfullscreen scrolling="no"></iframe>
-</div>
+<iframe src="https://video.tv.adobe.com/v/31596t2/?enable10seconds=on&hidetitle=true&quality=9&speedcontrol=on"></iframe>
 
 The following diagram describes the same process shown in the video, followed by detailed explanations of each step in the process.
 

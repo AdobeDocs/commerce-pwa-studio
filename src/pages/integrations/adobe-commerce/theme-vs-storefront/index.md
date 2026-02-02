@@ -33,22 +33,22 @@ For more information on themes, see the [Frontend Developer Guide][] for the cor
 
 A PWA Studio storefront application is a [progressive web app][] built using PWA Studio tools.
 
-[progressive web app]: /guides/
+[progressive web app]: /guides/index.md
 
 It is made up of an application shell that exists in the browser and a [middle tier service layer][] that sits between the shell and a [headless backend][] running Adobe Commerce or Magento Open Source.
 
-[middle tier service layer]: /guides/packages/upward/
-[headless backend]: https://magento.com/blog/best-practices/future-headless
+[middle tier service layer]: /guides/packages/upward/index.md
+[headless backend]: https://business.adobe.com/blog/basics/a-complete-guide-to-headless-ecommerce
 
 Unlike an Adobe Commerce or Magento Open Source theme, a storefront application does not inherit from a parent theme.
 Instead, the application is composed of [React][] modules that provide the different pieces of functionality.
 These pieces can be swapped out to change behavior or even removed entirely.
 
-[react]: https://reactjs.org/
+[react]: https://legacy.reactjs.org/
 
 For an example of a storefront application, read about the [Venia][] storefront, a reference implementation created using PWA Studio tools.
 
-[venia]: /guides/packages/venia/
+[venia]: /guides/packages/venia/index.md
 
 ### Components
 
@@ -64,8 +64,8 @@ In PWA Studio, _components_ refers to [React][] components.
 React components are modular pieces that make up a React application, such as a PWA storefront.
 These pieces can contain pure logic, such as [Peregrine components][], or visual elements, such as [Venia's UI components][].
 
-[peregrine components]: /guides/packages/peregrine/
-[venia's ui components]: /guides/packages/venia/ui-components/
+[peregrine components]: /guides/packages/peregrine/index.md
+[venia's ui components]: /guides/packages/venia/index.md
 
 ## Dependency management
 
@@ -122,7 +122,7 @@ The following table is a summary of general skills needed for theme development:
 [jquery]: https://jquery.com/
 [knockoutjs]: https://knockoutjs.com/
 [css]: https://developer.adobe.com/commerce/frontend-core/guide/css/
-[less]: http://lesscss.org/
+[less]: https://lesscss.org/
 [theme layouts]: https://developer.adobe.com/commerce/frontend-core/guide/layouts/
 [theme templates]: https://developer.adobe.com/commerce/frontend-core/guide/templates/
 [theme ui library]: https://commerce-docs.github.io/magento2-ui-library/
@@ -148,9 +148,9 @@ The following table is a summary of general skills needed for PWA storefront dev
 | [Peregrine][]                         | React components library provided by the PWA Studio |
 | [Yarn][]                              | JS package and dependency manager                   |
 
-[graphql]: /guides/general-concepts/graphql/
-[css modules]: /guides/general-concepts/css-modules/
-[peregrine]: /guides/packages/peregrine/
+[graphql]: /guides/general-concepts/graphql/index.md
+[css modules]: /guides/general-concepts/css-modules/index.md
+[peregrine]: /guides/packages/peregrine/index.md
 [redux]: https://redux.js.org/
 [json]: https://www.json.org/
 [webpack]: https://webpack.js.org/

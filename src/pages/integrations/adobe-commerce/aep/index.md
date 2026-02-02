@@ -46,7 +46,7 @@ For example, if your project uses `yarn` run one of the following commands:
 
 There are a few steps to take to establish a data stream and then install and configure the Data Connection extension.
 
-- Make sure you have added the ability to [add required Adobe Commerce extensions](https://developer.adobe.com/commerce/pwa-studio/tutorials/production-deployment/adobe-commerce/#add-required-adobe-commerce-extensions) to your PWA environment.
+- Make sure you have added the ability to [add required Adobe Commerce extensions](/tutorials/production-deployment/adobe-commerce/index.md#add-required-adobe-commerce-extensions) to your PWA environment.
 
 - Install the `data-services-graphql` module by running the following command:
 
@@ -54,8 +54,8 @@ There are a few steps to take to establish a data stream and then install and co
   composer require magento/module-data-services-graphql
   ```
 
-- Check the prerequisites in the [Data Connection overview](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html#prereqs).
+- Check the prerequisites in the [Data Connection overview](https://experienceleague.adobe.com/en/docs/commerce/data-connection/overview#prerequisites).
 
-- To install the Data Connection extension within Adobe Commerce, see [Install and Configure the Data Connection extension](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/install.html).
+- To install the Data Connection extension within Adobe Commerce, see [Install and Configure the Data Connection extension](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/install).
 
-- To connect Adobe Commerce with your data stream, see [Connect Commerce data to Adobe Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/fundamentals/connect-data.html).
+- To connect Adobe Commerce with your data stream, see [Connect Commerce data to Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/commerce/data-connection/fundamentals/connect-data).

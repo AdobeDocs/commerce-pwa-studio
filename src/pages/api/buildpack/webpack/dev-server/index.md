@@ -75,7 +75,7 @@ attributes, replacing it with the development server domain name.
 
 [GraphQL Playground][] is an enhanced version of the in-browser GraphQL debugging tool GraphiQL.
 
-[graphql playground]: https://github.com/prisma/graphql-playground
+[graphql playground]: https://github.com/graphql/graphql-playground
 
 Enable this feature by setting the `PWADevServerOptions.graphqlPlayground` configuration option to `true`.
 

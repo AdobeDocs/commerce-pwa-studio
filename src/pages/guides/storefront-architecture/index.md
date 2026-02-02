@@ -22,7 +22,7 @@ Instead, it defines its own frontend files and uses the backend application's Gr
 
 For more information about headless eCommerce, read the blog post titled [The Future Is Headless][].
 
-[the future is headless]: https://magento.com/blog/best-practices/future-headless
+[the future is headless]: https://business.adobe.com/blog/basics/a-complete-guide-to-headless-ecommerce
 
 ## Microservices
 

@@ -7,48 +7,48 @@ description: Review developer resources for Targetables API in the Buildpack pac
 
 The Targetables API is used to modify source code using the [extensibility framework][].
 
-[extensibility framework]: /guides/general-concepts/extensibility/
+[extensibility framework]: /guides/general-concepts/extensibility/index.md
 
 <DiscoverBlock width="100%" slots="heading, link, text"/>
 
 ## Targetable modules list
 
-[TargetableSet](TargetableSet/)
+[TargetableSet](targetable-set/index.md)
 
 A factory and manager for Targetable instances.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[TargetableModule](TargetableModule/)
+[TargetableModule](targetable-module/index.md)
 
 A module that third party code can modify.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[TargetableESModule](TargetableESModule/)
+[TargetableESModule](targetable-es-module/index.md)
 
 An ECMAScript module that can be changed by a third party.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[TargetableESModuleArray](TargetableESModuleArray/)
+[TargetableESModuleArray](targetable-es-module-array/index.md)
 
 An ECMAScript module array that can be changed by a third party.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[TargetableESModuleObject](TargetableESModuleObject/)
+[TargetableESModuleObject](targetable-es-module-object/index.md)
 
 An ECMAScript module object that can be changed by a third party.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[TargetableReactComponent](TargetableReactComponent/)
+[TargetableReactComponent](targetable-react-component/index.md)
 
 An ECMAScript module containing a React component with JSX to render it.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[SingleImportStatement](SingleImportStatement/)
+[SingleImportStatement](single-import-statement/index.md)
 
 A static import statement in an ES module.

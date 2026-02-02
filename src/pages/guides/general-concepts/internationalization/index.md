@@ -31,14 +31,14 @@ This context provider contains translation data from dictionary files and suppli
 The i18n feature in PWA Studio is an implementation of the [react-intl][] library.
 The `LocaleProvider` component in PWA Studio wraps around the library's [IntlProvider][] and provides it with translation data.
 
-[react-intl]: https://formatjs.io/docs/react-intl/
-[intlprovider]: https://formatjs.io/docs/react-intl/components/#intlprovider
+[react-intl]: https://formatjs.github.io/docs/react-intl
+[intlprovider]: https://formatjs.github.io/#intlprovider
 
 This library also provides [formatMessage()][] and [FormattedMessage][] to localize text in child components under `LocaleProvider`.
 You must at least supply values for `id` and a `defaultMessage` fallback when you use either the function or component.
 
-[formatmessage()]: https://formatjs.io/docs/react-intl/api#formatmessage
-[formattedmessage]: https://formatjs.io/docs/react-intl/components#formattedmessage
+[formatmessage()]: https://formatjs.github.io/#formatmessage
+[formattedmessage]: https://formatjs.github.io/#formattedmessage
 
 The following code samples produce the same results:
 
@@ -115,7 +115,7 @@ Both approach have their pros and cons, and developers are free to choose which 
 The i18n feature accepts the same [message syntax][] as the underlying `react-intl` library.
 Along with static text, this syntax supports variables, dates, and even conditional formatting.
 
-[message syntax]: https://formatjs.io/docs/core-concepts/icu-syntax
+[message syntax]: https://formatjs.github.io/docs/core-concepts/icu-syntax
 
 To translate text with variables, pass in a mapping object to the `values` prop in the `FormattedMessage` component.
 
@@ -156,7 +156,7 @@ An NPM dependency is a language package if it meets the following criteria:
 - The package contains an `i18n` directory
 - The `i18n` directory contains a dictionary file with a locale formatted name
 
-<!-- TODO: Create an in-depth tutorial for creating a language package extension -->
+\<!-- TODO: Create an in-depth tutorial for creating a language package extension --\>
 
 ## Build process
 

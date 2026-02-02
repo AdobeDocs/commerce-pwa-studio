@@ -5,11 +5,9 @@ description: View detailed API reference documentation about the portal componen
 
 # Portal
 
-<!--
+\<!--
 The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
--->
+--\>
 
-import Portal from '/src/data/auto-generated/venia-ui/lib/components/Portal/portal.md'
-
-<Portal />
+<Fragment src='../../../../../includes/auto-generated/venia-ui/lib/components/Portal/portal.md'/>

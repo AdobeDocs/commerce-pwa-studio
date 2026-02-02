@@ -17,8 +17,6 @@ Path configurations follow the standard scope hierarchy, serving the most specif
 store > website > default (global)
 ```
 
----
-
 ## Step 1: Prepare Your Environment Variables
 
 Create environment-specific configuration for each store you want to build.
@@ -38,8 +36,6 @@ STORE_VIEW_CODE=french
 MAGENTO_BACKEND_URL=https://german.yoursite.com
 STORE_VIEW_CODE=german
 ```
-
----
 
 ## Step 2: Build PWA Bundles for Each Store
 
@@ -84,8 +80,6 @@ mv dist dist-default
 
 **Tip:** You can automate this process by creating a build script that iterates through your store configurations.
 
----
-
 ## Step 3: Deploy PWA Bundles
 
 Copy your built PWA bundles to your server where they can be accessed by the UPWARD connector.
@@ -98,8 +92,6 @@ scp -r dist-default user@server:/var/www/html/pwa-bundles/
 ```
 
 **Important:** Ensure the web server user has read permissions on these directories.
-
----
 
 ## Step 4: Configure UPWARD Paths
 
@@ -147,8 +139,6 @@ To serve a traditional storefront (non-PWA) for a specific store, use an empty s
 bin/magento pwa:upward:set --scopeType store --scopeCode traditional_store
 ```
 
----
-
 ## Step 5: Verify Configuration
 
 Check your configuration in the `env.php` file:
@@ -174,8 +164,6 @@ You should see a `pwa_path` section like this:
 ]
 ```
 
----
-
 ## Step 6: Test Your Setup
 
 Clear cache and test each storefront:
@@ -192,8 +180,6 @@ bin/magento cache:flush
 3. Test store-specific features (language, currency, products)
 4. Verify service worker registration
 5. Test offline functionality
-
----
 
 ## Creating Multiple Bundles - Complete Example
 
@@ -232,8 +218,6 @@ bin/magento cache:flush
 ```
 
 With this configuration, a single UPWARD server can process requests for multiple website bundles.
-
----
 
 ## Troubleshooting
 

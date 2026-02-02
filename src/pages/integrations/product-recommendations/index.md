@@ -10,17 +10,17 @@ keywords:
 
 # Product Recommendations
 
-You can integrate Product Recommendations powered by [Adobe Sensei](https://www.adobe.com/sensei.html) into your PWA Studio storefront.
+You can integrate Product Recommendations powered by [Adobe AI](https://business.adobe.com/ai/adobe-genai.html) into your PWA Studio storefront.
 
 ## Integration overview
 
 ![Product Recommendations for PWA Studio](images/pwa-arch-diag-sensei.svg)
 
-Adobe's [Product Recommendations powered by Adobe Sensei](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview) is a feature backed by several SaaS services.
+Adobe's [Product Recommendations powered by Adobe AI](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview) is a feature backed by several SaaS services.
 The **Store** side includes your PWA storefront, which contains the event collector and recommendations layout template, and the backend, which includes the GraphQL endpoints, SaaS Export module, and the Admin UI.
 
-After you install the Product Recommendations PWA extension on your store, it will start sending [behavioral data](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/events) to Adobe Sensei with no additional setup.
-Adobe Sensei processes this behavioral data along with the catalog data from the backend and calculates the product associations leveraged by the recommendations service.
+After you install the Product Recommendations PWA extension on your store, it will start sending [behavioral data](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/developer/events) to Adobe AI with no additional setup.
+Adobe AI processes this behavioral data along with the catalog data from the backend and calculates the product associations leveraged by the recommendations service.
 At this point, the merchant can create and manage recommendation units from the Adobe Commerce Admin UI then fetch those product recommendation units from their PWA storefront.
 
 ## Install the Product Recommendations module
@@ -117,8 +117,8 @@ The `venia-product-recommendations` package requires [PWA Studio 10.0.0](https:/
 
 ## Create recommendation units
 
-Creating a product recommendation unit for your PWA storefront is the same as [creating one for a theme](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/admin/create).
-When you create a recommendation unit in the Admin UI panel, you will need to place components that render product recommendations on appropriate storefront pages. You will do this only once per [supported page type](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/overview#supportedrecs).
+Creating a product recommendation unit for your PWA storefront is the same as [creating one for a theme](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/admin/create).
+When you create a recommendation unit in the Admin UI panel, you will need to place components that render product recommendations on appropriate storefront pages. You will do this only once per [supported page type](https://experienceleague.adobe.com/en/docs/commerce/product-recommendations/overview#supportedrecs).
 
 ## Render recommendations
 
@@ -129,7 +129,7 @@ To control the recommendation unit placement on your PWA storefront, use the loc
 The `Recommendations` component is part of the [venia-product-recommendations][] package.
 It contains React components that do the following:
 
-- Collect and send behavioral data to Adobe Sensei
+- Collect and send behavioral data to Adobe AI
 - Fetch recommendations from the recommendations service
 - Render the recommendation unit to your storefront page
 
@@ -158,7 +158,7 @@ import useRecsData from "@magento/venia-product-recommendations/lib/hooks/useRec
 const { data, error, isLoading } = useRecsData({ pageType: PageTypes.CMS });
 ```
 
-# Support Policy
+## Support Policy
 
 ### Supported Versions
 
@@ -176,5 +176,5 @@ To receive continued support, please ensure your environment is updated to **ver
 
 If you have questions about version support or need help upgrading, please contact the support team or open a support request through the appropriate support channel.
 
-[venia-product-recommendations]: /guides/#custom-react-hooks-and-component
-[extensibility framework]: /guides/general-concepts/extensibility/#intercept-files
+[venia-product-recommendations]: /guides/index.md
+[extensibility framework]: /guides/general-concepts/extensibility/index.md#intercept-files

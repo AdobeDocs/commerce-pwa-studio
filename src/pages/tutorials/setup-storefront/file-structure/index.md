@@ -32,7 +32,7 @@ src
 
 ### `.storybook`
 
-This directory contains configurations for [Storybook][] testing.
+This directory contains configurations for Storybook testing.
 You can delete this directory if you do not need it.
 
 ### `ServiceWorker`
@@ -43,7 +43,7 @@ Examples of service workers features include push notifications, background sync
 The service worker also gives you the ability to intercept and handle network requests.
 This gives you better control over your site's client-side caching logic.
 
-[service worker features]: https://developers.google.com/web/fundamentals/primers/service-workers
+[service worker features]: https://web.dev/learn/pwa/service-workers
 
 ### `drivers.js`
 
@@ -60,7 +60,7 @@ Edit the entry in the `browser` section of the `package.json` file if you want t
 
 For more information about Venia's drivers and adapters pattern, see: [Modular components][]
 
-[Modular components]: /guides/packages/venia/driver-adapter/
+[Modular components]: /guides/packages/venia/driver-adapter/index.md
 
 ### `index.js`
 
@@ -80,7 +80,7 @@ Here, you can add your custom reducers and enhancers to Peregrine's global store
 
 For more information about state management, see: [State management][]
 
-[state management]: /guides/general-concepts/state-management/
+[state management]: /guides/general-concepts/state-management/index.md
 
 ## Non-source files
 
@@ -96,7 +96,7 @@ It lets you use the extensibility framework to make changes to the Venia applica
 The `webpack.config.js` is a Webpack configuration file.
 It uses [`configureWebpack`][] from PWA Studio's buildpack to create a configuration object for Webpack.
 
-[`configurewebpack`]: /api/buildpack/webpack/configure/
+[`configurewebpack`]: /api/buildpack/webpack/configure/index.md
 
 ### `upward.yml`
 
@@ -109,7 +109,7 @@ This object is defined in the [venia-ui package's `upward.yml` file][].
 You can edit this file if you want to change how your project's UPWARD server responds to requests,
 but the preferred method is to use Targetables to make these changes.
 
-[upward]: /guides/packages/upward/
+[upward]: /guides/packages/upward/index.md
 [venia-ui package's `upward.yml` file]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/upward.yml
 
 ### `template.html`
@@ -137,4 +137,4 @@ Use the following values for `NODE_ENV`:
 
 For more information on loading environment variables, see: [Load environment file][]
 
-[load environment file]: /api/buildpack/cli/load-environment-file/
+[load environment file]: /api/buildpack/cli/load-environment-file/index.md

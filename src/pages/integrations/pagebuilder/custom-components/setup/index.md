@@ -1,8 +1,10 @@
 ---
 title: Set up component
 description: View code samples for integrating your Page Builder component with a PWA Studio storefront project.
-edition: paas
 ---
+
+<Edition slot="text" backgroundColor="blue"/>
+PaaS only
 
 # Set up component
 
@@ -130,4 +132,4 @@ If you have errors, make sure you have:
 1. Copied the correct starter code for each of the four files.
 2. Added the correct name of your content type to the `config.js` file (`Quote_Custom` if you are using the Quote content type).
 
-[react lazy loading]: https://reactjs.org/docs/code-splitting.html#reactlazy
+[react lazy loading]: https://legacy.reactjs.org/docs/code-splitting.html#reactlazy

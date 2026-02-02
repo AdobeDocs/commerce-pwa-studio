@@ -14,11 +14,11 @@ If you have a question that is not answered on this page, try asking in our [#pw
 
 If you are developing a new storefront, the [Tutorials][] sections provides an introduction to the different concepts and features of PWA Studio.
 
-[tutorials]: /tutorials/
+[tutorials]: /tutorials/index.md
 
 If you want to learn about the technologies and concepts behind PWA Studio, the [Getting Started][] section of this site provides background information about this project.
 
-[getting started]: /guides/
+[getting started]: /guides/index.md
 
 If you are interested in looking at the project source or contributing to the project, check out the [project repository][].
 
@@ -29,7 +29,7 @@ If you are interested in looking at the project source or contributing to the pr
 Yes, PWA Studio provides tools that support both server-side and client-side rendering strategies.
 For more information on content rendering support, see the [Content Rendering][] topic.
 
-[content rendering]: /guides/general-concepts/content-rendering/
+[content rendering]: /guides/general-concepts/content-rendering/index.md
 
 Community members have also suggested the following tools and services to address SEO and SSR needs:
 
@@ -46,8 +46,8 @@ The Tutorials section of this site contains a number of tutorials which cover cu
 - [How to add a static route][]
 - [How to modify the site footer][]
 
-[how to add a static route]: /tutorials/basic-modifications/add-static-route/
-[how to modify the site footer]: /tutorials/basic-modifications/modify-footer/
+[how to add a static route]: /tutorials/basic-modifications/add-static-route/index.md
+[how to modify the site footer]: /tutorials/basic-modifications/modify-footer/index.md
 
 ## Which payment methods does PWA Studio support
 
@@ -69,7 +69,7 @@ It is a dependency of the [Magento 2 UPWARD connector module][], which lets you 
 See the [Deploy to Adobe Commerce][] tutorial to learn how to deploy your storefront to an Adobe Commerce service in the Cloud.
 
 [magento 2 upward connector module]: https://github.com/magento/magento2-upward-connector
-[deploy to adobe commerce]: /tutorials/production-deployment/adobe-commerce/
+[deploy to adobe commerce]: /tutorials/production-deployment/adobe-commerce/index.md
 
 ## Can I use Windows with PWA Studio for development
 
@@ -81,7 +81,7 @@ community members have suggested the following workarounds:
 - Using Docker to spin up a Linux environment
 - Using the [Windows Subsystem for Linux][]
 
-[windows subsystem for linux]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+[windows subsystem for linux]: https://learn.microsoft.com/en-us/windows/wsl/install
 
 ## How can I query other stores via GraphQL
 
@@ -95,8 +95,8 @@ To let the storefront query a specific store view in the Adobe Commerce or Magen
 
   - Add `headers:{ Store: YOUR_STORE_CODE }`
 
-[packages/peregrine/lib/router/resolveunknownroute.js]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Router/resolveUnknownRoute.js#L97
-[packages/venia-ui/lib/drivers/adapter.js]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/drivers/adapter.js#L120
+[packages/peregrine/lib/router/resolveunknownroute.js]: https://github.com/magento/pwa-studio/blob/v11.0.0/packages/peregrine/lib/Router/resolveUnknownRoute.js#L97
+[packages/venia-ui/lib/drivers/adapter.js]: https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/drivers/adapter.js#L120
 
 ## Image component loads wrongly sized images from the srcSet
 
@@ -111,8 +111,8 @@ When you use the `<Image/>` component from `venia-ui`, change the following valu
 
   - Supply the `<Image />` component with a `widths` prop as shown in the GalleryItem component defined in the linked file.
 
-[packages/venia-ui/lib/util/images.js]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/util/images.js#L6
-[packages/venia-ui/lib/components/gallery/item.js]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Gallery/item.js#L18
+[packages/venia-ui/lib/util/images.js]: https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/util/images.js#L6
+[packages/venia-ui/lib/components/gallery/item.js]: https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/components/Gallery/item.js#L18
 
 <InlineAlert variant="info" slots="text"/>
 

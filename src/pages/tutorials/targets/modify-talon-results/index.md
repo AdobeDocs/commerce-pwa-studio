@@ -8,7 +8,7 @@ description: Learn how to intercept a custom React hook and modify the results.
 The [talons target][] in Peregrine exposes talons as wrappable modules.
 This lets you define a wrapper module that intercepts a talon and let you modify the results.
 
-[talons target]: /api/peregrine/targets/
+[talons target]: /api/peregrine/targets/index.md
 
 ## Background
 

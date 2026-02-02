@@ -14,20 +14,20 @@ The PWA Buildpack package provides build and development tools for creating and 
 
 ## Tools
 
-[Scaffolding](/guides/packages/buildpack/scaffolding/)
+[Scaffolding](/guides/packages/buildpack/scaffolding/index.md)
 
 Use the scaffolding tool to set up a new project using a [project template][].
 
-[project template]: /guides/packages/buildpack/project-template/
+[project template]: /guides/packages/buildpack/project-templates/index.md
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Command Line Interface](/api/buildpack/cli/)
+[Command Line Interface](/api/buildpack/cli/index.md)
 
 Use the Command Line Interface to set up your development environment.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Webpack tools](/api/buildpack/webpack/)
+[Webpack tools](/api/buildpack/webpack/index.md)
 
 Use PWA Studio's Webpack tools to generate the build artifacts for your project.

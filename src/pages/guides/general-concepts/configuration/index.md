@@ -12,7 +12,7 @@ The [Buildpack][] library provides the tools you need to configure your environm
 These configurations differ across projects and different environments within those projects.
 For example, environments for development, testing, staging, and production are configured to support different behaviors.
 
-[buildpack]: /guides/packages/buildpack/
+[buildpack]: /guides/packages/buildpack/index.md
 
 ## The `.env` file
 
@@ -33,7 +33,7 @@ In any script in any programming language, you can access these environment vari
 Buildpack provides a [Buildpack CLI][] for creating `.env` files and validating environments.
 It also provides library methods for connecting environment management workflows with other tools.
 
-[buildpack cli]: /api/buildpack/cli/
+[buildpack cli]: /api/buildpack/cli/index.md
 
 Using these provided tools, you can keep global configuration values in a central location and propagate them throughout your project.
 This lets you pass common settings down to different library functions without tightly coupling those settings together.
@@ -89,8 +89,8 @@ Buildpack combines the features of several tools:
 - [camelspace][] for easily translating configuration between flat environment variables and namespaced objects
 
 [dotenv]: https://www.npmjs.com/package/dotenv
-[envalid]: https://npmjs.com/package/envalid
-[camelspace]: https://npmjs.com/package/camelspace
+[envalid]: https://www.npmjs.com/package/envalid
+[camelspace]: https://www.npmjs.com/package/camelspace
 
 ## Best practices
 
@@ -108,7 +108,7 @@ To have environment-variable-based configuration management and enjoy the benefi
 The purpose of a function such as [loadEnvironment()][] is to keep configuration organized without tightly coupling a system to a manager object.
 To achieve this, it is important to use `loadEnvironment()` and the `Configuration` object it produces at the "top level" or entry point of a program.
 
-[loadenvironment()]: /api/buildpack/cli/load-environment-file/
+[loadenvironment()]: /api/buildpack/cli/load-environment-file/index.md
 
 Avoid passing a `Configuration` object directly to other tools.
 These tools should be usable without `loadEnvironment()`.
@@ -175,7 +175,7 @@ By default, buildpack respects three levels of "fallback" values:
 2. Values from the `.env` file in the project root
 3. Defaults from the metadata in the [Project Environment Definitions][]
 
-[project environment definitions]: /api/buildpack/environment/variables/
+[project environment definitions]: /api/buildpack/environment/variables/index.md
 
 Additional layers of configuration and on-disk fallback are discouraged.
 Inside scripts, environment variables may be combined and merged, but

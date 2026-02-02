@@ -30,7 +30,7 @@ Server-side routing is accomplished using the [UPWARD][] configuration file.
 Since the configuration file defines how the server responds to requests,
 you can specify a different template to render each page type, such as a CMS page or a product details page.
 
-[upward]: /guides/packages/upward/
+[upward]: /guides/packages/upward/index.md
 
 Early versions of the Venia storefront used this approach, but
 in the current version, every page request now returns the same HTML with the application shell.
@@ -76,7 +76,7 @@ The [MagentoRoute component][] handles the routes that are specific to the Adobe
 It uses its [Peregrine talon][] counterpart to determine which component to display.
 
 [magentoroute component]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/MagentoRoute/magentoRoute.js
-[peregrine talon]: /guides/packages/peregrine/
+[peregrine talon]: /guides/packages/peregrine/index.md
 
 ### useMagentoRoute() talon
 

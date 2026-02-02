@@ -9,7 +9,7 @@ The `Item` component takes a data object and renders it using a render prop or w
 
 This component is used as a direct child of the [`Items`][] fragment.
 
-[`items`]: /api/peregrine/components-and-utilities/Items/
+[`items`]: /api/peregrine/components-and-utilities/Items/index.md
 
 ## Props
 

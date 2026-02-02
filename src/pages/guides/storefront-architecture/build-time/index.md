@@ -35,7 +35,7 @@ The preferred approach is to add PWA Studio tools and libraries as dependencies 
 
 The recommended way of getting started is to use the scaffolding tool to [setup a new storefront project][].
 
-[setup a new storefront project]: /tutorials/setup-storefront/
+[setup a new storefront project]: /tutorials/setup-storefront/index.md
 
 ## Build pipeline
 
@@ -87,20 +87,20 @@ This file is found in the root directory of the Venia concept project.
 
 See [Configuration management][] for more information.
 
-[configuration management]: /guides/general-concepts/configuration/
+[configuration management]: /guides/general-concepts/configuration/index.md
 
 <InlineAlert variant="info" slots="text"/>
 
 If there is no `.env` file in your project, create one with the [`buildpack create-env-file` command][].
 
-[`buildpack create-env-file` command]: /api/buildpack/cli/create-environment-file/
+[`buildpack create-env-file` command]: /api/buildpack/cli/create-environment-file/index.md
 
 #### Query validation
 
 After the environment validation phase, the build runs the `validate-queries` script.
 This script uses the [`graphql-cli-validate-magento-pwa-queries`][] tool to analyze the GraphQL queries in the project and validates them against the schema downloaded from the configured Magento instance.
 
-[`graphql-cli-validate-magento-pwa-queries`]: https://github.com/magento/pwa-studio/tree/develop/packages/graphql-cli-validate-magento-pwa-queries
+[`graphql-cli-validate-magento-pwa-queries`]: https://github.com/magento/pwa-studio/blob/develop/packages/graphql-cli-validate-magento-pwa-queries
 
 <InlineAlert variant="info" slots="text"/>
 

@@ -14,30 +14,30 @@ The Buildpack package provides different tools that give you access to this proc
 
 ## List of tools
 
-[Configure Webpack](/api/buildpack/webpack/configure/)
+[Configure Webpack](/api/buildpack/webpack/configure/index.md)
 
 A function that returns the default PWA Studio Webpack configuration.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Magento resolver](/api/buildpack/webpack/magento-resolver/)
+[Magento resolver](/api/buildpack/webpack/magento-resolver/index.md)
 
 Provides a configuration that helps resolve static Magento assets.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Magento root components plugin](/api/buildpack/webpack/magento-root-components-plugin/)
+[Magento root components plugin](/api/buildpack/webpack/magento-root-components-plugin/index.md)
 
 Webpack plugin for creating chunks based on root components.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[PWA development server](/api/buildpack/webpack/dev-server/)
+[PWA development server](/api/buildpack/webpack/dev-server/index.md)
 
 A utility for configuring Webpack's development server specifically for PWA Studio development.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Service worker plugin](/api/buildpack/webpack/service-worker/)
+[Service worker plugin](/api/buildpack/webpack/service-worker/index.md)
 
 Webpack plugin for configuring the service worker.

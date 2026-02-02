@@ -1,29 +1,27 @@
 ---
 title: Column
 description: View detailed API reference documentation about the column content type of the Page Builder component for PWA Studio storefront projects.
-edition: paas
 ---
+
+<Edition slot="text" backgroundColor="blue"/>
+PaaS only
 
 # Column and ColumnGroup
 
 ## Column
 
-<!--
+\<!--
 The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
--->
+--\>
 
-import Column from '/src/data/auto-generated/pagebuilder/lib/ContentTypes/Column/column.md'
-
-<Column />
+<Fragment src='../../../../includes/auto-generated/pagebuilder/lib/content-types/column/column.md'/>
 
 ## ColumnGroup
 
-<!--
+\<!--
 The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
--->
+--\>
 
-import ColumnGroup from '/src/data/auto-generated/pagebuilder/lib/ContentTypes/ColumnGroup/columnGroup.md'
-
-<ColumnGroup />
+<Fragment src='../../../../includes/auto-generated/pagebuilder/lib/content-types/column-group/column-group.md'/>

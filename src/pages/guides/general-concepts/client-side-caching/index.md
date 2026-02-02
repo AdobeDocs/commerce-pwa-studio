@@ -28,14 +28,14 @@ Once a resource has been cached, the service worker uses the cache on future req
 A [service worker][] is a JavaScript file that runs in a separate thread from the main execution thread in a web application.
 Service workers can intercept network requests and fetch cached data or store results from a network request into the cache.
 
-[service worker]: https://developers.google.com/web/ilt/pwa/introduction-to-service-worker
+[service worker]: https://web.dev/learn/pwa/service-workers
 
 ### Venia service worker
 
 Venia's service worker uses Google's [Workbox][] library.
 Its behavior is defined in files inside the [src/ServiceWorker/][] directory.
 
-[workbox]: https://developers.google.com/web/tools/workbox/
+[workbox]: https://developer.chrome.com/docs/workbox/
 [src/serviceworker/]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/src/ServiceWorker/
 
 You do not need to use Workbox to define service worker behavior, but
@@ -43,31 +43,29 @@ Workbox makes this task easier by removing boilerplate code that is always used 
 
 Venia uses the following [caching strategies][] with its service worker:
 
-[caching strategies]: https://developers.google.com/web/tools/workbox/modules/workbox-strategies
+[caching strategies]: https://developer.chrome.com/docs/workbox/modules/workbox-strategies/
 
 #### Stale-while-revalidate
 
 The [stale-while-revalidate][] strategy tells the service worker to use a cached response if it exists.
 A separate network request is made for that resource and the cache is updated for future requests.
 
-[stale-while-revalidate]: https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#stale-while-revalidate
+[stale-while-revalidate]: https://web.dev/articles/offline-cookbook#stale-while-revalidate
 
 This strategy is used when the most up to date version of a resource is not necessary for an application.
 
-<!-- prettier-ignore-start -->
 | Route pattern                                                       | Description          |
 | ------------------------------------------------------------------- | -------------------- |
 | /                                                                   | The application root |
 | /.\\.js$                                                            | JavaScript files     |
 | /\/media\/catalog.*\.(?:png&#124;gif&#124;jpg&#124;jpeg&#124;svg)$/ | Catalog image files  |
-<!-- prettier-ignore-end -->
 
 #### Network first
 
 The [network first][] strategy tells the service worker to get a resource from the network first.
 If a network connection cannot be made, the service worker uses the cache as a fallback.
 
-[network first]: https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#network-falling-back-to-cache
+[network first]: https://web.dev/articles/offline-cookbook#network-falling-back-to-cache
 
 This strategy is used for data that may change frequently on the server.
 
@@ -80,7 +78,7 @@ This strategy is used for data that may change frequently on the server.
 The [cache first][] strategy tells the service worker to use the data from the cache.
 Unlike the stale-while-revalidate strategy, no network call is made to update the cache.
 
-[cache first]: https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/#cache-falling-back-to-network
+[cache first]: https://web.dev/articles/offline-cookbook#cache-falling-back-to-network
 
 If a response is not found in the cache, a network call is made to get the resource and cache the response.
 

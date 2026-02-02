@@ -9,7 +9,7 @@ The `load-env` subcommand for the [`buildpack`][] CLI command loads and validate
 This includes any deprecated or changed settings.
 When loading from `.env`, `buildpack` does not override previously declared variables.
 
-[`buildpack`]: /api/buildpack/cli/
+[`buildpack`]: /api/buildpack/cli/index.md
 [`envvardefinitions.json`]: https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/envVarDefinitions.json
 
 ## Command flags
@@ -37,7 +37,7 @@ Adding the `@magento/pwa-buildpack` dependency to your project gives you access 
 
 Loads a given directory's `.env` file and provides a [configuration object][].
 
-[configuration object]: /guides/general-concepts/configuration/
+[configuration object]: /guides/general-concepts/configuration/index.md
 
 #### Example
 
@@ -82,7 +82,7 @@ This lets you pass smaller objects instead of a single, plain object full of glo
 : Returns a plain object with environment variables in the `sectionName` namespace.
 The property keys are [camelCased][] for convenience.
 
-[camelcased]: https://npmjs.com/package/camelspace
+[camelcased]: https://www.npmjs.com/package/camelspace
 
 `sections(...sectionNames)`
 : Returns a plain object with environment variables from the specified namespaces.
@@ -95,7 +95,7 @@ The namespaces are assigned to different camelCased properties named after the s
 
 The following example is a script that starts an [UPWARD-JS][] server using configuration values loaded from the environment and `.env` file in the project path.
 
-[upward-js]: /guides/packages/upward/javascript/
+[upward-js]: /guides/packages/upward/javascript/index.md
 
 ```js
 import { loadEnvironment } from "@magento/pwa-buildpack";

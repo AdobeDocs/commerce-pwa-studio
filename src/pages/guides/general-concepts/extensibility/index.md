@@ -79,7 +79,7 @@ This Target lets you change the behavior of the `RichContent` component across y
 Tapping into this Target gives access to a `richContentRenders` list object in your intercept function.
 Calling the `add()` function on this object lets you add a custom rendering strategy for your storefront.
 
-[`richcontentrenderers` target]: /api/venia/targets/#richContentRenderers
+[`richcontentrenderers` target]: /api/venia/targets/index.md
 
 The [Page Builder extension][] provides an example of how to intercept this Target.
 It taps the Target and provides an intercept function that adds a custom renderer for any detected Page Builder content.
@@ -218,7 +218,7 @@ The TargetProvider object provides an `of()` function and an `own` property to a
 
 For more information on how intercept files work, see the tutorial on how to [Intercept a Target][].
 
-[intercept a target]: /tutorials/targets/
+[intercept a target]: /tutorials/targets/index.md
 
 ### Example intercept file content
 
@@ -266,18 +266,18 @@ As shown in the previous examples, a common practice when authoring these files 
 When you create a new storefront project using the scaffolding tool, you have access to all the same PWA Studio Targets as the Venia storefront.
 The following is a list of PWA Studio packages that contain Targets.
 
-[Buildpack](/api/buildpack/targets/)
+[Buildpack](/api/buildpack/targets/index.md)
 : Targets in the Buildpack are low level and generic.
 They are often used as building blocks for more complicated feature Targets.
 You can also find Targets that let you add environment variables or change UPWARD behavior in this package.
 
-[Peregrine](/api/peregrine/extension-points/targets/)
+[Peregrine](/api/peregrine/targets/index.md)
 : Targets in the Peregrine package focus mainly on the set of talons it provides.
 The `talons` Target lets you [wrap a Talon][] with your own module.
 
-[wrap a talon]: /tutorials/targets/modify-talon-results/
+[wrap a talon]: /tutorials/targets/modify-talon-results/index.md
 
-[Venia UI](/api/venia/targets/)
+[Venia UI](/api/venia/targets/index.md)
 : Targets in the Venia UI provide access to the list of items used in the UI components.
 These Targets let you add new routes, rendering strategies, and payment methods.
 
@@ -287,8 +287,8 @@ The PWA Studio scaffolding tool also installs extensions on all new storefront p
 These extensions use the framework to add useful features on top of the base application.
 They are also examples of what a PWA Studio storefront extension looks like.
 
-[@magento/upward-security-headers](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/upward-security-headers)
+[@magento/upward-security-headers](https://github.com/magento/pwa-studio/blob/develop/packages/extensions/upward-security-headers)
 : This extension adds security headers to UPWARD by tapping into the `transformUpward` Target in Buildpack.
 
-[@magento/venia-sample-language-packs](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/venia-sample-language-packs)
+[@magento/venia-sample-language-packs](https://github.com/magento/pwa-studio/blob/develop/packages/extensions/venia-sample-language-packs)
 : This extension provides sample translations for PWA Studio's internationalization feature.

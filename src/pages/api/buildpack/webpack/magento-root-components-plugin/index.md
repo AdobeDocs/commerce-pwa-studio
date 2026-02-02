@@ -25,7 +25,7 @@ Given a `RootComponents` directory in a PWA project with the following structure
 This plugin creates unique chunks for `Page1`, `Page2`, and `Page3`.
 Further webpack optimization techniques, such as [`CommonsChunkPlugin`][], can be applied if needed.
 
-[`commonschunkplugin`]: https://webpack.js.org/plugins/commons-chunk-plugin/
+[`commonschunkplugin`]: https://v4.webpack.js.org/plugins/commons-chunk-plugin/
 
 ## Example usage
 

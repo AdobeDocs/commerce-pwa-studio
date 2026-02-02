@@ -16,12 +16,12 @@ Extensions provide new storefront functionality, extend existing components, or 
 PWA Studio merges third-party code into the final application bundle to build web functionality on top of a base storefront.
 The [extensibility framework][] provided by the `pwa-buildpack` package lets you create these third-party extensions for PWA Studio storefronts, such as Venia.
 
-[extensibility framework]: /guides/general-concepts/extensibility/
+[extensibility framework]: /guides/general-concepts/extensibility/index.md
 
 Extensions can change the behavior of existing components, add new features, or even provide translations.
 Language packs are a specific extension type which provide translation data for the [internationalization feature][].
 
-[internationalization feature]: /guides/general-concepts/internationalization/
+[internationalization feature]: /guides/general-concepts/internationalization/index.md
 
 <InlineAlert variant="help" slots="text"/>
 Setting up a project workspace that contains both a storefront project and an extension project may result in `buildpack` issues due to dependency conflicts.
@@ -33,12 +33,12 @@ PWA Studio extensions are [Node packages][], which means it requires a `package.
 The `package.json` file is the project manifest.
 It contains metadata about the project, such as the name, entry point, and dependencies.
 
-[node packages]: https://docs.npmjs.com/about-packages-and-modules
+[node packages]: https://docs.npmjs.com/about-packages-and-modules/
 
 You can manually create this file, but we recommend using the CLI command [`yarn init`][] or [`npm init`][] in your project directory.
 Running either command launches an interactive questionnaire to help you fill in your project metadata.
 
-[`yarn init`]: https://yarnpkg.com/lang/en/docs/cli/init/
+[`yarn init`]: https://classic.yarnpkg.com/en/docs/cli/init/
 [`npm init`]: https://docs.npmjs.com/cli-commands/init/
 
 ### Example manifest file
@@ -86,7 +86,7 @@ Declare files export a function that receives a [TargetProvider][] object.
 The TargetProvider object has a `declare()` function that accepts a dictionary object of named Targets.
 The TargetProvider also provides a utility collection called `types`, which holds all the legal constructors for Targets.
 
-[targetprovider]: /guides/general-concepts/extensibility/#targetproviders
+[targetprovider]: /guides/general-concepts/extensibility/index.md#targetproviders
 
 #### Example for declaring a target
 
@@ -166,9 +166,9 @@ For more information on the Targetables API used in this example, see the follow
 - [TargetableModule][]
 - [TargetablePublisher][]
 
-[targetables manager]: /api/buildpack/targetables/TargetableSet/
-[targetablemodule]: /api/buildpack/targetables/TargetableModule/
-[targetablepublisher]: /api/buildpack/targetables/TargetableSet/#TargetablePublisher
+[targetables manager]: /api/buildpack/targetables/targetable-set/index.md
+[targetablemodule]: /api/buildpack/targetables/targetable-module/index.md
+[targetablepublisher]: /api/buildpack/targetables/targetable-set/index.md
 
 The API the `myListContent` target publishes contains an `addContent()` function that makes modifications to the `src/myList.js` file.
 The content for `src/myList.js` is as follows:
@@ -260,7 +260,7 @@ Buildpack provides an alternate way of installing a local extensions by linking 
 Use the [`yarn link`][] or [`npm link`][] command in your extension project to symlink it to the global package set.
 
 [`yarn link`]: https://classic.yarnpkg.com/en/docs/cli/link/
-[`npm link`]: https://docs.npmjs.com/cli/v6/commands/npm-link
+[`npm link`]: https://docs.npmjs.com/cli/v6/commands/npm-link/
 
 In your storefront project, run `yarn link <package-name>` or `npm link <package-name>` to link the two packages together.
 This lets Node and Webpack resolve your extension from the storefront project without adding it as an entry in the dependency array.

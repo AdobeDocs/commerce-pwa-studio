@@ -25,7 +25,7 @@ until full coverage is complete, developers can use the [**REST API**][] to fill
 
 To make secure, admin-authorized calls, configure the storefront's [UPWARD][] server to make the request using REST or RPC.
 
-[upward]: /guides/packages/upward/
+[upward]: /guides/packages/upward/index.md
 
 Use **HTTPS** when passing requests through the UPWARD server to static and media resources in the backend application.
 
@@ -44,7 +44,7 @@ Another option is to deploy the storefront to the backend server directly using 
 This is a possible option if using [Adobe Commerce hosted in the Cloud][].
 
 [php implementation of upward]: https://github.com/magento/upward-php
-[adobe commerce hosted in the cloud]: /tutorials/production-deployment/adobe-commerce/
+[adobe commerce hosted in the cloud]: /tutorials/production-deployment/adobe-commerce/index.md
 
 ## Storefront replacement mechanism
 

@@ -12,7 +12,7 @@ The Peregrine package is a collection of functions that act as the brains of you
 They provide pieces of logic for UI components, such as the ones provided by the [Venia][] library.
 Use or remix these functions and components to create a unique PWA Studio storefront.
 
-[venia]: /guides/packages/venia/
+[venia]: /guides/packages/venia/index.md
 
 ## Custom React hooks
 
@@ -21,7 +21,7 @@ Peregrine hooks are designed to be flexible, and non-opinionated about UI.
 They contain code for providing data or behavior logic and do not render content themselves.
 Rendering content is left to the UI components.
 
-[custom react hooks]: https://reactjs.org/docs/hooks-custom.html
+[custom react hooks]: https://legacy.reactjs.org/docs/hooks-custom.html
 
 Separating logic and presentation code gives developers more flexibility on how to use PWA Studio components with their own custom code.
 A developer may choose to use a Venia feature that uses certain Peregrine hooks with minor visual modifications, or
@@ -29,13 +29,13 @@ they can use those same Peregrine hooks to develop their own feature with a diff
 
 For more information about custom hooks, see the React documentation for [Building Your Own Hooks][].
 
-[building your own hooks]: https://reactjs.org/docs/hooks-custom.html
+[building your own hooks]: https://legacy.reactjs.org/docs/hooks-custom.html
 
 ### Peregrine Talons
 
 Most [React components][] contain two distinct sections: a section for logic and a presentational section.
 
-[react components]: https://reactjs.org/docs/components-and-props.html
+[react components]: https://legacy.reactjs.org/docs/components-and-props.html
 
 The logic section contains code for generating new values from props, maintaining local state, and lifecycle or side effect methods.
 This section can be considered the "brains" of the component.
@@ -47,7 +47,7 @@ PWA Studio separates these two sections into distinct components with specific c
 
 For more information, read the [Talons][] topic.
 
-[talons]: /guides/general-concepts/talons/
+[talons]: /guides/general-concepts/talons/index.md
 
 ### Return signatures
 
@@ -56,9 +56,9 @@ The return signatures of Peregrine hooks vary and is dependent on their purpose.
 Some return an array with _state_ and _api_ objects, which follow the same pattern as [useState()][] and [useReducer()][].
 This lets you specify the variable names of the provided objects when you [destructure][] the array.
 
-[usestate()]: https://reactjs.org/docs/hooks-reference.html#usestate
-[usereducer()]: https://reactjs.org/docs/hooks-reference.html#usereducer
-[destructure]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+[usestate()]: https://legacy.reactjs.org/docs/hooks-reference.html#usestate
+[usereducer()]: https://legacy.reactjs.org/docs/hooks-reference.html#usereducer
+[destructure]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring
 
 Other Peregrine hooks return a single object.
 
