@@ -61,7 +61,7 @@ For example, if you are having issues with the localization feature, you can run
 DEBUG=pwa-buildpack:WebpackTools:plugins:LocalizationPlugin.js yarn build
 ```
 
-[debug]: https://github.com/visionmedia/debug
+[debug]: https://github.com/debug-js/debug
 
 ## Other issues
 

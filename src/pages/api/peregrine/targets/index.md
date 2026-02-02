@@ -33,7 +33,7 @@ Peregrine will dynamically inject the code from the passed `module` "around" the
 
 See the [Modify talon results][] tutorial for step-by-step instructions on working with wrapper modules.
 
-[modify talon results]: /tutorials/targets/modify-talon-results/
+[modify talon results]: /tutorials/targets/modify-talon-results/index.md
 
 ### Requirements
 
@@ -46,13 +46,11 @@ Wrapper modules for Peregrine must:
 
 Extensions which use wrapper modules _must_ also intercept the [Buildpack `specialFeatures` target][] and set the feature flag `esModule: true`.
 
-[buildpack `specialfeatures` target]: /api/buildpack/targets/
+[buildpack `specialfeatures` target]: /api/buildpack/targets/index.md
 
-<!--
+\<!--
 The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
--->
+--\>
 
-import Targets from '/src/data/auto-generated/peregrine/lib/targets/peregrine-declare.md'
-
-<Targets />
+<Fragment src='../../../includes/auto-generated/peregrine/lib/targets/peregrine-declare.md'/>

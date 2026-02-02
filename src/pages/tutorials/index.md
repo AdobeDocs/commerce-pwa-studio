@@ -55,4 +55,4 @@ yarn -v
 
 If entering these commands does not show you a version number, install Node.js, Yarn, or both.
 
-[react]: https://reactjs.org/
+[react]: https://legacy.reactjs.org/

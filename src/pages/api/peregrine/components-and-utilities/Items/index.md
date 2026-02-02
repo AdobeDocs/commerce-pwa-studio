@@ -7,16 +7,16 @@ description: View detailed API reference documentation for the items utility in 
 
 The `Items` component uses content in a data object to render a list of [`Item`][] components.
 
-[`item`]: /api/peregrine/components-and-utilities/Item/
+[`item`]: /api/peregrine/components-and-utilities/Item/index.md
 
 It follows the [Fragments][] pattern and returns its children without a wrapping element.
 This allows you to decide how you want to wrap your list of items.
 
-[fragments]: https://reactjs.org/docs/fragments.html
+[fragments]: https://legacy.reactjs.org/docs/fragments.html
 
 The `Items` component is used as a direct child of the [`List`][] component.
 
-[`list`]: /api/peregrine/components-and-utilities/List/
+[`list`]: /api/peregrine/components-and-utilities/List/index.md
 
 ## Props
 
@@ -27,7 +27,7 @@ The `Items` component is used as a direct child of the [`List`][] component.
 | `selectionModel` |    No    | A string corresponding to a selection model.                          |
 
 [map]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map
-[render prop]: https://reactjs.org/docs/render-props.html
+[render prop]: https://legacy.reactjs.org/docs/render-props.html
 
 ### Selection models
 

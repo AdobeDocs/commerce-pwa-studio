@@ -15,24 +15,24 @@ The reference documentation for this package is grouped into general utilities, 
 
 ## API groups
 
-[Venia UI Targets](/api/peregrine/targets/)
+[Venia UI Targets](/api/peregrine/targets/index.md)
 
 Extensibility targets for the Peregrine package.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Custom React hooks](/api/peregrine/hooks/)
+[Custom React hooks](/api/peregrine/hooks/index.md)
 
 API for Peregrine's custom React hooks.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[General utilities](/api/peregrine/components-and-utilities/)
+[General utilities](/api/peregrine/components-and-utilities/index.md)
 
 API for general use logic.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Shopping cart page](/api/peregrine/talons/CartPage/)
+[Shopping cart page](/api/peregrine/talons/cart-page/index.md)
 
 Logic components used in the Shopping Cart page feature.

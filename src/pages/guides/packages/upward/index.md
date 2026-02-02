@@ -39,7 +39,7 @@ PWA Studio provides two UPWARD server implementations:
 - [upward-php][]: A PHP implementation of an UPWARD server used in conjunction with the [magento2-upward-connector][].
   This is mainly used in production environments where the storefront project code and Magento 2 backend code are on the same server.
 
-[upward-js]: /guides/packages/upward/javascript/
+[upward-js]: /guides/packages/upward/javascript/index.md
 [upward-php]: https://github.com/magento/upward-php
 [magento2-upward-connector]: https://github.com/magento/magento2-upward-connector
 
@@ -77,16 +77,15 @@ This responsibility is also moved to the frontend or backend layer.
 
 UPWARD server implementations must serve data over [HTTPS][] to protect the information and privacy of PWA users.
 
-[https]: https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https
+[https]: https://web.dev/articles/why-https-matters
 
 #### Support caching
 
 An UPWARD server itself is not a cache,
 but it must serve static resources from [edge servers][] when possible.
-This supports the need for content that a PWA can [cache and reuse when offline][].
+This supports the need for content that a PWA can cache and reuse when offline.
 
 [edge servers]: https://en.wikipedia.org/wiki/Content_delivery_network
-[cache and reuse when offline]: https://developers.google.com/web/fundamentals/instant-and-offline/offline-cookbook/
 
 ## UPWARD and PWA Studio storefronts
 
@@ -104,7 +103,7 @@ See [RATIONALE.md][] in the `upward-spec` package for a more detailed explanatio
 When you [set up a new project][], the scaffolding tool creates an UPWARD definition file called `upward.yml` in the new project.
 This file contains references to a `veniaResponse` object defined in the [`venia-ui` package][].
 
-[set up a new project]: /tutorials/setup-storefront/
+[set up a new project]: /tutorials/setup-storefront/index.md
 [`venia-ui` package]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/upward.yml
 
 To deploy your storefront application, pass this file onto an UPWARD server to make it accessible to users.
@@ -119,5 +118,5 @@ You can refer to the `upward.yml` file in the [`venia-ui` package][] to see the 
 You can also tap into the [`transformUpward` target][] in your storefront or extension project to make changes in a more programmatic language.
 See the [`upward-security-headers` extension][] for an example of this approach.
 
-[`transformupward` target]: /api/buildpack/targets/
+[`transformupward` target]: /api/buildpack/targets/index.md
 [`upward-security-headers` extension]: https://github.com/magento/pwa-studio/blob/develop/packages/extensions/upward-security-headers/intercept.js

@@ -7,7 +7,7 @@ description: View detailed API reference documentation for components and utilit
 
 ## List of components and utilities
 
-- [Item](Item/)
-- [Items](Items/)
-- [List](List/)
-- [Router](Router/)
+- [Item](item/index.md)
+- [Items](items/index.md)
+- [List](list/index.md)
+- [Router](router/index.md)

@@ -9,7 +9,7 @@ keywords:
   - Tools
 ---
 
-<Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
+<SuperHero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
 ![Hero image](./home-bg.jpg)
 
@@ -19,7 +19,7 @@ PWA Studio offers the tools you need to develop a Progressive Web Application st
 
 <Resources slots="heading, links"/>
 
-#### Resources
+## Resources
 
 - [Latest release notes](https://github.com/magento/pwa-studio/releases/latest)
 - [PWA Studio GitHub repository](https://github.com/magento/pwa-studio)
@@ -38,13 +38,13 @@ It provides tools to help you set up a development environment and libraries to 
 
 ### Get Started
 
-[Project setup](tutorials/)
+[Project setup](tutorials/index.md)
 
 Get started with PWA Studio by creating a new storefront project.
 
 <DiscoverBlock slots="link, text"/>
 
-[Extension development](tutorials/extensions/)
+[Extension development](tutorials/extensions/index.md)
 
 Learn how to create storefront extensions by following a tutorial.
 
@@ -52,13 +52,13 @@ Learn how to create storefront extensions by following a tutorial.
 
 ### Guides
 
-[Project overview](guides/)
+[Project overview](guides/index.md)
 
 Learn about the PWA Studio project and the technologies it uses.
 
 <DiscoverBlock slots="link, text"/>
 
-[General concepts](guides/general-concepts/)
+[General concepts](guides/general-concepts/index.md)
 
 Background knowledge and patterns you should know when working with PWA Studio.
 
@@ -66,19 +66,19 @@ Background knowledge and patterns you should know when working with PWA Studio.
 
 ### API References
 
-[Buildpack](api/buildpack/)
+[Buildpack](api/buildpack/index.md)
 
 Build and configuration tools for your project.
 
 <DiscoverBlock slots="link, text"/>
 
-[Peregrine](api/peregrine/)
+[Peregrine](api/peregrine/index.md)
 
 A collection of custom React hooks and logic components.
 
 <DiscoverBlock slots="link, text"/>
 
-[Venia UI](api/venia/)
+[Venia UI](api/venia/index.md)
 
 A UI library of React components for your storefront.
 

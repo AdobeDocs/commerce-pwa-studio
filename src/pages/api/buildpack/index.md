@@ -14,13 +14,13 @@ The Buildpack library contains tools and classes that help define the developmen
 
 ## Extensibility API
 
-[Targets](targets/)
+[Targets](targets/index.md)
 
 A list of Targets for the Buildpack package.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Targetables](targetables/)
+[Targetables](targetables/index.md)
 
 Classes that let you modify the source code using the extensibility framework.
 
@@ -28,19 +28,19 @@ Classes that let you modify the source code using the extensibility framework.
 
 ## Build process API
 
-[Webpack tools](webpack/)
+[Webpack tools](webpack/index.md)
 
 Tools used by Webpack to define the build process for PWA Studio storefronts.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[BuildBus](buildbus/)
+[BuildBus](buildbus/index.md)
 
 Classes that manage dependency participation in project builds and tasks.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Transform requests](transform-requests/)
+[Transform requests](transform-requests/index.md)
 
 Class used by the extensibility framework to generate transformation configurations for Webpack.
 
@@ -48,12 +48,12 @@ Class used by the extensibility framework to generate transformation configurati
 
 ## Environment setup
 
-[Command Line Interface](cli/)
+[Command Line Interface](cli/index.md)
 
 Buildpack's Command Line Interface tool to help setup your environment.
 
 <DiscoverBlock width="100%" slots="link, text"/>
 
-[Environment configuration](environment/)
+[Environment configuration](environment/index.md)
 
 Reference documentation related to environment variables.

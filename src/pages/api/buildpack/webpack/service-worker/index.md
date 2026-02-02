@@ -9,7 +9,7 @@ A webpack plugin for configuring a ServiceWorker for different PWA development s
 This plugin is a wrapper around the [Google Workbox Webpack Plugin][].
 It generates a caching ServiceWorker based on assets emitted by webpack.
 
-[google workbox webpack plugin]: https://developers.google.com/web/tools/workbox/guides/generate-service-worker/
+[google workbox webpack plugin]: https://developer.chrome.com/docs/workbox/
 
 ## Configurations
 

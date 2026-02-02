@@ -8,7 +8,7 @@ description: View sample code for adding a static route to your PWA Studio store
 Adobe Commerce and Magento Open Source's built in CMS system and [PageBuilder][] feature lets you create highly customized content pages for your storefront, but
 sometimes you need a page that fulfills a specific function, such as a checkout or login page.
 
-[pagebuilder]: /integrations/pagebuilder/
+[pagebuilder]: /integrations/pagebuilder/index.md
 
 ## Overview
 
@@ -22,13 +22,13 @@ By the end of this tutorial, you will know how to:
 
 For more information on routing, see [Routing][].
 
-[routing]: /guides/general-concepts/routing/
+[routing]: /guides/general-concepts/routing/index.md
 
 <InlineAlert variant="info" slots="text"/>
 
 This tutorial requires you to have a project set up using the steps provided in the [Project Setup][] tutorial.
 
-[project setup]: /tutorials/setup-storefront/
+[project setup]: /tutorials/setup-storefront/index.md
 
 ## Create a components directory
 
@@ -133,7 +133,7 @@ module.exports = (targets) => {
 The code in this file accesses the [routes target][] of `@magento/venia-ui` and adds a new entry to the list.
 It adds a new route definition object that specifies the pattern for a new route and which page component renders that route.
 
-[routes target]: /api/peregrine/extension-points/targets/
+[routes target]: /api/venia/targets/index.md
 
 ### Register the intercept file
 

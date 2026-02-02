@@ -1,8 +1,10 @@
 ---
 title: Add component
 description: View code samples for adding a custom Page Builder component to PWA Studio storefront projects.
-edition: paas
 ---
+
+<Edition slot="text" backgroundColor="blue"/>
+PaaS only
 
 # Add component
 
@@ -190,6 +192,6 @@ If you have followed along using the `ExampleQuote` component, you should see so
 
 ![Add Component output](images/AddComponentOutput.svg)
 
-[utility functions]: /integrations/pagebuilder/utility-functions/
-[css modules]: /guides/general-concepts/css-modules/
-[dangerouslysetinnerhtml]: https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml
+[utility functions]: /integrations/pagebuilder/utility-functions/index.md
+[css modules]: /guides/general-concepts/css-modules/index.md
+[dangerouslysetinnerhtml]: https://legacy.reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml

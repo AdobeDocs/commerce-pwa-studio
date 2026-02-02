@@ -92,7 +92,7 @@ The `venia-pwa-live-search` package requires [PWA Studio 14.3.1](https://github.
 
 ## Render Live Search results
 
-You can control where Live Search appears on your PWA storefront using the local-intercept file. Learn more in the [extensibility framework](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#intercept-files) documentation.
+You can control where Live Search appears on your PWA storefront using the local-intercept file. Learn more in the [extensibility framework](/guides/general-concepts/extensibility/index.md#intercept-files) documentation.
 
 The location for `local-intercept.js` file may differ depending upon the method of initialization/setup of the project.
 
@@ -220,7 +220,7 @@ function localIntercept(targets) {
 module.exports = localIntercept;
 ```
 
-# Support Policy
+## Support Policy
 
 ### Supported Versions
 
@@ -236,6 +236,3 @@ To receive continued support, ensure that your environment is updated to **versi
 ### Contact & Assistance
 
 If you have questions about version support or need help upgrading, contact the support team or open a support request through the appropriate support channel.
-
-[venia-product-recommendations]: /guides/#custom-react-hooks-and-component
-[extensibility framework]: /guides/general-concepts/extensibility/#intercept-files

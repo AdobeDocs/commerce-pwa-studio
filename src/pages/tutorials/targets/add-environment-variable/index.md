@@ -169,7 +169,7 @@ module.exports = (targets) => {
 When this file runs, it taps into the `envVarDefinitions` target from the available targets in `@magento/pwa-buildpack` and passes in an intercept function.
 The intercept function appends a new definition to the [core environment variable definitions][], which allows frontend code access to the `IMAGE_PLACEHOLDER_SERVICE_URL` environment variable.
 
-[core environment variable definitions]: /api/buildpack/environment/variables/
+[core environment variable definitions]: /api/buildpack/environment/variables/index.md
 
 ## Test on a local instance
 
@@ -244,14 +244,3 @@ function localIntercept(targets) {
 
 module.exports = localIntercept;
 ```
-
-### Check out the page
-
-Now, when you start your project, you can navigate to `/placeholder-image-demo` and see the PlaceholderImage component in action.
-
-<iframe src="https://codesandbox.io/embed/environment-variable-tutorial-9z0rb?fontsize=11&hidenavigation=1&initialpath=%2Fplaceholder-image-demo&module=%2Fsrc%2Fcomponents%2FPlaceholderImageDemo%2FplaceholderImageDemo.js&theme=dark"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="environment-variable-tutorial"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
-     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>

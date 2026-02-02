@@ -6,6 +6,7 @@
 .history
 .idea
 .editorconfig
+.cursor
 
 # npm yarn
 node_modules
@@ -44,3 +45,6 @@ local-test.yml
 # yalc
 .yalc
 yalc.lock
+
+# local files
+/tmp/

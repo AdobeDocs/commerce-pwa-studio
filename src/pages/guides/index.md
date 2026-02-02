@@ -27,7 +27,7 @@ The following features define a basic PWA website:
 
 The [RAIL][] model lays out the user-centric goals for PWA websites:
 
-[rail]: https://web.dev/rail/
+[rail]: https://web.dev/articles/rail
 
 - **Response** – An application is receptive to the user's request.
 - **Animation** – It provides smooth transitions to maintain user engagement.
@@ -40,8 +40,8 @@ Learn more about Progressive Web Apps:
 - [developer.mozilla.org][]
 - [developers.google.com][]
 
-[web.dev]: https://web.dev/progressive-web-apps/
-[developers.google.com]: https://developers.google.com/web/updates/2015/12/getting-started-pwa
+[web.dev]: https://web.dev/explore/progressive-web-apps
+[developers.google.com]: https://web.dev/explore/progressive-web-apps
 [developer.mozilla.org]: https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps
 
 ## What is the PWA Studio project
@@ -51,7 +51,7 @@ Learn more about Progressive Web Apps:
 The PWA Studio project is a set of developer tools and libraries that let you develop, deploy, and maintain a PWA storefront on top of an Adobe Commerce or Magento Open Source backend.
 It uses modern [tools and libraries][] to create a build system and framework that adheres to the principles of extensibility.
 
-[tools and libraries]: /guides/project/tools-libraries/
+[tools and libraries]: /guides/project/tools-libraries/index.md
 
 ### Build tools
 
@@ -60,7 +60,7 @@ It provides features such as project setup tools, configuration management, and 
 
 When you use the CLI tool in this package to [set up a new storefront project][], it bundles and incorporates these tools into your new project to help you get started.
 
-[set up a new storefront project]: /tutorials/setup-storefront/
+[set up a new storefront project]: /tutorials/setup-storefront/index.md
 
 ### Custom React hooks and components
 
@@ -91,5 +91,5 @@ Other notable packages in PWA Studio include:
 
 [PWA Studio UI Kit](https://developer.adobe.com/commerce-xd-kits/): Expedite your Adobe Commerce storefront design with a UI Kit built in Adobe XD.
 
-[upward]: /guides/packages/upward/
-[pagebuilder]: /integrations/pagebuilder/
+[upward]: /guides/packages/upward/index.md
+[pagebuilder]: /integrations/pagebuilder/index.md

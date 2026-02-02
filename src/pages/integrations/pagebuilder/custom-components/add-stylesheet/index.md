@@ -1,8 +1,10 @@
 ---
 title: Add stylesheet
 description: View code samples for adding stylesheets to custom Page Builder components in PWA Studio storefront projects.
-edition: paas
 ---
+
+<Edition slot="text" backgroundColor="blue"/>
+PaaS only
 
 # Add stylesheet
 
@@ -195,4 +197,4 @@ Compare that to using camelCase for your hyphenated class names by renaming `.qu
 
 **Protip**: Use camelCase to rename your CSS classes so that you can use dot syntax and intellisense to browse through your style rules more easily when applying them to your component.
 
-[css modules]: /guides/general-concepts/css-modules/
+[css modules]: /guides/general-concepts/css-modules/index.md

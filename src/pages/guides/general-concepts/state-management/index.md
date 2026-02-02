@@ -24,7 +24,7 @@ Local state data is any data scoped within a component or its children component
 This type of data is not shared with a component's parent or peer data.
 Otherwise, that data should be [lifted][].
 
-[lifted]: https://reactjs.org/docs/lifting-state-up.html
+[lifted]: https://legacy.reactjs.org/docs/lifting-state-up.html
 
 For example, a button component's disabled state is never used outside that component, so
 it is categorized as local state data.
@@ -62,13 +62,13 @@ It promotes the idea of a global object tree that contains the state of the whol
 This object is known as a [store][].
 
 [redux]: https://redux.js.org/introduction/getting-started
-[store]: https://redux.js.org/glossary#store
+[store]: https://redux.js.org/understanding/thinking-in-redux/glossary#store
 
 The store is a read-only object, which can only be updated by dispatching a [reducer][] function.
 Reducer functions accept the current state and an [action][] object as parameters and returns the next state.
 
-[reducer]: https://redux.js.org/glossary#reducer
-[action]: https://redux.js.org/basics/actions
+[reducer]: https://redux.js.org/understanding/thinking-in-redux/glossary#reducer
+[action]: https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow
 
 Application components are able to [dispatch][] various actions to update the state.
 Components can also [subscribe][] to state changes to update their appearance or behavior.
@@ -106,8 +106,8 @@ export default createStore(rootReducer, enhancer);
 React version 16.8 introduced the concept of [hooks][].
 Hooks allow [function components][] to manage their own internal state by letting them use the same component lifecycle features available to class components.
 
-[hooks]: https://reactjs.org/docs/hooks-intro.html
-[function components]: https://reactjs.org/docs/components-and-props.html#function-and-class-components
+[hooks]: https://legacy.reactjs.org/docs/hooks-intro.html
+[function components]: https://legacy.reactjs.org/docs/components-and-props.html#function-and-class-components
 
 Earlier versions of React only allowed class components to manage state,
 so stateful classes often became complex and hard to understand.
@@ -117,8 +117,8 @@ Since PWA Studio favors using function components over classes, it uses many of 
 The Peregrine library also provides [custom React hooks][] for storefront developers.
 These hooks contain common storefront logic such as state management.
 
-[built-in hooks]: https://reactjs.org/docs/hooks-reference.html
-[custom react hooks]: https://reactjs.org/docs/hooks-custom.html
+[built-in hooks]: https://legacy.reactjs.org/docs/hooks-reference.html
+[custom react hooks]: https://legacy.reactjs.org/docs/hooks-custom.html
 
 ## State management in PWA Studio
 
@@ -136,7 +136,7 @@ This is known as _prop drilling_.
 To avoid prop drilling, React provides the [Context][] feature.
 The Context feature allows an application to define a value and make it available to its descendants without passing it down the tree.
 
-[context]: https://reactjs.org/docs/context.html
+[context]: https://legacy.reactjs.org/docs/context.html
 
 A Context object contains a Provider and Consumer property.
 A `Context.Provider` component defines the shared data for its children, and
@@ -187,7 +187,7 @@ To access a global state slice, wrap the `PeregrineContextProvider` around the m
 Next, import the appropriate [context hook][] and decompose the array returned by the hook function call.
 The decomposed array yields the state data and an API object to update that state.
 
-[context hook]: https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/context
+[context hook]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/context
 
 ```jsx
 // Example src/components/MyWelcomeMessage/myWelcomeMessage.js

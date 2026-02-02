@@ -9,6 +9,4 @@ keywords:
 
 # Venia sample data metapackage
 
-import InstallSampleData from '/src/_includes/install-venia-sample-data.md'
-
-<InstallSampleData />
+<Fragment src='../../includes/install-venia-sample-data.md'/>

@@ -8,14 +8,14 @@ description: Learn how to create custom templates for your PWA Studio storefront
 The PWA Studio [scaffolding tool][] uses the `venia-concept` package as the default template for new storefront projects, but
 you can use your own custom project template if it contains the necessary instructions.
 
-[scaffolding tool]: /guides/packages/buildpack/scaffolding/
+[scaffolding tool]: /guides/packages/buildpack/scaffolding/index.md
 
 ## Buildpack folder
 
 The presence of a `create.js` file inside a `_buildpack` directory indicates that a project can be used as a template for the scaffolding command.
 You can see an example of this directory in the [`venia-concept` package][].
 
-[`venia-concept` package]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-concept/_buildpack
+[`venia-concept` package]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-concept/_buildpack
 
 ### The `create.js` file
 

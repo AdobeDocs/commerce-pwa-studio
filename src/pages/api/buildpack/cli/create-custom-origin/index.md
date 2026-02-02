@@ -7,7 +7,7 @@ description: View detailed reference documentation for creating custom origins w
 
 The `create-custom-origin` is a [`buildpack`][] CLI subcommand which creates a unique local hostname and trusted SSL certificate for your project.
 
-[`buildpack`]: /api/buildpack/cli/
+[`buildpack`]: /api/buildpack/cli/index.md
 
 ## Example
 

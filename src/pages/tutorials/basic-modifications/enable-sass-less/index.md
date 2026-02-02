@@ -12,7 +12,7 @@ Use these Webpack configurations to add support for SASS and LESS alongside [CSS
 
 PWA Studio uses Webpack 4. Ensure that any packages you use are compatible with Webpack 4.
 
-[css modules]: /guides/general-concepts/css-modules/
+[css modules]: /guides/general-concepts/css-modules/index.md
 
 ## Add SASS support
 

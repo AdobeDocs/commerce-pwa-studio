@@ -12,7 +12,7 @@ keywords:
 The eventing framework introduced in the PWA Studio 12.5 release comes with a core set of storefront events related to various interactions with the application.
 You can use PWA Studio's extensibility framework to modify your storefront and have it publish events not covered by the default set.
 
-PWA Studio provides the source for the [Experience Platform Connector extension](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/experience-platform-connector/) to show how you can add a custom event.
+PWA Studio provides the source for the [Experience Platform Connector extension](https://github.com/magento/pwa-studio/blob/develop/packages/extensions/experience-platform-connector/) to show how you can add a custom event.
 
 This extension dispatches a `SEARCH_RESPONSE` event, which is not part of the default set. This event fires when a search result is returned in the application's search bar.
 
@@ -69,7 +69,7 @@ export default {
 
 ## wrapUseAutocomplete.js
 
-This file is a [talon wrapper](https://developer.adobe.com/commerce/pwa-studio/tutorials/targets/modify-talon-results/) that wraps around the `useAutocomplete()` talon to add additional event dispatching logic.
+This file is a [talon wrapper](/tutorials/targets/modify-talon-results/index.md) that wraps around the `useAutocomplete()` talon to add additional event dispatching logic.
 In `wrapUseAutocomplete.js` the search result is received and the payload is defined and dispatched. This takes place in the `useEffect` function:
 
 ```javascript
@@ -123,7 +123,7 @@ const wrapUseAutocomplete = useAutocomplete => {
 export default wrapUseAutocomplete;
 ```
 
-Read more about [PWA Studio extensibility](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/).
+Read more about [PWA Studio extensibility](/guides/general-concepts/extensibility/index.md).
 
 ## intercept.js
 
@@ -141,4 +141,4 @@ In this particular code, the `useApp()`, `useAccountMenu()`, and `useAutocomplet
         );
 ```
 
-When your code is complete, you can [test on a local instance](https://developer.adobe.com/commerce/pwa-studio/tutorials/targets/modify-talon-results/#test-on-a-local-instance).
+When your code is complete, you can [test on a local instance](/tutorials/targets/modify-talon-results/index.md#test-on-a-local-instance).

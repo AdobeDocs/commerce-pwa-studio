@@ -1,8 +1,10 @@
 ---
 title: Add aggregator
 description: View code samples for retrieving properties custom Page Builder component content types in PWA Studio storefront projects.
-edition: paas
 ---
+
+<Edition slot="text" backgroundColor="blue"/>
+PaaS only
 
 # Add aggregator
 
@@ -147,5 +149,5 @@ Adding `console.log(node)` at the beginning of your aggregator function, and at 
 
 You will need to know the property `key-values` you are returning so that that you can assign them to corresponding properties in your component when you build it out.
 
-[utility functions]: /integrations/pagebuilder/utility-functions/
+[utility functions]: /integrations/pagebuilder/utility-functions/index.md
 [htmlelement dom properties]: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement
