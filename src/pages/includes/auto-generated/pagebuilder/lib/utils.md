@@ -1,173 +1,218 @@
-## Functions
 
-[getBackgroundImages(node)] ⇒ `Object`
+Functions
+
+<dl>
+<dt><a href="#getBackgroundImages">getBackgroundImages(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
 
 Retrieve background images from a master format node
 
-[getVerticalAlignment(node)] ⇒ `Object`
+</dd>
+<dt><a href="#getVerticalAlignment">getVerticalAlignment(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
 
 Retrieve vertical alignment from a master format node
 
-[verticalAlignmentToFlex(alignment)] ⇒ `\*`
+</dd>
+<dt><a href="#verticalAlignmentToFlex">verticalAlignmentToFlex(alignment)</a> ⇒ <inlineCode>\*</inlineCode></dt>
+<dd>
 
 Convert vertical alignment values to flex values
 
-[flexToVerticalAlignment(flex)] ⇒ `\*`
+</dd>
+<dt><a href="#flexToVerticalAlignment">flexToVerticalAlignment(flex)</a> ⇒ <inlineCode>\*</inlineCode></dt>
+<dd>
 
 Convert flex to vertical alignment values
 
-[getAdvanced(node)] ⇒ `Object`
+</dd>
+<dt><a href="#getAdvanced">getAdvanced(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
 
 Retrieve advanced props from content type node
 
-[getPadding(node)] ⇒ `Object`
+</dd>
+<dt><a href="#getPadding">getPadding(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
 
 Retrieve the padding from a content type node
 
-[getMargin(node)] ⇒ `Object`
+</dd>
+<dt><a href="#getMargin">getMargin(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
 
 Retrieve the margin from a content type node
 
-[getBorder(node)] ⇒ `Object`
+</dd>
+<dt><a href="#getBorder">getBorder(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
 
 Retrieve the border from a content type node
 
-[getTextAlign(node)] ⇒ `Object`
+</dd>
+<dt><a href="#getTextAlign">getTextAlign(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
 
 Retrieve the text align from a content type node
 
-[getCssClasses(node)] ⇒ `Object`
+</dd>
+<dt><a href="#getCssClasses">getCssClasses(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
 
 Retrieve the CSS classes from a content type node
 
-[getIsHidden(node)] ⇒ `Object`
+</dd>
+<dt><a href="#getIsHidden">getIsHidden(node)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
 
 Retrieve if CSS display property is set to none from a content type node
 
-[cssToJSXStyle(style)] ⇒ `Object`
+</dd>
+<dt><a href="#cssToJSXStyle">cssToJSXStyle(style)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
 
 Converts a CSS string style into a JSX object inline style
 
-[getMediaQueries(node, mediaQueries)] ⇒ `Object`
+</dd>
+<dt><a href="#getMediaQueries">getMediaQueries(node, mediaQueries)</a> ⇒ <inlineCode>Object</inlineCode></dt>
+<dd>
 
 Retrieve media queries from a master format node
 
+</dd>
+</dl>
+
+
 Retrieve background images from a master format node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve vertical alignment from a master format node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Convert vertical alignment values to flex values
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| alignment |
+| alignment | 
+
 
 Convert flex to vertical alignment values
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| flex |
+| flex | 
+
 
 Retrieve advanced props from content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve the padding from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve the margin from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve the border from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve the text align from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve the CSS classes from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Retrieve if CSS display property is set to none from a content type node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name |
 | --- |
-| node |
+| node | 
+
 
 Converts a CSS string style into a JSX object inline style
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name | Type |
 | --- | --- |
-| style | `String` |
+| style | `String` | 
+
 
 Retrieve media queries from a master format node
 
-**Returns:**
+**Returns: **
 **Parameters**
 
 | Name | Type |
 | --- | --- |
-| node |  |
-| mediaQueries | `Array` |
+| node |  | 
+| mediaQueries | `Array` | 
+
+
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/utils.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/utils.js)
