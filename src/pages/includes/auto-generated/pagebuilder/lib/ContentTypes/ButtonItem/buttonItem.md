@@ -1,15 +1,9 @@
 
 Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
+### [props](#props)
 
-Props for [ButtonItem](#ButtonItem)
-
-</dd>
-</dl>
-
+Props for [ButtonItem](#buttonitem)
 
 Page Builder ButtonItem component.
 
@@ -26,7 +20,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 | props | [`props`](#props) | React component props |
 
 
-Props for [ButtonItem](#ButtonItem)
+Props for [ButtonItem]
 
 **Properties**
 
@@ -51,7 +45,5 @@ Props for [ButtonItem](#ButtonItem)
 | paddingBottom | `String` | CSS padding bottom property |
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
-
-
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/ButtonItem/buttonItem.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/ButtonItem/buttonItem.js)
