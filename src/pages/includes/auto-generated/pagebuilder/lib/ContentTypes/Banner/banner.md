@@ -1,21 +1,15 @@
 
 Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
+### [props](#props)
 
 Props for [Banner]
-
-</dd>
-</dl>
-
 
 Page Builder Banner component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that displays a Banner.
 
