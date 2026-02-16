@@ -5,7 +5,7 @@ Typedefs
 <dt><a href="#props">props</a></dt>
 <dd>
 
-Props for [Banner](#Banner)
+Props for [Banner]
 
 </dd>
 </dl>
@@ -23,9 +23,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | [`props`] | React component props |
 
-Props for [Banner](#banner)
+Props for [Banner]
 
 **Properties**
 
