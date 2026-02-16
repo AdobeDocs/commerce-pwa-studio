@@ -25,8 +25,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 | --- | --- | --- |
 | props | [`props`](#props) | React component props |
 
-
-Props for [Banner](#Banner)
+Props for [Banner](#banner)
 
 **Properties**
 
@@ -90,7 +89,5 @@ Props for [Banner](#Banner)
 | videoLazyLoading | `Boolean` | Load video when it is visible |
 | videoOverlayColor | `String` | Color for video overlay |
 | getParallax | `function` | Return parallax element and options |
-
-
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Banner/banner.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Banner/banner.js)
