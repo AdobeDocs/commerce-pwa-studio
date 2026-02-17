@@ -29,13 +29,13 @@ This talon performs the following effects:
 - Fetch the gift options associated with the cart
 - Update the [GiftOptionsTalonProps] values with the data returned by the query
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type |
 | --- | --- |
-| props | `Object` | 
-| props.operations | [`GiftOptionsOperations`] | 
+| props | `Object` |
+| props.operations | [`GiftOptionsOperations`] |
 
 **Example** *(Importing into your project)*
 
