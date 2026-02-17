@@ -11,6 +11,4 @@ the corresponding value.
 | props.parameter | `String` | The parameter to search for |
 | props.setValue | `function` | A setter function that is passed the parameter value found in the URL |
 
-
-
 **Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useSearchParam.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useSearchParam.js)

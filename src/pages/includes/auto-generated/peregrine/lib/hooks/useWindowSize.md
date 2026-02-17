@@ -1,47 +1,34 @@
 
 Constants
 
-<dl>
-<dt><a href="#useWindowSize">useWindowSize</a> : <inlineCode>number</inlineCode></dt>
-<dd>
+### `useWindowSize` : `number`
 
-The current context value for the window size context.
+The current context value for the window size context.  
 This value updates whenever the window is resized.
 
-Use this inside a [WindowSizeContextProvider](#WindowSizeContextProvider).
-
-</dd>
-</dl>
-
+Use this inside a [`WindowSizeContextProvider`]
 
 Functions
 
-<dl>
-<dt><a href="#WindowSizeContextProvider">WindowSizeContextProvider(props)</a> ⇒ <inlineCode>Context.Provider</inlineCode></dt>
-<dd>
+### `WindowSizeContextProvider(props)` ⇒ `Context.Provider`
 
-This component contains a hook that listens for resize events.
-Use this component with [useWindowSize](#useWindowSize) to get the value of the resized window.
+This component contains a hook that listens for resize events.  
+Use this component with [`useWindowSize`] to get the value of the resized window.
 
-It is recommended to only create/use a single time at the top level of your app
-
-</dd>
-</dl>
-
+It is recommended to only create/use it a single time at the top level of your app.
 
 The current context value for the window size context.
 This value updates whenever the window is resized.
 
-Use this inside a [WindowSizeContextProvider](#WindowSizeContextProvider).
-
+Use this inside a [WindowSizeContextProvider]
 
 This component contains a hook that listens for resize events.
-Use this component with [useWindowSize](#useWindowSize) to get the value of the resized window.
+Use this component with [useWindowSize] to get the value of the resized window.
 
 It is recommended to only create/use a single time at the top level of your app
 
 **Summary**: A React context provider.  
-**Returns: **
+**Returns:**
 `Context.Provider`
    — A [React context provider](https://reactjs.org/docs/context.html)
 
@@ -50,7 +37,5 @@ It is recommended to only create/use a single time at the top level of your app
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` | React component props |
-
-
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useWindowSize.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useWindowSize.js)
