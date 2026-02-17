@@ -1,21 +1,15 @@
 
 Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
+### [props](#props)
 
-Props for [Buttons](#Buttons)
-
-</dd>
-</dl>
-
+Props for [Buttons]
 
 Page Builder Buttons component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that wraps [ButtonItem](ButtonItem) components.
 
@@ -23,10 +17,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | [`props`] | React component props |
 
-
-Props for [Buttons](#Buttons)
+Props for [Buttons]
 
 **Properties**
 
@@ -52,7 +45,5 @@ Props for [Buttons](#Buttons)
 | paddingBottom | `String` | CSS padding bottom property |
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
-
-
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Buttons/buttons.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Buttons/buttons.js)
