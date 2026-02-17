@@ -46,7 +46,7 @@ data.
 
 **Returns:**
 `Array.<Object>`
-   — An array with two entries containing the following content: [ [PaginationState](#PaginationState), [API] ]
+   — An array with two entries containing the following content: [ [PaginationState] [API] ]
 
 **Parameters**
 
