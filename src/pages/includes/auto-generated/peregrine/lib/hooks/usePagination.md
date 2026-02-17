@@ -18,9 +18,9 @@ The current pagination state
 
 The API object used for modifying the PaginationState.
 
-* [API](#API)
-    * [.setCurrentPage(page)](#API.setCurrentPage)
-    * [.setTotalPages(total)](#API.setTotalPages)
+* [API]
+    * [.setCurrentPage(page)]
+    * [.setTotalPages(total)]
 
 Set the current page
 
@@ -46,7 +46,7 @@ data.
 
 **Returns:**
 `Array.<Object>`
-   — An array with two entries containing the following content: [ [PaginationState](#PaginationState), [API](#API) ]
+   — An array with two entries containing the following content: [ [PaginationState](#PaginationState), [API] ]
 
 **Parameters**
 
