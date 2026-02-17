@@ -1,7 +1,7 @@
 
 Functions
 
-### `useDropdown()` ⇒ [`Dropdown`](#dropdown)
+### `useDropdown()` ⇒ [`Dropdown`]
 
 A React Hook for adding dropdown-related logic.
 
@@ -14,7 +14,7 @@ The object returned contains the pieces needed to add the dropdown logic to your
 A React Hook for adding dropdown-related logic.
 
 **Returns:**
-[`Dropdown`](#Dropdown)
+[`Dropdown`]
    — An object containing functions and values to add dropdown logic
 
 The object returned contains the pieces needed to add the dropdown logic to your components
