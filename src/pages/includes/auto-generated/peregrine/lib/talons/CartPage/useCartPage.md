@@ -1,7 +1,7 @@
 
 Functions
 
-### `useCartPage(props)` ⇒ [`CartPageTalonProps`](#cartpagetalonprops)
+### `useCartPage(props)` ⇒ [`CartPageTalonProps`]
 
 This talon contains logic for a cart page component.  
 It performs effects and returns prop data for rendering the component.
