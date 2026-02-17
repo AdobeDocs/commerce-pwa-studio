@@ -1,21 +1,15 @@
 
 Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
+### [props](#props)
 
-Props for [Divider](#Divider)
-
-</dd>
-</dl>
-
+Props for [Divider]
 
 Page Builder Divider component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that displays a Divider.
 
@@ -23,10 +17,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | [`props`]| React component props |
 
-
-Props for [Divider](#Divider)
+Props for [Divider]
 
 **Properties**
 
@@ -51,7 +44,5 @@ Props for [Divider](#Divider)
 | paddingBottom | `String` | CSS padding bottom property |
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
-
-
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Divider/divider.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Divider/divider.js)
