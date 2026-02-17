@@ -1,21 +1,15 @@
 
 Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
+### [props](#props)
 
-Props for [Image](#Image)
-
-</dd>
-</dl>
-
+Props for [Image]
 
 Page Builder Image component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that displays an Image.
 
@@ -23,10 +17,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | [`props`] | React component props |
 
-
-Props for [Image](#Image)
+Props for [Image]
 
 **Properties**
 
@@ -56,7 +49,5 @@ Props for [Image](#Image)
 | paddingBottom | `String` | CSS padding bottom property |
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
-
-
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Image/image.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Image/image.js)
