@@ -50,12 +50,12 @@ data.
 
 **Parameters**
 
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| config | `Object` | <inlineCode></inlineCode> | An object containing configuration values |
-| config.namespace | `String` | <inlineCode>&#x27;&#x27;</inlineCode> | The namespace to append to config.parameter in the query. For example: ?namespace_parameter=value |
-| config.parameter | `String` | <inlineCode>&#x27;page&#x27;</inlineCode> | The name of the query parameter to use for page |
-| config.initialPage | `Number` | <inlineCode></inlineCode> | The initial current page value |
-| config.initialTotalPages | `Number` | <inlineCode>1</inlineCode> | The total pages expected to be usable by this hook |
+| Name                   | Type     | Default       | Description                                                                 |
+|------------------------|----------|---------------|-----------------------------------------------------------------------------|
+| config                 | `Object` | ``            | An object containing configuration values                                   |
+| config.namespace       | `String` | `''`          | The namespace to append to config.parameter in the query. For example: `?namespace_parameter=value` |
+| config.parameter       | `String` | `'page'`      | The name of the query parameter to use for page                             |
+| config.initialPage     | `Number` | ``            | The initial current page value                                              |
+| config.initialTotalPages | `Number` | `1`          | The total pages expected to be usable by this hook                         |
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/hooks/usePagination.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/usePagination.js)
