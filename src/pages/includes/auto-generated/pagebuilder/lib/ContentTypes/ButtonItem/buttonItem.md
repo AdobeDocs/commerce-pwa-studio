@@ -3,13 +3,13 @@ Typedefs
 
 ### [props](#props)
 
-Props for [ButtonItem](#buttonitem)
+Props for [ButtonItem]
 
 Page Builder ButtonItem component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that displays a button.
 
@@ -18,7 +18,6 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 | Name | Type | Description |
 | --- | --- | --- |
 | props | [`props`](#props) | React component props |
-
 
 Props for [ButtonItem]
 
