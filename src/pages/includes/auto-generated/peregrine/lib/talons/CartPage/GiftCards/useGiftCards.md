@@ -1,58 +1,37 @@
 
 Functions
 
-<dl>
-<dt><a href="#useGiftCards">useGiftCards(props)</a> ⇒ <inlineCode><a href="#GiftCardsTalonProps">GiftCardsTalonProps</a></inlineCode></dt>
-<dd>
+### `useGiftCards(props)` ⇒ [`GiftCardsTalonProps`]
 
-Handles the logic for a component that renders a list of gift cards.
-It performs effects and returns the prop data necessary for rendering
-the component.
+Handles the logic for a component that renders a list of gift cards.  
+It performs effects and returns the prop data necessary for rendering the component.
 
 This talon performs the following effects:
 
 - Fetch the currently applied gift cards for a cart
 - Manage the updating state of the cart while a gift card is being applied or removed
 
-</dd>
-<dt><a href="#useGiftCard">useGiftCard(props)</a> ⇒ <inlineCode><a href="#GiftCardTalonProps">GiftCardTalonProps</a></inlineCode></dt>
-<dd>
+### `useGiftCard(props)` ⇒ [`GiftCardTalonProps`]
 
-Provide logic for a single gift card component.
-
-</dd>
-</dl>
-
+Provides logic for a single gift card component.
 
 Typedefs
 
-<dl>
-<dt><a href="#GiftCardsMutations">GiftCardsMutations</a> : <inlineCode>Object</inlineCode></dt>
-<dd>
+### `GiftCardsMutations` : `Object`
 
 GraphQL mutations for Gift Cards.
 
-</dd>
-<dt><a href="#GiftCardsQueries">GiftCardsQueries</a> : <inlineCode>Object</inlineCode></dt>
-<dd>
+### `GiftCardsQueries` : `Object`
 
 GraphQL queries for Gift Cards.
 
-</dd>
-<dt><a href="#GiftCardsTalonProps">GiftCardsTalonProps</a> : <inlineCode>Object</inlineCode></dt>
-<dd>
+### `GiftCardsTalonProps` : `Object`
 
 Props data to use when rendering a list of gift cards.
 
-</dd>
-<dt><a href="#GiftCardTalonProps">GiftCardTalonProps</a> : <inlineCode>Object</inlineCode></dt>
-<dd>
+### `GiftCardTalonProps` : `Object`
 
-Props data to use when rendering a single gift card component.
-
-</dd>
-</dl>
-
+Props data to use when ren
 
 Handles the logic for a component that renders a list of gift cards.
 It performs effects and returns the prop data necessary for rendering
@@ -63,7 +42,7 @@ This talon performs the following effects:
 - Fetch the currently applied gift cards for a cart
 - Manage the updating state of the cart while a gift card is being applied or removed
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
@@ -80,7 +59,7 @@ import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
 
 Provide logic for a single gift card component.
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
@@ -105,7 +84,6 @@ for queries used in Venia
 | applyGiftCardMutation | `GraphQLAST` | The mutation used to apply a gift card to the cart. |
 | removeGiftCardMutation | `GraphQLAST` | The mutation used to remove a gift card from the cart. |
 
-
 GraphQL queries for Gift Cards.
 
 **See**: [`giftCardQueries.ee.js`](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/giftCardQueries.gql.ee.js)
@@ -116,7 +94,6 @@ for queries used in Venia
 | --- | --- | --- |
 | getAppliedGiftCardsQuery | `GraphQLAST` | The query used to get the gift cards currently applied to the cart. |
 | getGiftCardBalanceQuery | `GraphQLAST` | The query used to get the gift cards currently applied to the cart. |
-
 
 Props data to use when rendering a list of gift cards.
 
@@ -140,7 +117,6 @@ Props data to use when rendering a list of gift cards.
 | shouldDisplayCardBalance | `boolean` | Whether to display the gift card balance to the user |
 | shouldDisplayCardError | `boolean` | Whether to display an error message under the card input field. |
 
-
 Props data to use when rendering a single gift card component.
 
 **Properties**
@@ -148,7 +124,5 @@ Props data to use when rendering a single gift card component.
 | Name | Type | Description |
 | --- | --- | --- |
 | removeGiftCardWithCode | `function` | Function for removing a gift card associated with the code passed into this talon. |
-
-
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js)
