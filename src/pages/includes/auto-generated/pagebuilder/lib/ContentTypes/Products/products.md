@@ -1,14 +1,9 @@
 
 Functions
 
-<dl>
-<dt><a href="#restoreSortOrder">restoreSortOrder(urlKeys, products)</a> ⇒ <inlineCode>Array</inlineCode></dt>
-<dd>
+### `restoreSortOrder(urlKeys, products)` ⇒ `Array`
 
 Sort products based on the original order
-
-</dd>
-</dl>
 
 Typedefs
 
@@ -30,7 +25,6 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 | --- | --- | --- |
 | props | [`props`] | React component props |
 
-
 Sort products based on the original order
 
 **Returns:**
@@ -38,10 +32,10 @@ Sort products based on the original order
 
 | Name | Type |
 | --- | --- |
-| urlKeys | `Array` | 
-| products | `Array` | 
+| urlKeys | `Array` |
+| products | `Array` |
 
-Props for [Products](#Products)
+Props for [Products]
 
 **Properties**
 

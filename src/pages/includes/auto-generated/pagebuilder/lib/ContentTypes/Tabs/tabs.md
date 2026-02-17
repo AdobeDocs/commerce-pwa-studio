@@ -1,33 +1,21 @@
 
 Functions
 
-<dl>
-<dt><a href="#upperCaseString">upperCaseString(string)</a> ⇒ <inlineCode>string</inlineCode></dt>
-<dd>
+### `upperCaseString(string)` ⇒ `string`
 
 Upper case the first letter of a string
 
-</dd>
-</dl>
-
-
 Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
+### [props](#props)
 
-Props for [Tabs](#Tabs)
-
-</dd>
-</dl>
-
+Props for [Tabs]
 
 Page Builder Tabs component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that displays a set of Tabs.
 
@@ -35,20 +23,18 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
-
+| props | [`props`] | React component props |
 
 Upper case the first letter of a string
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type |
 | --- | --- |
-| string | `string` | 
+| string | `string` |
 
-
-Props for [Tabs](#Tabs)
+Props for [Tabs]
 
 **Properties**
 
@@ -89,7 +75,5 @@ Props for [Tabs](#Tabs)
 | paddingBottom | `String` | CSS padding bottom property |
 | paddingLeft | `String` | CSS padding left property |
 | cssClasses | `Array` | List of CSS classes to be applied to the component |
-
-
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Tabs/tabs.js)
