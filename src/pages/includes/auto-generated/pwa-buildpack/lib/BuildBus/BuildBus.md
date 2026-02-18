@@ -804,7 +804,7 @@ Adds a Promise-returning async interceptor to the Target. The interceptor may re
 Provides the JSON object representation of this target
 
 **Overrides**: [`toJSON`]
-**Returns: **
+**Returns:**
 `object`
    — JSON object
 
@@ -900,7 +900,7 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-**Overrides**: [`track`] 
+**Overrides**: [`track`]
 **Parameters**
 
 | Name | Type | Description |
