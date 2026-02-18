@@ -97,7 +97,7 @@ the first argument to an interceptor of the `transformModules` target.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| req | [`TransformRequest`](#TransformRequest) | Instruction object for the requested transform, including the transform to apply, the target source code, and other options. |
+| req | [`TransformRequest`] | Instruction object for the requested transform, including the transform to apply, the target source code, and other options. |
 
 Instruction for configuring Webpack to apply custom transformations to one
 particular file. The [`configureWebpack()` function](/pwa-buildpack/reference/configure-webpack/)
@@ -109,7 +109,7 @@ rules](https://v4.webpack.js.org/configuration/module/#modulerules).
 
 | Name | Type | Description |
 | --- | --- | --- |
-| type | [`TransformType`](#TransformType) | The type of transformation to apply. |
+| type | [`TransformType`] | The type of transformation to apply. |
 | fileToTransform | `string` | Resolvable path to the file to be transformed itself, the same path that you'd use in `import` or `require()`. |
 | transformModule | `string` | Absolute path to the Node module that will actually be doing the transforming. This path may be resolved using different rules at different times, so it's best for this path to always be absolute. |
 | [options] | `object` | Config values to send to the transform function.   _Note: Options should be serializable to JSON as Webpack loader options   and/or Babel plugin options.._ |
