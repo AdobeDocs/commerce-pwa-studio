@@ -1,7 +1,7 @@
 
 Modules
 
-- [`BuiltinTargets`](#module_builtintargets)
+- [`BuiltinTargets`]
 
 Typedefs
 
@@ -9,7 +9,7 @@ Typedefs
 
 Intercept function signature for the `transformModules` target.
 
-Interceptors of `transformModules` should call the [`addTransform()`] 
+Interceptors of `transformModules` should call the [`addTransform()`]
 callback to add module-specific transformers.  
 Any returned value will be ignored.
 
@@ -127,7 +127,7 @@ NOTE: This is a very low-level extension point. It should be used as a
 building block for higher-level extensions that expose functional
 areas rather than files on disk.
 
-**See**: [transformModules intercept function] 
+**See**: [transformModules intercept function]
 **Example** *(Strip unnecessary Lodash code from a specific JS module.)*
 
 ```js
@@ -145,7 +145,7 @@ This almost always happens once per build, even in dev mode.
 Use an [intercept function] on this target
 to access the [webpack compiler](https://webpack.js.org/api/compiler-hooks/).
 
-**Example** *(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)* 
+**Example** *(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)*
 
 ```js
 targets.of('@magento/pwa-buildpack').webpackCompiler.tap(compiler => {
@@ -187,10 +187,10 @@ definition.
 
 | Name | Type |
 | --- | --- |
-| interceptor | [`transformUpwardIntercept`] | 
+| interceptor | [`transformUpwardIntercept`] |
 
 **Example** *(Send empty responses in maintenance mode.)*
- 
+
 ```js
 targets.of('@magento/pwa-buildpack').transformUpward.tap(def => {
   const guardMaintenanceMode = (prop, inline) => {
@@ -225,7 +225,7 @@ displayed on the console at the end of the process.
 
 | Name | Type |
 | --- | --- |
-| validator | [`envValidationInterceptor`] | 
+| validator | [`envValidationInterceptor`] |
 
 **Example**
 
