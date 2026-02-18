@@ -87,6 +87,6 @@ and a timeout id generated based on the incoming props.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| toastProps | [`ToastProps`](#ToastProps) | The object containing props for adding a toast. |
+| toastProps | [`ToastProps`] | The object containing props for adding a toast. |
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/Toasts/useToasts.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Toasts/useToasts.js)
