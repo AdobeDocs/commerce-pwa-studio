@@ -5,7 +5,6 @@ Useful for building extensible navigation lists, routes, strategies, etc.
 
 This class uses [export-esm-collection-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/export-esm-collection-loader.js) to build the source code.
 
-
 * [TargetableESModuleArray]
     * [.addImport(importString)] ⇒ `undefined`
     * [.add(...items)] ⇒ `undefined`
