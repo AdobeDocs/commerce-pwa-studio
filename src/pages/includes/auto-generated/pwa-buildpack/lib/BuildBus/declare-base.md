@@ -1,96 +1,81 @@
 
 Modules
 
-<dl>
-<dt><a href="#module_BuiltinTargets">BuiltinTargets</a></dt>
-<dd></dd>
-</dl>
-
+- [`BuiltinTargets`](#module_builtintargets)
 
 Typedefs
 
-<dl>
-<dt><a href="#transformModulesIntercept">transformModulesIntercept</a> : <inlineCode>function</inlineCode></dt>
-<dd>
+### `transformModulesIntercept` : `function`
 
-Intercept function signature for the transformModules target.
+Intercept function signature for the `transformModules` target.
 
-Interceptors of `transformModules` should call the [`addTransform()`](#addTransform)
-callback to add module specific transformers.
+Interceptors of `transformModules` should call the [`addTransform()`] 
+callback to add module-specific transformers.  
 Any returned value will be ignored.
 
-</dd>
-<dt><a href="#addTransform">addTransform</a> : <inlineCode>function</inlineCode></dt>
-<dd>
+---
+
+### `addTransform` : `function`
 
 Callback to add a transform.
 
-</dd>
-<dt><a href="#webpackCompilerIntercept">webpackCompilerIntercept</a> : <inlineCode>function</inlineCode></dt>
-<dd>
+---
 
-Intercept function signature for the webpackCompiler target.
+### `webpackCompilerIntercept` : `function`
 
-Interceptors of `webpackCompiler` should tap hooks on the provided
+Intercept function signature for the `webpackCompiler` target.
+
+Interceptors of `webpackCompiler` should tap hooks on the provided  
 `compiler` object. Any returned value will be ignored.
 
-</dd>
-<dt><a href="#specialFeaturesIntercept">specialFeaturesIntercept</a> : <inlineCode>function</inlineCode></dt>
-<dd>
+---
 
-Intercept function signature for the specialFeatures target.
+### `specialFeaturesIntercept` : `function`
 
-Interceptors of the `specialFeatures` target can use the mapping object provided
+Intercept function signature for the `specialFeatures` target.
+
+Interceptors of the `specialFeatures` target can use the mapping object provided  
 to map special build flags to their project modules.
 
-</dd>
-<dt><a href="#transformUpwardIntercept">transformUpwardIntercept</a> ⇒ <inlineCode>Promise</inlineCode></dt>
-<dd>
+---
 
-Intercept function signature for the transformUpward target.
+### `transformUpwardIntercept` ⇒ `Promise`
 
-Interceptors of the `transformUpward` target receive the parsed UPWARD
-definition as a plain JavaScript object. Mutate that object in place to
+Intercept function signature for the `transformUpward` target.
+
+Interceptors of the `transformUpward` target receive the parsed UPWARD  
+definition as a plain JavaScript object. Mutate that object in place to  
 change the final `upward.yml` output by the build.
 
-This Target can be used asynchronously. If you need to do asynchronous work
-to get what you need to modify the UPWARD definition (for example, a network
-request) then you can provide an `async` function as interceptor (or simply
-return a Promise from any function).
+This target can be used asynchronously. If you need to perform asynchronous work  
+(for example, a network request), you can provide an `async` function as the  
+interceptor or return a `Promise`.
 
-</dd>
-<dt><a href="#envValidationInterceptor">envValidationInterceptor</a> ⇒ <inlineCode>Boolean</inlineCode></dt>
-<dd>
+---
 
-Intercept function signature for the validateEnv target.
+### `envValidationInterceptor` ⇒ `Boolean`
 
-Interceptors of the `validateEnv` target receive a config object.
-The config object contains the project env, an onFail callback and
-the debug function to be used in case of the debug mode to log more
-inforamtion to the console.
+Intercept function signature for the `validateEnv` target.
 
-This Target can be used asynchronously in the parallel mode. If a
-validator needs to stop the process immediately, it can throw an error.
-If it needs to report an error but not stop the whole process, it can do
-so by calling the onFail function with the error message it wants to report.
-It can call the onFail multiple times if it wants to report multiple errors.
+Interceptors of the `validateEnv` target receive a config object.  
+The config object contains the project env, an `onFail` callback, and a debug  
+function used to log additional information in debug mode.
 
-All the errors will be queued and printed into the console at the end of the
-validation process and the build process will be stopeed.
+This target can be used asynchronously in parallel mode. If a validator needs  
+to stop the process immediately, it can throw an error. If it needs to report  
+an error without stopping the process, it can call the `onFail` function with  
+the error message. It may call `onFail` multiple times to report multiple errors.
 
-</dd>
-</dl>
+All errors will be queued and printed to the console at the end of the  
+validation process, and the build process will be stopped.
 
-
-
-* [BuiltinTargets](#module_BuiltinTargets)
-    * [.envVarDefinitions](#module_BuiltinTargets.envVarDefinitions) : `tapable.SyncHook`
-    * [.transformModules](#module_BuiltinTargets.transformModules) : `tapable.AsyncSeriesHook`
-    * [.webpackCompiler](#module_BuiltinTargets.webpackCompiler) : `tapable.SyncHook`
-    * [.specialFeatures](#module_BuiltinTargets.specialFeatures) : `tapable.SyncHook`
-    * [.transformUpward](#module_BuiltinTargets.transformUpward) : `tapable.AsyncSeriesHook`
-    * [.validateEnv](#module_BuiltinTargets.validateEnv) : `tapable.AsyncParallelHook`
-
+* [BuiltinTargets]
+    * [.envVarDefinitions] : `tapable.SyncHook`
+    * [.transformModules] : `tapable.AsyncSeriesHook`
+    * [.webpackCompiler] : `tapable.SyncHook`
+    * [.specialFeatures] : `tapable.SyncHook`
+    * [.transformUpward] : `tapable.AsyncSeriesHook`
+    * [.validateEnv] : `tapable.AsyncParallelHook`
 
 Called to collect the definitions and documentation for project-wide
 configuration values. Core environment variables are defined in the
@@ -111,7 +96,8 @@ configuration with the project-wide environment variable system.
 | --- | --- | --- |
 | envVarDefinitions | `object` | The [variable definitions object](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/). Modify in place. |
 
-**Example** *(Add config fields for your extension)*  
+**Example** *(Add config fields for your extension)*
+
 ```js
 targets.of('@magento/pwa-buildpack').envVarDefinitions.tap(defs => {
   defs.sections.push({
@@ -141,8 +127,9 @@ NOTE: This is a very low-level extension point. It should be used as a
 building block for higher-level extensions that expose functional
 areas rather than files on disk.
 
-**See**: [transformModules intercept function](#transformModulesIntercept)  
-**Example** *(Strip unnecessary Lodash code from a specific JS module.)*  
+**See**: [transformModules intercept function] 
+**Example** *(Strip unnecessary Lodash code from a specific JS module.)*
+
 ```js
 targets.of('@magento/pwa-buildpack').transformModules.tap(addTransform => addTransform({
   type: 'babel',
@@ -155,10 +142,11 @@ targets.of('@magento/pwa-buildpack').transformModules.tap(addTransform => addTra
 Calls interceptors whenever a Webpack Compiler object is created.
 This almost always happens once per build, even in dev mode.
 
-Use an [intercept function](#webpackCompilerIntercept) on this target
+Use an [intercept function] on this target
 to access the [webpack compiler](https://webpack.js.org/api/compiler-hooks/).
 
-**Example** *(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)*  
+**Example** *(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)* 
+
 ```js
 targets.of('@magento/pwa-buildpack').webpackCompiler.tap(compiler => {
   compiler.hooks.watchRun.tapPromise(async () => {
@@ -176,11 +164,12 @@ its frontend code (as most should), Webpack will not parse and build
 the modules by default. It will expect extension code to be CommonJS
 style and will not process the ES Modules.
 Likewise, if your extension uses CSS Modules, you must add the `cssModules` flag using this target.
-Use a [specialFeatures intercept function](#specialFeaturesIntercept)
+Use a [specialFeatures intercept function]
 to add special build features for the modules used in your project.
 
 **See**: [Special flags in `configureWebpack()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/webpack/configure/#special-flags)  
-**Example** *(Declare that your extension contains CSS modules.)*  
+**Example** *(Declare that your extension contains CSS modules.)*
+
 ```js
 targets.of('@magento/pwa-buildpack').specialFeatures.tap(featuresByModule => {
   featuresByModule['my-module'] = { cssModules: true };
@@ -198,9 +187,10 @@ definition.
 
 | Name | Type |
 | --- | --- |
-| interceptor | [`transformUpwardIntercept`](#transformUpwardIntercept) | 
+| interceptor | [`transformUpwardIntercept`] | 
 
-**Example** *(Send empty responses in maintenance mode.)*  
+**Example** *(Send empty responses in maintenance mode.)*
+ 
 ```js
 targets.of('@magento/pwa-buildpack').transformUpward.tap(def => {
   const guardMaintenanceMode = (prop, inline) => {
@@ -235,16 +225,17 @@ displayed on the console at the end of the process.
 
 | Name | Type |
 | --- | --- |
-| validator | [`envValidationInterceptor`](#envValidationInterceptor) | 
+| validator | [`envValidationInterceptor`] | 
 
-**Example**  
+**Example**
+
 ```js
 targets.of('@magento/pwa-buildpack').validateEnv.tapPromise(validateBackendUrl);
 ```
 
 Intercept function signature for the transformModules target.
 
-Interceptors of `transformModules` should call the [`addTransform()`](#addTransform)
+Interceptors of `transformModules` should call the [`addTransform()`]
 callback to add module specific transformers.
 Any returned value will be ignored.
 
@@ -252,8 +243,7 @@ Any returned value will be ignored.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| addTransform | [`addTransform`](#addTransform) | Callback to add a transform. |
-
+| addTransform | [`addTransform`] | Callback to add a transform. |
 
 Callback to add a transform.
 
@@ -263,7 +253,6 @@ Callback to add a transform.
 | Name | Type | Description |
 | --- | --- | --- |
 | transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/transform-requests/) to apply a transform to a file provided by this dependency. |
-
 
 Intercept function signature for the webpackCompiler target.
 
@@ -276,7 +265,6 @@ Interceptors of `webpackCompiler` should tap hooks on the provided
 | --- | --- | --- |
 | compiler | `webpack.Compiler` | The [webpack compiler](https://webpack.js.org/api/compiler-hooks/) instance |
 
-
 Intercept function signature for the specialFeatures target.
 
 Interceptors of the `specialFeatures` target can use the mapping object provided
@@ -287,7 +275,6 @@ to map special build flags to their project modules.
 | Name | Type | Description |
 | --- | --- | --- |
 | featuresByModule | `Object.<string, SpecialBuildFlags>` | An object mapping of module names to their special build flags |
-
 
 Intercept function signature for the transformUpward target.
 
@@ -300,13 +287,12 @@ to get what you need to modify the UPWARD definition (for example, a network
 request) then you can provide an `async` function as interceptor (or simply
 return a Promise from any function).
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | definition | `object` | Parsed UPWARD definition object. |
-
 
 Intercept function signature for the validateEnv target.
 
@@ -324,7 +310,7 @@ It can call the onFail multiple times if it wants to report multiple errors.
 All the errors will be queued and printed into the console at the end of the
 validation process and the build process will be stopeed.
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
@@ -332,7 +318,5 @@ validation process and the build process will be stopeed.
 | config.env | `Object` | Project ENV |
 | config.onFail | `function` | On fail callback |
 | config.debug | `function` | Debug function to be used for additional reporting in debug mode |
-
-
 
 **Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/declare-base.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/declare-base.js)

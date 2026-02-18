@@ -35,7 +35,7 @@ Any component using this hook _must_ be a child of a [ToastContextProvider].
 
 **Returns:**
 `Array.<Object>`
-   — An array containing the state and dispatch function: [[ToastState](#ToastState), function]
+   — An array containing the state and dispatch function: [[ToastState], function]
 
 **Example**  
 

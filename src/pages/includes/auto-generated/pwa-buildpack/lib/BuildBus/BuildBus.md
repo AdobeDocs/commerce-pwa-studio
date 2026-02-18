@@ -182,7 +182,6 @@ introspection for developers, but it has no BuildBus-specific functionality.
         * [.enableTracking()]
         * [.disableTracking()]
 
-
 Attach this Trackable to a tree. Give it a name and an owner. If the
 owner is a Trackable, then this Trackable becomes a child node of the
 owner. If the owner is a function, then this Trackable becomes a root
@@ -261,7 +260,7 @@ NOTE: This is a very low-level extension point. It should be used as a
 building block for higher-level extensions that expose functional
 areas rather than files on disk.
 
-**See**: [transformModules intercept function](#transformModulesIntercept)  
+**See**: [transformModules intercept function]
 **Example** *(Strip unnecessary Lodash code from a specific JS module.)*
 
 ```js
@@ -321,7 +320,7 @@ definition.
 
 | Name | Type |
 | --- | --- |
-| interceptor | [`transformUpwardIntercept`] | 
+| interceptor | [`transformUpwardIntercept`] |
 
 **Example** *(Send empty responses in maintenance mode.)*
 
@@ -359,7 +358,7 @@ displayed on the console at the end of the process.
 
 | Name | Type |
 | --- | --- |
-| validator | [`envValidationInterceptor`] | 
+| validator | [`envValidationInterceptor`] |
 
 **Example**
 
@@ -523,7 +522,7 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-**Overrides**: [`track`] 
+**Overrides**: [`track`]
 **Parameters**
 
 | Name | Type | Description |
@@ -607,7 +606,7 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-**Overrides**: [`track`] 
+**Overrides**: [`track`]
 **Parameters**
 
 | Name | Type | Description |
@@ -834,7 +833,7 @@ targets of other extensions.
 
 **Extends**: `Trackable`  
 
-* [~TargetProvider](#module_Buildpack/BuildBus..TargetProvider) ⇐ `Trackable`
+* [~TargetProvider] ⇐ `Trackable`
     * [new TargetProvider(bus, dep, getExternalTargets)]
     * _instance_
         * [.name] : `string`
@@ -901,7 +900,7 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-**Overrides**: [`track`](#Trackable+track)  
+**Overrides**: [`track`] 
 **Parameters**
 
 | Name | Type | Description |
@@ -1233,7 +1232,7 @@ Adds a Promise-returning async interceptor to the Target. The interceptor may re
 
 Provides the JSON object representation of this target
 
-**Overrides**: [`toJSON`](#Trackable+toJSON)  
+**Overrides**: [`toJSON`]
 **Returns:**
 `object`
    — JSON object
@@ -1274,7 +1273,7 @@ targets of other extensions.
         * [.toJSON()] ⇒ `Object`
         * [.track(args)]
     * _inner_
-        * [~toJSON()](#module_Buildpack/BuildBus..TargetProvider..toJSON)
+        * [~toJSON()]
 
 Creates an instance of TargetProvider.
 
@@ -1317,8 +1316,9 @@ objects.
 
 Serialize this Trackable and any parent Trackables.
 
-**Overrides**: [`toJSON`](#Trackable+toJSON)  
-**Returns: **
+**Overrides**: [`toJSON`]
+
+**Returns:**
 `Object`
    — JSON-clean object that recurses up the parent tree.
 
@@ -1396,7 +1396,7 @@ Any returned value will be ignored.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| addTransform | [`addTransform`](#addTransform) | Callback to add a transform. |
+| addTransform | [`addTransform`] | Callback to add a transform. |
 
 Callback to add a transform.
 
