@@ -19,7 +19,6 @@ A factory and manager for Targetable instances.
 This class wraps around a TargetProvider, which identifies it as "your"
 Targetable and enables automatic interception of targets.
 
-
 * [TargetableSet]
     * _instance_
         * [.module(modulePath, [publisher])] ⇒ `TargetableModule`
@@ -85,7 +84,7 @@ Targetable and enables automatic interception of targets.
 | Name | Type | Description |
 | --- | --- | --- |
 | modulePath | `string` | Path to the module file this Targetable represents. |
-| [publisher] | [`TargetablePublisher`](#TargetablePublisher) | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
+| [publisher] | [`TargetablePublisher`] | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
 Taps the builtin `specialFeatures` target and sets the supplied feature flags.
 
