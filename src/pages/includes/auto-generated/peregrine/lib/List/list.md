@@ -12,7 +12,10 @@ Default props for [List]
 The **List** component maps a collection of data objects into an array of elements.
 It also manages the selection and focus of those elements.
 
-**Returns**
+**Returns**: 
+`React.Element` 
+    - A React component that displays list data.  
+
 **Parameters**
 
 | Name | Type | Description |
