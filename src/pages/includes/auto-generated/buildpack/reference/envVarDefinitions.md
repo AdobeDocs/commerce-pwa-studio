@@ -213,3 +213,4 @@ Absolute path to the custom HTTPS certificate cert file.
 **Type:** `bool`
 
 Specify if express server compression needs to be enabled. Defaults to false if not provided.
+
