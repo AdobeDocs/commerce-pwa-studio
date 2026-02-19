@@ -18,7 +18,7 @@ images can be navigated through previous and next buttons
 
 | Name | Type |
 | --- | --- |
-| props | [`props`] | 
+| props | [`props`] |
 
 Props for [ProductImageCarousel]
 

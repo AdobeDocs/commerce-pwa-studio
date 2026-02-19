@@ -11,7 +11,6 @@ A component that renders a logo in the header.
 | --- | --- | --- |
 | props | `props` | React component props |
 
-
 Props for the Logo component.
 
 **Properties**

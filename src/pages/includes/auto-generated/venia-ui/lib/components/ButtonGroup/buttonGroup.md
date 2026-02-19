@@ -2,7 +2,7 @@
 Typedefs
 
 ### props
- 
+
 Props for [ButtonGroup]
 
 ### buttonProps
