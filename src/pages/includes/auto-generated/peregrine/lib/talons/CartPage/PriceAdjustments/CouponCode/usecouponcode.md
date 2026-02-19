@@ -352,4 +352,3 @@ It provides data to use when rendering a radio selector for shipping methods.
 | handleShippingSelection | `function` | Callback function for handling shipping selection form updates. |
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceAdjustments/CouponCode/useCouponCode.js)
-
