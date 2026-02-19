@@ -9,7 +9,6 @@ Functions
 : A child component of the ProductListing component.  
   This component renders an edit modal for a product.
 
-
 A child component of the CartPage component.
 This component renders the product listing on the cart page.
 

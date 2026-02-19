@@ -1,22 +1,16 @@
 
 Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
+### Props
 
-Props for [RichContent](#RichContent)
-
-</dd>
-</dl>
-
+Props for [RichContent]
 
 RichContent component.
 
 This component serves as the pool to determine which type of content is being rendered
 and pass the data off to the correct system.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that renders Heading with optional styling properties.
 
@@ -26,8 +20,7 @@ and pass the data off to the correct system.
 | --- | --- | --- |
 | props | `Object` | React component props |
 
-
-Props for [RichContent](#RichContent)
+Props for [RichContent]
 
 **Properties**
 

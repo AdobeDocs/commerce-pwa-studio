@@ -1,8 +1,9 @@
 
 Typedefs
 
-props
-: Props for [Button](#Button)
+### Props
+
+Props for [Button]
 
 A component for buttons.
 
