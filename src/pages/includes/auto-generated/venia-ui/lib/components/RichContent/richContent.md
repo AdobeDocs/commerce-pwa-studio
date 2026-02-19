@@ -37,6 +37,4 @@ Props for [RichContent](#RichContent)
 | classes.root | `String` | CSS class for the root container element |
 | html | `String` | Content |
 
-
-
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/RichContent/richContent.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/RichContent/richContent.js)

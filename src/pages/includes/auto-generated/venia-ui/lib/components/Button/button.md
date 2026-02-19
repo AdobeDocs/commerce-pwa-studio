@@ -1,14 +1,8 @@
 
 Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
-
-Props for [Button]
-
-</dd>
-</dl>
+props
+: Props for [Button](#Button)
 
 A component for buttons.
 
