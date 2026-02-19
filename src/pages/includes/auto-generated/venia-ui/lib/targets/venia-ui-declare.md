@@ -5,9 +5,9 @@ Members
 : Provides access to the list of rendering strategies used by the RichContent component.
 
 This target collects a list of `RichContentRenderer` modules and builds an array of these renderers. Venia's RichContent component uses this array to render blocks of rich content such as HTML.
-Use this target if your backend system uses a customized content storage format instead of plain HTML in rich content fields such as product descriptions or CMS blocks.
+Use this target if your backend system uses a customized content storage format instead of plain HTML in rich content fields such as productdescriptions or CMS blocks.
 
-[routes]: `tapable.AsyncSeriesWaterfall`
+[routes] : `tapable.AsyncSeriesWaterfall`
 : Provides access to Venia's routing table.
 
 This target lets you add new routes to your storefront. You can also modify Venia's existing client-side routes, such as cart or checkout URLs.
@@ -56,7 +56,7 @@ Typedefs
 [paymentInterceptFunction] : `function`
 : Intercept function signature for the `checkoutPagePaymentTypes` target. Interceptors should call `.add` on the provided [payment list].
 
-[CheckoutPaymentDefinition]: `Object`
+[CheckoutPaymentDefinition] : `Object`
 : A payment definition object that describes a checkout page payment in your storefront.
 
 [savedPaymentInterceptFunction] : `function`
