@@ -130,5 +130,3 @@ Props data to use when rendering a single gift card component.
 | removeGiftCardWithCode | `function` | Function for removing a gift card associated with the code passed into this talon. |
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/GiftCards/useGiftCards.js)
-
-
