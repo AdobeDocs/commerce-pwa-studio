@@ -87,4 +87,3 @@ Props used for rendering a price summary component.
 | flatData | [`FlattenedData`] | Query data that has been flattened into a simple object |
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js)
-
