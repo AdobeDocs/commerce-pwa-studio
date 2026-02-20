@@ -1,6 +1,6 @@
 
 Implementation of our 'richContentRenderers' target. This will gather
-RichContentRenderer declarations { importPath, componentName } from all
+RichContentRenderer declarations \{ importPath, componentName } from all
 interceptors, and then tap `builtins.transformModules` to inject a module
 transform into the build which is configured to generate an array of modules
 to be imported and then exported.

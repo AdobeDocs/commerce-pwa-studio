@@ -90,3 +90,4 @@ they are more testable.
 | requested | `string` | External targets being requested. |
 
 **Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/TargetProvider.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/TargetProvider.js)
+
