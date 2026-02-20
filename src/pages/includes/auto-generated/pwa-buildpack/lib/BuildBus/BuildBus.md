@@ -1473,3 +1473,4 @@ validation process and the build process will be stopeed.
 | config.debug | `function` | Debug function to be used for additional reporting in debug mode |
 
 **Source Code**: [pwa-studio/packages/pwa-buildpack/lib/BuildBus/BuildBus.js](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/BuildBus/BuildBus.js)
+
