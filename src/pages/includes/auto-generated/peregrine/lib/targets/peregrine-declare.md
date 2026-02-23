@@ -1,33 +1,6 @@
+## Members
 
-Members
-
-### `hooks` : `tapable.AsyncSeriesHook`
-
-Provides access to Peregrine React hooks.
-
-This target collects requests to intercept and "wrap" individual Peregrine hooks in decorator functions.
-
-Use this target to run custom code whenever the application calls a Peregrine hook.  
-You can also use this target to modify the behavior or output returned by a hook.
-
----
-
-### `talons` : `tapable.AsyncSeriesHook`
-
-Provides access to Peregrine talon wrappers.
-
-This target collects requests to intercept and "wrap" individual Peregrine talons in decorator functions.
-
-Use this target to run custom code whenever the application calls a Peregrine talon.  
-You can also use this target to modify the behavior or output returned by a talon.
-
-Typedefs
-
-### `hookInterceptFunction` : `function`
-
-Intercept function signature for the `talons` and `hooks` targets.
-
-Interceptors of `hooks` should call `wrapWith` on the individual hooks in the provided [`HookInterceptorSet` object](https://developer.adobe.com/commerce/pwa-studio/tutorials/targets/modify-talon-results/).
+hooks : `tapable.AsyncSeriesHook`
 
 Provides access to Peregrine React hooks.
 
@@ -39,11 +12,41 @@ Peregrine hook.
 You can also use this target to modify the behavior or output returned by
 a hook.
 
-**See**: [Intercept function signature]
+talons : `tapable.AsyncSeriesHook`
+
+Provides access to Peregrine talon wrappers.
+
+This target collects requests to intercept and "wrap" individual Peregrine
+talons in decorator functions.
+
+Use this target to run custom code whenever the application calls a
+Peregrine talon.
+You can also use this target to modify the behavior or output returned by
+a talon.
+
+## Typedefs
+
+hookInterceptFunction : `function`
+
+Intercept function signature for the `talons` and `hooks` targets.
+
+Interceptors of `hooks` should call `wrapWith` on the individual hooks in
+the provided [`HookInterceptorSet` object](/tutorials/targets/modify-talon-results/index.md).
+
+Provides access to Peregrine React hooks.
+
+This target collects requests to intercept and "wrap" individual Peregrine
+hooks in decorator functions.
+
+Use this target to run custom code whenever the application calls a
+Peregrine hook.
+You can also use this target to modify the behavior or output returned by
+a hook.
+
+**See**: Intercept function signature  
 **Example** *(Access the tapable object)*
 
 ```js
-
 const peregrineTargets = targets.of('@magento/peregrine');
 const hooksTarget = peregrineTargets.hooks;
 ```
@@ -51,6 +54,7 @@ const hooksTarget = peregrineTargets.hooks;
 **Example** *(Wrap the &#x60;useAwaitQuery()&#x60; hook  with a logging extension)*
 
 ```js
+
 hooksTargets.tap( => {
   hook.useAwaitQuery.wrapWith('@my-extensions/log-wrapper');
 })
@@ -66,7 +70,7 @@ Peregrine talon.
 You can also use this target to modify the behavior or output returned by
 a talon.
 
-**See**: [Intercept function signature]
+**See**: Intercept function signature  
 **Example** *(Access the tapable object)*
 
 ```js
@@ -74,7 +78,7 @@ const peregrineTargets = targets.of('@magento/peregrine');
 const talonsTarget = peregrineTargets.talons;
 ```
 
-**Example** *(Wrap the &#x60;useApp()&#x60; hook  with a logging extension)*  
+**Example** *(Wrap the &#x60;useApp()&#x60; hook  with a logging extension)*
 
 ```js
 talonsTarget.tap(talons => {
@@ -85,7 +89,7 @@ talonsTarget.tap(talons => {
 Intercept function signature for the `talons` and `hooks` targets.
 
 Interceptors of `hooks` should call `wrapWith` on the individual hooks in
-the provided [`HookInterceptorSet` object](https://developer.adobe.com/commerce/pwa-studio/tutorials/targets/modify-talon-results/).
+the provided [`HookInterceptorSet` object](/tutorials/targets/modify-talon-results/index.md).
 
 **Parameters**
 

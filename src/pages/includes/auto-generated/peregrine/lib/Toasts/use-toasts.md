@@ -1,0 +1,89 @@
+
+## Functions
+
+[getToastId(properties)]
+
+Generates an identifier for a toast by inspecting the properties that
+differentiate toasts from one another.
+
+[useToasts()] ⇒ `Array.<Object>`
+
+A hook that provides access to the toast state and toast api.
+
+## Typedefs
+
+[ToastProps]
+
+Object containing data for creating toasts using addToast.
+
+[API] : `Object`
+
+The API for managing toasts.
+Use this API to add and remove toasts.
+
+Generates an identifier for a toast by inspecting the properties that
+differentiate toasts from one another.
+
+**Parameters**
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| properties | `Object` |  | A composite identifier object with properties   that identify a specific toast using its ToastProps. |
+| properties.type | `String` |  | Maps to the `type` property of ToastProps |
+| properties.message | `String` |  | Maps to the `message` property of ToastProps |
+| properties.dismissable | `Boolean` | `true` | Maps to the `dismissable` property of ToastProps |
+| properties.actionText | `String` | `''` | Maps to the `actionText` property of ToastProps |
+| properties.icon | `React.Element` | `()=>{}` | Maps to the `icon` property of ToastProps |
+
+A hook that provides access to the toast state and toast api.
+
+**Returns:**
+`Array.<Object>`
+   — An array containing objects for the toast state and its API: [[ToastState](../useToastContext#ToastState), API]
+
+Object containing data for creating toasts using addToast.
+
+**Properties**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| type | `String` | One of the following toast types: 'info', 'warning',   or 'error' |
+| message | `String` | The message to display on the toast |
+| [dismissable] | `Bool` | Indicates whether the toast is dismissable.   If `onDismiss` is provided, this property is assumed to be true.   This property is optional when creating toasts. |
+| [icon] | `React.Element` | The icon element to display.   This property is optional when creating toasts. |
+| [onDismiss] | `function` | Callback invoked when a user clicks the   dismiss icon.   This property is optional when creating toasts. |
+| [actionText] | `String` | Text to display as a call to action.   This property is optional when creating toasts. |
+| [hasDismissAction] | `Bool` | Indicates whether the toast should have a   dismiss action with the same behavior as the dismiss icon.   This property is optional when creating toasts. |
+| [dismissActionText] | `String` | Text to display as a call to dissmisAction.   This property is optional when creating toasts. |
+| [onAction] | `function` | Callback invoked when a user clicks the action   text.   This property is optional when creating toasts. |
+| [timeout] | `Number` | Time, in ms, before the toast is automatically   dismissed.   If `0` or `false` is passed, the toast will not timeout.   This property is optional when creating toasts. |
+
+The API for managing toasts.
+Use this API to add and remove toasts.
+
+* API : `Object`
+    * .removeToast(id)
+    * .addToast(toastProps) ⇒ `Number`
+
+Removes a toast from the toast store.
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| id | `Number` | The id of the toast to remove |
+
+Dispatches an add action. Includes all props passed along with a hash id
+and a timeout id generated based on the incoming props.
+
+**Returns:**
+`Number`
+   — id The key referencing the toast in the store
+
+**Parameters**
+
+| Name | Type | Description |
+| --- | --- | --- |
+| toastProps | `ToastProps` | The object containing props for adding a toast. |
+
+**Source Code**: [pwa-studio/packages/peregrine/lib/Toasts/useToasts.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Toasts/useToasts.js)

@@ -1,9 +1,9 @@
 
-Typedefs
+## Typedefs
 
-### Props
+[props]
 
-Props for [Portal]
+Props for Portal
 
 A component that renders content into a DOM node that exists
 outside of the DOM hierarchy of the parent component.
@@ -12,7 +12,7 @@ outside of the DOM hierarchy of the parent component.
 `React.ReactPortal`
    — The React portal.
 
-**See**: https://reactjs.org/docs/portals.html  
+**See**: https://legacy.reactjs.org/docs/portals.html  
 **Parameters**
 
 | Name | Type | Description |
@@ -20,7 +20,7 @@ outside of the DOM hierarchy of the parent component.
 | children | `ReactNodeLike` | React child elements |
 | container | `Object` | The DOM node to render the children in |
 
-Props for [Portal]
+Props for Portal
 
 **Properties**
 
