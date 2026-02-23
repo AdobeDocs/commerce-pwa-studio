@@ -1,28 +1,25 @@
 
-Typedefs
+## Typedefs
 
-### [props](#props)
+[props]
 
-Props for [List]
+props for List
 
-### [defaultProps](#defaultprops)
+[defaultProps]
 
-Default props for [List]
+default props for List
 
 The **List** component maps a collection of data objects into an array of elements.
 It also manages the selection and focus of those elements.
 
-**Returns**
-`React.Element`
-    - A React component that displays list data.  
-
+**Returns\{react.element\}**: A React component that displays list data.  
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React Component props |
+| props | `props` | React Component props |
 
-props for [List]
+props for List
 
 **Properties**
 
@@ -38,6 +35,6 @@ props for [List]
 | onSelectionChange | `func` | A callback that fires when the selection state changes |
 | selectionModel | `checkbox` \| `radio` | A string corresponding to a selection model |
 
-default props for [List]
+default props for List
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/List/list.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/List/list.js)

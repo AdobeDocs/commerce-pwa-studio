@@ -17,6 +17,6 @@
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | [prefetchType] | `bool` | `false` | Deprecated. Use `shouldPrefetch` instead. |
-| [shouldPrefetch] | `bool` | `false` | Determines whether the link should be prefetched using `IntersectionObserver`. |
+| [shouldPrefetch] | `bool` | `false` | Determine if the link should be prefetched using `IntersectionObserver`. |
 
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/Link/link.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Link/link.js)
