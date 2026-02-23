@@ -1,9 +1,9 @@
 
-## Typedefs
+Typedefs
 
-[props]
+### Props
 
-Props for Button
+Props for [Button]
 
 A component for buttons.
 
@@ -15,9 +15,9 @@ A component for buttons.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | `props` | React component props |
+| props | [`props`] | React component props |
 
-Props for Button
+Props for [Button]
 
 **Properties**
 

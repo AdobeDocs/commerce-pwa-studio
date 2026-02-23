@@ -1,54 +1,55 @@
-## Functions
 
-[getBackgroundImages(node)] ⇒ `Object`
+Functions
+
+### `getBackgroundImages(node)` ⇒ `Object`
 
 Retrieve background images from a master format node
 
-[getVerticalAlignment(node)] ⇒ `Object`
+### `getVerticalAlignment(node)` ⇒ `Object`
 
 Retrieve vertical alignment from a master format node
 
-[verticalAlignmentToFlex(alignment)] ⇒ `\*`
+### `verticalAlignmentToFlex(alignment)` ⇒ `*`
 
 Convert vertical alignment values to flex values
 
-[flexToVerticalAlignment(flex)] ⇒ `\*`
+### `flexToVerticalAlignment(flex)` ⇒ `*`
 
 Convert flex to vertical alignment values
 
-[getAdvanced(node)] ⇒ `Object`
+### `getAdvanced(node)` ⇒ `Object`
 
 Retrieve advanced props from content type node
 
-[getPadding(node)] ⇒ `Object`
+### `getPadding(node)` ⇒ `Object`
 
 Retrieve the padding from a content type node
 
-[getMargin(node)] ⇒ `Object`
+### `getMargin(node)` ⇒ `Object`
 
 Retrieve the margin from a content type node
 
-[getBorder(node)] ⇒ `Object`
+### `getBorder(node)` ⇒ `Object`
 
 Retrieve the border from a content type node
 
-[getTextAlign(node)] ⇒ `Object`
+### `getTextAlign(node)` ⇒ `Object`
 
 Retrieve the text align from a content type node
 
-[getCssClasses(node)] ⇒ `Object`
+### `getCssClasses(node)` ⇒ `Object`
 
 Retrieve the CSS classes from a content type node
 
-[getIsHidden(node)] ⇒ `Object`
+### `getIsHidden(node)` ⇒ `Object`
 
 Retrieve if CSS display property is set to none from a content type node
 
-[cssToJSXStyle(style)] ⇒ `Object`
+### `cssToJSXStyle(style)` ⇒ `Object`
 
 Converts a CSS string style into a JSX object inline style
 
-[getMediaQueries(node, mediaQueries)] ⇒ `Object`
+### `getMediaQueries(node, mediaQueries)` ⇒ `Object`
 
 Retrieve media queries from a master format node
 

@@ -1,135 +1,89 @@
 
-## Members
+Members
 
 [richContentRenderers] : `tapable.SyncHook`
+: Provides access to the list of rendering strategies used by the RichContent component.
 
-Provides access to the list of rendering strategies used by the
-RichContent component.
-
-This target collects a list of RichContentRenderer modules.
-It builds an array of these renderers, which Venia's RichContent
-component uses to try and render a block of "rich" content, such
-as HTML.
-
-Use this target if your backend system uses a customized content
-storage format instead of plain HTML in "rich content" fields such
-as product descriptions and CMS blocks.
+This target collects a list of `RichContentRenderer` modules and builds an array of these renderers. Venia's RichContent component uses this array to render blocks of rich content such as HTML.
+Use this target if your backend system uses a customized content storage format instead of plain HTML in rich content fields such as productdescriptions or CMS blocks.
 
 [routes] : `tapable.AsyncSeriesWaterfall`
+: Provides access to Venia's routing table.
 
-Provides access to Venia's routing table.
+This target lets you add new routes to your storefront. You can also modify Venia's existing client-side routes, such as cart or checkout URLs.
 
-This target lets you add new routes to your storefronts.
-You can also modify Venia's existing client-side routes,
-such as cart or checkout URLs.
-
-NOTE: This target does not include routes controlled by the Magento
-admin, such as CMS or catalog URLs.
+**Note:** This target does not include routes controlled by Magento Admin, such as CMS or catalog URLs.
 
 [checkoutPagePaymentTypes] : `tapable.SyncHook`
+: Provides access to Venia's checkout page payment methods.
 
-Provides access to Venia's checkout page payment methods
-
-This target lets you add new checkout page payment to your storefronts.
+This target lets you add new checkout page payment methods to your storefront.
 
 [savedPaymentTypes] : `tapable.SyncHook`
+: Provides access to Venia's saved payment methods.
 
-Provides access to Venia's saved payment methods
-
-This target lets you add new saved payment method to your storefronts.
+This target lets you add new saved payment methods to your storefront.
 
 [editablePaymentTypes] : `tapable.SyncHook`
+: Provides access to Venia's editable payment methods.
 
-Provides access to Venia's editable payment methods
-
-This target lets you add new editable payment method to your storefronts.
+This target lets you add new editable payment methods to your storefront.
 
 [summaryPagePaymentTypes] : `tapable.SyncHook`
+: Provides access to Venia's summary page payment methods.
 
-Provides access to Venia's summary page for a payment method.
+This target allows you to add custom payment summary rendering for the checkout summary page.
 
-This target allows you to add custom payment summary rendering for the summary page in the checkout.
-
-## Typedefs
+Typedefs
 
 [rendererInterceptFunction] : `function`
+: Intercept function signature for the `richContentRenderers` target.  Interceptors of `richContentRenderers` should call `.add` on the provided  [renderer list].
 
-Intercept function signature for the `richContentRenderers` target.
+[routesInterceptFunction] ⇒ `Array<RouteDefinition>`
+: Intercept function signature for the `routes` target.  
+  Interceptors of `routes` receive an array of  
+  [RouteDefinition] objects, which Venia uses to generate  
+  either a custom `AuthRoute` component or a React Router `Route` component in the final bundle based on the `authed` prop.  
 
-Interceptors of `richContentRenderers` should call `.add` on the provided renderer list.
+  The `AuthRoute` returns either a React Router `Route` component or a `Redirect` component depending on whether the user is signed in and whether the route requires authentication.  
 
-[routesInterceptFunction] ⇒ `[Array.&lt;RouteDefinition>]`
-
-Intercept function signature for the `routes` target.
-
-Interceptors of `routes` receive an array of RouteDefinition
-objects, which Venia will use to either generate a custom `<AuthRoute />`
-component or a React Router `<Route />` component in the final bundle based
-on the `authed` prop.
-
-The AuthRoute will either return a React Router `<Route />` component or a
-`<Redirect />` component depending if the user is signed in and if the route
-needs authentication or not.
-
-Interceptors **must** return an array of RouteDefinitions, either by
-mutating and then returning the array they received, or by returning a new
-array of RouteDefinitions.
+  Interceptors **must** return an array of `RouteDefinition` objects, either  
+  by mutating and returning the received array or by returning a new array.
 
 [RouteDefinition] : `Object`
-
-A route definition object that describes a route in your storefront.
+: A route definition object that describes a route in your storefront.
 
 [paymentInterceptFunction] : `function`
-
-Intercept function signature for the `checkoutPagePaymentTypes` target.
-
-Interceptors of `checkoutPagePaymentTypes` should call `.add` on the provided payment list.
+: Intercept function signature for the `checkoutPagePaymentTypes` target. Interceptors should call `.add` on the provided [payment list].
 
 [CheckoutPaymentDefinition] : `Object`
-
-A payment definition object that describes a checkout page payment in your storefront.
+: A payment definition object that describes a checkout page payment in your storefront.
 
 [savedPaymentInterceptFunction] : `function`
-
-Intercept function signature for the `savedPaymentTypes` target.
-
-Interceptors of `savedPaymentTypes` should call `.add` on the provided payment list.
+: Intercept function signature for the `savedPaymentTypes` target. Interceptors should call `.add` on the provided [payment list].
 
 [SavedPaymentDefinition] : `Object`
-
-A payment definition object that describes a saved payment in your storefront.
+: A payment definition object that describes a saved payment in your storefront.
 
 [editablePaymentInterceptFunction] : `function`
-
-Intercept function signature for the `editablePaymentTypes` target.
-
-Interceptors of `editablePaymentTypes` should call `.add` on the provided payment list.
+: Intercept function signature for the `editablePaymentTypes` target.Interceptors should call `.add` on the provided [payment list].
 
 [EditablePaymentDefinition] : `Object`
-
-A payment definition object that describes a saved payment in your storefront.
+: A payment definition object that describes an editable payment in your storefront.
 
 [rootShimmerInterceptFunction] : `function`
-
-Intercept function signature for the `rootShimmerTypes` target.
-
-Interceptors of `rootShimmerTypes` should call `.add` on the provided shimmer list.
+: Intercept function signature for the `rootShimmerTypes` target.  
+Interceptors should call `.add` on the provided [shimmer list].
 
 [RootShimmerTypesDefinition] : `Object`
+: A root component shimmer object that can be used during page transitions in your storefront.
 
-A root component shimmer object that can be used during page transitions on your storefront
+Interfaces
 
-## Interfaces
+[RichContentRenderer] : `Object`
+: Rich content renderers for the RichContent component must implement this interface. They should be written as an ES module that exports functions with these names, rather than exporting an object with these functions as properties.
 
-RichContentRenderer : `Object`
-
-Rich content renderers for the RichContent component must implement this
-interface. Should be written as an ES Module—a module that exports functions
-with these names, rather than an object with these functions as properties.
-
-Rich content renderers for the RichContent component must implement this
-interface. Should be written as an ES Module—a module that exports functions
-with these names, rather than an object with these functions as properties.
+Rich content renderers for the RichContent component must implement this interface. Should be written as an ES Module—a module that exports functions with these names, rather than an object with these functions as properties.
 
 **Properties**
 
@@ -169,9 +123,9 @@ as product descriptions and CMS blocks.
 
 **See**
 
-- Intercept function signature
-- RichContentRendererList
-- RichContentRenderer
+- [Intercept function signature]
+- [RichContentRendererList]
+- [RichContentRenderer]
 
 **Example** *(Add a renderer)*
 
@@ -195,8 +149,8 @@ admin, such as CMS or catalog URLs.
 
 **See**
 
-- Intercept function signature
-- Route definition object
+- [Intercept function signature]
+- [Route definition object]
 
 **Example** *(Add a custom route for a blog module)*
 
@@ -220,9 +174,9 @@ This target lets you add new checkout page payment to your storefronts.
 
 **See**
 
-- Intercept function signature
-- CheckoutPaymentTypes
-- CheckoutPayment definition object
+- [Intercept function signature]
+- [CheckoutPaymentTypes]
+- [CheckoutPayment definition object]
 
 **Example** *(Add a payment)*
 
@@ -241,9 +195,9 @@ This target lets you add new saved payment method to your storefronts.
 
 **See**
 
-- Intercept function signature
-- SavedPaymentTypes
-- SavedPayment definition object
+- [Intercept function signature]
+- [SavedPaymentTypes]
+- [SavedPayment definition object]
 
 **Example** *(Add a payment)*
 
@@ -262,9 +216,9 @@ This target lets you add new editable payment method to your storefronts.
 
 **See**
 
-- Intercept function signature
-- EditablePaymentTypes
-- EditablePayment definition object
+- [Intercept function signature]
+- [EditablePaymentTypes]
+- [EditablePayment definition object]
 
 **Example** *(Add a payment)*
 
@@ -283,9 +237,9 @@ This target allows you to add custom payment summary rendering for the summary p
 
 **See**
 
-- [Intercept function signature](summaryPagePaymentTypesInterceptFunction)
-- EditablePaymentTypes
-- EditablePayment definition object
+- [Intercept function signature]
+- [EditablePaymentTypes]
+- [EditablePayment definition object]
 
 **Example** *(Add a payment)*
 
@@ -300,7 +254,7 @@ targets.of('@magento/venia-ui').editablePaymentTypes.tap(
 
 Intercept function signature for the `richContentRenderers` target.
 
-Interceptors of `richContentRenderers` should call `.add` on the provided renderer list.
+Interceptors of `richContentRenderers` should call `.add` on the provided [renderer list].
 
 **Parameters**
 
@@ -310,7 +264,7 @@ Interceptors of `richContentRenderers` should call `.add` on the provided render
 
 Intercept function signature for the `routes` target.
 
-Interceptors of `routes` receive an array of RouteDefinition
+Interceptors of `routes` receive an array of [RouteDefinition]
 objects, which Venia will use to either generate a custom `<AuthRoute />`
 component or a React Router `<Route />` component in the final bundle based
 on the `authed` prop.
@@ -324,7 +278,7 @@ mutating and then returning the array they received, or by returning a new
 array of RouteDefinitions.
 
 **Returns:**
-`Array.<RouteDefinition>`
+[`Array.<RouteDefinition>`]
    — Your function must return the modified array,
 or a new array you have constructed
 
@@ -332,7 +286,7 @@ or a new array you have constructed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| routes | `Array.<RouteDefinition>` | Array of registered routes |
+| routes | [`Array.<RouteDefinition>`] | Array of registered routes |
 
 **Example**
 
@@ -370,7 +324,7 @@ const myCustomRoute = {
 
 Intercept function signature for the `checkoutPagePaymentTypes` target.
 
-Interceptors of `checkoutPagePaymentTypes` should call `.add` on the provided payment list.
+Interceptors of `checkoutPagePaymentTypes` should call `.add` on the provided [payment list].
 
 **Parameters**
 
@@ -398,7 +352,7 @@ const myCustomPayment = {
 
 Intercept function signature for the `savedPaymentTypes` target.
 
-Interceptors of `savedPaymentTypes` should call `.add` on the provided payment list.
+Interceptors of `savedPaymentTypes` should call `.add` on the provided [payment list].
 
 **Parameters**
 
@@ -426,7 +380,7 @@ const myCustomPayment = {
 
 Intercept function signature for the `editablePaymentTypes` target.
 
-Interceptors of `editablePaymentTypes` should call `.add` on the provided payment list.
+Interceptors of `editablePaymentTypes` should call `.add` on the provided [payment list].
 
 **Parameters**
 
@@ -454,13 +408,13 @@ const myCustomPayment = {
 
 Intercept function signature for the `rootShimmerTypes` target.
 
-Interceptors of `rootShimmerTypes` should call `.add` on the provided shimmer list.
+Interceptors of `rootShimmerTypes` should call `.add` on the provided [shimmer list].
 
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| shimmers | `RootShimmerTypesDefinition` | so far in the build. |
+| shimmers | [`RootShimmerTypesDefinition`] | so far in the build. |
 
 A root component shimmer object that can be used during page transitions on your storefront
 

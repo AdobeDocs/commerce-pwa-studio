@@ -1,9 +1,9 @@
 
-## Typedefs
+Typedefs
 
-[props]
+### Props
 
-Props for Trigger
+Props for [Trigger]
 
 A component that will trigger a given action.
 
@@ -15,9 +15,9 @@ A component that will trigger a given action.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | `props` | React component props |
+| props | [`props`] | React component props |
 
-Props for Trigger
+Props for [Trigger]
 
 **Properties**
 
