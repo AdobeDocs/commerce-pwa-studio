@@ -10,7 +10,7 @@ PaaS only
 
 The purpose of a Page Builder component is to recreate a Page Builder content type (from your Adobe Commerce or Magento Open Source instance) to display inside a PWA app. Developing this component is similar to developing other React components in PWA Studio. However, the properties defined within a Page Builder component are determined by the properties returned from your configuration aggregator. The following steps highlight how to put these properties to use in your component:
 
-![Add Component steps overview](images/AddComponentSteps.svg)
+![Add Component steps overview](images/add-component-steps.svg)
 
 ## Step 1: Add local props and prop-types
 
@@ -190,7 +190,7 @@ This ensures that for each colored quote class, we also apply the `.quote` class
 
 If you have followed along using the `ExampleQuote` component, you should see something like this displayed in the PWA Venia app:
 
-![Add Component output](images/AddComponentOutput.svg)
+![Add Component output](images/add-component-output.svg)
 
 [utility functions]: /integrations/pagebuilder/utility-functions/index.md
 [css modules]: /guides/general-concepts/css-modules/index.md

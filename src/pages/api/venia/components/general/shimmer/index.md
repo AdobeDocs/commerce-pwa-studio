@@ -16,7 +16,7 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../../../includes/auto-generated/venia-ui/lib/components/Shimmer/shimmer.md' />
+<Fragment src='../../../../../includes/auto-generated/venia-ui/lib/components/shimmer/shimmer.md' />
 
 ## Shimmer for Components
 

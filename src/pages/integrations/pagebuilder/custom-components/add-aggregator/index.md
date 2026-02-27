@@ -10,7 +10,7 @@ PaaS only
 
 The purpose of the configuration aggregator (`configAggregator`) is to retrieve properties from a content type's HTML and return those properties as a flat object of `key:values`. The framework (specifically the `<ContentTypeFactory />`) then passes this object to your component, where you can assign the properties to your component's corresponding properties for rendering within a PWA Studio app.
 
-![Aggregator Overview](images/AddAggregatorOverview.svg)
+![Aggregator Overview](images/add-aggregator-overview.svg)
 
 ## Content type HTML
 
@@ -29,7 +29,7 @@ export default (node, props) => {
 
 The console output should look something like this:
 
-![Content type HTML](images/AggregatorHTMLConsoleOutput.png)
+![Content type HTML](images/aggregator-html-console-output.png)
 
 The `node` (HTMLElement) passed to the aggregator contains only your content type's HTML from the master format, not the entire master format as you would find in the database.
 
@@ -45,7 +45,7 @@ To recap, the purpose of your component's aggregator is to collect (aggregate) p
 
 Let's look at our Quote content HTML in detail (color coded for easier analysis) to determine the properties we want to pass to our component:
 
-![Master format HTML](images/MasterFormatHTML.svg)
+![Master format HTML](images/master-format-html.svg)
 
 Here's what we think we need for our component:
 
@@ -143,7 +143,7 @@ export default (node, props) => {
 
 Adding `console.log(node)` at the beginning of your aggregator function, and at the end (`console.log(propObject)`), helps to show you the HTML you receive and the object you return. The property object returned from our aggregator looks like this:
 
-![Aggregator object console output](images/AggregatorObjectConsoleOutput.png)
+![Aggregator object console output](images/aggregator-object-console-output.png)
 
 <InlineAlert variant="help" slots="text"/>
 

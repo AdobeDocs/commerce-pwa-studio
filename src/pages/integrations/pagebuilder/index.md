@@ -25,7 +25,7 @@ The Page Builder integration to PWA Studio is only compatible with Adobe Commerc
 
 The diagram below shows how the PWA Studio makes a request to the backend application to retrieve a CMS page for processing. The Page Builder integration framework processes the original Page Builder HTML and returns a group of React components that faithfully reproduces the Page Builder content for display in a PWA Studio app.
 
-![Page Builder Integration Big Picture](images/PageBuilderBigPicture1.svg)
+![Page Builder Integration Big Picture](images/page-builder-big-picture-1.svg)
 
 1. The Page Builder integration framework processes Page Builder content types within a CMS Page: Rows, Headings, Banners, Sliders, and so on.
 2. A set of equivalent content type React components -- Row, Heading, Banner, Slider, Text and so on -- are populated with the content and style properties from the original Page Builder content types so they can be displayed correctly within PWA Studio app storefronts.
@@ -44,7 +44,7 @@ To develop and integrate your own custom content type components into your PWA S
 
 [creating custom components]: /integrations/pagebuilder/custom-components/index.md
 
-![Page Builder Integration Overview](images/PageBuilderIntegration.svg)
+![Page Builder Integration Overview](images/page-builder-integration.svg)
 
 ## Framework components
 
@@ -104,7 +104,7 @@ The framework executes on the client side to ensure compatibility with the vario
 
 The following diagram describes the same process shown in the video, followed by detailed explanations of each step in the process.
 
-![Page Builder Integration Details](images/PageBuilderIntegrationDetails.svg)
+![Page Builder Integration Details](images/page-builder-integration-details.svg)
 
 1. The **Venia app** sends a GraphQL query to get the user's requested page. This requested page comes from the `content` field of `cms_pages` table in the application's database. The content returned is an HTML string with Page Builder meta data. We call this HTML string the master format, which is passed to the `<RichContent />` component for initial processing.
 

@@ -14,7 +14,7 @@ Let's assume you have at least one _custom_ Page Builder content type rendering 
 
 The steps shown here describe the recommended process for developing content type components:
 
-![Overview of steps](images/OverviewSteps.svg)
+![Overview of steps](images/overview-steps.svg)
 
 The topics for these steps show you how to create the code that retrieves properties (content and styling) from your content type HTML (in the configAggregator) and assign those properties to the equivalent properties in your content type component.
 
@@ -39,13 +39,13 @@ If you want to follow along with these topics more closely, [download and instal
 
 The first prerequisite is to add and save your custom content type to your Home page in the Admin. Here we see the Quote content type saved to the Home page in the Admin:
 
-![PageBuilderQuote in Admin](images/PageBuilderQuoteAdmin.png)
+![PageBuilderQuote in Admin](images/page-builder-quote-admin.png)
 
 ## Home page on Storefront
 
 The second prerequisite is to ensure that your custom content type renders successfully in the storefront of your backend instance. Here we see the Quote content type rendered on the Home page of a Luma storefront:
 
-![PageBuilderQuote on Storefront](images/PageBuilderQuoteStorefront.png)
+![PageBuilderQuote on Storefront](images/page-builder-quote-storefront.png)
 
 After you have met these prerequisites, you are ready to begin creating your custom Page Builder component in the PWA Studio.
 

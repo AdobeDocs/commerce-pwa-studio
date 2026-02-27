@@ -10,7 +10,7 @@ PaaS only
 
 Styling your Page Builder components is the same as styling any other component in PWA Studio. However, the CSS stylesheet for your component should define CSS classes that are comparable to the CSS classes you use on the frontend for original content type (`view/frontend/web/css/source/content-type/<your-content-type>/_import.less`). The following steps highlight the tasks for setting up the CSS classes for your component:
 
-![Add Stylesheet steps](images/AddStylesheetSteps.svg)
+![Add Stylesheet steps](images/add-stylesheet-steps.svg)
 
 ## Step 1: Add content type classes
 
@@ -193,7 +193,7 @@ This not only uses a string which is prone to errors, but you don't have the ben
 
 Compare that to using camelCase for your hyphenated class names by renaming `.quote-author` to `.quoteAuthor` and thereby enabling access to CSS classes using dot syntax, as shown here:
 
-![Change class names to camelCase](images/AddStylesheetCamelCase.png)
+![Change class names to camelCase](images/add-stylesheet-camel-case.png)
 
 **Protip**: Use camelCase to rename your CSS classes so that you can use dot syntax and intellisense to browse through your style rules more easily when applying them to your component.
 
