@@ -1,35 +1,32 @@
+## Classes
 
-Classes
-
-### `TargetableSet`
-
-A factory and manager for `Targetable` instances.  
-
-This class wraps around a `TargetProvider`, which identifies it as "your" `Targetable` and enables automatic interception of targets
-
-Typedefs
-
-### `TargetablePublisher` : `function`
-
-Callback function that runs before committing a module's list of requested transforms to the build.  
-
-Invoked as an intercept to `builtins.transformModules`, this is the typical point to invoke your own target with a custom API.
+TargetableSet
 
 A factory and manager for Targetable instances.
 This class wraps around a TargetProvider, which identifies it as "your"
 Targetable and enables automatic interception of targets.
 
-* [TargetableSet]
+## Typedefs
+
+TargetablePublisher : `function`
+
+Callback function which runs before committing this module's list of requested transforms to the build. Invoked as an intercept to `builtins.transformModules`, this is the typical time to invoke your own target with your custom API.
+
+A factory and manager for Targetable instances.
+This class wraps around a TargetProvider, which identifies it as "your"
+Targetable and enables automatic interception of targets.
+
+* TargetableSet
     * _instance_
-        * [.module(modulePath, [publisher])] ⇒ `TargetableModule`
-        * [.esModule(modulePath, [publisher])] ⇒ `TargetableESModule`
-        * [.esModuleArray(modulePath, [publisher])] ⇒ `TargetableESModuleArray`
-        * [.esModuleObject(modulePath, [publisher])] ⇒ `TargetableESModuleObject`
-        * [.reactComponent(modulePath, [publisher])] ⇒ `TargetableReactComponent`
-        * [.setSpecialFeatures(...Feature)]
-        * [.defineEnvVars(sectionName, variables)]
+        * .module(modulePath, [publisher]) ⇒ `TargetableModule`
+        * .esModule(modulePath, [publisher]) ⇒ `TargetableESModule`
+        * .esModuleArray(modulePath, [publisher]) ⇒ `TargetableESModuleArray`
+        * .esModuleObject(modulePath, [publisher]) ⇒ `TargetableESModuleObject`
+        * .reactComponent(modulePath, [publisher]) ⇒ `TargetableReactComponent`
+        * .setSpecialFeatures(...Feature)
+        * .defineEnvVars(sectionName, variables)
     * _static_
-        * [.using(targets)] ⇒ [`TargetableSet`]
+        * .using(targets) ⇒ `TargetableSet`
 
 **Returns:**
 `TargetableModule`
@@ -40,7 +37,7 @@ Targetable and enables automatic interception of targets.
 | Name | Type | Description |
 | --- | --- | --- |
 | modulePath | `string` | Path to the module file this Targetable represents. |
-| [publisher] | [`TargetablePublisher`] | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
+| [publisher] | `TargetablePublisher` | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
 **Returns:**
 `TargetableESModule`
@@ -51,7 +48,7 @@ Targetable and enables automatic interception of targets.
 | Name | Type | Description |
 | --- | --- | --- |
 | modulePath | `string` | Path to the module file this Targetable represents. |
-| [publisher] | [`TargetablePublisher`] | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
+| [publisher] | `TargetablePublisher` | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
 **Returns:**
 `TargetableESModuleArray`
@@ -62,7 +59,7 @@ Targetable and enables automatic interception of targets.
 | Name | Type | Description |
 | --- | --- | --- |
 | modulePath | `string` | Path to the module file this Targetable represents. |
-| [publisher] | [`TargetablePublisher`] | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
+| [publisher] | `TargetablePublisher` | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
 **Returns:**
 `TargetableESModuleObject`
@@ -73,7 +70,7 @@ Targetable and enables automatic interception of targets.
 | Name | Type | Description |
 | --- | --- | --- |
 | modulePath | `string` | Path to the module file this Targetable represents. |
-| [publisher] | [`TargetablePublisher`] | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
+| [publisher] | `TargetablePublisher` | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
 **Returns:**
 `TargetableReactComponent`
@@ -84,7 +81,7 @@ Targetable and enables automatic interception of targets.
 | Name | Type | Description |
 | --- | --- | --- |
 | modulePath | `string` | Path to the module file this Targetable represents. |
-| [publisher] | [`TargetablePublisher`] | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
+| [publisher] | `TargetablePublisher` | Callback function to execute when this module is about to commit its requested transforms to a build. If this function is passed, the module will automatically bind to `builtins.transformModules`. |
 
 Taps the builtin `specialFeatures` target and sets the supplied feature flags.
 

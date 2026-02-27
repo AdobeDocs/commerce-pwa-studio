@@ -1,27 +1,24 @@
 
-Functions
+## Functions
 
-### `getToastId(properties)`
+[getToastId(properties)]
 
-Generates an identifier for a toast by inspecting the properties that differentiate toasts from one another.
+Generates an identifier for a toast by inspecting the properties that
+differentiate toasts from one another.
 
----
+[useToasts()] ⇒ `Array.<Object>`
 
-### `useToasts()` ⇒ `Array.<Object>`
+A hook that provides access to the toast state and toast api.
 
-A hook that provides access to the toast state and toast API.
+## Typedefs
 
-Typedefs
+[ToastProps]
 
-### `ToastProps`
+Object containing data for creating toasts using addToast.
 
-Object containing data for creating toasts using [addToast].
+[API] : `Object`
 
----
-
-### `API` : `Object`
-
-The API for managing toasts.  
+The API for managing toasts.
 Use this API to add and remove toasts.
 
 Generates an identifier for a toast by inspecting the properties that
@@ -31,20 +28,20 @@ differentiate toasts from one another.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| properties | `Object` | `` | A composite identifier object with properties that identify a specific toast using its [ToastProps]. |
-| properties.type | `String` | `` | Maps to the `type` property of [ToastProps] |
-| properties.message | `String` | `` | Maps to the `message` property of [ToastProps] |
-| properties.dismissable | `Boolean` | `true` | Maps to the `dismissable` property of [ToastProps] |
-| properties.actionText | `String` | `''` | Maps to the `actionText` property of [ToastProps] |
-| properties.icon | `React.Element` | `() => {}` | Maps to the `icon` property of [ToastProps] |
+| properties | `Object` |  | A composite identifier object with properties   that identify a specific toast using its ToastProps. |
+| properties.type | `String` |  | Maps to the `type` property of ToastProps |
+| properties.message | `String` |  | Maps to the `message` property of ToastProps |
+| properties.dismissable | `Boolean` | `true` | Maps to the `dismissable` property of ToastProps |
+| properties.actionText | `String` | `''` | Maps to the `actionText` property of ToastProps |
+| properties.icon | `React.Element` | `()=>{}` | Maps to the `icon` property of ToastProps |
 
 A hook that provides access to the toast state and toast api.
 
 **Returns:**
 `Array.<Object>`
-   — An array containing objects for the toast state and its API: [[ToastState](../useToastContext#ToastState), [API]]
+   — An array containing objects for the toast state and its API: [[ToastState](../useToastContext#ToastState), API]
 
-Object containing data for creating toasts using [addToast].
+Object containing data for creating toasts using addToast.
 
 **Properties**
 
@@ -64,9 +61,9 @@ Object containing data for creating toasts using [addToast].
 The API for managing toasts.
 Use this API to add and remove toasts.
 
-* [API] : `Object`
-    * [.removeToast(id)]
-    * [.addToast(toastProps)] ⇒ `Number`
+* API : `Object`
+    * .removeToast(id)
+    * .addToast(toastProps) ⇒ `Number`
 
 Removes a toast from the toast store.
 
@@ -87,6 +84,6 @@ and a timeout id generated based on the incoming props.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| toastProps | [`ToastProps`] | The object containing props for adding a toast. |
+| toastProps | `ToastProps` | The object containing props for adding a toast. |
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/Toasts/useToasts.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Toasts/useToasts.js)

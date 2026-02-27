@@ -1,13 +1,15 @@
 
-Functions
+## Functions
 
-[ProductListing] ⇒ `React.Element`
-: A child component of the CartPage component.  
-  This component renders the product listing on the cart page.
+[ProductListing(props)] ⇒ `React.Element`
 
-[EditModal] ⇒ `React.Element`
-: A child component of the ProductListing component.  
-  This component renders an edit modal for a product.
+A child component of the CartPage component.
+This component renders the product listing on the cart page.
+
+[EditModal(props)] ⇒ `React.Element`
+
+A child component of the ProductListing component.
+This component renders an edit modal for a product.
 
 A child component of the CartPage component.
 This component renders the product listing on the cart page.
@@ -37,7 +39,7 @@ This component renders an edit modal for a product.
 | --- | --- | --- |
 | props | `Object` |  |
 | props.item | `Object` | Product to edit. |
-| props.setActiveEditItem | `function` | Function for setting the actively editing item See [productListingFragments.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js) for a list of properties for this object. |
+| props.setActiveEditItem | `function` | Function for setting the actively editing item See [productListingFragments.js](https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js) for a list of properties for this object. |
 | props.setIsCartUpdating | `function` | Function for setting the updating state of the cart. |
 | props.classes | `Object` | CSS className overrides. See [editModal.module.css](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/ProductListing/EditModal/editModal.module.css) for a list of classes you can override. |
 

@@ -4,18 +4,18 @@ An ECMAScript module containing a React component with JSX to render it.
 Presents a convenient API for consumers to add common transforms to React
 components and the JSX in them, in a semantic way.
 
-* [TargetableReactComponent]
-    * [.addJSXClassName(element, className, [options])] ⇒ `this`
-    * [.addReactLazyImport(modulePath, [localName])] ⇒ `string`
-    * [.appendJSX(element, newChild, [options])] ⇒ `this`
-    * [.insertAfterJSX(element, newSibling, [options])] ⇒ `this`
-    * [.insertBeforeJSX(element, newSibling, [options])] ⇒ `this`
-    * [.prependJSX(element, newChild, [options])] ⇒ `this`
-    * [.removeJSX(element, [options])] ⇒ `this`
-    * [.removeJSXProps(element, propNames, [options])] ⇒ `this`
-    * [.replaceJSX(jsx, replacement, [options])] ⇒ `this`
-    * [.setJSXProps(element, props, [options])] ⇒ `this`
-    * [.surroundJSX(element, newParent, [options])] ⇒ `this`
+* TargetableReactComponent
+    * .addJSXClassName(element, className, [options]) ⇒ `this`
+    * .addReactLazyImport(modulePath, [localName]) ⇒ `string`
+    * .appendJSX(element, newChild, [options]) ⇒ `this`
+    * .insertAfterJSX(element, newSibling, [options]) ⇒ `this`
+    * .insertBeforeJSX(element, newSibling, [options]) ⇒ `this`
+    * .prependJSX(element, newChild, [options]) ⇒ `this`
+    * .removeJSX(element, [options]) ⇒ `this`
+    * .removeJSXProps(element, propNames, [options]) ⇒ `this`
+    * .replaceJSX(jsx, replacement, [options]) ⇒ `this`
+    * .setJSXProps(element, props, [options]) ⇒ `this`
+    * .surroundJSX(element, newParent, [options]) ⇒ `this`
 
 Add a CSS classname to a JSX element. Unlike setting the className prop,
 this is non-destructive. It will append the classname to any existing
@@ -40,10 +40,10 @@ wrapper for use with React.Suspense.
 
 **Parameters**
 
-| Name        | Type     | Default     | Description                                 |
-| ----------- | -------- | ----------- | ------------------------------------------- |
-| modulePath  | `string` | ``          | Resolvable path to the module to import.    |
-| [localName] | `string` | `Component` | Optional human-readable name for debugging. |
+| Name | Type | Default                                | Description |
+| --- | --- |----------------------------------------| --- |
+| modulePath | `string` | \<inlineCode\>\</inlineCode\>          | Resolvable path to the module to import. |
+| [localName] | `string` | \<inlineCode\>Component\</inlineCode\> | Optional human-readable name for debugging. |
 
 Append a JSX element to the children of `element`.
 

@@ -7,14 +7,14 @@ to that source file, meant to be passed to interceptors. Inside
 interceptors, extensions and projects can configure the TargetableModule to
 transform it in many ways.
 
-* [TargetableModule]
-    * [new TargetableModule(file, trackingOwner)]
-    * [.addTransform(type, transformModule, options)] ⇒ `this`
-    * [.flush()] ⇒ `Array.<TransformRequest>`
-    * [.insertAfterSource(after, insert, [options])] ⇒ `this`
-    * [.insertBeforeSource(before, insert, [options])] ⇒ `this`
-    * [.prependSource(insert)] ⇒ `this`
-    * [.spliceSource(instruction)] ⇒ `this`
+* TargetableModule
+    * new TargetableModule(file, trackingOwner)
+    * .addTransform(type, transformModule, options) ⇒ `this`
+    * .flush() ⇒ `Array.<TransformRequest>`
+    * .insertAfterSource(after, insert, [options]) ⇒ `this`
+    * .insertBeforeSource(before, insert, [options]) ⇒ `this`
+    * .prependSource(insert) ⇒ `this`
+    * .spliceSource(instruction) ⇒ `this`
 
 Create a TargetableModule representing a file.
 

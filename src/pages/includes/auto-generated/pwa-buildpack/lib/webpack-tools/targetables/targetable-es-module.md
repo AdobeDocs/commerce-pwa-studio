@@ -4,10 +4,10 @@ An ECMAScript module that can be changed by a third party.
 This class presents a convenient API for consumers to add common transforms to ES
 Modules in a semantic way.
 
-* [TargetableESModule]
-    * [.addImport(statement)] ⇒ `SingleImportStatement`
-    * [.uniqueIdentifier(binding)] ⇒ `string`
-    * [.wrapWithFile([exportName], wrapperModule)] ⇒ `this`
+* TargetableESModule
+    * .addImport(statement) ⇒ `SingleImportStatement`
+    * .uniqueIdentifier(binding) ⇒ `string`
+    * .wrapWithFile([exportName], wrapperModule) ⇒ `this`
 
 Adds a static import statement to the module source code, thus importing
 a new dependency.

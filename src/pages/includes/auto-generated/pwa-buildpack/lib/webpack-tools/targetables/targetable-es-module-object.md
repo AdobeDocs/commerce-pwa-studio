@@ -6,9 +6,9 @@ Useful for building named lists and associative arrays when making extension poi
 
 Uses [export-esm-collection-loader](https://github.com/magento/pwa-studio/blob/develop/packages/pwa-buildpack/lib/WebpackTools/loaders/export-esm-collection-loader.js) to build source code.
 
-* [TargetableESModuleObject]
-    * [.addImport(importString)] ⇒ `this`
-    * [.add(...args)] ⇒ `this`
+* TargetableESModuleObject
+    * .addImport(importString) ⇒ `this`
+    * .add(...args) ⇒ `this`
 
 Adds a module to the object using the `addImport()` method from TargetableESModule.
 Since, all imports must be exported, this method performs additional validation.

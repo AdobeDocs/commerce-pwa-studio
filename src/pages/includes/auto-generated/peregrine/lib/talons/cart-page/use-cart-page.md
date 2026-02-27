@@ -1,24 +1,22 @@
 
-Functions
+## Functions
 
-### `useCartPage(props)` ⇒ [`CartPageTalonProps`]
+[useCartPage(props)] ⇒ `[CartPageTalonProps]`
 
-This talon contains logic for a cart page component.  
+This talon contains logic for a cart page component.
 It performs effects and returns prop data for rendering the component.
 
 This talon performs the following effects:
 
 - Manages the updating state of the cart while cart details data is being fetched
 
-Typedefs
+## Typedefs
 
-### `CartPageQueries` : `Object`
+[CartPageQueries] : `Object`
 
 GraphQL formatted string queries used in this talon.
 
----
-
-### `CartPageTalonProps` : `Object`
+[CartPageTalonProps] : `Object`
 
 Props data to use when rendering a cart page component.
 
@@ -35,18 +33,17 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | [`CartPageQueries`] | GraphQL queries |
+| props.queries | `CartPageQueries` | GraphQL queries |
 
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage';
 ```
 
 GraphQL formatted string queries used in this talon.
 
-**See**: [cartPage.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/cartPage.gql.js)
+**See**: [cartPage.gql.js](https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/components/CartPage/cartPage.gql.js)
 for queries used in Venia  
 **Properties**
 

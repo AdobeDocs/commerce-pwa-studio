@@ -1,9 +1,9 @@
 
-Typedefs
+## Typedefs
 
-## Props
+[props]
 
-Props for [ToastContainer]
+Props for ToastContainer
 
 A container for toast notifications.
 
@@ -18,9 +18,9 @@ ToastContextProvider component.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`] | React component props |
+| props | `props` | React component props |
 
-Props for [ToastContainer]
+Props for ToastContainer
 
 **Properties**
 

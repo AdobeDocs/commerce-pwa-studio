@@ -1,9 +1,9 @@
 
-Functions
+## Functions
 
-### `useProductListing(props)` ⇒ [`ProductListingTalonProps`]
+[useProductListing(props)] ⇒ `[ProductListingTalonProps]`
 
-This talon contains logic for a component that renders a list of products for a cart.  
+This talon contains logic for a component that renders a list of products for a cart.
 It performs effects and returns prop data to render the component on a cart page.
 
 This talon performs the following effects:
@@ -11,29 +11,23 @@ This talon performs the following effects:
 - Fetch product listing data associated with the cart
 - Log any GraphQL errors to the console
 
----
+[useProduct(props)] ⇒ `[ProductTalonProps]`
 
-### `useProduct(props)` ⇒ [`ProductTalonProps`]
-
-This talon contains logic for a product component used in a product listing component.  
+This talon contains logic for a product component used in a product listing component.
 It performs effects and returns prop data for that component.
 
 This talon performs the following effects:
 
 - Manage the updating state of the cart while a product is being updated or removed
 
----
+[useEditModal()] ⇒ `[EditModalTalonProps]`
 
-### `useEditModal()` ⇒ [`EditModalTalonProps`]
-
-This talon contains logic for a product edit modal used on a cart page.  
+This talon contains logic for a product edit modal used on a cart page.
 It returns prop data for rendering an interactive modal component.
 
----
+[deriveOptionSelectionsFromProduct(props)] ⇒ `[ProductFormTalonProps]`
 
-### `deriveOptionSelectionsFromProduct(props)` ⇒ [`ProductFormTalonProps`]
-
-This talon contains logic for a product edit form.  
+This talon contains logic for a product edit form.
 It performs effects and returns data for rendering the component inside a modal container.
 
 This talon performs the following effects:
@@ -41,60 +35,46 @@ This talon performs the following effects:
 - Manage the updating state of the cart while form data is being saved
 - Set the variant price on a product depending on the product's options
 
-Typedefs
+## Typedefs
 
-### `ProductListingQueries` : `Object`
+[ProductListingQueries] : `Object`
 
-GraphQL queries for getting product listing data.  
-This is a type used in the [`useProductListing`] talon.
+GraphQL queries for getting product listing data.
+This is a type used in the useProductListing talon.
 
----
+[ProductListingTalonProps] : `Object`
 
-### `ProductListingTalonProps` : `Object`
-
-Object type returned by the [`useProductListing`] talon.  
+Object type returned by the useProductListing talon.
 It provides props data for a component that renders a product list.
 
----
+[ProductMutations] : `Object`
 
-### `ProductMutations` : `Object`
+GraphQL mutations for a product in a cart.
+This is a type used by the useProduct talon.
 
-GraphQL mutations for a product in a cart.  
-This is a type used by the [`useProduct`] talon.
+[ProductTalonProps] : `Object`
 
----
-
-### `ProductTalonProps` : `Object`
-
-Object type returned by the [`useProduct`] talon.  
+Object type returned by the useProduct talon.
 It provides prop data for rendering a product component on a cart page.
 
----
+[ProductItem] : `Object`
 
-### `ProductItem` : `Object`
+Data about a product item in the cart.
+This type is used in the ProductTalonProps type returned by the useProduct talon.
 
-Data about a product item in the cart.  
-This type is used in the [`ProductTalonProps`] type returned by the [`useProduct`] talon.
+[QuantityTalonProps] : `Object`
 
----
-
-### `QuantityTalonProps` : `Object`
-
-Object type returned by the [`useQuantityStepper`] talon.  
+Object type returned by the [useQuantityStepper](useQuantityStepper) talon.
 It provides props data for a quantity UI component.
 
----
+[EditModalTalonProps] : `Object`
 
-### `EditModalTalonProps` : `Object`
-
-Object type returned by the [`useEditModal`] talon.  
+Object type returned by the useEditModal talon.
 It provides props data for rendering an edit modal component.
 
----
+[ProductFormTalonProps] : `Object`
 
-### `ProductFormTalonProps` : `Object`
-
-Object type returned by the [`useProductForm`] talon.  
+Object type returned by the [useProductForm](useProductForm) talon.
 It provides props data for a product form UI component inside a modal.
 
 This talon contains logic for a component that renders a list of products for a cart.
@@ -111,12 +91,11 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | [`ProductListingQueries`] | GraphQL queries for getting product listing data. |
+| props.queries | `ProductListingQueries` | GraphQL queries for getting product listing data. |
 
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useProductListing } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProductListing';
 ```
 
@@ -133,15 +112,14 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.item | [`ProductItem`] | Product item data |
-| props.operations | [`ProductMutations`] | GraphQL mutations for a product in a cart |
+| props.item | `ProductItem` | Product item data |
+| props.operations | `ProductMutations` | GraphQL mutations for a product in a cart |
 | props.setActiveEditItem | `function` | Function for setting the actively editing item |
 | props.setIsCartUpdating | `function` | Function for setting the updating state of the cart |
 
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useProduct } from '@magento/peregrine/lib/talons/CartPage/ProductListing/useProduct';
 ```
 
@@ -152,7 +130,6 @@ It returns prop data for rendering an interactive modal component.
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useEditModal } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useEditModal';
 ```
 
@@ -181,14 +158,13 @@ This talon performs the following effects:
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductListing/EditModal/useProductForm';
 ```
 
 GraphQL queries for getting product listing data.
-This is a type used in the [useProductListing] talon.
+This is a type used in the useProductListing talon.
 
-**See**: [productListingFragments.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js)
+**See**: [productListingFragments.js](https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js)
 for the queries used in Venia  
 **Properties**
 
@@ -196,7 +172,7 @@ for the queries used in Venia
 | --- | --- | --- |
 | getProductListingQuery | `GraphQLDocument` | Query to get the product list for a cart |
 
-Object type returned by the [useProductListing] talon.
+Object type returned by the useProductListing talon.
 It provides props data for a component that renders a product list.
 
 **Properties**
@@ -210,7 +186,7 @@ It provides props data for a component that renders a product list.
 | setActiveEditItem | `function` | Function for setting the current item to edit |
 
 GraphQL mutations for a product in a cart.
-This is a type used by the [useProduct] talon.
+This is a type used by the useProduct talon.
 
 **See**: [product.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/ProductListing/product.js)
 to see the mutations used in Venia  
@@ -221,7 +197,7 @@ to see the mutations used in Venia
 | removeItemMutation | `GraphQLDocument` | Mutation for removing an item in a cart |
 | updateItemQuantityMutation | `GraphQLDocument` | Mutation for updating the item quantity in a cart |
 
-Object type returned by the [useProduct] talon.
+Object type returned by the useProduct talon.
 It provides prop data for rendering a product component on a cart page.
 
 **Properties**
@@ -233,10 +209,10 @@ It provides prop data for rendering a product component on a cart page.
 | handleRemoveFromCart | `function` | Function to use for handling the removal of a cart product. |
 | handleUpdateItemQuantity | `function` | Function to use for handling updates to the product quantity in a cart. |
 | isEditable | `boolean` | True if a cart product is editable. False otherwise. |
-| product | [`ProductItem`] | Cart product data |
+| product | `ProductItem` | Cart product data |
 
 Data about a product item in the cart.
-This type is used in the [ProductTalonProps] type returned by the [useProduct] talon.
+This type is used in the ProductTalonProps type returned by the useProduct talon.
 
 **Properties**
 
@@ -265,7 +241,7 @@ It provides props data for a quantity UI component.
 | handleIncrement | `function` | Callback function for handling an increment event |
 | maskInput | `function` | Function for masking a value when decimal values are allowed |
 
-Object type returned by the [useEditModal] talon.
+Object type returned by the useEditModal talon.
 It provides props data for rendering an edit modal component.
 
 **Properties**
@@ -273,7 +249,7 @@ It provides props data for rendering an edit modal component.
 | Name | Type | Description |
 | --- | --- | --- |
 | setVariantPrice | `function` | Function for setting a product's variant price. |
-| variantPrice | `Object` | The variant price for a product. See [Money object](https://devdocs.magento.com/guides/v2.4/graphql/product/product-interface.html#Money). |
+| variantPrice | `Object` | The variant price for a product. See [Money object](https://developer.adobe.com/commerce/webapi/graphql/). |
 
 Object type returned by the [useProductForm](useProductForm) talon.
 It provides props data for a product form UI component inside a modal.

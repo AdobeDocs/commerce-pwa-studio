@@ -1,9 +1,9 @@
 
-Typedefs
+## Typedefs
 
-### [props](#props)
+[props]
 
-Props for [Banner]
+Props for Banner
 
 Page Builder Banner component.
 
@@ -17,9 +17,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`] | React component props |
+| props | `props` | React component props |
 
-Props for [Banner]
+Props for Banner
 
 **Properties**
 

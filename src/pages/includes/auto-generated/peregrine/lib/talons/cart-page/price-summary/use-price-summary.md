@@ -1,30 +1,26 @@
 
-Functions
+## Functions
 
-### `usePriceSummary(props)` ⇒ [`PriceSummaryTalonProps`]
+[usePriceSummary(props)] ⇒ `[PriceSummaryTalonProps]`
 
-This talon contains logic for a price summary component.  
+This talon contains logic for a price summary component.
 It performs effects and returns prop data for rendering the component.
 
 This talon performs the following effects:
 
 - Log a GraphQL error if it occurs when getting the price summary
 
-Typedefs
+## Typedefs
 
-### `FlattenedData` : `Object`
+[FlattenedData] : `Object`
 
 Query data flattened into a simple object.
 
----
-
-### `PriceSummaryQueries` : `Object`
+[PriceSummaryQueries] : `Object`
 
 GraphQL queries for price summary component.
 
----
-
-### `PriceSummaryTalonProps` : `Object`
+[PriceSummaryTalonProps] : `Object`
 
 Props used for rendering a price summary component.
 
@@ -41,12 +37,11 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | [`PriceSummaryQueries`] | GraphQL queries for a price summary component. |
+| props.queries | `PriceSummaryQueries` |GraphQL queries for a price summary component. |
 
 **Example** *(Importing into your project)*
 
 ```js
-
 import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
 ```
 
@@ -78,12 +73,12 @@ Props used for rendering a price summary component.
 
 **Properties**
 
-| Name | Type | Description |
-| --- | --- | --- |
-| handleProceedToCheckout | `function` | Callback function which navigates the browser to the checkout * @property (function)handleEnterKeyPress Callback function which navigates the browser to the checkout at the press of enter key |
-| hasError | `boolean` | True if a GraphQL query returns an error. False otherwise. |
-| hasItems | `boolean` | True if the cart has any items. False otherwise. |
-| isLoading | `boolean` | True while the GraphQL query is still in flight. False otherwise. |
-| flatData | [`FlattenedData`] | Query data that has been flattened into a simple object |
+| Name | Type | Description                                                                                                                                                                                        |
+| --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| handleProceedToCheckout | `function` | Callback function which navigates the browser to the checkout * @property `function` handleEnterKeyPress Callback function which navigates the browser to the checkout at the press of enter key |
+| hasError | `boolean` | True if a GraphQL query returns an error. False otherwise.                                                                                                                                         |
+| hasItems | `boolean` | True if the cart has any items. False otherwise.                                                                                                                                                   |
+| isLoading | `boolean` | True while the GraphQL query is still in flight. False otherwise.                                                                                                                                  |
+| flatData | `FlattenedData` | Query data that has been flattened into a simple object                                                                                                                                            |
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js)

@@ -1,15 +1,14 @@
+## Functions
 
-Functions
-
-### `restoreSortOrder(urlKeys, products)` ⇒ `Array`
+[restoreSortOrder(urlKeys, products)] ⇒ `Array`
 
 Sort products based on the original order
 
-Typedefs
+## Typedefs
 
-### [props](#props)
+[props]
 
-Props for [Products]
+Props for Products
 
 Page Builder Products component.
 
@@ -23,7 +22,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`] | React component props |
+| props | `props` | React component props |
 
 Sort products based on the original order
 
@@ -35,7 +34,7 @@ Sort products based on the original order
 | urlKeys | `Array` |
 | products | `Array` |
 
-Props for [Products]
+Props for Products
 
 **Properties**
 

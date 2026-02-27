@@ -1,22 +1,26 @@
 
-Functions
+## Functions
 
-[PriceAdjustments](props) ⇒ `React.Element`
-: PriceAdjustments is a child component of the CartPage component.  
-  It renders the price adjustment forms for applying gift cards, coupons,  
-  and the shipping method, all of which can adjust the cart total.
+[PriceAdjustments(props)] ⇒ `React.Element`
 
-[CouponCode](props) ⇒ `React.Element`
-: A child component of the PriceAdjustments component.  
-  This component renders a form for adding a coupon code to the cart.
+PriceAdjustments is a child component of the CartPage component.
+It renders the price adjustments forms for applying gift cards, coupons, and the shipping method.
+All of which can adjust the cart total.
 
-[GiftOptions](props) ⇒ `React.Element`
-: A child component of the PriceAdjustments component.  
-  This component displays the form for adding gift options.
+[CouponCode(props)] ⇒ `React.Element`
 
-[ShippingMethods](props) ⇒ `React.Element`
-: A child component of the PriceAdjustments component.  
-  This component renders the form for selecting the shipping method for the cart.
+A child component of the PriceAdjustments component.
+This component renders a form for addingg a coupon code to the cart.
+
+[GiftOptions(props)] ⇒ `React.Element`
+
+A child component of the PriceAdjustments component.
+This component displays the form for adding gift options.
+
+[ShippingMethods(props)] ⇒ `React.Element`
+
+A child component of the PriceAdjustments component.
+This component renders the form for adding the shipping method for the cart.
 
 PriceAdjustments is a child component of the CartPage component.
 It renders the price adjustments forms for applying gift cards, coupons, and the shipping method.
@@ -76,7 +80,7 @@ import GiftOptions from "@magento/venia-ui/lib/components/CartPage/PriceAdjustme
 A child component of the PriceAdjustments component.
 This component renders the form for adding the shipping method for the cart.
 
-**Returns:=**
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |

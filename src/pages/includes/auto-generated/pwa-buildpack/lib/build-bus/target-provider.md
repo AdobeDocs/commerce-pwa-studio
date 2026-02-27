@@ -1,16 +1,16 @@
 
-* [Buildpack/BuildBus]
-    * [~TargetProvider] ⇐ `Trackable`
-        * [new TargetProvider(bus, dep, getExternalTargets)]
+* Buildpack/BuildBus
+    * ~TargetProvider ⇐ `Trackable`
+        * new TargetProvider(bus, dep, getExternalTargets)
         * _instance_
-            * [.name]: `string`
-            * [.own] : `Object.<string, Target>`
-            * [.phase] : `string`
-            * [.declare(declarations)]
-            * [.of(depName)] ⇒ `Object.<string, Target>`
+            * .name : `string`
+            * .own : `Object.<string, Target>`
+            * .phase : `string`
+            * .declare(declarations)
+            * .of(depName) ⇒ `Object.<string, Target>`
         * _inner_
-            * [~toJSON()]
-    * [~getExternalTargets] ⇒ `TargetProvider`
+            * ~toJSON()
+    * ~getExternalTargets ⇒ `TargetProvider`
 
 Handles interactions between a BuildBus and an "extension" package
 participating in the BuildBus declare/intercept lifecycle.
@@ -22,16 +22,16 @@ targets of other extensions.
 
 **Extends**: `Trackable`  
 
-* [~TargetProvider] ⇐ `Trackable`
-    * [new TargetProvider(bus, dep, getExternalTargets)]
+* ~TargetProvider ⇐ `Trackable`
+    * new TargetProvider(bus, dep, getExternalTargets)
     * _instance_
-        * [.name] : `string`
-        * [.own] : `Object.<string, Target>`
-        * [.phase] : `string`
-        * [.declare(declarations)]
-        * [.of(depName)] ⇒ `Object.<string, Target>`
+        * .name : `string`
+        * .own : `Object.<string, Target>`
+        * .phase : `string`
+        * .declare(declarations)
+        * .of(depName) ⇒ `Object.<string, Target>`
     * _inner_
-        * [~toJSON()]
+        * ~toJSON()
 
 Creates an instance of TargetProvider.
 
@@ -42,7 +42,7 @@ Creates an instance of TargetProvider.
 | bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
 | dep | `Object` | The package which owns this TargetProvider. |
 | dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders) |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](/guides/general-concepts/extensibility/index.md#targetproviders) |
 
 The targets this package has declared in the `declare` phase.
 
@@ -72,7 +72,7 @@ objects.
 | --- | --- | --- |
 | depName | `string` | The package whose targets you want to retrieve. |
 
-Respond to a request from a [TargetProvider](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders)
+Respond to a request from a [TargetProvider](/guides/general-concepts/extensibility/index.md#targetproviders)
 to retrieve a different(external) TargetProvider.
 
 This callback pattern helps to loosely couple TargetProviders so

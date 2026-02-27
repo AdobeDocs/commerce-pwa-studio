@@ -1,13 +1,13 @@
 
-Typedefs
+## Typedefs
 
-### props
+[props]
 
-Props for [ButtonGroup]
+Props for ButtonGroup
 
-### buttonProps
+[buttonProps]
 
-Props for a [ButtonGroup] button component
+Props for a ButtonGroup button component
 
 A component that creates a group of buttons.
 
@@ -19,9 +19,9 @@ A component that creates a group of buttons.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`] | React component props |
+| props | `props` | React component props |
 
-Props for [ButtonGroup]
+Props for ButtonGroup
 
 **Properties**
 
@@ -29,9 +29,9 @@ Props for [ButtonGroup]
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the ButtonGroup component. |
 | classes.root | `string` | classes for root container |
-| items | [`Array.<buttonProps>`]| the items to evaluate memoization recomputation. |
+| items | `Array.<buttonProps>` | the items to evaluate memoization recomputation. |
 
-Props for a [ButtonGroup] button component
+Props for a ButtonGroup button component
 
 **Properties**
 

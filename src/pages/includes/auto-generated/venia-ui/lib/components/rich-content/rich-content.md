@@ -1,9 +1,9 @@
 
-Typedefs
+## Typedefs
 
-### Props
+[props]
 
-Props for [RichContent]
+Props for RichContent
 
 RichContent component.
 
@@ -20,7 +20,7 @@ and pass the data off to the correct system.
 | --- | --- | --- |
 | props | `Object` | React component props |
 
-Props for [RichContent]
+Props for RichContent
 
 **Properties**
 

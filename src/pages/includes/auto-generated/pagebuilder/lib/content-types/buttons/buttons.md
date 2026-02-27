@@ -1,9 +1,8 @@
+## Typedefs
 
-Typedefs
+[props]
 
-### [props](#props)
-
-Props for [Buttons]
+Props for Buttons
 
 Page Builder Buttons component.
 
@@ -17,9 +16,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`] | React component props |
+| props | `props` | React component props |
 
-Props for [Buttons]
+Props for Buttons
 
 **Properties**
 

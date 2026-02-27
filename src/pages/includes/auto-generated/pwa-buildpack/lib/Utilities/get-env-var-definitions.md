@@ -1,73 +1,64 @@
+## Modules
 
-Modules
+Buildpack/Utilities
 
-- [`Buildpack/Utilities`]
+## Typedefs
 
-Typedefs
+EnvVarDefinitions : `Object`
 
-### `EnvVarDefinitions` : `Object`
+Defines the global settings of the project as a list of typed environment variables.
+Includes a set of changes made to the environment variables in recent versions, to aid with migration and upgrades.
 
-Defines the global settings of the project as a list of typed environment variables.  
-Includes a set of changes made to the environment variables in recent versions to aid with migration and upgrades.
-
-`EnvVarDefinitions` are used by [`loadEnvironment()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/load-environment-file/)  
+`EnvVarDefinitions` are used by [`loadEnvironment()`](/api/buildpack/cli/load-environment-file/index.md)
 to validate the currently defined values in the environment.
 
-`EnvVarDefinitions` are also used by [`createDotEnvFile()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/create-environment-file/)  
+`EnvVarDefinitions` are also used by [`createDotEnvFile()`](/api/buildpack/cli/create-environment-file/index.md)
 to generate an extensively commented `.env` file for a project.
 
----
-
-### `EnvVarDefsSection` : `Object`
+EnvVarDefsSection : `Object`
 
 A list of related definitions concerning a particular functional area.
 
-All defined variable names under a particular functional area should have the same prefix to help namespace and organize configuration.  
+All defined variable names under a particular functional area should have the same prefix, to help namespace and organize configuration.
 For instance, all variable names in the "Custom local origin" section begin with `CUSTOM_ORIGIN_`.
 
----
-
-### `EnvVarDefinition` : `Object`
+EnvVarDefinition : `Object`
 
 A definition of an environment variable that will be used somewhere else in the project, in the backend and/or the frontend.
 
-Must define a name, type, and description. Optionally, it may define a `default` value (set implicitly), an `example` for documentation,  
-and/or an array of `choices` to limit valid values.
+Must define a name, type and description. Optionally, may define a `default` which is set implicitly, an `example` for documentation,
+and/or an array of `choices` to limit the valid values.
 
-The recommended way to access the current environment values in build scripts and interceptors is through the  
-[Configuration object](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/configuration/#configuration-object)  
-returned by [`loadEnvironment()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/load-environment-file/).
+The recommended way to access the current environment values in build scripts and interceptors is through the
+[Configuration object](/guides/general-concepts/configuration/index.md#configuration-object)
+object returned by [`loadEnvironment()`](/api/buildpack/cli/load-environment-file/index.md).
 
-**Note:** Any build environment will have hundreds of environment variables _set_, most of which are unrelated to the build process.  
-Any environment variable during the build is accessible via `process.env` in Node.js.  
-However, only the variables defined by `EnvVarDefinition` entries will be available in the frontend via the  
-[Webpack EnvironmentPlugin](https://webpack.js.org/plugins/environment-plugin/).
+**Note:** Any build environment will have hundreds of environment variables _set_, most of which are unrelated to the build process.
+Any environment variable during the build is accessible via `process.env` in NodeJS.
+However, only the variables defined by `EnvVarDefinition` entries will be available in the frontend, via the [Webpack EnvironmentPlugin](https://webpack.js.org/plugins/environment-plugin/).
 
----
-
-### `EnvVarDefsChange` : `Object`
+EnvVarDefsChange : `Object`
 
 Describes a recent change to a particular environment variable.
-
-It can indicate that the environment variable was _removed_ or _renamed_.  
-Change objects can log informative warnings to developers to help with migration.  
+Can indicate that the environment variable was _removed_ or _renamed_.
+Change objects can log informative warnings to developers to help with migration.
 They may also be used to make `loadEnvironment()` support the legacy name of a renamed variable.
 
 Defines the global settings of the project as a list of typed environment variables.
 Includes a set of changes made to the environment variables in recent versions, to aid with migration and upgrades.
 
-`EnvVarDefinitions` are used by [`loadEnvironment()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/load-environment-file/)
+`EnvVarDefinitions` are used by [`loadEnvironment()`](/api/buildpack/cli/load-environment-file/index.md)
 to validate the currently defined values in the environment.
 
-`EnvVarDefinitions` are also used by [`createDotEnvFile()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/create-environment-file/)
+`EnvVarDefinitions` are also used by [`createDotEnvFile()`](/api/buildpack/cli/create-environment-file/index.md)
 to generate an extensively commented `.env` file for a project.
 
 **Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| sections | [`Array.<EnvVarDefsSection>`] | List of sections, or sub-lists of definitions grouped under a title. |
-| changes | [`Array.<EnvVarDefsChange>`] | List of changes, or objects describing a recent change to a definition. |
+| sections | `Array.<EnvVarDefsSection>` | List of sections, or sub-lists of definitions grouped under a title. |
+| changes | `Array.<EnvVarDefsChange>` | List of changes, or objects describing a recent change to a definition. |
 
 A list of related definitions concerning a particular functional area.
 
@@ -79,7 +70,7 @@ For instance, all variable names in the "Custom local origin" section begin with
 | Name | Type | Description |
 | --- | --- | --- |
 | name | `String` | Title of the section, describing the functional area of the included variables. |
-| variables | [`Array.<EnvVarDefinition>`] | List of variable definitions. |
+| variables | `Array.<EnvVarDefinition>` | List of variable definitions. |
 
 A definition of an environment variable that will be used somewhere else in the project, in the backend and/or the frontend.
 
@@ -87,8 +78,8 @@ Must define a name, type and description. Optionally, may define a `default` whi
 and/or an array of `choices` to limit the valid values.
 
 The recommended way to access the current environment values in build scripts and interceptors is through the
-[Configuration object](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/configuration/#configuration-object)
-object returned by [`loadEnvironment()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/load-environment-file/).
+[Configuration object](/guides/general-concepts/configuration/index.md#configuration-object)
+object returned by [`loadEnvironment()`](/api/buildpack/cli/load-environment-file/index.md).
 
 **Note:** Any build environment will have hundreds of environment variables _set_, most of which are unrelated to the build process.
 Any environment variable during the build is accessible via `process.env` in NodeJS.

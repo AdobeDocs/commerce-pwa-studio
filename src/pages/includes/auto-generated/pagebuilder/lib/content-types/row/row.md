@@ -1,9 +1,8 @@
+## Typedefs
 
-Typedefs
+[props]
 
-### [props](#props)
-
-Props for [Row]
+Props for Row
 
 Page Builder Row component.
 
@@ -17,9 +16,9 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`]| React component props |
+| props | `props` | React component props |
 
-Props for [Row]
+Props for Row
 
 **Properties**
 

@@ -1,22 +1,20 @@
 
-Typedefs
+## Typedefs
 
-### `ToastState` : `Object`
+[ToastState] : `Object`
 
 The current state of the toast store.
 
----
+[ToastContextProvider]
 
-### `ToastContextProvider`
+A [context](https://legacy.reactjs.org/docs/context.html) provider that
+provides the toast state object and a dispatch function to toast
+functionality consumers.
 
-A [context](https://reactjs.org/docs/context.html) provider that provides the toast state object and a dispatch function to toast functionality consumers.
+[useToastContext] ⇒ `Array.&lt;Object>`
 
----
-
-### `useToastContext` ⇒ `Array.<Object>`
-
-A hook that provides access to the toast state and dispatch.  
-Any component using this hook _must_ be a child of a [ToastContextProvider].
+A hook that provides access to the toast state and dispatch.
+Any component using this hook _must_ be a child of a ToastContextProvider.
 
 The current state of the toast store.
 
@@ -26,18 +24,18 @@ The current state of the toast store.
 | --- | --- | --- |
 | toasts | `Map` | Map object associating an id to toast data |
 
-A [context](https://reactjs.org/docs/context.html) provider that
+A [context](https://legacy.reactjs.org/docs/context.html) provider that
 provides the toast state object and a dispatch function to toast
 functionality consumers.
 
 A hook that provides access to the toast state and dispatch.
-Any component using this hook _must_ be a child of a [ToastContextProvider].
+Any component using this hook _must_ be a child of a ToastContextProvider.
 
 **Returns:**
 `Array.<Object>`
-   — An array containing the state and dispatch function: [[ToastState], function]
+   — An array containing the state and dispatch function: [ToastState, function]
 
-**Example**  
+**Example**
 
 ```js
 const [toastState, dispatch] = useToastState();

@@ -1,9 +1,9 @@
 
-Typedefs
+## Typedefs
 
-### Props
+[props]
 
-Props for [ProductImageCarousel]
+Props for ProductImageCarousel
 
 Carousel component for product images
 Carousel - Component that holds number of images
@@ -18,9 +18,9 @@ images can be navigated through previous and next buttons
 
 | Name | Type |
 | --- | --- |
-| props | [`props`] |
+| props | `props` |
 
-Props for [ProductImageCarousel]
+Props for ProductImageCarousel
 
 **Properties**
 

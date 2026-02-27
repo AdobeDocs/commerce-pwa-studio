@@ -1,14 +1,14 @@
 
-* [Buildpack/BuildBus]
-    * [~Target] ⇐ `Trackable`
-        * [.call([...args])] ⇒ `\*`
-        * [.callAsync(...args)] ⇒ `undefined`
-        * [.intercept(options)] ⇒ `void`
-        * [.promise([...args])] ⇒ `Promise`
-        * [.tap([name], interceptor)] ⇒ `undefined`
-        * [.tapAsync(name, interceptor)] ⇒ `undefined`
-        * [.tapPromise(name, interceptor)] ⇒ `undefined`
-        * [.toJSON()] ⇒ `object`
+* Buildpack/BuildBus
+    * ~Target ⇐ `Trackable`
+        * .call([...args]) ⇒ `\*`
+        * .callAsync(...args) ⇒ `undefined`
+        * .intercept(options) ⇒ `void`
+        * .promise([...args]) ⇒ `Promise`
+        * .tap([name], interceptor) ⇒ `undefined`
+        * .tapAsync(name, interceptor) ⇒ `undefined`
+        * .tapPromise(name, interceptor) ⇒ `undefined`
+        * .toJSON() ⇒ `object`
 
 Represents an edge on the graph, or a "route" between stops, created between
 two extensions when one of them references the target(s) of another. When
@@ -19,15 +19,15 @@ better logging, error checking, and validation.
 **Extends**: `Trackable`  
 **See**: [Tapable docs](https://github.com/webpack/tapable)  
 
-* [~Target] ⇐ `Trackable`
-    * [.call([...args])] ⇒ `\*`
-    * [.callAsync(...args)] ⇒ `undefined`
-    * [.intercept(options)] ⇒ `void`
-    * [.promise([...args])] ⇒ `Promise`
-    * [.tap([name], interceptor)] ⇒ `undefined`
-    * [.tapAsync(name, interceptor)] ⇒ `undefined`
-    * [.tapPromise(name, interceptor)] ⇒ `undefined`
-    * [.toJSON()] ⇒ `object`
+* ~Target ⇐ `Trackable`
+    * .call([...args]) ⇒ `\*`
+    * .callAsync(...args) ⇒ `undefined`
+    * .intercept(options) ⇒ `void`
+    * .promise([...args]) ⇒ `Promise`
+    * .tap([name], interceptor) ⇒ `undefined`
+    * .tapAsync(name, interceptor) ⇒ `undefined`
+    * .tapPromise(name, interceptor) ⇒ `undefined`
+    * .toJSON() ⇒ `object`
 
 Run `.call(...args)` on the underlying Tapable Hook.
 Calls interceptors synchronously and in subscription order with the

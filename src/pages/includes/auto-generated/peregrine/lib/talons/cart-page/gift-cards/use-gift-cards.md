@@ -1,37 +1,38 @@
 
-Functions
+## Functions
 
-### `useGiftCards(props)` ⇒ [`GiftCardsTalonProps`]
+[useGiftCards(props)] ⇒ `[GiftCardsTalonProps]`
 
-Handles the logic for a component that renders a list of gift cards.  
-It performs effects and returns the prop data necessary for rendering the component.
+Handles the logic for a component that renders a list of gift cards.
+It performs effects and returns the prop data necessary for rendering
+the component.
 
 This talon performs the following effects:
 
 - Fetch the currently applied gift cards for a cart
 - Manage the updating state of the cart while a gift card is being applied or removed
 
-### `useGiftCard(props)` ⇒ [`GiftCardTalonProps`]
+[useGiftCard(props)] ⇒ `[GiftCardTalonProps]`
 
-Provides logic for a single gift card component.
+Provide logic for a single gift card component.
 
-Typedefs
+## Typedefs
 
-### `GiftCardsMutations` : `Object`
+[GiftCardsMutations] : `Object`
 
 GraphQL mutations for Gift Cards.
 
-### `GiftCardsQueries` : `Object`
+[GiftCardsQueries] : `Object`
 
 GraphQL queries for Gift Cards.
 
-### `GiftCardsTalonProps` : `Object`
+[GiftCardsTalonProps] : `Object`
 
 Props data to use when rendering a list of gift cards.
 
-### `GiftCardTalonProps` : `Object`
+[GiftCardTalonProps] : `Object`
 
-Props data to use when ren
+Props data to use when rendering a single gift card component.
 
 Handles the logic for a component that renders a list of gift cards.
 It performs effects and returns the prop data necessary for rendering
@@ -49,13 +50,12 @@ This talon performs the following effects:
 | --- | --- | --- |
 | props | `Object` |  |
 | props.setIsCartUpdating | `function` | Callback function for setting the update state for the cart. |
-| props.mutations | [`GiftCardsMutations`] | GraphQL mutations for Gift Cards |
-| props.queries | [`GiftCardsQueries`] | GraphQL queries for Gift Cards |
+| props.mutations | `GiftCardsMutations` | GraphQL mutations for Gift Cards |
+| props.queries | `GiftCardsQueries` | GraphQL queries for Gift Cards |
 
 **Example** *(Importing into your project)*
 
 ```js
-
 import { useGiftCards } from '@magento/peregrine/lib/talons/CartPage/GiftCards'
 ```
 
@@ -70,10 +70,9 @@ Provide logic for a single gift card component.
 | props.code | `String` | Gift card's code |
 | props.removeGiftCard | `function` | A function that removes a gift card when provided a code |
 
-**Example** *(Importing into your project)*
+**Example** *(Importing into your project)*  
 
 ```js
-
 import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
 ```
 

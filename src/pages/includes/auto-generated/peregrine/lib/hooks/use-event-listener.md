@@ -1,5 +1,5 @@
 
-A [React Hook](https://reactjs.org/docs/hooks-intro.html) that gives
+A [React Hook](https://legacy.reactjs.org/docs/hooks-intro.html) that gives
 you the ability to add a callback function when an event is triggered on
 an object.
 
@@ -13,7 +13,7 @@ See [addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventT
 | Name | Type | Description |
 | --- | --- | --- |
 | target | `EventTarget` | The [EventTarget](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget) to attach the listener to |
-| type | `String` | The type of [Event](https://developer.mozilla.org/en-US/docs/Web/Events) to listen for, e.g. 'resize', 'error', etc. |
+| type | `String` | The type of [Event](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events) to listen for, e.g. 'resize', 'error', etc. |
 | listener | `function` | A callback function that is invoked when the event is triggered |
 | ...rest | `any` | Any other arguments to pass to the addEventListener() function |
 

@@ -1,101 +1,95 @@
+## Modules
 
-Modules
+@magento/pwa-buildpack
 
-- [`@magento/pwa-buildpack`]
-- [`BuiltinTargets`]
-- [`Buildpack/BuildBus`]
-  Mapping Tapable hooks to the Buildpack facade of Targets.
-- [`Buildpack/BuildBus`]
-- [`@magento/pwa-buildpack`]
-- [`Buildpack/BuildBus`]
+## Typedefs
 
-Typedefs
+transformModulesIntercept : `function`
 
-### `transformModulesIntercept` : `function`
+Intercept function signature for the transformModules target.
 
-Intercept function signature for the `transformModules` target.
-
-Interceptors of `transformModules` should call the [`addTransform()`] callback to add module-specific transformers.  
+Interceptors of `transformModules` should call the `addTransform()`
+callback to add module specific transformers.
 Any returned value will be ignored.
 
----
-
-### `addTransform` : `function`
+addTransform : `function`
 
 Callback to add a transform.
 
----
+webpackCompilerIntercept : `function`
 
-### `webpackCompilerIntercept` : `function`
+Intercept function signature for the webpackCompiler target.
 
-Intercept function signature for the `webpackCompiler` target.
+Interceptors of `webpackCompiler` should tap hooks on the provided
+`compiler` object. Any returned value will be ignored.
 
-Interceptors of `webpackCompiler` should tap hooks on the provided `compiler` object.  
-Any returned value will be ignored.
+specialFeaturesIntercept : `function`
 
----
+Intercept function signature for the specialFeatures target.
 
-### `specialFeaturesIntercept` : `function`
+Interceptors of the `specialFeatures` target can use the mapping object provided
+to map special build flags to their project modules.
 
-Intercept function signature for the `specialFeatures` target.
+transformUpwardIntercept ⇒ `Promise`
 
-Interceptors of the `specialFeatures` target can use the mapping object provided to map special build flags to their project modules.
+Intercept function signature for the transformUpward target.
 
----
+Interceptors of the `transformUpward` target receive the parsed UPWARD
+definition as a plain JavaScript object. Mutate that object in place to
+change the final `upward.yml` output by the build.
 
-### `transformUpwardIntercept` ⇒ `Promise`
+This Target can be used asynchronously. If you need to do asynchronous work
+to get what you need to modify the UPWARD definition (for example, a network
+request) then you can provide an `async` function as interceptor (or simply
+return a Promise from any function).
 
-Intercept function signature for the `transformUpward` target.
+envValidationInterceptor ⇒ `Boolean`
 
-Interceptors of the `transformUpward` target receive the parsed UPWARD definition as a plain JavaScript object.  
-Mutate that object in place to change the final `upward.yml` output by the build.
+Intercept function signature for the validateEnv target.
 
-This target can be used asynchronously. If you need to do asynchronous work (for example, a network request), you can provide an `async` function as the interceptor or return a `Promise`.
+Interceptors of the `validateEnv` target receive a config object.
+The config object contains the project env, an onFail callback and
+the debug function to be used in case of the debug mode to log more
+inforamtion to the console.
 
----
+This Target can be used asynchronously in the parallel mode. If a
+validator needs to stop the process immediately, it can throw an error.
+If it needs to report an error but not stop the whole process, it can do
+so by calling the onFail function with the error message it wants to report.
+It can call the onFail multiple times if it wants to report multiple errors.
 
-### `envValidationInterceptor` ⇒ `Boolean`
+All the errors will be queued and printed into the console at the end of the
+validation process and the build process will be stopeed.
 
-Intercept function signature for the `validateEnv` target.
-
-Interceptors of the `validateEnv` target receive a config object.  
-The config object contains the project env, an `onFail` callback, and a debug function used to log additional information in debug mode.
-
-This target can be used asynchronously in parallel mode. If a validator needs to stop the process immediately, it can throw an error.  
-If it needs to report an error without stopping the process, it can call the `onFail` function with the error message.  
-It may call `onFail` multiple times to report multiple errors.
-
-All errors will be queued and printed to the console at the end of the validation process, and the build process will be stopped.
-
-* [@magento/pwa-buildpack]
-    * [~BuildBus]
+* @magento/pwa-buildpack
+    * ~BuildBus
         * _instance_
-            * [.getTargetsOf(depName)] ⇒ `Object.<string, Target>`
-            * [.init()] ⇒ `BuildBus`
-            * [.runPhase(phase)]
+            * .getTargetsOf(depName) ⇒ `Object.<string, Target>`
+            * .init() ⇒ `BuildBus`
+            * .runPhase(phase)
         * _static_
-            * [.clear(context)]
-            * [.clearAll()]
-            * [.for(context)] ⇒ `BuildBus`
-    * [~Trackable]
+            * .clear(context)
+            * .clearAll()
+            * .for(context) ⇒ `BuildBus`
+    * ~Trackable
         * _instance_
-            * [.attach(identifier, owner)]
+            * .attach(identifier, owner)
         * _static_
-            * [.enableTracking()]
-            * [.disableTracking()]
+            * .enableTracking()
+            * .disableTracking()
 
 Manages dependency participation in project builds and tasks.
 It executes their declare and intercept files so they can interact with each other.
 
-* [~BuildBus]
+* ~BuildBus
     * _instance_
-        * [.getTargetsOf(depName)] ⇒ `Object.<string, Target>`
-        * [.init()] ⇒ `BuildBus`
-        * [.runPhase(phase)]
+        * .getTargetsOf(depName) ⇒ `Object.<string, Target>`
+        * .init() ⇒ `BuildBus`
+        * .runPhase(phase)
     * _static_
-        * [.clear(context)]
-        * [.clearAll()]
-        * [.for(context)] ⇒ `BuildBus`
+        * .clear(context)
+        * .clearAll()
+        * .for(context) ⇒ `BuildBus`
 
 Get [TargetProvider](TargetProvider) for the given named dependency. Use this to
 retrieve and run targets in top-level code, when you have a reference to
@@ -163,7 +157,7 @@ instance hasn't been sent as a parameter.
 | --- | --- | --- |
 | context | `string` | Root directory of the BuildBus to get or create. |
 
-**Example** *(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)*
+**Example** _(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)_
 
 ```js
 const bus = BuildBus.for('./project-dir);
@@ -175,17 +169,17 @@ Generic node in a tree of objects which can log their activity. Implemented
 for BuildBus, since it will eventually need sophisticated debugging and
 introspection for developers, but it has no BuildBus-specific functionality.
 
-* [~Trackable]
+* ~Trackable
     * _instance_
-        * [.attach(identifier, owner)]
+        * .attach(identifier, owner)
     * _static_
-        * [.enableTracking()]
-        * [.disableTracking()]
+        * .enableTracking()
+        * .disableTracking()
 
 Attach this Trackable to a tree. Give it a name and an owner. If the
 owner is a Trackable, then this Trackable becomes a child node of the
 owner. If the owner is a function, then this Trackable becomes a root
-node, which will log all of its [track] calls *and* its
+node, which will log all of its track calls _and_ its
 descendents' calls to the `owner` function.
 
 **See**: Trackable.spec.js  
@@ -202,13 +196,13 @@ Carries a possibly significant performance cost.
 Disable all active Trackable instances. The parent logging callback will
 not be called.
 
-* [BuiltinTargets]
-    * [.envVarDefinitions] : `tapable.SyncHook`
-    * [.transformModules] : `tapable.AsyncSeriesHook`
-    * [.webpackCompiler] : `tapable.SyncHook`
-    * [.specialFeatures] : `tapable.SyncHook`
-    * [.transformUpward] : `tapable.AsyncSeriesHook`
-    * [.validateEnv] : `tapable.AsyncParallelHook`
+* BuiltinTargets
+    * .envVarDefinitions : `tapable.SyncHook`
+    * .transformModules : `tapable.AsyncSeriesHook`
+    * .webpackCompiler : `tapable.SyncHook`
+    * .specialFeatures : `tapable.SyncHook`
+    * .transformUpward : `tapable.AsyncSeriesHook`
+    * .validateEnv : `tapable.AsyncParallelHook`
 
 Called to collect the definitions and documentation for project-wide
 configuration values. Core environment variables are defined in the
@@ -220,16 +214,16 @@ configuration with the project-wide environment variable system.
 
 **See**
 
-- [Variable definition schema](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/)
-- [Core variable definitions](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/variables/)
+* [Variable definition schema](/api/buildpack/environment/definition-object/index.md)
+* [Core variable definitions](/api/buildpack/environment/variables/index.md)
 
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| envVarDefinitions | `object` | The [variable definitions object](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/environment/definition-object/). Modify in place. |
+| envVarDefinitions | `object` | The [variable definitions object](/api/buildpack/environment/definition-object/index.md). Modify in place. |
 
-**Example** *(Add config fields for your extension)*
+**Example** _(Add config fields for your extension)_
 
 ```js
 targets.of('@magento/pwa-buildpack').envVarDefinitions.tap(defs => {
@@ -260,8 +254,8 @@ NOTE: This is a very low-level extension point. It should be used as a
 building block for higher-level extensions that expose functional
 areas rather than files on disk.
 
-**See**: [transformModules intercept function]
-**Example** *(Strip unnecessary Lodash code from a specific JS module.)*
+**See**: transformModules intercept function  
+**Example** _(Strip unnecessary Lodash code from a specific JS module.)_
 
 ```js
 targets.of('@magento/pwa-buildpack').transformModules.tap(addTransform => addTransform({
@@ -275,10 +269,10 @@ targets.of('@magento/pwa-buildpack').transformModules.tap(addTransform => addTra
 Calls interceptors whenever a Webpack Compiler object is created.
 This almost always happens once per build, even in dev mode.
 
-Use an [intercept function] on this target
+Use an intercept function on this target
 to access the [webpack compiler](https://webpack.js.org/api/compiler-hooks/).
 
-**Example** *(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)*
+**Example** _(Tap the compiler&#x27;s &#x60;watchRun&#x60; hook.)_
 
 ```js
 targets.of('@magento/pwa-buildpack').webpackCompiler.tap(compiler => {
@@ -297,12 +291,12 @@ its frontend code (as most should), Webpack will not parse and build
 the modules by default. It will expect extension code to be CommonJS
 style and will not process the ES Modules.
 Likewise, if your extension uses CSS Modules, you must add the `cssModules` flag using this target.
-Use a [specialFeatures intercept function]
+Use a specialFeatures intercept function
 to add special build features for the modules used in your project.
 
-**See**: [Special flags in `configureWebpack()`](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/webpack/configure/#special-flags)  
-**Example** *(Declare that your extension contains CSS modules.)*
-  
+**See**: [Special flags in `configureWebpack()`](/api/buildpack/webpack/configure/index.md#special-flags)  
+**Example** _(Declare that your extension contains CSS modules.)_
+
 ```js
 targets.of('@magento/pwa-buildpack').specialFeatures.tap(featuresByModule => {
   featuresByModule['my-module'] = { cssModules: true };
@@ -320,9 +314,9 @@ definition.
 
 | Name | Type |
 | --- | --- |
-| interceptor | [`transformUpwardIntercept`] |
+| interceptor | `transformUpwardIntercept` |
 
-**Example** *(Send empty responses in maintenance mode.)*
+**Example** _(Send empty responses in maintenance mode.)_
 
 ```js
 targets.of('@magento/pwa-buildpack').transformUpward.tap(def => {
@@ -358,7 +352,7 @@ displayed on the console at the end of the process.
 
 | Name | Type |
 | --- | --- |
-| validator | [`envValidationInterceptor`] |
+| validator | `envValidationInterceptor` |
 
 **Example**
 
@@ -368,33 +362,33 @@ targets.of('@magento/pwa-buildpack').validateEnv.tapPromise(validateBackendUrl);
 
 Mapping Tapable hooks to the Buildpack facade of Targets.
 
-* [Buildpack/BuildBus]
-    * [~Target]⇐ `Trackable`
-        * [.call([...args])] ⇒ `\*`
-        * [.callAsync(...args)] ⇒ `undefined`
-        * [.intercept(options)] ⇒ `void`
-        * [.promise([...args])] ⇒ `Promise`
-        * [.tap([name], interceptor)] ⇒ `undefined`
-        * [.tapAsync(name, interceptor)] ⇒ `undefined`
-        * [.tapPromise(name, interceptor)] ⇒ `undefined`
-        * [.toJSON()] ⇒ `object`
-        * [.track(args)]
-    * [~TargetProvider] ⇐ `Trackable`
-        * [new TargetProvider(bus, dep, getExternalTargets)]
+* Buildpack/BuildBus
+    * ~Target ⇐ `Trackable`
+        * .call([...args]) ⇒ `\*`
+        * .callAsync(...args) ⇒ `undefined`
+        * .intercept(options) ⇒ `void`
+        * .promise([...args]) ⇒ `Promise`
+        * .tap([name], interceptor) ⇒ `undefined`
+        * .tapAsync(name, interceptor) ⇒ `undefined`
+        * .tapPromise(name, interceptor) ⇒ `undefined`
+        * .toJSON() ⇒ `object`
+        * .track(args)
+    * ~TargetProvider ⇐ `Trackable`
+        * new TargetProvider(bus, dep, getExternalTargets)
         * _instance_
-            * [.name] : `string`
-            * [.own] : `Object.<string, Target>`
-            * [.phase] : `string`
-            * [.declare(declarations)]
-            * [.of(depName)] ⇒ `Object.<string, Target>`
-            * [.toJSON()] ⇒ `Object`
-            * [.track(args)]
+            * .name : `string`
+            * .own : `Object.<string, Target>`
+            * .phase : `string`
+            * .declare(declarations)
+            * .of(depName) ⇒ `Object.<string, Target>`
+            * .toJSON() ⇒ `Object`
+            * .track(args)
         * _inner_
-            * [~toJSON()]
-    * [~types] : `Object.<string, Tapable.Hook>`
-    * [~appearsToBeTapable(hookLike)] ⇒ `boolean`
-    * [~getTapableType(hook)] ⇒ `string`
-    * [~getExternalTargets] ⇒ `TargetProvider`
+            * ~toJSON()
+    * ~types : `Object.<string, Tapable.Hook>`
+    * ~appearsToBeTapable(hookLike) ⇒ `boolean`
+    * ~getTapableType(hook) ⇒ `string`
+    * ~getExternalTargets ⇒ `TargetProvider`
 
 Represents an edge on the graph, or a "route" between stops, created between
 two extensions when one of them references the target(s) of another. When
@@ -405,16 +399,16 @@ better logging, error checking, and validation.
 **Extends**: `Trackable`  
 **See**: [Tapable docs](https://github.com/webpack/tapable)  
 
-* [~Target] ⇐ `Trackable`
-    * [.call([...args])] ⇒ `\*`
-    * [.callAsync(...args)] ⇒ `undefined`
-    * [.intercept(options)] ⇒ `void`
-    * [.promise([...args])] ⇒ `Promise`
-    * [.tap([name], interceptor)] ⇒ `undefined`
-    * [.tapAsync(name, interceptor)] ⇒ `undefined`
-    * [.tapPromise(name, interceptor)] ⇒ `undefined`
-    * [.toJSON()] ⇒ `object`
-    * [.track(args)]
+* ~Target ⇐ `Trackable`
+    * .call([...args]) ⇒ `\*`
+    * .callAsync(...args) ⇒ `undefined`
+    * .intercept(options) ⇒ `void`
+    * .promise([...args]) ⇒ `Promise`
+    * .tap([name], interceptor) ⇒ `undefined`
+    * .tapAsync(name, interceptor) ⇒ `undefined`
+    * .tapPromise(name, interceptor) ⇒ `undefined`
+    * .toJSON() ⇒ `object`
+    * .track(args)
 
 Run `.call(...args)` on the underlying Tapable Hook.
 Calls interceptors synchronously and in subscription order with the
@@ -509,7 +503,7 @@ Adds a Promise-returning async interceptor to the Target. The interceptor may re
 
 Provides the JSON object representation of this target
 
-**Overrides**: [`toJSON`]
+**Overrides**: `toJSON`  
 **Returns:**
 `object`
    — JSON object
@@ -522,7 +516,7 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-**Overrides**: [`track`]
+**Overrides**: `track`  
 **Parameters**
 
 | Name | Type | Description |
@@ -539,18 +533,18 @@ targets of other extensions.
 
 **Extends**: `Trackable`  
 
-* [~TargetProvider] ⇐ `Trackable`
-    * [new TargetProvider(bus, dep, getExternalTargets)]
+* ~TargetProvider ⇐ `Trackable`
+    * new TargetProvider(bus, dep, getExternalTargets)
     * _instance_
-        * [.name] : `string`
-        * [.own] : `Object.<string, Target>`
-        * [.phase] : `string`
-        * [.declare(declarations)]
-        * [.of(depName)] ⇒ `Object.<string, Target>`
-        * [.toJSON()] ⇒ `Object`
-        * [.track(args)]
+        * .name : `string`
+        * .own : `Object.<string, Target>`
+        * .phase : `string`
+        * .declare(declarations)
+        * .of(depName) ⇒ `Object.<string, Target>`
+        * .toJSON() ⇒ `Object`
+        * .track(args)
     * _inner_
-        * [~toJSON()]
+        * ~toJSON()
 
 Creates an instance of TargetProvider.
 
@@ -561,7 +555,7 @@ Creates an instance of TargetProvider.
 | bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
 | dep | `Object` | The package which owns this TargetProvider. |
 | dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders) |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](/guides/general-concepts/extensibility/index.md#targetproviders) |
 
 The targets this package has declared in the `declare` phase.
 
@@ -593,7 +587,7 @@ objects.
 
 Serialize this Trackable and any parent Trackables.
 
-**Overrides**: [`toJSON`]
+**Overrides**: `toJSON`  
 **Returns:**
 `Object`
    — JSON-clean object that recurses up the parent tree.
@@ -606,7 +600,7 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-**Overrides**: [`track`]
+**Overrides**: `track`  
 **Parameters**
 
 | Name | Type | Description |
@@ -645,7 +639,7 @@ the end). Otherwise, returns `<unknown>`.
 | --- | --- | --- |
 | hook | `object` | Potental Tapable hook object |
 
-Respond to a request from a [TargetProvider](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders)
+Respond to a request from a [TargetProvider](/guides/general-concepts/extensibility/index.md#targetproviders)
 to retrieve a different(external) TargetProvider.
 
 This callback pattern helps to loosely couple TargetProviders so
@@ -662,33 +656,33 @@ they are more testable.
 | requestor | `TargetProvider` | TargetProvider making the request. |
 | requested | `string` | External targets being requested. |
 
-* [Buildpack/BuildBus]
-    * [~Target] ⇐ `Trackable`
-        * [.call([...args])] ⇒ `\*`
-        * [.callAsync(...args)] ⇒ `undefined`
-        * [.intercept(options)] ⇒ `void`
-        * [.promise([...args])] ⇒ `Promise`
-        * [.tap([name], interceptor)] ⇒ `undefined`
-        * [.tapAsync(name, interceptor)] ⇒ `undefined`
-        * [.tapPromise(name, interceptor)] ⇒ `undefined`
-        * [.toJSON()] ⇒ `object`
-        * [.track(args)]
-    * [~TargetProvider] ⇐ `Trackable`
-        * [new TargetProvider(bus, dep, getExternalTargets)]
+* Buildpack/BuildBus
+    * ~Target ⇐ `Trackable`
+        * .call([...args]) ⇒ `\*`
+        * .callAsync(...args) ⇒ `undefined`
+        * .intercept(options) ⇒ `void`
+        * .promise([...args]) ⇒ `Promise`
+        * .tap([name], interceptor) ⇒ `undefined`
+        * .tapAsync(name, interceptor) ⇒ `undefined`
+        * .tapPromise(name, interceptor) ⇒ `undefined`
+        * .toJSON() ⇒ `object`
+        * .track(args)
+    * ~TargetProvider ⇐ `Trackable`
+        * new TargetProvider(bus, dep, getExternalTargets)
         * _instance_
-            * [.name] : `string`
-            * [.own] : `Object.<string, Target>`
-            * [.phase] : `string`
-            * [.declare(declarations)]
-            * [.of(depName)] ⇒ `Object.<string, Target>`
-            * [.toJSON()] ⇒ `Object`
-            * [.track(args)]
+            * .name : `string`
+            * .own : `Object.<string, Target>`
+            * .phase : `string`
+            * .declare(declarations)
+            * .of(depName) ⇒ `Object.<string, Target>`
+            * .toJSON() ⇒ `Object`
+            * .track(args)
         * _inner_
-            * [~toJSON()]
-    * [~types] : `Object.<string, Tapable.Hook>`
-    * [~appearsToBeTapable(hookLike)] ⇒ `boolean`
-    * [~getTapableType(hook)] ⇒ `string`
-    * [~getExternalTargets] ⇒ `TargetProvider`
+            * ~toJSON()
+    * ~types : `Object.<string, Tapable.Hook>`
+    * ~appearsToBeTapable(hookLike) ⇒ `boolean`
+    * ~getTapableType(hook) ⇒ `string`
+    * ~getExternalTargets ⇒ `TargetProvider`
 
 Represents an edge on the graph, or a "route" between stops, created between
 two extensions when one of them references the target(s) of another. When
@@ -699,16 +693,16 @@ better logging, error checking, and validation.
 **Extends**: `Trackable`  
 **See**: [Tapable docs](https://github.com/webpack/tapable)  
 
-* [~Target] ⇐ `Trackable`
-    * [.call([...args])] ⇒ `\*`
-    * [.callAsync(...args)] ⇒ `undefined`
-    * [.intercept(options)] ⇒ `void`
-    * [.promise([...args])] ⇒ `Promise`
-    * [.tap([name], interceptor)] ⇒ `undefined`
-    * [.tapAsync(name, interceptor)] ⇒ `undefined`
-    * [.tapPromise(name, interceptor)] ⇒ `undefined`
-    * [.toJSON()] ⇒ `object`
-    * [.track(args)]
+* ~Target ⇐ `Trackable`
+    * .call([...args]) ⇒ `\*`
+    * .callAsync(...args) ⇒ `undefined`
+    * .intercept(options) ⇒ `void`
+    * .promise([...args]) ⇒ `Promise`
+    * .tap([name], interceptor) ⇒ `undefined`
+    * .tapAsync(name, interceptor) ⇒ `undefined`
+    * .tapPromise(name, interceptor) ⇒ `undefined`
+    * .toJSON() ⇒ `object`
+    * .track(args)
 
 Run `.call(...args)` on the underlying Tapable Hook.
 Calls interceptors synchronously and in subscription order with the
@@ -803,7 +797,7 @@ Adds a Promise-returning async interceptor to the Target. The interceptor may re
 
 Provides the JSON object representation of this target
 
-**Overrides**: [`toJSON`]
+**Overrides**: `toJSON`  
 **Returns:**
 `object`
    — JSON object
@@ -816,7 +810,7 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-**Overrides**: [`track`]
+**Overrides**: `track`  
 **Parameters**
 
 | Name | Type | Description |
@@ -833,18 +827,18 @@ targets of other extensions.
 
 **Extends**: `Trackable`  
 
-* [~TargetProvider] ⇐ `Trackable`
-    * [new TargetProvider(bus, dep, getExternalTargets)]
+* ~TargetProvider ⇐ `Trackable`
+    * new TargetProvider(bus, dep, getExternalTargets)
     * _instance_
-        * [.name] : `string`
-        * [.own]: `Object.<string, Target>`
-        * [.phase] : `string`
-        * [.declare(declarations)]
-        * [.of(depName)] ⇒ `Object.<string, Target>`
-        * [.toJSON()] ⇒ `Object`
-        * [.track(args)]
+        * .name : `string`
+        * .own : `Object.<string, Target>`
+        * .phase : `string`
+        * .declare(declarations)
+        * .of(depName) ⇒ `Object.<string, Target>`
+        * .toJSON() ⇒ `Object`
+        * .track(args)
     * _inner_
-        * [~toJSON()]
+        * ~toJSON()
 
 Creates an instance of TargetProvider.
 
@@ -855,7 +849,7 @@ Creates an instance of TargetProvider.
 | bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
 | dep | `Object` | The package which owns this TargetProvider. |
 | dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders) |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](/guides/general-concepts/extensibility/index.md#targetproviders) |
 
 The targets this package has declared in the `declare` phase.
 
@@ -887,7 +881,7 @@ objects.
 
 Serialize this Trackable and any parent Trackables.
 
-**Overrides**: [`toJSON`]
+**Overrides**: `toJSON`  
 **Returns:**
 `Object`
    — JSON-clean object that recurses up the parent tree.
@@ -900,7 +894,7 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-**Overrides**: [`track`]
+**Overrides**: `track`  
 **Parameters**
 
 | Name | Type | Description |
@@ -939,7 +933,7 @@ the end). Otherwise, returns `<unknown>`.
 | --- | --- | --- |
 | hook | `object` | Potental Tapable hook object |
 
-Respond to a request from a [TargetProvider](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders)
+Respond to a request from a [TargetProvider](/guides/general-concepts/extensibility/index.md#targetproviders)
 to retrieve a different(external) TargetProvider.
 
 This callback pattern helps to loosely couple TargetProviders so
@@ -956,35 +950,35 @@ they are more testable.
 | requestor | `TargetProvider` | TargetProvider making the request. |
 | requested | `string` | External targets being requested. |
 
-* [@magento/pwa-buildpack]
-    * [~BuildBus]
+* @magento/pwa-buildpack
+    * ~BuildBus
         * _instance_
-            * [.getTargetsOf(depName)] ⇒ `Object.<string, Target>`
-            * [.init()] ⇒ `BuildBus`
-            * [.runPhase(phase)]
+            * .getTargetsOf(depName) ⇒ `Object.<string, Target>`
+            * .init() ⇒ `BuildBus`
+            * .runPhase(phase)
         * _static_
-            * [.clear(context)]
-            * [.clearAll()]
-            * [.for(context)] ⇒ `BuildBus`
-    * [~Trackable]
+            * .clear(context)
+            * .clearAll()
+            * .for(context) ⇒ `BuildBus`
+    * ~Trackable
         * _instance_
-            * [.attach(identifier, owner)]
+            * .attach(identifier, owner)
         * _static_
-            * [.enableTracking()]
-            * [.disableTracking()]
+            * .enableTracking()
+            * .disableTracking()
 
 Manages dependency participation in project builds and tasks.
 It executes their declare and intercept files so they can interact with each other.
 
-* [~BuildBus]
+* ~BuildBus
     * _instance_
-        * [.getTargetsOf(depName)] ⇒ `Object.<string, Target>`
-        * [.init()] ⇒ `BuildBus`
-        * [.runPhase(phase)]
+        * .getTargetsOf(depName) ⇒ `Object.<string, Target>`
+        * .init() ⇒ `BuildBus`
+        * .runPhase(phase)
     * _static_
-        * [.clear(context)]
-        * [.clearAll()]
-        * [.for(context)] ⇒ `BuildBus`
+        * .clear(context)
+        * .clearAll()
+        * .for(context) ⇒ `BuildBus`
 
 Get [TargetProvider](TargetProvider) for the given named dependency. Use this to
 retrieve and run targets in top-level code, when you have a reference to
@@ -1052,7 +1046,7 @@ instance hasn't been sent as a parameter.
 | --- | --- | --- |
 | context | `string` | Root directory of the BuildBus to get or create. |
 
-**Example** *(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)*  
+**Example** _(Get or create the BuildBus for the package.json file in &#x60;./project-dir&#x60;, then bind targets, then call a target.)_
 
 ```js
 const bus = BuildBus.for('./project-dir);
@@ -1064,17 +1058,17 @@ Generic node in a tree of objects which can log their activity. Implemented
 for BuildBus, since it will eventually need sophisticated debugging and
 introspection for developers, but it has no BuildBus-specific functionality.
 
-* [~Trackable]
+* ~Trackable
     * _instance_
-        * [.attach(identifier, owner)]
+        * .attach(identifier, owner)
     * _static_
-        * [.enableTracking()]
-        * [.disableTracking()]
+        * .enableTracking()
+        * .disableTracking()
 
 Attach this Trackable to a tree. Give it a name and an owner. If the
 owner is a Trackable, then this Trackable becomes a child node of the
 owner. If the owner is a function, then this Trackable becomes a root
-node, which will log all of its [track] calls *and* its
+node, which will log all of its track calls _and_ its
 descendents' calls to the `owner` function.
 
 **See**: Trackable.spec.js  
@@ -1091,33 +1085,33 @@ Carries a possibly significant performance cost.
 Disable all active Trackable instances. The parent logging callback will
 not be called.
 
-* [Buildpack/BuildBus]
-    * [~Target] ⇐ `Trackable`
-        * [.call([...args])] ⇒ `\*`
-        * [.callAsync(...args)] ⇒ `undefined`
-        * [.intercept(options)] ⇒ `void`
-        * [.promise([...args])] ⇒ `Promise`
-        * [.tap([name], interceptor)] ⇒ `undefined`
-        * [.tapAsync(name, interceptor)] ⇒ `undefined`
-        * [.tapPromise(name, interceptor)] ⇒ `undefined`
-        * [.toJSON()]⇒ `object`
-        * [.track(args)]
-    * [~TargetProvider] ⇐ `Trackable`
-        * [new TargetProvider(bus, dep, getExternalTargets)]
+* Buildpack/BuildBus
+    * ~Target ⇐ `Trackable`
+        * .call([...args]) ⇒ `\*`
+        * .callAsync(...args) ⇒ `undefined`
+        * .intercept(options) ⇒ `void`
+        * .promise([...args]) ⇒ `Promise`
+        * .tap([name], interceptor) ⇒ `undefined`
+        * .tapAsync(name, interceptor) ⇒ `undefined`
+        * .tapPromise(name, interceptor) ⇒ `undefined`
+        * .toJSON() ⇒ `object`
+        * .track(args)
+    * ~TargetProvider ⇐ `Trackable`
+        * new TargetProvider(bus, dep, getExternalTargets)
         * _instance_
-            * [.name] : `string`
-            * [.own] : `Object.<string, Target>`
-            * [.phase] : `string`
-            * [.declare(declarations)]
-            * [.of(depName)] ⇒ `Object.<string, Target>`
-            * [.toJSON()] ⇒ `Object`
-            * [.track(args)]
+            * .name : `string`
+            * .own : `Object.<string, Target>`
+            * .phase : `string`
+            * .declare(declarations)
+            * .of(depName) ⇒ `Object.<string, Target>`
+            * .toJSON() ⇒ `Object`
+            * .track(args)
         * _inner_
-            * [~toJSON()]
-    * [~types] : `Object.<string, Tapable.Hook>`
-    * [~appearsToBeTapable(hookLike)] ⇒ `boolean`
-    * [~getTapableType(hook)] ⇒ `string`
-    * [~getExternalTargets] ⇒ `TargetProvider`
+            * ~toJSON()
+    * ~types : `Object.<string, Tapable.Hook>`
+    * ~appearsToBeTapable(hookLike) ⇒ `boolean`
+    * ~getTapableType(hook) ⇒ `string`
+    * ~getExternalTargets ⇒ `TargetProvider`
 
 Represents an edge on the graph, or a "route" between stops, created between
 two extensions when one of them references the target(s) of another. When
@@ -1128,16 +1122,16 @@ better logging, error checking, and validation.
 **Extends**: `Trackable`  
 **See**: [Tapable docs](https://github.com/webpack/tapable)  
 
-* [~Target] ⇐ `Trackable`
-    * [.call([...args])] ⇒ `\*`
-    * [.callAsync(...args)] ⇒ `undefined`
-    * [.intercept(options)] ⇒ `void`
-    * [.promise([...args])] ⇒ `Promise`
-    * [.tap([name], interceptor)] ⇒ `undefined`
-    * [.tapAsync(name, interceptor)] ⇒ `undefined`
-    * [.tapPromise(name, interceptor)] ⇒ `undefined`
-    * [.toJSON()] ⇒ `object`
-    * [.track(args)]
+* ~Target ⇐ `Trackable`
+    * .call([...args]) ⇒ `\*`
+    * .callAsync(...args) ⇒ `undefined`
+    * .intercept(options) ⇒ `void`
+    * .promise([...args]) ⇒ `Promise`
+    * .tap([name], interceptor) ⇒ `undefined`
+    * .tapAsync(name, interceptor) ⇒ `undefined`
+    * .tapPromise(name, interceptor) ⇒ `undefined`
+    * .toJSON() ⇒ `object`
+    * .track(args)
 
 Run `.call(...args)` on the underlying Tapable Hook.
 Calls interceptors synchronously and in subscription order with the
@@ -1232,7 +1226,7 @@ Adds a Promise-returning async interceptor to the Target. The interceptor may re
 
 Provides the JSON object representation of this target
 
-**Overrides**: [`toJSON`]
+**Overrides**: `toJSON`  
 **Returns:**
 `object`
    — JSON object
@@ -1245,7 +1239,7 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-**Overrides**: [`track`]
+**Overrides**: `track`  
 **Parameters**
 
 | Name | Type | Description |
@@ -1262,18 +1256,18 @@ targets of other extensions.
 
 **Extends**: `Trackable`  
 
-* [~TargetProvider] ⇐ `Trackable`
-    * [new TargetProvider(bus, dep, getExternalTargets)]
+* ~TargetProvider ⇐ `Trackable`
+    * new TargetProvider(bus, dep, getExternalTargets)
     * _instance_
-        * [.name] : `string`
-        * [.own]: `Object.<string, Target>`
-        * [.phase] : `string`
-        * [.declare(declarations)]
-        * [.of(depName)] ⇒ `Object.<string, Target>`
-        * [.toJSON()] ⇒ `Object`
-        * [.track(args)]
+        * .name : `string`
+        * .own : `Object.<string, Target>`
+        * .phase : `string`
+        * .declare(declarations)
+        * .of(depName) ⇒ `Object.<string, Target>`
+        * .toJSON() ⇒ `Object`
+        * .track(args)
     * _inner_
-        * [~toJSON()]
+        * ~toJSON()
 
 Creates an instance of TargetProvider.
 
@@ -1284,7 +1278,7 @@ Creates an instance of TargetProvider.
 | bus | `BuildBus` \| `function` | BuildBus using this TargetProvider, or, when testing, a logging function. |
 | dep | `Object` | The package which owns this TargetProvider. |
 | dep.name | `string` | Name of the package which owns this. |
-| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders) |
+| getExternalTargets | `getExternalTargets` | Function this TargetProvider will use to retrieve external packages when they are requested with `.of()`. Should usually be a delegate to BuildBus's [`getExternalTargets()`](/guides/general-concepts/extensibility/index.md#targetproviders) |
 
 The targets this package has declared in the `declare` phase.
 
@@ -1316,8 +1310,7 @@ objects.
 
 Serialize this Trackable and any parent Trackables.
 
-**Overrides**: [`toJSON`]
-
+**Overrides**: `toJSON`  
 **Returns:**
 `Object`
    — JSON-clean object that recurses up the parent tree.
@@ -1330,7 +1323,7 @@ recursively until they call the root output callback.
 Throws an exception if [Trackable#attach](Trackable#attach) has never been called
 on this instance.
 
-**Overrides**: [`track`]
+**Overrides**: `track`  
 **Parameters**
 
 | Name | Type | Description |
@@ -1369,7 +1362,7 @@ the end). Otherwise, returns `<unknown>`.
 | --- | --- | --- |
 | hook | `object` | Potental Tapable hook object |
 
-Respond to a request from a [TargetProvider](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/#targetproviders)
+Respond to a request from a [TargetProvider](/guides/general-concepts/extensibility/index.md#targetproviders)
 to retrieve a different(external) TargetProvider.
 
 This callback pattern helps to loosely couple TargetProviders so
@@ -1388,7 +1381,7 @@ they are more testable.
 
 Intercept function signature for the transformModules target.
 
-Interceptors of `transformModules` should call the [`addTransform()`]
+Interceptors of `transformModules` should call the `addTransform()`
 callback to add module specific transformers.
 Any returned value will be ignored.
 
@@ -1396,16 +1389,16 @@ Any returned value will be ignored.
 
 | Name | Type | Description |
 | --- | --- | --- |
-| addTransform | [`addTransform`] | Callback to add a transform. |
+| addTransform | `addTransform` | Callback to add a transform. |
 
 Callback to add a transform.
 
-**See**: [TransformRequest](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/transform-requests/)  
+**See**: [TransformRequest](/api/buildpack/transform-requests/index.md)  
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/transform-requests/) to apply a transform to a file provided by this dependency. |
+| transformRequest | `Buildpack/WebpackTools~TransformRequest` | [Request](/api/buildpack/transform-requests/index.md) to apply a transform to a file provided by this dependency. |
 
 Intercept function signature for the webpackCompiler target.
 

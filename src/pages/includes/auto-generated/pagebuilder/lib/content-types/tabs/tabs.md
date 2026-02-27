@@ -1,15 +1,14 @@
+## Functions
 
-Functions
-
-### `upperCaseString(string)` ⇒ `string`
+[upperCaseString(string)] ⇒ `string`
 
 Upper case the first letter of a string
 
-Typedefs
+## Typedefs
 
-### [props](#props)
+[props]
 
-Props for [Tabs]
+Props for Tabs
 
 Page Builder Tabs component.
 
@@ -23,7 +22,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`] | React component props |
+| props | `props` | React component props |
 
 Upper case the first letter of a string
 
@@ -34,7 +33,7 @@ Upper case the first letter of a string
 | --- | --- |
 | string | `string` |
 
-Props for [Tabs]
+Props for Tabs
 
 **Properties**
 
