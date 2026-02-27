@@ -64,7 +64,7 @@ This type is used in the ProductTalonProps type returned by the useProduct talon
 
 [QuantityTalonProps] : `Object`
 
-Object type returned by the [useQuantityStepper](useQuantityStepper) talon.
+Object type returned by the useQuantityStepper talon.
 It provides props data for a quantity UI component.
 
 [EditModalTalonProps] : `Object`
@@ -227,7 +227,7 @@ This type is used in the ProductTalonProps type returned by the useProduct talon
 | urlKey | `String` | The product's url key |
 | urlSuffix | `String` | The product's url suffix |
 
-Object type returned by the [useQuantityStepper](useQuantityStepper) talon.
+Object type returned by the useQuantityStepper talon.
 It provides props data for a quantity UI component.
 
 **Properties**

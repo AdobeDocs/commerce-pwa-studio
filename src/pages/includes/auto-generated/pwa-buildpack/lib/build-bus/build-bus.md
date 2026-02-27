@@ -91,7 +91,7 @@ It executes their declare and intercept files so they can interact with each oth
         * .clearAll()
         * .for(context) ⇒ `BuildBus`
 
-Get [TargetProvider](TargetProvider) for the given named dependency. Use this to
+Get TargetProvider for the given named dependency. Use this to
 retrieve and run targets in top-level code, when you have a reference to
 the BuildBus. Declare and intercept functions should not, and cannot,
 use this method. Instead, they retrieve external targets through their
@@ -980,7 +980,7 @@ It executes their declare and intercept files so they can interact with each oth
         * .clearAll()
         * .for(context) ⇒ `BuildBus`
 
-Get [TargetProvider](TargetProvider) for the given named dependency. Use this to
+Get TargetProvider for the given named dependency. Use this to
 retrieve and run targets in top-level code, when you have a reference to
 the BuildBus. Declare and intercept functions should not, and cannot,
 use this method. Instead, they retrieve external targets through their
