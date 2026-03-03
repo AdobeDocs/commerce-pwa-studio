@@ -39,7 +39,7 @@ A hook that provides access to the toast state and toast api.
 
 **Returns:**
 `Array.<Object>`
-   — An array containing objects for the toast state and its API: [[ToastState](../useToastContext#ToastState), API]
+   — An array containing objects for the toast state and its API: [[ToastState](use-toast-context.md), API]
 
 Object containing data for creating toasts using addToast.
 

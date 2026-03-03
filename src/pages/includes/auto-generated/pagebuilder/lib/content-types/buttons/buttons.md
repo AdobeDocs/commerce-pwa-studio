@@ -10,7 +10,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 **Returns:**
 `React.Element`
-   — A React component that wraps [ButtonItem](ButtonItem) components.
+   — A React component that wraps ButtonItem components.
 
 **Parameters**
 
