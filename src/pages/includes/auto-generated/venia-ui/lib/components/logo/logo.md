@@ -17,8 +17,8 @@ Props for the Logo component.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| classes | `Object` | `` | An object containing the class names for the Logo component. |
-| classes.logo | `string` | `` | Classes for logo |
+| classes | `Object` |  | An object containing the class names for the Logo component. |
+| classes.logo | `string` |  | CSS class name(s) applied to the logo element. |
 | [height] | `number` | `18` | Height of the logo. |
 | [width] | `number` | `102` | Width of the logo. |
 

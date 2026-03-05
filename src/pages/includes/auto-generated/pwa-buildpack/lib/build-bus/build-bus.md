@@ -91,7 +91,7 @@ It executes their declare and intercept files so they can interact with each oth
         * .clearAll()
         * .for(context) ⇒ `BuildBus`
 
-Get [TargetProvider](TargetProvider) for the given named dependency. Use this to
+Get TargetProvider for the given named dependency. Use this to
 retrieve and run targets in top-level code, when you have a reference to
 the BuildBus. Declare and intercept functions should not, and cannot,
 use this method. Instead, they retrieve external targets through their
@@ -509,11 +509,11 @@ Provides the JSON object representation of this target
    — JSON object
 
 Push an event to the parent Trackable, or, if no parent, to the root
-output callback provided to [Trackable#attach](Trackable#attach). All `.track`
+output callback provided to Trackable#attach. All `.track`
 calls are tagged with the instance's identifier and then rolled up
 recursively until they call the root output callback.
 
-Throws an exception if [Trackable#attach](Trackable#attach) has never been called
+Throws an exception if Trackable#attach has never been called
 on this instance.
 
 **Overrides**: `track`  
@@ -593,11 +593,11 @@ Serialize this Trackable and any parent Trackables.
    — JSON-clean object that recurses up the parent tree.
 
 Push an event to the parent Trackable, or, if no parent, to the root
-output callback provided to [Trackable#attach](Trackable#attach). All `.track`
+output callback provided to Trackable#attach. All `.track`
 calls are tagged with the instance's identifier and then rolled up
 recursively until they call the root output callback.
 
-Throws an exception if [Trackable#attach](Trackable#attach) has never been called
+Throws an exception if Trackable#attach has never been called
 on this instance.
 
 **Overrides**: `track`  
@@ -803,11 +803,11 @@ Provides the JSON object representation of this target
    — JSON object
 
 Push an event to the parent Trackable, or, if no parent, to the root
-output callback provided to [Trackable#attach](Trackable#attach). All `.track`
+output callback provided to Trackable#attach. All `.track`
 calls are tagged with the instance's identifier and then rolled up
 recursively until they call the root output callback.
 
-Throws an exception if [Trackable#attach](Trackable#attach) has never been called
+Throws an exception if Trackable#attach has never been called
 on this instance.
 
 **Overrides**: `track`  
@@ -887,11 +887,11 @@ Serialize this Trackable and any parent Trackables.
    — JSON-clean object that recurses up the parent tree.
 
 Push an event to the parent Trackable, or, if no parent, to the root
-output callback provided to [Trackable#attach](Trackable#attach). All `.track`
+output callback provided to Trackable#attach. All `.track`
 calls are tagged with the instance's identifier and then rolled up
 recursively until they call the root output callback.
 
-Throws an exception if [Trackable#attach](Trackable#attach) has never been called
+Throws an exception if Trackable#attach has never been called
 on this instance.
 
 **Overrides**: `track`  
@@ -980,7 +980,7 @@ It executes their declare and intercept files so they can interact with each oth
         * .clearAll()
         * .for(context) ⇒ `BuildBus`
 
-Get [TargetProvider](TargetProvider) for the given named dependency. Use this to
+Get TargetProvider for the given named dependency. Use this to
 retrieve and run targets in top-level code, when you have a reference to
 the BuildBus. Declare and intercept functions should not, and cannot,
 use this method. Instead, they retrieve external targets through their
@@ -1232,11 +1232,11 @@ Provides the JSON object representation of this target
    — JSON object
 
 Push an event to the parent Trackable, or, if no parent, to the root
-output callback provided to [Trackable#attach](Trackable#attach). All `.track`
+output callback provided to Trackable#attach. All `.track`
 calls are tagged with the instance's identifier and then rolled up
 recursively until they call the root output callback.
 
-Throws an exception if [Trackable#attach](Trackable#attach) has never been called
+Throws an exception if Trackable#attach has never been called
 on this instance.
 
 **Overrides**: `track`  
@@ -1316,11 +1316,11 @@ Serialize this Trackable and any parent Trackables.
    — JSON-clean object that recurses up the parent tree.
 
 Push an event to the parent Trackable, or, if no parent, to the root
-output callback provided to [Trackable#attach](Trackable#attach). All `.track`
+output callback provided to Trackable#attach. All `.track`
 calls are tagged with the instance's identifier and then rolled up
 recursively until they call the root output callback.
 
-Throws an exception if [Trackable#attach](Trackable#attach) has never been called
+Throws an exception if Trackable#attach has never been called
 on this instance.
 
 **Overrides**: `track`  

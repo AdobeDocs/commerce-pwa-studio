@@ -283,7 +283,7 @@ This target allows you to add custom payment summary rendering for the summary p
 
 **See**
 
-- [Intercept function signature](summaryPagePaymentTypesInterceptFunction)
+- Intercept function signature (summaryPagePaymentTypesInterceptFunction)
 - EditablePaymentTypes
 - EditablePayment definition object
 

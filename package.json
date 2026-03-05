@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/AdobeDocs/commerce-pwa-studio"
   },
+  "config": {
+    "sitePath": "commerce/pwa-studio"
+  },
   "author": "PWA Studio Team",
   "scripts": {
     "dev": "node ./dev.mjs",
