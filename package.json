@@ -1,15 +1,12 @@
 {
-  "name": "dev-docs-template",
+  "name": "commerce-pwa-studio",
   "version": "1.0.0",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdobeDocs/dev-docs-template"
+    "url": "https://github.com/AdobeDocs/commerce-pwa-studio"
   },
-  "author": {
-    "name": "Tim Kim",
-    "url": "https://github.com/timkim"
-  },
+  "author": "PWA Studio Team",
   "scripts": {
     "dev": "npx --yes github:AdobeDocs/adp-devsite-utils dev",
     "buildNavigation": "npx --yes github:AdobeDocs/adp-devsite-utils buildNavigation -v",
