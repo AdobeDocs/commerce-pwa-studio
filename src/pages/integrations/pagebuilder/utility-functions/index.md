@@ -4,7 +4,7 @@ description: View detailed API reference documentation about PWA Studio utility 
 jsDoc: true
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 PaaS only
 
 # Utility functions

@@ -3,7 +3,7 @@ title: Add stylesheet
 description: View code samples for adding stylesheets to custom Page Builder components in PWA Studio storefront projects.
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 PaaS only
 
 # Add stylesheet

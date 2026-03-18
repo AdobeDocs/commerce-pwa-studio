@@ -3,7 +3,7 @@ title: Image
 description: View detailed API reference documentation about the image content type of the Page Builder component for PWA Studio storefront projects.
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 PaaS only
 
 # Image

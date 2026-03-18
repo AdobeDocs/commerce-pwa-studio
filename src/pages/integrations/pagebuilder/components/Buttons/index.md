@@ -4,7 +4,7 @@ description: View detailed API reference documentation about the buttons content
 jsDoc: true
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 PaaS only
 
 # Buttons and ButtonItem

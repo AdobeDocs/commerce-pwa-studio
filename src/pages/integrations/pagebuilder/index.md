@@ -7,7 +7,7 @@ keywords:
   - Storefront
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 
 PaaS only
 
