@@ -3,7 +3,7 @@ title: HTML Code
 description: View detailed API reference documentation about the HTML code content type of the Page Builder component for PWA Studio storefront projects.
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 PaaS only
 
 # HTML Code

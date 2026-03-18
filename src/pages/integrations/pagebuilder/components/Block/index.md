@@ -4,7 +4,7 @@ description: View detailed API reference documentation about the block content t
 jsDoc: true
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 PaaS only
 
 # Block

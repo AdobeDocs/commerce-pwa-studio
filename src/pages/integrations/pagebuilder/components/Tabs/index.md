@@ -3,7 +3,7 @@ title: Tabs
 description: View detailed API reference documentation about the tabs content type of the Page Builder component for PWA Studio storefront projects.
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 PaaS only
 
 # Tabs and TabItem

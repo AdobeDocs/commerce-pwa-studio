@@ -3,7 +3,7 @@ title: Known limitations
 description: Review limitations of the PWA Studio framework.
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 PaaS only
 
 # Known limitations

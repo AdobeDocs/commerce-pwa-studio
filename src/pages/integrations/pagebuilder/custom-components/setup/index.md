@@ -3,7 +3,7 @@ title: Set up component
 description: View code samples for integrating your Page Builder component with a PWA Studio storefront project.
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 PaaS only
 
 # Set up component

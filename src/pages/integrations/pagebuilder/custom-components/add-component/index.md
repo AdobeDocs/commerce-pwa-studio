@@ -3,7 +3,7 @@ title: Add component
 description: View code samples for adding a custom Page Builder component to PWA Studio storefront projects.
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 PaaS only
 
 # Add component

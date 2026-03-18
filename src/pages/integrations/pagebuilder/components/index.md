@@ -3,7 +3,7 @@ title: Page Builder components
 description: Learn about rendering Page Builder content types in PWA Studio storefront projects.
 ---
 
-<Edition slot="text" backgroundColor="blue"/>
+<Edition slots="text" backgroundColor="blue"/>
 PaaS only
 # Page Builder components
 
