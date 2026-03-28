@@ -287,8 +287,8 @@ The PWA Studio scaffolding tool also installs extensions on all new storefront p
 These extensions use the framework to add useful features on top of the base application.
 They are also examples of what a PWA Studio storefront extension looks like.
 
-[@magento/upward-security-headers](https://github.com/magento/pwa-studio/blob/develop/packages/extensions/upward-security-headers)
+[@magento/upward-security-headers](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/upward-security-headers)
 : This extension adds security headers to UPWARD by tapping into the `transformUpward` Target in Buildpack.
 
-[@magento/venia-sample-language-packs](https://github.com/magento/pwa-studio/blob/develop/packages/extensions/venia-sample-language-packs)
+[@magento/venia-sample-language-packs](https://github.com/magento/pwa-studio/tree/develop/packages/extensions/venia-sample-language-packs)
 : This extension provides sample translations for PWA Studio's internationalization feature.

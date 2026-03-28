@@ -187,7 +187,7 @@ To access a global state slice, wrap the `PeregrineContextProvider` around the m
 Next, import the appropriate [context hook][] and decompose the array returned by the hook function call.
 The decomposed array yields the state data and an API object to update that state.
 
-[context hook]: https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/context
+[context hook]: https://github.com/magento/pwa-studio/tree/develop/packages/peregrine/lib/context
 
 ```jsx
 // Example src/components/MyWelcomeMessage/myWelcomeMessage.js

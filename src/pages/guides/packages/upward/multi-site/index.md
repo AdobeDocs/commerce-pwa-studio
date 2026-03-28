@@ -23,14 +23,14 @@ Create environment-specific configuration for each store you want to build.
 
 **Example .env files:**
 
-**.env.french**
+**.env.french:**
 
 ```terminal
 MAGENTO_BACKEND_URL=https://french.yoursite.com
 STORE_VIEW_CODE=french
 ```
 
-**.env.german**
+**.env.german:**
 
 ```terminal
 MAGENTO_BACKEND_URL=https://german.yoursite.com

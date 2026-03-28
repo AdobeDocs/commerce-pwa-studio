@@ -5,6 +5,7 @@ description: Learn about rendering Page Builder content types in PWA Studio stor
 
 <Edition slots="text" backgroundColor="blue"/>
 PaaS only
+
 # Page Builder components
 
 The Page Builder integration for PWA Studio provides React components that render the default Page Builder content types.
