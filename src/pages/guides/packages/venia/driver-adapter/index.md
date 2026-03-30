@@ -43,5 +43,5 @@ If you [set up your project][] using the scaffolding tool, your project code alr
 [adapter component]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/drivers/adapter.js
 [apolloprovider]: https://www.apollographql.com/docs/react/get-started#connect-your-client-to-react
 [reduxprovider]: https://react-redux.js.org/api/provider
-[browserrouter]: https://reactrouter.com/en/main/router-components/browser-router
+[browserrouter]: https://api.reactrouter.com/v7/functions/react-router.BrowserRouter.html
 [set up your project]: /tutorials/setup-storefront/index.md

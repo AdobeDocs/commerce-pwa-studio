@@ -52,7 +52,7 @@ At this point, you should see symlinks for all the `pwa-commerce` modules inside
 -  Run a Magento installation with additional modules.
 -  Develop locally using the standard git workflow.
 
-Make sure that all of the required modules are enabled when you run `bin/magento module:status`. See, [Enable or disable a component](https://developer.adobe.com/commerce/php/development/build/component-management/) in the _PHP Developer Guide_ for instructions.
+Make sure that all of the required modules are enabled when you run `bin/magento module:status`. See, [Enable or disable a component](https://developer.adobe.com/commerce/php/development/build/component-management) in the _PHP Developer Guide_ for instructions.
 The following modules should now be enabled:
 
 ```terminal

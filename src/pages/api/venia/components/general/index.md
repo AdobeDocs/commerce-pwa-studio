@@ -11,7 +11,7 @@ The components in this group are standard UI components that are commonly found 
 
 - [Button](button/index.md)
 - [ButtonGroup](button-group/index.md)
-- [Link](link/index.md)
+- [Link component](link/index.md)
 - [Logo](logo/index.md)
 - [Mask](mask/index.md)
 - [Portal](portal/index.md)

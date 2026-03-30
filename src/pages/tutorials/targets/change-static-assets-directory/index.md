@@ -9,7 +9,7 @@ When you build a storefront project based on the Venia template, it copies the [
 This directory contains brand-specific files such as icons and the website's `manifest.json` file.
 To use a different set of these files, you will need to create a new static assets directory and copy it into `dist` during build time.
 
-[`venia-static` directory]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/venia-static
+[`venia-static` directory]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/venia-static
 
 ## Tasks overview
 
@@ -120,7 +120,7 @@ Even though this object is not used anywhere during runtime, this entry declares
 You can also explicitly tell Webpack to copy the static assets directory over using a copy plugin.
 To do this, you need to install the [`copy-webpack-plugin` dependency][].
 
-[`copy-webpack-plugin` dependency]: https://github.com/webpack-contrib/copy-webpack-plugin
+[`copy-webpack-plugin` dependency]: https://github.com/webpack/copy-webpack-plugin
 
 ```sh
 yarn add --dev copy-webpack-plugin@6.4.1
