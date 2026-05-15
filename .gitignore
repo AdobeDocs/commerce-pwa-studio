@@ -1,3 +1,5 @@
+# .gitignore
+
 # OS and IDE generated files
 .DS_Store
 .vscode
@@ -36,3 +38,22 @@ github_conf
 # local dev
 tmp
 linter-report.txt
+
+# Added by update-bot
+yarn-error.log
+.pnp.*
+.yarn/*
+!.gitignore
+!.yarn.lock
+!.yarnrc.yml
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.actrc
+.secrets
+local-test.yml
+.yalc
+yalc.lock
+linter-output.txt
