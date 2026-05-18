@@ -1,14 +1,21 @@
-## Typedefs
 
-[props]
+Typedefs
 
-Props for Row
+<dl>
+<dt><a href="#props">props</a></dt>
+<dd>
+
+Props for [Row](#Row)
+
+</dd>
+</dl>
+
 
 Page Builder Row component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns:**
+**Returns: **
 `React.Element`
    — A React component that displays a Row which contains content.
 
@@ -16,9 +23,10 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | `props` | React component props |
+| props | [`props`](#props) | React component props |
 
-Props for Row
+
+Props for [Row](#Row)
 
 **Properties**
 
@@ -61,5 +69,7 @@ Props for Row
 | videoPlayOnlyVisible | `Boolean` | Play video when it is visible |
 | videoLazyLoading | `Boolean` | Load video when it is visible |
 | videoOverlayColor | `String` | Color for video overlay |
+
+
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Row/row.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Row/row.js)

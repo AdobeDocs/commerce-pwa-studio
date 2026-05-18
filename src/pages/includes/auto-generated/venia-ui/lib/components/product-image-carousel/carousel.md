@@ -1,16 +1,22 @@
 
-## Typedefs
+Typedefs
 
-[props]
+<dl>
+<dt><a href="#props">props</a></dt>
+<dd>
 
-Props for ProductImageCarousel
+Props for [ProductImageCarousel](#ProductImageCarousel)
+
+</dd>
+</dl>
+
 
 Carousel component for product images
 Carousel - Component that holds number of images
 where typically one image visible, and other
 images can be navigated through previous and next buttons
 
-**Returns:**
+**Returns: **
 `React.Element`
    — React carousel component that displays a product image
 
@@ -18,9 +24,10 @@ images can be navigated through previous and next buttons
 
 | Name | Type |
 | --- | --- |
-| props | `props` |
+| props | [`props`](#props) | 
 
-Props for ProductImageCarousel
+
+Props for [ProductImageCarousel](#ProductImageCarousel)
 
 **Properties**
 
@@ -38,5 +45,7 @@ Props for ProductImageCarousel
 | images[].uid | `string` | the id of the image |
 | images[].label | `string` | label for image |
 | images[].position | `string` | Position of image in Carousel |
+
+
 
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/ProductImageCarousel/carousel.js)
