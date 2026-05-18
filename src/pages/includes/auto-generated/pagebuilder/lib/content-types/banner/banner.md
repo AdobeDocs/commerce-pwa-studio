@@ -1,21 +1,15 @@
 
-Typedefs
+## Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
+[props]
 
-Props for [Banner](#Banner)
-
-</dd>
-</dl>
-
+Props for Banner
 
 Page Builder Banner component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that displays a Banner.
 
@@ -23,12 +17,11 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | `props` | React component props |
 
+Props for Banner
 
-Props for [Banner](#Banner)
-
-**Properties**
+Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -90,7 +83,5 @@ Props for [Banner](#Banner)
 | videoLazyLoading | `Boolean` | Load video when it is visible |
 | videoOverlayColor | `String` | Color for video overlay |
 | getParallax | `function` | Return parallax element and options |
-
-
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Banner/banner.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Banner/banner.js)
