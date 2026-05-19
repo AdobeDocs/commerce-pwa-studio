@@ -1,57 +1,44 @@
 
 Functions
 
-<dl>
-<dt><a href="#restoreSortOrder">restoreSortOrder(urlKeys, products)</a> ⇒ <inlineCode>Array</inlineCode></dt>
-<dd>
+[restoreSortOrder(urlKeys, products)] ⇒ Array
 
 Sort products based on the original order
 
-</dd>
-</dl>
-
-
 Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
+[props]
 
-Props for [Products](#Products)
-
-</dd>
-</dl>
-
+Props for Products
 
 Page Builder Products component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that displays a Products based on a number of products
 
-**Parameters**
+## Parameters
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | props | React component props |
 
 
 Sort products based on the original order
 
-**Returns: **
-**Parameters**
+**Returns:**
+## Parameters
 
 | Name | Type |
 | --- | --- |
 | urlKeys | `Array` | 
 | products | `Array` | 
 
+Props for Products
 
-Props for [Products](#Products)
-
-**Properties**
+## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -90,7 +77,5 @@ Props for [Products](#Products)
 | slidesToShowMedium | `Number` | # of slides to show at a time on medium sized screens |
 | slidesToShowSmall | `Number` | # of slides to show at a time on small screen |
 | slidesToShowSmallCenterMode | `Number` | # of slides to show at a time on small screen in centerMode |
-
-
 
 **Source Code**: [pwa-studio/packages/pagebuilder/lib/ContentTypes/Products/products.js](https://github.com/magento/pwa-studio/blob/develop/packages/pagebuilder/lib/ContentTypes/Products/products.js)
