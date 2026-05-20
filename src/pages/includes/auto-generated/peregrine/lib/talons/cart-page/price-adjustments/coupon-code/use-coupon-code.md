@@ -301,7 +301,7 @@ It provides prop data to use when rendering shipping methods.
 | --- | --- | --- |
 | hasMethods | `number` | Provides the number of shipping methods available. Can be used as a boolean value since having no shipping methods would return 0. |
 | isShowingForm | `boolean` | True if the form should be shown. False otherwise. |
-| selectedShippingFields | [`SelectShippingFields`](#SelectShippingFields) | Values for the select input fields on the shipping form |
+| selectedShippingFields | SelectShippingFields | Values for the select input fields on the shipping form |
 | selectedShippingMethod | `String` | A serialized string of ${carrier-code}\|${method-code}, eg. usps\|priority. |
 | shippingMethods | `Array.<Object>` | A list of available shipping methods based on the primary shipping address |
 | showForm | `function` | A function that sets the `isShowingForm` value to true. |

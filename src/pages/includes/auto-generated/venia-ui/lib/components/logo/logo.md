@@ -17,9 +17,9 @@ Props for the Logo component.
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
-| classes | `Object` | <inlineCode></inlineCode> | An object containing the class names for the Logo component. |
-| classes.logo | `string` | <inlineCode></inlineCode> | Classes for logo |
-| [height] | `number` | <inlineCode>18</inlineCode> | Height of the logo. |
-| [width] | `number` | <inlineCode>102</inlineCode> | Width of the logo. |
+| classes | `Object` |  | An object containing the class names for the Logo component. |
+| classes.logo | `string` | | Classes for logo |
+| [height] | `number` | 18 | Height of the logo. |
+| [width] | `number` | 102 | Width of the logo. |
 
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/Logo/logo.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Logo/logo.js)

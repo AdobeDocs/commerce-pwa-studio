@@ -77,7 +77,7 @@ Intercept this target in your project to add new environment
 variables, typed and documented. This integrates your extension
 configuration with the project-wide environment variable system.
 
-**See**
+## See
 
 * [Variable definition schema](/api/buildpack/environment/definition-object/index.md)
 * [Core variable definitions](/api/buildpack/environment/variables/index.md)
@@ -219,7 +219,7 @@ displayed on the console at the end of the process.
 | --- | --- |
 | validator | `envValidationInterceptor` |
 
-**Example**
+## Example
 
 ```js
 targets.of('@magento/pwa-buildpack').validateEnv.tapPromise(validateBackendUrl);
