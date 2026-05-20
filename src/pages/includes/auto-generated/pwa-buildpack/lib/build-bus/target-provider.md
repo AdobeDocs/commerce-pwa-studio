@@ -35,7 +35,7 @@ targets of other extensions.
 
 Creates an instance of TargetProvider.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -51,7 +51,7 @@ The phase currently being executed. Either `declare` or `intercept`.
 Call this function in the declare phase to register targets that this package and
 other packages can intercept.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -66,7 +66,7 @@ can then be intercepted by calling `.tap()` methods on them.
 of the requested package's targets, and whose values are the target
 objects.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -82,7 +82,7 @@ they are more testable.
 `TargetProvider`
    — TargetProvider for the requested targets.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |

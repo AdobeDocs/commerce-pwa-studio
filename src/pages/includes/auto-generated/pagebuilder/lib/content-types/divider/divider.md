@@ -1,9 +1,9 @@
-
-Typedefs
+## Typedefs
 
 [props]
 
 Props for Divider
+
 Page Builder Divider component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
@@ -12,15 +12,15 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 `React.Element`
    — A React component that displays a Divider.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | props | React component props |
+| props | `props` | React component props |
 
 Props for Divider
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

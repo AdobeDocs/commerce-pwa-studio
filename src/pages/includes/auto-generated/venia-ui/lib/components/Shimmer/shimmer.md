@@ -1,5 +1,5 @@
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -11,7 +11,7 @@
 | type | `'rectangle'` \| `'button'` \| `'checkbox'` \| `'radio'` \| `'textArea'` \| `'textInput'` | The base element shape to apply to the Shimmer. |
 | children | `node` | Children to output within the Shimmer. Useful for setting image placeholders. |
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

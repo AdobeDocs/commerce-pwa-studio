@@ -13,7 +13,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 `React.Element`
    — A React component that displays a Banner.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -21,7 +21,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 Props for Banner
 
-## Parameters
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

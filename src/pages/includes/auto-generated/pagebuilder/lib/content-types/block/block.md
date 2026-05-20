@@ -1,5 +1,4 @@
-
-Typedefs
+## Typedefs
 
 [props]
 
@@ -9,23 +8,19 @@ Page Builder Block component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
 
-Page Builder Block component.
-
-This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
-
 **Returns:**
 `React.Element`
    — A React component that displays a Block.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | props | React component props |
+| props | `props` | React component props |
 
 Props for Block
 
-## Parameters
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

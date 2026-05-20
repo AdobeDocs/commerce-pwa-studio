@@ -21,9 +21,10 @@ Object containing data for creating toasts using addToast.
 The API for managing toasts.
 Use this API to add and remove toasts.
 
-Generates an identifier for a toast by inspecting the properties that differentiate toasts from one another.
+Generates an identifier for a toast by inspecting the properties that
+differentiate toasts from one another.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
@@ -38,11 +39,11 @@ A hook that provides access to the toast state and toast api.
 
 **Returns:**
 `Array.<Object>`
-   — An array containing objects for the toast state and its API: [[ToastState](../useToastContext#ToastState), API]
+   — An array containing objects for the toast state and its API: [[ToastState](use-toast-context.md), API]
 
 Object containing data for creating toasts using addToast.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -66,7 +67,7 @@ Use this API to add and remove toasts.
 
 Removes a toast from the toast store.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -79,10 +80,10 @@ and a timeout id generated based on the incoming props.
 `Number`
    — id The key referencing the toast in the store
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| toastProps | ToastProps | The object containing props for adding a toast. |
+| toastProps | `ToastProps` | The object containing props for adding a toast. |
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/Toasts/useToasts.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/Toasts/useToasts.js)

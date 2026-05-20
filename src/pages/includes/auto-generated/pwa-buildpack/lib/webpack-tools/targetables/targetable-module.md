@@ -18,7 +18,7 @@ transform it in many ways.
 
 Create a TargetableModule representing a file.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |

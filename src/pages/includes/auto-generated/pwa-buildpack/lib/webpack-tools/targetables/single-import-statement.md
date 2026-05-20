@@ -1,7 +1,8 @@
 
 Represents a static import statement in an ES module. SingleImportStatemnts
 are used inside TargetableESModule methods to keep track of the new
-dependencies being added to the module, and to resolve conflicts when they occur.
+dependencies being added to the module, and to resolve conflicts when they
+occur.
 
 The typical way to add new imports to a TargetableESModule is to pass a
 static import statement. The import statement can accomplish two things:
@@ -17,7 +18,7 @@ deduping and scope conflict resolution.
     - .changeBinding(newBinding) ⇒ `SingleImportStatement`
     - .toString() ⇒
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -26,17 +27,19 @@ deduping and scope conflict resolution.
 Creates a new SingleImportStatement object with a different binding.
 
 **Returns:**
-SingleImportStatement
+`SingleImportStatement`
    — A new SingleImportStatement that is a copy
-of this one, but with the binding renamed. The `originalStatement` and `statement` properties are rewritten to use the new binding.
+of this one, but with the binding renamed. The `originalStatement` and
+`statement` properties are rewritten to use the new binding.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | newBinding | `string` | Binding to rename. |
 
-When interpolated as a string, a SingleImportStatement becomes the value of its `binding` property.
+When interpolated as a string, a SingleImportStatement becomes the value
+of its `binding` property.
 
 **Returns:**
   string

@@ -1,3 +1,4 @@
+
 ## Functions
 
 [useGiftCards(props)] ⇒ `[GiftCardsTalonProps]`
@@ -49,8 +50,8 @@ This talon performs the following effects:
 | --- | --- | --- |
 | props | `Object` |  |
 | props.setIsCartUpdating | `function` | Callback function for setting the update state for the cart. |
-| props.mutations | GiftCardsMutations | GraphQL mutations for Gift Cards |
-| props.queries | GiftCardsQueries | GraphQL queries for Gift Cards |
+| props.mutations | `GiftCardsMutations` | GraphQL mutations for Gift Cards |
+| props.queries | `GiftCardsQueries` | GraphQL queries for Gift Cards |
 
 **Example** *(Importing into your project)*
 
@@ -69,7 +70,7 @@ Provide logic for a single gift card component.
 | props.code | `String` | Gift card's code |
 | props.removeGiftCard | `function` | A function that removes a gift card when provided a code |
 
-**Example** *(Importing into your project)*
+**Example** *(Importing into your project)*  
 
 ```js
 import { useGiftCard } from '@magento/peregrine/lib/talons/CartPage/GiftCards/useGiftCard';
@@ -99,7 +100,7 @@ for queries used in Venia
 
 Props data to use when rendering a list of gift cards.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -121,7 +122,7 @@ Props data to use when rendering a list of gift cards.
 
 Props data to use when rendering a single gift card component.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

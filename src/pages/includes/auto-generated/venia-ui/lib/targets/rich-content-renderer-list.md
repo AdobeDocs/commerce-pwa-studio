@@ -10,7 +10,7 @@ An instance of this class is made available when you use VeniaUI's
 
 Add a rendering strategy to the RichContent component.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |

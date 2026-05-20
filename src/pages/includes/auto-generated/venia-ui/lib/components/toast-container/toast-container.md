@@ -1,3 +1,4 @@
+
 ## Typedefs
 
 [props]
@@ -13,15 +14,15 @@ ToastContextProvider component.
 `React.Element`
    — A React component that displays toast notification data.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | props | React component props |
+| props | `props` | React component props |
 
 Props for ToastContainer
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

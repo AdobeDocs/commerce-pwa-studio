@@ -1,5 +1,4 @@
-
-Typedefs
+## Typedefs
 
 [props]
 
@@ -13,15 +12,15 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 `React.Element`
    — A React component that displays a Text content type which contains content.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | props | React component props |
+| props | `props` | React component props |
 
 Props for Text
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

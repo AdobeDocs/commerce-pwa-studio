@@ -1,9 +1,9 @@
 
-A [React Hook](https://reactjs.org/docs/hooks-intro.html) that gets
+A [React Hook](https://legacy.reactjs.org/docs/hooks-intro.html) that gets
 a search parameter from a URL and calls a provided setter function with
 the corresponding value.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |

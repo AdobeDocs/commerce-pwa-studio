@@ -30,9 +30,9 @@ It is recommended to only create/use a single time at the top level of your app
 **Summary**: A React context provider.  
 **Returns:**
 `Context.Provider`
-   — A [React context provider](https://reactjs.org/docs/context.html)
+   — A [React context provider](https://legacy.reactjs.org/docs/context.html)
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |

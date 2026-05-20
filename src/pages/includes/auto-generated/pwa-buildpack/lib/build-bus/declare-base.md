@@ -77,12 +77,12 @@ Intercept this target in your project to add new environment
 variables, typed and documented. This integrates your extension
 configuration with the project-wide environment variable system.
 
-## See
+**See**
 
 * [Variable definition schema](/api/buildpack/environment/definition-object/index.md)
 * [Core variable definitions](/api/buildpack/environment/variables/index.md)
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -175,7 +175,7 @@ files in every package which sets the `upward: true` flag in the
 UpwardIncludePlugin calls this target with the parsed and merged
 definition.
 
-## Parameters
+**Parameters**
 
 | Name | Type |
 | --- | --- |
@@ -213,13 +213,13 @@ function can submit multiple errors by calling the onFail function
 multiple times. All the errors will be queued into an array and
 displayed on the console at the end of the process.
 
-## Parameters
+**Parameters**
 
 | Name | Type |
 | --- | --- |
 | validator | `envValidationInterceptor` |
 
-## Example
+**Example**
 
 ```js
 targets.of('@magento/pwa-buildpack').validateEnv.tapPromise(validateBackendUrl);
@@ -231,7 +231,7 @@ Interceptors of `transformModules` should call the `addTransform()`
 callback to add module specific transformers.
 Any returned value will be ignored.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -251,7 +251,7 @@ Intercept function signature for the webpackCompiler target.
 Interceptors of `webpackCompiler` should tap hooks on the provided
 `compiler` object. Any returned value will be ignored.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -262,7 +262,7 @@ Intercept function signature for the specialFeatures target.
 Interceptors of the `specialFeatures` target can use the mapping object provided
 to map special build flags to their project modules.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |

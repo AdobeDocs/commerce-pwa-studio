@@ -11,15 +11,15 @@ A component that will trigger a given action.
 `React.Element`
    — A React component that when triggered invokes the action.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | props | React component props |
+| props | `props` | React component props |
 
 Props for Trigger
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

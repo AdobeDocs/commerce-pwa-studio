@@ -32,7 +32,7 @@ Targetable and enables automatic interception of targets.
 `TargetableModule`
    — Returns an instance of TargetableModule.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -43,7 +43,7 @@ Targetable and enables automatic interception of targets.
 `TargetableESModule`
    — Returns an instance of TargetableESModule.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -54,7 +54,7 @@ Targetable and enables automatic interception of targets.
 `TargetableESModuleArray`
    — Returns an instance of TargetableESModuleArray.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -65,7 +65,7 @@ Targetable and enables automatic interception of targets.
 `TargetableESModuleObject`
    — Returns an instance of TargetableESModuleObject.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -76,7 +76,7 @@ Targetable and enables automatic interception of targets.
 `TargetableReactComponent`
    — Returns an instance of TargetableReactComponent
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -85,7 +85,7 @@ Targetable and enables automatic interception of targets.
 
 Taps the builtin `specialFeatures` target and sets the supplied feature flags.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -93,7 +93,7 @@ Taps the builtin `specialFeatures` target and sets the supplied feature flags.
 
 Tap the builtin `envVarDefinitions` target to define new environment variables.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |

@@ -1,4 +1,3 @@
-
 ## Functions
 
 [upperCaseString(string)] ⇒ `string`
@@ -19,11 +18,11 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 `React.Element`
    — A React component that displays a set of Tabs.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | prop | React component props |
+| props | `props` | React component props |
 
 Upper case the first letter of a string
 
@@ -36,7 +35,7 @@ Upper case the first letter of a string
 
 Props for Tabs
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

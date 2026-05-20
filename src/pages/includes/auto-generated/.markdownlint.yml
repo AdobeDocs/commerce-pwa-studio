@@ -1,0 +1,6 @@
+# Extends the root config and disables MD036 for auto-generated documentation
+# files. These files use bold text (e.g. **Parameters**, **Properties**) as
+# section labels by convention — converting them to headings would break the
+# generated output format.
+extends: "../../../../.markdownlint.yml"
+MD036: false

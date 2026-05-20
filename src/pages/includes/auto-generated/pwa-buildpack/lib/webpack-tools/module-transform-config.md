@@ -47,7 +47,7 @@ loader and plugin configuration.
         * .add ⇒
     * .toLoaderOptions() ⇒ `object`
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -60,7 +60,7 @@ the first argument to an interceptor of the `transformModules` target.
 **Returns:**
   null
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -72,7 +72,7 @@ Resolve paths and emit as JSON.
 `object`
    — Configuration object
 
-## Properties
+**Properties**
 
 | Name | Type | Default                             | Description |
 | --- | --- |-------------------------------------| --- |
@@ -85,7 +85,7 @@ the first argument to an interceptor of the `transformModules` target.
 **Returns:**
   null
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -97,7 +97,7 @@ gathers TransformRequests from all interceptors of the `transformModules`
 target and turns them into a configuration of Webpack [module
 rules](https://v4.webpack.js.org/configuration/module/#modulerules).
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

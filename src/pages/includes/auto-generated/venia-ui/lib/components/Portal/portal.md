@@ -12,7 +12,7 @@ outside of the DOM hierarchy of the parent component.
 `React.ReactPortal`
    — The React portal.
 
-**See**: https://reactjs.org/docs/portals.html  
+**See**: https://legacy.reactjs.org/docs/portals.html  
 **Parameters**
 
 | Name | Type | Description |
@@ -22,7 +22,7 @@ outside of the DOM hierarchy of the parent component.
 
 Props for Portal
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

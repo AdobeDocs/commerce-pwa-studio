@@ -53,7 +53,7 @@ to validate the currently defined values in the environment.
 `EnvVarDefinitions` are also used by [`createDotEnvFile()`](/api/buildpack/cli/create-environment-file/index.md)
 to generate an extensively commented `.env` file for a project.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -65,7 +65,7 @@ A list of related definitions concerning a particular functional area.
 All defined variable names under a particular functional area should have the same prefix, to help namespace and organize configuration.
 For instance, all variable names in the "Custom local origin" section begin with `CUSTOM_ORIGIN_`.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -85,7 +85,7 @@ object returned by [`loadEnvironment()`](/api/buildpack/cli/load-environment-fil
 Any environment variable during the build is accessible via `process.env` in NodeJS.
 However, only the variables defined by `EnvVarDefinition` entries will be available in the frontend, via the [Webpack EnvironmentPlugin](https://webpack.js.org/plugins/environment-plugin/).
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -101,7 +101,7 @@ Can indicate that the environment variable was _removed_ or _renamed_.
 Change objects can log informative warnings to developers to help with migration.
 They may also be used to make `loadEnvironment()` support the legacy name of a renamed variable.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

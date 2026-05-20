@@ -33,7 +33,7 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | CartPageQueries | GraphQL queries |
+| props.queries | `CartPageQueries` | GraphQL queries |
 
 **Example** *(Importing into your project)*
 
@@ -43,7 +43,7 @@ import { useCartPage } from '@magento/peregrine/lib/talons/CartPage/useCartPage'
 
 GraphQL formatted string queries used in this talon.
 
-**See**: [cartPage.gql.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/cartPage.gql.js)
+**See**: [cartPage.gql.js](https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/components/CartPage/cartPage.gql.js)
 for queries used in Venia  
 **Properties**
 
@@ -53,7 +53,7 @@ for queries used in Venia
 
 Props data to use when rendering a cart page component.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

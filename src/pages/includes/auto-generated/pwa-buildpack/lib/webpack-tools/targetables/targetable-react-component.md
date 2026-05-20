@@ -38,12 +38,12 @@ wrapper for use with React.Suspense.
 `string`
    — Name of the local binding of the element, to be used in JSX operations.
 
-## Parameters
+**Parameters**
 
-| Name | Type | Default | Description |
-| --- | --- | --- | --- |
-| modulePath | `string` |  | Resolvable path to the module to import. |
-| [localName] | `string` | Component | Optional human-readable name for debugging. |
+| Name | Type | Default                                | Description |
+| --- | --- |----------------------------------------| --- |
+| modulePath | `string` | \<inlineCode\>\</inlineCode\>          | Resolvable path to the module to import. |
+| [localName] | `string` | \<inlineCode\>Component\</inlineCode\> | Optional human-readable name for debugging. |
 
 Append a JSX element to the children of `element`.
 
@@ -140,7 +140,7 @@ Set JSX props on a JSX element.
 | props | `object` | A simple object representing the props. Keys should be prop names, and values should be raw strings representing the value in JSX text. |
 | [options] | `JSXModifierOptions` |  |
 
-## Example
+**Example**
 
 ```js
 file.setJSXProps('Tab colorScheme="dark"', {

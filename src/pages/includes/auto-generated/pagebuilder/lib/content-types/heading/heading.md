@@ -1,9 +1,9 @@
-
-Typedefs
+## Typedefs
 
 [props]
 
 Props for Heading
+
 Page Builder Heading component.
 
 This component is part of the Page Builder / PWA integration. It can be consumed without Page Builder.
@@ -12,15 +12,15 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 `React.Element`
    — A React component that renders Heading with optional styling properties.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | props | React component props |
+| props | `props` | React component props |
 
 Props for Heading
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

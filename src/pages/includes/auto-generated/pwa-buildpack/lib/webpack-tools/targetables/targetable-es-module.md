@@ -20,7 +20,7 @@ If a collision is detected, it renames the binding before inserting it.
 `SingleImportStatement`
    — An instance of the `SingleImportStatement` class.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |

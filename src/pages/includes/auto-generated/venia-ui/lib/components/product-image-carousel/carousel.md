@@ -14,15 +14,15 @@ images can be navigated through previous and next buttons
 `React.Element`
    — React carousel component that displays a product image
 
-## Parameters
+**Parameters**
 
 | Name | Type |
 | --- | --- |
-| props | props |
+| props | `props` |
 
 Props for ProductImageCarousel
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

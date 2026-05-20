@@ -39,7 +39,7 @@ it's a Bail target.
 `\*`
    — Returns whatever the underlying Tapable Hook returns.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ if it's a Bail target.
 `undefined`
    — `callAsync` returns nothing, instead passing any output of the interceptors as the first argument of the callback.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -83,7 +83,7 @@ the first returning interceptor has run if it's a Bail target.
 `Promise`
    — A Promise for any output of the target's interceptors.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |

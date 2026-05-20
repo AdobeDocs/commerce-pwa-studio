@@ -5,7 +5,7 @@ A component that renders a logo in the header.
 `React.Element`
    — A React component that displays a logo.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -13,13 +13,13 @@ A component that renders a logo in the header.
 
 Props for the Logo component.
 
-## Properties
+**Properties**
 
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | classes | `Object` |  | An object containing the class names for the Logo component. |
-| classes.logo | `string` | | Classes for logo |
-| [height] | `number` | 18 | Height of the logo. |
-| [width] | `number` | 102 | Width of the logo. |
+| classes.logo | `string` |  | CSS class name(s) applied to the logo element. |
+| [height] | `number` | `18` | Height of the logo. |
+| [width] | `number` | `102` | Width of the logo. |
 
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/Logo/logo.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Logo/logo.js)

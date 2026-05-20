@@ -91,7 +91,7 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | ProductListingQueries | GraphQL queries for getting product listing data. |
+| props.queries | `ProductListingQueries` | GraphQL queries for getting product listing data. |
 
 **Example** *(Importing into your project)*
 
@@ -112,8 +112,8 @@ This talon performs the following effects:
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.item | ProductItem | Product item data |
-| props.operations | ProductMutations | GraphQL mutations for a product in a cart |
+| props.item | `ProductItem` | Product item data |
+| props.operations | `ProductMutations` | GraphQL mutations for a product in a cart |
 | props.setActiveEditItem | `function` | Function for setting the actively editing item |
 | props.setIsCartUpdating | `function` | Function for setting the updating state of the cart |
 
@@ -164,7 +164,7 @@ import { useProductForm } from '@magento/peregrine/lib/talons/CartPage/ProductLi
 GraphQL queries for getting product listing data.
 This is a type used in the useProductListing talon.
 
-**See**: [productListingFragments.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js)
+**See**: [productListingFragments.js](https://github.com/magento/pwa-studio/blob/v11.0.0/packages/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js)
 for the queries used in Venia  
 **Properties**
 
@@ -175,7 +175,7 @@ for the queries used in Venia
 Object type returned by the useProductListing talon.
 It provides props data for a component that renders a product list.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -200,7 +200,7 @@ to see the mutations used in Venia
 Object type returned by the useProduct talon.
 It provides prop data for rendering a product component on a cart page.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -209,12 +209,12 @@ It provides prop data for rendering a product component on a cart page.
 | handleRemoveFromCart | `function` | Function to use for handling the removal of a cart product. |
 | handleUpdateItemQuantity | `function` | Function to use for handling updates to the product quantity in a cart. |
 | isEditable | `boolean` | True if a cart product is editable. False otherwise. |
-| product | ProductItem | Cart product data |
+| product | `ProductItem` | Cart product data |
 
 Data about a product item in the cart.
 This type is used in the ProductTalonProps type returned by the useProduct talon.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -227,10 +227,10 @@ This type is used in the ProductTalonProps type returned by the useProduct talon
 | urlKey | `String` | The product's url key |
 | urlSuffix | `String` | The product's url suffix |
 
-Object type returned by the [useQuantityStepper](useQuantityStepper) talon.
+Object type returned by the useQuantityStepper talon.
 It provides props data for a quantity UI component.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -244,17 +244,17 @@ It provides props data for a quantity UI component.
 Object type returned by the useEditModal talon.
 It provides props data for rendering an edit modal component.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | setVariantPrice | `function` | Function for setting a product's variant price. |
-| variantPrice | `Object` | The variant price for a product. See [Money object](https://devdocs.magento.com/guides/v2.4/graphql/product/product-interface.html#Money). |
+| variantPrice | `Object` | The variant price for a product. See [Money object](https://developer.adobe.com/commerce/webapi/graphql/). |
 
-Object type returned by the [useProductForm](useProductForm) talon.
+Object type returned by the useProductForm talon.
 It provides props data for a product form UI component inside a modal.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

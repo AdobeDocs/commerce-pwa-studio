@@ -14,7 +14,7 @@ and pass the data off to the correct system.
 `React.Element`
    — A React component that renders Heading with optional styling properties.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -22,7 +22,7 @@ and pass the data off to the correct system.
 
 Props for RichContent
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

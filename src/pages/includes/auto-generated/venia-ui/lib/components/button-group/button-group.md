@@ -15,7 +15,7 @@ A component that creates a group of buttons.
 `React.Element`
    — A React component that displays multiple buttons.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ A component that creates a group of buttons.
 
 Props for ButtonGroup
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -33,7 +33,7 @@ Props for ButtonGroup
 
 Props for a ButtonGroup button component
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

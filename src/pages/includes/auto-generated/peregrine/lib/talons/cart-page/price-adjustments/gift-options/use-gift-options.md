@@ -35,7 +35,7 @@ This talon performs the following effects:
 | Name | Type |
 | --- | --- |
 | props | `Object` |
-| props.operations | GiftOptionsOperations |
+| props.operations | `GiftOptionsOperations` |
 
 **Example** *(Importing into your project)*
 
@@ -45,7 +45,7 @@ import { useGiftOptions } from '@magento/peregrine/lib/talons/CartPage/GiftOptio
 
 Props data to use when rendering a gift options component.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -69,7 +69,7 @@ Props data to use when rendering a gift options component.
 
 This is a type used by the useGiftOptions talon.
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |

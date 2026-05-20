@@ -1,5 +1,5 @@
 
-Functions
+## Functions
 
 [usePagination(config)] ⇒ `Array.&lt;Object>`
 
@@ -11,7 +11,7 @@ data.
 
 The current pagination state
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -26,7 +26,7 @@ The API object used for modifying the PaginationState.
 
 Set the current page
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -34,13 +34,13 @@ Set the current page
 
 Set the total number of pages
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | total | `Number` | The number to set the amount of pages available |
 
-A [React Hook](https://reactjs.org/docs/hooks-intro.html) that provides
+A [React Hook](https://legacy.reactjs.org/docs/hooks-intro.html) that provides
 pagination logic.
 
 Use this hook to implement components that need to navigate through paged
@@ -48,9 +48,9 @@ data.
 
 **Returns:**
 `Array.<Object>`
-   — An array with two entries containing the following content: [ PaginationState, API ]
+   — An array with two entries containing the following content:  [PaginationState, API ]
 
-## Parameters
+**Parameters**
 
 | Name | Type | Default                                       | Description |
 | --- | --- |-----------------------------------------------| --- |

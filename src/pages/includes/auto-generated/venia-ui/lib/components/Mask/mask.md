@@ -5,7 +5,7 @@ A component that masks content.
 `React.Element`
    — A React component that will mask content.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |

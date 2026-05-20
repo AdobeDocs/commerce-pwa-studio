@@ -11,7 +11,7 @@ A component for buttons.
 `React.Element`
    — A React component that displays a single button.
 
-## Parameters
+**Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -19,7 +19,7 @@ A component for buttons.
 
 Props for Button
 
-## Properties
+**Properties**
 
 | Name | Type | Description |
 | --- | --- | --- |
