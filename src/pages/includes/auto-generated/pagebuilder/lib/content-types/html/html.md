@@ -12,7 +12,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 `React.Element`
    — A React component that renders HTML with optional styling properties.
 
-**Parameters**
+## Parameters
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -20,7 +20,7 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 
 Props for Html
 
-**Properties**
+## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |

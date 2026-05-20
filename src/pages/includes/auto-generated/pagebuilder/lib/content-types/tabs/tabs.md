@@ -1,11 +1,11 @@
 
-Functions
+## Functions
 
-[upperCaseString(string)] ⇒ string
+[upperCaseString(string)] ⇒ `string`
 
 Upper case the first letter of a string
 
-Typedefs
+## Typedefs
 
 [props]
 
@@ -28,11 +28,11 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 Upper case the first letter of a string
 
 **Returns:**
-## Parameters
+**Parameters**
 
 | Name | Type |
 | --- | --- |
-| string | `string` | 
+| string | `string` |
 
 Props for Tabs
 

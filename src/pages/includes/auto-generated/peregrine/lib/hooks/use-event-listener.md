@@ -8,7 +8,7 @@ and removes the listener on unmount.
 
 See [addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
-**Parameters**
+## Parameters
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -16,7 +16,5 @@ See [addEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventT
 | type | `String` | The type of [Event](https://developer.mozilla.org/en-US/docs/Web/Events) to listen for, e.g. 'resize', 'error', etc. |
 | listener | `function` | A callback function that is invoked when the event is triggered |
 | ...rest | `any` | Any other arguments to pass to the addEventListener() function |
-
-
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/hooks/useEventListener.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/hooks/useEventListener.js)

@@ -25,16 +25,15 @@ This component is part of the Page Builder / PWA integration. It can be consumed
 | --- | --- | --- |
 | props | props | React component props |
 
-
 Sort products based on the original order
 
 **Returns:**
-## Parameters
+**Parameters**
 
 | Name | Type |
 | --- | --- |
-| urlKeys | `Array` | 
-| products | `Array` | 
+| urlKeys | `Array` |
+| products | `Array` |
 
 Props for Products
 
