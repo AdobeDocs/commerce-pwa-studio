@@ -83,7 +83,7 @@ Static imported components, such as Header, Footer, and side Navigation, have re
 Root components are dynamically loaded components associated with an Adobe Commerce or Magento Open Source page type or route.
 A list of Venia's root components can be found in the [RootComponent][] directory in the PWA Studio project.
 
-[rootcomponent]: https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/RootComponents
+[rootcomponent]: https://github.com/magento/pwa-studio/tree/develop/packages/venia-ui/lib/RootComponents
 
 ## Create component directories
 
