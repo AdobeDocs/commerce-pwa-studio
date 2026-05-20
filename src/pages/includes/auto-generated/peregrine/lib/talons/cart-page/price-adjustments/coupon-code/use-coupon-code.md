@@ -180,7 +180,7 @@ This talon performs the following effects:
 | --- | --- | --- |
 | props | `Object` |  |
 | props.setIsCartUpdating | `function` | Function for setting the updating state of the shopping cart |
-| props.selectedShippingMethod | `String` | A serialized string of <inlineCode>${carrier-code}\|${method-code}</inlineCode>, eg. <inlineCode>usps\|priority</inlineCode>. |
+| props.selectedShippingMethod | `String` | A serialized string of ${carrier-code}\|${method-code}, eg. usps\|priority. |
 | props.shippingMethods | `Array.<Object>` | An array of available shipping methods |
 | props.mutations | ShippingRadiosMutations | GraphQL mutations for a shipping radio selector component. |
 
@@ -302,13 +302,13 @@ It provides prop data to use when rendering shipping methods.
 | hasMethods | `number` | Provides the number of shipping methods available. Can be used as a boolean value since having no shipping methods would return 0. |
 | isShowingForm | `boolean` | True if the form should be shown. False otherwise. |
 | selectedShippingFields | [`SelectShippingFields`](#SelectShippingFields) | Values for the select input fields on the shipping form |
-| selectedShippingMethod | `String` | A serialized string of <inlineCode>${carrier-code}\|${method-code}</inlineCode>, eg. <inlineCode>usps\|priority</inlineCode>. |
+| selectedShippingMethod | `String` | A serialized string of ${carrier-code}\|${method-code}, eg. usps\|priority. |
 | shippingMethods | `Array.<Object>` | A list of available shipping methods based on the primary shipping address |
 | showForm | `function` | A function that sets the `isShowingForm` value to true. |
 | showFormOnEnter | `function` | A function that sets the `isShowingForm` value to true. |
 
 GraphQL mutations for a shipping radio selector component.
-This is a type used by the [useShippingRadios](#useShippingRadios) talon.
+This is a type used by the useShippingRadios talon.
 
 ## Properties
 
@@ -316,7 +316,7 @@ This is a type used by the [useShippingRadios](#useShippingRadios) talon.
 | --- | --- | --- |
 | setShippingMethodMutation | `GraphQLAST` | Mutation for setting the shipping method on a cart. |
 
-Object type returned by the [useShippingRadios](#useShippingRadios) talon.
+Object type returned by the useShippingRadios talon.
 It provides data to use when rendering a radio selector for shipping methods.
 
 ## Properties

@@ -1,32 +1,25 @@
 
-Typedefs
+## Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
+[props]
 
-Props for [Trigger](#Trigger)
-
-</dd>
-</dl>
-
+Props for Trigger
 
 A component that will trigger a given action.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that when triggered invokes the action.
 
-**Parameters**
+## Parameters
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | props | React component props |
 
+Props for Trigger
 
-Props for [Trigger](#Trigger)
-
-**Properties**
+## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -34,7 +27,5 @@ Props for [Trigger](#Trigger)
 | children | `ReactNodeLike` | any elements that will be child elements inside the root container. |
 | classes | `Object` | An object containing the class names for the Trigger component. |
 | classes.root | `string` | classes for root container |
-
-
 
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/Trigger/trigger.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Trigger/trigger.js)

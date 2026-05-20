@@ -1,9 +1,7 @@
 
-Functions
+## Functions
 
-<dl>
-<dt><a href="#usePriceSummary">usePriceSummary(props)</a> ⇒ <inlineCode><a href="#PriceSummaryTalonProps">PriceSummaryTalonProps</a></inlineCode></dt>
-<dd>
+[usePriceSummary(props)] ⇒ `[PriceSummaryTalonProps]`
 
 This talon contains logic for a price summary component.
 It performs effects and returns prop data for rendering the component.
@@ -12,33 +10,19 @@ This talon performs the following effects:
 
 - Log a GraphQL error if it occurs when getting the price summary
 
-</dd>
-</dl>
+## Typedefs
 
-
-Typedefs
-
-<dl>
-<dt><a href="#FlattenedData">FlattenedData</a> : <inlineCode>Object</inlineCode></dt>
-<dd>
+[FlattenedData] : `Object`
 
 Query data flattened into a simple object.
 
-</dd>
-<dt><a href="#PriceSummaryQueries">PriceSummaryQueries</a> : <inlineCode>Object</inlineCode></dt>
-<dd>
+[PriceSummaryQueries] : `Object`
 
 GraphQL queries for price summary component.
 
-</dd>
-<dt><a href="#PriceSummaryTalonProps">PriceSummaryTalonProps</a> : <inlineCode>Object</inlineCode></dt>
-<dd>
+[PriceSummaryTalonProps] : `Object`
 
 Props used for rendering a price summary component.
-
-</dd>
-</dl>
-
 
 This talon contains logic for a price summary component.
 It performs effects and returns prop data for rendering the component.
@@ -47,22 +31,23 @@ This talon performs the following effects:
 
 - Log a GraphQL error if it occurs when getting the price summary
 
-**Returns: **
+**Returns:**
 **Parameters**
 
 | Name | Type | Description |
 | --- | --- | --- |
 | props | `Object` |  |
-| props.queries | [`PriceSummaryQueries`](#PriceSummaryQueries) | GraphQL queries for a price summary component. |
+| props.queries | PriceSummaryQueries | GraphQL queries for a price summary component. |
 
-**Example** *(Importing into your project)*  
+**Example** *(Importing into your project)*
+
 ```js
 import { usePriceSummary } from '@magento/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary';
 ```
 
 Query data flattened into a simple object.
 
-**Properties**
+## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -74,7 +59,6 @@ Query data flattened into a simple object.
 | taxes | `Array.<Object>` | Taxes applied to the cart |
 | shipping | `Array.<Object>` | Shipping addresses associated with this cart |
 
-
 GraphQL queries for price summary component.
 
 **See**: [priceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.js)
@@ -85,10 +69,9 @@ for the queries used in Venia.
 | --- | --- | --- |
 | getPriceSummary | `GraphQLAST` | Query to get the price summary for a cart |
 
-
 Props used for rendering a price summary component.
 
-**Properties**
+## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -96,8 +79,6 @@ Props used for rendering a price summary component.
 | hasError | `boolean` | True if a GraphQL query returns an error. False otherwise. |
 | hasItems | `boolean` | True if the cart has any items. False otherwise. |
 | isLoading | `boolean` | True while the GraphQL query is still in flight. False otherwise. |
-| flatData | [`FlattenedData`](#FlattenedData) | Query data that has been flattened into a simple object |
-
-
+| flatData | FlattenedData | Query data that has been flattened into a simple object |
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/talons/CartPage/PriceSummary/usePriceSummary.js)

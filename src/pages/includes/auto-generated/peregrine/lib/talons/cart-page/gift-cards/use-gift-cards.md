@@ -49,8 +49,8 @@ This talon performs the following effects:
 | --- | --- | --- |
 | props | `Object` |  |
 | props.setIsCartUpdating | `function` | Callback function for setting the update state for the cart. |
-| props.mutations | [`GiftCardsMutations`](#GiftCardsMutations) | GraphQL mutations for Gift Cards |
-| props.queries | [`GiftCardsQueries`](#GiftCardsQueries) | GraphQL queries for Gift Cards |
+| props.mutations | GiftCardsMutations | GraphQL mutations for Gift Cards |
+| props.queries | GiftCardsQueries | GraphQL queries for Gift Cards |
 
 **Example** *(Importing into your project)*
 

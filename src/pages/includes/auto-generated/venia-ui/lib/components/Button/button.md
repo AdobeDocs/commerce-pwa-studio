@@ -1,32 +1,25 @@
 
-Typedefs
+## Typedefs
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
+[props]
 
-Props for [Button](#Button)
-
-</dd>
-</dl>
-
+Props for Button
 
 A component for buttons.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that displays a single button.
 
-**Parameters**
+## Parameters
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | `props` | React component props |
 
+Props for Button
 
-Props for [Button](#Button)
-
-**Properties**
+## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -40,7 +33,5 @@ Props for [Button](#Button)
 | type | `string` | the type of the Button |
 | negative | `bool` | whether the button should be displayed in red for a negative action |
 | disabled | `bool` | is the button disabled |
-
-
 
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/Button/button.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/Button/button.js)

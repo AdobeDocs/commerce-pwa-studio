@@ -1,41 +1,31 @@
+## Typedefs
 
-Typedefs
+[props]
 
-<dl>
-<dt><a href="#props">props</a></dt>
-<dd>
-
-Props for [ToastContainer](#ToastContainer)
-
-</dd>
-</dl>
-
+Props for ToastContainer
 
 A container for toast notifications.
 
 This component must be a child, nested or otherwise, of a
 ToastContextProvider component.
 
-**Returns: **
+**Returns:**
 `React.Element`
    — A React component that displays toast notification data.
 
-**Parameters**
+## Parameters
 
 | Name | Type | Description |
 | --- | --- | --- |
-| props | [`props`](#props) | React component props |
+| props | props | React component props |
 
+Props for ToastContainer
 
-Props for [ToastContainer](#ToastContainer)
-
-**Properties**
+## Properties
 
 | Name | Type | Description |
 | --- | --- | --- |
 | classes | `Object` | An object containing the class names for the   ToastContainer and its Toast components |
 | classes.root | `String` | CSS classes for the root container |
-
-
 
 **Source Code**: [pwa-studio/packages/venia-ui/lib/components/ToastContainer/toastContainer.js](https://github.com/magento/pwa-studio/blob/develop/packages/venia-ui/lib/components/ToastContainer/toastContainer.js)

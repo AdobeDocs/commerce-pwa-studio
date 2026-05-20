@@ -35,6 +35,6 @@ props for List
 | onSelectionChange | `func` | A callback that fires when the selection state changes |
 | selectionModel | `checkbox` \| `radio` | A string corresponding to a selection model |
 
-default props for [List](#List)
+default props for List
 
 **Source Code**: [pwa-studio/packages/peregrine/lib/List/list.js](https://github.com/magento/pwa-studio/blob/develop/packages/peregrine/lib/List/list.js)
