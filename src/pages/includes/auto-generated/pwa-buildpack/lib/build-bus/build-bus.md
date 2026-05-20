@@ -134,7 +134,7 @@ bus.runPhase('declare')
 
 Remove the cached BuildBus for the given context.
 
-**Parameters**
+## Parameters
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -731,7 +731,7 @@ if it's a Bail target.
 `undefined`
    — `callAsync` returns nothing, instead passing any output of the interceptors as the first argument of the callback.
 
-**Parameters**
+## Parameters
 
 | Name | Type | Description |
 | --- | --- | --- |

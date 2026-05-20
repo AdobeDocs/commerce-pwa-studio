@@ -36,7 +36,7 @@ Generates an identifier for a toast by inspecting the properties that differenti
 
 A hook that provides access to the toast state and toast api.
 
-**Returns: **
+**Returns:**
 `Array.<Object>`
    — An array containing objects for the toast state and its API: [[ToastState](../useToastContext#ToastState), API]
 
