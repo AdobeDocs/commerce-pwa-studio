@@ -9,13 +9,13 @@ The components in this group are standard UI components that are commonly found 
 
 ## List of general components
 
-- [Button](button/index.md)
+- [Button](Button/index.md)
 - [ButtonGroup](button-group/index.md)
-- [Link component](link/index.md)
-- [Logo](logo/index.md)
-- [Mask](mask/index.md)
-- [Portal](portal/index.md)
+- [Link component](Link/index.md)
+- [Logo](Logo/index.md)
+- [Mask](Mask/index.md)
+- [Portal](Portal/index.md)
 - [ProductImageCarousel](product-image-carousel/index.md)
-- [Shimmer](shimmer/index.md)
+- [Shimmer](Shimmer/index.md)
 - [ToastContainer](toast-container/index.md)
-- [Trigger](trigger/index.md)
+- [Trigger](Trigger/index.md)

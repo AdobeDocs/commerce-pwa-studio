@@ -29,5 +29,14 @@
   },
   "engines": {
     "node": "^24.11.0"
+  },
+  "lint": {
+    "skipRules": {
+      "check-frontmatter": {
+        "paths": [
+          "src/pages/includes"
+        ]
+      }
+    }
   }
 }
