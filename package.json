@@ -6,10 +6,7 @@
     "type": "git",
     "url": "https://github.com/AdobeDocs/commerce-pwa-studio"
   },
-  "author": {
-    "name": "Tim Kim",
-    "url": "https://github.com/timkim"
-  },
+  "author": "PWA Studio Team",
   "engines": {
     "node": "^24.11.0"
   },
