@@ -7,6 +7,9 @@
     "url": "https://github.com/AdobeDocs/commerce-pwa-studio"
   },
   "author": "PWA Studio Team",
+  "engines": {
+    "node": "^24.11.0"
+  },
   "scripts": {
     "dev": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils dev",
     "buildNavigation": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils buildNavigation -v",
@@ -26,9 +29,6 @@
     "lint:md:fix": "npx --yes markdownlint-cli2 --fix 'src/pages/**/*.md' '*.md'",
     "test": "npx --yes jest",
     "test:config": "npx --yes jest tests/config.test.js"
-  },
-  "engines": {
-    "node": "^24.11.0"
   },
   "lint": {
     "skipRules": {
