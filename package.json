@@ -39,6 +39,12 @@
           "src/pages/_includes"
         ]
       }
-    }
+    },
+    "skipUrlPatterns": [
+      "https://www.npmjs.com/package/envalid#validator-types",
+      "https://repo.magento.com/",
+      "https://v5.reactrouter.com/web/api/Link",
+      "https://magentocommeng.slack.com/archives/C71HNKYS2"
+    ]
   }
 }
