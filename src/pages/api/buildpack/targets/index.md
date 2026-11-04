@@ -28,4 +28,4 @@ The reference doc content is generated automatically from the source code.
 To update this section, update the doc blocks in the source code
 --\>
 
-<Fragment src='../../../includes/auto-generated/pwa-buildpack/lib/build-bus/declare-base.md'/>
+<Fragment src='../../../_includes/auto-generated/pwa-buildpack/lib/build-bus/declare-base.md'/>
