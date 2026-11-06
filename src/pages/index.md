@@ -99,3 +99,7 @@ For more information, refer to this project's [Contribution Guide](https://githu
 
 [community wiki]: https://github.com/magento/pwa-studio/wiki
 [this github repo]: https://github.com/AdobeDocs/commerce-pwa-studio
+
+## What's new
+
+<Fragment src="/_includes/templated/whats-new.md" />
