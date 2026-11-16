@@ -1,7 +1,7 @@
 {
-  "total": 297,
+  "total": 233,
   "offset": 0,
-  "limit": 297,
+  "limit": 233,
   "data": [
     {
       "page": "/",
@@ -529,7 +529,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/9/2026"
+      "lastUpdated": "1/10/2026"
     },
     {
       "page": "/api/buildpack/buildbus/",
@@ -731,7 +731,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/27/2026"
+      "lastUpdated": "1/28/2026"
     },
     {
       "page": "/api/buildpack/webpack/magento-resolver/",
@@ -758,7 +758,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/27/2026"
+      "lastUpdated": "1/28/2026"
     },
     {
       "page": "/api/events/",
@@ -791,6 +791,24 @@
       "lastUpdated": "5/20/2026"
     },
     {
+      "page": "/api/peregrine/components-and-utilities/Item/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
+        "https://avatars.githubusercontent.com/u/4692281?v=4"
+      ],
+      "lastUpdated": "1/29/2026"
+    },
+    {
+      "page": "/api/peregrine/components-and-utilities/Items/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
+        "https://avatars.githubusercontent.com/u/4692281?v=4"
+      ],
+      "lastUpdated": "1/29/2026"
+    },
+    {
       "page": "/api/peregrine/components-and-utilities/List/",
       "avatars": [
         "https://avatars.githubusercontent.com/u/12731225?v=4",
@@ -801,13 +819,21 @@
       "lastUpdated": "11/4/2026"
     },
     {
+      "page": "/api/peregrine/components-and-utilities/Router/",
+      "avatars": [
+        "https://avatars.githubusercontent.com/u/13662379?v=4",
+        "https://avatars.githubusercontent.com/u/4692281?v=4"
+      ],
+      "lastUpdated": "9/13/2023"
+    },
+    {
       "page": "/api/peregrine/hooks/",
       "avatars": [
         "https://avatars.githubusercontent.com/u/14320591?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/9/2026"
+      "lastUpdated": "1/10/2026"
     },
     {
       "page": "/api/peregrine/hooks/toasts/use-toast-context/",
@@ -1138,7 +1164,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/9/2026"
+      "lastUpdated": "1/10/2026"
     },
     {
       "page": "/guides/general-concepts/application-shell/",
@@ -1157,7 +1183,7 @@
         "https://avatars.githubusercontent.com/u/45772453?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/guides/general-concepts/configuration/",
@@ -1176,7 +1202,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/guides/general-concepts/css-modules/",
@@ -1206,7 +1232,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/guides/general-concepts/graphql/",
@@ -1224,7 +1250,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/guides/general-concepts/routing/",
@@ -1242,7 +1268,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/guides/general-concepts/talons/",
@@ -1276,7 +1302,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/guides/packages/buildpack/scaffolding/",
@@ -1327,7 +1353,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/45772453?v=4"
       ],
-      "lastUpdated": "1/27/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/guides/packages/venia/",
@@ -1337,7 +1363,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/guides/packages/venia/driver-adapter/",
@@ -1346,7 +1372,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/guides/packages/venia/sample-data/",
@@ -1416,7 +1442,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/guides/storefront-architecture/run-time/",
@@ -1436,7 +1462,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/1828494?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/guides/upgrading-versions/",
@@ -1447,538 +1473,6 @@
         "https://avatars.githubusercontent.com/u/1828494?v=4"
       ],
       "lastUpdated": "1/29/2026"
-    },
-    {
-      "page": "/includes/auto-generated/buildpack/reference/env-var-definitions",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/magento-compatibility",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/97873570?v=4",
-        "https://avatars.githubusercontent.com/u/12731225?v=4"
-      ],
-      "lastUpdated": "5/20/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/banner/banner",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/block/block",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/button-item/button-item",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/buttons/buttons",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "3/3/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/column-group/column-group",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "3/3/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/column/column",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/divider/divider",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/dynamic-block/dynamic-block-ee",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/heading/heading",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/html/html",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/image/image",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/map/map",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/products/products",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/row/row",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/slider/slider",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/tab-item/tab-item",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/tabs/tabs",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/text/text",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/content-types/video/video",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pagebuilder/lib/utils",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/hooks/use-dropdown",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/hooks/use-event-listener",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/hooks/use-pagination",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/hooks/use-search-param",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/hooks/use-window-size",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/List/list",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/Price/price",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4"
-      ],
-      "lastUpdated": "1/29/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/talons/cart-page/gift-cards/use-gift-cards",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/talons/cart-page/price-adjustments/coupon-code/use-coupon-code",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/talons/cart-page/price-adjustments/gift-options/use-gift-options",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/talons/cart-page/price-summary/use-price-summary",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/talons/cart-page/product-listing/use-product-listing",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "3/3/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/talons/cart-page/use-cart-page",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/peregrine/lib/targets/peregrine-declare",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/build-bus/build-bus",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "3/3/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/build-bus/declare-base",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/build-bus/target",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/build-bus/target-provider",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/webpack-tools/module-transform-config",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/webpack-tools/targetables/single-import-statement",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/webpack-tools/targetables/targetable-es-module",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/webpack-tools/targetables/targetable-es-module-array",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/webpack-tools/targetables/targetable-es-module-object",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/webpack-tools/targetables/targetable-module",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/webpack-tools/targetables/targetable-react-component",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/pwa-buildpack/lib/webpack-tools/targetables/targetable-set",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/button-group/button-group",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/Button/button",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/cart-page/cart-page",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/cart-page/gift-cards/gift-cards",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/cart-page/price-adjustments/price-adjustments",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/cart-page/price-summary/price-summary",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/cart-page/product-listing/product-listing",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/Link/link",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/logo/logo",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4"
-      ],
-      "lastUpdated": "3/3/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/Mask/mask",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4"
-      ],
-      "lastUpdated": "1/29/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/Portal/portal",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/product-image-carousel/carousel",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/rich-content/rich-content",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/Shimmer/shimmer",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4"
-      ],
-      "lastUpdated": "1/29/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/toast-container/toast-container",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/components/Trigger/trigger",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/targets/rich-content-renderer-list",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "2/23/2026"
-    },
-    {
-      "page": "/includes/auto-generated/venia-ui/lib/targets/venia-ui-declare",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/97873570?v=4"
-      ],
-      "lastUpdated": "3/3/2026"
-    },
-    {
-      "page": "/includes/install-venia-sample-data",
-      "avatars": [
-        "https://avatars.githubusercontent.com/u/12731225?v=4",
-        "https://avatars.githubusercontent.com/u/14320591?v=4"
-      ],
-      "lastUpdated": "1/27/2026"
     },
     {
       "page": "/integrations/",
@@ -2340,22 +1834,24 @@
     {
       "page": "/metapackages/commerce/",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/45772453?v=4",
         "https://avatars.githubusercontent.com/u/1828494?v=4"
       ],
-      "lastUpdated": "12/18/2023"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/metapackages/open-source/",
       "avatars": [
+        "https://avatars.githubusercontent.com/u/12731225?v=4",
         "https://avatars.githubusercontent.com/u/144210397?v=4",
         "https://avatars.githubusercontent.com/u/188729140?v=4",
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/45772453?v=4",
         "https://avatars.githubusercontent.com/u/1828494?v=4"
       ],
-      "lastUpdated": "12/18/2023"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/metapackages/venia-sample-data/",
@@ -2375,7 +1871,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/1828494?v=4"
       ],
-      "lastUpdated": "1/27/2026"
+      "lastUpdated": "1/28/2026"
     },
     {
       "page": "/tutorials/",
@@ -2385,7 +1881,7 @@
         "https://avatars.githubusercontent.com/u/45772453?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/27/2026"
+      "lastUpdated": "1/28/2026"
     },
     {
       "page": "/tutorials/basic-modifications/",
@@ -2440,7 +1936,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/45772453?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/tutorials/events/subscribe-events/",
@@ -2450,7 +1946,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/45772453?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/tutorials/extensions/",
@@ -2551,7 +2047,7 @@
         "https://avatars.githubusercontent.com/u/13662379?v=4",
         "https://avatars.githubusercontent.com/u/1828494?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     },
     {
       "page": "/tutorials/targets/modify-talon-results/",
@@ -2562,7 +2058,7 @@
         "https://avatars.githubusercontent.com/u/45772453?v=4",
         "https://avatars.githubusercontent.com/u/4692281?v=4"
       ],
-      "lastUpdated": "1/29/2026"
+      "lastUpdated": "3/28/2026"
     }
   ],
   ":type": "sheet"
